@@ -1,54 +1,65 @@
 ---
-title: 'Why We Built SurtitleLive: Moving Beyond PowerPoint'
-description: 'PowerPoint was designed for boardrooms, not broadway. Here is how SurtitleLive solves the captioning headers theatre companies face every day.'
+title: 'Theatre is Live. Why Are We Still Using Static Slides for Surtitles?'
+description: 'PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theatre captioning software and professional surtitles.'
 pubDate: '2025-01-01'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
+tags: ['PowerPoint', 'Theatre Tech', 'Surtitles', 'Workflow']
 ---
 
 If you have ever worked in a theatre tech booth, you know the feeling.
 
-The house lights go down. The play begins. You are sitting there with a laptop, your finger hovering over the Spacebar. You are running the surtitles (supertitles) for tonight’s performance.
+The house lights go down. The play begins. You are sitting there in the shadows, your finger hovering over the Spacebar. You are running the theatre captioning software—or what often passes for it—for tonight’s performance.
 
-Everything is going fine until—panic.
+Everything is going fine until your heart skips a beat. You hear the Stage Manager’s voice crackling in your headset: *"The actor skipped to the end of the scene! Skip to line 150!"*
 
-An actor skips a verse. Or maybe they ad-lib a line that wasn't in the script.
+**Panic.**
 
-In front of you is **PowerPoint**. You are locked into Slide 42. The actor is now essentially on Slide 45. You frantically click forward, flashing Slide 43 and 44 on the giant screen above the stage, distracting the audience and breaking the immersion.
+In front of you is a PowerPoint grid of identical-looking slides. You are locked into Slide 42, but the stage is already at Scene 4. You frantically click forward, flashing Slides 43 and 44 on the giant screen above the stage, breaking the audience’s immersion and distracting the actors.
 
-This is the reality for thousands of theatre companies, opera houses, and fringe festivals around the world. We are using a tool designed for boardroom meetings to run live, dynamic, artistic performances.
+This exact moment—the **"Spacebar Panic"**—is not a human failure. It is a tool failure. We are using a tool designed for static boardroom meetings to run live, breathing, artistic performances.
 
-That is why we built **SurtitleLive**.
+Surtitles should follow the breath of the actor, not the limitations of 90s office software. That is why we built **SurtitleLive**.
 
-## The PowerPoint Problem
+## The Slide Deck Bottleneck in Live Performance
 
-PowerPoint (and Keynote) are fantastic tools for linear presentations. But theatre is rarely linear. It is alive, breathable, and unpredictable.
+PowerPoint and Keynote are fantastic for linear presentations. However, when we force digital surtitles and theatre captioning into a slide-based format, we encounter three major obstacles:
 
-Here is why "Slide Decks" fail in the theatre:
+### 1. The Manual Formatting Bottleneck
+Preparing opera supertitles usually means spending hours copying lines from a Word doc, pasting them into individual slides, and manually tweaking font sizes. If the director changes a line mid-rehearsal, you are stuck editing slides one by one.
 
-1.  **The "Copy-Paste" Nightmare**: Preparing surtitles in PowerPoint usually means spending hours copying lines from a Word doc, pasting them into slides, and manually adjusting font sizes to make them fit. If the director changes a line? You are editing slides one by one.
-2.  **Linear Lock-in**: Skipping scenes or jumping back to a previous line during rehearsal is clumsy. You often have to exit "Presentation Mode," scroll to find the slide, and restart.
-3.  **One Screen, One Language**: Want to show English and Spanish? You usually have to jam both into one slide, cluttering the view, or set up a complicated dual-projector system.
+### 2. Linear Lock-in
+Theatre isn't always a straight line. If an actor skips a verse or a scene, jumping back and forth is clumsy in "Presentation Mode." You often have to exit, scroll through a sea of thumbnails, and restart—all while the creative team waits.
 
-## The SurtitleLive Solution
+### 3. Cluttered Accessibility
+To maintain accessibility in performing arts, you might want to show multiple languages. In a slide deck, you are forced to jam both into one slide, cluttering the view, or set up expensive, complicated dual-projector systems.
 
-We designed SurtitleLive to treat your script as **data**, not just images on a slide. Here is how we address those pain points:
+---
+
+## The SurtitleLive Solution: A Better Cockpit
+
+We designed SurtitleLive to treat your script as **data**, not just a stack of static images. We move away from "slides" and toward a professional, live-ready workflow.
 
 ### 1. From Script to Stage in Seconds
-Instead of manual formatting, SurtitleLive uses **AI-powered ingestion**. You upload your script (formatting and all), and our engine instantly analyzes it. It identifies Character Names, Dialogue, and Stage Directions purely from the text structure.
+Instead of manual formatting, SurtitleLive uses **AI-powered ingestion** to streamline your preparation. Think of our AI as your highly efficient technical intern; it’s not here to create your art, but to handle the hours of "Copy-Paste" work that every tech designer hates.
 
-What used to take 4 hours of formatting now takes 4 minutes.
+You upload your script, and our engine instantly analyzes the structure to identify character names and dialogue. What used to take a full afternoon now takes minutes.
 
-### 2. The "Cockpit": Panic-Proof Control
-We built an interface specifically for the operator, which we call the **Cockpit**.
-*   **Non-Linear Navigation**: Did the actor skip a paragraph? Just click the line they moved to. The audience sees the jump instantly, without scrolling through the in-between text.
-*   **Edit Live**: Notice a typo mid-show? You can fix it on the fly without stopping the projection.
-*   **Dark Mode Native**: Designed for the dark booth, so your screen doesn't glow and distract the audience.
+### 2. Reliable Non-Linear Navigation
+Because theatre is unpredictable, our interface—the **SurtitleLive Cockpit**—is built for precision. We don't use a linear clicker logic.
 
-### 3. Bring Your Own Device (BYOD)
-Why limit subtitles to a projector? With our cloud-based architecture, you can broadcast titles directly to your audience's smartphones. They scan a QR code, choose their preferred language, and watch the titles in their hand—perfect for accessibility and multi-lingual productions.
+*   **Jump to Any Line**: If an actor skips a paragraph, you simply click the exact line they moved to in your script data. The audience sees the jump instantly, without the distracting "flash" of skipped slides.
+*   **Dark Mode Native**: A UI designed specifically for the dark booth, ensuring your screen doesn’t glow and distract the front-of-house.
 
-## Bringing Theatre Tech into the 21st Century
+### 3. Bring Your Own Device (BYOD) for Multilingual Audiences
+Why limit subtitles to a single projector? With our cloud-based architecture, you can broadcast pre-prepared titles directly to your audience’s smartphones.
 
-We believe that surtitling shouldn't be a chore or an afterthought. It is a crucial bridge between the performance and the audience. By moving away from static slides and embracing a dynamic, cloud-based workflow, we give designers more creative freedom and operators more peace of mind.
+*   **Pre-verified Translations**: You can prepare multiple translation tracks in advance (assisted by AI and verified by your team).
+*   **User Choice**: Audience members scan a QR code and choose their preferred language from your pre-loaded tracks.
 
-Ready to retire the clicker? [Start your free trial today](https://www.surtitlelive.com/auth/register).
+## Evolve Your Theatre Tech Workflow
+
+We believe that surtitling shouldn't be a chore or a source of technical anxiety. It is the crucial bridge between the performance and the audience. By embracing a dynamic, cloud-based workflow, we give designers more creative freedom and operators more peace of mind.
+
+We built SurtitleLive because we love the theatre, and we think the people behind the booth deserve better tools. If you’ve ever run surtitles from a dark booth with a headset on, this is for you.
+
+Ready to evolve your workflow? [Check out our Lite Tier](/pricing)—designed specifically for Fringe Festival runs—or [start for free today](/auth/register).
