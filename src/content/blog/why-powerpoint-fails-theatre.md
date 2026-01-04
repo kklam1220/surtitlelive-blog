@@ -62,4 +62,4 @@ We believe that surtitling shouldn't be a chore or a source of technical anxiety
 
 We built SurtitleLive because we love the theatre, and we think the people behind the booth deserve better tools. If you’ve ever run surtitles from a dark booth with a headset on, this is for you.
 
-Ready to evolve your workflow? [Check out our Lite Tier](/pricing)—designed specifically for Fringe Festival runs—or [start for free today](/auth/register).
+Ready to evolve your workflow? [Check out our Lite Tier](https://www.surtitlelive.com/pricing)—designed specifically for Fringe Festival runs—or [start for free today](https://www.surtitlelive.com/auth/register).
