@@ -171,3 +171,4 @@ This blog includes a link back to the main app in the navigation.
 ## 📄 License
 
 Copyright © 2025 SurtitleLive
+ 
