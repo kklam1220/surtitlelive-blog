@@ -49,9 +49,11 @@ Every surtitling method involves a compromise with the darkened auditorium. Whil
 Modern BYOD platforms like SurtitleLive are engineered for the specific rigors of live performance:
 
 *   **Battery Efficiency:** Optimized web-viewers consume minimal power (typically <5% per performance).
-*   **Network Stability:** Low-bandwidth caching ensures that subtitles stay synchronized even in challenging Wi-Fi environments.
+*   **Network Stability:** Low-bandwidth caching ensures that subtitles stay synchronized even in challenging Wi-Fi environments or user mobile data connections.
 
 ## Is BYOD the Right Choice for Your Project?
+
+In short, LED surtitles excel in permanent, large-scale venues, while BYOD surtitling excels wherever space, language, or logistics vary.
 
 BYOD is the ideal solution if your production meets any of the following:
 

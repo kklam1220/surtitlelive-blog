@@ -44,7 +44,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.title h1 {
 				margin: 0.5rem 0 0.5em 0;
-				font-size: 2.5em;
+				font-size: 1.8em;
 				font-weight: 800; /* Bolder */
 			}
 			.date {
@@ -62,7 +62,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<!-- Removed Hero Image -->
+				<div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div>
 				<div class="prose">
 					<div class="title">
 						<div class="date">
