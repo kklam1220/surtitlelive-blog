@@ -43,18 +43,46 @@ Remove-Item -Path ".\temp_blog_deploy" -Recurse -Force
 
 ### Option B: Manual Git Remote Setup (Advanced)
 
-If you prefer to work directly from the `blog` folder:
+If you prefer to work directly from the `blog` folder, ensure you exclude build artifacts and sensitive configs manually. We strongly recommend Option A.
 
-1.  Open a terminal in `blog/`.
-2.  Add the deployment remote (if not already added):
-    ```bash
-    git remote add deploy https://github.com/kklam1220/surtitlelive-blog.git
+---
+
+## 🔍 Content & SEO Audit (Pre-push)
+
+Before running the sync script, verify the "AEO-Readiness" of your markdown:
+
+1.  **YAML Frontmatter**: Ensure `title` and `description` contain core keywords (e.g., Theatre Subtitles, BYOD).
+2.  **Internal Links**: Use absolute paths for main site links (e.g., `https://surtitlelive.com/cockpit`) to prevent broken links in RSS/Aggregation.
+3.  **Structure**: Check that H2 (`##`) and H3 (`###`) follow a logical hierarchy. This helps AI models extract structured summaries.
+4.  **Social Preview (OG Image)**: Check if `heroImage` is present. This is what appears on LinkedIn/Twitter.
+5.  **Slug Health**: Ensure the filename is URL-friendly (e.g., `beyond-the-led-screen.md`).
+
+## 🖼️ Image Handling Guidelines
+
+To ensure images load correctly in production:
+
+1.  **Naming Convention**: **NO SPACES**. Use dashes.
+    *   ✅ Correct: `theatre-gallery-byod.jpg`
+    *   ❌ Incorrect: `theatre gallery byod.jpg` (Cloudflare Pages may fail to resolve this)
+2.  **Format**: Use `.jpg`, `.png`, or `.webp`.
+3.  **Location**: Store images in `src/content/blog/` alongside the markdown file.
+4.  **Usage in Markdown**:
+    ```markdown
+    heroImage: './my-image.jpg'
     ```
-3.  When you want to deploy:
-    ```bash
-    git push deploy main
+5.  **Usage in Astro Layouts**:
+    ALWAYS use the Astro `<Image />` component, not `<img>`.
+    ```astro
+    import { Image } from 'astro:assets';
+    <Image src={heroImage} alt="SurtitleLive mobile subtitle interface featuring OLED dark mode..." />
     ```
-    *(Note: This requires the local git history to match the remote. If they diverge, Option A is safer.)*
+    *   **Alt Text**: Mandatory for SEO. Describe the image context richly for Google Image Search.
+    *   *Standard `<img>` tags will fail to resolve relative paths in production builds.*
+
+## 🛠️ Sync Script & Asset Tips
+
+*   **Drafts**: If you have unfinished posts, create a `drafts` folder inside `content/` and ensure your sync script excludes it, or use `draft: true` in frontmatter (if configured in content collection).
+*   **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
 
 ---
 
