@@ -1,6 +1,6 @@
 ---
 title: 'Subtitles Without Borders: Empowering Flexible Performance Spaces with BYOD'
-description: 'Explore how BYOD mobile subtitles and traditional LED screens serve different theatrical needs. Discover the right captioning solution for your venue, from heritage houses to touring productions.'
+description: 'Explore the roles of LED surtitles and BYOD mobile subtitles in modern performance. Learn how to choose the best accessibility tool for touring, heritage sites, and multilingual theatre.'
 pubDate: '2026-01-24'
 heroImage: './blog-2.jpg'
 tags: ['Mobile Subtitles', 'TheatreTech', 'Touring', 'Accessibility']
