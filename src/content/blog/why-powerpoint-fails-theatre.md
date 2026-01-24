@@ -1,6 +1,6 @@
 ---
-title: 'Theatre is Live. Why Are We Still Using Static Slides for Surtitles?'
-description: 'PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theatre captioning software and professional surtitles.'
+title: 'Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?'
+description: 'PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theater subtitle and surtitle software.'
 pubDate: '2025-12-31'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 tags: ['PowerPoint', 'Theatre Tech', 'Surtitles', 'Workflow']
@@ -18,14 +18,14 @@ In front of you is a PowerPoint grid of identical-looking slides. You are locked
 
 This exact moment—the **"Spacebar Panic"**—is not a human failure. It is a tool failure. We are using a tool designed for static boardroom meetings to run live, breathing, artistic performances.
 
-Surtitles should follow the breath of the actor, not the limitations of 90s office software. That is why we built **SurtitleLive**.
+Subtitles and surtitles should follow the breath of the actor, not the limitations of 90s office software. That is why we built **SurtitleLive**.
 
 ## The Slide Deck Bottleneck in Live Performance
 
-PowerPoint and Keynote are fantastic for linear presentations. However, when we force digital surtitles and theatre captioning into a slide-based format, we encounter three major obstacles:
+PowerPoint and Keynote are fantastic for linear presentations. However, when we force digital surtitles and theater subtitles into a slide-based format, we encounter three major obstacles:
 
 ### 1. The Manual Formatting Bottleneck
-Preparing opera supertitles usually means spending hours copying lines from a Word doc, pasting them into individual slides, and manually tweaking font sizes. If the director changes a line mid-rehearsal, you are stuck editing slides one by one.
+Preparing opera subtitles (or supertitles) usually means spending hours copying lines from a Word doc, pasting them into individual slides, and manually tweaking font sizes. If the director changes a line mid-rehearsal, you are stuck editing slides one by one.
 
 ### 2. Linear Lock-in
 Theatre isn't always a straight line. If an actor skips a verse or a scene, jumping back and forth is clumsy in "Presentation Mode." You often have to exit, scroll through a sea of thumbnails, and restart—all while the creative team waits.
