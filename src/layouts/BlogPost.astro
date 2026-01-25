@@ -8,12 +8,48 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
+
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(heroImage || '/blog-placeholder-1.jpg', Astro.url);
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "datePublished": pubDate.toISOString(),
+  "dateModified": updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
+  "description": description,
+  "image": socialImageURL.href,
+  "author": {
+    "@type": "Organization",
+    "name": "SurtitleLive"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SurtitleLive",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://surtitlelive.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalURL.href
+  }
+});
+
+import { faqSchema } from '../components/schema/SecurityFAQ.js';
+
+const isSecurityPost = title.includes('Protecting Theatre IP');
+const fullSchema = isSecurityPost ? [JSON.parse(schema), faqSchema] : [JSON.parse(schema)];
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />
 		<style>
 			main {
 				width: calc(100% - 2em);

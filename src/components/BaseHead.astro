@@ -15,6 +15,9 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = FallbackImage } = Astro.props;
+const normalizedBase = Astro.base === '/' ? '' : Astro.base;
+const rssUrl = new URL(`${normalizedBase}/rss.xml`, Astro.site);
+const sitemapUrl = new URL(`${normalizedBase}/sitemap-index.xml`, Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -22,12 +25,12 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="sitemap" href={sitemapUrl} />
 <link
 	rel="alternate"
 	type="application/rss+xml"
 	title={SITE_TITLE}
-	href={new URL('rss.xml', Astro.site)}
+	href={rssUrl}
 />
 <meta name="generator" content={Astro.generator} />
 
