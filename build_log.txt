@@ -1,0 +1,42 @@
+
+> surtitlelive-blog@1.0.0 build
+> astro build
+
+[2m20:05:35[22m [34m[content][39m Syncing content
+[2m20:05:35[22m [34m[content][39m Synced content
+[2m20:05:35[22m [34m[types][39m Generated [2m430ms[22m
+[2m20:05:35[22m [34m[build][39m output: [34m"static"[39m
+[2m20:05:35[22m [34m[build][39m mode: [34m"static"[39m
+[2m20:05:35[22m [34m[build][39m directory: [34mC:\Users\MSI\Desktop\SurtitleLive_v2\blog\dist\[39m
+[2m20:05:35[22m [34m[build][39m Collecting build info...
+[2m20:05:35[22m [34m[build][39m [32mΓ£ô Completed in 453ms.[39m
+[2m20:05:35[22m [34m[build][39m Building static entrypoints...
+[2m20:05:36[22m [34m[vite][39m [32mΓ£ô built in 831ms[39m
+[2m20:05:36[22m [34m[build][39m [32mΓ£ô Completed in 860ms.[39m
+
+[42m[30m generating static routes [39m[49m
+[2m20:05:36[22m [32mΓû╢[39m src/pages/about.astro
+[2m20:05:36[22m   [34mΓööΓöÇ[39m [2m/about/index.html[22m [2m(+14ms)[22m 
+[2m20:05:36[22m [35m╬╗[39m src/pages/rss.xml.js
+[2m20:05:36[22m   [34mΓööΓöÇ[39m [2m/rss.xml[22m [2m(+6ms)[22m 
+[2m20:05:36[22m [32mΓû╢[39m src/pages/index.astro
+[2m20:05:36[22m   [34mΓööΓöÇ[39m [2m/index.html[22m [2m(+5ms)[22m 
+[2m20:05:36[22m [32mΓû╢[39m src/pages/[...slug].astro
+[2m20:05:36[22m   [34mΓö£ΓöÇ[39m [2m/1-why-powerpoint-fails-theatre/index.html[22m [2m(+3ms)[22m 
+[2m20:05:36[22m   [34mΓö£ΓöÇ[39m [2m/2-beyond-the-led-screen-byod-opera/index.html[22m [2m(+2ms)[22m 
+[2m20:05:36[22m   [34mΓööΓöÇ[39m [2m/3-how-we-protect-your-work/index.html[22m [2m(+4ms)[22m 
+[2m20:05:36[22m [32mΓ£ô Completed in 72ms.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-2.QhijURy7_1SoJbi.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(1/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-3.BfPmoNMH_Zh1nKw.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(2/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-1b.COaat3yK_ZJ7NVn.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(3/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-placeholder-about.BtEdEmGp_1cKsnD.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(4/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-2.QhijURy7_ZBCxRJ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(5/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-3.BfPmoNMH_TkdJF.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(6/7)[22m
+[2m20:05:36[22m   [32mΓû╢[39m /_astro/blog-1b.COaat3yK_1RElG3.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(7/7)[22m
+[2m20:05:36[22m [32mΓ£ô Completed in 5ms.
+[39m
+[2m20:05:36[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m20:05:36[22m [34m[build][39m 5 page(s) built in [1m1.41s[22m
+[2m20:05:36[22m [34m[build][39m [1mComplete![22m
