@@ -161,7 +161,7 @@ const posts = allPosts.slice(0, 3);
 						posts.map((post) => {
 							return (
 								<li>
-									<a href={`${import.meta.env.BASE_URL}/${post.slug || post.id}/`}>
+									<a href={`${import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL}/${post.slug || post.id}/`}>
 										<div class="img-container">
                                             {post.data.heroImage ? (
                                                 <Image 
@@ -194,7 +194,7 @@ const posts = allPosts.slice(0, 3);
 						})
 					}
 				</ul>
-				<a href={`${import.meta.env.BASE_URL}/blog/`} class="view-all-link">View All Articles →</a>
+				<a href={`${import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL}/blog/`} class="view-all-link">View All Articles →</a>
 			</section>
 		</main>
 		<Footer />
