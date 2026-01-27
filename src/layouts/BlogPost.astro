@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
@@ -12,7 +11,15 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(heroImage || '/blog-placeholder-1.jpg', Astro.url);
+// Handle both relative paths and absolute paths
+const heroImageUrl = heroImage
+  ? (typeof heroImage === 'string' 
+    ? (heroImage.startsWith('http')
+      ? heroImage
+      : `${Astro.base}content/blog/${heroImage.replace('./', '')}`)
+    : heroImage.src)
+  : `${Astro.base}blog-placeholder-1.jpg`;
+const socialImageURL = new URL(heroImageUrl, Astro.url);
 
 const schema = JSON.stringify({
   "@context": "https://schema.org",
@@ -47,51 +54,51 @@ const fullSchema = isSecurityPost ? [JSON.parse(schema), faqSchema] : [JSON.pars
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 860px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 3rem 1rem;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 2em;
-				padding: 0;
-				text-align: left; /* Left align */
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0.5rem 0 0.5em 0;
-				font-size: 1.8em;
-				font-weight: 800; /* Bolder */
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-				font-size: 0.95rem;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
+		<head>
+			<BaseHead title={title} description={description} />
+			<script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />
+			<style>
+				main {
+					width: calc(100% - 2em);
+					max-width: 100%;
+					margin: 0;
+				}
+				.hero-image {
+					width: 100%;
+				}
+				.hero-image img {
+					display: block;
+					margin: 0 auto;
+					border-radius: 12px;
+					box-shadow: var(--box-shadow);
+				}
+				.prose {
+					width: 860px;
+					max-width: calc(100% - 2em);
+					margin: auto;
+					padding: 3rem 1rem;
+					color: rgb(var(--gray-dark));
+				}
+				.title {
+					margin-bottom: 2em;
+					padding: 0;
+					text-align: left;
+					line-height: 1;
+				}
+				.title h1 {
+					margin: 0.5rem 0 0.5em 0;
+					font-size: 1.8em;
+					font-weight: 800;
+				}
+				.date {
+					margin-bottom: 0.5em;
+					color: rgb(var(--gray));
+					font-size: 0.95rem;
+				}
+				.last-updated-on {
+					font-style: italic;
+				}
+			</style>
 	</head>
 
 	<body>
@@ -99,7 +106,7 @@ const fullSchema = isSecurityPost ? [JSON.parse(schema), faqSchema] : [JSON.pars
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <img width="1020" height="510" src={heroImageUrl} alt={title} />}
 				</div>
 				<div class="prose">
 					<div class="title">

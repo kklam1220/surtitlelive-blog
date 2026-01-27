@@ -2,7 +2,7 @@
 title: 'Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?'
 description: 'PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theater subtitle and surtitle software.'
 pubDate: '2025-12-31'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+heroImage: './blog-1.jpg'
 tags: ['PowerPoint', 'Theatre Tech', 'Surtitles', 'Workflow']
 ---
 

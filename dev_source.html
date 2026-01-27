@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-5tznm7mj> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/blogfavicon.ico"><link rel="icon" type="image/png" sizes="192x192" href="/blogfavicon-192.png"><link rel="sitemap" href="https://surtitlelive.com/undefined/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="SurtitleLive Blog" href="https://surtitlelive.com/undefined/rss.xml"><meta name="generator" content="Astro v5.16.6"><!-- Font preloads --><link rel="preload" href="/blogfonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/blogfonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://surtitlelive.com/blog/blog/"><!-- Primary Meta Tags --><title>SurtitleLive Blog</title><meta name="title" content="SurtitleLive Blog"><meta name="description" content="News, tutorials, and insights about live subtitling and theatre technology."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="http://localhost:4321/blog/blog/"><meta property="og:title" content="SurtitleLive Blog"><meta property="og:description" content="News, tutorials, and insights about live subtitling and theatre technology."><meta property="og:image" content="http://localhost:4321/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/assets/blog-placeholder-1.jpg?origWidth=960&#38;origHeight=480&#38;origFormat=jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="http://localhost:4321/blog/blog/"><meta property="twitter:title" content="SurtitleLive Blog"><meta property="twitter:description" content="News, tutorials, and insights about live subtitling and theatre technology."><meta property="twitter:image" content="http://localhost:4321/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/assets/blog-placeholder-1.jpg?origWidth=960&#38;origHeight=480&#38;origFormat=jpg"><style data-vite-dev-id="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/styles/global.css">/* Global Styles matching SurtitleLive Main Site */
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+	--accent: #E0B44A;
+	/* Gold */
+	--accent-dark: #b89133;
+	--black: 15, 18, 25;
+	--gray: 96, 115, 159;
+	--gray-light: 229, 233, 240;
+	--gray-dark: 34, 41, 57;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/blog/fonts/atkinson-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/blog/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background-color: var(--background);
+	color: var(--foreground);
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+/* Layout */
+main {
+	width: 960px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: #000;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+/* Header & Nav */
+header {
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(4px);
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	padding: 1rem 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+nav a {
+	padding: 0.5rem 1rem;
+	color: #374151;
+	/* gray-700 */
+	font-weight: 500;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a.active {
+	color: #000;
+	font-weight: 700;
+}
+
+/* Footer */
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 3rem 1rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+
+footer a {
+	color: #9ca3af;
+	/* gray-400 */
+	margin: 0 1rem;
+}
+
+footer a:hover {
+	color: #facc15;
+	/* yellow-400 */
+}
+
+/* Blog Posts */
+article img {
+	border-radius: 8px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	margin: 2rem 0;
+}
+
+.prose {
+	max-width: 65ch;
+	margin: 0 auto;
+}
+
+.prose a {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	color: var(--accent-dark);
+}
+
+.prose a:hover {
+	color: var(--black);
+	text-decoration-thickness: 2px;
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.date {
+	color: #6b7280;
+	margin-bottom: 2rem;
+}
+
+/* Code Blocks */
+pre {
+	padding: 1.5em;
+	border-radius: 8px;
+	background-color: #1a1a1a;
+	color: #fff;
+	overflow-x: auto;
+}</style>
+<style data-vite-dev-id="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro?astro&#38;type=style&#38;index=0&#38;lang.css">footer[data-astro-cid-sz7xmlte]{background-color:black;color:white;padding:3rem 1rem;text-align:center;margin-top:auto}.container[data-astro-cid-sz7xmlte]{max-width:1200px;margin:0 auto}p[data-astro-cid-sz7xmlte]{color:#9ca3af;margin-bottom:1.5rem}.links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:2rem}a[data-astro-cid-sz7xmlte]{color:#9ca3af;text-decoration:none;transition:color 0.2s}a[data-astro-cid-sz7xmlte]:hover{color:#facc15}</style>
+<style data-vite-dev-id="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/HeaderLink.astro?astro&#38;type=style&#38;index=0&#38;lang.css">a[data-astro-cid-eimmu3lg]{display:inline-block;text-decoration:none}a[data-astro-cid-eimmu3lg].active{font-weight:bolder;text-decoration:underline}</style>
+<style data-vite-dev-id="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro?astro&#38;type=style&#38;index=0&#38;lang.css">header[data-astro-cid-3ef6ksr2]{margin:0;background:white;box-shadow:0 2px 8px rgba(var(--black),5%)}nav[data-astro-cid-3ef6ksr2]{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;max-width:1400px;margin:0 auto}.internal-links[data-astro-cid-3ef6ksr2]{display:flex;gap:2rem}.internal-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{color:#374151;font-weight:500;text-decoration:none;font-size:0.875rem}.internal-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]:hover,.internal-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{color:black}.auth-buttons[data-astro-cid-3ef6ksr2]{display:flex;align-items:center;gap:1.5rem}.login-link[data-astro-cid-3ef6ksr2]{color:#374151;font-weight:500;font-size:0.875rem}.login-link[data-astro-cid-3ef6ksr2]:hover{color:black}.signup-btn[data-astro-cid-3ef6ksr2]{background-color:black;color:white;padding:0.5rem 1.2rem;border-radius:6px;font-weight:600;font-size:0.875rem;transition:background-color 0.2s}.signup-btn[data-astro-cid-3ef6ksr2]:hover{background-color:#333;color:white;text-decoration:none}@media (max-width: 720px){nav[data-astro-cid-3ef6ksr2]{flex-direction:column;gap:1rem}.internal-links[data-astro-cid-3ef6ksr2]{font-size:0.9em;gap:1rem}.auth-buttons[data-astro-cid-3ef6ksr2]{display:none}}</style>
+<style data-vite-dev-id="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro?astro&#38;type=style&#38;index=0&#38;lang.css">main[data-astro-cid-5tznm7mj]{width:960px}ul[data-astro-cid-5tznm7mj]{display:flex;flex-wrap:wrap;gap:2rem;list-style-type:none;margin:0;padding:0}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]{width:calc(50% - 1rem)}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj] [data-astro-cid-5tznm7mj]{text-decoration:none;transition:0.2s ease}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]:first-child{width:100%;margin-bottom:1rem;text-align:center}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]:first-child img[data-astro-cid-5tznm7mj]{width:100%}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]:first-child .title[data-astro-cid-5tznm7mj]{font-size:2.369rem}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj] img[data-astro-cid-5tznm7mj]{margin-bottom:0.5rem;border-radius:12px}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj] a[data-astro-cid-5tznm7mj]{display:block}.title[data-astro-cid-5tznm7mj]{margin:0;color:rgb(var(--black));line-height:1}.date[data-astro-cid-5tznm7mj]{margin:0;color:rgb(var(--gray))}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj] a[data-astro-cid-5tznm7mj]:hover h4[data-astro-cid-5tznm7mj],ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj] a[data-astro-cid-5tznm7mj]:hover .date[data-astro-cid-5tznm7mj]{color:rgb(var(--accent))}ul[data-astro-cid-5tznm7mj] a[data-astro-cid-5tznm7mj]:hover img[data-astro-cid-5tznm7mj]{box-shadow:var(--box-shadow)}@media (max-width: 720px){ul[data-astro-cid-5tznm7mj]{gap:0.5em}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]{width:100%;text-align:center}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]:first-child{margin-bottom:0}ul[data-astro-cid-5tznm7mj] li[data-astro-cid-5tznm7mj]:first-child .title[data-astro-cid-5tznm7mj]{font-size:1.563em}}</style><script type="module" src="/@vite/client"></script>
+<script type="module" src="/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/node_modules/astro/dist/runtime/client/dev-toolbar/entrypoint.js?v=d3282246"></script>
+<script>window.__astro_dev_toolbar__ = {"root":"C:\\Users\\MSI\\Desktop\\SurtitleLive_v2\\blog\\","version":"5.16.6","latestAstroVersion":"5.16.15","debugInfo":"Astro                    v5.16.6\nNode                     v22.15.0\nSystem                   Windows (x64)\nPackage Manager          npm\nOutput                   static\nAdapter                  none\nIntegrations             @astrojs/mdx\n                         @astrojs/sitemap"}</script>
+<script type="module" src="/src/styles/global.css"></script>
+<script type="module" src="/src/components/Footer.astro?astro&type=style&index=0&lang.css"></script>
+<script type="module" src="/src/components/HeaderLink.astro?astro&type=style&index=0&lang.css"></script>
+<script type="module" src="/src/components/Header.astro?astro&type=style&index=0&lang.css"></script>
+<script type="module" src="/src/pages/blog/index.astro?astro&type=style&index=0&lang.css"></script></head> <body data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="113:8"> <header data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="6:9"> <nav data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="7:7"> <div class="logo-container" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="8:31"> <a href="https://www.surtitlelive.com" aria-label="SurtitleLive home" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="9:74"> <img src="/logo/New_logo.png" alt="SurtitleLive Logo" height="50" style="height: 50px; width: auto;" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="10:6"> </a> </div> <div class="internal-links" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="14:31"> <a href="https://www.surtitlelive.com/features" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="15:52">Features</a> <a href="https://www.surtitlelive.com/pricing" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="16:51">Pricing</a> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/HeaderLink.astro" data-astro-source-loc="12:74"> Blog </a>  <a href="https://www.surtitlelive.com/contact" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="18:51">Contact Us</a> </div> <div class="auth-buttons" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="21:29"> <a href="https://www.surtitlelive.com/auth/login" class="login-link" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="22:73">Login</a> <a href="https://www.surtitlelive.com/auth/register" class="signup-btn" data-astro-cid-3ef6ksr2 data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Header.astro" data-astro-source-loc="23:76">Sign Up</a> </div> </nav> </header>  <main data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="115:9"> <section data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="116:13"> <ul data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="117:9"> <li data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="120:12"> <a href="/blog/3-how-we-protect-your-work/" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="121:74"> <img src="/blog/_image?href=%2F%40fs%2FC%3A%2FUsers%2FMSI%2FDesktop%2FSurtitleLive_v2%2Fblog%2Fsrc%2Fcontent%2Fblog%2Fblog-3.jpg%3ForigWidth%3D2419%26origHeight%3D1536%26origFormat%3Djpg&#38;w=720&#38;h=360&#38;f=webp" data-image-component="true" alt="Protecting Theatre IP: How SurtitleLive Secures Your Scripts and Translations" data-astro-cid-5tznm7mj="true" loading="lazy" decoding="async" fetchpriority="auto" width="720" height="360" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <h4 class="title" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="125:28">Protecting Theatre IP: How SurtitleLive Secures Your Scripts and Translations</h4> <p class="date" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="126:26"> <time datetime="2026-01-25T00:00:00.000Z" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/FormattedDate.astro" data-astro-source-loc="9:37"> Jan 24, 2026 </time> </p> </a> </li><li data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="120:12"> <a href="/blog/2-beyond-the-led-screen-byod-opera/" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="121:74"> <img src="/blog/_image?href=%2F%40fs%2FC%3A%2FUsers%2FMSI%2FDesktop%2FSurtitleLive_v2%2Fblog%2Fsrc%2Fcontent%2Fblog%2Fblog-2.jpg%3ForigWidth%3D897%26origHeight%3D545%26origFormat%3Djpg&#38;w=720&#38;h=360&#38;f=webp" data-image-component="true" alt="Subtitles Without Borders: Empowering Flexible Performance Spaces with BYOD" data-astro-cid-5tznm7mj="true" loading="lazy" decoding="async" fetchpriority="auto" width="720" height="360" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <h4 class="title" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="125:28">Subtitles Without Borders: Empowering Flexible Performance Spaces with BYOD</h4> <p class="date" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="126:26"> <time datetime="2026-01-24T00:00:00.000Z" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/FormattedDate.astro" data-astro-source-loc="9:37"> Jan 23, 2026 </time> </p> </a> </li><li data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="120:12"> <a href="/blog/1-why-powerpoint-fails-theatre/" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="121:74"> <img src="/blog/_image?href=%2F%40fs%2FC%3A%2FUsers%2FMSI%2FDesktop%2FSurtitleLive_v2%2Fblog%2Fsrc%2Fcontent%2Fblog%2Ffavicon-192.png%3ForigWidth%3D766%26origHeight%3D478%26origFormat%3Dpng&#38;w=720&#38;h=360&#38;f=webp" data-image-component="true" alt="Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?" data-astro-cid-5tznm7mj="true" loading="lazy" decoding="async" fetchpriority="auto" width="720" height="360" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <h4 class="title" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="125:28">Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?</h4> <p class="date" data-astro-cid-5tznm7mj data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/pages/blog/index.astro" data-astro-source-loc="126:26"> <time datetime="2025-12-31T00:00:00.000Z" data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/FormattedDate.astro" data-astro-source-loc="9:37"> Dec 30, 2025 </time> </p> </a> </li> </ul> </section> </main> <footer data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="5:9"> <div class="container" data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="6:25"> <p data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="7:6">&copy; 2026 SurtitleLive. All rights reserved.</p> <div class="links" data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="8:22"> <a href="https://www.surtitlelive.com/privacy" data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="9:51">Privacy</a> <a href="https://www.surtitlelive.com/terms" data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="10:49">Terms</a> <a href="https://www.surtitlelive.com/contact" data-astro-cid-sz7xmlte data-astro-source-file="C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/components/Footer.astro" data-astro-source-loc="11:51">Contact</a> </div> </div> </footer>  </body></html>

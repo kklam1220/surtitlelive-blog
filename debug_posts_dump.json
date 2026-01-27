@@ -1,0 +1,50 @@
+[
+  {
+    "id": "3-how-we-protect-your-work",
+    "body_len": 5264,
+    "data": {
+      "title": "Protecting Theatre IP: How SurtitleLive Secures Your Scripts and Translations",
+      "description": "How SurtitleLive secures your scripts and translations with on-demand streaming and military-grade encryption.",
+      "pubDate": "2026-01-25T00:00:00.000Z",
+      "heroImage": {
+        "src": "/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/content/blog/blog-3.jpg?origWidth=2419&origHeight=1536&origFormat=jpg",
+        "width": 2419,
+        "height": 1536,
+        "format": "jpg"
+      }
+    },
+    "collection": "blog"
+  },
+  {
+    "id": "1-why-powerpoint-fails-theatre",
+    "body_len": 4676,
+    "data": {
+      "title": "Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?",
+      "description": "PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theater subtitle and surtitle software.",
+      "pubDate": "2025-12-31T00:00:00.000Z",
+      "heroImage": {
+        "src": "/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/content/blog/favicon-192.png?origWidth=766&origHeight=478&origFormat=png",
+        "width": 766,
+        "height": 478,
+        "format": "png"
+      }
+    },
+    "collection": "blog"
+  },
+  {
+    "id": "2-beyond-the-led-screen-byod-opera",
+    "body_len": 4404,
+    "data": {
+      "title": "Subtitles Without Borders: Empowering Flexible Performance Spaces with BYOD",
+      "description": "Explore the roles of LED surtitles and BYOD mobile subtitles in modern performance. Learn how to choose the best accessibility tool for touring, heritage sites, and multilingual theatre.",
+      "pubDate": "2026-01-24T00:00:00.000Z",
+      "heroImage": {
+        "src": "/@fs/C:/Users/MSI/Desktop/SurtitleLive_v2/blog/src/content/blog/blog-2.jpg?origWidth=897&origHeight=545&origFormat=jpg",
+        "width": 897,
+        "height": 545,
+        "format": "jpg"
+      }
+    },
+    "collection": "blog"
+  }
+]
