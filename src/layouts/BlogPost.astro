@@ -8,18 +8,13 @@ import Header from '../components/Header.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 
+import { Image } from 'astro:assets';
+
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-// Handle both relative paths and absolute paths
-const heroImageUrl = heroImage
-  ? (typeof heroImage === 'string' 
-    ? (heroImage.startsWith('http')
-      ? heroImage
-      : `${Astro.base}content/blog/${heroImage.replace('./', '')}`)
-    : heroImage.src)
-  : `${Astro.base}blog-placeholder-1.jpg`;
-const socialImageURL = new URL(heroImageUrl, Astro.url);
+const socialImageURL = new URL(heroImage?.src ?? '/blog-placeholder-1.jpg', Astro.url);
+
 
 const schema = JSON.stringify({
   "@context": "https://schema.org",
@@ -106,7 +101,7 @@ const fullSchema = isSecurityPost ? [JSON.parse(schema), faqSchema] : [JSON.pars
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width="1020" height="510" src={heroImageUrl} alt={title} />}
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} />}
 				</div>
 				<div class="prose">
 					<div class="title">
