@@ -15,16 +15,17 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = FallbackImage } = Astro.props;
-const normalizedBase = Astro.base === '/' ? '' : Astro.base;
-const rssUrl = new URL(`${normalizedBase}/rss.xml`, Astro.site);
-const sitemapUrl = new URL(`${normalizedBase}/sitemap-index.xml`, Astro.site);
+const baseUrl = import.meta.env.BASE_URL ?? '/';
+const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const rssUrl = new URL(`${normalizedBase}rss.xml`, Astro.site);
+const sitemapUrl = new URL(`${normalizedBase}sitemap-index.xml`, Astro.site);
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
-<link rel="icon" type="image/png" sizes="192x192" href={`${import.meta.env.BASE_URL}favicon-192.png`} />
+<link rel="icon" href={`${normalizedBase}favicon.ico`} />
+<link rel="icon" type="image/png" sizes="192x192" href={`${normalizedBase}favicon-192.png`} />
 <link rel="sitemap" href={sitemapUrl} />
 <link
 	rel="alternate"
@@ -35,8 +36,8 @@ const sitemapUrl = new URL(`${normalizedBase}/sitemap-index.xml`, Astro.site);
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href={`${normalizedBase}fonts/atkinson-regular.woff`} as="font" type="font/woff" crossorigin />
+<link rel="preload" href={`${normalizedBase}fonts/atkinson-bold.woff`} as="font" type="font/woff" crossorigin />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

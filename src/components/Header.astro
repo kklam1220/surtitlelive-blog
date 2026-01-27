@@ -1,6 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+const baseUrl = import.meta.env.BASE_URL ?? '/';
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <header>
@@ -14,7 +17,7 @@ import { SITE_TITLE } from '../consts';
 		<div class="internal-links">
 			<a href="https://www.surtitlelive.com/features">Features</a>
 			<a href="https://www.surtitlelive.com/pricing">Pricing</a>
-			<HeaderLink href="/">Blog</HeaderLink>
+			<HeaderLink href={normalizedBaseUrl}>Blog</HeaderLink>
 			<a href="https://www.surtitlelive.com/contact">Contact Us</a>
 		</div>
 
