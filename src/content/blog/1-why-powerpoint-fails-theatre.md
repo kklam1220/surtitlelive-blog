@@ -44,7 +44,9 @@ Instead of manual formatting, SurtitleLive uses **AI-powered ingestion** to stre
 
 You upload your script, and our engine instantly analyzes the structure to identify character names and dialogue. What used to take a full afternoon now takes minutes.
 
-![SurtitleLive Cockpit](./blog-1-2.jpg)
+<p align="center">
+  <img src="./blog-1-2.jpg" alt="SurtitleLive Cockpit" width="80%" />
+</p>
 
 ### 2. Reliable Non-Linear Navigation
 Because theatre is unpredictable, our interface—the **SurtitleLive Cockpit**—is built for precision. We don't use a linear clicker logic.
