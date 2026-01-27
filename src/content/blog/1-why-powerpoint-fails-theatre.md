@@ -2,7 +2,7 @@
 title: 'Theatre is Live. Why Are We Still Using Static Slides for Surtitles and Subtitles?'
 description: 'PowerPoint was designed for boardrooms, not Broadway. Explore how SurtitleLive is reimagining theater subtitle and surtitle software.'
 pubDate: '2025-12-31'
-heroImage: './blog-1-1.jpg'
+heroImage: '/blog/images/blog-1-1.jpg'
 tags: ['PowerPoint', 'Theatre Tech', 'Surtitles', 'Workflow']
 ---
 
@@ -45,7 +45,7 @@ Instead of manual formatting, SurtitleLive uses **AI-powered ingestion** to stre
 You upload your script, and our engine instantly analyzes the structure to identify character names and dialogue. What used to take a full afternoon now takes minutes.
 
 <p align="center">
-  <img src="./blog-1-2.jpg" alt="SurtitleLive Cockpit" width="80%" />
+  <img src="/blog/images/blog-1-2.jpg" alt="SurtitleLive Cockpit" width="80%" />
 </p>
 
 ### 2. Reliable Non-Linear Navigation
