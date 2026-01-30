@@ -27,7 +27,7 @@ Recently, we had the honor of supporting the Calgary Hong Kong Arts & Culture As
 ![The custom mode SurtitleLive built for the performance team](./blog-4.1.jpg)
 *The custom mode SurtitleLive built for the performance team.*
 
-They wanted to perform a famous, award-winning play from Hong Kong in its original Cantonese. In the past, this might have been a risk. Would people in Calgary who don't speak Cantonese come to see it?
+They wanted to perform an award-winning play from Hong Kong in its original Cantonese. In the past, this might have been a risk. Would people in Calgary who don't speak Cantonese come to see it?
 
 The result was a beautiful bridge between cultures. By using SurtitleLive, the association provided a clear English subtitle stream directly to the audience’s devices. This achieved two incredible things:
 
