@@ -22,7 +22,7 @@ Many immigrant artists feel they must perform in English to find an audience. Th
 
 ## Success Story: From Hong Kong to Calgary
 
-Recently, we had the honor of supporting the Calgary Hong Kong Arts & Culture Association (CHKACA) in Canada.
+Recently, we had the honor of supporting the Calgary Hong Kong Arts & Culture Association (CHACA) in Canada.
 
 ![The custom mode SurtitleLive built for the performance team](./blog-4.1.jpg)
 *The custom mode SurtitleLive built for the performance team.*
