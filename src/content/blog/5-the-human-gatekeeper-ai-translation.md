@@ -48,13 +48,17 @@ The difference is subtle but crucial. The second version preserves rhythm, weigh
 
 This distinction illustrates a broader truth: AI can translate meaning, but it does not automatically translate dramatic intention. On stage, intention is everything.
 
+<img src="./blog-5.2.jpg" alt="A stage performance from The Wishing Stone" style="width: 100%; height: auto; display: block; margin: 2rem auto;" />
+*Theatre translation requires capturing the performative intention beyond just the literal words.*
+
 ## 2. Theatre Translation Has Physical Constraints
 
 Surtitles are not read in isolation. They are read while the audience watches actors move, speak, and breathe.
 
 Professional surtitling follows strict readability principles, often around 15–20 characters per second. Each line must match the timing of delivery and the audience’s ability to absorb text without losing focus on the stage.
 
-<img src="./blog-5.2.jpg" alt="Theatre translation requires careful timing and physical consideration" style="width: 100%; height: auto; display: block; margin: 2rem auto;" />
+Professional surtitling follows strict readability principles, often around 15–20 characters per second. Each line must match the timing of delivery and the audience’s ability to absorb text without losing focus on the stage.
+
 *Generic AI translation tools optimize for grammatical completeness, not performability.*
 
 A sentence that reads well on paper may fail in performance. If it is too long, the audience finishes reading after the actor has moved on. If it appears too early, it reveals intention before performance does. If it is too dense, viewers look down instead of watching the scene.
