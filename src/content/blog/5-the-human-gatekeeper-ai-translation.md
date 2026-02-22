@@ -48,7 +48,7 @@ The difference is subtle but crucial. The second version preserves rhythm, weigh
 
 This distinction illustrates a broader truth: AI can translate meaning, but it does not automatically translate dramatic intention. On stage, intention is everything.
 
-<img src="./blog-5.2.jpg" alt="A stage performance from The Wishing Stone" style="width: 100%; height: auto; display: block; margin: 2rem auto;" />
+![A stage performance from The Wishing Stone](./blog-5.2.jpg)
 *Theatre translation requires capturing the performative intention beyond just the literal words.*
 
 ## 2. Theatre Translation Has Physical Constraints
