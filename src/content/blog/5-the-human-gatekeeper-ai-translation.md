@@ -57,8 +57,6 @@ Surtitles are not read in isolation. They are read while the audience watches ac
 
 Professional surtitling follows strict readability principles, often around 15–20 characters per second. Each line must match the timing of delivery and the audience’s ability to absorb text without losing focus on the stage.
 
-Professional surtitling follows strict readability principles, often around 15–20 characters per second. Each line must match the timing of delivery and the audience’s ability to absorb text without losing focus on the stage.
-
 *Generic AI translation tools optimize for grammatical completeness, not performability.*
 
 A sentence that reads well on paper may fail in performance. If it is too long, the audience finishes reading after the actor has moved on. If it appears too early, it reveals intention before performance does. If it is too dense, viewers look down instead of watching the scene.
