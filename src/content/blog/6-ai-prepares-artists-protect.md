@@ -2,7 +2,7 @@
 title: 'AI Theatre Subtitles: How to Create Professional Surtitles Beyond PowerPoint'
 description: 'Learn how to create professional theatre subtitles with AI. Discover a modern surtitling workflow beyond PowerPoint that keeps artists in control of live performance.'
 pubDate: '2026-02-23'
-heroImage: '/blog/images/blog-6-1.png'
+heroImage: './blog-6-1.png'
 tags: ['AI in Theatre', 'Translation Workflow', 'Surtitling', 'SurtitleLive']
 ---
 <script type="application/ld+json">
