@@ -17,7 +17,7 @@ tags: ['AI in Theatre', 'Translation Workflow', 'Surtitling', 'SurtitleLive']
 }
 </script>
 
-**Core Summary**: Say goodbye to the pain of manual subtitle creation. SurtitleLive is a specialized AI-assisted workflow for the rehearsal room and opening night that completely replaces legacy PowerPoint systems. Let AI handle `.docx` or `.txt` script parsing and formatting, while human artists retain total control over the live subtitle cues and emotion.
+**Core Summary**: Say goodbye to the pain of manual subtitle creation. SurtitleLive is a specialized AI-assisted workflow for the rehearsal room and opening night that completely replaces legacy PowerPoint systems. Let AI handle `.docx` script parsing and formatting, while human artists retain total control over the live subtitle cues and emotion.
 
 <br/>
 
@@ -44,17 +44,17 @@ Human translators and directors intuitively grasp these elements. The final crea
 | **Subtitle Creation** | Manual typing, time-consuming formatting | AI automatically parses scripts and segments lines |
 | **Translation Workflow** | Translated externally, pasted back manually | Integrated AI Drafts; human translators directly refine |
 | **Live Control** | Linear playback, hard to modify mid-show | Cued instantly to the performance's rhythm; flexible jumping |
-| **Format Standards** | Difficult to enforce uniform character counts and lines | AI automatically enforces professional subtitle format standards directly within the live engine |
+| **Format Standards & Export** | Locked into slides; difficult to extract | Built-in character counting and seamless export to Excel (.xlsx) and PowerPoint (.pptx) |
 
 ## Eliminating the Mechanical Burden
 
 In traditional workflows, translation and subtitling often demand 70% of time spent on technical processing, leaving only 30% for artistic refinement. SurtitleLive uses AI to redefine this ratio:
 
 ### 1. Smart Script Parsing
-Extracting and isolating dialogue from a dense script document (`.docx`, `.txt`, etc.) is exhausting. AI instantly detects character dialogue and automatically separates it from stage directions, eliminating hours of manual labor.
+Extracting and isolating dialogue from a dense script document (`.docx`) is exhausting. AI instantly detects character dialogue and automatically separates it from stage directions, eliminating hours of manual labor.
 
-### 2. Constraint-Based Adaptation
-Based on strict screen physical limits, AI provides multiple adaptive compression suggestions for subtitles, guaranteeing readability without sacrificing meaning.
+### 2. Manual Control & Reordering
+When a director changes a line in the rehearsal room, rigid slideshows break. SurtitleLive allows you to easily merge lines, split them, and use simple drag-and-drop reordering to adapt to live changes instantly.
 
 ### 3. Rapid Multi-Lingual Generation
 Need to support international audiences? Once the AI has parsed and timed the original text, generating synchronized translations for a second or third language takes seconds, rather than requiring an entirely separate manual workflow.
