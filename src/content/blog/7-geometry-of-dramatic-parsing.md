@@ -1,19 +1,32 @@
 ---
-title: 'The Geometry of Script Parsing for Theatre Subtitles and Supertitles'
-description: 'Discover why theatre script parsing is a geometry problem, not just language. Learn how SurtitleLive moves from semantic guessing to layout-first parsing for 100% reliable cue detection.'
+title: 'The Geometry of Script Parsing: How Theatre Subtitles and Supertitles Detect Dialogue'
+description: 'Discover why theatre script parsing is a geometry problem, not just language. Learn how SurtitleLive uses layout-first parsing to detect dialogue blocks and generate reliable subtitle cues for theatre surtitles and captions.'
 pubDate: '2026-03-11'
 heroImage: './script-parsing-theatre-subtitles.png'
-tags: ['Technical Architecture', 'Script Analysis', 'AI Systems', 'SurtitleLive']
+heroImageAlt: 'script parsing pipeline for theatre subtitles and surtitles'
+tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'AI Systems', 'SurtitleLive']
 ---
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "SurtitleLive",
-  "operatingSystem": "Web/Desktop",
-  "applicationCategory": "MultimediaApplication",
-  "description": "Technical overview of SurtitleLive's script-parsing engine architecture for professional theatre subtitles.",
-  "featureList": "OOXML extraction, layout clustering, layout segmentation, three-tier AI model"
+  "@type": "TechArticle",
+  "headline": "The Geometry of Script Parsing: How Theatre Subtitles and Supertitles Detect Dialogue",
+  "datePublished": "2026-03-11",
+  "author": {
+    "@type": "Organization",
+    "name": "SurtitleLive"
+  },
+  "keywords": [
+    "theatre subtitles",
+    "surtitles",
+    "script parsing",
+    "subtitle cue detection",
+    "theatre technology"
+  ],
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "SurtitleLive"
+  }
 }
 </script>
 
@@ -24,32 +37,55 @@ Whether generating supertitles for opera, subtitles for stage productions, or li
 *   **When a line begins**
 *   **Where dialogue blocks appear in the script**
 
-At first glance, this sounds like a natural language processing problem. In practice, it isn't.
+At first glance, this sounds like a natural language processing problem. In practice, it isn't. During the development of **SurtitleLive v2**, we analyzed nearly 100 scripts from different languages and theatrical traditions. That process led us to a surprising conclusion: **A theatre script is not primarily linguistic data. It is spatial data.**
 
-During the development of **SurtitleLive v2**, we analyzed nearly 100 scripts from different languages and theatrical traditions, including English, German, French, Chinese, Cantonese, and Japanese. That process led us to a surprising conclusion:
+## 1. The Western Script Problem: Structure without Punctuation
 
-**A theatre script is not primarily linguistic data. It is spatial data.**
+A typical English theatrical script relies on layout conventions rather than punctuation to define roles.
 
-If a parser treats scripts as plain text, it will eventually hit an accuracy ceiling. For us, that ceiling appeared around 70% reliability for subtitle cue detection. The remaining 30% was not a language problem—it was a **layout problem**.
-
-## Why Script Parsing Matters for Subtitle and Supertitle Systems
-
-In a live performance environment, subtitle software does not simply display text. It must convert a script into a sequence of subtitle cues. For example, a simple block like:
+### Example: A typical stage script layout
 
 > **HAMLET**  
-> To be or not to be
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be, or not to be: that is the question.
+>
+> **OPHELIA**  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My lord, I have remembrances of yours.
 
-...must be interpreted correctly:
-*   **Character:** HAMLET
-*   **Subtitle cue:** "To be or not to be"
+For a human reader, the interpretation is obvious:
 
-Each detected dialogue block becomes a subtitle or supertitle cue displayed above the stage. If the parser misidentifies a dialogue block, the subtitle system will trigger the wrong cue during the performance. In live theatre, that is unacceptable.
+| Block | Interpretation |
+| :--- | :--- |
+| **HAMLET** | Character name |
+| **Indented text** | Dialogue |
+| **OPHELIA** | Character name |
 
-## Punctuation vs. Layout: A Cross-Language Discovery
+But for a parser that only sees plain text, the structure disappears. We recognize the patterns because character names appear in **ALL CAPS**, dialogue is **indented**, and blocks are separated by vertical spacing. The grammar of Western scripts is typographic, not linguistic.
 
-Our early parser experiments produced a surprising result. Performance varied dramatically depending on language.
+## 2. From Script Blocks to Subtitle Cues
 
-### Baseline Parsing Accuracy (2026-03)
+In a live performance environment, subtitle software does not simply display text. It must convert a script into a sequence of **subtitle cues**.
+
+Each detected dialogue block becomes a subtitle cue that can be triggered during a live performance. If the parser misidentifies a dialogue block, the subtitle system will trigger the wrong cue—a failure that is unacceptable in live theatre.
+
+## 3. Punctuation vs. Layout: A Cross-Language Discovery
+
+Performance varies dramatically depending on the language's reliance on explicit vs. implicit markers.
+
+### Chinese / Cantonese: Punctuation-Driven
+Chinese theatrical scripts often encode structure explicitly:
+
+> **張三：今天下雨。** (Zhang San: It is raining today.)  
+> **李四：真的嗎？** (Li Si: Really?)  
+> **（他們望向窗外）** ((They look out the window.))
+
+| Pattern | Classification |
+| :--- | :--- |
+| **角色：台詞** (Character: Dialogue) | Dialogue |
+| **（...）** (Parentheses) | Stage direction |
+
+This punctuation-driven structure makes parsing almost trivial compared to Western formats.
+
+### Comparative Parsing Accuracy (2026-03)
 
 | Language / Format | Estimated Accuracy | Key Structural Signal | Parsing Bottleneck |
 | :--- | :--- | :--- | :--- |
@@ -58,73 +94,84 @@ Our early parser experiments produced a surprising result. Performance varied dr
 | **English (US/UK)** | ~73% | Implicit layout structure | Indentation & capitalization |
 | **German / French** | ~71% | Complex theatrical formatting | Ambiguous block boundaries |
 
-Chinese scripts are extremely easy to parse because the structure is explicitly encoded: `character + colon + dialogue`. But Western theatrical scripts work very differently.
+## 4. The Hidden Cost of Converting Scripts to Plain Text
 
-### The Western Script Problem
+Many subtitle systems process scripts by first converting documents to plain text, stripping away layout information.
 
-A typical English theatrical script relies on layout conventions rather than punctuation. Character names appear in **ALL CAPS**, dialogue is **indented**, and stage directions use **different indentation**.
+**Original formatted script:**
+> **HAMLET**  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be or not to be
 
-**The grammar of Western scripts is typographic, not linguistic.**
+**After plain text conversion:**
+`HAMLET To be or not to be`
 
-## The Hidden Cost of Converting Scripts to Plain Text
+Without indentation or block boundaries, the parser must rely on **semantic guessing** to determine whether "HAMLET" is a character name or part of the sentence.
 
-Many subtitle systems process scripts by first converting documents to plain text, stripping away indentation, alignment, and formatting. HAMLET'S speech may become: `HAMLET To be or not to be`.
+## 5. The Architectural Pivot: Layout-First Parsing
 
-Without layout signals, the system has only one option left: **semantic guessing**. And semantic guessing is dangerous when generating subtitle cues for live performances.
+Instead of asking "What does this sentence mean?", the machine asks: **"What does this text block look like geometrically?"**
 
-## The Architecture of Universal Parser v3
+By using **OOXML extraction** from `.docx` files, we retrieve precise layout attributes like indentation (measured in twips), capitalization flags, and paragraph styles.
 
-To address this, we redesigned the engine around a new principle. Instead of asking "What does this sentence mean?", the system asks:
+### Example: Layout signals extracted from a script
 
-**"What does this text block look like?"**
+**Block A:**
+*   `indent = 72pt`, `caps_ratio = 1.0`, `line_length = 8`
+*   **→ Classified as Character**
 
-Our pipeline prioritizes signals in this hierarchy:
-1.  **Layout**
-2.  **Structure**
-3.  **Sequence**
-4.  **Semantics**
+**Block B:**
+*   `indent = 36pt`, `caps_ratio = 0.2`, `line_length = 48`
+*   **→ Classified as Dialogue**
 
-This transforms script parsing into a **document geometry problem**.
+## 6. Stage Directions: When Typography Becomes Structure
 
-## Extracting Layout from Word Scripts (OOXML)
+In many theatrical scripts, stage directions are indicated purely through typography—often **italics**.
 
-Using **OOXML extraction**, we can retrieve precise layout attributes from `.docx` files, such as indentation (in twips), capitalization styles, and alignment. These geometric signals allow the parser to reconstruct the script's structure without "guessing" at the text.
+### Example: Typography as Structure
 
-## Layout Clustering and Segmentation
+> **HAMLET**  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be, or not to be.
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*He pauses and looks toward the audience.*
+>
+> **OPHELIA**  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My lord?
 
-The parser groups blocks with similar geometric properties—**Layout Clustering**. For example, blocks with specific indentation and caps_ratio are identified as character names, while others are identified as dialogue. 
+| Block | Interpretation |
+| :--- | :--- |
+| **HAMLET** | Character name |
+| **Indented sentence** | Dialogue |
+| **Italic text** | Stage direction |
 
-Scripts often contain distinct sections (main script, rehearsal notes, appendices). The parser performs **Layout Segmentation** to detect when formatting patterns change and adjusts its strategy accordingly.
+Once formatting disappears, the parser cannot distinguish between dialogue and narrative. Some scripts use even more minimal italic notes:
 
-## A Three-Tier AI Model for Reliable Subtitle Cue Detection
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*pause*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*turns away*
 
-Rather than removing AI, we repositioned it within a structured pipeline:
+These contain almost no linguistic cues, relying 100% on typographic style attributes like `italic=true`.
 
-*   **Tier 1 — Deterministic Rules:** Handles explicit formats (like `Character: Dialogue`) with near-perfect accuracy.
-*   **Tier 2 — AI Review:** Acts as a proofreader to validate uncertain classifications generated by rules.
-*   **Tier 3 — AI Classification:** Only highly ambiguous regions require full AI classification, anchored by examples from the same script.
+## 7. A Three-Tier AI Model for Reliable Cue Detection
 
-## Visualizing Script Structure: The Layout Map
+We repositioned AI as a reviewer rather than a guesser:
 
-To make parsing transparent, SurtitleLive will introduce a **Layout Map** interface. Users will see the structural blocks detected (e.g., `[Character]`, `[Dialogue]`, `[Action]`), allowing theatre technicians to verify the system's interpretation before opening night.
-
-## Toward a Golden Corpus
-
-To ensure long-term stability, we are building a **Golden Corpus** of theatrical script layouts—from classical Shakespearean styles to modern rehearsal drafts. Each archetype has regression tests to ensure that future updates never break existing subtitle workflows.
+*   **Tier 1 — Deterministic Rules:** Handles explicit formats with 100% accuracy.
+*   **Tier 2 — AI Review:** Acts as a proofreader to validate uncertain classifications. 
+    *   *Example:* `HAMLET (quietly)`. The system determines if "(quietly)" is a stage direction or dialogue based on document context.
+*   **Tier 3 — AI Classification:** Full classification for highly ambiguous regions, anchored by layout patterns found elsewhere in the same document.
 
 ## Conclusion
 
-Theatre scripts appear simple on the surface, but their meaning emerges from typography and spatial organization. For subtitle systems, understanding this geometry is essential. By moving from semantic guessing to layout-first parsing, SurtitleLive is building a system that delivers **the right subtitle cue, at the right moment.**
+Theatre scripts appear simple, but their meaning emerges from spatial organization. By moving from semantic guessing to layout-first parsing, **SurtitleLive** delivers **the right subtitle cue, at the right moment.**
 
 ---
 
 ## FAQ
 
-**Q: What is the difference between subtitles, captions, and supertitles?**  
-**A:** Subtitles translate dialogue, captions include sound effects/accessibility info, and supertitles (or surtitles) are projected above the stage during theatre or opera.
+**Q: What is a subtitle cue in theatre?**  
+**A:** A subtitle cue is the moment when a line of dialogue should appear on the subtitle display. Cue detection requires identifying dialogue blocks and speaker transitions within the script.
 
-**Q: How are theatre subtitles generated from scripts?**  
-**A:** Our system analyzes scripts to detect dialogue blocks and converts them into subtitle cues that can be triggered during live performances.
+**Q: How does the system handle inconsistent formatting?**  
+**A:** Our system clusters similar layouts. If a document profile changes, the parser performs Layout Segmentation to adapt its strategy in real-time.
 
 **Q: Why is layout important when parsing scripts for subtitles?**  
 **A:** Many scripts use indentation and spacing instead of punctuation to encode structure. A layout-first parser detects cues more reliably than semantic models alone.
