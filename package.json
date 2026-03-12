@@ -1,7 +1,7 @@
 {
   "name": "surtitlelive-blog",
   "type": "module",
-  "version": "v260221.01",
+  "version": "v260311.01",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
