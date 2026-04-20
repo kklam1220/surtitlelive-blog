@@ -238,6 +238,8 @@ The dedicated Cloudflare Pages compatibility layer is explicitly owned by `publi
 - `/blog/logo/*` -> `/blog/logo/*`
 - `/blog/:slug` and `/blog/:locale/:slug` -> root-output article paths
 
+Shared chrome assets should also be cache-busted when the compatibility contract changes. `src/components/Header.astro` now versions the logo URL from the latest `public/blog/logo/New_logo.png` and `public/_redirects` mtimes, so a Pages deploy that changes the compatibility layer does not keep serving a stale Cloudflare-cached logo.
+
 Compatibility-only App Router blog pages still exist under `web/src/app/blog/...` and `web/src/app/[locale]/blog/...`, but they are fallback redirects only. Locale fallbacks must preserve both locale and slug when they hand off to the dedicated blog origin.
 
 ## ✅ Build Contract Checks
