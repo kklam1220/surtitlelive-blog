@@ -94,6 +94,8 @@ if (!fs.existsSync(redirectsFile)) {
 const redirectsContent = fs.readFileSync(redirectsFile, 'utf8');
 for (const requiredRule of [
   '/blog/_astro/* /_astro/:splat 200',
+  '/blog/fonts/* /blog/fonts/:splat 200',
+  '/blog/logo/* /blog/logo/:splat 200',
   '/blog/:locale/:slug/ /:locale/:slug/ 200',
   '/blog/:slug/ /:slug/ 200',
   '/blog/ / 200',

@@ -226,10 +226,19 @@ The main SurtitleLive application links to this blog at `https://blog.surtitleli
 
 This blog links back to the main app using the canonical apex host `https://surtitlelive.com`, not `https://www.surtitlelive.com`.
 
-The main app rewrites `/blog/*` traffic to the dedicated Astro origin. The Astro app itself must therefore remain compatible with both:
+The main app keeps `/blog/*` canonical on the apex host through `web/src/proxy.ts`, which rewrites canonical `/blog/*` requests directly onto the dedicated blog origin's root-output paths before App Router routing runs. `web/next.config.ts` retains a secondary compatibility rewrite, but it is no longer the primary runtime guarantee. The Astro app itself must therefore remain compatible with both:
 
 - `https://surtitlelive.com/blog/*`
 - `https://blog.surtitlelive.com/blog/*`
+
+The dedicated Cloudflare Pages compatibility layer is explicitly owned by `public/_redirects`. That file must keep bridge rules for:
+
+- `/blog/_astro/*` -> `/_astro/*`
+- `/blog/fonts/*` -> `/blog/fonts/*`
+- `/blog/logo/*` -> `/blog/logo/*`
+- `/blog/:slug` and `/blog/:locale/:slug` -> root-output article paths
+
+Compatibility-only App Router blog pages still exist under `web/src/app/blog/...` and `web/src/app/[locale]/blog/...`, but they are fallback redirects only. Locale fallbacks must preserve both locale and slug when they hand off to the dedicated blog origin.
 
 ## ✅ Build Contract Checks
 

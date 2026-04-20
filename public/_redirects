@@ -1,4 +1,6 @@
 /blog/_astro/* /_astro/:splat 200
+/blog/fonts/* /blog/fonts/:splat 200
+/blog/logo/* /blog/logo/:splat 200
 /blog/favicon.ico /favicon.ico 200
 /blog/favicon-192.png /favicon-192.png 200
 /blog/rss.xml /rss.xml 200

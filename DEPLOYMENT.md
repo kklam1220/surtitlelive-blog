@@ -27,9 +27,13 @@ This only works because the deployment output must include [\_redirects](./publi
 - `/blog/:slug` -> `/:slug`
 - `/blog/:locale/:slug` -> `/:locale/:slug`
 - `/blog/_astro/*` -> `/_astro/*`
+- `/blog/fonts/*` -> `/blog/fonts/*`
+- `/blog/logo/*` -> `/blog/logo/*`
 - `/blog/rss.xml` / `/blog/sitemap-*.xml` -> root feed/sitemap outputs
 
 If `_redirects` is missing or stale, the custom domain will start returning homepage HTML for article/image URLs, which is exactly the failure mode where images disappear and article clicks loop back to the hub.
+
+On the product app side, `web/src/proxy.ts` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths before locale negotiation and App Router filesystem routes run. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only.
 
 ---
 
@@ -156,3 +160,11 @@ To ensure images load correctly in production:
     - article paths return article HTML, not the homepage hub
     - `_astro` assets return `image/*`, not `text/html`
     - `/blog/rss.xml` and `/blog/sitemap-index.xml` resolve through `_redirects` to the root feed/sitemap
+8.  If `https://surtitlelive.com/blog/<slug>/` returns the main-site 404 while the dedicated blog origin still works, inspect the web tier handoff first:
+    ```bash
+    curl -I https://surtitlelive.com/blog/7-geometry-of-dramatic-parsing/
+    ```
+    Expected result:
+    - the canonical apex article returns article HTML from the dedicated Astro origin
+    - it must not fall through to the Next.js main-site 404 page
+    - current SSOT owner for that handoff is `web/src/proxy.ts`, not App Router fallback pages
