@@ -144,7 +144,7 @@ const fullSchema = [
 	</head>
 
 	<body>
-		<Header />
+		<Header currentLocale={lang} localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
 		<main>
 			<article>
 				<div class="hero-image">

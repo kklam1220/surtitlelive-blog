@@ -167,7 +167,7 @@ const hreflangs = [
 		</style>
 	</head>
 	<body>
-		<Header />
+		<Header currentLocale="en" localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
 		<main>
 			<section>
 				<h1 class="section-title">Featured Articles</h1>

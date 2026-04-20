@@ -103,6 +103,8 @@ Published localized routes:
 - `/blog/<locale>/<slug>/` (article)
 - `/blog/<locale>/rss.xml` (localized feed)
 
+The blog now exposes a built-in language selector in `src/components/Header.astro`. It is intentionally Astro-native and independent from the main site's Next.js locale router, but it must stay aligned with the same 18 supported locales so users can switch language directly inside the blog without leaving the independent Pages deployment path.
+
 ## 🎨 Adding Images
 
 Place images in `src/assets/` and reference them in frontmatter:

@@ -1,0 +1,168 @@
+---
+import { BLOG_LOCALE_META, type BlogSupportedLocale, isBlogSupportedLocale } from '../i18n/locale-config';
+
+type LocaleLink = {
+	lang: string;
+	path: string;
+};
+
+interface Props {
+	currentLocale?: string;
+	localeLinks?: LocaleLink[];
+}
+
+const { currentLocale = 'en', localeLinks = [] } = Astro.props;
+
+const orderedLinks = localeLinks
+	.filter((item) => isBlogSupportedLocale(item.lang))
+	.sort((a, b) => {
+		if (a.lang === currentLocale) return -1;
+		if (b.lang === currentLocale) return 1;
+		if (a.lang === 'en') return -1;
+		if (b.lang === 'en') return 1;
+		return a.lang.localeCompare(b.lang);
+	}) as Array<{ lang: BlogSupportedLocale; path: string }>;
+
+const currentMeta = BLOG_LOCALE_META[(isBlogSupportedLocale(currentLocale) ? currentLocale : 'en') as BlogSupportedLocale];
+
+function formatLabel(locale: BlogSupportedLocale): string {
+	const meta = BLOG_LOCALE_META[locale];
+	return locale === 'en' ? `${meta.native} (Default)` : meta.native;
+}
+---
+
+{
+	orderedLinks.length > 1 ? (
+		<details class="language-selector">
+			<summary aria-label={`Current language: ${currentMeta.native}. Click to change.`}>
+				<span aria-hidden="true">{currentMeta.flag}</span>
+				<span class="label">{currentMeta.native}</span>
+				<span class="caret" aria-hidden="true">▾</span>
+			</summary>
+			<ul>
+				{
+					orderedLinks.map((item) => {
+						const meta = BLOG_LOCALE_META[item.lang];
+						const isActive = item.lang === currentLocale;
+						return (
+							<li>
+								<a href={item.path} class:list={[{ active: isActive }]} hreflang={item.lang}>
+									<span aria-hidden="true">{meta.flag}</span>
+									<span>{formatLabel(item.lang)}</span>
+								</a>
+							</li>
+						);
+					})
+				}
+				<li class="notice">Machine-translated UI. If any wording differs, English text prevails.</li>
+			</ul>
+		</details>
+	) : null
+}
+
+<style>
+	.language-selector {
+		position: relative;
+	}
+
+	.language-selector summary {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+		padding: 0.45rem 0.6rem;
+		border-radius: 0.5rem;
+		cursor: pointer;
+		list-style: none;
+		color: #374151;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.language-selector summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.language-selector summary:hover {
+		background: #f3f4f6;
+		color: #111827;
+	}
+
+	.language-selector .label {
+		white-space: nowrap;
+	}
+
+	.language-selector .caret {
+		font-size: 0.75rem;
+		color: #6b7280;
+	}
+
+	.language-selector[open] .caret {
+		transform: rotate(180deg);
+	}
+
+	.language-selector ul {
+		position: absolute;
+		right: 0;
+		top: calc(100% + 0.35rem);
+		width: 15rem;
+		max-height: 20rem;
+		overflow-y: auto;
+		margin: 0;
+		padding: 0.45rem 0;
+		list-style: none;
+		background: #fff;
+		border: 1px solid #e5e7eb;
+		border-radius: 0.9rem;
+		box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+		z-index: 100;
+	}
+
+	.language-selector li {
+		margin: 0;
+	}
+
+	.language-selector li a {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+		padding: 0.7rem 0.95rem;
+		color: #374151;
+		font-size: 0.875rem;
+		text-decoration: none;
+	}
+
+	.language-selector li a:hover,
+	.language-selector li a.active {
+		background: #f9fafb;
+		color: #111827;
+		font-weight: 600;
+	}
+
+	.language-selector .notice {
+		margin: 0.35rem 0.75rem 0;
+		padding: 0.7rem 0.8rem 0;
+		border-top: 1px solid #f3f4f6;
+		color: #6b7280;
+		font-size: 0.7rem;
+		line-height: 1.4;
+	}
+
+	@media (max-width: 720px) {
+		.language-selector {
+			width: 100%;
+		}
+
+		.language-selector summary {
+			justify-content: center;
+			width: 100%;
+			border: 1px solid #e5e7eb;
+		}
+
+		.language-selector ul {
+			position: static;
+			width: 100%;
+			margin-top: 0.5rem;
+			box-shadow: none;
+		}
+	}
+</style>

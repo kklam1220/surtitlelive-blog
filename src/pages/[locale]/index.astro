@@ -78,7 +78,7 @@ const hreflangs = [
     </style>
   </head>
   <body>
-    <Header />
+    <Header currentLocale={locale} localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
     <main>
       <h1>Blog ({locale})</h1>
       <p class="notice">Machine-translated UI. If any wording differs, English text prevails.</p>

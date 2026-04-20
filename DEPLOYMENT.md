@@ -121,6 +121,7 @@ To ensure images load correctly in production:
 *   **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
 *   **Base-Aware Fonts/Assets**: This Astro app is deployed with `base: '/blog/'`. Font preloads and `@font-face` rules are emitted from `src/components/BaseHead.astro` and must resolve to `/blog/fonts/...` exactly once in the built output. Never ship `/blog/blog/fonts/...`, bare `/fonts/...`, or unresolved template placeholders.
 *   **Base-Aware Logo**: Shared chrome assets must also stay under the `/blog/` public contract. `src/components/Header.astro` must point at `/blog/logo/New_logo.png`, not `/logo/New_logo.png`, and it should keep the compatibility-aware cache-busting query string so Cloudflare does not keep an old HTML/logo cache entry after a Pages routing-contract change.
+*   **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
 *   **Pages Rewrite Contract**: Do not remove `public/_redirects`. The blog build is static-root output, but the custom domain still has to honor `/blog/*` for compatibility and SEO handoff.
 
 ---
