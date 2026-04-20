@@ -170,3 +170,13 @@ To ensure images load correctly in production:
     - the canonical apex article returns article HTML from the dedicated Astro origin
     - it must not fall through to the Next.js main-site 404 page
     - current SSOT owner for that handoff is `web/src/proxy.ts`, not App Router fallback pages
+9.  If a canonical apex blog card image is missing but the same asset still works on `https://blog.surtitlelive.com/_astro/...`, treat it as an edge-cache mismatch first, not a browser-cache problem:
+    ```bash
+    curl -I https://surtitlelive.com/blog/_astro/<asset>.webp
+    curl -I https://blog.surtitlelive.com/_astro/<asset>.webp
+    ```
+    Expected result:
+    - both hosts return the same `image/*` content type
+    - if `surtitlelive.com` returns `text/html` while `blog.surtitlelive.com` returns `image/*`, the apex edge has cached the wrong object
+    - preferred fix: targeted Cloudflare purge for the exact apex asset URL
+    - fallback when ops write-token access is unavailable: change the affected Astro image transform so the card emits a new asset URL, then do a blog-only Pages deploy
