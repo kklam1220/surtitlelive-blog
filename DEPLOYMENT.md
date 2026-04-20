@@ -142,6 +142,7 @@ To ensure images load correctly in production:
     - the built HTML still contains deprecated `https://www.surtitlelive.com` links
     - the built HTML still references `/logo/New_logo.png`
     - the built output is missing the required Cloudflare Pages `_redirects` contract
+    - a hero-image article page still emits placeholder `og:image` / `twitter:image` metadata
 6.  If production still shows `Failed to decode downloaded font` after a deploy, probe the live asset directly:
     ```bash
     curl -I https://blog.surtitlelive.com/blog/fonts/atkinson-regular.woff

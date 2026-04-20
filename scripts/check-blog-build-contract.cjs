@@ -36,6 +36,28 @@ function assertHasMatch(files, pattern, message) {
   throw new Error(message);
 }
 
+function assertFileHasMatch(relativePath, pattern, message) {
+  const fullPath = path.join(distDir, relativePath);
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`Missing expected built blog file: ${relativePath}`);
+  }
+  const content = fs.readFileSync(fullPath, 'utf8');
+  if (!pattern.test(content)) {
+    throw new Error(`${message}\nChecked file: ${relativePath}`);
+  }
+}
+
+function assertFileHasNoMatch(relativePath, pattern, message) {
+  const fullPath = path.join(distDir, relativePath);
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`Missing expected built blog file: ${relativePath}`);
+  }
+  const content = fs.readFileSync(fullPath, 'utf8');
+  if (pattern.test(content)) {
+    throw new Error(`${message}\nMatched in file: ${relativePath}`);
+  }
+}
+
 if (!fs.existsSync(distDir)) {
   throw new Error('Blog dist/ does not exist. Run `npm run build --prefix blog` first.');
 }
@@ -103,6 +125,22 @@ for (const requiredRule of [
   if (!redirectsContent.includes(requiredRule)) {
     throw new Error(`Missing required Pages redirect rule: ${requiredRule}`);
   }
+}
+
+for (const articlePath of [
+  path.join('7-geometry-of-dramatic-parsing', 'index.html'),
+  path.join('zh-CN', '7-geometry-of-dramatic-parsing', 'index.html'),
+]) {
+  assertFileHasNoMatch(
+    articlePath,
+    /<meta property="og:image" content="[^"]*blog-placeholder-1/i,
+    'Detected placeholder preview image on a hero-image article page.',
+  );
+  assertFileHasMatch(
+    articlePath,
+    /<meta property="og:image" content="[^"]*script-parsing-theatre-subtitles/i,
+    'Missing article-specific preview image on a hero-image article page.',
+  );
 }
 
 console.log('Blog build contract check passed.');

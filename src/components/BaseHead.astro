@@ -6,10 +6,12 @@ import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/blog-placeholder-1.jpg';
 import { SITE_TITLE } from '../consts';
 
+type MetaImage = Pick<ImageMetadata, 'src'>;
+
 interface Props {
 	title: string;
 	description: string;
-	image?: ImageMetadata;
+	image?: MetaImage;
 	canonicalPath?: string;
 	hreflangs?: Array<{ lang: string; path: string }>;
 }

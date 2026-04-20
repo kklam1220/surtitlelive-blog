@@ -257,6 +257,7 @@ npm run build:check
 - the built HTML still contains deprecated `https://www.surtitlelive.com` links
 - the built HTML still contains `/logo/New_logo.png`
 - the built output is missing the required Cloudflare Pages `_redirects` rules
+- a hero-image article page still emits placeholder `og:image` / `twitter:image` metadata instead of the article image
 
 ## 📄 License
 
