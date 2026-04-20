@@ -1,0 +1,103 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Header from "../../components/Header.astro";
+import { listLocalizedLocales, listLocalizedPostsForLocale } from "../../lib/localizedBlog";
+
+export async function getStaticPaths() {
+  const allLocales = listLocalizedLocales();
+  return allLocales.map((locale) => ({
+    params: { locale },
+    props: {
+      locale,
+      allLocales,
+      posts: listLocalizedPostsForLocale(locale),
+    },
+  }));
+}
+
+const { locale, posts, allLocales } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+const canonicalPath = `${normalizedBaseUrl}${locale}/`;
+const hreflangs = [
+  { lang: "en", path: normalizedBaseUrl },
+  ...allLocales.map((item) => ({ lang: item, path: `${normalizedBaseUrl}${item}/` })),
+  { lang: "x-default", path: normalizedBaseUrl },
+];
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <BaseHead
+      title={`SurtitleLive Blog (${locale})`}
+      description="Machine-translated SurtitleLive blog articles."
+      canonicalPath={canonicalPath}
+      hreflangs={hreflangs}
+    />
+    <style>
+      main {
+        width: 1200px;
+        max-width: calc(100% - 2em);
+        margin: 0 auto;
+        padding: 2.5rem 1rem;
+      }
+      .notice {
+        margin: 0 0 1.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        background: rgba(37, 99, 235, 0.08);
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        color: #1d4ed8;
+        font-size: 0.95rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.25rem;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+      .card h2 {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+      }
+      .card p {
+        margin: 0;
+      }
+      .card a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Blog ({locale})</h1>
+      <p class="notice">Machine-translated UI. If any wording differs, English text prevails.</p>
+      <div class="grid">
+        {
+          posts.map((post) => (
+            <article class="card">
+              <a href={`${normalizedBaseUrl}${locale}/${post.slug}/`}>
+                <small>
+                  <FormattedDate date={new Date(post.frontmatter.pubDate || Date.now())} />
+                </small>
+                <h2>{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

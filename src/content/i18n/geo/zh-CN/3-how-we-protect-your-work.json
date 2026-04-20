@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "generatedAt": "2026-04-10T03:17:00.670Z",
+  "sectionTitles": {
+    "keyTakeaways": "关键要点",
+    "faq": "常见问题解答",
+    "glossary": "术语表",
+    "related": "相关主题"
+  },
+  "keyTakeaways": [
+    "SurtitleLive 采用按需流媒体技术，观众设备不会存储完整的剧本文件，防止轻易复制。",
+    "剧本数据经过加密处理，仅在设备内存中解密，关闭页面或刷新后立即消失。",
+    "动态访问控制使用临时令牌，演出结束后立即失效，防止未经授权的访问。",
+    "SurtitleLive 旨在提高盗版的技术门槛，同时为合法用户提供流畅的体验。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive 如何防止剧本被下载？",
+      "answer": "SurtitleLive 使用按需流媒体技术，只发送当前 cue 周围的小块字幕，而不是整个剧本。观众的设备永远不会一次性收到完整的剧本，从而防止下载。"
+    },
+    {
+      "question": "SurtitleLive 如何保护数据安全？",
+      "answer": "所有连接都使用 TLS 1.3 (HTTPS) 加密，剧本在离开云存储库之前会被切碎并使用 AES-256 加密。解密过程仅在设备的临时内存中进行，不会写入存储或缓存。"
+    },
+    {
+      "question": "SurtitleLive 的访问令牌如何工作？",
+      "answer": "SurtitleLive 使用临时数字令牌，演出结束后立即过期，防止未经授权的访问。如果出现安全问题，可以立即从服务器端撤销对特定演出的访问权限。"
+    },
+    {
+      "question": "SurtitleLive 不能防止什么？",
+      "answer": "SurtitleLive 无法阻止用户截取屏幕截图、使用另一部手机录制屏幕或使用 OCR 软件将视频转换回文本。这些属于基于显示的媒体的已知限制。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "剧本 (Script)",
+      "definition": "剧院演出的文本，包含对话和舞台指示。"
+    },
+    {
+      "term": "Cue (舞台提示)",
+      "definition": "舞台或字幕提示，指示特定动作或文本何时发生。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "戏剧作品中的人物。"
+    },
+    {
+      "term": "AES-256",
+      "definition": "一种高级加密标准，使用 256 位密钥来加密数据，提供高等级的安全性。"
+    },
+    {
+      "term": "TLS 1.3 (HTTPS)",
+      "definition": "传输层安全协议的最新版本，用于在网络上安全地传输数据，HTTPS 是使用 TLS 加密的 HTTP。"
+    }
+  ]
+}

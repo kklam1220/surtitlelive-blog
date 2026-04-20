@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "generatedAt": "2026-04-10T03:15:53.234Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "SurtitleLive utilise une diffusion en continu à la demande, évitant le stockage persistant des scripts complets sur les appareils des utilisateurs.",
+    "Le chiffrement TLS 1.3 et AES-256 protège les données en transit et au repos, avec un déchiffrement en mémoire pour une sécurité accrue.",
+    "Les jetons d'accès temporaires et la révocation instantanée empêchent l'accès non autorisé aux scripts après les représentations.",
+    "SurtitleLive rend l'extraction massive de scripts difficile, tout en assurant une expérience utilisateur fluide."
+  ],
+  "faq": [
+    {
+      "question": "Comment SurtitleLive empêche-t-il le partage non autorisé de scripts ?",
+      "answer": "SurtitleLive utilise des jetons d'accès temporaires qui expirent après la représentation, empêchant le partage secondaire. De plus, l'accès peut être révoqué instantanément en cas de problème de sécurité."
+    },
+    {
+      "question": "SurtitleLive protège-t-il contre les captures d'écran ou l'enregistrement d'écran ?",
+      "answer": "Comme tout système de diffusion numérique, SurtitleLive ne peut pas empêcher les captures d'écran ou l'enregistrement d'écran. Si un œil humain peut le voir, une caméra peut l'enregistrer."
+    },
+    {
+      "question": "Comment le chiffrement protège-t-il mes scripts dans SurtitleLive ?",
+      "answer": "SurtitleLive utilise le chiffrement TLS 1.3 (HTTPS) pour toutes les connexions et le chiffrement AES-256 pour les scripts au repos. Les données sont déchiffrées uniquement en mémoire temporaire, disparaissant lorsque l'onglet est fermé."
+    },
+    {
+      "question": "Qu'est-ce que l'architecture de « Récupération à la demande » et comment améliore-t-elle la sécurité ?",
+      "answer": "Au lieu d'envoyer l'intégralité du script, SurtitleLive envoie uniquement de petits blocs de sous-titres autour de la réplique actuelle. Cela rend l'extraction automatisée à grande échelle irréalisable sans reproduire le visionnage en temps réel."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Texte intégral d'une pièce de théâtre, contenant les dialogues et les indications scéniques."
+    },
+    {
+      "term": "Réplique",
+      "definition": "Segment de texte affiché comme sous-titre à un moment précis pendant une représentation."
+    },
+    {
+      "term": "Chiffrement",
+      "definition": "Processus de conversion de données en un format illisible pour empêcher l'accès non autorisé."
+    },
+    {
+      "term": "TLS 1.3 (HTTPS)",
+      "definition": "Protocole de sécurité standard pour établir des liens chiffrés, assurant la confidentialité des données transmises sur Internet."
+    },
+    {
+      "term": "AES-256",
+      "definition": "Norme de chiffrement avancée utilisant une clé de 256 bits pour sécuriser les données."
+    }
+  ]
+}

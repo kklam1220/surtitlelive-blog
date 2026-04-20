@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "generatedAt": "2026-04-10T03:15:19.575Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wichtige Erkenntnisse",
+    "faq": "Häufig gestellte Fragen (FAQ)",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "SurtitleLive schützt Ihre Drehbücher und Übersetzungen als Ihr geistiges Eigentum.",
+    "Das 'Streamen, nicht Herunterladen'-Prinzip verhindert das Speichern vollständiger Drehbücher auf Zuschauergeräten.",
+    "Verschlüsselung und kurzlebige Zugriffstoken verhindern unbefugten Zugriff auf Ihre Inhalte.",
+    "SurtitleLive erschwert das Massen-Scraping und die unbefugte Weitergabe von Drehbüchern erheblich."
+  ],
+  "faq": [
+    {
+      "question": "Wie verhindert SurtitleLive, dass mein gesamtes Drehbuch heruntergeladen wird?",
+      "answer": "SurtitleLive verwendet eine 'Fetch on Demand'-Architektur. Zuschauergeräte empfangen nur kleine Textblöcke um den aktuellen Cue herum, anstatt das gesamte Drehbuch auf einmal. Das vollständige Script wird nie auf dem Gerät gespeichert."
+    },
+    {
+      "question": "Wie funktioniert die Verschlüsselung in SurtitleLive?",
+      "answer": "Alle Verbindungen nutzen TLS 1.3 (HTTPS). Drehbücher werden in Chunks zerlegt, mit AES-256 verschlüsselt und nur im temporären Speicher (RAM) des Zuschauergeräts entschlüsselt. Nach dem Schließen des Tabs verschwinden die Daten."
+    },
+    {
+      "question": "Was sind kurzlebige Zugriffspässe und wie schützen sie mein Drehbuch?",
+      "answer": "Digitale Token funktionieren wie temporäre Pässe und verfallen nach der Vorstellung. Im Falle eines Sicherheitsbedenkens kann der Zugriff auf eine Vorstellung sofort serverseitig widerrufen werden, wodurch alle Verbindungen unterbrochen werden."
+    },
+    {
+      "question": "Kann SurtitleLive verhindern, dass Zuschauer Screenshots machen oder den Bildschirm abfilmen?",
+      "answer": "Nein. Wie alle digitalen Systeme kann SurtitleLive die Aufnahme des Bildschirms nicht verhindern. Es erschwert jedoch das Massen-Scraping und die unbefugte Weitergabe von Drehbüchern erheblich."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Drehbuch (Script)",
+      "definition": "Der vollständige Text eines Theaterstücks, einschließlich Dialoge und Bühnenanweisungen."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein spezifischer Zeitpunkt im Drehbuch, der den Start eines Untertitels oder einer anderen Aktion signalisiert."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+    },
+    {
+      "term": "AES-256",
+      "definition": "Ein fortschrittlicher Verschlüsselungsstandard, der verwendet wird, um Drehbücher in SurtitleLive zu schützen."
+    },
+    {
+      "term": "TLS 1.3 (HTTPS)",
+      "definition": "Der Sicherheitsstandard für Banken, der für alle Verbindungen in SurtitleLive verwendet wird, um Daten während der Übertragung zu schützen."
+    }
+  ]
+}

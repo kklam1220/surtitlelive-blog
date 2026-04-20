@@ -1,0 +1,101 @@
+---
+import { marked } from "marked";
+import BlogPost from "../../layouts/BlogPost.astro";
+import {
+  listLocalizedLocales,
+  listLocalizedLocalesForSlug,
+  listLocalizedPostsForLocale,
+  listLocalizedSlugs,
+  readLocalizedPost,
+} from "../../lib/localizedBlog";
+import { readGeoBlock } from "../../lib/geoBlocks";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of listLocalizedLocales()) {
+    for (const slug of listLocalizedSlugs(locale)) {
+      const payload = readLocalizedPost(locale, slug);
+      if (!payload || payload.status !== "translated") {
+        continue;
+      }
+      paths.push({
+        params: { locale, slug },
+        props: {
+          locale,
+          localizedLocalesForSlug: listLocalizedLocalesForSlug(slug),
+          post: payload,
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { locale, localizedLocalesForSlug, post } = Astro.props;
+const pubDate = new Date(post.frontmatter.pubDate || Date.now());
+const updatedDate = post.frontmatter.updatedDate ? new Date(post.frontmatter.updatedDate) : undefined;
+const html = marked.parse(post.body || "");
+const geoBlock = readGeoBlock(locale, post.slug);
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+const canonicalPath = `${normalizedBaseUrl}${locale}/${post.slug}/`;
+const relatedPosts = listLocalizedPostsForLocale(locale)
+  .filter((item) => item.slug !== post.slug)
+  .slice(0, 3);
+const hreflangs = [
+  { lang: "en", path: `${normalizedBaseUrl}${post.slug}/` },
+  ...localizedLocalesForSlug.map((item) => ({
+    lang: item,
+    path: `${normalizedBaseUrl}${item}/${post.slug}/`,
+  })),
+  { lang: "x-default", path: `${normalizedBaseUrl}${post.slug}/` },
+];
+---
+
+<BlogPost
+  lang={locale}
+  slug={post.slug}
+  title={post.frontmatter.title}
+  description={post.frontmatter.description}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  canonicalPath={canonicalPath}
+  hreflangs={hreflangs}
+  faqItems={geoBlock?.faq ?? []}
+>
+  <p style="background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 1rem; color: #1d4ed8;">
+    Machine-translated article. If any wording differs, English text prevails.
+  </p>
+  <div set:html={html} />
+  {
+    geoBlock && (
+      <section>
+        <h2>{geoBlock.sectionTitles?.keyTakeaways || "Key Takeaways"}</h2>
+        <ul>
+          {geoBlock.keyTakeaways.slice(0, 4).map((item) => <li>{item}</li>)}
+        </ul>
+        <h2>{geoBlock.sectionTitles?.faq || "FAQ"}</h2>
+        {geoBlock.faq.slice(0, 4).map((item) => (
+          <div>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </div>
+        ))}
+        <h2>{geoBlock.sectionTitles?.glossary || "Glossary"}</h2>
+        <ul>
+          {geoBlock.glossary.slice(0, 5).map((item) => (
+            <li><strong>{item.term}:</strong> {item.definition}</li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+  <section>
+    <h2>{geoBlock?.sectionTitles?.related || "Related Articles"}</h2>
+    <ul>
+      {relatedPosts.map((item) => (
+        <li><a href={`${normalizedBaseUrl}${locale}/${item.slug}/`}>{item.frontmatter?.title || item.slug}</a></li>
+      ))}
+    </ul>
+  </section>
+</BlogPost>

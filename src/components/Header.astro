@@ -1,29 +1,30 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { buildMainSiteHref } from '../consts';
 
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const logoHref = `${normalizedBaseUrl}logo/New_logo.png`;
 ---
 
 <header>
 	<nav>
 		<div class="logo-container">
-			<a href="https://www.surtitlelive.com" aria-label="SurtitleLive home">
-				<img src="/logo/New_logo.png" alt="SurtitleLive Logo" height="50" style="height: 50px; width: auto;" />
+			<a href={buildMainSiteHref('/')} aria-label="SurtitleLive home">
+				<img src={logoHref} alt="SurtitleLive Logo" height="50" style="height: 50px; width: auto;" />
 			</a>
 		</div>
 		
 		<div class="internal-links">
-			<a href="https://www.surtitlelive.com/features">Features</a>
-			<a href="https://www.surtitlelive.com/pricing">Pricing</a>
+			<a href={buildMainSiteHref('/features')}>Features</a>
+			<a href={buildMainSiteHref('/pricing')}>Pricing</a>
 			<HeaderLink href={normalizedBaseUrl}>Blog</HeaderLink>
-			<a href="https://www.surtitlelive.com/contact">Contact Us</a>
+			<a href={buildMainSiteHref('/contact')}>Contact Us</a>
 		</div>
 
 		<div class="auth-buttons">
-			<a href="https://www.surtitlelive.com/auth/login" class="login-link">Login</a>
-			<a href="https://www.surtitlelive.com/auth/register" class="signup-btn">Sign Up</a>
+			<a href={buildMainSiteHref('/auth/login')} class="login-link">Login</a>
+			<a href={buildMainSiteHref('/auth/register')} class="signup-btn">Sign Up</a>
 		</div>
 	</nav>
 </header>

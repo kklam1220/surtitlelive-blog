@@ -1,12 +1,18 @@
 {
   "name": "surtitlelive-blog",
   "type": "module",
-  "version": "v260311.01",
+  "version": "v260415.01",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:check": "node scripts/check-blog-build-contract.cjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "blog:i18n:sync": "node scripts/sync-blog-locales.cjs",
+    "blog:i18n:translate:llm": "node scripts/translate-blog-locales-llm.cjs",
+    "blog:i18n:check": "node scripts/check-blog-localization.cjs",
+    "blog:i18n:geo": "node scripts/generate-blog-geo-blocks.cjs",
+    "blog:i18n:refresh": "npm run blog:i18n:sync && npm run blog:i18n:translate:llm && npm run blog:i18n:check && npm run blog:i18n:geo"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.12",
@@ -14,6 +20,9 @@
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.16.6",
-    "sharp": "^0.34.3"
+    "marked": "^16.4.1",
+    "sharp": "^0.34.3",
+    "surtitlelive": "file:.."
   }
 }
+

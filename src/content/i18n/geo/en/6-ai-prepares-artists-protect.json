@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:15:00.105Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "SurtitleLive uses AI to streamline theatre subtitling, replacing manual PowerPoint processes.",
+    "AI handles script parsing and formatting, reducing technical workload for artists.",
+    "Human artists retain control over live subtitle cues, ensuring emotional accuracy.",
+    "The workflow emphasizes AI assistance for preparation, with human oversight for creative judgment."
+  ],
+  "faq": [
+    {
+      "question": "What is SurtitleLive?",
+      "answer": "SurtitleLive is an AI-assisted theatre subtitling workflow designed to replace manual PowerPoint systems. It streamlines script parsing, translation, and live performance control, allowing artists to focus on creative refinement."
+    },
+    {
+      "question": "How does SurtitleLive improve the subtitling process?",
+      "answer": "SurtitleLive automates script parsing and formatting, saving time and effort. It also offers flexible live control, allowing for instant adjustments to cues during a performance, unlike rigid PowerPoint presentations."
+    },
+    {
+      "question": "Can SurtitleLive translate scripts into multiple languages?",
+      "answer": "Yes, SurtitleLive supports rapid multi-lingual generation. Once the original text is parsed, synchronized translations for additional languages can be generated quickly, streamlining the process for international audiences."
+    },
+    {
+      "question": "Is SurtitleLive a fully automated translation tool?",
+      "answer": "No, SurtitleLive is an assisted decision system. It generates AI drafts that require human refinement, rehearsal adjustments, and live performance control to ensure artistic integrity and accuracy."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "The written text of a play, including dialogue and stage directions."
+    },
+    {
+      "term": "Cue",
+      "definition": "A specific point in the script or performance that triggers a surtitle to appear."
+    },
+    {
+      "term": "Character",
+      "definition": "A role or persona portrayed by an actor in a play."
+    },
+    {
+      "term": "Surtitles",
+      "definition": "Translated dialogue displayed above or beside a stage, similar to subtitles in film."
+    },
+    {
+      "term": "AI Parsing",
+      "definition": "The use of artificial intelligence to automatically analyze and extract relevant information from a script document."
+    }
+  ]
+}

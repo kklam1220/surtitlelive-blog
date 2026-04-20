@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "4-more-than-translation",
+  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
+  "generatedAt": "2026-04-10T03:14:51.603Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary of Terms",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "Surtitles are more than translation; they foster cultural inclusion and artistic freedom.",
+    "Performing in a 'heart language' preserves cultural nuances and emotional depth for artists.",
+    "SurtitleLive empowers artists to perform authentically and invites diverse audiences to engage with their stories.",
+    "Affordable surtitling tech creates inclusive spaces, enabling communities to share stories and connect through theatre."
+  ],
+  "faq": [
+    {
+      "question": "How do surtitles empower artists?",
+      "answer": "Surtitles allow performers to use their native language, preserving emotional depth and cultural details, fostering authentic expression without fear of being misunderstood."
+    },
+    {
+      "question": "How does SurtitleLive promote inclusivity?",
+      "answer": "SurtitleLive's affordable, user-friendly software and BYOD model enable diverse communities to share their stories in various settings, breaking down language barriers and fostering cultural exchange."
+    },
+    {
+      "question": "What is the 'heart language' and why is it important?",
+      "answer": "The 'heart language' is the language one grows up with. Performing in this language allows artists to express themselves with greater authenticity, preserving heritage and unique stories."
+    },
+    {
+      "question": "How does SurtitleLive's technology respect the theatrical atmosphere?",
+      "answer": "SurtitleLive's 'dark mode' minimizes distractions, ensuring the audience's focus remains on the performance and the human connection happening on stage, not the technology itself."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitles",
+      "definition": "Text displayed above or beside a stage, translating dialogue or providing narrative information for the audience."
+    },
+    {
+      "term": "Cue",
+      "definition": "A signal or prompt in a script or performance that indicates an action, line of dialogue, or technical change."
+    },
+    {
+      "term": "Script",
+      "definition": "The written text of a play, including dialogue, stage directions, and character descriptions."
+    },
+    {
+      "term": "Character",
+      "definition": "A person or role portrayed by an actor in a play or performance."
+    },
+    {
+      "term": "BYOD (Bring Your Own Device)",
+      "definition": "A model where audience members use their personal devices (smartphones, tablets) to view surtitles during a performance."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "1-why-powerpoint-fails-theatre",
+  "sourceHash": "5af55c4ca486bede0d946ef84052f1168f3657f23fafab082e0bee7f161876ce",
+  "generatedAt": "2026-04-10T03:15:08.462Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wesentliche Erkenntnisse",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "Herkömmliche Präsentationssoftware ist ungeeignet für dynamische Theaterübertitelung und -untertitelung.",
+    "SurtitleLive behandelt das Theaterskript als Daten, was eine präzisere Steuerung ermöglicht.",
+    "KI-gestützte Aufnahme in SurtitleLive beschleunigt die Vorbereitung von Übertiteln erheblich.",
+    "SurtitleLive ermöglicht mehrsprachige Übertitel auf den Geräten des Publikums, wodurch teure Projektorsysteme entfallen."
+  ],
+  "faq": [
+    {
+      "question": "Warum ist PowerPoint nicht ideal für Theaterübertitel?",
+      "answer": "PowerPoint ist linear, was Probleme verursacht, wenn Schauspieler Zeilen überspringen. Es erfordert auch manuelle Formatierung und ist nicht für mehrsprachige Setups optimiert. SurtitleLive bietet eine flexiblere, datengesteuerte Lösung."
+    },
+    {
+      "question": "Wie vereinfacht SurtitleLive die Vorbereitung von Übertiteln?",
+      "answer": "SurtitleLive verwendet KI-gestützte Aufnahme, um Theaterskripte zu analysieren und Charakternamen und Dialoge automatisch zu identifizieren. Dies reduziert die manuelle Formatierung erheblich und spart Zeit bei der Vorbereitung."
+    },
+    {
+      "question": "Wie unterstützt SurtitleLive nichtlineare Aufführungen?",
+      "answer": "Das SurtitleLive Operator Cockpit ermöglicht es dem Bediener, mit einem einzigen Klick zu jeder beliebigen Zeile im Skript zu springen. Dies ermöglicht eine nahtlose Anpassung an Änderungen in der Aufführung, ohne das Publikum abzulenken."
+    },
+    {
+      "question": "Wie funktioniert die mehrsprachige Unterstützung in SurtitleLive?",
+      "answer": "SurtitleLive ermöglicht es Zuschauern, über ihre Smartphones auf Übertitel in ihrer bevorzugten Sprache zuzugreifen. Mehrere Übersetzungen können im Voraus hochgeladen werden, und die Zuschauer wählen ihre Sprache über einen QR-Code aus."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Skript",
+      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein Signal für eine Aktion auf der Bühne, oft verwendet, um den Zeitpunkt für das Anzeigen von Übertiteln zu bestimmen."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine dramatische Rolle in einem Theaterstück, dargestellt von einem Schauspieler."
+    },
+    {
+      "term": "Übertitel",
+      "definition": "Text, der über der Bühne angezeigt wird und Dialoge oder Liedtexte in einer anderen Sprache oder als Textversion liefert."
+    },
+    {
+      "term": "Operator Cockpit",
+      "definition": "Die Benutzeroberfläche von SurtitleLive, die es dem Bediener ermöglicht, die Übertitel während einer Live-Aufführung zu steuern."
+    }
+  ]
+}

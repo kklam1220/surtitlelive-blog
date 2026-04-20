@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:15:33.870Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kernpunkte",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "SurtitleLive ist ein KI-gestützter Workflow, der PowerPoint für Theaterübertitel ersetzt.",
+    "KI analysiert Skripte und formatiert Übertitel, während Künstler die Live-Steuerung behalten.",
+    "Im Gegensatz zu PowerPoint ermöglicht SurtitleLive flexible Anpassungen an Änderungen während der Vorstellung.",
+    "KI dient als Mitarbeiter für die Textvorbereitung, während menschliche Künstler die Bedeutung schützen."
+  ],
+  "faq": [
+    {
+      "question": "Wird KI menschliche Theaterübersetzer ersetzen?",
+      "answer": "Nein. SurtitleLive positioniert KI als Werkzeug zur Vorverarbeitung. Künstlerische Entscheidungen und emotionale Interpretation bleiben in menschlicher Hand."
+    },
+    {
+      "question": "Warum SurtitleLive anstelle von PowerPoint für die Echtzeit-Übersetzung verwenden?",
+      "answer": "PowerPoint ist linear und statisch. SurtitleLive ist ein Live-Übertitelsystem, das für die Unvorhersehbarkeit des Live-Theaters entwickelt wurde und sicherstellt, dass Übersetzungen mit den Schauspielern synchron sind."
+    },
+    {
+      "question": "Wie verbessert SurtitleLive den Theaterübertitelungs-Workflow?",
+      "answer": "SurtitleLive automatisiert die Skriptanalyse, ermöglicht die manuelle Steuerung und beschleunigt die mehrsprachige Generierung, wodurch sich Künstler auf die Verfeinerung konzentrieren können."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen einem KI-Entwurf und einer endgültigen Übersetzung?",
+      "answer": "KI erstellt einen ersten Entwurf, aber menschliche Übersetzer verfeinern ihn, um emotionale Nuancen, Subtext und den Kontext der Live-Performance zu berücksichtigen."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Skript",
+      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein Signal im Skript, das den Zeitpunkt für eine Aktion oder einen Übertitel angibt."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+    },
+    {
+      "term": "Übertitel",
+      "definition": "Text, der über oder neben der Bühne angezeigt wird, um Dialoge in einer anderen Sprache zu übersetzen."
+    },
+    {
+      "term": "KI-gestützte Übersetzung",
+      "definition": "Verwendung künstlicher Intelligenz zur Unterstützung und Beschleunigung des Übersetzungsprozesses für Theaterstücke."
+    }
+  ]
+}

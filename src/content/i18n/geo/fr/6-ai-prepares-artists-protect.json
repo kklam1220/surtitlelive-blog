@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:16:08.234Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "SurtitleLive est un flux de travail de sous-titrage de théâtre basé sur l'IA qui remplace les processus PowerPoint manuels.",
+    "L'IA analyse les scripts `.docx`, automatise le formatage et permet aux artistes de contrôler les cues de sous-titres en direct.",
+    "L'IA gère le traitement technique, tandis que les artistes conservent l'autorité sur le sens et l'émotion.",
+    "SurtitleLive facilite la génération rapide de traductions synchronisées pour plusieurs langues."
+  ],
+  "faq": [
+    {
+      "question": "L'IA remplacera-t-elle les traducteurs de théâtre humains ?",
+      "answer": "Non. SurtitleLive positionne l'IA comme un outil de prétraitement. Les décisions artistiques et l'interprétation émotionnelle restent entre les mains des artistes humains."
+    },
+    {
+      "question": "Pourquoi utiliser SurtitleLive au lieu de PowerPoint pour la traduction de représentations en temps réel ?",
+      "answer": "PowerPoint est linéaire et statique, causant des problèmes si les acteurs sautent des lignes ou changent de rythme. SurtitleLive est conçu pour le théâtre en direct, garantissant que vos traductions respirent avec les acteurs."
+    },
+    {
+      "question": "Comment SurtitleLive gère-t-il les modifications de script en direct pendant les répétitions ?",
+      "answer": "SurtitleLive permet de fusionner, diviser et réorganiser facilement les lignes par glisser-déposer, s'adaptant instantanément aux changements en direct."
+    },
+    {
+      "question": "Quels types de fichiers SurtitleLive peut-il exporter ?",
+      "answer": "SurtitleLive peut exporter vers Excel (.xlsx) et PowerPoint (.pptx), assurant une intégration transparente avec d'autres outils et plateformes."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Le texte complet d'une pièce de théâtre, contenant les dialogues des personnages et les indications scéniques."
+    },
+    {
+      "term": "Cue",
+      "definition": "Un point spécifique dans le script qui déclenche l'affichage d'un surtitre."
+    },
+    {
+      "term": "Personnage",
+      "definition": "Un rôle dramatique interprété par un acteur dans une pièce de théâtre."
+    },
+    {
+      "term": "Surtitres",
+      "definition": "Traduction ou transcription du dialogue affichée au-dessus ou à côté de la scène."
+    },
+    {
+      "term": "Analyse de script par l'IA",
+      "definition": "Utilisation de l'intelligence artificielle pour extraire et organiser automatiquement le dialogue d'un script."
+    }
+  ]
+}

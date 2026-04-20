@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "7-geometry-of-dramatic-parsing",
+  "sourceHash": "1c3520aebf2ca3492ab1a20cbb761a2728575a9ced745ced83bdfd82a078b132",
+  "generatedAt": "2026-04-10T03:16:12.705Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "L'analyse de scripts de théâtre est plus une question d'espace que de langage.",
+    "Les scripts occidentaux s'appuient sur la mise en page (indentation, capitalisation) plutôt que sur la ponctuation.",
+    "La conversion en texte brut détruit les informations de mise en page essentielles à la détection des repères.",
+    "SurtitleLive utilise l'extraction OOXML pour analyser la mise en page et détecter avec précision les repères de sous-titres."
+  ],
+  "faq": [
+    {
+      "question": "Qu'est-ce qu'un repère de sous-titre au théâtre ?",
+      "answer": "Un repère de sous-titre est le moment où une ligne de dialogue doit apparaître sur l'écran de sous-titrage. La détection des repères nécessite l'identification des blocs de dialogue et des transitions de personnage dans le script."
+    },
+    {
+      "question": "Comment le système gère-t-il le formatage incohérent ?",
+      "answer": "Notre système regroupe les mises en page similaires. Si un profil de document change, l'analyseur effectue une segmentation de la mise en page pour adapter sa stratégie en temps réel."
+    },
+    {
+      "question": "Pourquoi la mise en page est-elle importante lors de l'analyse des scripts pour les sous-titres ?",
+      "answer": "De nombreux scripts utilisent l'indentation et l'espacement au lieu de la ponctuation pour encoder la structure. Un analyseur axé sur la mise en page détecte les repères de manière plus fiable que les modèles sémantiques seuls."
+    },
+    {
+      "question": "Comment SurtitleLive détecte-t-il les indications scéniques ?",
+      "answer": "SurtitleLive identifie les indications scéniques en analysant les attributs typographiques tels que l'italique, en plus de l'indentation et de l'espacement, pour une détection précise même avec un formatage minimal."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Le texte complet d'une pièce de théâtre, incluant les dialogues et les indications scéniques."
+    },
+    {
+      "term": "Repère de sous-titre",
+      "definition": "Le point précis dans le script où un sous-titre doit être affiché pendant la représentation."
+    },
+    {
+      "term": "Personnage",
+      "definition": "Un rôle dramatique dans une pièce de théâtre, avec des lignes de dialogue spécifiques."
+    },
+    {
+      "term": "Indication scénique",
+      "definition": "Une instruction dans le script décrivant l'action, le décor ou l'expression d'un personnage."
+    },
+    {
+      "term": "OOXML",
+      "definition": "Format de fichier utilisé par Microsoft Word (.docx) qui permet d'extraire des informations de mise en page précises."
+    }
+  ]
+}

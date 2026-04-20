@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "4-more-than-translation",
+  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
+  "generatedAt": "2026-04-10T03:15:24.156Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kernaussagen",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "Surtitel sind mehr als nur Übersetzungen; sie fördern kulturelle Inklusion und stärken Künstler.",
+    "Künstler können in ihrer Muttersprache auftreten und ihre Identität und einzigartigen Geschichten authentisch teilen.",
+    "Technologie wie SurtitleLive ermöglicht es auch kleinen Gruppen, professionelle Theater-Surtitel zu erstellen.",
+    "Durch den Abbau von Sprachbarrieren wird das Theater zu einem Treffpunkt für menschliche Geschichten."
+  ],
+  "faq": [
+    {
+      "question": "Warum ist es wichtig, Theaterstücke in der Originalsprache aufzuführen?",
+      "answer": "Die Originalsprache ermöglicht es Schauspielern, mit voller Emotion aufzutreten und kulturelle Details authentisch zu vermitteln. Es bewahrt die Identität und die einzigartigen Geschichten des Künstlers."
+    },
+    {
+      "question": "Wie unterstützt SurtitleLive kleine Kunstorganisationen?",
+      "answer": "SurtitleLive ist erschwinglich und einfach zu bedienen, sodass auch kleine Organisationen mit begrenztem Budget professionelle Surtitel erstellen können. Es ermöglicht die Nutzung eigener Geräte (BYOD) für inklusive Räume."
+    },
+    {
+      "question": "Was ist der Vorteil des 'Bring Your Own Device' (BYOD)-Modells?",
+      "answer": "Das BYOD-Modell ermöglicht es, Theater überall einzurichten, von Gemeindezentren bis hin zu professionellen Bühnen, ohne teure Hardware. Das Publikum nutzt seine eigenen Geräte zum Lesen der Surtitel."
+    },
+    {
+      "question": "Wie trägt der 'Dark Mode' von SurtitleLive zur Theateratmosphäre bei?",
+      "answer": "Der 'Dark Mode' sorgt dafür, dass die Technologie nicht ablenkt und der Fokus auf der menschlichen Verbindung auf der Bühne bleibt. Er respektiert die Atmosphäre der Aufführung."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitel",
+      "definition": "Übersetzungstext, der während einer Theateraufführung auf einem Bildschirm angezeigt wird, um Zuschauern das Verständnis zu erleichtern."
+    },
+    {
+      "term": "Skript",
+      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen für die Schauspieler enthält."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein Signal oder Hinweis im Skript, der den Zeitpunkt für eine bestimmte Aktion oder einen Surtitelwechsel angibt."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine fiktive Person, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+    },
+    {
+      "term": "BYOD (Bring Your Own Device)",
+      "definition": "Ein Modell, bei dem Zuschauer ihre eigenen Geräte (z. B. Smartphones oder Tablets) verwenden, um Surtitel anzuzeigen."
+    }
+  ]
+}

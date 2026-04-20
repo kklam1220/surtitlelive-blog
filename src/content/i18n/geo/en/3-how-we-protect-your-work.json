@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "generatedAt": "2026-04-10T03:14:47.539Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "SurtitleLive uses on-demand streaming, so full script files are never stored on user devices, protecting your intellectual property.",
+    "Data is encrypted both in transit (TLS 1.3) and at rest (AES-256), ensuring banking-grade security for your scripts.",
+    "In-memory decryption means decrypted text only exists in temporary memory and vanishes when the browser tab is closed.",
+    "Temporary access tokens and instant revocation capabilities prevent unauthorized access and sharing of your content."
+  ],
+  "faq": [
+    {
+      "question": "How does SurtitleLive prevent users from downloading the entire script?",
+      "answer": "SurtitleLive employs a \"Fetch on Demand\" architecture, streaming small chunks of subtitles only for the active cues. The viewer's device never receives the entire script file, making it difficult to copy the whole show."
+    },
+    {
+      "question": "What encryption methods does SurtitleLive use to protect scripts?",
+      "answer": "SurtitleLive uses TLS 1.3 (HTTPS) for data in transit and AES-256 encryption for data at rest. This ensures that scripts are protected with banking-grade security both during transmission and while stored on our servers."
+    },
+    {
+      "question": "How does in-memory decryption enhance security?",
+      "answer": "In-memory decryption unlocks encrypted text only inside the device's temporary memory (RAM). The data is never written to the device's storage, and it vanishes instantly when the user refreshes the page or closes the tab."
+    },
+    {
+      "question": "What measures are in place to prevent unauthorized sharing of access links?",
+      "answer": "SurtitleLive uses temporary digital tokens that expire after the performance. Additionally, access to a specific show can be instantly revoked from the server side, cutting off all connections immediately in case of a security concern."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "The complete text of a theatre play, including dialogue and stage directions."
+    },
+    {
+      "term": "Cue",
+      "definition": "A specific point in the script that triggers an action, such as displaying a new surtitle."
+    },
+    {
+      "term": "TLS 1.3 (HTTPS)",
+      "definition": "The latest version of the Transport Layer Security protocol, providing secure communication over a network; the standard for secure web browsing."
+    },
+    {
+      "term": "AES-256",
+      "definition": "Advanced Encryption Standard with a 256-bit key, a symmetric encryption algorithm used to protect digital data."
+    },
+    {
+      "term": "In-Memory Decryption",
+      "definition": "The process of decrypting data only within a device's RAM, without writing it to persistent storage, enhancing security."
+    }
+  ]
+}

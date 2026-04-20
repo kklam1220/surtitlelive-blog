@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:17:47.846Z",
+  "sectionTitles": {
+    "keyTakeaways": "重點整理",
+    "faq": "常見問題",
+    "glossary": "詞彙表",
+    "related": "相關資訊"
+  },
+  "keyTakeaways": [
+    "SurtitleLive 是一個 AI 輔助的劇場字幕工作流程，取代了手動 PowerPoint 流程。",
+    "AI 處理劇本解析和格式設定，讓人類藝術家完全控制現場字幕提示和情感。",
+    "SurtitleLive 允許輕鬆合併、分割和重新排序行，以適應現場更改。",
+    "AI 生成多語言翻譯，人類翻譯人員潤飾，確保準確性和藝術性。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive 如何簡化字幕創建過程？",
+      "answer": "SurtitleLive 使用 AI 自動解析劇本並分割行，減少手動輸入和格式設定的時間。它還整合了 AI 草稿翻譯，供人類翻譯人員潤飾。"
+    },
+    {
+      "question": "SurtitleLive 與 PowerPoint 相比，有哪些優勢？",
+      "answer": "SurtitleLive 專為現場演出設計，提供即時提示控制和靈活跳轉，以適應演出的節奏。PowerPoint 是線性的，難以在演出中修改。"
+    },
+    {
+      "question": "AI 在 SurtitleLive 中的角色是什麼？",
+      "answer": "AI 負責劇本解析、自動字幕製作和草稿翻譯，讓人類藝術家可以專注於藝術潤飾、情感詮釋和現場控制。AI 準備文本，藝術家保護意義。"
+    },
+    {
+      "question": "SurtitleLive 是否支援多語言翻譯？",
+      "answer": "是的，SurtitleLive 支援快速多語言生成。一旦 AI 解析並計時了原始文本，生成同步翻譯只需幾秒鐘，無需完全獨立的手動工作流程。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "劇本 (Script)",
+      "definition": "劇場演出的文本，包含對話和舞台指示。"
+    },
+    {
+      "term": "提示 (Cue)",
+      "definition": "舞台或字幕的提示，指示何時顯示或更改字幕。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "戲劇作品中的人物，由演員扮演。"
+    },
+    {
+      "term": "字幕產生器 (Subtitle Generator)",
+      "definition": "自動創建字幕的軟體工具。"
+    },
+    {
+      "term": "現場字幕 (Live Subtitling)",
+      "definition": "在演出期間即時顯示字幕。"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "1-why-powerpoint-fails-theatre",
+  "sourceHash": "5af55c4ca486bede0d946ef84052f1168f3657f23fafab082e0bee7f161876ce",
+  "generatedAt": "2026-04-10T03:15:43.557Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "Les logiciels de présentation statiques sont inadaptés aux performances théâtrales dynamiques.",
+    "SurtitleLive remplace le formatage manuel par une ingestion de script basée sur l'IA.",
+    "Le poste de pilotage SurtitleLive permet une navigation non linéaire précise pendant les spectacles.",
+    "SurtitleLive prend en charge les publics multilingues grâce à la diffusion sur les appareils personnels."
+  ],
+  "faq": [
+    {
+      "question": "Qu'est-ce que la « panique de la barre d'espace » ?",
+      "answer": "La « panique de la barre d'espace » est le stress vécu par un opérateur de surtitrage lorsqu'il tente de suivre une performance en direct à l'aide d'un logiciel de présentation statique et qu'il doit rapidement trouver la bonne diapositive après un saut de ligne ou de scène."
+    },
+    {
+      "question": "Comment SurtitleLive simplifie-t-il la préparation des surtitres ?",
+      "answer": "SurtitleLive utilise l'IA pour analyser les scripts, identifier les personnages et les dialogues, réduisant ainsi considérablement le temps de formatage manuel. Cela permet aux concepteurs de se concentrer sur la créativité plutôt que sur les tâches répétitives de copier-coller."
+    },
+    {
+      "question": "Comment SurtitleLive gère-t-il les changements imprévus dans une performance en direct ?",
+      "answer": "Le poste de pilotage SurtitleLive permet aux opérateurs d'accéder instantanément à n'importe quelle ligne du script. Cela permet de suivre facilement les sauts de lignes ou de scènes sans perturber le public avec des diapositives clignotantes."
+    },
+    {
+      "question": "Comment SurtitleLive prend-il en charge les publics multilingues ?",
+      "answer": "SurtitleLive permet de diffuser des surtitres pré-traduits directement sur les smartphones du public. Les spectateurs peuvent scanner un code QR et choisir leur langue préférée parmi les pistes disponibles, ce qui élimine le besoin de systèmes de projection complexes."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Le texte complet d'une pièce de théâtre, comprenant les dialogues et les indications scéniques."
+    },
+    {
+      "term": "Cue",
+      "definition": "Un signal pour déclencher une action, comme l'affichage d'une ligne de surtitre. Peut être marqué dans un script."
+    },
+    {
+      "term": "Personnage",
+      "definition": "Un rôle dramatique dans une pièce de théâtre, représenté par un acteur."
+    },
+    {
+      "term": "Surtitre",
+      "definition": "Traduction ou transcription du dialogue affichée au-dessus de la scène."
+    },
+    {
+      "term": "Poste de pilotage",
+      "definition": "L'interface SurtitleLive permettant aux opérateurs de contrôler l'affichage des surtitres en temps réel."
+    }
+  ]
+}

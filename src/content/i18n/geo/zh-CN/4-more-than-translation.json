@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "4-more-than-translation",
+  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
+  "generatedAt": "2026-04-10T03:17:04.945Z",
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "常见问题",
+    "glossary": "术语表",
+    "related": "相关主题"
+  },
+  "keyTakeaways": [
+    "字幕不仅仅是翻译，更是文化包容和赋能艺术家。",
+    "SurtitleLive 使艺术家能够用母语充分表达情感，保持文化身份。",
+    "通过提供清晰的字幕，剧院可以吸引更广泛的观众，包括不懂该语言的观众。",
+    "SurtitleLive 的设计简单经济，使小型团体也能轻松使用专业的戏剧字幕。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive 如何帮助移民艺术家？",
+      "answer": "SurtitleLive 允许艺术家用他们的母语表演，保留文化细节和情感，无需担心翻译损失，从而更真实地表达自己。"
+    },
+    {
+      "question": "什么是“自带设备” (BYOD) 模式？",
+      "answer": "“自带设备”模式允许观众使用自己的设备（如手机或平板电脑）接收字幕，无需剧院安装昂贵的硬件，使演出可以在任何地点进行。"
+    },
+    {
+      "question": "SurtitleLive 的“暗黑模式”有什么作用？",
+      "answer": "“暗黑模式”确保字幕技术不会分散观众的注意力，使他们能够专注于舞台上的表演和人际互动，从而获得更好的观剧体验。"
+    },
+    {
+      "question": "SurtitleLive 如何促进文化交流？",
+      "answer": "通过降低语言障碍，SurtitleLive 使不同文化背景的观众能够理解和欣赏其他文化的故事，从而促进文化交流和相互理解。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "剧本 (Script)",
+      "definition": "戏剧演出的书面文本，包含角色对话和舞台指示。"
+    },
+    {
+      "term": "舞台提示 (Cue)",
+      "definition": "在演出中，指示灯光、音效或字幕变化的信号。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "戏剧作品中的虚构人物，由演员扮演。"
+    },
+    {
+      "term": "字幕 (Surtitle)",
+      "definition": "在舞台上方或旁边显示的文本，提供对话的翻译或转录。"
+    },
+    {
+      "term": "母语 (Heart Language)",
+      "definition": "一个人从小长大的语言，通常与情感和文化认同紧密相连。"
+    }
+  ]
+}

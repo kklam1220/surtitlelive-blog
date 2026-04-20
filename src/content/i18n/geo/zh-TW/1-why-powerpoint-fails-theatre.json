@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "1-why-powerpoint-fails-theatre",
+  "sourceHash": "5af55c4ca486bede0d946ef84052f1168f3657f23fafab082e0bee7f161876ce",
+  "generatedAt": "2026-04-10T03:17:24.301Z",
+  "sectionTitles": {
+    "keyTakeaways": "重點整理",
+    "faq": "常見問題",
+    "glossary": "術語表",
+    "related": "相關資訊"
+  },
+  "keyTakeaways": [
+    "傳統字幕軟體（如 PowerPoint）不適合現場劇場演出，可能導致「空白鍵恐慌」。",
+    "SurtitleLive 將劇本視為資料，簡化準備工作流程，並提供非線性導航。",
+    "SurtitleLive 的 AI 導入功能可快速分析劇本結構，節省手動格式化的時間。",
+    "SurtitleLive 支援多語言字幕，觀眾可透過自己的裝置選擇語言。"
+  ],
+  "faq": [
+    {
+      "question": "什麼是「空白鍵恐慌」？",
+      "answer": "「空白鍵恐慌」是指劇場字幕操作員在使用基於投影片的軟體時，因舞台演出跳躍而無法及時找到正確字幕的恐慌情況。這通常是由於軟體的線性限制所致。"
+    },
+    {
+      "question": "SurtitleLive 如何簡化字幕準備工作？",
+      "answer": "SurtitleLive 使用 AI 驅動的導入功能，自動分析劇本結構，識別角色和對白。這消除了手動複製貼上的需要，大大縮短了準備時間。"
+    },
+    {
+      "question": "SurtitleLive 如何實現非線性導航？",
+      "answer": "SurtitleLive 控制台允許操作員直接跳到劇本中的任何一行，無需按順序點擊投影片。這使得字幕能夠即時跟隨舞台演出的變化，避免了令人分心的閃爍。"
+    },
+    {
+      "question": "SurtitleLive 如何支援多語言字幕？",
+      "answer": "SurtitleLive 允許上傳多個翻譯版本，觀眾可以使用自己的智慧型手機掃描 QR 碼，並選擇他們喜歡的語言。這無需昂貴的雙投影機系統。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "劇本 (Script)",
+      "definition": "戲劇演出的文字版本，包含對白、舞台指示和角色描述。"
+    },
+    {
+      "term": "提示 (Cue)",
+      "definition": "舞台演出中的一個信號，指示技術人員或演員執行特定動作，例如切換字幕。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "戲劇演出中的一個虛構人物，由演員扮演。"
+    },
+    {
+      "term": "字幕 (Surtitle)",
+      "definition": "顯示在舞台上方或旁邊的文字，提供演出的翻譯或文字描述，方便觀眾理解。"
+    },
+    {
+      "term": "控制台 (Console)",
+      "definition": "SurtitleLive 的使用者介面，允許操作員控制字幕的顯示，並即時調整字幕以配合舞台演出。"
+    }
+  ]
+}

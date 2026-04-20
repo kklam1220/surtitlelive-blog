@@ -1,0 +1,15 @@
+/blog/_astro/* /_astro/:splat 200
+/blog/favicon.ico /favicon.ico 200
+/blog/favicon-192.png /favicon-192.png 200
+/blog/rss.xml /rss.xml 200
+/blog/sitemap-index.xml /sitemap-index.xml 200
+/blog/sitemap-0.xml /sitemap-0.xml 200
+/blog/:locale/rss.xml /:locale/rss.xml 200
+/blog/:locale/:slug/ /:locale/:slug/ 200
+/blog/:locale/:slug /:locale/:slug 200
+/blog/:locale/ /:locale/ 200
+/blog/:locale /:locale 200
+/blog/:slug/ /:slug/ 200
+/blog/:slug /:slug 200
+/blog/ / 200
+/blog / 200

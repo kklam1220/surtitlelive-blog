@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "2-beyond-the-led-screen-byod-opera",
+  "sourceHash": "2f7059718371134967081b206220b92ced4cb04d6944f10124b20ff49d1ea81e",
+  "generatedAt": "2026-04-10T03:15:14.585Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wichtigste Erkenntnisse",
+    "faq": "Häufig gestellte Fragen (FAQ)",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "BYOD-Übertitelung (Bring Your Own Device) bietet Flexibilität für Theateraufführungen an verschiedenen Orten, im Gegensatz zu fest installierten LED-Systemen.",
+    "BYOD eignet sich gut für Tourneen, historische Gebäude und mehrsprachige Aufführungen, bei denen herkömmliche LED-Lösungen möglicherweise unpraktisch sind.",
+    "BYOD-Übertitelung ermöglicht es dem Publikum, Untertitel auf ihren eigenen Geräten anzuzeigen, wodurch architektonische Einschränkungen und Sichtlinienprobleme umgangen werden.",
+    "Moderne BYOD-Plattformen wie SurtitleLive sind auf geringen Akkuverbrauch und Netzwerkstabilität optimiert, um ein nahtloses Benutzererlebnis zu gewährleisten."
+  ],
+  "faq": [
+    {
+      "question": "Was ist BYOD-Übertitelung?",
+      "answer": "BYOD-Übertitelung ist eine webbasierte Lösung, die Untertitel direkt auf die Smartphones oder Tablets des Publikums überträgt. Dies ermöglicht die Barrierefreiheit an verschiedenen Veranstaltungsorten, insbesondere an solchen mit architektonischen Einschränkungen."
+    },
+    {
+      "question": "Wann ist BYOD-Übertitelung die bessere Wahl als LED-Übertitelung?",
+      "answer": "BYOD-Übertitelung ist ideal für Tourneen, historische Gebäude, ortsspezifische Arbeiten und mehrsprachige Aufführungen. Es bietet Flexibilität und Skalierbarkeit, wo LED-Systeme unpraktisch oder ungeeignet sind."
+    },
+    {
+      "question": "Wie beeinflusst BYOD-Übertitelung die Theateratmosphäre?",
+      "answer": "BYOD-Übertitelung ermöglicht eine präzise Steuerung des Lichts durch Dunkelmodi und natürliche Abschirmung durch die Zuschauer. Dies minimiert die Lichtstreuung und respektiert die abgedunkelte Umgebung des Zuschauerraums."
+    },
+    {
+      "question": "Wie stabil ist die Netzwerkverbindung bei BYOD-Übertitelung?",
+      "answer": "Moderne BYOD-Plattformen verwenden Low-Bandwidth-Caching, um sicherzustellen, dass die Untertitel auch in anspruchsvollen WLAN-Umgebungen oder bei mobilen Datenverbindungen der Benutzer synchron bleiben. Dies gewährleistet eine zuverlässige Leistung."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "BYOD",
+      "definition": "Bring Your Own Device; ein System, bei dem Zuschauer ihre eigenen Geräte (Smartphones, Tablets) verwenden, um Untertitel zu empfangen."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein Signal im Theaterstück-Skript, das den Zeitpunkt für eine bestimmte Aktion oder einen technischen Übergang (z. B. das Anzeigen eines Übertitels) angibt."
+    },
+    {
+      "term": "Skript",
+      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen für die Schauspieler und die Produktion enthält."
+    },
+    {
+      "term": "LED-Übertitelung",
+      "definition": "Ein System, bei dem Untertitel auf einer physischen LED-Leinwand angezeigt werden, die über der Bühne oder an einem anderen gut sichtbaren Ort platziert ist."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine dramatische Rolle in einem Theaterstück, die von einem Schauspieler verkörpert wird."
+    }
+  ]
+}

@@ -4,6 +4,22 @@ Official blog for [SurtitleLive](https://surtitlelive.com) - Live subtitling pla
 
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
 
+## URL Model
+
+This project has two simultaneous URL concerns:
+
+- **Deployment origin**: Cloudflare Pages serves the Astro build from the project root on `blog.surtitlelive.com`
+- **Public blog contract**: SurtitleLive still uses `/blog/*` as the canonical path family
+
+That means the published build must carry `public/_redirects` so the custom domain can correctly resolve:
+
+- `/blog/` -> `/`
+- `/blog/<slug>/` -> `/<slug>/`
+- `/blog/<locale>/<slug>/` -> `/<locale>/<slug>/`
+- `/blog/_astro/*` -> `/_astro/*`
+
+Without that Pages rewrite layer, the custom domain returns the homepage HTML for article and image URLs under `/blog/*`.
+
 ## 🚀 Quick Start
 
 ### Development
@@ -18,6 +34,7 @@ Open [http://localhost:4321](http://localhost:4321) to view the blog locally.
 
 ```bash
 npm run build
+npm run build:check
 ```
 
 The static site will be generated in the `dist/` directory.
@@ -60,6 +77,31 @@ Your blog content here...
 - **pubDate**: Publication date in YYYY-MM-DD format (required)
 - **heroImage**: Optional hero image path
 - **updatedDate**: Optional update date
+
+## 🌍 Blog Localization Workflow (Gemini)
+
+English posts in `src/content/blog/*.md` and `*.mdx` are the only source of truth.
+
+```bash
+npm run blog:i18n:sync
+npm run blog:i18n:translate:llm
+npm run blog:i18n:check
+npm run blog:i18n:geo
+```
+
+Output locale payloads are written to `src/content/i18n/blog/<locale>/<slug>.json` with `sourceHash` for drift detection.
+AI answer blocks (key takeaways / FAQ / glossary) are written to `src/content/i18n/geo/<locale>/<slug>.json`.
+
+One-command flow:
+
+```bash
+npm run blog:i18n:refresh
+```
+
+Published localized routes:
+- `/blog/<locale>/` (index)
+- `/blog/<locale>/<slug>/` (article)
+- `/blog/<locale>/rss.xml` (localized feed)
 
 ## 🎨 Adding Images
 
@@ -119,6 +161,16 @@ Cloudflare Pages will:
 - Deploy to global CDN
 - Make it live at `blog.surtitlelive.com`
 
+#### Required Pages Files
+
+The deployment output must include:
+
+- `public/_redirects`
+- `public/blog/fonts/*`
+- `public/blog/logo/New_logo.png`
+
+These are not optional niceties. They are part of the runtime contract that keeps `blog.surtitlelive.com/blog/*` working while the Astro build itself remains root-output static files.
+
 #### Preview Deployments
 
 Pull requests automatically get preview URLs for review before merging.
@@ -136,8 +188,11 @@ Pull requests automatically get preview URLs for review before merging.
 │   ├── layouts/        # Page layouts
 │   ├── pages/          # Routes
 │   │   ├── index.astro # Blog homepage
-│   │   ├── blog/       # Blog post pages
-│   │   └── rss.xml.ts  # RSS feed
+│   │   ├── [...slug].astro
+│   │   ├── [locale]/index.astro
+│   │   ├── [locale]/[slug].astro
+│   │   ├── [locale]/rss.xml.js
+│   │   └── rss.xml.js  # RSS feed (English)
 │   ├── styles/         # Global styles
 │   └── consts.ts       # Site configuration
 ├── astro.config.mjs    # Astro configuration
@@ -157,16 +212,40 @@ Edit site URL in `astro.config.mjs`:
 
 ```javascript
 export default defineConfig({
-  site: 'https://blog.surtitlelive.com',
+  site: 'https://surtitlelive.com',
+  base: '/blog/',
   // ...
 });
 ```
+
+Keep `base: '/blog/'` unless you are intentionally redesigning the entire main-site/blog routing model. The current production setup depends on `/blog/*` links in generated HTML plus Cloudflare Pages `_redirects` to bridge those URLs back to the root-output build.
 
 ## 🔗 Integration with Main App
 
 The main SurtitleLive application links to this blog at `https://blog.surtitlelive.com`.
 
-This blog includes a link back to the main app in the navigation.
+This blog links back to the main app using the canonical apex host `https://surtitlelive.com`, not `https://www.surtitlelive.com`.
+
+The main app rewrites `/blog/*` traffic to the dedicated Astro origin. The Astro app itself must therefore remain compatible with both:
+
+- `https://surtitlelive.com/blog/*`
+- `https://blog.surtitlelive.com/blog/*`
+
+## ✅ Build Contract Checks
+
+After every production build, run:
+
+```bash
+npm run build
+npm run build:check
+```
+
+`build:check` fails fast if:
+- a font URL is double-prefixed as `/blog/blog/fonts/...`
+- the built CSS still contains bare `/fonts/...` URLs
+- the built HTML still contains deprecated `https://www.surtitlelive.com` links
+- the built HTML still contains `/logo/New_logo.png`
+- the built output is missing the required Cloudflare Pages `_redirects` rules
 
 ## 📄 License
 

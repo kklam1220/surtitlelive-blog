@@ -87,7 +87,7 @@ Let artists remain the final authority on meaning.
 
 If you are preparing surtitles for a live production, rehearsal, or festival tour, SurtitleLive is designed specifically for professional theatre workflows — not generic subtitle generation.
 
-[Start in sandbox mode](https://www.surtitlelive.com/auth/register) and experience the difference between static slides and live theatrical control.
+[Start in sandbox mode](https://surtitlelive.com/auth/register) and experience the difference between static slides and live theatrical control.
 
 ---
 ## FAQ

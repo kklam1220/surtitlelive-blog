@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "2-beyond-the-led-screen-byod-opera",
+  "sourceHash": "2f7059718371134967081b206220b92ced4cb04d6944f10124b20ff49d1ea81e",
+  "generatedAt": "2026-04-10T03:14:40.016Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "BYOD surtitling uses audience smartphones to display subtitles, offering flexibility for diverse performance spaces.",
+    "Fixed LED screens are best for permanent installations in large theatres; BYOD excels in touring and non-traditional venues.",
+    "BYOD surtitling supports multiple languages simultaneously, delivering private subtitle feeds to each audience member's device.",
+    "BYOD systems use dark modes and natural shielding to minimize light spill and respect the theatrical atmosphere."
+  ],
+  "faq": [
+    {
+      "question": "What is BYOD surtitling?",
+      "answer": "BYOD (Bring Your Own Device) surtitling is a web-based system that delivers subtitles directly to the audience's smartphones or tablets. It's ideal for venues where traditional LED screens are impractical."
+    },
+    {
+      "question": "When is BYOD surtitling the best choice?",
+      "answer": "BYOD is best for touring productions, site-specific performances, venues with variable sightlines, or when offering multiple language options. It provides accessibility without the logistical challenges of fixed hardware."
+    },
+    {
+      "question": "How does BYOD surtitling handle multilingual audiences?",
+      "answer": "BYOD allows for multiple simultaneous language streams. Each audience member selects their preferred language on their device, ensuring a personalized and uncluttered viewing experience."
+    },
+    {
+      "question": "Is BYOD surtitling technically reliable?",
+      "answer": "Modern BYOD platforms are designed for live performance, with features like battery optimization and low-bandwidth caching to ensure subtitle synchronization even with limited Wi-Fi or data connectivity."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitles",
+      "definition": "Text displayed above or beside a stage to translate dialogue or provide narrative information."
+    },
+    {
+      "term": "Cue",
+      "definition": "A specific point in the script or performance that triggers the display of a surtitle."
+    },
+    {
+      "term": "Script",
+      "definition": "The written text of a play, opera, or other performance, including dialogue and stage directions."
+    },
+    {
+      "term": "BYOD",
+      "definition": "Bring Your Own Device; in surtitling, refers to using audience members' personal devices (smartphones, tablets) to display subtitles."
+    },
+    {
+      "term": "Character",
+      "definition": "A person or role represented in a dramatic performance."
+    }
+  ]
+}

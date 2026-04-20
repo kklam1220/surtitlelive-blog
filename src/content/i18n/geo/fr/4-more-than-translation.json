@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "4-more-than-translation",
+  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
+  "generatedAt": "2026-04-10T03:15:58.275Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés à retenir",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "Le surtitrage transcende la simple traduction, favorisant l'inclusion culturelle et l'autonomie des artistes.",
+    "Les artistes peuvent jouer avec une émotion totale dans leur langue maternelle, en préservant l'identité et en partageant des histoires uniques.",
+    "SurtitleLive permet aux organismes artistiques d'immigrants de diffuser des surtitres de théâtre professionnels à partir d'un simple ordinateur portable.",
+    "La technologie de SurtitleLive crée des espaces inclusifs, respecte l'atmosphère et met en valeur la connexion humaine sur scène."
+  ],
+  "faq": [
+    {
+      "question": "Pourquoi est-il important de proposer du surtitrage dans la langue maternelle d'un artiste ?",
+      "answer": "Cela permet aux artistes d'exprimer pleinement leurs émotions, de préserver leur identité et de partager des histoires uniques sans que rien ne se perde dans la traduction. Cela favorise l'authenticité et l'expression culturelle."
+    },
+    {
+      "question": "Comment SurtitleLive rend-il le surtitrage accessible aux petits organismes artistiques ?",
+      "answer": "SurtitleLive est conçu pour être simple et abordable, permettant aux organismes artistiques d'immigrants de diffuser des surtitres de théâtre professionnels à partir d'un simple ordinateur portable, réduisant ainsi les barrières financières."
+    },
+    {
+      "question": "Comment l'approche « Apportez votre propre appareil » (AVPA) de SurtitleLive améliore-t-elle l'accessibilité ?",
+      "answer": "L'approche AVPA permet d'installer des théâtres n'importe où, des centres communautaires aux scènes professionnelles, sans matériel coûteux, ce qui rend le théâtre plus accessible à un public plus large."
+    },
+    {
+      "question": "Comment le « mode sombre » de SurtitleLive améliore-t-il l'expérience théâtrale ?",
+      "answer": "Le « mode sombre » garantit que la technologie ne distrait pas les autres spectateurs, en gardant l'attention sur la connexion humaine qui se produit sur scène, améliorant ainsi l'expérience théâtrale globale."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitrage",
+      "definition": "Affichage de texte (traduction, sous-titres) au-dessus ou à côté d'une scène de théâtre, d'un écran de cinéma ou d'un autre type d'écran de présentation."
+    },
+    {
+      "term": "Pièce de théâtre",
+      "definition": "Une œuvre de littérature dramatique écrite pour être jouée sur scène par des acteurs."
+    },
+    {
+      "term": "Réplique",
+      "definition": "Un segment de texte dans un script de théâtre qui correspond à un moment spécifique de l'action sur scène et qui doit être affiché comme un surtitre."
+    },
+    {
+      "term": "Personnage",
+      "definition": "Un rôle dramatique joué par un acteur dans une pièce de théâtre."
+    },
+    {
+      "term": "Mode sombre",
+      "definition": "Une fonctionnalité logicielle qui affiche du texte clair sur un fond sombre afin de réduire la fatigue oculaire et les distractions dans un environnement sombre."
+    }
+  ]
+}

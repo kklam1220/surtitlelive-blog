@@ -1,4 +1,6 @@
 ---
+import { buildMainSiteHref } from '../consts';
+
 const today = new Date();
 ---
 
@@ -6,10 +8,10 @@ const today = new Date();
 	<div class="container">
 		<p>&copy; {today.getFullYear()} SurtitleLive. All rights reserved.</p>
 		<div class="links">
-			<a href="https://www.surtitlelive.com/privacy">Privacy</a>
-			<a href="https://www.surtitlelive.com/terms">Terms</a>
-			<a href="https://www.surtitlelive.com/viewer-agreement">Viewer Agreement</a>
-			<a href="https://www.surtitlelive.com/contact">Contact</a>
+			<a href={buildMainSiteHref('/privacy')}>Privacy</a>
+			<a href={buildMainSiteHref('/terms')}>Terms</a>
+			<a href={buildMainSiteHref('/viewer-agreement')}>Viewer Agreement</a>
+			<a href={buildMainSiteHref('/contact')}>Contact</a>
 		</div>
 	</div>
 </footer>

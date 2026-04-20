@@ -10,15 +10,42 @@ interface Props {
 	title: string;
 	description: string;
 	image?: ImageMetadata;
+	canonicalPath?: string;
+	hreflangs?: Array<{ lang: string; path: string }>;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const {
+	title,
+	description,
+	image = FallbackImage,
+	canonicalPath = Astro.url.pathname,
+	hreflangs = [],
+} = Astro.props;
 
-const { title, description, image = FallbackImage } = Astro.props;
+const canonicalURL = new URL(canonicalPath, Astro.site);
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const rssUrl = new URL(`${normalizedBase}rss.xml`, Astro.site);
 const sitemapUrl = new URL(`${normalizedBase}sitemap-index.xml`, Astro.site);
+const regularFontUrl = new URL(`${normalizedBase}fonts/atkinson-regular.woff`, Astro.site);
+const boldFontUrl = new URL(`${normalizedBase}fonts/atkinson-bold.woff`, Astro.site);
+const fontFaceStyles = `
+	@font-face {
+		font-family: 'Atkinson Hyperlegible';
+		src: url('${regularFontUrl.toString()}') format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Atkinson Hyperlegible';
+		src: url('${boldFontUrl.toString()}') format('woff');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+`;
 ---
 
 <!-- Global Metadata -->
@@ -36,11 +63,17 @@ const sitemapUrl = new URL(`${normalizedBase}sitemap-index.xml`, Astro.site);
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href={`${normalizedBase}fonts/atkinson-regular.woff`} as="font" type="font/woff" crossorigin />
-<link rel="preload" href={`${normalizedBase}fonts/atkinson-bold.woff`} as="font" type="font/woff" crossorigin />
+<link rel="preload" href={regularFontUrl} as="font" type="font/woff" crossorigin />
+<link rel="preload" href={boldFontUrl} as="font" type="font/woff" crossorigin />
+<style is:inline set:html={fontFaceStyles} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+{
+	hreflangs.map((item) => (
+		<link rel="alternate" hreflang={item.lang} href={new URL(item.path, Astro.site)} />
+	))
+}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

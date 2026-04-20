@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "2-beyond-the-led-screen-byod-opera",
+  "sourceHash": "2f7059718371134967081b206220b92ced4cb04d6944f10124b20ff49d1ea81e",
+  "generatedAt": "2026-04-10T03:15:48.255Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés à retenir",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "Le sous-titrage PAP (apportez votre propre appareil) offre une accessibilité flexible pour les lieux de spectacle non traditionnels.",
+    "Le PAP est idéal pour les tournées, les sites patrimoniaux et les productions multilingues à haute densité.",
+    "Le PAP respecte l'atmosphère théâtrale grâce au contrôle de précision et à la protection naturelle contre les fuites de lumière.",
+    "Les plateformes PAP modernes sont conçues pour la stabilité du réseau et l'efficacité énergétique lors des représentations en direct."
+  ],
+  "faq": [
+    {
+      "question": "Qu'est-ce que le sous-titrage PAP (apportez votre propre appareil) ?",
+      "answer": "Le sous-titrage PAP est une solution Web qui diffuse les sous-titres directement sur les appareils personnels du public, comme les téléphones intelligents, offrant une accessibilité flexible pour les lieux non traditionnels."
+    },
+    {
+      "question": "Quand le sous-titrage PAP est-il préférable aux écrans à DEL traditionnels ?",
+      "answer": "Le PAP est idéal pour les tournées, les bâtiments patrimoniaux avec des contraintes structurelles, les productions multilingues et les lieux avec des lignes de visée variables où un écran central n'est pas pratique."
+    },
+    {
+      "question": "Comment le sous-titrage PAP respecte-t-il l'atmosphère théâtrale ?",
+      "answer": "Le PAP utilise des modes sombres optimisés pour les écrans OLED, concentrant la lumière uniquement là où elle est nécessaire et permettant aux spectateurs de contrôler la lumière avec leurs appareils."
+    },
+    {
+      "question": "Quels sont les avantages techniques des plateformes PAP modernes ?",
+      "answer": "Les plateformes PAP modernes sont conçues pour l'efficacité énergétique, consommant un minimum d'énergie, et la stabilité du réseau, assurant la synchronisation des sous-titres même dans des environnements Wi-Fi difficiles."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sous-titrage PAP",
+      "definition": "Sous-titrage diffusé sur les appareils personnels du public (téléphones, tablettes)."
+    },
+    {
+      "term": "Cue",
+      "definition": "Un point spécifique dans le script de théâtre qui déclenche l'affichage d'un sous-titre."
+    },
+    {
+      "term": "Script",
+      "definition": "Le texte complet d'une pièce de théâtre, y compris les dialogues et les indications scéniques."
+    },
+    {
+      "term": "Caractère",
+      "definition": "Un rôle dramatique représenté par un acteur dans une pièce de théâtre."
+    },
+    {
+      "term": "Écran à DEL",
+      "definition": "Un écran d'affichage traditionnel utilisé pour afficher les sous-titres dans les théâtres, généralement monté au-dessus de la scène."
+    }
+  ]
+}

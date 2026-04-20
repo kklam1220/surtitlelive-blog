@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:16:42.097Z",
+  "sectionTitles": {
+    "keyTakeaways": "主なポイント",
+    "faq": "よくある質問",
+    "glossary": "用語集",
+    "related": "関連情報"
+  },
+  "keyTakeaways": [
+    "SurtitleLiveは、PowerPointに代わるAIを活用した劇場字幕ワークフローです。",
+    "AIがscript（戯曲）を解析し、フォーマットすることで、手作業による字幕作成の時間を短縮します。",
+    "ライブperformance（公演）のリズムに合わせて、cue（キュー）出しを柔軟にコントロールできます。",
+    "AIは翻訳の下書きを作成し、人間のtranslator（翻訳者）が最終的な調整を行います。"
+  ],
+  "faq": [
+    {
+      "question": "AIは人間のtheater translator（劇場翻訳者）に取って代わりますか？",
+      "answer": "いいえ。SurtitleLiveは、AIを厳密に「前処理ツール」として位置付けています。最終的な芸術的決定と感情的な解釈は、常に人間のアーティストの手に委ねられます。"
+    },
+    {
+      "question": "リアルタイムのperformance（公演）翻訳にPowerPointの代わりにSurtitleLiveを使用する理由は何ですか？",
+      "answer": "従来のPowerPointは線形で静的であるため、actor（俳優）が台詞をスキップしたり、リズムを変更したりすると問題が発生します。SurtitleLiveは、ライブtheater（劇場）の予測不可能な性質に合わせて特別に構築された専用のライブsubtitle（字幕）システムであり、翻訳がactor（俳優）と一緒に呼吸することを保証します。"
+    },
+    {
+      "question": "SurtitleLiveはどのようなファイル形式に対応していますか？",
+      "answer": "SurtitleLiveは、`.docx`形式のscript（戯曲）を解析し、Excel（`.xlsx`）およびPowerPoint（`.pptx`）形式へのエクスポートに対応しています。"
+    },
+    {
+      "question": "SurtitleLiveは多言語字幕に対応していますか？",
+      "answer": "はい。AIが元のテキストを解析した後、数秒で2番目または3番目の言語の同期された翻訳を生成できます。手動による別のワークフローは必要ありません。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "script（戯曲）",
+      "definition": "演劇の台本。登場人物のdialogue（台詞）やstage directions（ト書き）が含まれます。"
+    },
+    {
+      "term": "cue（キュー）",
+      "definition": "舞台や字幕のタイミングを示す合図。SurtitleLiveでは、字幕の表示タイミングを指します。"
+    },
+    {
+      "term": "character（登場人物）",
+      "definition": "劇中の役割。actor（俳優）が演じます。"
+    },
+    {
+      "term": "dialogue（台詞）",
+      "definition": "登場人物が話す言葉。script（戯曲）の主要な要素です。"
+    },
+    {
+      "term": "performance（公演）",
+      "definition": "舞台上で行われる演劇の上演。"
+    }
+  ]
+}

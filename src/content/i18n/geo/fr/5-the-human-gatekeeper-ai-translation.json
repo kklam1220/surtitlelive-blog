@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "5-the-human-gatekeeper-ai-translation",
+  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
+  "generatedAt": "2026-04-10T03:16:03.517Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés à retenir",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "L'IA excelle dans la traduction rapide, mais elle peine à saisir le sous-texte et l'intention dramatique essentiels au théâtre.",
+    "La traduction théâtrale est soumise à des contraintes physiques, telles que les limites de caractères par seconde pour la lisibilité des surtitres.",
+    "Le contexte au-delà de la phrase est crucial : l'IA doit tenir compte de l'arc émotionnel de la pièce, ce qu'elle ne fait pas actuellement.",
+    "L'avenir réside dans une approche hybride : l'IA assiste les traducteurs humains, qui conservent le contrôle artistique."
+  ],
+  "faq": [
+    {
+      "question": "Pourquoi l'IA seule ne suffit-elle pas pour la traduction théâtrale ?",
+      "answer": "L'IA peut traduire des mots, mais elle ne saisit pas l'intention, le rythme et le sous-texte cruciaux pour le théâtre. Elle optimise la probabilité, alors que le théâtre vit de l'intention."
+    },
+    {
+      "question": "Quelles sont les contraintes physiques de la traduction théâtrale ?",
+      "answer": "Les surtitres doivent être concis (15 à 20 caractères par seconde) pour que le public puisse lire sans perdre sa concentration sur la scène. La longueur et le timing sont essentiels."
+    },
+    {
+      "question": "Comment le contexte affecte-t-il la traduction théâtrale ?",
+      "answer": "Le sens d'une pièce s'accumule au fil des scènes. Un traducteur humain ajuste le langage pour qu'il corresponde à l'arc émotionnel, ce que l'IA ne peut pas faire de manière autonome."
+    },
+    {
+      "question": "Quel est l'avenir de la traduction théâtrale avec l'IA ?",
+      "answer": "L'avenir est une IA assistée par l'humain. L'IA accélère les premières ébauches, tandis que les traducteurs humains affinent le ton, le rythme et le timing, garantissant ainsi la paternité artistique."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Texte d'une pièce de théâtre, contenant les dialogues et les indications scéniques."
+    },
+    {
+      "term": "Cue",
+      "definition": "Signal indiquant un changement sur scène, comme le lancement d'un surtitre ou d'un effet de lumière."
+    },
+    {
+      "term": "Character",
+      "definition": "Rôle dramatique interprété par un acteur dans une pièce de théâtre."
+    },
+    {
+      "term": "Sous-texte",
+      "definition": "Signification implicite ou non exprimée d'un dialogue, souvent révélée par le contexte et la performance."
+    },
+    {
+      "term": "Surtitres",
+      "definition": "Traduction affichée au-dessus ou en dessous de la scène pour rendre une représentation accessible à un public multilingue."
+    }
+  ]
+}

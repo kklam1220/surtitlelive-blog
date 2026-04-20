@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "5-the-human-gatekeeper-ai-translation",
+  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
+  "generatedAt": "2026-04-10T03:15:29.272Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kernaussagen",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "KI-Übersetzung allein erfasst nicht Subtext, Absicht und emotionale Tiefe im Theater.",
+    "Theaterübersetzung erfordert Berücksichtigung physischer Einschränkungen wie Lesegeschwindigkeit und Timing.",
+    "Kontext über einzelne Sätze hinaus ist entscheidend; KI fehlt oft die ganzheitliche Sicht auf ein Stück.",
+    "Die Zukunft liegt in KI-gestützten, von Menschen geführten Workflows, die Geschwindigkeit mit künstlerischem Urteilsvermögen verbinden."
+  ],
+  "faq": [
+    {
+      "question": "Warum ist KI-Übersetzung allein für Theater ungeeignet?",
+      "answer": "KI optimiert für Wahrscheinlichkeit, nicht für dramatische Absicht. Sie erfasst keinen Subtext, Rhythmus und emotionale Nuancen, die für Theateraufführungen entscheidend sind. Eine menschliche Bearbeitung ist notwendig."
+    },
+    {
+      "question": "Welche physischen Einschränkungen beeinflussen die Theaterübersetzung?",
+      "answer": "Übertitel müssen lesbar sein und mit dem Tempo der Aufführung übereinstimmen. Zu lange oder zu früh angezeigte Übertitel können das Publikum ablenken und die dramatische Wirkung beeinträchtigen. Präzision ist wichtig."
+    },
+    {
+      "question": "Wie beeinflusst der Kontext die Theaterübersetzung?",
+      "answer": "Die Bedeutung im Theater entwickelt sich über Szenen hinweg. KI-Übersetzungen arbeiten oft Satz für Satz und verpassen so wiederkehrende Bilder, tonale Verschiebungen und Charakterentwicklungen, die die Übersetzung beeinflussen sollten."
+    },
+    {
+      "question": "Wie sieht die Zukunft der Theaterübersetzung aus?",
+      "answer": "Die Zukunft liegt in der Kombination von KI-Geschwindigkeit mit menschlicher Präzision. KI kann Entwürfe erstellen, aber menschliche Übersetzer verfeinern Ton, Rhythmus und Timing, um sicherzustellen, dass die Übersetzung die künstlerische Absicht widerspiegelt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Skript",
+      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein Signal im Skript, das einen Wechsel in der Bühnenbeleuchtung, im Ton oder in den Übertiteln auslöst."
+    },
+    {
+      "term": "Charakter",
+      "definition": "Eine dramatische Rolle in einem Theaterstück, dargestellt von einem Schauspieler."
+    },
+    {
+      "term": "Subtext",
+      "definition": "Die unausgesprochene oder implizite Bedeutung hinter den Worten eines Charakters, die durch Kontext und Darbietung vermittelt wird."
+    },
+    {
+      "term": "Übertitel",
+      "definition": "Textanzeigen, die den Dialog einer Theateraufführung in einer anderen Sprache übersetzen und dem Publikum helfen, die Handlung zu verstehen."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "5-the-human-gatekeeper-ai-translation",
+  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
+  "generatedAt": "2026-04-10T03:14:56.189Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "AI translation excels at speed and accessibility but often misses the subtext and emotional nuances crucial for theatre.",
+    "Theatre translation requires understanding dramatic intention, rhythm, and character voice, elements AI struggles to capture fully.",
+    "Surtitling involves physical constraints like timing and readability, demanding adjustments beyond standard AI translation capabilities.",
+    "The optimal approach combines AI for initial drafts with human expertise to refine tone, pacing, and artistic intention in theatre translation."
+  ],
+  "faq": [
+    {
+      "question": "Why can't AI fully replace human translators in theatre?",
+      "answer": "AI struggles with subtext, emotional cues, and dramatic intention, which are vital in theatre. Human translators understand context, character, and performance nuances that AI algorithms often miss, leading to a flatter translation."
+    },
+    {
+      "question": "What are the physical constraints that affect theatre translation?",
+      "answer": "Surtitles must adhere to strict readability guidelines (characters per second) and timing to avoid distracting the audience. Translations need to be concise and appear/disappear in sync with the actors' delivery and stage action."
+    },
+    {
+      "question": "How does context beyond a single sentence impact theatre translation?",
+      "answer": "Meaning in theatre builds across scenes through recurring imagery, tonal shifts, and character development. Human translators consider the entire play's arc, while AI typically translates sentence by sentence, potentially losing the holistic emotional connection."
+    },
+    {
+      "question": "What is the ideal workflow for theatre translation?",
+      "answer": "The best approach is AI-assisted, human-led. AI generates initial drafts and handles formatting, while human translators refine tone, rhythm, and timing within the rehearsal and performance context, ensuring artistic integrity and accuracy."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "The written text of a play, including dialogue and stage directions."
+    },
+    {
+      "term": "Cue",
+      "definition": "A signal in a script or performance that prompts an action, line, or technical change, such as a surtitle appearing."
+    },
+    {
+      "term": "Character",
+      "definition": "A dramatic role or persona within a play, portrayed by an actor."
+    },
+    {
+      "term": "Subtext",
+      "definition": "The underlying meaning or implicit message in a line or scene, not explicitly stated but understood through context and delivery."
+    },
+    {
+      "term": "Surtitles",
+      "definition": "Translated text displayed above or beside a stage, providing real-time translation for the audience."
+    }
+  ]
+}

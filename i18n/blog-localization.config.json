@@ -1,0 +1,28 @@
+{
+  "sourceLocale": "en",
+  "sourceDir": "src/content/blog",
+  "localizedDir": "src/content/i18n/blog",
+  "locales": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zh-CN",
+    "zh-TW"
+  ],
+  "gemini": {
+    "model": "gemini-2.0-flash",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta"
+  }
+}

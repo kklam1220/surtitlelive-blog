@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "generatedAt": "2026-04-10T03:17:34.140Z",
+  "sectionTitles": {
+    "keyTakeaways": "重點整理",
+    "faq": "常見問題",
+    "glossary": "詞彙表",
+    "related": "相關資訊"
+  },
+  "keyTakeaways": [
+    "SurtitleLive 採用「隨選提取」架構，類似於串流媒體，避免完整劇本檔案儲存在使用者裝置上。",
+    "劇本文字經過加密，僅在裝置的暫時記憶體 (RAM) 內解鎖，關閉分頁後立即消失。",
+    "數位權杖作為臨時通行證，演出結束後即失效，並可從伺服器端立即撤銷存取權。",
+    "SurtitleLive 旨在提高未經授權複製的技術和操作門檻，同時保持合法觀眾的流暢體驗。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive 如何防止劇本被大量爬蟲？",
+      "answer": "由於系統僅請求作用中 cue 周圍的小區塊字幕，機器人必須模擬即時觀看整個演出才能爬取完整劇本，這使得大規模自動爬蟲變得不切實際。"
+    },
+    {
+      "question": "如果連結被分享，SurtitleLive 如何保護劇本？",
+      "answer": "SurtitleLive 使用數位權杖作為臨時通行證，演出結束後即失效。此外，如果出現安全問題，可以從伺服器端立即撤銷對特定演出的存取權。"
+    },
+    {
+      "question": "SurtitleLive 如何處理傳輸中的資料安全？",
+      "answer": "所有連線都使用 TLS 1.3 (HTTPS) 進行加密，防止公共 Wi-Fi 網路上的流量被竊聽。劇本在離開安全的雲端儲存庫之前，會被切碎並使用 AES-256 金鑰進行加密。"
+    },
+    {
+      "question": "SurtitleLive 無法防止哪些安全漏洞？",
+      "answer": "SurtitleLive 無法阻止螢幕錄製、相機拍攝或使用 OCR 軟體將影片轉換回文字。這些屬於基於顯示器的媒體的已知限制。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "劇本 (Script)",
+      "definition": "戲劇演出的文字，包含對話、舞台指示和角色描述。"
+    },
+    {
+      "term": "提示 (Cue)",
+      "definition": "舞台或字幕的特定時間點或觸發事件，用於同步動作或顯示文字。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "劇本中由演員扮演的虛構人物。"
+    },
+    {
+      "term": "AES-256",
+      "definition": "一種進階加密標準，使用 256 位元金鑰來加密資料，提供高度安全性。"
+    },
+    {
+      "term": "TLS 1.3 (HTTPS)",
+      "definition": "一種安全協定，用於在網路上加密通訊，確保資料在傳輸過程中的機密性和完整性。"
+    }
+  ]
+}

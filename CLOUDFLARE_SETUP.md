@@ -43,6 +43,11 @@
 | **Build output directory** | `dist` （自動填入）|
 | **Root directory** | 留空 |
 
+重要：
+- 這個 Pages 專案必須保留 `public/_redirects`
+- 它負責把 `blog.surtitlelive.com/blog/*` 代理回 Astro 實際輸出的 root 路徑
+- 如果缺少這個檔案，文章頁和圖片會在 `/blog/*` 下回首頁 HTML
+
 #### 環境變數（可選）
 
 點擊 **Add variable** 添加：
@@ -100,6 +105,9 @@ Cloudflare 會自動處理：
 - [ ] 預覽 URL (`*.pages.dev`) 可以訪問
 - [ ] 博客首頁正確顯示
 - [ ] 可以查看個別博客文章
+- [ ] `https://blog.surtitlelive.com/blog/` 可以顯示博客首頁
+- [ ] `https://blog.surtitlelive.com/blog/<slug>/` 可以顯示文章，而不是回首頁
+- [ ] `https://blog.surtitlelive.com/blog/_astro/...` 返回圖片而不是 HTML
 - [ ] RSS feed 可訪問：`/rss.xml`
 - [ ] Sitemap 可訪問：`/sitemap-index.xml`
 - [ ] 自定義域名 `blog.surtitlelive.com` 已配置
@@ -237,6 +245,25 @@ Cloudflare 會自動處理：
 - 圖片應放在 `src/assets/` 目錄
 - 使用相對路徑引用：`../../assets/image.jpg`
 - 提交時包含圖片文件
+
+### `blog/` 路由點進文章卻回首頁
+
+先檢查三件事：
+
+1. `public/_redirects` 是否存在並已部署
+2. `build:check` 是否通過
+3. 是否誤把 shared asset 路徑寫成 root-only，例如 `/logo/New_logo.png`
+
+快速驗證：
+
+```bash
+curl -I https://blog.surtitlelive.com/blog/7-geometry-of-dramatic-parsing/
+curl -I https://blog.surtitlelive.com/blog/_astro/script-parsing-theatre-subtitles.DK_aUvkY_1nkP64.webp
+```
+
+預期：
+- 文章 URL 應回文章頁 HTML
+- `_astro` URL 應回 `image/*`
 
 ---
 

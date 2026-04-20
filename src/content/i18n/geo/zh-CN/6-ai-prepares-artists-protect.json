@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "6-ai-prepares-artists-protect",
+  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "generatedAt": "2026-04-10T03:17:14.855Z",
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "常见问题解答",
+    "glossary": "术语表",
+    "related": "相关主题"
+  },
+  "keyTakeaways": [
+    "SurtitleLive是一个AI辅助的戏剧字幕工作流程，旨在取代手动PowerPoint流程。",
+    "AI处理剧本解析和格式设置，而人类艺术家则控制现场提示和情感。",
+    "与僵化的幻灯片不同，SurtitleLive允许轻松调整字幕以适应现场排练的变化。",
+    "SurtitleLive通过AI草稿、人工润色和现场控制，实现了可持续的现代戏剧工作流程。"
+  ],
+  "faq": [
+    {
+      "question": "AI会取代人类戏剧翻译吗？",
+      "answer": "不会。SurtitleLive将AI定位为“预处理工具”。最终的艺术决策和情感诠释将始终掌握在人类艺术家手中。"
+    },
+    {
+      "question": "为什么在实时演出翻译中使用SurtitleLive而不是PowerPoint？",
+      "answer": "传统的PowerPoint是线性的和静态的，如果演员跳过台词或改变节奏，会导致问题。SurtitleLive是一个专门的现场字幕系统，专为现场戏剧的不可预测性而构建，确保您的翻译与演员同呼吸。"
+    },
+    {
+      "question": "SurtitleLive如何帮助加快字幕制作过程？",
+      "answer": "SurtitleLive使用AI自动解析剧本，检测角色对话，并将其与舞台说明分开，从而节省了手动劳动。它还支持快速多语言生成，无需完全单独的手动工作流程。"
+    },
+    {
+      "question": "SurtitleLive是否适合没有技术经验的用户？",
+      "answer": "是的。SurtitleLive旨在消除技术负担，界面友好，易于使用。用户可以专注于艺术润色和现场控制，而无需担心复杂的技术设置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "剧本 (Script)",
+      "definition": "戏剧演出的书面文本，包含对话和舞台说明。"
+    },
+    {
+      "term": "提示 (Cue)",
+      "definition": "舞台演出中，指示演员、技术人员或其他人员采取行动的信号。"
+    },
+    {
+      "term": "角色 (Character)",
+      "definition": "戏剧作品中的虚构人物，由演员扮演。"
+    },
+    {
+      "term": "字幕 (Surtitle)",
+      "definition": "显示在舞台上方或附近的翻译文本，帮助观众理解外语对话。"
+    },
+    {
+      "term": "数字戏剧学 (Digital Dramaturgy)",
+      "definition": "在戏剧制作中使用数字工具和技术来增强艺术表达和观众体验。"
+    }
+  ]
+}
