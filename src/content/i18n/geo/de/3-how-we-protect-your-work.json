@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "de",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
   "generatedAt": "2026-04-10T03:15:19.575Z",
   "sectionTitles": {
     "keyTakeaways": "Wichtige Erkenntnisse",
@@ -11,49 +11,45 @@
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "SurtitleLive schützt Ihre Drehbücher und Übersetzungen als Ihr geistiges Eigentum.",
-    "Das 'Streamen, nicht Herunterladen'-Prinzip verhindert das Speichern vollständiger Drehbücher auf Zuschauergeräten.",
-    "Verschlüsselung und kurzlebige Zugriffstoken verhindern unbefugten Zugriff auf Ihre Inhalte.",
-    "SurtitleLive erschwert das Massen-Scraping und die unbefugte Weitergabe von Drehbüchern erheblich."
+    "SurtitleLive nutzt bedarfsbasierte Runtime-Ausspielung, damit der offizielle Viewer kein vollständiges Klartext-Skriptpaket zu Beginn laden muss.",
+    "Verschlüsselte Untertitel-Segmente sind für die Anzeige innerhalb einer autorisierten Viewer-Session vorgesehen; Browser- und Geräteverhalten bleibt dabei realistisch einzuplanen.",
+    "Temporäre Zugriffstokens, Ablaufzeiten und serverseitige Sperrung helfen, den Zugriff nach der Aufführung zu begrenzen.",
+    "Diese Kontrollen reduzieren beiläufiges Kopieren und unkontrollierten Zugriff; sie sind kein Versprechen absoluter Kopiersicherheit."
   ],
   "faq": [
     {
-      "question": "Wie verhindert SurtitleLive, dass mein gesamtes Drehbuch heruntergeladen wird?",
-      "answer": "SurtitleLive verwendet eine 'Fetch on Demand'-Architektur. Zuschauergeräte empfangen nur kleine Textblöcke um den aktuellen Cue herum, anstatt das gesamte Drehbuch auf einmal. Das vollständige Script wird nie auf dem Gerät gespeichert."
+      "question": "Wie reduziert SurtitleLive beiläufiges Kopieren von Skripten?",
+      "answer": "Der offizielle Viewer lädt verschlüsselte Untertitel-Segmente bei Bedarf um den aktuellen Cue herum, statt beim Einstieg das gesamte Skript als lesbare Browser-Nutzlast anzuzeigen."
     },
     {
-      "question": "Wie funktioniert die Verschlüsselung in SurtitleLive?",
-      "answer": "Alle Verbindungen nutzen TLS 1.3 (HTTPS). Drehbücher werden in Chunks zerlegt, mit AES-256 verschlüsselt und nur im temporären Speicher (RAM) des Zuschauergeräts entschlüsselt. Nach dem Schließen des Tabs verschwinden die Daten."
+      "question": "Kann SurtitleLive garantieren, dass ein Skript nie kopiert werden kann?",
+      "answer": "Nein. Kein digitales Ausspielungssystem kann Screenshots, Kameras, OCR oder eigene Clients mit gültigem Zugriff absolut verhindern. SurtitleLive ist Risikoreduktion, kein absoluter Kopierschutz."
     },
     {
-      "question": "Was sind kurzlebige Zugriffspässe und wie schützen sie mein Drehbuch?",
-      "answer": "Digitale Token funktionieren wie temporäre Pässe und verfallen nach der Vorstellung. Im Falle eines Sicherheitsbedenkens kann der Zugriff auf eine Vorstellung sofort serverseitig widerrufen werden, wodurch alle Verbindungen unterbrochen werden."
+      "question": "Was passiert, wenn ein Viewer-Link eingeschränkt werden muss?",
+      "answer": "Runtime-Zugriff kann über temporäre Tokens, Ablaufzeiten und serverseitige Sperrung für neue oder erneuerte Runtime-Anfragen begrenzt werden."
     },
     {
-      "question": "Kann SurtitleLive verhindern, dass Zuschauer Screenshots machen oder den Bildschirm abfilmen?",
-      "answer": "Nein. Wie alle digitalen Systeme kann SurtitleLive die Aufnahme des Bildschirms nicht verhindern. Es erschwert jedoch das Massen-Scraping und die unbefugte Weitergabe von Drehbüchern erheblich."
+      "question": "Wie werden Daten während der Übertragung geschützt?",
+      "answer": "Verbindungen nutzen HTTPS/TLS, und Runtime-Ausspielung verwendet verschlüsselte Segmente als Teil eines mehrschichtigen Sicherheitsmodells."
     }
   ],
   "glossary": [
     {
-      "term": "Drehbuch (Script)",
-      "definition": "Der vollständige Text eines Theaterstücks, einschließlich Dialoge und Bühnenanweisungen."
+      "term": "Runtime-Segment",
+      "definition": "Eine kleine verschlüsselte Untertitel-Einheit, die um den Show-Fortschritt herum angefordert wird, statt ein vollständiges Klartext-Skriptpaket zu laden."
     },
     {
-      "term": "Cue",
-      "definition": "Ein spezifischer Zeitpunkt im Drehbuch, der den Start eines Untertitels oder einer anderen Aktion signalisiert."
+      "term": "Viewer-Zugriff",
+      "definition": "Die kontrollierte Browser-Session für einen autorisierten Zuschauer-Viewer."
     },
     {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+      "term": "Sperrung",
+      "definition": "Eine serverseitige Kontrolle, die neuen oder erneuerten Runtime-Zugriff nach einem Sicherheitsanliegen begrenzen kann."
     },
     {
-      "term": "AES-256",
-      "definition": "Ein fortschrittlicher Verschlüsselungsstandard, der verwendet wird, um Drehbücher in SurtitleLive zu schützen."
-    },
-    {
-      "term": "TLS 1.3 (HTTPS)",
-      "definition": "Der Sicherheitsstandard für Banken, der für alle Verbindungen in SurtitleLive verwendet wird, um Daten während der Übertragung zu schützen."
+      "term": "Risikoreduktion",
+      "definition": "Ein Sicherheitsziel, das praktisches Kopierrisiko senkt, ohne absolute Verhinderung zu behaupten."
     }
   ]
 }

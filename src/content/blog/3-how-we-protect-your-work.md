@@ -1,20 +1,20 @@
 ---
 title: 'Protecting Theatre IP: How SurtitleLive Secures Your Scripts and Translations'
-description: 'How SurtitleLive secures your scripts and translations with on-demand streaming and military-grade encryption.'
+description: 'How SurtitleLive secures scripts and translations with encrypted runtime segments and controlled viewer access.'
 pubDate: '2026-01-25'
 heroImage: './blog-3.jpg'
 tags: ['Security', 'Encryption', 'IP Protection', 'Tech Deep Dive']
 ---
 
-At SurtitleLive, we understand that your scripts and translations are not just text files—they are the intellectual property (IP) that drives your production. One of our core design goals is to ensure that your content remains **yours**, accessible only to your paying audience and staff, and protected against unauthorized copying.
+At SurtitleLive, we understand that your scripts and translations are not just text files—they are production material that may carry copyright, licensing, and commercial sensitivity. One of our core design goals is to keep access limited to authorized audiences and staff while reducing casual copying.
 
 Here is a look under the hood at how we secure your data, written in plain English.
 
 > **Security at a Glance**
 >
-> *   **On-Demand Streaming:** No complete script files are persistently stored on user devices.
-> *   **In-Memory Decryption:** Data vanishes as soon as the browser tab closes.
-> *   **Dynamic Access Control:** Temporary tokens prevent unauthorized post-show access.
+> *   **On-Demand Streaming:** The official viewer avoids loading a full plaintext script bundle up front.
+> *   **Segmented Runtime Delivery:** Decrypted subtitle segments are intended to stay inside the authorized viewer session for display.
+> *   **Dynamic Access Control:** Temporary tokens and server-side revocation limit post-show access.
 
 ## 1. The "Stream, Don't Download" Philosophy
 
@@ -22,34 +22,34 @@ In the past, many subtitle systems worked by sending the entire script file to t
 
 **We changed that.**
 
-SurtitleLive v2 uses a **"Fetch on Demand"** architecture. Think of it like streaming a movie on Netflix versus downloading a video file.
-*   **No Full Downloads:** The viewer's device never receives the whole script at once. It only requests small "chunks" of subtitles directly around the current cue.
-*   **Just-in-Time Delivery:** If you are on Cue 10, the device might only know about Cues 8 through 15. The rest of the script literally does not exist on their device yet.
-*   **Anti-Scraping:** Because the browser only requests text for the active cue, this architecture makes large-scale automated scraping impractical without replicating real-time viewing behavior.
+SurtitleLive v2 uses a **"Fetch on Demand"** architecture. The Official Viewer loads encrypted subtitle segments on demand around the current cue instead of loading the full plaintext script into the UI up front.
+*   **No Plaintext Full-Script Preload:** The Official Viewer avoids presenting the entire script as one readable browser payload at entry time.
+*   **On-Demand Segments:** Subtitle segments are requested around show progress and decrypted in browser memory for display.
+*   **Layered Runtime Access:** Valid runtime access still relies on temporary bearer tokens, encrypted segments, and revocation controls. A custom client with a valid token may be able to request additional permitted segments, so this design reduces casual copying rather than making copying impossible.
 
 ## 2. Encryption: The "Disappearing Ink" Method
 
 Even when we send those small chunks of text to a viewer's phone, we don't send them as plain text.
 
-*   **Encryption in Transit:** All connections use **TLS 1.3 (HTTPS)**, the banking-grade security standard. This prevents anyone on a public Wi-Fi network from "sniffing" the traffic to see what is being sent.
+*   **Encryption in Transit:** Connections use HTTPS/TLS, which helps protect traffic against passive network inspection on public Wi-Fi.
 *   **Encryption at Rest & Packet Level:** Before your script leaves our secure cloud vault, it is chopped up and encrypted with a unique **AES-256** "lock" (key) generated specifically for that single performance.
-*   **The "Magic Ink" (In-Memory Decryption):** This is our strongest defense. When an encrypted chunk arrives on the viewer's phone, it is unlocked **only inside the device's temporary memory (RAM)**. It is never written to the phone's storage or cache. If the user refreshes the page or closes the tab, that data vanishes instantly. It’s like reading a message written in disappearing ink—there is no persistent file left behind that can be recovered through normal device storage or browser caching.
+*   **Segment-based viewer delivery:** The official viewer requests encrypted runtime segments and decrypts only the small window needed for playback. SurtitleLive does not send a full plaintext script bundle to the audience viewer. Browser and device behavior can vary, and no web system can prevent screenshots or custom clients, so this should be treated as risk reduction rather than absolute copy protection.
 
 ## 3. Short-Lived Access Passes
 
 We know that links get shared. A QR code photo posted on social media could theoretically let anyone watch along. To combat this:
 
 *   **One-Time Stage Door Pass:** Our digital tokens function like a temporary pass. Once the curtain falls, the pass expires, leaving no back-door entry for secondary sharing.
-*   **Instant Revocation:** In the event of a security concern, we can revoke access to a specific show instantly from the server side, cutting off all connections immediately.
+*   **Server-Side Revocation:** In the event of a security concern, runtime access can be revoked from the server side for new or renewed runtime requests.
 
 ## What We Can (and Cannot) Protect Against
 
 Security is always a trade-off between protection and usability. We want to be honest about where that line is drawn.
 
-### ✅ What We Prevent
-*   **Mass Scraping:** It is extremely difficult for a bot or user to "scrape" your entire script because they would have to simulate watching the entire show in real-time.
-*   **Casual File Sharing:** There is no "file" to email to a friend. The URL works for now, but the content inside it is fleeting.
-*   **Unauthorized "Peek Ahead":** Because the device doesn't have the future cues yet, a user cannot hack the webpage to read how the play ends before the actors get there.
+### ✅ What We Reduce
+*   **Casual Copying:** The Official Viewer does not load the full plaintext script into the UI up front, which reduces simple browser-based copying.
+*   **Casual File Sharing:** There is no single plaintext script file exposed in the viewer UI to email to a friend.
+*   **Uncontrolled Access After the Show:** Temporary bearer tokens and server-side revocation controls limit how long valid runtime access should remain useful.
 
 ### ❌ The "Analog Hole"
 *   **Screen Recording / Cameras:** If a human eye can see it, a camera can record it. We cannot stop a user from taking a screenshot or using another phone to record the screen. Like all digital content delivery systems, SurtitleLive operates within the known limitations of display-based media.
@@ -61,6 +61,6 @@ No digital delivery system can guarantee absolute protection against all forms o
 
 ## The Bottom Line
 
-We have built a system that makes "stealing" your script significantly harder and more time-consuming than simply buying a ticket or license. We raise the bar high enough to deter piracy while ensuring legitimate audiences have a smooth, instant-loading experience on any device, even with poor network signals.
+We have built a system that makes casual copying harder while preserving a practical audience experience. Network quality, device behavior, and the limits of screen-based media still matter, so sensitive productions should pair technical controls with clear audience terms and operational planning.
 
-Your work stays safe in our vault, and only appears on screen exactly when—and where—you want it to.
+Your work is handled through controlled runtime access and appears to the audience through the approved viewer workflow when the production team makes it available.

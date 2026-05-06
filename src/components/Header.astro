@@ -1,8 +1,7 @@
 ---
-import { statSync } from 'node:fs';
 import HeaderLink from './HeaderLink.astro';
 import LanguageSelector from './LanguageSelector.astro';
-import { buildMainSiteHref } from '../consts';
+import { buildMainSiteHref, MAIN_SITE_URL } from '../consts';
 
 type LocaleLink = {
 	lang: string;
@@ -17,13 +16,7 @@ interface Props {
 const { currentLocale = 'en', localeLinks = [] } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-const logoAssetPath = new URL('../../public/blog/logo/New_logo.png', import.meta.url);
-const redirectsContractPath = new URL('../../public/_redirects', import.meta.url);
-const chromeAssetVersion = Math.max(
-	statSync(logoAssetPath).mtimeMs,
-	statSync(redirectsContractPath).mtimeMs,
-).toString(36);
-const logoHref = `${normalizedBaseUrl}logo/New_logo.png?v=${chromeAssetVersion}`;
+const logoHref = new URL('/logo/New_logo.png', MAIN_SITE_URL).toString();
 ---
 
 <header>

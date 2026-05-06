@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "fr",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
+  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
   "generatedAt": "2026-04-10T03:15:53.234Z",
   "sectionTitles": {
     "keyTakeaways": "Points clés",
@@ -11,49 +11,45 @@
     "related": "Sujets connexes"
   },
   "keyTakeaways": [
-    "SurtitleLive utilise une diffusion en continu à la demande, évitant le stockage persistant des scripts complets sur les appareils des utilisateurs.",
-    "Le chiffrement TLS 1.3 et AES-256 protège les données en transit et au repos, avec un déchiffrement en mémoire pour une sécurité accrue.",
-    "Les jetons d'accès temporaires et la révocation instantanée empêchent l'accès non autorisé aux scripts après les représentations.",
-    "SurtitleLive rend l'extraction massive de scripts difficile, tout en assurant une expérience utilisateur fluide."
+    "SurtitleLive utilise une diffusion runtime à la demande pour éviter que le viewer officiel ne charge d’emblée un paquet complet du texte en clair.",
+    "Les segments de surtitres chiffrés sont destinés à être affichés dans une session viewer autorisée, avec un comportement navigateur et appareil à considérer de façon réaliste.",
+    "Les tokens temporaires, fenêtres d’expiration et révocations côté serveur aident à limiter l’accès après la représentation.",
+    "Ces contrôles réduisent la copie occasionnelle et l’accès non contrôlé ; ils ne promettent pas une protection absolue contre toute copie."
   ],
   "faq": [
     {
-      "question": "Comment SurtitleLive empêche-t-il le partage non autorisé de scripts ?",
-      "answer": "SurtitleLive utilise des jetons d'accès temporaires qui expirent après la représentation, empêchant le partage secondaire. De plus, l'accès peut être révoqué instantanément en cas de problème de sécurité."
+      "question": "Comment SurtitleLive réduit-il la copie occasionnelle du texte ?",
+      "answer": "Le viewer officiel charge des segments chiffrés autour du cue courant au lieu de présenter tout le texte comme une charge utile lisible dès l’entrée."
     },
     {
-      "question": "SurtitleLive protège-t-il contre les captures d'écran ou l'enregistrement d'écran ?",
-      "answer": "Comme tout système de diffusion numérique, SurtitleLive ne peut pas empêcher les captures d'écran ou l'enregistrement d'écran. Si un œil humain peut le voir, une caméra peut l'enregistrer."
+      "question": "SurtitleLive peut-il garantir qu’un texte ne sera jamais copié ?",
+      "answer": "Non. Aucun système de diffusion numérique ne peut empêcher absolument les captures d’écran, caméras, OCR ou clients personnalisés avec accès valide. SurtitleLive relève de la réduction de risque."
     },
     {
-      "question": "Comment le chiffrement protège-t-il mes scripts dans SurtitleLive ?",
-      "answer": "SurtitleLive utilise le chiffrement TLS 1.3 (HTTPS) pour toutes les connexions et le chiffrement AES-256 pour les scripts au repos. Les données sont déchiffrées uniquement en mémoire temporaire, disparaissant lorsque l'onglet est fermé."
+      "question": "Que se passe-t-il si un lien viewer doit être restreint ?",
+      "answer": "L’accès runtime peut être limité par des tokens temporaires, des fenêtres d’expiration et une révocation côté serveur pour les nouvelles requêtes ou renouvellements."
     },
     {
-      "question": "Qu'est-ce que l'architecture de « Récupération à la demande » et comment améliore-t-elle la sécurité ?",
-      "answer": "Au lieu d'envoyer l'intégralité du script, SurtitleLive envoie uniquement de petits blocs de sous-titres autour de la réplique actuelle. Cela rend l'extraction automatisée à grande échelle irréalisable sans reproduire le visionnage en temps réel."
+      "question": "Comment les données sont-elles protégées en transit ?",
+      "answer": "Les connexions utilisent HTTPS/TLS, et la diffusion runtime emploie des segments chiffrés dans un modèle de sécurité par couches."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "Texte intégral d'une pièce de théâtre, contenant les dialogues et les indications scéniques."
+      "term": "Segment runtime",
+      "definition": "Petite unité de surtitre chiffrée demandée autour de la progression du spectacle plutôt qu’un paquet complet du texte en clair."
     },
     {
-      "term": "Réplique",
-      "definition": "Segment de texte affiché comme sous-titre à un moment précis pendant une représentation."
+      "term": "Accès viewer",
+      "definition": "Session navigateur contrôlée utilisée par un spectateur autorisé."
     },
     {
-      "term": "Chiffrement",
-      "definition": "Processus de conversion de données en un format illisible pour empêcher l'accès non autorisé."
+      "term": "Révocation",
+      "definition": "Contrôle côté serveur pouvant limiter les nouveaux accès runtime ou renouvellements après un problème."
     },
     {
-      "term": "TLS 1.3 (HTTPS)",
-      "definition": "Protocole de sécurité standard pour établir des liens chiffrés, assurant la confidentialité des données transmises sur Internet."
-    },
-    {
-      "term": "AES-256",
-      "definition": "Norme de chiffrement avancée utilisant une clé de 256 bits pour sécuriser les données."
+      "term": "Réduction de risque",
+      "definition": "Objectif de sécurité qui réduit le risque pratique de copie sans promettre une prévention absolue."
     }
   ]
 }

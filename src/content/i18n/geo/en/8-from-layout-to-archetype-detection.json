@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "8-from-layout-to-archetype-detection",
+  "sourceHash": "8d24f03e3e8cb26c91b099499547ed8b2cf5c61528c42da42b08cdf9796327b2",
+  "generatedAt": "2026-05-06T04:30:54.289Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "Theatre subtitle software should prioritize deterministic parsing of script structure before using AI.",
+    "Deterministic parsing ensures repeatable results, crucial for live subtitle preparation and operator workflows.",
+    "Parsing identifies speaker labels, indentation, and formatting to classify script elements accurately.",
+    "AI is best used selectively for ambiguous cases, after structural elements are identified deterministically."
+  ],
+  "faq": [
+    {
+      "question": "Why is deterministic parsing important for theatre subtitles?",
+      "answer": "Deterministic parsing provides a repeatable baseline. It ensures the same script yields the same structural decisions every time, which is vital for consistent cue generation and operator confidence during live performances."
+    },
+    {
+      "question": "How does SurtitleLive use document structure before AI?",
+      "answer": "SurtitleLive extracts structural data from script files (like .docx), preserving indentation, spacing, and formatting. This allows the system to identify speaker labels, stage directions, and other elements before AI interpretation."
+    },
+    {
+      "question": "What role does AI play in SurtitleLive's parsing process?",
+      "answer": "AI is used for ambiguous regions where deterministic evidence is weak or conflicting. It helps resolve uncertainties in script interpretation, focusing on areas where structural analysis alone is insufficient."
+    },
+    {
+      "question": "How does SurtitleLive handle different script layouts?",
+      "answer": "SurtitleLive detects script layout archetypes (e.g., 'Speaker: Dialogue', speaker on its own line) to apply appropriate parsing rules. This allows the system to adapt to various formatting conventions within a single script."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "The complete text of a play, including dialogue, stage directions, and character descriptions."
+    },
+    {
+      "term": "Cue",
+      "definition": "A specific point in the script or performance that triggers a surtitle to appear or change."
+    },
+    {
+      "term": "Character",
+      "definition": "A dramatic role or person represented in the play."
+    },
+    {
+      "term": "Deterministic Parsing",
+      "definition": "Analyzing a script based on fixed rules and structural elements to ensure consistent and predictable results."
+    },
+    {
+      "term": "Archetype Detection",
+      "definition": "Identifying common script layouts and formatting conventions to apply appropriate parsing rules."
+    }
+  ]
+}

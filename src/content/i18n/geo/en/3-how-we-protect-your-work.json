@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "bdffe5ba87696c757d68dd75558ba8021f7c0c2c63e618bdec27f96a6bef8509",
-  "generatedAt": "2026-04-10T03:14:47.539Z",
+  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
+  "generatedAt": "2026-05-02T17:51:55.136Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,49 +11,45 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "SurtitleLive uses on-demand streaming, so full script files are never stored on user devices, protecting your intellectual property.",
-    "Data is encrypted both in transit (TLS 1.3) and at rest (AES-256), ensuring banking-grade security for your scripts.",
-    "In-memory decryption means decrypted text only exists in temporary memory and vanishes when the browser tab is closed.",
-    "Temporary access tokens and instant revocation capabilities prevent unauthorized access and sharing of your content."
+    "SurtitleLive uses on-demand runtime delivery so the official viewer avoids loading a full plaintext script bundle up front.",
+    "Encrypted subtitle segments are intended to be displayed inside the authorized viewer session, with browser and device behavior still treated realistically.",
+    "Temporary access tokens, expiry windows, and server-side revocation controls help limit post-show access.",
+    "These controls reduce casual copying and uncontrolled access; they are not a promise of absolute copy protection."
   ],
   "faq": [
     {
-      "question": "How does SurtitleLive prevent users from downloading the entire script?",
-      "answer": "SurtitleLive employs a \"Fetch on Demand\" architecture, streaming small chunks of subtitles only for the active cues. The viewer's device never receives the entire script file, making it difficult to copy the whole show."
+      "question": "How does SurtitleLive reduce casual script copying?",
+      "answer": "The Official Viewer loads encrypted subtitle segments on demand around the current cue instead of presenting the whole script as one readable browser payload at entry time."
     },
     {
-      "question": "What encryption methods does SurtitleLive use to protect scripts?",
-      "answer": "SurtitleLive uses TLS 1.3 (HTTPS) for data in transit and AES-256 encryption for data at rest. This ensures that scripts are protected with banking-grade security both during transmission and while stored on our servers."
+      "question": "Can SurtitleLive guarantee that a script can never be copied?",
+      "answer": "No digital delivery system can prevent screenshots, cameras, OCR, or custom clients with valid access. SurtitleLive should be treated as risk reduction, not absolute copy protection."
     },
     {
-      "question": "How does in-memory decryption enhance security?",
-      "answer": "In-memory decryption unlocks encrypted text only inside the device's temporary memory (RAM). The data is never written to the device's storage, and it vanishes instantly when the user refreshes the page or closes the tab."
+      "question": "What happens if a viewer link needs to be restricted?",
+      "answer": "Runtime access can be limited through temporary tokens, expiry windows, and server-side revocation for new or renewed runtime requests."
     },
     {
-      "question": "What measures are in place to prevent unauthorized sharing of access links?",
-      "answer": "SurtitleLive uses temporary digital tokens that expire after the performance. Additionally, access to a specific show can be instantly revoked from the server side, cutting off all connections immediately in case of a security concern."
+      "question": "How is data protected in transit?",
+      "answer": "Connections use HTTPS/TLS, and runtime delivery uses encrypted segments as part of a layered security model that also includes access scoping and operational controls."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "The complete text of a theatre play, including dialogue and stage directions."
+      "term": "Runtime segment",
+      "definition": "A small encrypted subtitle unit requested around show progress rather than a full plaintext script bundle."
     },
     {
-      "term": "Cue",
-      "definition": "A specific point in the script that triggers an action, such as displaying a new surtitle."
+      "term": "Viewer access",
+      "definition": "The controlled browser session used by an authorized audience viewer."
     },
     {
-      "term": "TLS 1.3 (HTTPS)",
-      "definition": "The latest version of the Transport Layer Security protocol, providing secure communication over a network; the standard for secure web browsing."
+      "term": "Revocation",
+      "definition": "A server-side control that can limit new or renewed runtime access after a concern is detected."
     },
     {
-      "term": "AES-256",
-      "definition": "Advanced Encryption Standard with a 256-bit key, a symmetric encryption algorithm used to protect digital data."
-    },
-    {
-      "term": "In-Memory Decryption",
-      "definition": "The process of decrypting data only within a device's RAM, without writing it to persistent storage, enhancing security."
+      "term": "Risk reduction",
+      "definition": "A security goal that lowers practical copying risk without claiming absolute prevention."
     }
   ]
 }

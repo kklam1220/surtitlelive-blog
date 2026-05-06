@@ -12,12 +12,12 @@ tags: ['AI in Theatre', 'Translation Workflow', 'Surtitling', 'SurtitleLive']
   "name": "SurtitleLive",
   "operatingSystem": "Web/Desktop",
   "applicationCategory": "MultimediaApplication",
-  "description": "AI-powered theatre subtitling and translation workflow that replaces manual PowerPoint processes.",
+  "description": "AI-assisted theatre subtitling and translation workflow for teams moving beyond manual slide-deck processes.",
   "featureList": "AI script parsing, automatic subtitling, live performance control, professional subtitle formatting"
 }
 </script>
 
-**Core Summary**: Say goodbye to the pain of manual subtitle creation. SurtitleLive is a specialized AI-assisted workflow for the rehearsal room and opening night that completely replaces legacy PowerPoint systems. Let AI handle `.docx` script parsing and formatting, while human artists retain total control over the live subtitle cues and emotion.
+**Core Summary**: SurtitleLive is a specialized AI-assisted workflow for rehearsal and performance teams that need more than a static slide deck. It helps parse `.docx` scripts and prepare editable cue drafts, while human artists retain control over text, timing, and live operation.
 
 <br/>
 
@@ -33,7 +33,7 @@ This is not a defensive stance against technology. It is a practical definition 
 
 The debate over whether AI can completely translate and generate a production-ready script misses the fundamental nature of theatre. Drama is not merely a linguistic product; it is the organic result of the rehearsal process.
 
-AI might be able to generate a grammatically correct or logically coherent translation, but it fundamentally lacks the contextual understanding of a live performance. No AI system has access to the director’s pacing choices, an actor’s breath, or the evolving rhythm of a rehearsal room. 
+AI might be able to generate a grammatically correct or logically coherent translation, but it fundamentally lacks the contextual understanding of a live performance. No AI system has access to the director’s pacing choices, an actor’s breath, or the evolving rhythm of a rehearsal room.
 
 Human translators and directors intuitively grasp these elements. The final creative judgment—the emotional weight, subtext, and tension—must remain in human hands. If human artists are essential, what role does AI play?
 
@@ -43,7 +43,7 @@ Human translators and directors intuitively grasp these elements. The final crea
 | :--- | :--- | :--- |
 | **Subtitle Creation** | Manual typing, time-consuming formatting | AI automatically parses scripts and segments lines |
 | **Translation Workflow** | Translated externally, pasted back manually | Integrated AI Drafts; human translators directly refine |
-| **Live Control** | Linear playback, hard to modify mid-show | Cued instantly to the performance's rhythm; flexible jumping |
+| **Live Control** | Linear playback, hard to modify mid-show | Operator-controlled cueing with flexible jump recovery |
 | **Format Standards & Export** | Locked into slides; difficult to extract | Built-in character counting and seamless export to Excel (.xlsx) and PowerPoint (.pptx) |
 
 ## Eliminating the Mechanical Burden
@@ -51,13 +51,13 @@ Human translators and directors intuitively grasp these elements. The final crea
 In traditional workflows, translation and subtitling often demand 70% of time spent on technical processing, leaving only 30% for artistic refinement. SurtitleLive uses AI to redefine this ratio:
 
 ### 1. Smart Script Parsing
-Extracting and isolating dialogue from a dense script document (`.docx`) is exhausting. AI instantly detects character dialogue and automatically separates it from stage directions, eliminating hours of manual labor.
+Extracting and isolating dialogue from a dense script document (`.docx`) is exhausting. AI-assisted parsing can help identify character dialogue and separate it from stage directions, reducing manual preparation before human review.
 
 ### 2. Manual Control & Reordering
-When a director changes a line in the rehearsal room, rigid slideshows break. SurtitleLive allows you to easily merge lines, split them, and use simple drag-and-drop reordering to adapt to live changes instantly.
+When a director changes a line in the rehearsal room, rigid slideshows can become awkward to maintain. SurtitleLive lets you merge lines, split them, and reorder cues during preparation so the saved script can match rehearsal changes.
 
 ### 3. Rapid Multi-Lingual Generation
-Need to support international audiences? Once the AI has parsed and timed the original text, generating synchronized translations for a second or third language takes seconds, rather than requiring an entirely separate manual workflow.
+Need to support international audiences? After the original text has been structured and reviewed, AI-assisted translation can create draft versions for additional languages that your team can edit before performance.
 
 ## AI as a Collaborator, Human as the Final Authority
 
@@ -72,13 +72,13 @@ By acknowledging the boundary between *technical processing* (handled by AI) and
 
 ## Technology Serving Artistry
 
-The anxiety that "using AI makes you less professional" is fading. The true professionals of the future are those who understand the essence of their art, recognize the boundaries of technology, and know how to orchestrate collaboration between the two. 
+The anxiety that "using AI makes you less professional" is fading. The true professionals of the future are those who understand the essence of their art, recognize the boundaries of technology, and know how to orchestrate collaboration between the two.
 
-Whether you need a **subtitle generator**, rapid **subtitle editing**, or seamless **live subtitles**, choosing the right system is crucial. **AI-assisted translation for theater** is not a shortcut; it is a tool for enhanced **digital dramaturgy**. Using dedicated **theater surtitling software** instead of static PowerPoint slides ensures that your opening night goes perfectly.
+Whether you need a **subtitle generator**, rapid **subtitle editing**, or dependable **live subtitles**, choosing the right system is crucial. **AI-assisted translation for theater** is not a shortcut; it is a tool for enhanced **digital dramaturgy**. Dedicated **theater surtitling software** can reduce show-day risk when it is paired with rehearsal review, operator practice, and a backup plan.
 
-**SurtitleLive was built on a simple belief: technology should reduce technical burden without diluting artistic authority.** We built a system that understands the heartbeat of the theatre and ensures that AI operates strictly within its logical bounds. 
+**SurtitleLive was built on a simple belief: technology should reduce technical burden without diluting artistic authority.** We built a system that keeps AI assistance inside a reviewed theatre workflow, with human control over final text and performance timing.
 
-Let AI handle the structure and preparation.  
+Let AI handle the structure and preparation.
 Let artists remain the final authority on meaning.
 
 ---
@@ -92,8 +92,8 @@ If you are preparing surtitles for a live production, rehearsal, or festival tou
 ---
 ## FAQ
 
-**Q: Will AI replace human theatre translators?**  
+**Q: Will AI replace human theatre translators?**
 **A:** No. SurtitleLive positions AI strictly as a "preprocessing tool." The ultimate artistic decisions and emotional interpretation will always remain in the hands of human artists.
 
-**Q: Why use SurtitleLive instead of PowerPoint for real-time performance translation?**  
+**Q: Why use SurtitleLive instead of PowerPoint for real-time performance translation?**
 **A:** Traditional PowerPoint is linear and static, causing problems if actors skip lines or change rhythm. SurtitleLive is a dedicated live subtitle system built specifically for the unpredictable nature of live theatre, ensuring your translations breathe with the actors.

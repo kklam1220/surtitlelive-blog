@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "8-from-layout-to-archetype-detection",
+  "sourceHash": "8d24f03e3e8cb26c91b099499547ed8b2cf5c61528c42da42b08cdf9796327b2",
+  "generatedAt": "2026-05-06T04:33:58.877Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Sujets connexes"
+  },
+  "keyTakeaways": [
+    "Un logiciel de sous-titrage théâtral doit analyser la structure du script avant d'utiliser l'IA pour éviter des erreurs.",
+    "L'analyse déterministe utilise la mise en forme (indentation, espacement) pour interpréter le script de manière fiable.",
+    "Le zonage du corps sépare les éléments liminaires (distribution, titre) du corps du script pour une analyse précise.",
+    "L'IA est utilisée sélectivement pour les régions ambiguës, après l'analyse structurelle, afin d'améliorer la précision des cues."
+  ],
+  "faq": [
+    {
+      "question": "Pourquoi l'analyse déterministe est-elle importante avant l'IA dans le sous-titrage théâtral ?",
+      "answer": "L'analyse déterministe assure la répétabilité et la fiabilité. Elle utilise la structure du script pour prendre des décisions éclairées avant d'impliquer l'IA, réduisant ainsi les erreurs potentielles dans les cues en direct."
+    },
+    {
+      "question": "Comment le zonage du corps améliore-t-il la précision de l'analyse des scripts ?",
+      "answer": "Le zonage du corps sépare les éléments liminaires (listes de distribution, notes) du corps principal du script. Cela empêche l'analyseur de confondre ces éléments avec des dialogues, améliorant ainsi la précision des cues."
+    },
+    {
+      "question": "Quel rôle l'IA joue-t-elle dans le workflow d'analyse des scripts de SurtitleLive ?",
+      "answer": "L'IA est utilisée sélectivement pour les régions ambiguës du script où les preuves structurelles sont faibles ou contradictoires. Cela permet de concentrer l'IA sur les zones nécessitant une interprétation plus approfondie, améliorant ainsi l'efficacité."
+    },
+    {
+      "question": "Comment SurtitleLive vérifie-t-il les modifications apportées à son analyseur de scripts ?",
+      "answer": "SurtitleLive utilise des fixtures de script organisées et des cas de régression pour tester les modifications de l'analyseur. Ces tests vérifient que les lignes de locuteur, les indications scéniques et les éléments liminaires sont correctement identifiés et analysés."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "Texte d'une pièce de théâtre, incluant dialogues, indications scéniques et autres éléments structurels."
+    },
+    {
+      "term": "Cue",
+      "definition": "Unité de texte affichée comme sous-titre ou surtitre pendant une représentation théâtrale."
+    },
+    {
+      "term": "Analyse déterministe",
+      "definition": "Méthode d'analyse qui utilise des règles fixes et la structure du document pour interpréter le script de manière cohérente."
+    },
+    {
+      "term": "Zonage du corps",
+      "definition": "Processus de séparation des éléments liminaires (titres, distribution) du corps principal du script pour une analyse plus précise."
+    },
+    {
+      "term": "Archétype",
+      "definition": "Modèle de mise en page de script (ex: Locuteur: Dialogue) utilisé pour adapter l'analyse aux différentes conventions d'écriture."
+    }
+  ]
+}

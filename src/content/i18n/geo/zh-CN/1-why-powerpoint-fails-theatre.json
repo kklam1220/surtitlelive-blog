@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "zh-CN",
   "slug": "1-why-powerpoint-fails-theatre",
-  "sourceHash": "5af55c4ca486bede0d946ef84052f1168f3657f23fafab082e0bee7f161876ce",
-  "generatedAt": "2026-04-10T03:16:50.804Z",
+  "sourceHash": "395e369e1cea6539c1061474690c00569bfc20eb64ee65a5d03501b42d9087db",
+  "generatedAt": "2026-05-06T04:31:30.951Z",
   "sectionTitles": {
     "keyTakeaways": "关键要点",
     "faq": "常见问题解答",
-    "glossary": "术语表",
+    "glossary": "词汇表",
     "related": "相关信息"
   },
   "keyTakeaways": [
-    "传统的幻灯片软件不适合现场戏剧字幕，因为它缺乏灵活性。",
-    "SurtitleLive 将剧本视为数据，从而实现更流畅、更动态的字幕体验。",
-    "SurtitleLive 简化了准备工作，通过人工智能驱动的摄取，将剧本转换为舞台字幕。",
-    "SurtitleLive 提供非线性导航和多语言支持，以增强观众体验。"
+    "传统的基于幻灯片的字幕软件可能笨拙且不灵活，无法满足现场演出的需求。",
+    "SurtitleLive 将剧本视为数据，从而实现更动态和可控的字幕体验。",
+    "SurtitleLive 提供人工智能驱动的剧本导入、非线性导航和多语言支持。",
+    "使用 SurtitleLive，剧院可以简化字幕工作流程，增强观众体验，并赋予技术团队更多权力。"
   ],
   "faq": [
     {
-      "question": "为什么幻灯片软件不适合剧院字幕？",
-      "answer": "幻灯片软件是线性的，难以适应现场演出的变化，例如演员跳过台词或场景。这会导致“空格键恐慌”和观众体验中断。"
+      "question": "使用幻灯片进行字幕制作的主要缺点是什么？",
+      "answer": "幻灯片是线性的，难以适应演员跳过台词或场景的情况。手动格式化耗时，并且难以支持多种语言。"
     },
     {
-      "question": "SurtitleLive 如何简化字幕准备工作？",
-      "answer": "SurtitleLive 使用人工智能驱动的摄取来分析剧本结构，自动识别角色和对话，从而节省手动复制粘贴的时间。"
+      "question": "SurtitleLive 如何简化字幕准备？",
+      "answer": "SurtitleLive 使用人工智能驱动的摄取来分析剧本结构，自动识别角色名称和对话，从而减少手动复制粘贴。"
     },
     {
-      "question": "SurtitleLive 如何处理非线性演出？",
-      "answer": "SurtitleLive 控制台允许您直接跳转到剧本中的任何一行，而无需浏览幻灯片，从而确保字幕与舞台上的动作同步。"
+      "question": "SurtitleLive 如何实现非线性导航？",
+      "answer": "SurtitleLive 控制台允许操作员跳转到剧本中的任何台词，而无需按顺序浏览幻灯片，从而确保字幕与舞台上的动作同步。"
     },
     {
       "question": "SurtitleLive 如何支持多语言观众？",
-      "answer": "SurtitleLive 允许观众通过自己的设备访问预先翻译好的字幕，从而提供个性化的体验，而无需昂贵的双投影仪系统。"
+      "answer": "SurtitleLive 允许观众使用自己的设备 (BYOD) 通过扫描二维码并选择他们喜欢的语言来访问字幕，从而支持多种翻译轨道。"
     }
   ],
   "glossary": [
     {
       "term": "剧本 (Script)",
-      "definition": "戏剧或演出的书面文本，包含对话和舞台指示。"
+      "definition": "戏剧或演出的书面文本，包含对话和舞台提示。"
     },
     {
       "term": "提示 (Cue)",
-      "definition": "舞台或字幕中的特定点，指示何时进行更改或操作，例如显示下一行字幕。"
+      "definition": "舞台或字幕中的特定时刻，指示技术或表演的变化。"
     },
     {
       "term": "角色 (Character)",
-      "definition": "戏剧中由演员扮演的虚构人物。"
+      "definition": "戏剧中由演员扮演的戏剧角色。"
     },
     {
-      "term": "舞台字幕 (Supertitles)",
-      "definition": "显示在舞台上方或附近的屏幕上的文本，用于翻译或辅助听力。"
+      "term": "黑场控制 (Blackout Control)",
+      "definition": "在演出期间快速且精确地隐藏或显示字幕的能力。"
     },
     {
-      "term": "控制台 (Console)",
-      "definition": "SurtitleLive 的用户界面，用于控制和管理字幕显示。"
+      "term": "SurtitleLive 控制台 (SurtitleLive Console)",
+      "definition": "SurtitleLive 的界面，允许操作员控制和导航字幕。"
     }
   ]
 }

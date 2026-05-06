@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "8-from-layout-to-archetype-detection",
+  "sourceHash": "8d24f03e3e8cb26c91b099499547ed8b2cf5c61528c42da42b08cdf9796327b2",
+  "generatedAt": "2026-05-06T04:33:52.998Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Relacionado"
+  },
+  "keyTakeaways": [
+    "El software de subtítulos teatrales debe analizar la estructura del guion antes de usar IA.",
+    "El análisis determinista prioriza el formato del guion para una preparación de subtítulos repetible.",
+    "SurtitleLive utiliza un flujo de trabajo por etapas: extracción, normalización, bloques, arquetipos, zonificación y luego IA.",
+    "El objetivo es un borrador de *cues* más limpio y predecible para la revisión humana, no la automatización total."
+  ],
+  "faq": [
+    {
+      "question": "¿Por qué es importante el análisis determinista en el software de subtítulos teatrales?",
+      "answer": "El análisis determinista asegura repetibilidad. Dado el mismo guion, el analizador debe tomar la misma decisión estructural cada vez, creando una base sólida antes de que la IA interprete regiones ambiguas. Esto reduce errores y mejora la consistencia."
+    },
+    {
+      "question": "¿Cómo aborda SurtitleLive la diferencia entre una lista de reparto y una *cue* de diálogo?",
+      "answer": "SurtitleLive utiliza la zonificación *body-first*. Primero separa el *front matter* (lista de reparto, etc.) del cuerpo del guion. Luego, aplica reglas de diálogo solo donde se espera diálogo, reduciendo la posibilidad de errores."
+    },
+    {
+      "question": "¿Cuál es el papel de la IA en el flujo de trabajo de análisis de guiones de SurtitleLive?",
+      "answer": "La IA se utiliza para regiones ambiguas donde la evidencia determinista es débil o contradictoria. El objetivo es evitar pedirle a la IA que decida sobre bloques que ya tienen una fuerte evidencia estructural, enfocándose en áreas genuinamente dudosas."
+    },
+    {
+      "question": "¿Cómo verifica SurtitleLive los cambios en su analizador de guiones?",
+      "answer": "Los cambios se prueban con *script fixtures* seleccionados y casos de regresión. Se verifica que las líneas de hablantes, acotaciones y el *front matter* se identifiquen correctamente, y que la puntuación multilingüe se analice como se espera."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Script",
+      "definition": "El texto completo de una obra de teatro, incluyendo diálogo, acotaciones y otra información relevante para la producción."
+    },
+    {
+      "term": "Cue",
+      "definition": "Una señal o indicación en el guion que marca el momento en que debe aparecer un subtítulo o sobretítulo en la pantalla."
+    },
+    {
+      "term": "Character",
+      "definition": "Un rol dramático representado por un actor en una obra de teatro."
+    },
+    {
+      "term": "Front matter",
+      "definition": "Las secciones iniciales de un guion, como la página de título, la lista de reparto y las notas de producción, que preceden al cuerpo principal del texto."
+    },
+    {
+      "term": "Análisis determinista",
+      "definition": "Un método de análisis de guiones que prioriza la estructura y el formato del documento para garantizar resultados consistentes y predecibles."
+    }
+  ]
+}

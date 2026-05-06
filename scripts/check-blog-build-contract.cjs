@@ -105,8 +105,14 @@ assertNoMatch(
 
 assertNoMatch(
   htmlFiles,
-  /src="\/logo\/New_logo\.png"/,
-  'Detected non-base-aware logo path in built blog HTML.',
+  /src="\/blog\/logo\/New_logo\.png/,
+  'Detected blog-origin logo URL. Use the canonical main-site logo URL instead.',
+);
+
+assertHasMatch(
+  htmlFiles,
+  /src="https:\/\/surtitlelive\.com\/logo\/New_logo\.png"/,
+  'Missing canonical main-site logo URL in built blog HTML.',
 );
 
 if (!fs.existsSync(redirectsFile)) {

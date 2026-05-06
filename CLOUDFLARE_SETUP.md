@@ -45,7 +45,8 @@
 
 重要：
 - 這個 Pages 專案必須保留 `public/_redirects`
-- 它負責把 `blog.surtitlelive.com/blog/*` 代理回 Astro 實際輸出的 root 路徑，並明確保留 `/blog/fonts/*`、`/blog/logo/*` 這些 public compatibility asset
+- 它負責把 `blog.surtitlelive.com/blog/*` 代理回 Astro 實際輸出的 root 路徑，並明確保留 `/blog/fonts/*` 這類 public compatibility asset
+- Blog header logo uses the canonical main-site asset `https://surtitlelive.com/logo/New_logo.png`; do not point it at `/blog/logo/*`, because that path depends on the blog-origin compatibility rewrite layer.
 - 如果缺少這個檔案，文章頁和圖片會在 `/blog/*` 下回首頁 HTML
 - 它只修復 dedicated blog origin。`https://surtitlelive.com/blog/*` 的 canonical 入口現在由主站 `web/src/proxy.ts` 在最前面 handoff 到 blog origin 的 root-output 路徑；`web/next.config.ts` 的 `beforeFiles` rewrite 只是次級兼容層，不是主要保證
 
@@ -253,7 +254,7 @@ Cloudflare 會自動處理：
 
 1. `public/_redirects` 是否存在並已部署
 2. `build:check` 是否通過
-3. 是否誤把 shared asset 路徑寫成 root-only，例如 `/logo/New_logo.png`
+3. 是否誤把 blog-local shared asset 路徑寫成 root-only；the header logo is the exception and should remain the absolute main-site URL `https://surtitlelive.com/logo/New_logo.png`
 
 快速驗證：
 

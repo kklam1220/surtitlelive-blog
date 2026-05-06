@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "en",
   "slug": "6-ai-prepares-artists-protect",
-  "sourceHash": "3105be8144a5f328c5034abe2117aa6c28f59626e619a759da55d5504a75e007",
+  "sourceHash": "5204cfd3305dbf271eed073b69af443f3a98b91fa8252e4eeec51a11a90a6083",
   "generatedAt": "2026-04-10T03:15:00.105Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
@@ -23,7 +23,7 @@
     },
     {
       "question": "How does SurtitleLive improve the subtitling process?",
-      "answer": "SurtitleLive automates script parsing and formatting, saving time and effort. It also offers flexible live control, allowing for instant adjustments to cues during a performance, unlike rigid PowerPoint presentations."
+      "answer": "SurtitleLive helps structure scripts and prepare cue-ready subtitles, reducing manual setup time. During performance, the operator can move between cues and recover when the show path changes."
     },
     {
       "question": "Can SurtitleLive translate scripts into multiple languages?",

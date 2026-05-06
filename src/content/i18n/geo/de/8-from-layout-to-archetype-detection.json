@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "8-from-layout-to-archetype-detection",
+  "sourceHash": "8d24f03e3e8cb26c91b099499547ed8b2cf5c61528c42da42b08cdf9796327b2",
+  "generatedAt": "2026-05-06T04:33:47.709Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wichtige Erkenntnisse",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "Theater-Übertitelsoftware sollte Stücktexte strukturorientiert analysieren, bevor KI eingesetzt wird.",
+    "Deterministisches Parsing schafft eine Basislinie für konsistente Cue-Erstellung aus Theaterstücken.",
+    "Die Strukturierung von Stücktexten vor der KI-Analyse reduziert Fehler bei der Cue-Erstellung.",
+    "Die Überprüfung der Cue-Sequenz verbessert die Genauigkeit, indem der Kontext benachbarter Blöcke berücksichtigt wird."
+  ],
+  "faq": [
+    {
+      "question": "Warum ist deterministisches Parsing wichtig?",
+      "answer": "Es sorgt für Wiederholbarkeit. Bei gleichem Stücktext sollte der Parser immer die gleichen strukturellen Entscheidungen treffen, was eine konsistente Basis für die Cue-Erstellung bietet."
+    },
+    {
+      "question": "Wie trennt SurtitleLive den Vorspann vom Hauptteil des Stücktexts?",
+      "answer": "SurtitleLive verwendet Body-First-Zoning, um zu identifizieren, wo der aufführbare Stücktextkörper beginnt, damit der Vorspann die Dialogerkennung nicht verzerrt."
+    },
+    {
+      "question": "Welche Rolle spielt KI im Parsing-Prozess?",
+      "answer": "KI wird selektiv für unklare Regionen eingesetzt, in denen deterministische Beweise schwach oder widersprüchlich sind. Sie vermeidet Entscheidungen, die bereits durch starke strukturelle Beweise gestützt werden."
+    },
+    {
+      "question": "Was sind die Vorteile dieses Ansatzes für Theaterteams?",
+      "answer": "Für Produktionsteams macht das deterministisch-erste Parsen die Stücktextvorbereitung vorhersehbarer. Für Operatoren bedeutet dies weniger vermeidbare falsche Cues und eine sauberere Übergabe der Probe."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Stücktext",
+      "definition": "Der vollständige Text eines Theaterstücks, einschließlich Dialoge, Bühnenanweisungen und andere Elemente."
+    },
+    {
+      "term": "Cue",
+      "definition": "Ein spezifischer Punkt im Stücktext, der einen Übertitel auslöst. Auch: Bühnenanweisung."
+    },
+    {
+      "term": "Deterministisches Parsing",
+      "definition": "Ein Ansatz, bei dem der Parser bei gleichem Input immer das gleiche Ergebnis liefert, basierend auf vordefinierten Regeln."
+    },
+    {
+      "term": "Body-First-Zoning",
+      "definition": "Die Technik, bei der der Parser zuerst den Hauptteil des Stücktexts identifiziert, um den Vorspann (z. B. Titelseite, Besetzungsliste) abzugrenzen."
+    },
+    {
+      "term": "Archetypenerkennung",
+      "definition": "Die Identifizierung wiederkehrender Layoutmuster in Stücktexten, wie z. B. Doppelpunkt-Dialog oder Sprecher in eigener Zeile."
+    }
+  ]
+}

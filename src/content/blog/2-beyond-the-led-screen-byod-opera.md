@@ -35,7 +35,7 @@ Historic opera houses and adaptive reuse spaces (like art galleries or warehouse
 In global cities and international festivals, the audience's linguistic needs are increasingly diverse.
 
 *   **The Challenge:** A physical screen has a finite surface area. Displaying more than two languages simultaneously often compromises legibility for everyone.
-*   **The BYOD Solution:** By using individual "private layers," a production can offer five or more languages simultaneously. Each viewer selects the stream they need, ensuring inclusion without visual clutter on the stage.
+*   **The BYOD Solution:** By using individual "private layers," a production can offer multiple viewer languages, subject to plan limits. Each viewer selects the stream they need, reducing visual clutter on the stage.
 
 ## Respecting the Theatrical Atmosphere
 
@@ -48,8 +48,8 @@ Every surtitling method involves a compromise with the darkened auditorium. Whil
 
 Modern BYOD platforms like SurtitleLive are engineered for the specific rigors of live performance:
 
-*   **Battery Efficiency:** Optimized web-viewers consume minimal power (typically <5% per performance).
-*   **Network Stability:** Low-bandwidth caching ensures that subtitles stay synchronized even in challenging Wi-Fi environments or user mobile data connections.
+*   **Battery Efficiency:** The browser viewer is designed to be lightweight, but battery use varies by device, screen brightness, and connection quality.
+*   **Network Stability:** Low-bandwidth delivery helps reduce network load, but venues should still test Wi-Fi or cellular coverage and keep a fallback plan for performance day.
 
 ## Is BYOD the Right Choice for Your Project?
 

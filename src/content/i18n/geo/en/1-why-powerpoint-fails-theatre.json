@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "en",
   "slug": "1-why-powerpoint-fails-theatre",
-  "sourceHash": "5af55c4ca486bede0d946ef84052f1168f3657f23fafab082e0bee7f161876ce",
-  "generatedAt": "2026-04-10T03:14:35.733Z",
+  "sourceHash": "395e369e1cea6539c1061474690c00569bfc20eb64ee65a5d03501b42d9087db",
+  "generatedAt": "2026-05-06T04:30:49.346Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "Frequently Asked Questions",
     "glossary": "Glossary of Terms",
-    "related": "Related Topics"
+    "related": "Related Terms"
   },
   "keyTakeaways": [
-    "Traditional surtitling software, like PowerPoint, is designed for static presentations, not dynamic live performances.",
-    "SurtitleLive treats your script as data, enabling AI-powered ingestion for faster preparation and streamlined workflows.",
-    "The SurtitleLive Cockpit allows for non-linear navigation, enabling operators to jump to any line instantly.",
-    "SurtitleLive supports multilingual audiences through a BYOD system, allowing audience members to view subtitles on their smartphones."
+    "Traditional slide-based surtitling software like PowerPoint can be limiting for live theatre performances.",
+    "SurtitleLive treats your script as data, enabling a more flexible and responsive surtitling workflow.",
+    "AI-powered ingestion in SurtitleLive streamlines script preparation, reducing manual formatting time.",
+    "SurtitleLive offers non-linear navigation, blackout control, and BYOD multilingual options for modern theatre."
   ],
   "faq": [
     {
-      "question": "What is 'Spacebar Panic'?",
-      "answer": "Spacebar Panic refers to the stressful situation when a theatre tech operator struggles to keep up with a live performance using static slides, often resulting in errors and audience distraction due to missed or incorrect cues."
+      "question": "What are the limitations of using slide-based software for surtitling?",
+      "answer": "Slide-based software can be inflexible for live performances due to manual formatting, linear lock-in, and challenges in providing multilingual accessibility. This can lead to operator error and audience distraction."
     },
     {
-      "question": "How does SurtitleLive streamline surtitle preparation?",
-      "answer": "SurtitleLive uses AI-powered ingestion to analyze the script structure, identify character names and dialogue, and automatically format the text for surtitles, significantly reducing manual formatting time."
+      "question": "How does SurtitleLive improve script preparation?",
+      "answer": "SurtitleLive uses AI-powered ingestion to analyze the script structure, identify character names and dialogue, and automate the initial formatting. This significantly reduces manual copy-pasting and editing."
     },
     {
-      "question": "How does SurtitleLive handle non-linear performances?",
-      "answer": "SurtitleLive's Cockpit interface allows operators to jump to any line in the script instantly, without the need to scroll through slides or exit presentation mode, ensuring seamless adaptation to unexpected changes."
+      "question": "What is non-linear navigation, and why is it important?",
+      "answer": "Non-linear navigation allows operators to jump to any line in the script instantly, crucial when actors skip lines or scenes. This prevents flashing through irrelevant slides and maintains audience immersion."
     },
     {
       "question": "How does SurtitleLive support multilingual audiences?",
-      "answer": "SurtitleLive allows you to prepare multiple translation tracks and broadcast them to audience members' smartphones. Audience members can scan a QR code and select their preferred language."
+      "answer": "SurtitleLive allows you to broadcast pre-prepared titles directly to audience smartphones. Audience members can scan a QR code and choose their preferred language from pre-loaded translation tracks."
     }
   ],
   "glossary": [
     {
       "term": "Script",
-      "definition": "The complete text of a play, musical, or other dramatic performance, including dialogue and stage directions."
+      "definition": "The written text of a play, including dialogue and stage directions."
     },
     {
       "term": "Cue",
-      "definition": "A signal or prompt in a script or performance that indicates when an action, line of dialogue, or technical element should occur."
+      "definition": "A specific point in the script where a surtitle should appear or change."
     },
     {
       "term": "Character",
-      "definition": "A person or role portrayed by an actor in a play, film, or other dramatic work."
+      "definition": "A dramatic role or person represented in a play."
     },
     {
-      "term": "Surtitles",
-      "definition": "Translated text projected above or beside a stage, typically used in opera or foreign-language performances."
+      "term": "Blackout Control",
+      "definition": "The ability to quickly hide or remove surtitles from the display, often used to avoid displaying incorrect information during errors."
     },
     {
-      "term": "Cockpit",
-      "definition": "The SurtitleLive interface, designed for live operation with features like non-linear navigation and dark mode."
+      "term": "Surtitle",
+      "definition": "Translated or transcribed text projected above a stage, providing audience members with real-time understanding of the dialogue."
     }
   ]
 }

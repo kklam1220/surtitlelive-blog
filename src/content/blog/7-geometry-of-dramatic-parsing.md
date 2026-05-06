@@ -85,14 +85,14 @@ Chinese theatrical scripts often encode structure explicitly:
 
 This punctuation-driven structure makes parsing almost trivial compared to Western formats.
 
-### Comparative Parsing Accuracy (2026-03)
+### Parsing Reliability Patterns (2026-03)
 
-| Language / Format | Estimated Accuracy | Key Structural Signal | Parsing Bottleneck |
-| :--- | :--- | :--- | :--- |
-| **Chinese / Cantonese** | ~100% | Explicit punctuation (角色：台詞) | None |
-| **Japanese** | ~98% | Stable quotation markers | Minor formatting variations |
-| **English (US/UK)** | ~73% | Implicit layout structure | Indentation & capitalization |
-| **German / French** | ~71% | Complex theatrical formatting | Ambiguous block boundaries |
+| Language / Format | Structural Signal | Common Bottleneck |
+| :--- | :--- | :--- |
+| **Chinese / Cantonese** | Explicit punctuation (角色：台詞) | Format consistency |
+| **Japanese** | Stable quotation markers | Minor formatting variations |
+| **English (US/UK)** | Implicit layout structure | Indentation and capitalization |
+| **German / French** | Complex theatrical formatting | Ambiguous block boundaries |
 
 ## 4. The Hidden Cost of Converting Scripts to Plain Text
 
@@ -154,14 +154,14 @@ These contain almost no linguistic cues, relying 100% on typographic style attri
 
 We repositioned AI as a reviewer rather than a guesser:
 
-*   **Tier 1 — Deterministic Rules:** Handles explicit formats with 100% accuracy.
+*   **Tier 1 — Deterministic Rules:** Handles clearly marked formats through deterministic parsing rules before ambiguity handling begins.
 *   **Tier 2 — AI Review:** Acts as a proofreader to validate uncertain classifications. 
     *   *Example:* `HAMLET (quietly)`. The system determines if "(quietly)" is a stage direction or dialogue based on document context.
 *   **Tier 3 — AI Classification:** Full classification for highly ambiguous regions, anchored by layout patterns found elsewhere in the same document.
 
 ## Conclusion
 
-Theatre scripts appear simple, but their meaning emerges from spatial organization. By moving from semantic guessing to layout-first parsing, **SurtitleLive** delivers **the right subtitle cue, at the right moment.**
+Theatre scripts appear simple, but their meaning emerges from spatial organization. By moving from semantic guessing to layout-first parsing, **SurtitleLive** helps prepare cue structures that operators can review and trigger during performance.
 
 ---
 

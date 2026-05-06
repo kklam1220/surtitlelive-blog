@@ -12,7 +12,7 @@ Our voice is **Professional, Direct, and Empathetic to Theatre Techs**.
 *   **Tone**:
     *   **Confident**: We know the industry constraints.
     *   **Direct**: Get to the point. Avoid flowery marketing language.
-    *   **Problem-Focused**: Start with the pain point (e.g., "Spacebar Panic") and offer the solution.
+    *   **Problem-Focused**: Start with the pain point (e.g., "Spacebar Blackout") and offer the solution.
 *   **Key Terminology**:
     *   Use "SurtitleLive Cockpit" (not just "dashboard").
     *   Use "Surtitles" or "Superstitles" (depending on context, but be consistent).
@@ -20,7 +20,7 @@ Our voice is **Professional, Direct, and Empathetic to Theatre Techs**.
 
 **Example Structure (PAS Framework):**
 1.  **Problem**: Identify a specific frustration (e.g., PowerPoint crashing, skipping lines).
-2.  **Agitation**: Describe the consequence (panic, audience distraction).
+2.  **Agitation**: Describe the consequence (operator stress, audience distraction).
 3.  **Solution**: Explain how SurtitleLive fixes it (Cloud-based, AI ingestion).
 
 ---
