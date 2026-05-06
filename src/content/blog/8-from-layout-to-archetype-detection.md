@@ -216,26 +216,34 @@ If your team is still converting scripts manually into slide decks, or rebuildin
 
 ## FAQ
 
-**Q: What is deterministic script parsing?**  
+**Q: What is deterministic script parsing?**
+
 **A:** Deterministic parsing uses fixed rules based on document structure, such as indentation, spacing, punctuation, and formatting. Given the same input and the same parser version, it should produce the same structural result.
 
-**Q: Why not use AI for every line?**  
+**Q: Why not use AI for every line?**
+
 **A:** AI can help with ambiguous regions, but many theatre script decisions are structural rather than semantic. If formatting clearly identifies a speaker, dialogue line, or stage direction, a deterministic rule is usually more repeatable.
 
-**Q: Can AI create theatre subtitles automatically?**  
+**Q: Can AI create theatre subtitles automatically?**
+
 **A:** AI can help prepare a draft, but a production team should still review cue structure, translation choices, timing, and audience delivery before performance. SurtitleLive treats AI as part of the preparation workflow, not as a replacement for show review.
 
-**Q: How does SurtitleLive convert scripts into subtitle cues?**  
+**Q: How does SurtitleLive convert scripts into subtitle cues?**
+
 **A:** SurtitleLive reads document structure, identifies script blocks, detects likely layout patterns, separates front matter from the performable body, and creates an editable cue draft for review. Ambiguous regions can receive selective AI support.
 
-**Q: Why is DOCX formatting important for theatre surtitles?**  
+**Q: Why is DOCX formatting important for theatre surtitles?**
+
 **A:** Many scripts use formatting as structure. Speaker labels, dialogue, headings, and stage directions may be separated by indentation, spacing, capitalization, or italic text. Preserving those signals improves subtitle cue detection.
 
-**Q: What is a script archetype?**  
+**Q: What is a script archetype?**
+
 **A:** A script archetype is a recurring layout pattern, such as speaker names on their own line, colon-separated dialogue, or period-separated speaker labels. Detecting the pattern helps the parser choose the right rules for that region.
 
-**Q: Does this remove the need for human review?**  
+**Q: Does this remove the need for human review?**
+
 **A:** No. SurtitleLive aims to produce a clearer review draft, not a fully automatic final show file. Teams should still review cues, translations, timing, and audience delivery before performance.
 
-**Q: How will SurtitleLive improve this system over time?**  
+**Q: How will SurtitleLive improve this system over time?**
+
 **A:** We will continue monitoring parser behavior through regression cases, real script formats, and production feedback. When the system shows repeated uncertainty or avoidable errors, we can adjust parsing rules, review thresholds, and AI handoff behavior.

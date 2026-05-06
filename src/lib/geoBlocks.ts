@@ -41,3 +41,36 @@ export function readGeoBlock(locale: string, slug: string): GeoBlockPayload | nu
   }
   return parsed as GeoBlockPayload;
 }
+
+function normalizeHeading(value: string): string {
+  return value
+    .replace(/[*_`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLocaleLowerCase();
+}
+
+function listMarkdownHeadings(markdown: string): string[] {
+  return markdown
+    .split(/\r?\n/)
+    .map((line) => line.match(/^#{2,6}\s+(.+?)\s*#*\s*$/)?.[1] ?? "")
+    .filter(Boolean)
+    .map(normalizeHeading);
+}
+
+export function hasAuthoredGeoSection(markdown: string, geoBlock: GeoBlockPayload | null): boolean {
+  const headings = new Set(listMarkdownHeadings(markdown));
+  const sectionTitles = geoBlock?.sectionTitles;
+  const candidates = [
+    "Key Takeaways",
+    "FAQ",
+    "Glossary",
+    sectionTitles?.keyTakeaways,
+    sectionTitles?.faq,
+    sectionTitles?.glossary,
+  ]
+    .filter((item): item is string => Boolean(item))
+    .map(normalizeHeading);
+
+  return candidates.some((candidate) => headings.has(candidate));
+}

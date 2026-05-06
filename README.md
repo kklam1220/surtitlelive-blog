@@ -91,6 +91,7 @@ npm run blog:i18n:geo
 
 Output locale payloads are written to `src/content/i18n/blog/<locale>/<slug>.json` with `sourceHash` for drift detection.
 AI answer blocks (key takeaways / FAQ / glossary) are written to `src/content/i18n/geo/<locale>/<slug>.json`.
+Article pages suppress the generated GEO block when the authored Markdown already contains an equivalent `FAQ`, `Key Takeaways`, or `Glossary` heading. Authored editorial sections take precedence over generated enrichment so readers do not see duplicate FAQ or summary sections.
 
 One-command flow:
 

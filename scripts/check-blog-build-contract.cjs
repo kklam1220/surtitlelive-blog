@@ -58,6 +58,18 @@ function assertFileHasNoMatch(relativePath, pattern, message) {
   }
 }
 
+function assertFileMatchCount(relativePath, pattern, expectedCount, message) {
+  const fullPath = path.join(distDir, relativePath);
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`Missing expected built blog file: ${relativePath}`);
+  }
+  const content = fs.readFileSync(fullPath, 'utf8');
+  const matches = content.match(pattern) ?? [];
+  if (matches.length !== expectedCount) {
+    throw new Error(`${message}\nExpected ${expectedCount}, found ${matches.length} in file: ${relativePath}`);
+  }
+}
+
 if (!fs.existsSync(distDir)) {
   throw new Error('Blog dist/ does not exist. Run `npm run build --prefix blog` first.');
 }
@@ -148,5 +160,18 @@ for (const articlePath of [
     'Missing article-specific preview image on a hero-image article page.',
   );
 }
+
+assertFileMatchCount(
+  path.join('8-from-layout-to-archetype-detection', 'index.html'),
+  />FAQ<\/h2>/g,
+  1,
+  'Detected duplicate FAQ headings on the deterministic parsing article.',
+);
+
+assertFileHasNoMatch(
+  path.join('8-from-layout-to-archetype-detection', 'index.html'),
+  />Key Takeaways<\/h2>|Why is deterministic parsing important for theatre subtitles\?/,
+  'Detected generated GEO block on an article that already has an authored FAQ section.',
+);
 
 console.log('Blog build contract check passed.');

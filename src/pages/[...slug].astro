@@ -2,7 +2,7 @@
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
 import { listLocalizedLocalesForSlug } from '../lib/localizedBlog';
-import { readGeoBlock } from '../lib/geoBlocks';
+import { hasAuthoredGeoSection, readGeoBlock } from '../lib/geoBlocks';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -22,6 +22,7 @@ const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const canonicalPath = `${normalizedBaseUrl}${post.id}/`;
 const geoBlock = readGeoBlock("en", post.id);
+const visibleGeoBlock = hasAuthoredGeoSection(post.body, geoBlock) ? null : geoBlock;
 const allPosts = await getCollection("blog");
 const relatedPosts = allPosts
 	.filter((item) => item.id !== post.id)
@@ -39,26 +40,26 @@ const hreflangs = [
 	slug={post.id}
 	canonicalPath={canonicalPath}
 	hreflangs={hreflangs}
-	faqItems={geoBlock?.faq ?? []}
+	faqItems={visibleGeoBlock?.faq ?? []}
 >
 	<Content />
 	{
-		geoBlock && (
+		visibleGeoBlock && (
 			<section>
-				<h2>{geoBlock.sectionTitles?.keyTakeaways || "Key Takeaways"}</h2>
+				<h2>{visibleGeoBlock.sectionTitles?.keyTakeaways || "Key Takeaways"}</h2>
 				<ul>
-					{geoBlock.keyTakeaways.slice(0, 4).map((item) => <li>{item}</li>)}
+					{visibleGeoBlock.keyTakeaways.slice(0, 4).map((item) => <li>{item}</li>)}
 				</ul>
-				<h2>{geoBlock.sectionTitles?.faq || "FAQ"}</h2>
-				{geoBlock.faq.slice(0, 4).map((item) => (
+				<h2>{visibleGeoBlock.sectionTitles?.faq || "FAQ"}</h2>
+				{visibleGeoBlock.faq.slice(0, 4).map((item) => (
 					<div>
 						<h3>{item.question}</h3>
 						<p>{item.answer}</p>
 					</div>
 				))}
-				<h2>{geoBlock.sectionTitles?.glossary || "Glossary"}</h2>
+				<h2>{visibleGeoBlock.sectionTitles?.glossary || "Glossary"}</h2>
 				<ul>
-					{geoBlock.glossary.slice(0, 5).map((item) => (
+					{visibleGeoBlock.glossary.slice(0, 5).map((item) => (
 						<li><strong>{item.term}:</strong> {item.definition}</li>
 					))}
 				</ul>

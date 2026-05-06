@@ -8,7 +8,7 @@ import {
   listLocalizedSlugs,
   readLocalizedPost,
 } from "../../lib/localizedBlog";
-import { readGeoBlock } from "../../lib/geoBlocks";
+import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -36,6 +36,7 @@ const pubDate = new Date(post.frontmatter.pubDate || Date.now());
 const updatedDate = post.frontmatter.updatedDate ? new Date(post.frontmatter.updatedDate) : undefined;
 const html = marked.parse(post.body || "");
 const geoBlock = readGeoBlock(locale, post.slug);
+const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null : geoBlock;
 const baseUrl = import.meta.env.BASE_URL ?? "/";
 const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 const canonicalPath = `${normalizedBaseUrl}${locale}/${post.slug}/`;
@@ -62,29 +63,29 @@ const hreflangs = [
   heroImage={post.frontmatter.heroImage}
   canonicalPath={canonicalPath}
   hreflangs={hreflangs}
-  faqItems={geoBlock?.faq ?? []}
+  faqItems={visibleGeoBlock?.faq ?? []}
 >
   <p style="background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 1rem; color: #1d4ed8;">
     Machine-translated article. If any wording differs, English text prevails.
   </p>
   <div set:html={html} />
   {
-    geoBlock && (
+    visibleGeoBlock && (
       <section>
-        <h2>{geoBlock.sectionTitles?.keyTakeaways || "Key Takeaways"}</h2>
+        <h2>{visibleGeoBlock.sectionTitles?.keyTakeaways || "Key Takeaways"}</h2>
         <ul>
-          {geoBlock.keyTakeaways.slice(0, 4).map((item) => <li>{item}</li>)}
+          {visibleGeoBlock.keyTakeaways.slice(0, 4).map((item) => <li>{item}</li>)}
         </ul>
-        <h2>{geoBlock.sectionTitles?.faq || "FAQ"}</h2>
-        {geoBlock.faq.slice(0, 4).map((item) => (
+        <h2>{visibleGeoBlock.sectionTitles?.faq || "FAQ"}</h2>
+        {visibleGeoBlock.faq.slice(0, 4).map((item) => (
           <div>
             <h3>{item.question}</h3>
             <p>{item.answer}</p>
           </div>
         ))}
-        <h2>{geoBlock.sectionTitles?.glossary || "Glossary"}</h2>
+        <h2>{visibleGeoBlock.sectionTitles?.glossary || "Glossary"}</h2>
         <ul>
-          {geoBlock.glossary.slice(0, 5).map((item) => (
+          {visibleGeoBlock.glossary.slice(0, 5).map((item) => (
             <li><strong>{item.term}:</strong> {item.definition}</li>
           ))}
         </ul>
