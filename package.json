@@ -21,5 +21,8 @@
     "astro": "^6.1.10",
     "marked": "^16.4.1",
     "sharp": "^0.34.5"
+  },
+  "overrides": {
+    "fast-xml-builder": "1.2.0"
   }
 }

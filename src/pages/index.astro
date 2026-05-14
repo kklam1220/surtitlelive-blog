@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { resolveBlogLocaleMeta } from '../i18n/locale-config';
 import { listLocalizedLocales } from '../lib/localizedBlog';
 
 const rawPosts = await getCollection('blog');
@@ -21,6 +22,7 @@ const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const postHref = (slug) => `${normalizedBaseUrl}${slug}/`;
 const localizedLocales = listLocalizedLocales();
+const localeMeta = resolveBlogLocaleMeta('en');
 const hreflangs = [
 	{ lang: "en", path: normalizedBaseUrl },
 	...localizedLocales.map((locale) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/` })),
@@ -141,19 +143,7 @@ const hreflangs = [
 			}
 
 			.view-all-link {
-				display: inline-block;
-				margin-top: 2rem;
-				padding: 0.75rem 1.5rem;
-				background-color: var(--accent);
-				color: white;
-				text-decoration: none;
-				border-radius: 6px;
-				font-weight: 600;
-				transition: opacity 0.2s;
-			}
-
-			.view-all-link:hover {
-				opacity: 0.9;
+				display: none;
 			}
 
 			@media (max-width: 720px) {
@@ -170,7 +160,7 @@ const hreflangs = [
 		<Header currentLocale="en" localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
 		<main>
 			<section>
-				<h1 class="section-title">Featured Articles</h1>
+				<h1 class="section-title">{localeMeta.articlesHeading}</h1>
 				<ul>
 					{
 						posts.map((post) => {
@@ -200,7 +190,7 @@ const hreflangs = [
 										</div>
 										<div class="content-container">
 											<span class="date">
-												<FormattedDate date={post.data.pubDate} />
+												<FormattedDate date={post.data.pubDate} locale="en" />
 											</span>
 											<h2 class="title">{post.data.title}</h2>
 											<p class="description">{post.data.description}</p>
@@ -211,7 +201,6 @@ const hreflangs = [
 						})
 					}
 				</ul>
-				<a href={normalizedBaseUrl} class="view-all-link">View All Articles →</a>
 			</section>
 		</main>
 		<Footer />

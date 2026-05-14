@@ -141,6 +141,8 @@ function buildPrompt({ locale, title, body }) {
     "Rules:",
     "- Keep domain terms accurate: script=theatre play script; cue=stage/surtitle cue; character=dramatic role.",
     "- Do not invent product features not present in source.",
+    "- Treat the target language as a first-class public edition. Do not mention machine translation, locale codes, or English fallback wording.",
+    "- Localize examples and character/dialogue snippets into the target language unless the source explicitly discusses a named language as the subject.",
     "- Output strict JSON only.",
     "- JSON shape:",
     '{ "sectionTitles": { "keyTakeaways": "...", "faq": "...", "glossary": "...", "related": "..." }, "keyTakeaways": ["..."], "faq": [{"question":"...","answer":"..."}], "glossary": [{"term":"...","definition":"..."}] }',

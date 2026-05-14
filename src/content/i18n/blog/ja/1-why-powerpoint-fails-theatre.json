@@ -6,8 +6,8 @@
   "sourcePath": "src/content/blog/1-why-powerpoint-fails-theatre.mdx",
   "sourceHash": "395e369e1cea6539c1061474690c00569bfc20eb64ee65a5d03501b42d9087db",
   "status": "translated",
-  "updatedAt": "2026-05-06T04:22:39.352Z",
-  "translatedAt": "2026-05-06T04:22:39.352Z",
+  "updatedAt": "2026-05-14T14:55:41.095Z",
+  "translatedAt": "2026-05-12T01:09:10.138Z",
   "frontmatter": {
     "title": "劇場はライブ。字幕や翻訳字幕に、なぜいまだに静的なスライドを使っているのか？",
     "description": "PowerPointは会議室のために設計されたもので、ブロードウェイのためではありません。SurtitleLiveがどのように劇場用字幕・翻訳字幕ソフトウェアを再構築しているかを探ります。",

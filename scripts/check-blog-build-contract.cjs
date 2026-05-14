@@ -76,7 +76,8 @@ if (!fs.existsSync(distDir)) {
 
 const htmlFiles = collectFiles(distDir, (file) => file.endsWith('.html'));
 const cssFiles = collectFiles(distDir, (file) => file.endsWith('.css'));
-const textFiles = [...htmlFiles, ...cssFiles];
+const xmlFiles = collectFiles(distDir, (file) => file.endsWith('.xml'));
+const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
 const redirectsFile = path.join(distDir, '_redirects');
 
 assertNoMatch(
@@ -113,6 +114,12 @@ assertNoMatch(
   htmlFiles,
   /https:\/\/www\.surtitlelive\.com/,
   'Detected deprecated www.surtitlelive.com host in built blog HTML.',
+);
+
+assertNoMatch(
+  textFiles,
+  /Machine-translated|English text prevails|SurtitleLive Blog \([a-z][a-z-]*\)|>Blog \([a-z][a-z-]*\)</i,
+  'Detected informal localized blog copy or locale-code labels in built blog output.',
 );
 
 assertNoMatch(
@@ -172,6 +179,24 @@ assertFileHasNoMatch(
   path.join('8-from-layout-to-archetype-detection', 'index.html'),
   />Key Takeaways<\/h2>|Why is deterministic parsing important for theatre subtitles\?/,
   'Detected generated GEO block on an article that already has an authored FAQ section.',
+);
+
+assertFileHasMatch(
+  path.join('ko', 'index.html'),
+  /SurtitleLive 블로그|추천 글/,
+  'Missing formal Korean blog hub metadata or heading.',
+);
+
+assertFileHasNoMatch(
+  path.join('ko', '3-how-we-protect-your-work', 'index.html'),
+  /Does SurtitleLive store full script files on user devices\?|How does SurtitleLive encrypt scripts\?/,
+  'Detected hidden English FAQ schema on a localized security article.',
+);
+
+assertFileHasNoMatch(
+  path.join('ko', '7-geometry-of-dramatic-parsing', 'index.html'),
+  /Zhang San|Li Si|張三：今天下雨/,
+  'Detected non-localized Chinese/English example text on the Korean parsing article.',
 );
 
 console.log('Blog build contract check passed.');

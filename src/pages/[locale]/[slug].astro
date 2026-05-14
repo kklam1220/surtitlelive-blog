@@ -9,6 +9,7 @@ import {
   readLocalizedPost,
 } from "../../lib/localizedBlog";
 import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
+import { resolveBlogLocaleMeta } from "../../i18n/locale-config";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -32,6 +33,7 @@ export async function getStaticPaths() {
 }
 
 const { locale, localizedLocalesForSlug, post } = Astro.props;
+const localeMeta = resolveBlogLocaleMeta(locale);
 const pubDate = new Date(post.frontmatter.pubDate || Date.now());
 const updatedDate = post.frontmatter.updatedDate ? new Date(post.frontmatter.updatedDate) : undefined;
 const html = marked.parse(post.body || "");
@@ -65,9 +67,6 @@ const hreflangs = [
   hreflangs={hreflangs}
   faqItems={visibleGeoBlock?.faq ?? []}
 >
-  <p style="background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 1rem; color: #1d4ed8;">
-    Machine-translated article. If any wording differs, English text prevails.
-  </p>
   <div set:html={html} />
   {
     visibleGeoBlock && (
@@ -93,7 +92,7 @@ const hreflangs = [
     )
   }
   <section>
-    <h2>{geoBlock?.sectionTitles?.related || "Related Articles"}</h2>
+    <h2>{geoBlock?.sectionTitles?.related || localeMeta.relatedArticles}</h2>
     <ul>
       {relatedPosts.map((item) => (
         <li><a href={`${normalizedBaseUrl}${locale}/${item.slug}/`}>{item.frontmatter?.title || item.slug}</a></li>

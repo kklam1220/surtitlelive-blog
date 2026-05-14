@@ -71,6 +71,8 @@ function buildPrompt({ locale, source }) {
     "- performance = live stage performance.",
     "- operator cockpit = control console.",
     "- For zh-TW prefer 劇本, 角色, 控制台. For zh-CN prefer 剧本, 角色, 控制台.",
+    "- Treat each locale as a first-class public edition. Do not add machine-translation disclaimers, locale-code labels, or notes that English prevails.",
+    "- Localize illustrative script examples for the target language when they are examples rather than quoted source material. For example, replace a Chinese sample such as 張三：今天下雨 with a natural target-language speaker/dialogue sample.",
     "- Preserve markdown structure exactly (headings, lists, links, code blocks, HTML tags).",
     "- Do not alter URLs, image paths, code blocks, or frontmatter key names.",
     '- Return strict JSON only: {"title":"...","description":"...","tags":["..."],"body":"..."}',

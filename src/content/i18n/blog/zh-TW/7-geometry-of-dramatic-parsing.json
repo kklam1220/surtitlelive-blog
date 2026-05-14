@@ -6,8 +6,8 @@
   "sourcePath": "src/content/blog/7-geometry-of-dramatic-parsing.md",
   "sourceHash": "4137bc0e45637131fe5c157367622a7f37ce9bc020249bb41d19003e772c2d86",
   "status": "translated",
-  "updatedAt": "2026-05-06T04:17:02.046Z",
-  "translatedAt": "2026-05-05T23:22:49.551Z",
+  "updatedAt": "2026-05-12T03:20:55.086Z",
+  "translatedAt": "2026-05-12T01:09:10.138Z",
   "frontmatter": {
     "title": "劇本解析的幾何學：劇場字幕和提詞字幕如何偵測對白",
     "description": "了解為何劇場劇本解析是幾何問題，而不僅僅是語言問題。了解 SurtitleLive 如何使用版面優先解析來偵測對白區塊，並為劇場字幕和隱藏字幕產生可靠的字幕提示。",

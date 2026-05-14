@@ -4,10 +4,10 @@
   "sourceLocale": "en",
   "slug": "8-from-layout-to-archetype-detection",
   "sourcePath": "src/content/blog/8-from-layout-to-archetype-detection.md",
-  "sourceHash": "8d24f03e3e8cb26c91b099499547ed8b2cf5c61528c42da42b08cdf9796327b2",
+  "sourceHash": "0919365ddb61b91ef56e36967370821328d14df305e5fb4275b4c806e5996139",
   "status": "translated",
-  "updatedAt": "2026-05-06T04:28:56.592Z",
-  "translatedAt": "2026-05-06T04:28:56.592Z",
+  "updatedAt": "2026-05-12T03:20:55.086Z",
+  "translatedAt": "2026-05-12T01:09:10.138Z",
   "frontmatter": {
     "title": "Tại sao Phần mềm Tạo Phụ đề Sân khấu nên Phân tích Cú pháp Kịch bản trước khi Sử dụng AI",
     "description": "Cách SurtitleLive sử dụng phân tích cú pháp kịch bản sân khấu tất định, tín hiệu bố cục, phát hiện nguyên mẫu và đánh giá AI có chọn lọc để chuẩn bị bản nháp phụ đề và cue surtitle có thể chỉnh sửa.",

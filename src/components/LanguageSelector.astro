@@ -27,7 +27,7 @@ const currentMeta = BLOG_LOCALE_META[(isBlogSupportedLocale(currentLocale) ? cur
 
 function formatLabel(locale: BlogSupportedLocale): string {
 	const meta = BLOG_LOCALE_META[locale];
-	return locale === 'en' ? `${meta.native} (Default)` : meta.native;
+	return locale === 'en' ? `${meta.native} (${currentMeta.defaultLabel})` : meta.native;
 }
 ---
 
@@ -54,7 +54,6 @@ function formatLabel(locale: BlogSupportedLocale): string {
 						);
 					})
 				}
-				<li class="notice">Machine-translated UI. If any wording differs, English text prevails.</li>
 			</ul>
 		</details>
 	) : null
@@ -136,15 +135,6 @@ function formatLabel(locale: BlogSupportedLocale): string {
 		background: #f9fafb;
 		color: #111827;
 		font-weight: 600;
-	}
-
-	.language-selector .notice {
-		margin: 0.35rem 0.75rem 0;
-		padding: 0.7rem 0.8rem 0;
-		border-top: 1px solid #f3f4f6;
-		color: #6b7280;
-		font-size: 0.7rem;
-		line-height: 1.4;
 	}
 
 	@media (max-width: 720px) {

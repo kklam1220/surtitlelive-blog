@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
 import { listLocalizedLocalesForSlug } from '../lib/localizedBlog';
 import { hasAuthoredGeoSection, readGeoBlock } from '../lib/geoBlocks';
+import { resolveBlogLocaleMeta } from '../i18n/locale-config';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -21,6 +22,7 @@ const { Content } = await render(post);
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const canonicalPath = `${normalizedBaseUrl}${post.id}/`;
+const localeMeta = resolveBlogLocaleMeta('en');
 const geoBlock = readGeoBlock("en", post.id);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body, geoBlock) ? null : geoBlock;
 const allPosts = await getCollection("blog");
@@ -67,7 +69,7 @@ const hreflangs = [
 		)
 	}
 	<section>
-		<h2>{geoBlock?.sectionTitles?.related || "Related Articles"}</h2>
+		<h2>{geoBlock?.sectionTitles?.related || localeMeta.relatedArticles}</h2>
 		<ul>
 			{relatedPosts.map((item) => (
 				<li><a href={`${normalizedBaseUrl}${item.id}/`}>{item.data.title}</a></li>

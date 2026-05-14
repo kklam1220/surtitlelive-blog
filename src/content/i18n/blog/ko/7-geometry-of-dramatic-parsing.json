@@ -6,8 +6,8 @@
   "sourcePath": "src/content/blog/7-geometry-of-dramatic-parsing.md",
   "sourceHash": "4137bc0e45637131fe5c157367622a7f37ce9bc020249bb41d19003e772c2d86",
   "status": "translated",
-  "updatedAt": "2026-05-06T04:17:01.977Z",
-  "translatedAt": "2026-05-05T23:22:49.551Z",
+  "updatedAt": "2026-05-12T03:20:55.086Z",
+  "translatedAt": "2026-05-12T01:09:10.138Z",
   "frontmatter": {
     "title": "대본 구문 분석의 기하학: 연극 자막 및 수퍼타이틀이 대사를 감지하는 방법",
     "description": "연극 대본 구문 분석이 단순한 언어 문제가 아닌 기하학 문제인 이유를 알아보세요. SurtitleLive가 레이아웃 우선 구문 분석을 사용하여 대화 블록을 감지하고 연극 자막 및 캡션을 위한 안정적인 자막 큐를 생성하는 방법을 알아보세요.",
