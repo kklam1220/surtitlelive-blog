@@ -143,6 +143,8 @@ for (const requiredRule of [
   '/blog/_astro/* /_astro/:splat 200',
   '/blog/fonts/* /blog/fonts/:splat 200',
   '/blog/logo/* /blog/logo/:splat 200',
+  '/blog/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
+  '/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
   '/blog/:locale/:slug/ /:locale/:slug/ 200',
   '/blog/:slug/ /:slug/ 200',
   '/blog/ / 200',

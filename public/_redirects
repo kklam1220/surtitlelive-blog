@@ -6,6 +6,10 @@
 /blog/rss.xml /rss.xml 200
 /blog/sitemap-index.xml /sitemap-index.xml 200
 /blog/sitemap-0.xml /sitemap-0.xml 200
+/blog/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302
+/blog/:locale/3-how-we-protect-your-work /blog/3-how-we-protect-your-work/ 302
+/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302
+/:locale/3-how-we-protect-your-work /blog/3-how-we-protect-your-work/ 302
 /blog/:locale/rss.xml /:locale/rss.xml 200
 /blog/:locale/:slug/ /:locale/:slug/ 200
 /blog/:locale/:slug /:locale/:slug 200
