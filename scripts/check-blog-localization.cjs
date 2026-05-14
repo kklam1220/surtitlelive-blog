@@ -30,7 +30,9 @@ function hasInvalidBodyMarkup(localizedPayload) {
   const body = localizedPayload.body || "";
   return (
     /^\s*```(?:markdown|md)\s*\r?\n/i.test(body) ||
-    /<script\s+type=["']application\/ld\+json["']/i.test(body)
+    /<script\s+type=["']application\/ld\+json["']/i.test(body) ||
+    /^\s*import\s+[A-Za-z_$][\w$]*\s+from\s+["']\.\/[^"']+\.(?:avif|gif|jpe?g|png|webp)["'];?/im.test(body) ||
+    /src=\{[A-Za-z_$][\w$]*\.src\}/.test(body)
   );
 }
 

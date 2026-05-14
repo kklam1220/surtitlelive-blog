@@ -4,6 +4,8 @@ import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
 import { resolveBlogLocaleMeta } from "../../i18n/locale-config";
+import { Image } from "astro:assets";
+import { resolveBlogImage } from "../../lib/blogAssets";
 import { listLocalizedLocales, listLocalizedPostsForLocale } from "../../lib/localizedBlog";
 
 export async function getStaticPaths() {
@@ -55,7 +57,17 @@ const hreflangs = [
         background: #fff;
         border: 1px solid #e5e7eb;
         border-radius: 10px;
+        overflow: hidden;
+      }
+      .card-body {
         padding: 1rem;
+      }
+      .card-image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+        border-bottom: 1px solid #e5e7eb;
       }
       .card h2 {
         font-size: 1.1rem;
@@ -76,17 +88,31 @@ const hreflangs = [
       <h1>{localeMeta.blogTitle}</h1>
       <div class="grid">
         {
-          posts.map((post) => (
-            <article class="card">
-              <a href={`${normalizedBaseUrl}${locale}/${post.slug}/`}>
-                <small>
-                  <FormattedDate date={new Date(post.frontmatter.pubDate || Date.now())} locale={locale} />
-                </small>
-                <h2>{post.frontmatter.title}</h2>
-                <p>{post.frontmatter.description}</p>
-              </a>
-            </article>
-          ))
+          posts.map((post) => {
+            const heroImage = resolveBlogImage(post.frontmatter.heroImage);
+            return (
+              <article class="card">
+                <a href={`${normalizedBaseUrl}${locale}/${post.slug}/`}>
+                  {heroImage && (
+                    <Image
+                      class="card-image"
+                      src={heroImage}
+                      alt={post.frontmatter.heroImageAlt || post.frontmatter.title}
+                      width={720}
+                      height={360}
+                    />
+                  )}
+                  <div class="card-body">
+                    <small>
+                      <FormattedDate date={new Date(post.frontmatter.pubDate || Date.now())} locale={locale} />
+                    </small>
+                    <h2>{post.frontmatter.title}</h2>
+                    <p>{post.frontmatter.description}</p>
+                  </div>
+                </a>
+              </article>
+            );
+          })
         }
       </div>
     </main>

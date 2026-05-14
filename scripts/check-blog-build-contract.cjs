@@ -140,6 +140,24 @@ assertNoMatch(
 
 assertNoMatch(
   htmlFiles,
+  /import\s+[A-Za-z_$][\w$]*\s+from\s+(?:&#39;|')\.\/[^<]+?\.(?:avif|gif|jpe?g|png|webp)(?:&#39;|')|src=\{[A-Za-z_$][\w$]*\.src\}/i,
+  'Detected unresolved MDX image import or image expression in built blog HTML.',
+);
+
+assertNoMatch(
+  htmlFiles,
+  /src="\.\/[^"]+\.(?:avif|gif|jpe?g|png|webp)"/i,
+  'Detected unresolved relative article image URL in built blog HTML.',
+);
+
+assertNoMatch(
+  htmlFiles,
+  /<meta property="og:image" content="https:\/\/surtitlelive\.com\/blog\/(?:ar|de|es|fr|id|it|ja|ko|pl|pt|ru|th|tr|uk|vi|zh-CN|zh-TW)\/[^"]+\.(?:avif|gif|jpe?g|png|webp)"/i,
+  'Detected localized preview image URL that bypasses the Astro asset pipeline.',
+);
+
+assertNoMatch(
+  htmlFiles,
   /src="\/blog\/logo\/New_logo\.png/,
   'Detected blog-origin logo URL. Use the canonical main-site logo URL instead.',
 );
@@ -173,6 +191,7 @@ for (const requiredRule of [
 for (const articlePath of [
   path.join('7-geometry-of-dramatic-parsing', 'index.html'),
   path.join('zh-CN', '7-geometry-of-dramatic-parsing', 'index.html'),
+  path.join('fr', '7-geometry-of-dramatic-parsing', 'index.html'),
 ]) {
   assertFileHasNoMatch(
     articlePath,
@@ -184,7 +203,24 @@ for (const articlePath of [
     /<meta property="og:image" content="[^"]*script-parsing-theatre-subtitles/i,
     'Missing article-specific preview image on a hero-image article page.',
   );
+  assertFileHasMatch(
+    articlePath,
+    /<div class="hero-image"[^>]*>[\s\S]*<img[^>]+src="\/blog\/_astro\/script-parsing-theatre-subtitles/i,
+    'Missing rendered article-specific hero image on a hero-image article page.',
+  );
 }
+
+assertFileHasMatch(
+  path.join('es', '5-the-human-gatekeeper-ai-translation', 'index.html'),
+  /<img[^>]+src="\/blog\/_astro\/blog-5\.2/i,
+  'Missing resolved localized body image on the Spanish AI translation article.',
+);
+
+assertFileHasMatch(
+  path.join('es', '1-why-powerpoint-fails-theatre', 'index.html'),
+  /<img[^>]+src="\/blog\/_astro\/blog-1-2/i,
+  'Missing resolved localized body image on the Spanish PowerPoint article.',
+);
 
 assertFileMatchCount(
   path.join('8-from-layout-to-archetype-detection', 'index.html'),

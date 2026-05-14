@@ -8,6 +8,7 @@ import {
   listLocalizedSlugs,
   readLocalizedPost,
 } from "../../lib/localizedBlog";
+import { rewriteLocalizedBlogImageReferences } from "../../lib/blogAssets";
 import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
 import { resolveBlogLocaleMeta } from "../../i18n/locale-config";
 
@@ -36,7 +37,7 @@ const { locale, localizedLocalesForSlug, post } = Astro.props;
 const localeMeta = resolveBlogLocaleMeta(locale);
 const pubDate = new Date(post.frontmatter.pubDate || Date.now());
 const updatedDate = post.frontmatter.updatedDate ? new Date(post.frontmatter.updatedDate) : undefined;
-const html = marked.parse(post.body || "");
+const html = marked.parse(rewriteLocalizedBlogImageReferences(post.body || ""));
 const geoBlock = readGeoBlock(locale, post.slug);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null : geoBlock;
 const baseUrl = import.meta.env.BASE_URL ?? "/";
@@ -63,6 +64,7 @@ const hreflangs = [
   pubDate={pubDate}
   updatedDate={updatedDate}
   heroImage={post.frontmatter.heroImage}
+  heroImageAlt={post.frontmatter.heroImageAlt}
   canonicalPath={canonicalPath}
   hreflangs={hreflangs}
   faqItems={visibleGeoBlock?.faq ?? []}

@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
+import { resolveBlogImage } from '../lib/blogAssets';
 
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -13,6 +14,7 @@ type HeroImage = ImageMetadata | string;
 
 type Props = Omit<CollectionEntry<'blog'>['data'], 'heroImage'> & {
 	heroImage?: HeroImage;
+	heroImageAlt?: string;
 };
 
 const {
@@ -21,6 +23,7 @@ const {
 	pubDate,
 	updatedDate,
 	heroImage,
+	heroImageAlt,
 	slug = "",
 	lang = "en",
 	canonicalPath,
@@ -30,8 +33,9 @@ const {
 
 const localeMeta = resolveBlogLocaleMeta(lang);
 const canonicalURL = new URL(canonicalPath || Astro.url.pathname, Astro.site);
-const metaImage = typeof heroImage === 'string' ? { src: heroImage } : heroImage;
-const renderableHeroImage = typeof heroImage === 'string' ? undefined : heroImage;
+const resolvedHeroImage = typeof heroImage === 'string' ? resolveBlogImage(heroImage) : heroImage;
+const metaImage = resolvedHeroImage ?? (typeof heroImage === 'string' ? { src: heroImage } : heroImage);
+const renderableHeroImage = resolvedHeroImage;
 const socialImageURL = new URL(metaImage?.src ?? '/blog-placeholder-1.jpg', Astro.url);
 
 
@@ -148,7 +152,7 @@ const fullSchema = [
 		<main>
 			<article>
 				<div class="hero-image">
-					{renderableHeroImage && <Image width={1020} height={510} src={renderableHeroImage} alt={title} />}
+					{renderableHeroImage && <Image width={1020} height={510} src={renderableHeroImage} alt={heroImageAlt || title} />}
 				</div>
 				<div class="prose">
 					<div class="title">
