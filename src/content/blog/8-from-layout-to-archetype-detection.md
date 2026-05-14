@@ -6,33 +6,6 @@ heroImage: './blog-8.png'
 heroImageAlt: 'theatre script front matter separated from the script body before generating a cue draft'
 tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'Deterministic Parsing', 'SurtitleLive']
 ---
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Why Theatre Subtitle Software Should Parse Scripts Before Using AI",
-  "datePublished": "2026-05-05",
-  "author": {
-    "@type": "Organization",
-    "name": "SurtitleLive"
-  },
-  "keywords": [
-    "theatre subtitles",
-    "surtitles",
-    "script parsing",
-    "deterministic parsing",
-    "subtitle cue detection",
-    "archetype detection",
-    "theatre technology",
-    "script analysis"
-  ],
-  "about": {
-    "@type": "SoftwareApplication",
-    "name": "SurtitleLive"
-  }
-}
-</script>
-
 When a theatre subtitle system misreads a cast list as dialogue, the problem does not stay inside the parser. It becomes a bad cue in rehearsal, a confused operator, and possibly the wrong line on screen during a live show.
 
 That is why theatre subtitle software should not treat a script as plain text before asking AI to classify it. A script is a structured document. Indentation, spacing, capitalization, punctuation, and formatting often carry more structural meaning than the words themselves.

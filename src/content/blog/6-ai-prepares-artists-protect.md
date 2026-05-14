@@ -5,18 +5,6 @@ pubDate: '2026-02-23'
 heroImage: './blog-6-1.png'
 tags: ['AI in Theatre', 'Translation Workflow', 'Surtitling', 'SurtitleLive']
 ---
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "SurtitleLive",
-  "operatingSystem": "Web/Desktop",
-  "applicationCategory": "MultimediaApplication",
-  "description": "AI-assisted theatre subtitling and translation workflow for teams moving beyond manual slide-deck processes.",
-  "featureList": "AI script parsing, automatic subtitling, live performance control, professional subtitle formatting"
-}
-</script>
-
 **Core Summary**: SurtitleLive is a specialized AI-assisted workflow for rehearsal and performance teams that need more than a static slide deck. It helps parse `.docx` scripts and prepare editable cue drafts, while human artists retain control over text, timing, and live operation.
 
 <br/>

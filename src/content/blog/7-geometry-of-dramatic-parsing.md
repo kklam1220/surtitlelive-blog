@@ -6,30 +6,6 @@ heroImage: './script-parsing-theatre-subtitles.png'
 heroImageAlt: 'script parsing pipeline for theatre subtitles and surtitles'
 tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'AI Systems', 'SurtitleLive']
 ---
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "The Geometry of Script Parsing: How Theatre Subtitles and Supertitles Detect Dialogue",
-  "datePublished": "2026-03-11",
-  "author": {
-    "@type": "Organization",
-    "name": "SurtitleLive"
-  },
-  "keywords": [
-    "theatre subtitles",
-    "surtitles",
-    "script parsing",
-    "subtitle cue detection",
-    "theatre technology"
-  ],
-  "about": {
-    "@type": "SoftwareApplication",
-    "name": "SurtitleLive"
-  }
-}
-</script>
-
 Modern theatre subtitle systems depend on one critical capability: accurate cue detection from scripts.
 
 Whether generating supertitles for opera, subtitles for stage productions, or live captions for accessibility, the system must reliably determine:

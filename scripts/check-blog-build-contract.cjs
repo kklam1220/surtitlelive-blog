@@ -80,6 +80,16 @@ const xmlFiles = collectFiles(distDir, (file) => file.endsWith('.xml'));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
 const redirectsFile = path.join(distDir, '_redirects');
 
+for (const filePath of htmlFiles) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const jsonLdCount = (content.match(/<script type="application\/ld\+json">/g) || []).length;
+  if (jsonLdCount > 1) {
+    throw new Error(
+      `Detected duplicate JSON-LD script blocks in built blog HTML: ${path.relative(distDir, filePath)}`,
+    );
+  }
+}
+
 assertNoMatch(
   textFiles,
   /\/blog\/blog\/fonts\/atkinson-(regular|bold)\.woff/,
@@ -120,6 +130,12 @@ assertNoMatch(
   textFiles,
   /Machine-translated|English text prevails|SurtitleLive Blog \([a-z][a-z-]*\)|>Blog \([a-z][a-z-]*\)</i,
   'Detected informal localized blog copy or locale-code labels in built blog output.',
+);
+
+assertNoMatch(
+  htmlFiles,
+  /<pre><code class="language-(markdown|md)">|```markdown|&lt;script type=(?:&quot;|")application\/ld\+json|&lt;script\s+type=(?:&quot;|")application\/ld\+json/i,
+  'Detected escaped markdown fence or JSON-LD script rendered as article body content.',
 );
 
 assertNoMatch(
@@ -222,10 +238,47 @@ assertNoMatch(
   'Deferred localized security/IP article leaked into built blog output links.',
 );
 
+for (const locale of [
+  'ar',
+  'de',
+  'es',
+  'fr',
+  'id',
+  'it',
+  'ja',
+  'ko',
+  'pl',
+  'pt',
+  'ru',
+  'th',
+  'tr',
+  'uk',
+  'vi',
+  'zh-CN',
+]) {
+  assertFileHasNoMatch(
+    path.join(locale, '7-geometry-of-dramatic-parsing', 'index.html'),
+    /Zhang San|Li Si|張三：今天下雨|李四：真的嗎|角色：台詞/,
+    `Detected non-localized Chinese/English example text on the ${locale} parsing article.`,
+  );
+}
+
+assertFileHasMatch(
+  path.join('fr', '7-geometry-of-dramatic-parsing', 'index.html'),
+  /ANNE : Il pleut aujourd/,
+  'Missing localized French first dialogue example on the French parsing article.',
+);
+
+assertFileHasMatch(
+  path.join('fr', '7-geometry-of-dramatic-parsing', 'index.html'),
+  /BENOIT : Vraiment/,
+  'Missing localized French second dialogue example on the French parsing article.',
+);
+
 assertFileHasNoMatch(
-  path.join('ko', '7-geometry-of-dramatic-parsing', 'index.html'),
-  /Zhang San|Li Si|張三：今天下雨/,
-  'Detected non-localized Chinese/English example text on the Korean parsing article.',
+  path.join('fr', '7-geometry-of-dramatic-parsing', 'index.html'),
+  /Ils regardent vers la fenêtre\.\)<\/strong>\)/,
+  'Detected leftover punctuation from replaced French dialogue examples.',
 );
 
 console.log('Blog build contract check passed.');

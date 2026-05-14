@@ -134,11 +134,11 @@ function localizeKnownScriptExamples(locale: string, slug: string, body: string)
   if (slug === "7-geometry-of-dramatic-parsing") {
     nextBody = nextBody
       .replace(
-        /> \*\*張三：今天下雨。\*\* \([^)]*\)\s*\r?\n> \*\*李四：真的嗎？\*\* \([^)]*\)\s*\r?\n> \*\*（他們望向窗外）\*\* \([^)]*\)/g,
+        /> \*\*(?:張三：今天下雨。|张三：今天下雨。)\*\*[^\n]*\r?\n> \*\*(?:李四：真的嗎？|李四：真的吗？)\*\*[^\n]*\r?\n> \*\*(?:（他們望向窗外）|（他们望向窗外）)\*\*[^\n]*/g,
         example.punctuationBlock,
       )
-      .replace(/\*\*角色：台詞\*\*(?: \([^)]*\))?/g, `**${example.characterPattern}**`)
-      .replace(/角色：台詞/g, example.characterPattern);
+      .replace(/\*\*(?:角色：台詞|角色：台词)\*\*(?: \([^)]*\))?/g, `**${example.characterPattern}**`)
+      .replace(/角色：台詞|角色：台词/g, example.characterPattern);
   }
 
   if (

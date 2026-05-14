@@ -26,6 +26,14 @@ function isMostlyEnglishCopy(sourcePost, localizedPayload) {
   );
 }
 
+function hasInvalidBodyMarkup(localizedPayload) {
+  const body = localizedPayload.body || "";
+  return (
+    /^\s*```(?:markdown|md)\s*\r?\n/i.test(body) ||
+    /<script\s+type=["']application\/ld\+json["']/i.test(body)
+  );
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const config = loadConfig();
@@ -44,6 +52,7 @@ function main() {
     let stale = 0;
     let englishCopy = 0;
     let invalid = 0;
+    let invalidBodyMarkup = 0;
     let deferred = 0;
 
     for (const post of posts) {
@@ -73,10 +82,14 @@ function main() {
         englishCopy += 1;
         hasError = true;
       }
+      if (hasInvalidBodyMarkup(payload)) {
+        invalidBodyMarkup += 1;
+        hasError = true;
+      }
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid} deferred=${deferred}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} deferred=${deferred}`,
     );
   }
 
