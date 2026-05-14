@@ -51,10 +51,11 @@ pwsh -File .\scripts\deploy\deploy-blog.ps1
 
 The script now runs the local preflight first:
 
+- `npm --prefix blog run blog:i18n:check`
 - `npm --prefix blog run build`
 - `npm --prefix blog run build:check`
 
-and aborts before syncing if the Pages route contract is broken.
+and aborts before syncing if localization readiness or the Pages route contract is broken.
 
 If you need to do the same steps manually, the equivalent flow is:
 

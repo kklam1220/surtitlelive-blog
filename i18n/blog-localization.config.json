@@ -2,6 +2,9 @@
   "sourceLocale": "en",
   "sourceDir": "src/content/blog",
   "localizedDir": "src/content/i18n/blog",
+  "deferredLocalizedSlugs": [
+    "3-how-we-protect-your-work"
+  ],
   "locales": [
     "ar",
     "de",

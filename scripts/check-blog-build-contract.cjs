@@ -187,10 +187,37 @@ assertFileHasMatch(
   'Missing formal Korean blog hub metadata or heading.',
 );
 
-assertFileHasNoMatch(
-  path.join('ko', '3-how-we-protect-your-work', 'index.html'),
-  /Does SurtitleLive store full script files on user devices\?|How does SurtitleLive encrypt scripts\?/,
-  'Detected hidden English FAQ schema on a localized security article.',
+for (const locale of [
+  'ar',
+  'de',
+  'es',
+  'fr',
+  'id',
+  'it',
+  'ja',
+  'ko',
+  'pl',
+  'pt',
+  'ru',
+  'th',
+  'tr',
+  'uk',
+  'vi',
+  'zh-CN',
+  'zh-TW',
+]) {
+  const deferredPath = path.join(distDir, locale, '3-how-we-protect-your-work', 'index.html');
+  if (fs.existsSync(deferredPath)) {
+    throw new Error(
+      `Deferred localized security/IP article leaked into built blog output: ${deferredPath}`,
+    );
+  }
+}
+
+assertNoMatch(
+  textFiles,
+  /\/(ar|de|es|fr|id|it|ja|ko|pl|pt|ru|th|tr|uk|vi|zh-CN|zh-TW)\/3-how-we-protect-your-work\//,
+  'Deferred localized security/IP article leaked into built blog output links.',
 );
 
 assertFileHasNoMatch(

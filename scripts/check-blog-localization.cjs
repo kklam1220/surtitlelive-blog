@@ -33,6 +33,9 @@ function main() {
   const localizedRoot = path.join(ROOT, config.localizedDir);
   const locales = pickLocales(config.locales, args.locales);
   const posts = pickPosts(listSourcePosts(sourceDir), args.slugs);
+  const deferredSlugs = new Set(
+    Array.isArray(config.deferredLocalizedSlugs) ? config.deferredLocalizedSlugs : [],
+  );
 
   let hasError = false;
 
@@ -41,6 +44,7 @@ function main() {
     let stale = 0;
     let englishCopy = 0;
     let invalid = 0;
+    let deferred = 0;
 
     for (const post of posts) {
       const localePath = path.join(localizedRoot, locale, `${post.slug}.json`);
@@ -53,6 +57,10 @@ function main() {
         continue;
       }
 
+      if (deferredSlugs.has(post.slug) && payload.status !== "translated") {
+        deferred += 1;
+        continue;
+      }
       if (payload.sourceHash !== post.sourceHash) {
         stale += 1;
         hasError = true;
@@ -68,7 +76,7 @@ function main() {
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid} deferred=${deferred}`,
     );
   }
 
