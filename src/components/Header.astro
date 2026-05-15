@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import LanguageSelector from './LanguageSelector.astro';
 import { buildMainSiteHref, MAIN_SITE_URL } from '../consts';
+import { resolveBlogNavCopy } from '../i18n/locale-config';
 
 type LocaleLink = {
 	lang: string;
@@ -17,28 +18,29 @@ const { currentLocale = 'en', localeLinks = [] } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const logoHref = new URL('/logo/New_logo.png', MAIN_SITE_URL).toString();
+const navCopy = resolveBlogNavCopy(currentLocale);
 ---
 
 <header>
 	<nav>
 		<div class="logo-container">
-			<a href={buildMainSiteHref('/')} aria-label="SurtitleLive home">
-				<img src={logoHref} alt="SurtitleLive Logo" height="50" style="height: 50px; width: auto;" />
+			<a href={buildMainSiteHref('/')} aria-label={navCopy.homeAria}>
+				<img src={logoHref} alt={navCopy.logoAlt} height="50" style="height: 50px; width: auto;" />
 			</a>
 		</div>
 		
 		<div class="internal-links">
-			<a href={buildMainSiteHref('/features')}>Features</a>
-			<a href={buildMainSiteHref('/pricing')}>Pricing</a>
-			<a href={buildMainSiteHref('/guides')}>Guides</a>
-			<HeaderLink href={normalizedBaseUrl}>Blog</HeaderLink>
-			<a href={buildMainSiteHref('/contact')}>Contact Us</a>
+			<a href={buildMainSiteHref('/features')}>{navCopy.features}</a>
+			<a href={buildMainSiteHref('/pricing')}>{navCopy.pricing}</a>
+			<a href={buildMainSiteHref('/guides')}>{navCopy.guides}</a>
+			<HeaderLink href={normalizedBaseUrl}>{navCopy.blog}</HeaderLink>
+			<a href={buildMainSiteHref('/contact')}>{navCopy.contactUs}</a>
 		</div>
 
 		<div class="auth-buttons">
 			<LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} />
-			<a href={buildMainSiteHref('/auth/login')} class="login-link">Login</a>
-			<a href={buildMainSiteHref('/auth/register')} class="signup-btn">Sign Up</a>
+			<a href={buildMainSiteHref('/auth/login')} class="login-link">{navCopy.login}</a>
+			<a href={buildMainSiteHref('/auth/register')} class="signup-btn">{navCopy.signUp}</a>
 		</div>
 	</nav>
 </header>

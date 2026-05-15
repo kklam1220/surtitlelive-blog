@@ -33,6 +33,219 @@ export interface BlogLocaleMeta {
 	defaultLabel: string;
 }
 
+export interface BlogNavCopy {
+	features: string;
+	pricing: string;
+	guides: string;
+	blog: string;
+	contactUs: string;
+	login: string;
+	signUp: string;
+	homeAria: string;
+	logoAlt: string;
+}
+
+export const BLOG_NAV_COPY: Record<BlogSupportedLocale, BlogNavCopy> = {
+	ar: {
+		features: 'الميزات',
+		pricing: 'التسعير',
+		guides: 'المرشدون',
+		blog: 'مدونة',
+		contactUs: 'اتصل بنا',
+		login: 'تسجيل الدخول',
+		signUp: 'إنشاء حساب',
+		homeAria: 'الصفحة الرئيسية لـ SurtitleLive',
+		logoAlt: 'شعار SurtitleLive',
+	},
+	de: {
+		features: 'Funktionen',
+		pricing: 'Preise',
+		guides: 'Anleitungen',
+		blog: 'Neuigkeiten',
+		contactUs: 'Kontakt',
+		login: 'Anmelden',
+		signUp: 'Registrieren',
+		homeAria: 'SurtitleLive Startseite',
+		logoAlt: 'SurtitleLive Logo',
+	},
+	en: {
+		features: 'Features',
+		pricing: 'Pricing',
+		guides: 'Guides',
+		blog: 'Blog',
+		contactUs: 'Contact Us',
+		login: 'Login',
+		signUp: 'Sign Up',
+		homeAria: 'SurtitleLive home',
+		logoAlt: 'SurtitleLive Logo',
+	},
+	es: {
+		features: 'Funciones',
+		pricing: 'Precios',
+		guides: 'Guías',
+		blog: 'Blog',
+		contactUs: 'Contáctanos',
+		login: 'Acceso',
+		signUp: 'Registrarse',
+		homeAria: 'Inicio de SurtitleLive',
+		logoAlt: 'Logotipo de SurtitleLive',
+	},
+	fr: {
+		features: 'Fonctionnalités',
+		pricing: 'Tarifs',
+		guides: 'Guides pratiques',
+		blog: 'Actualités',
+		contactUs: 'Contact',
+		login: 'Connexion',
+		signUp: "S'inscrire",
+		homeAria: 'Accueil SurtitleLive',
+		logoAlt: 'Logo SurtitleLive',
+	},
+	id: {
+		features: 'Fitur',
+		pricing: 'Harga',
+		guides: 'Pemandu',
+		blog: 'Blog',
+		contactUs: 'Hubungi kami',
+		login: 'Login',
+		signUp: 'Buat akun',
+		homeAria: 'Beranda SurtitleLive',
+		logoAlt: 'Logo SurtitleLive',
+	},
+	it: {
+		features: 'Funzionalità',
+		pricing: 'Prezzi',
+		guides: 'Guide',
+		blog: 'Blog',
+		contactUs: 'Contattaci',
+		login: 'Login',
+		signUp: 'Registrati',
+		homeAria: 'Home di SurtitleLive',
+		logoAlt: 'Logo SurtitleLive',
+	},
+	ja: {
+		features: '機能',
+		pricing: '料金',
+		guides: 'ガイド',
+		blog: 'ブログ',
+		contactUs: 'お問い合わせ',
+		login: 'ログイン',
+		signUp: '新規登録',
+		homeAria: 'SurtitleLive ホーム',
+		logoAlt: 'SurtitleLive ロゴ',
+	},
+	ko: {
+		features: '기능',
+		pricing: '가격',
+		guides: '가이드',
+		blog: '블로그',
+		contactUs: '문의하기',
+		login: '로그인',
+		signUp: '회원가입',
+		homeAria: 'SurtitleLive 홈',
+		logoAlt: 'SurtitleLive 로고',
+	},
+	pl: {
+		features: 'Funkcje',
+		pricing: 'Wycena',
+		guides: 'Przewodniki',
+		blog: 'Blog',
+		contactUs: 'Skontaktuj się z nami',
+		login: 'Login',
+		signUp: 'Zarejestruj się',
+		homeAria: 'Strona główna SurtitleLive',
+		logoAlt: 'Logo SurtitleLive',
+	},
+	pt: {
+		features: 'Funcionalidades',
+		pricing: 'Preços',
+		guides: 'Guias',
+		blog: 'Blog',
+		contactUs: 'Contate-nos',
+		login: 'Conecte-se',
+		signUp: 'Criar conta',
+		homeAria: 'Página inicial da SurtitleLive',
+		logoAlt: 'Logotipo da SurtitleLive',
+	},
+	ru: {
+		features: 'Функции',
+		pricing: 'Цены',
+		guides: 'Гиды',
+		blog: 'Блог',
+		contactUs: 'Связаться с нами',
+		login: 'Авторизоваться',
+		signUp: 'Зарегистрироваться',
+		homeAria: 'Главная страница SurtitleLive',
+		logoAlt: 'Логотип SurtitleLive',
+	},
+	th: {
+		features: 'คุณสมบัติ',
+		pricing: 'ราคา',
+		guides: 'คู่มือ',
+		blog: 'บล็อก',
+		contactUs: 'ติดต่อเรา',
+		login: 'เข้าสู่ระบบ',
+		signUp: 'ลงทะเบียน',
+		homeAria: 'หน้าแรก SurtitleLive',
+		logoAlt: 'โลโก้ SurtitleLive',
+	},
+	tr: {
+		features: 'Özellikler',
+		pricing: 'Fiyatlandırma',
+		guides: 'Rehberler',
+		blog: 'Blog',
+		contactUs: 'Bize Ulaşın',
+		login: 'Giriş yapmak',
+		signUp: 'Kaydol',
+		homeAria: 'SurtitleLive ana sayfası',
+		logoAlt: 'SurtitleLive logosu',
+	},
+	uk: {
+		features: 'Функції',
+		pricing: 'Ціноутворення',
+		guides: 'Путівники',
+		blog: 'Блог',
+		contactUs: "Зв'яжіться з нами",
+		login: 'Вхід',
+		signUp: 'Зареєструватися',
+		homeAria: 'Головна сторінка SurtitleLive',
+		logoAlt: 'Логотип SurtitleLive',
+	},
+	vi: {
+		features: 'Tính năng',
+		pricing: 'Giá cả',
+		guides: 'Hướng dẫn',
+		blog: 'Blog',
+		contactUs: 'Liên hệ với chúng tôi',
+		login: 'Đăng nhập',
+		signUp: 'Đăng ký',
+		homeAria: 'Trang chủ SurtitleLive',
+		logoAlt: 'Logo SurtitleLive',
+	},
+	'zh-CN': {
+		features: '功能',
+		pricing: '价格',
+		guides: '指南',
+		blog: '博客',
+		contactUs: '联系我们',
+		login: '登录',
+		signUp: '注册',
+		homeAria: 'SurtitleLive 首页',
+		logoAlt: 'SurtitleLive 标志',
+	},
+	'zh-TW': {
+		features: '功能',
+		pricing: '定價',
+		guides: '指南',
+		blog: '部落格',
+		contactUs: '聯絡我們',
+		login: '登入',
+		signUp: '註冊',
+		homeAria: 'SurtitleLive 首頁',
+		logoAlt: 'SurtitleLive 標誌',
+	},
+};
+
 export const BLOG_LOCALE_META: Record<BlogSupportedLocale, BlogLocaleMeta> = {
 	ar: {
 		native: 'العربية',
@@ -240,4 +453,8 @@ export function isBlogSupportedLocale(value: unknown): value is BlogSupportedLoc
 
 export function resolveBlogLocaleMeta(value: unknown): BlogLocaleMeta {
 	return BLOG_LOCALE_META[isBlogSupportedLocale(value) ? value : 'en'];
+}
+
+export function resolveBlogNavCopy(value: unknown): BlogNavCopy {
+	return BLOG_NAV_COPY[isBlogSupportedLocale(value) ? value : 'en'];
 }
