@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:13:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Termes liés"
+  },
+  "keyTakeaways": [
+    "Pour un spectacle non anglophone au Fringe, les surtitres anglais doivent partir du texte, pas d'un diaporama vierge.",
+    "Un flux de surtitrage préparé permet à la compagnie de relire la traduction anglaise avant la première, tout en la lançant en direct pendant la représentation.",
+    "Les surtitres sur mobile laissent le public anglophone, le public en langue d'origine et d'autres groupes linguistiques préparés choisir le texte voulu sur leur propre appareil.",
+    "Les petites équipes en tournée devraient choisir un logiciel de surtitrage gérant l'import du texte, des tops modifiables, le choix de la langue, le lancement par un opérateur, le rattrapage et le passage au noir.",
+    "SurtitleLive convient surtout aux spectacles écrits ou globalement stables qui ont besoin de surtitres anglais pour le Fringe, la tournée, les programmateurs, les critiques ou un public multilingue."
+  ],
+  "faq": [
+    {
+      "question": "Comment ajouter des surtitres en anglais à un spectacle en français ou dans une autre langue que l'anglais ?",
+      "answer": "Partez du texte, préparez ou relisez la traduction anglaise, découpez le texte en tops lisibles, calez le rythme en répétition, puis assurez la représentation avec un opérateur qui lance chaque surtitre en direct. SurtitleLive accompagne cette démarche en transformant un texte en un flux de tops modifiables, puis en diffusant les surtitres préparés par projection ou par affichage mobile."
+    },
+    {
+      "question": "Le public anglophone et le public en langue d'origine peuvent-ils voir des surtitres différents en même temps ?",
+      "answer": "Oui, si le flux de travail gère plusieurs langues préparées. Avec SurtitleLive, chaque spectateur peut ouvrir le lien spectateur ou scanner le QR code et choisir une langue activée : l'anglais, la langue d'origine ou une autre langue non anglaise préparée."
+    },
+    {
+      "question": "Faut-il réorganiser tout le spectacle autour d'un écran fixe ?",
+      "answer": "Non. Un écran de projection fixe peut convenir lorsque la salle offre de bonnes lignes de vue et assez de temps d'installation, mais il ne devrait pas être la seule option. Les surtitres sur mobile permettent au public de lire sur son propre téléphone, ce qui est souvent plus pratique pour les petites salles du Fringe et les conditions de tournée."
+    },
+    {
+      "question": "Que se passe-t-il si un comédien saute des répliques ou si la représentation change ?",
+      "answer": "Des surtitres préparés ont toujours besoin d'un opérateur en direct. Celui-ci suit la représentation, lance les tops au bon moment et utilise le rattrapage ou le passage au noir si le spectacle s'écarte de l'ordre prévu."
+    },
+    {
+      "question": "Combien de temps faut-il pour préparer des surtitres anglais avant le Fringe d'Édimbourg ?",
+      "answer": "Un objectif réaliste : trois à quatre semaines avant la première pour la traduction, la préparation des tops et la relecture, puis une à deux semaines pour le calage en répétition et les tests côté spectateur. Des délais plus courts sont possibles, mais la compagnie devrait garder du temps pour une relecture humaine, car les surtitres déterminent la façon dont le public anglophone comprend le spectacle."
+    },
+    {
+      "question": "Que doit rechercher une petite équipe en tournée dans un logiciel de surtitrage ?",
+      "answer": "Recherchez une préparation à partir du texte, des tops modifiables, plusieurs langues, un accès spectateur par QR code, l'absence d'application à installer, un lancement en direct par un opérateur, le rattrapage, le passage au noir, et la possibilité d'utiliser la projection ou les téléphones du public selon la salle."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitres anglais",
+      "definition": "Texte anglais préparé, affiché pendant un spectacle non anglophone pour que le public anglophone puisse suivre l'histoire, les dialogues, les paroles ou le texte parlé."
+    },
+    {
+      "term": "Version linguistique (language track)",
+      "definition": "Un jeu de surtitres préparé dans une langue, par exemple l'anglais, le cantonais, l'espagnol, l'arabe, le français ou la langue d'origine du spectacle."
+    },
+    {
+      "term": "Top (cue)",
+      "definition": "Une unité de texte qui apparaît à un moment précis de la représentation."
+    },
+    {
+      "term": "Opérateur",
+      "definition": "La personne qui suit la représentation en direct et lance, masque ou enchaîne les surtitres préparés."
+    },
+    {
+      "term": "Affichage mobile",
+      "definition": "Une vue spectateur dans le navigateur qui permet au public de lire les surtitres sur son propre téléphone après avoir ouvert un lien ou scanné un QR code."
+    },
+    {
+      "term": "Passage au noir (blackout)",
+      "definition": "Une commande en direct qui masque temporairement les surtitres, souvent utilisée quand un texte erroné risque d'apparaître ou quand le moment scénique ne demande aucun texte visible."
+    }
+  ]
+}

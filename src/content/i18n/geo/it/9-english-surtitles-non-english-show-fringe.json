@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:56:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "In sintesi",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Termini correlati"
+  },
+  "keyTakeaways": [
+    "Per uno spettacolo non anglofono al Fringe, i sopratitoli in inglese dovrebbero partire dal copione, non da diapositive vuote.",
+    "Un flusso di sopratitolazione preparato permette alla compagnia di revisionare la traduzione in inglese prima del debutto e di lanciarla comunque dal vivo durante lo spettacolo.",
+    "I sopratitoli su mobile lasciano che il pubblico anglofono, quello della lingua originale e altri gruppi linguistici preparati scelgano il testo che serve sul proprio dispositivo.",
+    "Le piccole squadre in tournée dovrebbero scegliere un software di sopratitolazione che supporti il caricamento del copione, cue modificabili, scelta della lingua, lancio da parte di un operatore, recupero con salto e buio.",
+    "SurtitleLive è più adatto a spettacoli con copione o perlopiù stabili che hanno bisogno di sopratitoli in inglese per il Fringe, la tournée, i programmatori, i critici o un pubblico multilingue."
+  ],
+  "faq": [
+    {
+      "question": "Come aggiungo i sopratitoli in inglese a uno spettacolo in italiano o in un'altra lingua diversa dall'inglese?",
+      "answer": "Parti dal copione, prepara o revisiona la traduzione in inglese, dividi il testo in cue leggibili, prova il ritmo dei cue e poi porta in scena con un operatore che lancia ogni sopratitolo dal vivo. SurtitleLive lo agevola trasformando un copione in un flusso di cue modificabili e diffondendo i sopratitoli preparati tramite proiezione o visore mobile."
+    },
+    {
+      "question": "Il pubblico anglofono e quello della lingua originale possono vedere sopratitoli diversi nello stesso momento?",
+      "answer": "Sì, se il flusso di lavoro supporta più tracce di lingua preparate. Con SurtitleLive, ogni spettatore può aprire il link per la visualizzazione o scansionare il codice QR e scegliere una lingua attivata: inglese, lingua originale o un'altra lingua diversa dall'inglese già preparata."
+    },
+    {
+      "question": "Dobbiamo ricostruire tutto lo spettacolo attorno a uno schermo fisso?",
+      "answer": "No. Uno schermo di proiezione fisso può funzionare quando la sala ha buone linee visive e abbastanza tempo per il montaggio, ma non dovrebbe essere l'unica opzione. I sopratitoli su mobile lasciano che il pubblico legga sul proprio telefono, cosa spesso più pratica nelle piccole sale del Fringe e in tournée."
+    },
+    {
+      "question": "Che cosa succede se un interprete salta delle battute o lo spettacolo cambia?",
+      "answer": "I sopratitoli preparati hanno comunque bisogno del controllo di un operatore dal vivo. L'operatore segue lo spettacolo, lancia i cue al momento giusto e usa il recupero con salto o il buio se lo spettacolo si discosta dall'ordine previsto."
+    },
+    {
+      "question": "Quanto tempo serve per preparare i sopratitoli in inglese prima dell'Edinburgh Fringe?",
+      "answer": "Un obiettivo realistico: da tre a quattro settimane prima del debutto per traduzione, preparazione dei cue e revisione, poi una o due settimane per il ritmo nelle prove e i test del visore. Tempi più stretti sono possibili, ma la compagnia dovrebbe comunque riservare tempo per una revisione umana, perché i sopratitoli determinano come il pubblico anglofono capisce lo spettacolo."
+    },
+    {
+      "question": "Che cosa dovrebbe cercare una piccola squadra in tournée in un software di sopratitolazione?",
+      "answer": "Cerca la preparazione a partire dal copione, cue modificabili, più tracce di lingua, accesso del pubblico tramite codice QR, nessuna app da installare, lancio dal vivo da parte di un operatore, recupero con salto, buio e la possibilità di usare la proiezione o i telefoni del pubblico a seconda della sala."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sopratitoli in inglese",
+      "definition": "Testo in inglese già preparato, mostrato durante uno spettacolo non anglofono perché il pubblico anglofono possa seguire la storia, i dialoghi, i testi delle canzoni o il parlato."
+    },
+    {
+      "term": "Traccia di lingua (language track)",
+      "definition": "Un insieme di sopratitoli preparato in una lingua, per esempio inglese, cantonese, spagnolo, arabo, francese o la lingua originale dello spettacolo."
+    },
+    {
+      "term": "Cue",
+      "definition": "Un'unità di testo che compare in un momento preciso dello spettacolo."
+    },
+    {
+      "term": "Operatore",
+      "definition": "La persona che segue lo spettacolo dal vivo e lancia, nasconde o salta tra i sopratitoli preparati."
+    },
+    {
+      "term": "Visore mobile",
+      "definition": "Una vista per il pubblico nel browser che permette di leggere i sopratitoli sul proprio telefono dopo aver aperto un link o scansionato un codice QR."
+    },
+    {
+      "term": "Buio (blackout)",
+      "definition": "Un controllo dal vivo che nasconde temporaneamente i sopratitoli, usato spesso quando comparirebbe il testo sbagliato o quando il momento scenico non richiede testo visibile."
+    }
+  ]
+}

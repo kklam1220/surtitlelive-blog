@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T19:08:58.995Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Thuật ngữ liên quan"
+  },
+  "keyTakeaways": [
+    "Đối với một vở diễn không phải tiếng Anh tại Fringe, phụ đề tiếng Anh nên bắt đầu từ kịch bản, chứ không phải từ một slide trống.",
+    "Quy trình chuẩn bị cue cho phép đoàn kịch xem lại bản dịch tiếng Anh trước khi khai mạc nhưng vẫn có thể chạy cue trực tiếp trong buổi diễn.",
+    "Phụ đề trên thiết bị di động cho phép khán giả nói tiếng Anh, khán giả bản ngữ và các nhóm ngôn ngữ khác đã chuẩn bị trước có thể chọn ngôn ngữ mình cần trên thiết bị riêng.",
+    "Các đội diễn lưu động nhỏ nên chọn phần mềm phụ đề hỗ trợ tải lên kịch bản, chỉnh sửa cue, chọn ngôn ngữ, vận hành cue trực tiếp, khả năng nhảy cue và tắt màn hình khẩn cấp.",
+    "SurtitleLive phù hợp nhất với các buổi diễn có kịch bản cố định hoặc phần lớn ổn định, cần phụ đề tiếng Anh cho Fringe, lưu diễn, nhà tuyển chọn, nhà phê bình hoặc khán giả đa ngôn ngữ."
+  ],
+  "faq": [
+    {
+      "question": "Làm thế nào để thêm phụ đề tiếng Anh cho một vở diễn tiếng Việt hoặc một ngôn ngữ không phải tiếng Anh khác?",
+      "answer": "Bắt đầu với kịch bản, chuẩn bị hoặc xem lại bản dịch tiếng Anh, chia văn bản thành các cue dễ đọc, tập luyện căn thời gian cue, sau đó chạy buổi diễn với một người vận hành sẽ chiếu từng dòng phụ đề trực tiếp. SurtitleLive hỗ trợ quy trình này bằng cách biến kịch bản thành quy trình cue có thể chỉnh sửa và cung cấp phụ đề đã chuẩn bị qua máy chiếu hoặc trình xem trên thiết bị di động."
+    },
+    {
+      "question": "Khán giả nói tiếng Anh và khán giả bản ngữ có thể xem các phụ đề khác nhau cùng lúc không?",
+      "answer": "Có, nếu quy trình hỗ trợ nhiều bản ngôn ngữ đã chuẩn bị trước. Với SurtitleLive, mỗi khán giả có thể mở liên kết hoặc quét mã QR và chọn ngôn ngữ được kích hoạt, chẳng hạn như tiếng Anh, ngôn ngữ gốc hoặc một ngôn ngữ khác đã được chuẩn bị."
+    },
+    {
+      "question": "Chúng tôi có cần phải dàn dựng lại toàn bộ vở diễn chỉ vì một màn hình cố định không?",
+      "answer": "Không. Màn hình chiếu cố định có thể hoạt động nếu địa điểm có tầm nhìn tốt và đủ thời gian thiết lập, nhưng đó không nên là lựa chọn duy nhất. Phụ đề trên thiết bị di động cho phép khán giả đọc trên điện thoại của chính họ, thường thực tế hơn cho các địa điểm nhỏ tại Fringe và điều kiện lưu diễn."
+    },
+    {
+      "question": "Điều gì xảy ra nếu diễn viên bỏ lời thoại hoặc buổi diễn có thay đổi?",
+      "answer": "Phụ đề đã chuẩn bị vẫn cần người vận hành trực tiếp kiểm soát. Người vận hành theo dõi buổi diễn, chiếu cue đúng thời điểm và sử dụng tính năng nhảy cue hoặc tắt màn hình khẩn cấp nếu vở diễn đi lệch khỏi trình tự dự kiến."
+    },
+    {
+      "question": "Cần bao nhiêu thời gian để chuẩn bị phụ đề tiếng Anh trước thềm Edinburgh Fringe?",
+      "answer": "Mốc thời gian thực tế là ba đến bốn tuần trước khi khai mạc để dịch thuật, chuẩn bị cue và xem xét, sau đó một đến hai tuần để tập luyện căn thời gian và kiểm tra trình xem. Có thể rút ngắn thời gian hơn, nhưng đoàn kịch vẫn nên dành thời gian để con người rà soát vì phụ đề ảnh hưởng đến cách khán giả nói tiếng Anh hiểu vở diễn."
+    },
+    {
+      "question": "Một đội lưu diễn nhỏ nên tìm kiếm điều gì ở phần mềm phụ đề?",
+      "answer": "Hãy tìm phần mềm có khả năng chuẩn bị dựa trên kịch bản, chỉnh sửa cue, nhiều bản ngôn ngữ, truy cập trình xem qua mã QR, không yêu cầu khán giả cài ứng dụng, vận hành cue trực tiếp, khả năng nhảy cue, tắt màn hình khẩn cấp và tùy chọn sử dụng máy chiếu hoặc điện thoại khán giả tùy theo địa điểm."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phụ đề tiếng Anh",
+      "definition": "Văn bản tiếng Anh được chuẩn bị sẵn và hiển thị trong suốt buổi diễn không phải tiếng Anh để khán giả nói tiếng Anh có thể theo dõi câu chuyện, lời thoại, lời bài hát hoặc nội dung nói."
+    },
+    {
+      "term": "Bản ngôn ngữ",
+      "definition": "Một bộ phụ đề được chuẩn bị bằng một ngôn ngữ, chẳng hạn như tiếng Anh, tiếng Quảng Đông, tiếng Tây Ban Nha, tiếng Ả Rập, tiếng Pháp hoặc ngôn ngữ gốc của buổi diễn."
+    },
+    {
+      "term": "Cue",
+      "definition": "Một đơn vị văn bản xuất hiện tại một thời điểm cụ thể trong buổi diễn."
+    },
+    {
+      "term": "Người vận hành",
+      "definition": "Người theo dõi buổi diễn trực tiếp và chiếu, ẩn hoặc nhảy giữa các phụ đề đã chuẩn bị."
+    },
+    {
+      "term": "Trình xem trên thiết bị di động",
+      "definition": "Một chế độ xem dành cho khán giả dựa trên trình duyệt, cho phép mọi người đọc phụ đề trên điện thoại của chính họ sau khi mở liên kết hoặc quét mã QR."
+    },
+    {
+      "term": "Tắt màn hình khẩn cấp",
+      "definition": "Một thao tác điều khiển trực tiếp để tạm thời ẩn phụ đề, thường được sử dụng khi sai văn bản sắp hiển thị hoặc khi khoảnh khắc trên sân khấu không cần bất kỳ dòng chữ nào."
+    }
+  ]
+}

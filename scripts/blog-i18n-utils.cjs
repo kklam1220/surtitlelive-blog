@@ -131,6 +131,8 @@ function parseArgs(argv) {
     force: false,
     model: null,
     baseUrl: null,
+    provider: null,
+    thinking: null,
   };
 
   for (const raw of argv) {
@@ -164,6 +166,23 @@ function parseArgs(argv) {
     }
     if (raw.startsWith("--base-url=")) {
       args.baseUrl = raw.slice("--base-url=".length).trim();
+      continue;
+    }
+    if (raw.startsWith("--provider=")) {
+      args.provider = raw.slice("--provider=".length).trim();
+      continue;
+    }
+    if (raw === "--thinking") {
+      args.thinking = true;
+      continue;
+    }
+    if (raw === "--no-thinking") {
+      args.thinking = false;
+      continue;
+    }
+    if (raw.startsWith("--thinking=")) {
+      const value = raw.slice("--thinking=".length).trim().toLowerCase();
+      args.thinking = ["1", "true", "yes", "on", "enabled"].includes(value);
       continue;
     }
   }

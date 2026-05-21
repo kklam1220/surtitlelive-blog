@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T19:06:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos-chave",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Termos relacionados"
+  },
+  "keyTakeaways": [
+    "Para um espetáculo não anglófono no Fringe, as legendas em inglês devem partir do texto, não de diapositivos em branco.",
+    "Um fluxo de legendagem preparado permite à companhia rever a tradução para inglês antes da estreia e, ainda assim, lançá-la ao vivo durante o espetáculo.",
+    "As legendas no telemóvel deixam o público anglófono, o da língua original e outros grupos linguísticos preparados escolher o texto de que precisam no próprio dispositivo.",
+    "As pequenas equipas em digressão devem escolher um software de legendagem que suporte o carregamento do texto, deixas editáveis, escolha de língua, lançamento por um operador, recuperação com salto e blackout.",
+    "O SurtitleLive encaixa sobretudo em espetáculos com texto ou bastante estáveis que precisam de legendas em inglês para o Fringe, a digressão, programadores, críticos ou público multilingue."
+  ],
+  "faq": [
+    {
+      "question": "Como adiciono sobretítulos em inglês a um espetáculo em português ou noutra língua que não o inglês?",
+      "answer": "Parte do texto, prepara ou revê a tradução para inglês, divide o texto em deixas legíveis, ensaia o ritmo das deixas e apresenta o espetáculo com um operador que lança cada legenda ao vivo. O SurtitleLive facilita isto transformando um texto num fluxo de deixas editáveis e difundindo as legendas preparadas por projeção ou visualizador no telemóvel."
+    },
+    {
+      "question": "O público anglófono e o da língua original podem ver legendas diferentes ao mesmo tempo?",
+      "answer": "Sim, se o fluxo de trabalho suportar várias faixas de língua preparadas. Com o SurtitleLive, cada espectador pode abrir o link de visualização ou ler o código QR e escolher uma língua ativada: inglês, a língua original ou outra língua além do inglês já preparada."
+    },
+    {
+      "question": "Temos de reconstruir todo o espetáculo à volta de um ecrã fixo?",
+      "answer": "Não. Um ecrã de projeção fixo pode funcionar quando a sala tem boas linhas de visão e tempo de montagem suficiente, mas não deve ser a única opção. As legendas no telemóvel deixam o público ler no próprio telemóvel, o que é muitas vezes mais prático em salas pequenas do Fringe e em digressão."
+    },
+    {
+      "question": "O que acontece se um intérprete saltar falas ou o espetáculo mudar?",
+      "answer": "As legendas preparadas continuam a precisar do controlo de um operador ao vivo. O operador segue o espetáculo, lança as deixas no momento certo e usa a recuperação com salto ou o blackout se o espetáculo se afastar da ordem prevista."
+    },
+    {
+      "question": "De quanto tempo precisamos para preparar as legendas em inglês antes do Fringe de Edimburgo?",
+      "answer": "Um objetivo realista: três a quatro semanas antes da estreia para a tradução, a preparação das deixas e a revisão, e depois uma a duas semanas para o ritmo nos ensaios e os testes do visualizador. É possível ir mais depressa, mas a companhia deve reservar tempo para uma revisão humana, porque as legendas determinam como o público anglófono percebe o espetáculo."
+    },
+    {
+      "question": "O que deve uma pequena equipa em digressão procurar num software de legendagem?",
+      "answer": "Procura preparação a partir do texto, deixas editáveis, várias faixas de língua, acesso do público por código QR, sem necessidade de instalar qualquer aplicação, lançamento ao vivo por um operador, recuperação com salto, blackout e a possibilidade de usar projeção ou os telemóveis do público consoante a sala."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Legendas em inglês",
+      "definition": "Texto em inglês já preparado, mostrado durante um espetáculo não anglófono para que o público anglófono possa acompanhar a história, os diálogos, as letras ou o texto falado."
+    },
+    {
+      "term": "Faixa de língua (language track)",
+      "definition": "Um conjunto de sobretítulos preparado numa língua, por exemplo inglês, cantonês, espanhol, árabe, francês ou a língua original do espetáculo."
+    },
+    {
+      "term": "Deixa (cue)",
+      "definition": "Uma unidade de texto que aparece num momento específico do espetáculo."
+    },
+    {
+      "term": "Operador",
+      "definition": "A pessoa que segue o espetáculo ao vivo e lança, oculta ou salta entre as legendas preparadas."
+    },
+    {
+      "term": "Visualizador no telemóvel",
+      "definition": "Uma vista para o público no navegador que permite ler as legendas no próprio telemóvel depois de abrir um link ou ler um código QR."
+    },
+    {
+      "term": "Blackout",
+      "definition": "Um controlo ao vivo que oculta temporariamente as legendas, usado muitas vezes quando apareceria o texto errado ou quando o momento de cena não precisa de texto visível."
+    }
+  ]
+}

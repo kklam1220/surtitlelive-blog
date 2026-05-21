@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:21:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Begriffe"
+  },
+  "keyTakeaways": [
+    "Bei einer nicht englischen Fringe-Aufführung sollten englische Übertitel beim Textbuch beginnen, nicht bei einem leeren Foliensatz.",
+    "Ein vorbereiteter Übertitel-Workflow erlaubt es der Company, die englische Übersetzung vor der Premiere zu prüfen und sie zugleich live in der Vorstellung auszulösen.",
+    "Mobile Übertitel lassen englisches Publikum, originalsprachiges Publikum und weitere vorbereitete Sprachgruppen den gewünschten Text auf dem eigenen Gerät wählen.",
+    "Kleine Tournee-Teams sollten eine Übertitel-Software wählen, die Textbuch-Upload, bearbeitbare Cues, Sprachwahl, Operator-Auslösung, Rücksprung und Blackout unterstützt.",
+    "SurtitleLive eignet sich am besten für textbasierte oder weitgehend stabile Aufführungen, die englische Übertitel für Fringe, Tournee, Programmgestalter, Kritik oder mehrsprachiges Publikum brauchen."
+  ],
+  "faq": [
+    {
+      "question": "Wie füge ich einer deutschsprachigen oder anderen nicht englischen Aufführung englische Übertitel hinzu?",
+      "answer": "Beginnen Sie beim Textbuch, bereiten Sie die englische Übersetzung vor oder prüfen Sie sie, gliedern Sie den Text in lesbare Cues, proben Sie das Cue-Timing und spielen Sie die Vorstellung dann mit einem Operator, der jeden Übertitel live auslöst. SurtitleLive unterstützt das, indem es ein Textbuch in einen bearbeitbaren Cue-Workflow verwandelt und die vorbereiteten Übertitel per Projektion oder mobilem Viewer ausspielt."
+    },
+    {
+      "question": "Können englisches und originalsprachiges Publikum gleichzeitig unterschiedliche Übertitel sehen?",
+      "answer": "Ja, sofern der Workflow mehrere vorbereitete Sprachspuren unterstützt. Mit SurtitleLive kann jeder Gast den Viewer-Link öffnen oder den QR-Code scannen und eine freigeschaltete Sprache wählen – etwa Englisch, die Originalsprache oder eine andere vorbereitete nicht englische Sprache."
+    },
+    {
+      "question": "Müssen wir die ganze Aufführung um einen festen Bildschirm herum neu aufbauen?",
+      "answer": "Nein. Ein fester Projektionsbildschirm kann funktionieren, wenn der Raum gute Sichtlinien und genug Einrichtungszeit bietet, sollte aber nicht die einzige Option sein. Mobile Übertitel lassen das Publikum auf dem eigenen Smartphone lesen, was für kleine Fringe-Spielorte und Tourneebedingungen oft praktischer ist."
+    },
+    {
+      "question": "Was passiert, wenn Spielende Zeilen überspringen oder sich die Aufführung ändert?",
+      "answer": "Vorbereitete Übertitel brauchen weiterhin die Live-Steuerung durch einen Operator. Dieser folgt der Aufführung, löst Cues im richtigen Moment aus und nutzt Rücksprung oder Blackout, wenn die Aufführung von der erwarteten Reihenfolge abweicht."
+    },
+    {
+      "question": "Wie viel Zeit brauchen wir, um englische Übertitel vor dem Edinburgh Fringe vorzubereiten?",
+      "answer": "Ein realistisches Ziel: drei bis vier Wochen vor der Premiere für Übersetzung, Cue-Vorbereitung und Prüfung, dann ein bis zwei Wochen für das Timing in der Probe und Viewer-Tests. Kürzere Zeitpläne sind möglich, doch die Company sollte Zeit für eine menschliche Prüfung einplanen, denn Übertitel beeinflussen, wie das englischsprachige Publikum die Aufführung versteht."
+    },
+    {
+      "question": "Worauf sollte ein kleines Tournee-Team bei Übertitel-Software achten?",
+      "answer": "Achten Sie auf textbasierte Vorbereitung, bearbeitbare Cues, mehrere Sprachspuren, Viewer-Zugang per QR-Code, keine erforderliche App-Installation, Live-Auslösung durch einen Operator, Rücksprung, Blackout sowie die Möglichkeit, je nach Spielort Projektion oder Publikums-Smartphones zu nutzen."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Englische Übertitel",
+      "definition": "Vorbereiteter englischer Text, der während einer nicht englischen Aufführung gezeigt wird, damit das englischsprachige Publikum Handlung, Dialog, Liedtexte oder gesprochenen Text verfolgen kann."
+    },
+    {
+      "term": "Sprachspur (language track)",
+      "definition": "Ein in einer Sprache vorbereiteter Satz von Übertiteln, etwa auf Englisch, Kantonesisch, Spanisch, Arabisch, Französisch oder in der Originalsprache der Aufführung."
+    },
+    {
+      "term": "Cue",
+      "definition": "Eine Texteinheit, die in einem bestimmten Moment der Aufführung erscheint."
+    },
+    {
+      "term": "Operator",
+      "definition": "Die Person, die der Live-Aufführung folgt und vorbereitete Übertitel auslöst, ausblendet oder zwischen ihnen springt."
+    },
+    {
+      "term": "Mobiler Viewer",
+      "definition": "Eine browserbasierte Publikumsansicht, mit der Menschen Übertitel auf dem eigenen Smartphone lesen, nachdem sie einen Viewer-Link geöffnet oder einen QR-Code gescannt haben."
+    },
+    {
+      "term": "Blackout",
+      "definition": "Eine Live-Steuerung, die Übertitel vorübergehend ausblendet – oft genutzt, wenn sonst der falsche Text erscheinen würde oder der Bühnenmoment keinen sichtbaren Text braucht."
+    }
+  ]
+}

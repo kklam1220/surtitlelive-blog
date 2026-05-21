@@ -14,6 +14,9 @@ const {
   loadEnvFromFile,
 } = require("./blog-i18n-utils.cjs");
 
+const DEFAULT_DASHSCOPE_BASE_URL = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1";
+const DEFAULT_DASHSCOPE_DEEPSEEK_MODEL = "deepseek-v4-pro";
+
 const LOCALE_DISPLAY_NAME = {
   ar: "Arabic",
   de: "German",
@@ -35,6 +38,26 @@ const LOCALE_DISPLAY_NAME = {
   "zh-TW": "Chinese (Traditional)",
 };
 
+const LOCALE_PRIMARY_SHOW_LANGUAGE = {
+  ar: "Arabic",
+  de: "German",
+  es: "Spanish",
+  fr: "French",
+  id: "Indonesian",
+  it: "Italian",
+  ja: "Japanese",
+  ko: "Korean",
+  pl: "Polish",
+  pt: "Portuguese",
+  ru: "Russian",
+  th: "Thai",
+  tr: "Turkish",
+  uk: "Ukrainian",
+  vi: "Vietnamese",
+  "zh-CN": "Mandarin Chinese",
+  "zh-TW": "Mandarin Chinese",
+};
+
 function tryParseJsonObject(text) {
   try {
     return JSON.parse(text);
@@ -52,8 +75,43 @@ function tryParseJsonObject(text) {
   }
 }
 
+function normalizeTranslatedPayload(parsed, source) {
+  const title = typeof parsed.title === "string" ? parsed.title : source.frontmatter?.title || "";
+  const description =
+    typeof parsed.description === "string" ? parsed.description : source.frontmatter?.description || "";
+  const tags = Array.isArray(parsed.tags)
+    ? parsed.tags.map((tag) => String(tag))
+    : Array.isArray(source.frontmatter?.tags)
+      ? source.frontmatter.tags
+      : [];
+  const body = typeof parsed.body === "string" ? parsed.body : source.body;
+
+  return { title, description, tags, body };
+}
+
+function normalizeProvider(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+  if (["dashscope", "dashscope-deepseek", "deepseek", "alibabacloud", "aliyun"].includes(normalized)) {
+    return "dashscope-deepseek";
+  }
+  return "gemini";
+}
+
+function booleanFromEnv(value, fallback) {
+  if (value === undefined || value === null || String(value).trim() === "") {
+    return fallback;
+  }
+  return ["1", "true", "yes", "on", "enabled"].includes(String(value).trim().toLowerCase());
+}
+
+function chatCompletionsEndpoint(baseUrl) {
+  const trimmed = String(baseUrl || DEFAULT_DASHSCOPE_BASE_URL).trim().replace(/\/+$/, "");
+  return trimmed.endsWith("/chat/completions") ? trimmed : `${trimmed}/chat/completions`;
+}
+
 function buildPrompt({ locale, source }) {
   const localeDisplay = LOCALE_DISPLAY_NAME[locale] || locale;
+  const localizedArticleInstructions = getLocalizedArticleInstructions(locale, source);
   const payload = {
     title: source.frontmatter?.title || "",
     description: source.frontmatter?.description || "",
@@ -77,10 +135,26 @@ function buildPrompt({ locale, source }) {
     "- Do not wrap the body in a markdown code fence such as ```markdown.",
     '- Do not include JSON-LD or <script type="application/ld+json"> blocks in the translated body.',
     "- Do not alter URLs, image paths, code blocks, or frontmatter key names.",
+    ...localizedArticleInstructions,
     '- Return strict JSON only: {"title":"...","description":"...","tags":["..."],"body":"..."}',
     "",
     JSON.stringify(payload),
   ].join("\n");
+}
+
+function getLocalizedArticleInstructions(locale, source) {
+  if (source.slug !== "9-english-surtitles-non-english-show-fringe") {
+    return [];
+  }
+
+  const showLanguage = LOCALE_PRIMARY_SHOW_LANGUAGE[locale];
+  if (!showLanguage) {
+    return [];
+  }
+
+  return [
+    `- For the opening sentence of this article, localize the show-language example to the target locale: translate the meaning of "If your ${showLanguage} or other non-English show is going to the Edinburgh Fringe, the question is usually not abstract." Do not preserve the English source list "French, German, Spanish" in that sentence.`,
+  ];
 }
 
 async function callGeminiText({ endpoint, headers, text }) {
@@ -133,17 +207,7 @@ async function translateWithGemini({ apiKey, baseUrl, model, locale, source }) {
   });
   const parsed = tryParseJsonObject(content);
   if (parsed && typeof parsed === "object") {
-    const title = typeof parsed.title === "string" ? parsed.title : source.frontmatter?.title || "";
-    const description =
-      typeof parsed.description === "string" ? parsed.description : source.frontmatter?.description || "";
-    const tags = Array.isArray(parsed.tags)
-      ? parsed.tags.map((tag) => String(tag))
-      : Array.isArray(source.frontmatter?.tags)
-        ? source.frontmatter.tags
-        : [];
-    const body = typeof parsed.body === "string" ? parsed.body : source.body;
-
-    return { title, description, tags, body };
+    return normalizeTranslatedPayload(parsed, source);
   }
 
   const localeDisplay = LOCALE_DISPLAY_NAME[locale] || locale;
@@ -192,12 +256,104 @@ async function translateWithGemini({ apiKey, baseUrl, model, locale, source }) {
       "Do not wrap the returned body in a markdown code fence such as ```markdown.",
       'Do not include JSON-LD or <script type="application/ld+json"> blocks in the translated body.',
       "Use theatre-domain terminology (劇本/角色/控制台 for zh-TW; 剧本/角色/控制台 for zh-CN).",
+      ...getLocalizedArticleInstructions(locale, source),
       "",
       source.body || "",
     ].join("\n"),
   });
 
   return { title: title.trim(), description: description.trim(), tags, body };
+}
+
+async function callDashScopeChatStreamingText({ apiKey, baseUrl, model, text, enableThinking, maxTokens }) {
+  const response = await fetch(chatCompletionsEndpoint(baseUrl), {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model,
+      messages: [{ role: "user", content: text }],
+      temperature: 0.15,
+      response_format: { type: "json_object" },
+      enable_thinking: enableThinking,
+      stream: true,
+      stream_options: { include_usage: true },
+      max_tokens: maxTokens,
+    }),
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`DashScope DeepSeek request failed (${response.status}): ${body.slice(0, 500)}`);
+  }
+  if (!response.body || typeof response.body.getReader !== "function") {
+    throw new Error("DashScope DeepSeek returned a non-streaming response body.");
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let content = "";
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) {
+      break;
+    }
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split(/\r?\n/);
+    buffer = lines.pop() || "";
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed.startsWith("data:")) {
+        continue;
+      }
+      const data = trimmed.slice("data:".length).trim();
+      if (!data || data === "[DONE]") {
+        continue;
+      }
+      let parsed;
+      try {
+        parsed = JSON.parse(data);
+      } catch {
+        continue;
+      }
+      const delta = parsed?.choices?.[0]?.delta;
+      if (typeof delta?.content === "string") {
+        content += delta.content;
+      }
+      // Do not persist or print reasoning_content; locale payloads store final copy only.
+    }
+  }
+
+  content = content.trim();
+  if (!content) {
+    throw new Error("DashScope DeepSeek returned empty final content.");
+  }
+  return content;
+}
+
+async function translateWithDashScopeDeepSeek({ apiKey, baseUrl, model, locale, source, enableThinking, maxTokens }) {
+  if (!apiKey) {
+    throw new Error("Missing DASHSCOPE_API_KEY or QWEN_API_KEY for DashScope DeepSeek blog translation.");
+  }
+  const prompt = buildPrompt({ locale, source });
+  const content = await callDashScopeChatStreamingText({
+    apiKey,
+    baseUrl,
+    model,
+    locale,
+    enableThinking,
+    maxTokens,
+    text: `Return strict JSON only. No markdown fences.\n${prompt}`,
+  });
+  const parsed = tryParseJsonObject(content);
+  if (!parsed || typeof parsed !== "object") {
+    throw new Error(`DashScope DeepSeek did not return parseable translation JSON: ${content.slice(0, 500)}`);
+  }
+  return normalizeTranslatedPayload(parsed, source);
 }
 
 let authClientPromise = null;
@@ -257,18 +413,40 @@ async function main() {
   const locales = pickLocales(config.locales, args.locales);
   const posts = pickPosts(listSourcePosts(sourceDir), args.slugs);
 
+  const repoEnvPath = path.join(ROOT, "..", ".env");
   const backendEnvPath = path.join(ROOT, "..", "backend", ".env");
   const blogEnvPath = path.join(ROOT, ".env");
+  loadEnvFromFile(repoEnvPath);
   loadEnvFromFile(backendEnvPath);
   loadEnvFromFile(blogEnvPath);
 
-  const apiKey =
-    process.env.GEMINI_API_KEY ||
-    process.env.GOOGLE_API_KEY ||
-    process.env.GENAI_API_KEY ||
-    process.env.AI_GEMINI_API_KEY;
-  const model = args.model || process.env.GEMINI_BLOG_MODEL || config.gemini?.model || "gemini-2.0-flash";
-  const baseUrl = args.baseUrl || process.env.GEMINI_BASE_URL || config.gemini?.baseUrl;
+  const provider = normalizeProvider(args.provider || process.env.BLOG_TRANSLATION_PROVIDER || "gemini");
+  const apiKey = provider === "dashscope-deepseek"
+    ? process.env.DASHSCOPE_API_KEY || process.env.QWEN_API_KEY
+    : process.env.GEMINI_API_KEY ||
+      process.env.GOOGLE_API_KEY ||
+      process.env.GENAI_API_KEY ||
+      process.env.AI_GEMINI_API_KEY;
+  const model = provider === "dashscope-deepseek"
+    ? args.model ||
+      process.env.DASHSCOPE_DEEPSEEK_BLOG_MODEL ||
+      process.env.DEEPSEEK_BLOG_MODEL ||
+      process.env.DASHSCOPE_DEEPSEEK_MODEL_TRANSLATE ||
+      process.env.DEEPSEEK_MODEL_TRANSLATE ||
+      DEFAULT_DASHSCOPE_DEEPSEEK_MODEL
+    : args.model || process.env.GEMINI_BLOG_MODEL || config.gemini?.model || "gemini-2.0-flash";
+  const baseUrl = provider === "dashscope-deepseek"
+    ? args.baseUrl || process.env.DASHSCOPE_BASE_URL || process.env.QWEN_BASE_URL || DEFAULT_DASHSCOPE_BASE_URL
+    : args.baseUrl || process.env.GEMINI_BASE_URL || config.gemini?.baseUrl;
+  const enableThinking = args.thinking !== null
+    ? args.thinking
+    : booleanFromEnv(
+      process.env.BLOG_TRANSLATION_ENABLE_THINKING ||
+        process.env.DASHSCOPE_DEEPSEEK_ENABLE_THINKING ||
+        process.env.DEEPSEEK_ENABLE_THINKING,
+      provider === "dashscope-deepseek",
+    );
+  const maxTokens = Number.parseInt(process.env.BLOG_TRANSLATION_MAX_TOKENS || process.env.DASHSCOPE_MAX_TOKENS || "60000", 10);
   let translated = 0;
   let skipped = 0;
 
@@ -291,14 +469,24 @@ async function main() {
         continue;
       }
 
-      console.log(`[blog:i18n:translate:llm] [${locale}] ${post.slug} translating...`);
-      const result = await translateWithGemini({
-        apiKey,
-        baseUrl,
-        model,
-        locale,
-        source: post,
-      });
+      console.log(`[blog:i18n:translate:llm] [${locale}] ${post.slug} translating with ${provider}/${model}...`);
+      const result = provider === "dashscope-deepseek"
+        ? await translateWithDashScopeDeepSeek({
+          apiKey,
+          baseUrl,
+          model,
+          locale,
+          source: post,
+          enableThinking,
+          maxTokens,
+        })
+        : await translateWithGemini({
+          apiKey,
+          baseUrl,
+          model,
+          locale,
+          source: post,
+        });
 
       payload.frontmatter = {
         ...(payload.frontmatter && typeof payload.frontmatter === "object" ? payload.frontmatter : {}),

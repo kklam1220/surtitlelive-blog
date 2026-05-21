@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:50:21.453Z",
+  "sectionTitles": {
+    "keyTakeaways": "Poin Penting",
+    "faq": "Tanya Jawab",
+    "glossary": "Glosarium",
+    "related": "Istilah Terkait"
+  },
+  "keyTakeaways": [
+    "Untuk pertunjukan Fringe berbahasa selain Inggris, surtitel bahasa Inggris harus dimulai dari naskah, bukan dari dek slide kosong.",
+    "Alur kerja isyarat yang disiapkan memungkinkan rombongan meninjau terjemahan bahasa Inggris sebelum pembukaan, sembari tetap menjalankannya secara langsung saat pertunjukan.",
+    "Surtitel seluler memungkinkan penonton berbahasa Inggris, penonton berbahasa asli pertunjukan, dan kelompok bahasa lain yang telah disiapkan memilih teks yang mereka butuhkan di perangkat masing-masing.",
+    "Tim tur kecil sebaiknya memilih perangkat lunak surtitel yang mendukung unggahan naskah, isyarat yang dapat disunting, pilihan bahasa, pengendalian isyarat oleh operator, pemulihan lompatan, dan pemadaman.",
+    "SurtitleLive paling cocok untuk pertunjukan dengan naskah atau sebagian besar stabil yang membutuhkan surtitel bahasa Inggris untuk Fringe, tur, pemrogram, pengulas, atau penonton multibahasa."
+  ],
+  "faq": [
+    {
+      "question": "Bagaimana cara menambahkan surtitel bahasa Inggris untuk pertunjukan berbahasa Indonesia atau bahasa non-Inggris lainnya?",
+      "answer": "Mulailah dengan naskah, siapkan atau tinjau terjemahan bahasa Inggris, ubah teks menjadi unit isyarat yang mudah dibaca, latih ketepatan waktu isyarat, lalu jalankan pertunjukan dengan operator yang memajukan setiap surtitel secara langsung. SurtitleLive mendukung ini dengan mengubah naskah menjadi alur kerja isyarat yang dapat disunting dan menyampaikan surtitel yang telah disiapkan melalui proyeksi atau penampil seluler."
+    },
+    {
+      "question": "Bisakah penonton berbahasa Inggris dan penonton berbahasa asli pertunjukan melihat surtitel yang berbeda secara bersamaan?",
+      "answer": "Ya, jika alur kerja mendukung beberapa trek bahasa yang telah disiapkan. Dengan SurtitleLive, setiap penonton dapat membuka tautan penampil atau memindai kode QR dan memilih bahasa yang diaktifkan, seperti bahasa Inggris, bahasa asli pertunjukan, atau bahasa selain Inggris lain yang telah disiapkan."
+    },
+    {
+      "question": "Apakah kami perlu membangun ulang pertunjukan di sekitar layar tetap?",
+      "answer": "Tidak. Layar proyeksi tetap dapat berfungsi jika tempat pertunjukan memiliki garis pandang yang baik dan waktu persiapan yang cukup, tetapi itu tidak boleh menjadi satu-satunya pilihan. Surtitel seluler memungkinkan penonton membaca di ponsel mereka sendiri, yang seringkali lebih praktis untuk tempat Fringe kecil dan kondisi tur."
+    },
+    {
+      "question": "Apa yang terjadi jika seorang aktor melewatkan dialog atau pertunjukan berubah?",
+      "answer": "Surtitel yang telah disiapkan tetap memerlukan kendali operator langsung. Operator mengikuti pertunjukan, memajukan isyarat pada waktu yang tepat, dan menggunakan pemulihan lompatan atau pemadaman jika pertunjukan melenceng dari urutan yang diharapkan."
+    },
+    {
+      "question": "Berapa banyak waktu yang kami perlukan untuk menyiapkan surtitel bahasa Inggris sebelum Edinburgh Fringe?",
+      "answer": "Target praktis adalah tiga hingga empat minggu sebelum pembukaan untuk penerjemahan, persiapan isyarat, dan peninjauan, kemudian satu hingga dua minggu untuk latihan ketepatan waktu dan pengujian penampil. Batas waktu yang lebih singkat dimungkinkan, tetapi rombongan tetap harus menyisakan waktu untuk peninjauan manusia karena surtitel memengaruhi cara penonton berbahasa Inggris memahami pertunjukan."
+    },
+    {
+      "question": "Apa yang harus dicari oleh tim tur kecil dalam perangkat lunak surtitel?",
+      "answer": "Carilah persiapan berbasis naskah, isyarat yang dapat disunting, beberapa trek bahasa, akses penampil kode QR, tanpa perlu instalasi aplikasi penonton, pengendalian isyarat operator langsung, pemulihan lompatan, pemadaman, dan opsi untuk menggunakan proyeksi atau ponsel penonton tergantung tempat pertunjukan."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitel bahasa Inggris",
+      "definition": "Teks bahasa Inggris yang disiapkan dan ditampilkan selama pertunjukan berbahasa selain Inggris agar penonton berbahasa Inggris dapat mengikuti cerita, dialog, lirik, atau materi lisan."
+    },
+    {
+      "term": "Trek bahasa",
+      "definition": "Satu set surtitel yang disiapkan dalam satu bahasa, seperti bahasa Inggris, Kanton, Spanyol, Arab, Prancis, atau bahasa asli pertunjukan."
+    },
+    {
+      "term": "Isyarat",
+      "definition": "Satu unit teks yang muncul pada momen tertentu dalam pertunjukan."
+    },
+    {
+      "term": "Operator",
+      "definition": "Orang yang mengikuti pertunjukan langsung dan memajukan, menyembunyikan, atau melompat di antara surtitel yang telah disiapkan."
+    },
+    {
+      "term": "Penampil seluler",
+      "definition": "Tampilan penonton berbasis peramban yang memungkinkan orang membaca surtitel di ponsel mereka sendiri setelah membuka tautan penampil atau memindai kode QR."
+    },
+    {
+      "term": "Pemadaman",
+      "definition": "Kendali langsung yang menyembunyikan surtitel sementara, sering digunakan saat teks yang salah akan muncul atau ketika momen panggung tidak memerlukan teks terlihat."
+    }
+  ]
+}

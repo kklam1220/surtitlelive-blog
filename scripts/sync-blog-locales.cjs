@@ -93,19 +93,21 @@ function main() {
       }
     }
 
-    const localeFiles = fs
-      .readdirSync(localeDir, { withFileTypes: true })
-      .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-      .map((entry) => entry.name);
-    for (const fileName of localeFiles) {
-      const slug = fileName.replace(/\.json$/, "");
-      if (expectedSlugs.has(slug)) {
-        continue;
+    if (!args.slugs) {
+      const localeFiles = fs
+        .readdirSync(localeDir, { withFileTypes: true })
+        .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+        .map((entry) => entry.name);
+      for (const fileName of localeFiles) {
+        const slug = fileName.replace(/\.json$/, "");
+        if (expectedSlugs.has(slug)) {
+          continue;
+        }
+        if (!args.dryRun) {
+          fs.unlinkSync(path.join(localeDir, fileName));
+        }
+        removed += 1;
       }
-      if (!args.dryRun) {
-        fs.unlinkSync(path.join(localeDir, fileName));
-      }
-      removed += 1;
     }
   }
 

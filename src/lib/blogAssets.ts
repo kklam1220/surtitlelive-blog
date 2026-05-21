@@ -10,6 +10,10 @@ import blog51 from "../content/blog/blog-5.1.jpg";
 import blog52 from "../content/blog/blog-5.2.jpg";
 import blog61 from "../content/blog/blog-6-1.png";
 import blog8 from "../content/blog/blog-8.png";
+import blog91 from "../content/blog/blog-9-1.png";
+import blog92 from "../content/blog/blog-9-2.png";
+import blog93 from "../content/blog/blog-9-3.jpg";
+import blog94 from "../content/blog/blog-9-4.png";
 import favicon192 from "../content/blog/favicon-192.png";
 import scriptParsingTheatreSubtitles from "../content/blog/script-parsing-theatre-subtitles.png";
 
@@ -24,6 +28,10 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-5.2.jpg": blog52,
   "blog-6-1.png": blog61,
   "blog-8.png": blog8,
+  "blog-9-1.png": blog91,
+  "blog-9-2.png": blog92,
+  "blog-9-3.jpg": blog93,
+  "blog-9-4.png": blog94,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
 };

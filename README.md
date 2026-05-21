@@ -78,7 +78,7 @@ Your blog content here...
 - **heroImage**: Optional hero image path
 - **updatedDate**: Optional update date
 
-## 🌍 Blog Localization Workflow (Gemini)
+## 🌍 Blog Localization Workflow (LLM)
 
 English posts in `src/content/blog/*.md` and `*.mdx` are the only source of truth.
 
@@ -92,6 +92,8 @@ npm run blog:i18n:geo
 Output locale payloads are written to `src/content/i18n/blog/<locale>/<slug>.json` with `sourceHash` for drift detection.
 AI answer blocks (key takeaways / FAQ / glossary) are written to `src/content/i18n/geo/<locale>/<slug>.json`.
 Article pages suppress the generated GEO block when the authored Markdown already contains an equivalent `FAQ`, `Key Takeaways`, or `Glossary` heading. Authored editorial sections take precedence over generated enrichment so readers do not see duplicate FAQ or summary sections.
+Slug-scoped syncs such as `node scripts/sync-blog-locales.cjs --slugs=<slug>` from the `blog/` directory only create or update that slug's locale payloads; pruning stale locale payloads happens only during a full sync.
+`blog:i18n:translate:llm` defaults to Gemini, but it can run Alibaba Cloud Model Studio / DashScope DeepSeek through the OpenAI-compatible endpoint. For native-quality review passes on selected locales, set `BLOG_TRANSLATION_PROVIDER=dashscope-deepseek`, `DASHSCOPE_API_KEY`, `DASHSCOPE_DEEPSEEK_BLOG_MODEL=deepseek-v4-pro`, and `BLOG_TRANSLATION_ENABLE_THINKING=true`, or pass `--provider=dashscope-deepseek --model=deepseek-v4-pro --thinking`.
 
 One-command flow:
 

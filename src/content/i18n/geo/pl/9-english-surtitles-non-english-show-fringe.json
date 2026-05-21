@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:52:15.593Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kluczowe wnioski",
+    "faq": "FAQ",
+    "glossary": "Słowniczek",
+    "related": "Powiązane terminy"
+  },
+  "keyTakeaways": [
+    "W nieanglojęzycznym spektaklu na Fringe angielskie surtytuły powinny powstawać w oparciu o gotowy skrypt, a nie od pustego pliku.",
+    "Przygotowany workflow z cue’ami pozwala zespołowi przejrzeć angielskie tłumaczenie przed premierą, jednocześnie zachowując możliwość sterowania surtytułami na żywo podczas spektaklu.",
+    "Surtytuły na urządzenia mobilne umożliwiają anglojęzycznej widowni, widowni oryginalnojęzycznej oraz dodatkowym grupom językowym wybór odpowiedniego tekstu na własnych telefonach.",
+    "Niewielkie zespoły koncertujące powinny wybierać oprogramowanie do surtytułów oferujące: wgrywanie skryptu, edytowalne cue’y, wybór języka, sterowanie na żywo, przeskakiwanie do wybranego fragmentu oraz funkcję blackout.",
+    "SurtitleLive najlepiej sprawdza się w spektaklach opartych na scenariuszu lub w dużej mierze stabilnych, które potrzebują angielskich surtytułów na Fringe, podczas tras, dla programerów, recenzentów lub wielojęzycznej publiczności."
+  ],
+  "faq": [
+    {
+      "question": "Jak dodać angielskie surtytuły do spektaklu w języku polskim lub innym języku niż angielski?",
+      "answer": "Zacznij od skryptu, przygotuj lub zweryfikuj angielskie tłumaczenie, podziel tekst na czytelne jednostki – cue’y, zgraj czasowanie cue’ów podczas prób, a następnie prowadź spektakl z operatorem, który wywołuje każdy surtytuł na żywo. SurtitleLive wspiera ten proces, przekształcając skrypt w edytowalny workflow cue’ów i dostarczając gotowe surtytuły za pomocą projekcji lub przeglądarki mobilnej."
+    },
+    {
+      "question": "Czy anglojęzyczna i oryginalnojęzyczna publiczność mogą jednocześnie widzieć różne surtytuły?",
+      "answer": "Tak, jeśli workflow obsługuje wiele przygotowanych ścieżek językowych. W SurtitleLive każdy widz może otworzyć link lub zeskanować kod QR i wybrać włączony język, na przykład angielski, język oryginalny bądź inny przygotowany język."
+    },
+    {
+      "question": "Czy musimy przebudować spektakl pod kątem stałego ekranu?",
+      "answer": "Nie. Stały ekran projekcyjny może się sprawdzić, gdy sala ma dobrą widoczność i wystarczająco dużo czasu na rozstawienie, ale nie powinien być jedyną opcją. Surtytuły mobilne pozwalają widzom czytać tekst na własnych telefonach, co często jest praktyczniejsze w małych salach festiwalowych i warunkach koncertowych."
+    },
+    {
+      "question": "Co się stanie, jeśli aktor pominie kwestię albo spektakl ulegnie zmianie?",
+      "answer": "Przygotowane surtytuły nadal wymagają kontroli operatora na żywo. Operator śledzi przebieg spektaklu, wywołuje cue’y we właściwym momencie i korzysta z przeskoku do wybranego fragmentu lub funkcji blackout, gdy akcja odbiega od zakładanej kolejności."
+    },
+    {
+      "question": "Ile czasu potrzeba na przygotowanie angielskich surtytułów przed Edinburgh Fringe?",
+      "answer": "Realistyczny cel to trzy–cztery tygodnie przed premierą na tłumaczenie, opracowanie cue’ów i weryfikację, a następnie jeden–dwa tygodnie na zgranie czasowania podczas prób i testy przeglądarki mobilnej. Krótsze terminy są możliwe, ale warto zostawić czas na korektę – surtytuły wpływają na to, jak anglojęzyczna publiczność odbiera spektakl."
+    },
+    {
+      "question": "Na co mały zespół koncertujący powinien zwrócić uwagę przy wyborze oprogramowania do surtytułów?",
+      "answer": "Szukaj narzędzia umożliwiającego pracę na bazie skryptu, edytowalne cue’y, wiele ścieżek językowych, dostęp przez kod QR bez konieczności instalowania aplikacji przez widza, sterowanie cue’ami na żywo, możliwość przeskakiwania między fragmentami, funkcję blackout oraz opcję korzystania z projekcji lub telefonów widzów – w zależności od warunków technicznych miejsca."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Angielskie surtytuły",
+      "definition": "Przygotowany tekst w języku angielskim wyświetlany podczas nieanglojęzycznego spektaklu, umożliwiający anglojęzycznej publiczności śledzenie fabuły, dialogów, partii lirycznych lub wypowiadanych treści."
+    },
+    {
+      "term": "Ścieżka językowa",
+      "definition": "Przygotowany zestaw surtytułów w jednym języku, na przykład po angielsku, kantońsku, hiszpańsku, arabsku, francusku albo w języku oryginalnym spektaklu."
+    },
+    {
+      "term": "Cue",
+      "definition": "Jednostka tekstu pojawiająca się w określonym momencie przedstawienia."
+    },
+    {
+      "term": "Operator",
+      "definition": "Osoba, która śledzi spektakl na żywo i wywołuje, ukrywa bądź przeskakuje pomiędzy przygotowanymi surtytułami."
+    },
+    {
+      "term": "Przeglądarka mobilna",
+      "definition": "Działający w przeglądarce widok dla publiczności, pozwalający odczytywać surtytuły na własnym telefonie po otwarciu linku lub zeskanowaniu kodu QR."
+    },
+    {
+      "term": "Blackout",
+      "definition": "Funkcja sterowania na żywo, która tymczasowo ukrywa surtytuły – stosowana, gdy wyświetliłby się niewłaściwy tekst lub gdy dany moment sceniczny nie wymaga widocznego tekstu."
+    }
+  ]
+}

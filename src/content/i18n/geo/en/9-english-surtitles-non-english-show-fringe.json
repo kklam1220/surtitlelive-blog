@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "For a non-English Fringe show, English surtitles should start from the script, not from a blank slide deck.",
+    "A prepared cue workflow lets the company review the English translation before opening while still cueing it live in performance.",
+    "Mobile surtitles let English audiences, original-language audiences, and additional prepared language groups choose the text they need on their own devices.",
+    "Small touring teams should choose surtitles software that supports script upload, editable cues, language choice, operator cueing, jump recovery, and blackout.",
+    "SurtitleLive is best suited to scripted or mostly stable performances that need English surtitles for Fringe, touring, programmers, reviewers, or multilingual audiences."
+  ],
+  "faq": [
+    {
+      "question": "How do I add English surtitles to a French-language, German-language, Spanish-language, or other non-English show?",
+      "answer": "Start with the script, prepare or review the English translation, turn the text into readable cue units, rehearse the cue timing, then run the performance with an operator who advances each surtitle live. SurtitleLive supports this by turning a script into an editable cue workflow and delivering the prepared surtitles by projection or mobile viewer."
+    },
+    {
+      "question": "Can English and original-language audiences see different surtitles at the same time?",
+      "answer": "Yes, if the workflow supports multiple prepared language tracks. With SurtitleLive, each audience member can open the viewer link or scan the QR code and choose an enabled language, such as English, the original language, or another prepared non-English language."
+    },
+    {
+      "question": "Do we need to rebuild the show around a fixed screen?",
+      "answer": "No. A fixed projection screen can work when the venue has good sightlines and enough setup time, but it should not be the only option. Mobile surtitles let the audience read on their own phones, which is often more practical for small Fringe venues and touring conditions."
+    },
+    {
+      "question": "What happens if an actor skips lines or the performance changes?",
+      "answer": "Prepared surtitles still need live operator control. The operator follows the performance, advances cues at the right time, and uses jump recovery or blackout if the show moves away from the expected sequence."
+    },
+    {
+      "question": "How much time do we need to prepare English surtitles before Edinburgh Fringe?",
+      "answer": "A practical target is three to four weeks before opening for translation, cue preparation, and review, then one to two weeks for rehearsal timing and viewer tests. Shorter timelines are possible, but the company should still leave time for human review because surtitles affect how English-speaking audiences understand the performance."
+    },
+    {
+      "question": "What should a small touring team look for in surtitle software?",
+      "answer": "Look for script-based preparation, editable cues, multiple language tracks, QR-code viewer access, no required audience app install, live operator cueing, jump recovery, blackout, and the option to use projection or audience phones depending on the venue."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "English surtitles",
+      "definition": "Prepared English text shown during a non-English performance so English-speaking audiences can follow the story, dialogue, lyrics, or spoken material."
+    },
+    {
+      "term": "Language track",
+      "definition": "A prepared set of surtitles in one language, such as English, Cantonese, Spanish, Arabic, French, or the original performance language."
+    },
+    {
+      "term": "Cue",
+      "definition": "A unit of text that appears at a specific moment in the performance."
+    },
+    {
+      "term": "Operator",
+      "definition": "The person who follows the live performance and advances, hides, or jumps between prepared surtitles."
+    },
+    {
+      "term": "Mobile viewer",
+      "definition": "A browser-based audience view that lets people read surtitles on their own phones after opening a viewer link or scanning a QR code."
+    },
+    {
+      "term": "Blackout",
+      "definition": "A live control that temporarily hides surtitles, often used when the wrong text would otherwise appear or when the stage moment needs no visible text."
+    }
+  ]
+}

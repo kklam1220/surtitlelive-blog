@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T18:46:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Términos relacionados"
+  },
+  "keyTakeaways": [
+    "Para un espectáculo no anglófono en el Fringe, los sobretítulos en inglés deben partir del texto, no de unas diapositivas en blanco.",
+    "Un flujo de sobretitulado preparado permite a la compañía revisar la traducción al inglés antes del estreno y, aun así, lanzarla en directo durante la función.",
+    "Los sobretítulos en el móvil dejan que el público anglófono, el de la lengua original y otros grupos lingüísticos preparados elijan el texto que necesitan en su propio dispositivo.",
+    "Los equipos pequeños en gira deberían elegir un software de sobretitulado que admita subir el texto, pies editables, elección de idioma, lanzamiento por un operador, recuperación con salto y apagón.",
+    "SurtitleLive encaja sobre todo en espectáculos con texto o bastante estables que necesitan sobretítulos en inglés para el Fringe, la gira, programadores, críticos o público multilingüe."
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo añado sobretítulos en inglés a un espectáculo en español o en otra lengua que no sea el inglés?",
+      "answer": "Parte del texto, prepara o revisa la traducción al inglés, divide el texto en pies legibles, ensaya el ritmo de los pies y ofrece la función con un operador que lance cada sobretítulo en directo. SurtitleLive lo facilita convirtiendo un texto en un flujo de pies editables y difundiendo los sobretítulos preparados por proyección o visor móvil."
+    },
+    {
+      "question": "¿Pueden el público anglófono y el de la lengua original ver sobretítulos distintos a la vez?",
+      "answer": "Sí, si el flujo de trabajo admite varias pistas de idioma preparadas. Con SurtitleLive, cada espectador puede abrir el enlace de visualización o escanear el código QR y elegir un idioma activado: inglés, la lengua original u otra lengua distinta del inglés ya preparada."
+    },
+    {
+      "question": "¿Tenemos que rehacer todo el espectáculo en torno a una pantalla fija?",
+      "answer": "No. Una pantalla de proyección fija puede funcionar cuando la sala tiene buenas líneas de visión y suficiente tiempo de montaje, pero no debería ser la única opción. Los sobretítulos en el móvil dejan que el público lea en su propio teléfono, lo que suele ser más práctico en salas pequeñas del Fringe y en gira."
+    },
+    {
+      "question": "¿Qué pasa si el elenco se salta réplicas o la función cambia?",
+      "answer": "Los sobretítulos preparados siguen necesitando el control de un operador en directo. El operador sigue la función, lanza los pies en el momento justo y usa la recuperación con salto o el apagón si el espectáculo se aparta del orden previsto."
+    },
+    {
+      "question": "¿Cuánto tiempo necesitamos para preparar los sobretítulos en inglés antes del Fringe de Edimburgo?",
+      "answer": "Un objetivo realista: de tres a cuatro semanas antes del estreno para la traducción, la preparación de los pies y la revisión, y luego de una a dos semanas para el ritmo en los ensayos y las pruebas del visor. Es posible ir más rápido, pero la compañía debería reservar tiempo para una revisión humana, porque los sobretítulos determinan cómo entiende el espectáculo el público anglófono."
+    },
+    {
+      "question": "¿Qué debe buscar un equipo pequeño en gira en un software de sobretitulado?",
+      "answer": "Busca preparación a partir del texto, pies editables, varias pistas de idioma, acceso del público por código QR, sin necesidad de instalar ninguna aplicación, lanzamiento en directo por un operador, recuperación con salto, apagón y la posibilidad de usar proyección o los teléfonos del público según la sala."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sobretítulos en inglés",
+      "definition": "Texto en inglés ya preparado que se muestra durante un espectáculo no anglófono para que el público anglófono pueda seguir la historia, los diálogos, las letras o el texto hablado."
+    },
+    {
+      "term": "Pista de idioma (language track)",
+      "definition": "Un conjunto de sobretítulos preparado en una lengua, por ejemplo inglés, cantonés, español, árabe, francés o la lengua original del espectáculo."
+    },
+    {
+      "term": "Pie (cue)",
+      "definition": "Una unidad de texto que aparece en un momento concreto de la función."
+    },
+    {
+      "term": "Operador",
+      "definition": "La persona que sigue la función en directo y lanza, oculta o salta entre los sobretítulos preparados."
+    },
+    {
+      "term": "Visor móvil",
+      "definition": "Una vista para el público en el navegador que permite leer los sobretítulos en el propio teléfono tras abrir un enlace o escanear un código QR."
+    },
+    {
+      "term": "Apagón (blackout)",
+      "definition": "Un control en directo que oculta temporalmente los sobretítulos, usado a menudo cuando aparecería el texto equivocado o cuando el momento escénico no necesita texto visible."
+    }
+  ]
+}

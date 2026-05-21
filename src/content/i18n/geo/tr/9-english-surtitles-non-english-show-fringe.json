@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "9-english-surtitles-non-english-show-fringe",
+  "sourceHash": "2a7d5f78005526b67650f318a6b2c3b7527abec482884c662e396c11c5a6461e",
+  "generatedAt": "2026-05-21T19:00:18.988Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne Çıkanlar",
+    "faq": "Sıkça Sorulan Sorular",
+    "glossary": "Terimler Sözlüğü",
+    "related": "İlgili Terimler"
+  },
+  "keyTakeaways": [
+    "İngilizce olmayan bir Fringe oyununda İngilizce üstyazı çalışması, boş bir slayt destesinden değil, oyun metninden başlamalıdır.",
+    "Hazırlanmış bir akış düzeni, ekibin İngilizce çeviriyi prömiyerden önce gözden geçirmesini sağlarken, gösterim sırasında yine de canlı yürütmeye izin verir.",
+    "Mobil üstyazı, İngilizce konuşan seyircilerin, oyunun orijinal dilindeki izleyicilerin ve diğer önceden hazırlanmış dil gruplarının kendi cihazlarından istedikleri metni seçmelerine olanak tanır.",
+    "Küçük turne ekipleri; metin yükleme, düzenlenebilir akışlar, dil seçimi, operatörle yönetme, anlık atlama ve karartma özelliklerini destekleyen bir üstyazı yazılımı tercih etmelidir.",
+    "SurtitleLive, Fringe, turne, programcılar, eleştirmenler ya da çok dilli seyirci için İngilizce üstyazıya ihtiyaç duyan metne dayalı ya da büyük ölçüde sabitlenmiş performanslar için en uygun çözümdür."
+  ],
+  "faq": [
+    {
+      "question": "Türkçe veya İngilizce olmayan başka bir dildeki oyuna nasıl İngilizce üstyazı eklerim?",
+      "answer": "Oyun metniyle işe başlayın, İngilizce çeviriyi hazırlayıp gözden geçirin, metni okunabilir akış birimlerine bölün, zamanlama provasını yapın, ardından her üstyazıyı canlı olarak ilerleten bir operatör eşliğinde gösterimi gerçekleştirin. SurtitleLive, senaryoyu düzenlenebilir bir akış iş akışına dönüştürerek ve hazırlanan üstyazıları projeksiyon ya da mobil görüntüleyici aracılığıyla sunarak bu süreci destekler."
+    },
+    {
+      "question": "İngilizce ve orijinal dildeki seyirciler aynı anda farklı üstyazıları görebilir mi?",
+      "answer": "Evet, eğer iş akışı birden çok hazır dil kanalını destekliyorsa mümkündür. SurtitleLive ile her seyirci görüntüleyici bağlantısını açıp veya karekodu tarayıp İngilizce, oyunun orijinal dili ya da hazırlanmış başka bir dil gibi etkinleştirilmiş bir dili seçebilir."
+    },
+    {
+      "question": "Gösteriyi sabit bir ekran etrafında yeniden kurmamız gerekiyor mu?",
+      "answer": "Hayır. Salon iyi görüş hatlarına ve yeterli kurulum süresine sahip olduğunda sabit bir projeksiyon perdesi iş görebilir, ancak tek seçenek bu olmamalıdır. Mobil üstyazı, seyircilerin kendi telefonlarından okumasına imkân tanır ve bu genellikle küçük Fringe salonları ile turne koşulları için çok daha pratiktir."
+    },
+    {
+      "question": "Bir oyuncu repliğini atlarsa ya da performans değişirse ne olur?",
+      "answer": "Önceden hazırlanmış üstyazılar yine de canlı bir operatör yönetimi gerektirir. Operatör performansı takip eder, akışları doğru anda ilerletir ve gösteri beklenen sıranın dışına çıktığında anlık atlama ya da karartma işlevlerini kullanır."
+    },
+    {
+      "question": "Edinburgh Fringe öncesinde İngilizce üstyazıları hazırlamak için ne kadar süreye ihtiyacımız var?",
+      "answer": "Çeviri, akış hazırlığı ve gözden geçirme için prömiyerden üç ila dört hafta öncesi, ardından prova zamanlaması ve görüntüleyici testleri için bir ila iki hafta pratik bir hedeftir. Daha kısa süreler de mümkündür, ancak ekip yine de insan gözden geçirmesine zaman ayırmalıdır çünkü üstyazılar İngilizce konuşan seyircinin performansı nasıl anladığını doğrudan etkiler."
+    },
+    {
+      "question": "Küçük bir turne ekibi üstyazı yazılımında nelere dikkat etmelidir?",
+      "answer": "Senaryo tabanlı hazırlık, düzenlenebilir akışlar, birden çok dil kanalı, karekodla görüntüleyici erişimi, seyirciden uygulama yüklemesi istenmemesi, canlı operatörle yönetim, anlık atlama, karartma ve mekâna bağlı olarak projeksiyon ya da seyirci telefonunun kullanılabilmesi gibi özellikleri arayın."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "İngilizce üstyazı",
+      "definition": "İngilizce bilmeyen bir performans sırasında, İngilizce konuşan seyircilerin hikâyeyi, diyalogları, şarkı sözlerini ya da sözlü materyali takip edebilmesi için gösterilen önceden hazırlanmış İngilizce metin."
+    },
+    {
+      "term": "Dil kanalı",
+      "definition": "İngilizce, Kantonca, İspanyolca, Arapça, Fransızca ya da performansın özgün dili gibi tek bir dilde hazırlanmış üstyazı seti."
+    },
+    {
+      "term": "Akış (cue)",
+      "definition": "Performansın belirli bir anında görüntülenen metin birimi."
+    },
+    {
+      "term": "Operatör",
+      "definition": "Canlı performansı takip ederek hazırlanan üstyazıları ilerleten, gizleyen ya da aralarında atlama yapan kişi."
+    },
+    {
+      "term": "Mobil görüntüleyici",
+      "definition": "Seyircinin bir görüntüleyici bağlantısı açıp ya da karekodu tarayarak üstyazıları kendi telefonundan okumasına imkân tanıyan tarayıcı tabanlı izleyici ekranı."
+    },
+    {
+      "term": "Karartma",
+      "definition": "Genellikle yanlış metin görünecekken ya da sahne anı görünür bir metne ihtiyaç duymadığında üstyazıları geçici olarak gizleyen canlı kontrol."
+    }
+  ]
+}
