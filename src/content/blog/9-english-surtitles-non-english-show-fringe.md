@@ -1,5 +1,5 @@
 ---
-title: 'How to Add English Surtitles to a Non-English Show at the Edinburgh Fringe'
+title: 'How to Add English Surtitles to a Non-English Show at the Edinburgh Fringe Festival'
 description: 'A practical guide for non-English theatre companies preparing English surtitles for Fringe: translate from the script, choose a delivery workflow, and keep cues live.'
 pubDate: '2026-05-21'
 heroImage: './blog-9-1.png'
