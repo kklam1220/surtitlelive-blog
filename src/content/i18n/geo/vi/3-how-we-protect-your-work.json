@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T14:13:15.618Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ý chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Liên quan"
+  },
+  "keyTakeaways": [
+    "SurtitleLive sử dụng phân phối thời gian chạy theo yêu cầu để trình xem chính thức tránh tải trước toàn bộ gói kịch bản văn bản thuần.",
+    "Nội dung phụ đề trong thời gian chạy được phân phối dưới dạng các phân đoạn được mã hóa và được giải mã trong bộ nhớ trình duyệt để hiển thị.",
+    "Mã thông báo bearer tạm thời, cửa sổ hết hạn và các kiểm soát thu hồi phía máy chủ giúp giới hạn thời gian quyền truy cập của người xem còn hữu ích.",
+    "Những kiểm soát này làm giảm việc sao chép thông thường và rủi ro truy cập không kiểm soát; chúng không phải là DRM hay cam kết bảo vệ sao chép tuyệt đối."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive giảm việc sao chép kịch bản thông thường như thế nào?",
+      "answer": "Trình xem chính thức tải các phân đoạn thời gian chạy được mã hóa theo yêu cầu xung quanh gợi ý hiện tại, thay vì hiển thị toàn bộ kịch bản dưới dạng một tải trọng trình duyệt có thể đọc được ngay tại thời điểm truy cập."
+    },
+    {
+      "question": "SurtitleLive có thể đảm bảo rằng kịch bản không bao giờ bị sao chép không?",
+      "answer": "Không. Phân phối kỹ thuật số không thể ngăn chặn ảnh chụp màn hình, máy ảnh, OCR hoặc các ứng dụng khách tùy chỉnh có quyền truy cập hợp lệ. SurtitleLive nên được coi là giảm thiểu rủi ro, chứ không phải bảo vệ sao chép tuyệt đối."
+    },
+    {
+      "question": "Điều gì xảy ra nếu cần hạn chế một liên kết người xem?",
+      "answer": "Quyền truy cập thời gian chạy có thể bị giới hạn thông qua mã thông báo bearer tạm thời, cửa sổ hết hạn được cấu hình và thu hồi phía máy chủ đối với các yêu cầu thời gian chạy mới hoặc gia hạn."
+    },
+    {
+      "question": "Dữ liệu được bảo vệ như thế nào trong quá trình truyền?",
+      "answer": "Các kết nối sử dụng HTTPS/TLS, và phân phối thời gian chạy sử dụng các phân đoạn thời gian chạy được mã hóa như một phần của mô hình bảo mật phân lớp, cũng bao gồm phân quyền truy cập và các kiểm soát vận hành."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phân đoạn thời gian chạy",
+      "definition": "Một đơn vị phụ đề nhỏ được mã hóa, được yêu cầu theo tiến độ chương trình thay vì toàn bộ gói kịch bản văn bản thuần."
+    },
+    {
+      "term": "Quyền truy cập của người xem",
+      "definition": "Phiên trình duyệt có phạm vi được sử dụng bởi người xem dự kiến."
+    },
+    {
+      "term": "Thu hồi",
+      "definition": "Một kiểm soát phía máy chủ có thể giới hạn quyền truy cập thời gian chạy mới hoặc gia hạn sau khi phát hiện có lo ngại."
+    },
+    {
+      "term": "Giảm thiểu rủi ro",
+      "definition": "Một mục tiêu bảo mật giúp giảm rủi ro sao chép thực tế và truy cập không kiểm soát mà không tuyên bố ngăn chặn tuyệt đối."
+    }
+  ]
+}

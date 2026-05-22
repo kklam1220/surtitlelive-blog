@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T03:37:32.899Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -12,36 +12,36 @@
   },
   "keyTakeaways": [
     "SurtitleLive uses on-demand runtime delivery so the official viewer avoids loading a full plaintext script bundle up front.",
-    "Encrypted subtitle segments are intended to be displayed inside the authorized viewer session, with browser and device behavior still treated realistically.",
-    "Temporary access tokens, expiry windows, and server-side revocation controls help limit post-show access.",
-    "These controls reduce casual copying and uncontrolled access; they are not a promise of absolute copy protection."
+    "Runtime subtitle content is delivered as encrypted segments and decrypted in browser memory for display.",
+    "Temporary bearer tokens, expiry windows, and server-side revocation controls help limit how long viewer access remains useful.",
+    "These controls reduce casual copying and uncontrolled access risk; they are not DRM or a promise of absolute copy protection."
   ],
   "faq": [
     {
       "question": "How does SurtitleLive reduce casual script copying?",
-      "answer": "The Official Viewer loads encrypted subtitle segments on demand around the current cue instead of presenting the whole script as one readable browser payload at entry time."
+      "answer": "The Official Viewer loads encrypted runtime segments on demand around the current cue instead of presenting the whole script as one readable browser payload at entry time."
     },
     {
       "question": "Can SurtitleLive guarantee that a script can never be copied?",
-      "answer": "No digital delivery system can prevent screenshots, cameras, OCR, or custom clients with valid access. SurtitleLive should be treated as risk reduction, not absolute copy protection."
+      "answer": "No. Digital delivery cannot prevent screenshots, cameras, OCR, or custom clients with valid access. SurtitleLive should be treated as risk reduction, not absolute copy protection."
     },
     {
       "question": "What happens if a viewer link needs to be restricted?",
-      "answer": "Runtime access can be limited through temporary tokens, expiry windows, and server-side revocation for new or renewed runtime requests."
+      "answer": "Runtime access can be limited through temporary bearer tokens, configured expiry windows, and server-side revocation for new or renewed runtime requests."
     },
     {
       "question": "How is data protected in transit?",
-      "answer": "Connections use HTTPS/TLS, and runtime delivery uses encrypted segments as part of a layered security model that also includes access scoping and operational controls."
+      "answer": "Connections use HTTPS/TLS, and runtime delivery uses encrypted runtime segments as part of a layered security model that also includes access scoping and operational controls."
     }
   ],
   "glossary": [
     {
       "term": "Runtime segment",
-      "definition": "A small encrypted subtitle unit requested around show progress rather than a full plaintext script bundle."
+      "definition": "A small encrypted subtitle unit requested around show progress instead of a full plaintext script bundle."
     },
     {
       "term": "Viewer access",
-      "definition": "The controlled browser session used by an authorized audience viewer."
+      "definition": "The scoped browser session used by an intended audience viewer."
     },
     {
       "term": "Revocation",
@@ -49,7 +49,7 @@
     },
     {
       "term": "Risk reduction",
-      "definition": "A security goal that lowers practical copying risk without claiming absolute prevention."
+      "definition": "A security goal that lowers practical copying and uncontrolled access risk without claiming absolute prevention."
     }
   ]
 }

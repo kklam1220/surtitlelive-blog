@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T14:09:34.677Z",
+  "sectionTitles": {
+    "keyTakeaways": "Önemli Noktalar",
+    "faq": "SSS",
+    "glossary": "Sözlük",
+    "related": "İlgili Terimler"
+  },
+  "keyTakeaways": [
+    "SurtitleLive, isteğe bağlı çalışma zamanı dağıtımını kullanır; böylece resmi görüntüleyici, başlangıçta tam bir düz metin senaryo paketi yüklemez.",
+    "Çalışma zamanı altyazı içeriği şifrelenmiş segmentler olarak iletilir ve gösterim için tarayıcı belleğinde çözülür.",
+    "Geçici taşıyıcı belirteçler, son kullanma aralıkları ve sunucu tarafı iptal kontrolleri, görüntüleyici erişiminin ne kadar süreyle kullanışlı kalacağını sınırlamaya yardımcı olur.",
+    "Bu kontroller, sıradan kopyalama ve kontrolsüz erişim riskini azaltır; DRM veya mutlak kopya koruması vaadi değildir."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive sıradan senaryo kopyalamayı nasıl azaltır?",
+      "answer": "Resmi Görüntüleyici, girişte tüm senaryoyu tek bir okunabilir tarayıcı yükü olarak sunmak yerine, geçerli işaret çevresinde isteğe bağlı olarak şifrelenmiş çalışma zamanı segmentlerini yükler."
+    },
+    {
+      "question": "SurtitleLive bir senaryonun hiçbir zaman kopyalanamayacağını garanti edebilir mi?",
+      "answer": "Hayır. Dijital dağıtım; ekran görüntülerini, kameraları, OCR'yi veya geçerli erişime sahip özel istemcileri engelleyemez. SurtitleLive mutlak kopya koruması olarak değil, risk azaltma olarak değerlendirilmelidir."
+    },
+    {
+      "question": "Bir görüntüleyici bağlantısının kısıtlanması gerekirse ne olur?",
+      "answer": "Çalışma zamanı erişimi, geçici taşıyıcı belirteçler, yapılandırılmış son kullanma aralıkları ve yeni veya yenilenen çalışma zamanı istekleri için sunucu tarafı iptal yoluyla sınırlanabilir."
+    },
+    {
+      "question": "Veriler aktarım sırasında nasıl korunur?",
+      "answer": "Bağlantılar HTTPS/TLS kullanır ve çalışma zamanı dağıtımı, erişim kapsamı belirleme ve operasyonel kontrolleri de içeren katmanlı bir güvenlik modelinin parçası olarak şifrelenmiş çalışma zamanı segmentlerini kullanır."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Çalışma zamanı segmenti",
+      "definition": "Tam bir düz metin senaryo paketi yerine, gösteri ilerlemesi etrafında talep edilen küçük şifrelenmiş altyazı birimi."
+    },
+    {
+      "term": "Görüntüleyici erişimi",
+      "definition": "Hedef kitle görüntüleyicisi tarafından kullanılan kapsamlı tarayıcı oturumu."
+    },
+    {
+      "term": "İptal",
+      "definition": "Bir sorun tespit edildikten sonra yeni veya yenilenen çalışma zamanı erişimini sınırlayabilen sunucu tarafı bir kontrol."
+    },
+    {
+      "term": "Risk azaltma",
+      "definition": "Mutlak önleme iddiasında bulunmadan, pratik kopyalama ve kontrolsüz erişim riskini düşüren bir güvenlik hedefi."
+    }
+  ]
+}

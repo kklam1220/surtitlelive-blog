@@ -2,54 +2,54 @@
   "version": 1,
   "locale": "zh-CN",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:02:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "关键要点",
-    "faq": "常见问题解答",
+    "keyTakeaways": "重点整理",
+    "faq": "常见问题",
     "glossary": "术语表",
-    "related": "相关主题"
+    "related": "相关术语"
   },
   "keyTakeaways": [
-    "SurtitleLive 使用按需 runtime 交付，让官方 viewer 避免一开始载入完整明文剧本 bundle。",
-    "加密字幕 segment 设计为在授权 viewer session 内显示，同时仍需现实看待浏览器与设备行为。",
-    "临时 token、有效期与服务器端撤销控制，有助于限制演出后的访问。",
-    "这些控制用于降低随手复制和不受控访问的风险，并不是绝对防复制承诺。"
+    "SurtitleLive 采用按需的运行时传递，官方观看端不会在一开始就加载完整的明文剧本包。",
+    "运行时的字幕内容以加密片段传递，并在浏览器内存中解密以供显示。",
+    "临时的 bearer token、有效期，以及服务器端的撤销控制，帮助限制观众访问在多久之内仍然有效。",
+    "这些控制能降低随手复制与不受控访问的风险；它们不是 DRM，也不是对绝对防复制的承诺。"
   ],
   "faq": [
     {
-      "question": "SurtitleLive 如何降低剧本被随手复制的风险？",
-      "answer": "官方 viewer 会围绕当前 cue 按需载入加密字幕 segment，而不是在观众进入时把完整剧本作为可读浏览器 payload 展示。"
+      "question": "SurtitleLive 如何降低随手复制剧本的情况？",
+      "answer": "官方观看端会在当前字幕（cue）附近按需加载加密的运行时片段，而不是在进入时把整份剧本当成一份可读的浏览器内容呈现。"
     },
     {
-      "question": "SurtitleLive 能否保证剧本永远不会被复制？",
-      "answer": "不能。任何数字交付系统都无法完全阻止截图、拍照、OCR，或持有有效访问权限的自定义客户端。SurtitleLive 是风险降低，不是绝对防复制。"
+      "question": "SurtitleLive 能保证剧本永远不会被复制吗？",
+      "answer": "不能。数字传递无法阻止屏幕截图、相机、OCR，或持有有效访问权的自制客户端。SurtitleLive 应被视为降低风险，而非绝对防复制。"
     },
     {
-      "question": "如果需要限制 viewer link 怎么办？",
-      "answer": "可以通过临时 token、有效期和服务器端撤销，限制新的或续用的 runtime 请求。"
+      "question": "如果需要限制某个观看链接，会怎么处理？",
+      "answer": "可以通过临时的 bearer token、设定的有效期，以及针对新的或续期运行时请求的服务器端撤销，来限制运行时访问。"
     },
     {
-      "question": "传输中的资料如何保护？",
-      "answer": "连接使用 HTTPS/TLS，runtime 交付使用加密 segment，作为分层安全模型的一部分。"
+      "question": "数据在传输过程中如何受到保护？",
+      "answer": "连接使用 HTTPS/TLS，运行时传递则使用加密的运行时片段，作为分层安全模型的一部分；该模型也包含访问范围限制与运营控制。"
     }
   ],
   "glossary": [
     {
-      "term": "Runtime segment",
-      "definition": "围绕演出进度请求的小型加密字幕单位，而不是完整明文剧本 bundle。"
+      "term": "运行时片段（Runtime segment）",
+      "definition": "在演出进度附近被请求的一小段加密字幕单位，而非完整的明文剧本包。"
     },
     {
-      "term": "Viewer access",
-      "definition": "授权观众 viewer 使用的受控浏览器 session。"
+      "term": "观众访问（Viewer access）",
+      "definition": "供目标观众使用、范围受限的浏览器会话。"
     },
     {
-      "term": "撤销",
-      "definition": "在发现问题后，可限制新的或续用 runtime access 的服务器端控制。"
+      "term": "撤销（Revocation）",
+      "definition": "一种服务器端控制，可在检测到疑虑后限制新的或续期的运行时访问。"
     },
     {
-      "term": "风险降低",
-      "definition": "降低实际复制风险的安全目标，但不宣称绝对阻止。"
+      "term": "降低风险（Risk reduction）",
+      "definition": "一种安全目标：在不宣称绝对防范的前提下，降低实际的复制与不受控访问风险。"
     }
   ]
 }

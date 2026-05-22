@@ -2,54 +2,54 @@
   "version": 1,
   "locale": "fr",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:15:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Points clés",
-    "faq": "FAQ",
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
-    "related": "Sujets connexes"
+    "related": "Termes liés"
   },
   "keyTakeaways": [
-    "SurtitleLive utilise une diffusion runtime à la demande pour éviter que le viewer officiel ne charge d’emblée un paquet complet du texte en clair.",
-    "Les segments de surtitres chiffrés sont destinés à être affichés dans une session viewer autorisée, avec un comportement navigateur et appareil à considérer de façon réaliste.",
-    "Les tokens temporaires, fenêtres d’expiration et révocations côté serveur aident à limiter l’accès après la représentation.",
-    "Ces contrôles réduisent la copie occasionnelle et l’accès non contrôlé ; ils ne promettent pas une protection absolue contre toute copie."
+    "SurtitleLive utilise une diffusion runtime à la demande, de sorte que le visualiseur officiel évite de charger d'emblée un script complet en clair.",
+    "Le contenu runtime des sous-titres est diffusé sous forme de segments chiffrés et déchiffré dans la mémoire du navigateur pour l'affichage.",
+    "Des jetons bearer temporaires, des fenêtres d'expiration et des contrôles de révocation côté serveur aident à limiter la durée pendant laquelle un accès spectateur reste utile.",
+    "Ces contrôles réduisent le risque de copie occasionnelle et d'accès non maîtrisé ; ce n'est pas du DRM ni une promesse de protection absolue contre la copie."
   ],
   "faq": [
     {
-      "question": "Comment SurtitleLive réduit-il la copie occasionnelle du texte ?",
-      "answer": "Le viewer officiel charge des segments chiffrés autour du cue courant au lieu de présenter tout le texte comme une charge utile lisible dès l’entrée."
+      "question": "Comment SurtitleLive réduit-il la copie occasionnelle des scripts ?",
+      "answer": "Le visualiseur officiel charge à la demande des segments runtime chiffrés autour du top en cours, au lieu de présenter, à l'entrée, l'ensemble du script comme une charge utile lisible dans le navigateur."
     },
     {
-      "question": "SurtitleLive peut-il garantir qu’un texte ne sera jamais copié ?",
-      "answer": "Non. Aucun système de diffusion numérique ne peut empêcher absolument les captures d’écran, caméras, OCR ou clients personnalisés avec accès valide. SurtitleLive relève de la réduction de risque."
+      "question": "SurtitleLive peut-il garantir qu'un script ne pourra jamais être copié ?",
+      "answer": "Non. La diffusion numérique ne peut empêcher les captures d'écran, les caméras, l'OCR ou les clients personnalisés disposant d'un accès valide. SurtitleLive doit être vu comme une réduction du risque, et non comme une protection absolue contre la copie."
     },
     {
-      "question": "Que se passe-t-il si un lien viewer doit être restreint ?",
-      "answer": "L’accès runtime peut être limité par des tokens temporaires, des fenêtres d’expiration et une révocation côté serveur pour les nouvelles requêtes ou renouvellements."
+      "question": "Que se passe-t-il s'il faut restreindre un lien de visualisation ?",
+      "answer": "L'accès runtime peut être limité au moyen de jetons bearer temporaires, de fenêtres d'expiration configurées et d'une révocation côté serveur pour les requêtes runtime nouvelles ou renouvelées."
     },
     {
       "question": "Comment les données sont-elles protégées en transit ?",
-      "answer": "Les connexions utilisent HTTPS/TLS, et la diffusion runtime emploie des segments chiffrés dans un modèle de sécurité par couches."
+      "answer": "Les connexions utilisent HTTPS/TLS, et la diffusion runtime utilise des segments runtime chiffrés, dans le cadre d'un modèle de sécurité en couches qui comprend aussi la limitation des accès et des contrôles opérationnels."
     }
   ],
   "glossary": [
     {
       "term": "Segment runtime",
-      "definition": "Petite unité de surtitre chiffrée demandée autour de la progression du spectacle plutôt qu’un paquet complet du texte en clair."
+      "definition": "Une petite unité de sous-titres chiffrée, demandée au fil de la progression du spectacle, plutôt qu'un script complet en clair."
     },
     {
-      "term": "Accès viewer",
-      "definition": "Session navigateur contrôlée utilisée par un spectateur autorisé."
+      "term": "Accès spectateur",
+      "definition": "La session de navigateur limitée qu'utilise un spectateur du public visé."
     },
     {
       "term": "Révocation",
-      "definition": "Contrôle côté serveur pouvant limiter les nouveaux accès runtime ou renouvellements après un problème."
+      "definition": "Un contrôle côté serveur qui peut limiter l'accès runtime nouveau ou renouvelé après la détection d'un problème."
     },
     {
-      "term": "Réduction de risque",
-      "definition": "Objectif de sécurité qui réduit le risque pratique de copie sans promettre une prévention absolue."
+      "term": "Réduction du risque",
+      "definition": "Un objectif de sécurité qui abaisse le risque concret de copie et d'accès non maîtrisé, sans prétendre à une prévention absolue."
     }
   ]
 }

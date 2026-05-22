@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T14:05:08.402Z",
+  "sectionTitles": {
+    "keyTakeaways": "Poin Utama",
+    "faq": "FAQ",
+    "glossary": "Glosarium",
+    "related": "Istilah Terkait"
+  },
+  "keyTakeaways": [
+    "SurtitleLive menggunakan pengiriman runtime sesuai permintaan sehingga penampil resmi menghindari pemuatan bundel skrip teks biasa lengkap di awal.",
+    "Konten subtitle runtime dikirim sebagai segmen terenkripsi dan didekripsi di memori peramban untuk ditampilkan.",
+    "Token bearer sementara, jendela kedaluwarsa, dan kontrol pencabutan sisi server membantu membatasi durasi akses penampil tetap berguna.",
+    "Kontrol ini mengurangi risiko penyalinan biasa dan akses yang tidak terkendali; ini bukan DRM atau janji perlindungan salinan absolut."
+  ],
+  "faq": [
+    {
+      "question": "Bagaimana SurtitleLive mengurangi penyalinan skrip biasa?",
+      "answer": "Penampil Resmi memuat segmen runtime terenkripsi sesuai permintaan di sekitar isyarat saat ini, alih-alih menyajikan seluruh skrip sebagai satu muatan peramban yang dapat dibaca pada saat masuk."
+    },
+    {
+      "question": "Apakah SurtitleLive dapat menjamin bahwa skrip tidak akan pernah bisa disalin?",
+      "answer": "Tidak. Pengiriman digital tidak dapat mencegah tangkapan layar, kamera, OCR, atau klien kustom dengan akses yang sah. SurtitleLive harus dipandang sebagai pengurangan risiko, bukan perlindungan salinan yang mutlak."
+    },
+    {
+      "question": "Apa yang terjadi jika tautan penampil perlu dibatasi?",
+      "answer": "Akses runtime dapat dibatasi melalui token bearer sementara, jendela kedaluwarsa yang dikonfigurasi, dan pencabutan sisi server untuk permintaan runtime baru atau yang diperbarui."
+    },
+    {
+      "question": "Bagaimana data dilindungi saat transit?",
+      "answer": "Koneksi menggunakan HTTPS/TLS, dan pengiriman runtime menggunakan segmen runtime terenkripsi sebagai bagian dari model keamanan berlapis yang juga mencakup pembatasan lingkup akses dan kontrol operasional."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Segmen runtime",
+      "definition": "Unit subtitle terenkripsi kecil yang diminta di sekitar progres pertunjukan, bukan bundel skrip teks biasa penuh."
+    },
+    {
+      "term": "Akses penampil",
+      "definition": "Sesi peramban dengan cakupan tertentu yang digunakan oleh penampil audiens yang dituju."
+    },
+    {
+      "term": "Pencabutan",
+      "definition": "Kontrol sisi server yang dapat membatasi akses runtime baru atau yang diperbarui setelah terdeteksinya kekhawatiran."
+    },
+    {
+      "term": "Pengurangan risiko",
+      "definition": "Tujuan keamanan yang menurunkan risiko penyalinan praktis dan akses tidak terkendali tanpa mengklaim pencegahan absolut."
+    }
+  ]
+}

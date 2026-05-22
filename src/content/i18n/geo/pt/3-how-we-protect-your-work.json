@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:23:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos-chave",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Termos relacionados"
+  },
+  "keyTakeaways": [
+    "A SurtitleLive usa uma entrega de runtime a pedido, por isso o visualizador oficial evita carregar à partida um pacote completo do guião em texto simples.",
+    "O conteúdo de runtime das legendas é entregue como segmentos cifrados e decifrado na memória do navegador para exibição.",
+    "Bearer tokens temporários, janelas de expiração e controlos de revogação do lado do servidor ajudam a limitar durante quanto tempo o acesso de um espectador continua útil.",
+    "Estes controlos reduzem o risco de cópia casual e de acesso não controlado; não são DRM nem uma promessa de proteção absoluta contra a cópia."
+  ],
+  "faq": [
+    {
+      "question": "Como é que a SurtitleLive reduz a cópia casual de guiões?",
+      "answer": "O visualizador oficial carrega a pedido segmentos de runtime cifrados em torno da deixa atual, em vez de apresentar à entrada o guião inteiro como um único conteúdo legível no navegador."
+    },
+    {
+      "question": "A SurtitleLive pode garantir que um guião nunca poderá ser copiado?",
+      "answer": "Não. A entrega digital não consegue impedir capturas de ecrã, câmaras, OCR ou clientes personalizados com acesso válido. A SurtitleLive deve ser vista como redução do risco, não como proteção absoluta contra a cópia."
+    },
+    {
+      "question": "O que acontece se for preciso restringir um link de visualização?",
+      "answer": "O acesso de runtime pode ser limitado através de bearer tokens temporários, janelas de expiração configuradas e revogação do lado do servidor para os pedidos de runtime novos ou renovados."
+    },
+    {
+      "question": "Como são protegidos os dados em trânsito?",
+      "answer": "As ligações usam HTTPS/TLS, e a entrega de runtime usa segmentos de runtime cifrados, como parte de um modelo de segurança em camadas que inclui também a limitação de acessos e controlos operacionais."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Segmento de runtime",
+      "definition": "Uma pequena unidade de legendas cifrada, pedida à medida que o espetáculo avança, em vez de um pacote completo do guião em texto simples."
+    },
+    {
+      "term": "Acesso de espectador",
+      "definition": "A sessão de navegador limitada usada por um espectador do público pretendido."
+    },
+    {
+      "term": "Revogação",
+      "definition": "Um controlo do lado do servidor que pode limitar o acesso de runtime novo ou renovado depois de detetada uma preocupação."
+    },
+    {
+      "term": "Redução do risco",
+      "definition": "Um objetivo de segurança que diminui o risco prático de cópia e de acesso não controlado, sem afirmar uma prevenção absoluta."
+    }
+  ]
+}

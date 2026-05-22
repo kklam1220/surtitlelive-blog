@@ -2,54 +2,54 @@
   "version": 1,
   "locale": "de",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:12:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Wichtige Erkenntnisse",
-    "faq": "Häufig gestellte Fragen (FAQ)",
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
     "glossary": "Glossar",
-    "related": "Verwandte Themen"
+    "related": "Verwandte Begriffe"
   },
   "keyTakeaways": [
-    "SurtitleLive nutzt bedarfsbasierte Runtime-Ausspielung, damit der offizielle Viewer kein vollständiges Klartext-Skriptpaket zu Beginn laden muss.",
-    "Verschlüsselte Untertitel-Segmente sind für die Anzeige innerhalb einer autorisierten Viewer-Session vorgesehen; Browser- und Geräteverhalten bleibt dabei realistisch einzuplanen.",
-    "Temporäre Zugriffstokens, Ablaufzeiten und serverseitige Sperrung helfen, den Zugriff nach der Aufführung zu begrenzen.",
-    "Diese Kontrollen reduzieren beiläufiges Kopieren und unkontrollierten Zugriff; sie sind kein Versprechen absoluter Kopiersicherheit."
+    "SurtitleLive nutzt eine On-Demand-Runtime-Auslieferung, sodass der offizielle Viewer es vermeidet, vorab ein vollständiges Klartext-Skript-Bundle zu laden.",
+    "Runtime-Untertitelinhalte werden als verschlüsselte Segmente ausgeliefert und zur Anzeige im Browserspeicher entschlüsselt.",
+    "Temporäre Bearer-Tokens, Ablauffenster und serverseitige Widerrufskontrollen helfen zu begrenzen, wie lange ein Viewer-Zugriff nutzbar bleibt.",
+    "Diese Kontrollen verringern das Risiko beiläufigen Kopierens und unkontrollierten Zugriffs; sie sind kein DRM und kein Versprechen absoluten Kopierschutzes."
   ],
   "faq": [
     {
-      "question": "Wie reduziert SurtitleLive beiläufiges Kopieren von Skripten?",
-      "answer": "Der offizielle Viewer lädt verschlüsselte Untertitel-Segmente bei Bedarf um den aktuellen Cue herum, statt beim Einstieg das gesamte Skript als lesbare Browser-Nutzlast anzuzeigen."
+      "question": "Wie verringert SurtitleLive beiläufiges Kopieren von Skripten?",
+      "answer": "Der offizielle Viewer lädt verschlüsselte Runtime-Segmente bei Bedarf rund um den aktuellen Cue, statt beim Einstieg das gesamte Skript als eine lesbare Browser-Nutzlast darzustellen."
     },
     {
-      "question": "Kann SurtitleLive garantieren, dass ein Skript nie kopiert werden kann?",
-      "answer": "Nein. Kein digitales Ausspielungssystem kann Screenshots, Kameras, OCR oder eigene Clients mit gültigem Zugriff absolut verhindern. SurtitleLive ist Risikoreduktion, kein absoluter Kopierschutz."
+      "question": "Kann SurtitleLive garantieren, dass ein Skript niemals kopiert werden kann?",
+      "answer": "Nein. Digitale Auslieferung kann Screenshots, Kameras, OCR oder eigene Clients mit gültigem Zugriff nicht verhindern. SurtitleLive sollte als Risikominderung verstanden werden, nicht als absoluter Kopierschutz."
     },
     {
       "question": "Was passiert, wenn ein Viewer-Link eingeschränkt werden muss?",
-      "answer": "Runtime-Zugriff kann über temporäre Tokens, Ablaufzeiten und serverseitige Sperrung für neue oder erneuerte Runtime-Anfragen begrenzt werden."
+      "answer": "Der Runtime-Zugriff lässt sich über temporäre Bearer-Tokens, konfigurierte Ablauffenster und serverseitigen Widerruf für neue oder erneuerte Runtime-Anfragen begrenzen."
     },
     {
-      "question": "Wie werden Daten während der Übertragung geschützt?",
-      "answer": "Verbindungen nutzen HTTPS/TLS, und Runtime-Ausspielung verwendet verschlüsselte Segmente als Teil eines mehrschichtigen Sicherheitsmodells."
+      "question": "Wie werden Daten bei der Übertragung geschützt?",
+      "answer": "Die Verbindungen nutzen HTTPS/TLS, und die Runtime-Auslieferung nutzt verschlüsselte Runtime-Segmente als Teil eines mehrschichtigen Sicherheitsmodells, das auch Zugriffseingrenzung und betriebliche Kontrollen umfasst."
     }
   ],
   "glossary": [
     {
       "term": "Runtime-Segment",
-      "definition": "Eine kleine verschlüsselte Untertitel-Einheit, die um den Show-Fortschritt herum angefordert wird, statt ein vollständiges Klartext-Skriptpaket zu laden."
+      "definition": "Eine kleine verschlüsselte Untertiteleinheit, die rund um den Aufführungsfortschritt angefordert wird – statt eines vollständigen Klartext-Skript-Bundles."
     },
     {
       "term": "Viewer-Zugriff",
-      "definition": "Die kontrollierte Browser-Session für einen autorisierten Zuschauer-Viewer."
+      "definition": "Die eingegrenzte Browsersitzung, die ein vorgesehener Publikums-Viewer nutzt."
     },
     {
-      "term": "Sperrung",
-      "definition": "Eine serverseitige Kontrolle, die neuen oder erneuerten Runtime-Zugriff nach einem Sicherheitsanliegen begrenzen kann."
+      "term": "Widerruf",
+      "definition": "Eine serverseitige Kontrolle, die neuen oder erneuerten Runtime-Zugriff begrenzen kann, nachdem ein Bedenken erkannt wurde."
     },
     {
-      "term": "Risikoreduktion",
-      "definition": "Ein Sicherheitsziel, das praktisches Kopierrisiko senkt, ohne absolute Verhinderung zu behaupten."
+      "term": "Risikominderung",
+      "definition": "Ein Sicherheitsziel, das praktisches Kopier- und unkontrolliertes Zugriffsrisiko senkt, ohne absolute Verhinderung zu behaupten."
     }
   ]
 }

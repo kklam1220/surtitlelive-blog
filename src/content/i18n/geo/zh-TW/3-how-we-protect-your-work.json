@@ -2,54 +2,54 @@
   "version": 1,
   "locale": "zh-TW",
   "slug": "3-how-we-protect-your-work",
-  "sourceHash": "884cfbca17653b4072069a59a5d5e57aaa7fd383fd09c72f2f8d129abcd60a18",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "重點整理",
     "faq": "常見問題",
     "glossary": "詞彙表",
-    "related": "相關資訊"
+    "related": "相關詞彙"
   },
   "keyTakeaways": [
-    "SurtitleLive 使用按需 runtime 交付，讓官方 viewer 避免一開始載入完整明文劇本 bundle。",
-    "加密字幕 segment 設計為在授權 viewer session 內顯示，同時仍需現實看待瀏覽器與裝置行為。",
-    "臨時 token、有效期與伺服器端撤銷控制，有助於限制演出後的存取。",
-    "這些控制用於降低隨手複製和不受控存取的風險，並不是絕對防複製承諾。"
+    "SurtitleLive 採用隨選的執行階段傳遞，官方觀看端不會在一開始就載入完整的明文劇本包。",
+    "執行階段的字幕內容以加密片段傳遞，並在瀏覽器記憶體中解密以供顯示。",
+    "暫時性的 bearer token、有效期間，以及伺服器端的撤銷控制，協助限制觀眾存取在多久之內仍然有效。",
+    "這些控制能降低隨手複製與不受控存取的風險；它們不是 DRM，也不是對絕對防複製的承諾。"
   ],
   "faq": [
     {
-      "question": "SurtitleLive 如何降低劇本被隨手複製的風險？",
-      "answer": "官方 viewer 會圍繞目前 cue 按需載入加密字幕 segment，而不是在觀眾進入時把完整劇本作為可讀瀏覽器 payload 展示。"
+      "question": "SurtitleLive 如何降低隨手複製劇本的情況？",
+      "answer": "官方觀看端會在目前字幕（cue）附近隨選載入加密的執行階段片段，而不是在進入時把整份劇本當成一份可讀的瀏覽器內容呈現。"
     },
     {
-      "question": "SurtitleLive 能否保證劇本永遠不會被複製？",
-      "answer": "不能。任何數位交付系統都無法完全阻止截圖、拍照、OCR，或持有有效存取權限的自訂 client。SurtitleLive 是風險降低，不是絕對防複製。"
+      "question": "SurtitleLive 能保證劇本永遠不會被複製嗎？",
+      "answer": "不能。數位傳遞無法阻止螢幕截圖、相機、OCR，或持有有效存取權的自製用戶端。SurtitleLive 應被視為降低風險，而非絕對防複製。"
     },
     {
-      "question": "如果需要限制 viewer link 怎麼辦？",
-      "answer": "可以透過臨時 token、有效期和伺服器端撤銷，限制新的或續用的 runtime request。"
+      "question": "如果需要限制某個觀看連結，會怎麼處理？",
+      "answer": "可以透過暫時性的 bearer token、設定的有效期間，以及針對新的或續期執行階段請求的伺服器端撤銷，來限制執行階段存取。"
     },
     {
-      "question": "傳輸中的資料如何保護？",
-      "answer": "連線使用 HTTPS/TLS，runtime 交付使用加密 segment，作為分層安全模型的一部分。"
+      "question": "資料在傳輸過程中如何受到保護？",
+      "answer": "連線使用 HTTPS/TLS，執行階段傳遞則使用加密的執行階段片段，作為分層安全模型的一部分；該模型也包含存取範圍限制與營運控制。"
     }
   ],
   "glossary": [
     {
-      "term": "Runtime segment",
-      "definition": "圍繞演出進度請求的小型加密字幕單位，而不是完整明文劇本 bundle。"
+      "term": "執行階段片段（Runtime segment）",
+      "definition": "在演出進度附近被請求的一小段加密字幕單位，而非完整的明文劇本包。"
     },
     {
-      "term": "Viewer access",
-      "definition": "授權觀眾 viewer 使用的受控瀏覽器 session。"
+      "term": "觀眾存取（Viewer access）",
+      "definition": "供目標觀眾使用、範圍受限的瀏覽器工作階段。"
     },
     {
-      "term": "撤銷",
-      "definition": "在發現問題後，可限制新的或續用 runtime access 的伺服器端控制。"
+      "term": "撤銷（Revocation）",
+      "definition": "一種伺服器端控制，可在偵測到疑慮後限制新的或續期的執行階段存取。"
     },
     {
-      "term": "風險降低",
-      "definition": "降低實際複製風險的安全目標，但不宣稱絕對阻止。"
+      "term": "降低風險（Risk reduction）",
+      "definition": "一種安全目標：在不宣稱絕對防範的前提下，降低實際的複製與不受控存取風險。"
     }
   ]
 }

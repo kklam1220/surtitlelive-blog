@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:20:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "In sintesi",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Termini correlati"
+  },
+  "keyTakeaways": [
+    "SurtitleLive usa una distribuzione runtime on-demand, così il visore ufficiale evita di caricare in anticipo un intero pacchetto del copione in chiaro.",
+    "Il contenuto runtime dei sottotitoli viene distribuito come segmenti cifrati e decifrato nella memoria del browser per la visualizzazione.",
+    "Bearer token temporanei, finestre di scadenza e controlli di revoca lato server aiutano a limitare per quanto tempo l'accesso di uno spettatore resta utile.",
+    "Questi controlli riducono il rischio di copia occasionale e di accesso non controllato; non sono DRM né una promessa di protezione assoluta dalla copia."
+  ],
+  "faq": [
+    {
+      "question": "Come riduce SurtitleLive la copia occasionale dei copioni?",
+      "answer": "Il visore ufficiale carica su richiesta segmenti runtime cifrati intorno al cue corrente, invece di presentare all'ingresso l'intero copione come un unico payload leggibile nel browser."
+    },
+    {
+      "question": "SurtitleLive può garantire che un copione non possa mai essere copiato?",
+      "answer": "No. La distribuzione digitale non può impedire screenshot, fotocamere, OCR o client personalizzati con accesso valido. SurtitleLive va inteso come riduzione del rischio, non come protezione assoluta dalla copia."
+    },
+    {
+      "question": "Cosa succede se un link al visore deve essere limitato?",
+      "answer": "L'accesso runtime può essere limitato tramite bearer token temporanei, finestre di scadenza configurate e revoca lato server per le richieste runtime nuove o rinnovate."
+    },
+    {
+      "question": "Come vengono protetti i dati in transito?",
+      "answer": "Le connessioni usano HTTPS/TLS e la distribuzione runtime usa segmenti runtime cifrati, come parte di un modello di sicurezza a più livelli che comprende anche la limitazione degli accessi e controlli operativi."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Segmento runtime",
+      "definition": "Una piccola unità di sottotitoli cifrata, richiesta man mano che lo spettacolo avanza, anziché un intero pacchetto del copione in chiaro."
+    },
+    {
+      "term": "Accesso spettatore",
+      "definition": "La sessione di browser circoscritta usata da uno spettatore del pubblico previsto."
+    },
+    {
+      "term": "Revoca",
+      "definition": "Un controllo lato server che può limitare l'accesso runtime nuovo o rinnovato dopo aver rilevato un problema."
+    },
+    {
+      "term": "Riduzione del rischio",
+      "definition": "Un obiettivo di sicurezza che abbassa il rischio concreto di copia e di accesso non controllato, senza pretendere una prevenzione assoluta."
+    }
+  ]
+}

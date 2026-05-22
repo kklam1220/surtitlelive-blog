@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "3-how-we-protect-your-work",
+  "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
+  "generatedAt": "2026-05-22T04:18:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Términos relacionados"
+  },
+  "keyTakeaways": [
+    "SurtitleLive usa una entrega de runtime bajo demanda, de modo que el visor oficial evita cargar de entrada un paquete completo del guion en texto plano.",
+    "El contenido de runtime de los subtítulos se entrega como segmentos cifrados y se descifra en la memoria del navegador para mostrarlo.",
+    "Los tokens bearer temporales, las ventanas de caducidad y los controles de revocación del lado del servidor ayudan a limitar cuánto tiempo sigue siendo útil el acceso de un espectador.",
+    "Estos controles reducen el riesgo de copia casual y de acceso no controlado; no son DRM ni una promesa de protección absoluta contra la copia."
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo reduce SurtitleLive la copia casual de guiones?",
+      "answer": "El visor oficial carga bajo demanda segmentos de runtime cifrados en torno al pie actual, en lugar de presentar al entrar todo el guion como una única carga legible en el navegador."
+    },
+    {
+      "question": "¿Puede SurtitleLive garantizar que un guion nunca se podrá copiar?",
+      "answer": "No. La entrega digital no puede impedir capturas de pantalla, cámaras, OCR ni clientes personalizados con acceso válido. SurtitleLive debe verse como reducción del riesgo, no como protección absoluta contra la copia."
+    },
+    {
+      "question": "¿Qué ocurre si hay que restringir un enlace de visualización?",
+      "answer": "El acceso de runtime se puede limitar mediante tokens bearer temporales, ventanas de caducidad configuradas y revocación del lado del servidor para las solicitudes de runtime nuevas o renovadas."
+    },
+    {
+      "question": "¿Cómo se protegen los datos en tránsito?",
+      "answer": "Las conexiones usan HTTPS/TLS, y la entrega de runtime usa segmentos de runtime cifrados, como parte de un modelo de seguridad por capas que también incluye acotar el acceso y controles operativos."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Segmento de runtime",
+      "definition": "Una pequeña unidad de subtítulos cifrada que se solicita según avanza el espectáculo, en lugar de un paquete completo del guion en texto plano."
+    },
+    {
+      "term": "Acceso de espectador",
+      "definition": "La sesión de navegador acotada que usa un espectador del público previsto."
+    },
+    {
+      "term": "Revocación",
+      "definition": "Un control del lado del servidor que puede limitar el acceso de runtime nuevo o renovado después de detectar una preocupación."
+    },
+    {
+      "term": "Reducción del riesgo",
+      "definition": "Un objetivo de seguridad que disminuye el riesgo práctico de copia y de acceso no controlado, sin afirmar una prevención absoluta."
+    }
+  ]
+}
