@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
-import { listLocalizedLocalesForSlug } from '../lib/localizedBlog';
+import { listIndexedLocalizedLocalesForSlug, listLocalizedLocalesForSlug } from '../lib/localizedBlog';
 import { hasAuthoredGeoSection, readGeoBlock } from '../lib/geoBlocks';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
 
@@ -32,6 +32,11 @@ const relatedPosts = allPosts
 	.slice(0, 3);
 const hreflangs = [
 	{ lang: "en", path: canonicalPath },
+	...listIndexedLocalizedLocalesForSlug(post.id).map((locale: string) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/${post.id}/` })),
+	{ lang: "x-default", path: canonicalPath },
+];
+const localeLinks = [
+	{ lang: "en", path: canonicalPath },
 	...localizedLocales.map((locale: string) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/${post.id}/` })),
 	{ lang: "x-default", path: canonicalPath },
 ];
@@ -42,6 +47,7 @@ const hreflangs = [
 	slug={post.id}
 	canonicalPath={canonicalPath}
 	hreflangs={hreflangs}
+	localeLinks={localeLinks}
 	faqItems={visibleGeoBlock?.faq ?? []}
 >
 	<Content />

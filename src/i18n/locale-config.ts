@@ -21,6 +21,34 @@ export const SUPPORTED_BLOG_LOCALES = [
 
 export type BlogSupportedLocale = (typeof SUPPORTED_BLOG_LOCALES)[number];
 
+export const BLOG_INDEXED_LOCALES = [
+	'en',
+	'de',
+	'es',
+	'fr',
+	'ja',
+	'ko',
+	'zh-TW',
+] as const satisfies readonly BlogSupportedLocale[];
+
+export const BLOG_SECONDARY_LOCALES = [
+	'ar',
+	'id',
+	'it',
+	'pl',
+	'pt',
+	'ru',
+	'th',
+	'tr',
+	'uk',
+	'vi',
+	'zh-CN',
+] as const satisfies readonly BlogSupportedLocale[];
+
+export const BLOG_ALL_LOCALE_INDEXED_SLUGS = [
+	'9-english-surtitles-non-english-show-fringe',
+] as const;
+
 export interface BlogLocaleMeta {
 	native: string;
 	flag: string;
@@ -449,6 +477,15 @@ export const BLOG_LOCALE_META: Record<BlogSupportedLocale, BlogLocaleMeta> = {
 
 export function isBlogSupportedLocale(value: unknown): value is BlogSupportedLocale {
 	return typeof value === 'string' && (SUPPORTED_BLOG_LOCALES as readonly string[]).includes(value);
+}
+
+export function isBlogIndexedLocale(value: unknown): value is BlogSupportedLocale {
+	return typeof value === 'string' && (BLOG_INDEXED_LOCALES as readonly string[]).includes(value);
+}
+
+export function isBlogArticleIndexable(locale: unknown, slug: unknown): boolean {
+	return isBlogIndexedLocale(locale)
+		|| (isBlogSupportedLocale(locale) && typeof slug === 'string' && BLOG_ALL_LOCALE_INDEXED_SLUGS.includes(slug as (typeof BLOG_ALL_LOCALE_INDEXED_SLUGS)[number]));
 }
 
 export function resolveBlogLocaleMeta(value: unknown): BlogLocaleMeta {

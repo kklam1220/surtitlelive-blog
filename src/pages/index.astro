@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
-import { listLocalizedLocales } from '../lib/localizedBlog';
+import { listIndexedLocalizedLocales, listLocalizedLocales } from '../lib/localizedBlog';
 
 const rawPosts = await getCollection('blog');
 const uniquePostsById = Array.from(new Map(rawPosts.map((post) => [post.id, post])).values());
@@ -22,8 +22,14 @@ const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const postHref = (slug) => `${normalizedBaseUrl}${slug}/`;
 const localizedLocales = listLocalizedLocales();
+const indexedLocalizedLocales = listIndexedLocalizedLocales();
 const localeMeta = resolveBlogLocaleMeta('en');
 const hreflangs = [
+	{ lang: "en", path: normalizedBaseUrl },
+	...indexedLocalizedLocales.map((locale) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/` })),
+	{ lang: "x-default", path: normalizedBaseUrl },
+];
+const localeLinks = [
 	{ lang: "en", path: normalizedBaseUrl },
 	...localizedLocales.map((locale) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/` })),
 	{ lang: "x-default", path: normalizedBaseUrl },
@@ -157,7 +163,7 @@ const hreflangs = [
 		</style>
 	</head>
 	<body>
-		<Header currentLocale="en" localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
+		<Header currentLocale="en" localeLinks={localeLinks.filter((item) => item.lang !== 'x-default')} />
 		<main>
 			<section>
 				<h1 class="section-title">{localeMeta.articlesHeading}</h1>

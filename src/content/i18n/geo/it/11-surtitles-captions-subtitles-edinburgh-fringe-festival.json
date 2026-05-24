@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "11-surtitles-captions-subtitles-edinburgh-fringe-festival",
+  "sourceHash": "f213e34059d534b41bdda7da6b9a7e987b5fe8b92797218718a63df5f08411bb",
+  "generatedAt": "2026-05-23T03:35:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Punti chiave",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Termini correlati"
+  },
+  "keyTakeaways": [
+    "Il problema non è se la squadra dice sottotitoli, sopratitoli o sottotitoli per l'accessibilità; il rischio è costruire il flusso di lavoro sbagliato perché la parola non è mai stata definita.",
+    "Per gli spettacoli non anglofoni al Fringe, la comunicazione al pubblico può dire «sottotitoli in inglese», ma la pianificazione di produzione deve di solito precisare sopratitoli in inglese preparati, lanciati dal vivo da un operatore.",
+    "I sottotitoli per l'accessibilità sono spesso un impegno di accesso: possono richiedere dialogo, informazioni sui parlanti, musica, effetti sonori e suono fuori scena, non solo battute tradotte.",
+    "La Modalità Proiezione e il visore mobile sono decisioni di diffusione, non definizioni di contenuto; funzionano bene solo dopo che la squadra sa quale testo sta preparando.",
+    "Quando la terminologia è chiara, la configurazione di SurtitleLive diventa più facile: tracce di lingua, proiezione, lettura sul telefono, lancio da parte dell'operatore, blackout e recupero possono essere configurati attorno al reale bisogno del pubblico."
+  ],
+  "faq": [
+    {
+      "question": "Qual è la trappola terminologica per gli spettacoli non anglofoni al Festival Fringe di Edimburgo?",
+      "answer": "Una compagnia può chiedere sottotitoli, una sala può sentire sottotitoli per l'accessibilità, una traduttrice può preparare sopratitoli e un direttore di scena può aver bisogno del controllo dei lanci dal vivo. Ogni parola può implicare un flusso diverso, quindi la squadra dovrebbe definire il testo, il metodo di diffusione e l'esercizio dal vivo prima della configurazione."
+    },
+    {
+      "question": "Possiamo dire «sottotitoli in inglese» nella comunicazione al pubblico?",
+      "answer": "Sì. Molti spettatori capiscono l'espressione «sottotitoli in inglese». Per la pianificazione di produzione, è di solito meglio precisare sopratitoli in inglese preparati se il testo è una traduzione revisionata lanciata dal vivo durante lo spettacolo."
+    },
+    {
+      "question": "Qual è la differenza tra sopratitoli e sottotitoli per l'accessibilità a teatro?",
+      "answer": "I sopratitoli indicano di solito testo di traduzione preparato per uno spettacolo dal vivo in un'altra lingua. I sottotitoli per l'accessibilità sostengono di solito l'accesso alla parola e al suono, inclusi dialogo, identificazione dei parlanti, suoni fuori scena, musica o effetti."
+    },
+    {
+      "question": "La proiezione e la lettura sul telefono sono la stessa decisione dei sopratitoli o dei sottotitoli per l'accessibilità?",
+      "answer": "No. La proiezione e la lettura sul telefono sono metodi di diffusione. I sopratitoli e i sottotitoli per l'accessibilità descrivono quale tipo di testo viene preparato. Uno spettacolo può diffondere sopratitoli di traduzione tramite proiezione, tramite visore mobile, o entrambi."
+    },
+    {
+      "question": "In che modo una terminologia chiara aiuta la configurazione di SurtitleLive?",
+      "answer": "Una volta che la squadra sa se prepara sopratitoli di traduzione, sottotitoli per l'accessibilità, o entrambi, può decidere quali tracce di lingua attivare, se usare Modalità Proiezione, visore mobile, o entrambi, e cosa l'operatore deve lanciare dal vivo."
+    },
+    {
+      "question": "Cosa dovrebbe chiedere una piccola squadra del Fringe invece di soli sottotitoli?",
+      "answer": "Una richiesta più chiara: sopratitoli in inglese preparati per uno spettacolo non anglofono dal vivo, lanciati da un operatore, diffusi in Modalità Proiezione, tramite visore mobile, o entrambi. Se è richiesto l'accesso tramite sottotitoli per l'accessibilità, pianificare separatamente le informazioni sonore e sui parlanti."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sopratitoli",
+      "definition": "Testo preparato mostrato durante uno spettacolo dal vivo, di solito per tradurre uno spettacolo recitato in un'altra lingua."
+    },
+    {
+      "term": "Sottotitoli per l'accessibilità (captions)",
+      "definition": "Testo che rappresenta il dialogo e le informazioni sonore rilevanti, usato spesso per sostenere persone sorde o con problemi di udito."
+    },
+    {
+      "term": "Sottotitoli",
+      "definition": "Un termine familiare, rivolto al pubblico, per testo tradotto o trascritto; più comune nel cinema e nel video, ma usato spesso in modo informale per il teatro dal vivo."
+    },
+    {
+      "term": "Supertitoli (supertitles)",
+      "definition": "Un termine strettamente legato ai sopratitoli, usato spesso nell'opera e in alcuni contesti nordamericani per testo mostrato sopra il palco o nelle vicinanze."
+    },
+    {
+      "term": "Sottotitoli attivabili (closed captions)",
+      "definition": "Sottotitoli per l'accessibilità visibili solo agli spettatori che scelgono di usarli, spesso su un dispositivo personale come uno smartphone o un tablet."
+    },
+    {
+      "term": "Visore mobile",
+      "definition": "Una vista per il pubblico nel browser, aperta tramite QR code o link, che permette a ciascuno di leggere una lingua attivata sul proprio dispositivo."
+    },
+    {
+      "term": "Modalità Proiezione",
+      "definition": "Una modalità di visualizzazione pensata per schermi di sala o proiettori, usata quando la sala consente testo visibile e condiviso."
+    },
+    {
+      "term": "Lancio da parte dell'operatore",
+      "definition": "Il processo dal vivo di far avanzare il testo preparato al ritmo dello spettacolo, incluso trattenere, saltare o nascondere il testo quando serve."
+    }
+  ]
+}

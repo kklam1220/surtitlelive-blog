@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-22T05:14:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Begriffe"
+  },
+  "keyTakeaways": [
+    "SurtitleLive entstand nicht aus einer Softwarekategorie, sondern aus dem sprachübergreifenden Problem eines Theaterautors: Wie kann eine Aufführung ihre Originalsprache bewahren, während ein anderes Publikum ihr folgt?",
+    "Englische Übertitel sollten eine Einladung in eine nicht englischsprachige Aufführung sein, kein Ersatz für Stimme, Rhythmus und kulturelle Erinnerung der Originalsprache.",
+    "Übersetzung als Gastfreundschaft heißt, Sprachwege so zu gestalten, dass mehr Menschen dem Werk begegnen, ohne dass das Werk weniger es selbst sein muss.",
+    "Mobile Sprachwahl lässt eine einzige Live-Aufführung englischsprachiges Publikum, originalsprachige Lesende und weitere vorbereitete Sprachspuren unterstützen, ohne einen gemeinsamen Bildschirm zu überfüllen.",
+    "Leise Technik stützt den Bühnen-Workflow: vorbereiteter Text, geprüfte Sprachentscheidungen, Live-Auslösung, mobile Viewer, Projektionsmodus und Rückfinden, wenn sich die Aufführung ändert."
+  ],
+  "faq": [
+    {
+      "question": "Was bedeutet „Übersetzung als Gastfreundschaft“ fürs Theater?",
+      "answer": "Übersetzung als Gastfreundschaft heißt, dem Publikum einen echten Zugang zu einer Aufführung zu geben, ohne von der Originalsprache zu verlangen, zu verschwinden. Englische Übertitel können helfen, der Geschichte zu folgen, während die gesprochene oder gesungene Sprache auf der Bühne lebendig bleibt."
+    },
+    {
+      "question": "Warum sollten englische Übertitel die Originalsprache nicht ersetzen?",
+      "answer": "Die Originalsprache trägt Rhythmus, Register, Timing, kulturelle Erinnerung, Humor, Schweigen und sozialen Druck. Eine Übersetzung kann das Publikum leiten, doch die Aufführung verliert etwas, wenn die Ausgangssprache als Verpackung statt als Teil des Werks behandelt wird."
+    },
+    {
+      "question": "Wie schützt mobile Sprachwahl die ursprüngliche Stimme?",
+      "answer": "Mobile Viewer lassen jeden Gast eine freigeschaltete Sprache auf dem eigenen Gerät wählen. Englischsprachiges Publikum kann also Englisch lesen, originalsprachige Lesende können den Ausgangstext sichtbar halten, und geladene Gäste oder Tourneepartner können einer weiteren vorbereiteten Sprache folgen, wenn die Company sie unterstützt."
+    },
+    {
+      "question": "Warum ist Live-Auslösen weiterhin wichtig, wenn die Übertitel vorbereitet sind?",
+      "answer": "Theater ist keine Wiedergabe. Spielende halten inne, Zeilen ändern sich, Szenen springen, und das Timing atmet anders als in der Probe. Ein menschlicher Operator kann vorbereitete Übertitel halten, auslösen, zurückfinden oder ausblenden, damit die Sprachunterstützung dem lebendigen Ereignis folgt."
+    },
+    {
+      "question": "Ist das ein Argument der Barrierefreiheit oder des Marketings?",
+      "answer": "Es ist beides, aber es beginnt mit Sorgfalt. Klare Sprachwege können mehr Menschen das Gefühl geben, eine nicht englischsprachige Aufführung wählen zu können – lokales Publikum, Kritik, Programmgestalter, Communitys der Ausgangssprache und mehrsprachige Gäste."
+    },
+    {
+      "question": "Wo finde ich die praktische Einrichtungsanleitung für Fringe-Übertitel?",
+      "answer": "Für den Schritt-für-Schritt-Ablauf lesen Sie Artikel 9: So fügen Sie einer nicht englischen Aufführung beim Edinburgh Fringe Festival englische Übertitel hinzu. Dieser Artikel erklärt, warum der Workflow künstlerisch zählt; Artikel 9 erklärt, wie man ihn vorbereitet und durchführt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Übersetzung als Gastfreundschaft",
+      "definition": "Eine Art, Übersetzung und Übertitel so zu gestalten, dass das Publikum in ein Werk eintreten kann, ohne die Originalsprache oder kulturelle Stimme verschwinden zu lassen."
+    },
+    {
+      "term": "Ursprüngliche Stimme",
+      "definition": "Der Rhythmus, das Register, das Timing, der Humor, das Schweigen, der soziale Druck und die kulturelle Erinnerung, die die Sprache trägt, in der eine Aufführung entstanden ist."
+    },
+    {
+      "term": "Sprachweg",
+      "definition": "Ein gewählter Weg in eine Live-Aufführung, etwa englische Übertitel, originalsprachiger Text oder eine weitere vorbereitete Sprachspur."
+    },
+    {
+      "term": "Englische Übertitel",
+      "definition": "Vorbereiteter englischer Text, der während einer Live-Aufführung gezeigt wird, um dem Publikum zu helfen, einer in einer anderen Sprache gesprochenen oder gesungenen Arbeit zu folgen."
+    },
+    {
+      "term": "Mobiler Viewer",
+      "definition": "Eine browserbasierte Publikumsansicht, per QR-Code oder Link geöffnet, mit der jeder Gast eine freigeschaltete Übertitelsprache auf dem eigenen Gerät lesen kann."
+    },
+    {
+      "term": "Projektionsmodus",
+      "definition": "Ein Übertitel-Anzeigemodus für einen Theaterbildschirm oder Projektor, oft zusammen mit mobilen Viewern genutzt, wenn der Spielort Projektion zulässt."
+    },
+    {
+      "term": "Live-Auslösen",
+      "definition": "Der Live-Vorgang, vorbereitete Übertitel im Takt der Aufführung weiterzuschalten – einschließlich Halten, Springen oder Ausblenden, wenn sich die Aufführung ändert."
+    }
+  ]
+}

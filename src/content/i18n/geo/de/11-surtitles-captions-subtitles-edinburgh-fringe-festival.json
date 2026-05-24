@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "11-surtitles-captions-subtitles-edinburgh-fringe-festival",
+  "sourceHash": "f213e34059d534b41bdda7da6b9a7e987b5fe8b92797218718a63df5f08411bb",
+  "generatedAt": "2026-05-23T03:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Begriffe"
+  },
+  "keyTakeaways": [
+    "Das Problem ist nicht, ob ein Team Untertitel, Übertitel oder Captions sagt; das Risiko ist, den falschen Workflow zu bauen, weil das Wort nie definiert wurde.",
+    "Bei nicht englischsprachigen Fringe-Aufführungen darf die Kommunikation zum Publikum „englische Untertitel“ sagen, doch die Produktionsplanung sollte meist vorbereitete englische Übertitel angeben, live von einem Operator ausgelöst.",
+    "Captions sind oft eine Zugangs-Zusage: Sie können Dialog, Sprecherinformationen, Musik, Geräusche und Ton aus dem Off brauchen, nicht nur übersetzte Zeilen.",
+    "Projektionsmodus und mobiler Viewer sind Ausspielungsentscheidungen, keine Inhaltsdefinitionen; sie funktionieren erst gut, wenn das Team weiß, welchen Text es vorbereitet.",
+    "Wenn die Terminologie klar ist, wird die SurtitleLive-Einrichtung leichter: Sprachspuren, Projektion, mobiles Lesen, Operator-Auslösung, Blackout und Rücksprung lassen sich am echten Publikumsbedarf ausrichten."
+  ],
+  "faq": [
+    {
+      "question": "Was ist die Terminologiefalle für nicht englischsprachige Aufführungen beim Edinburgh Festival Fringe?",
+      "answer": "Eine Company fragt vielleicht nach Untertiteln, eine Spielstätte hört Captions, eine Übersetzerin bereitet Übertitel vor, und eine Regieassistenz braucht Live-Cue-Steuerung. Jedes Wort kann einen anderen Workflow meinen, daher sollte das Team Text, Ausspielweg und Live-Betrieb vor der Einrichtung definieren."
+    },
+    {
+      "question": "Dürfen wir in der Kommunikation zum Publikum „englische Untertitel“ sagen?",
+      "answer": "Ja. Viele Zuschauende verstehen den Ausdruck „englische Untertitel“. Für die Produktionsplanung ist es meist besser, vorbereitete englische Übertitel anzugeben, wenn der Text eine geprüfte Übersetzung ist, die während der Aufführung live ausgelöst wird."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Übertiteln und Captions im Theater?",
+      "answer": "Übertitel meinen meist vorbereiteten Übersetzungstext für eine Live-Aufführung in einer anderen Sprache. Captions unterstützen meist den Zugang zu Sprach- und Toninformationen, einschließlich Dialog, Sprecheridentifikation, Geräuschen aus dem Off, Musik oder Effekten."
+    },
+    {
+      "question": "Sind Projektion und mobiles Lesen dieselbe Entscheidung wie Übertitel oder Captions?",
+      "answer": "Nein. Projektion und mobiles Lesen sind Ausspielwege. Übertitel und Captions beschreiben, welche Art von Text vorbereitet wird. Eine Aufführung kann Übersetzungs-Übertitel per Projektion, per mobilem Viewer oder per beidem ausspielen."
+    },
+    {
+      "question": "Wie hilft klare Terminologie der SurtitleLive-Einrichtung?",
+      "answer": "Sobald das Team weiß, ob es Übersetzungs-Übertitel, Zugangs-Captions oder beides vorbereitet, kann es entscheiden, welche Sprachspuren es freischaltet, ob es Projektionsmodus, mobilen Viewer oder beides nutzt und was der Operator live auslösen muss."
+    },
+    {
+      "question": "Was sollte ein kleines Fringe-Team statt nur „Untertitel“ anfragen?",
+      "answer": "Eine klarere Anfrage: vorbereitete englische Übertitel für eine nicht englische Live-Aufführung, von einem Operator ausgelöst, ausgespielt per Projektionsmodus, mobilem Viewer oder beidem. Falls ein Zugang per Captions erforderlich ist, Ton- und Sprecherinformationen separat planen."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Übertitel",
+      "definition": "Vorbereiteter Text, der während einer Live-Aufführung gezeigt wird, meist um eine in einer anderen Sprache gespielte Aufführung zu übersetzen."
+    },
+    {
+      "term": "Captions (barrierefreie Untertitelung)",
+      "definition": "Text, der Dialog und relevante Toninformationen wiedergibt, oft genutzt, um gehörlose oder schwerhörige Menschen zu unterstützen."
+    },
+    {
+      "term": "Untertitel",
+      "definition": "Ein dem Publikum vertrauter Begriff für übersetzten oder transkribierten Text; in Film und Video häufiger, aber oft lässig auch fürs Live-Theater verwendet."
+    },
+    {
+      "term": "Supertitel (supertitles)",
+      "definition": "Ein eng mit Übertiteln verwandter Begriff, oft in der Oper und in einigen nordamerikanischen Kontexten für Text über oder nahe der Bühne verwendet."
+    },
+    {
+      "term": "Closed Captions",
+      "definition": "Captions, die nur für Gäste sichtbar sind, die sie zuschalten, oft auf einem persönlichen Gerät wie einem Smartphone oder Tablet."
+    },
+    {
+      "term": "Mobiler Viewer",
+      "definition": "Eine browserbasierte Publikumsansicht, per QR-Code oder Link geöffnet, mit der jeder Gast eine freigeschaltete Sprache auf dem eigenen Gerät lesen kann."
+    },
+    {
+      "term": "Projektionsmodus",
+      "definition": "Ein Anzeigemodus für Theaterbildschirme oder Projektoren, genutzt, wenn die Spielstätte gemeinsam sichtbaren Text zulässt."
+    },
+    {
+      "term": "Operator-Auslösung",
+      "definition": "Der Live-Vorgang, vorbereiteten Text im Takt der Aufführung weiterzuschalten, einschließlich Halten, Springen oder Ausblenden bei Bedarf."
+    }
+  ]
+}

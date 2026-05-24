@@ -2,7 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import LanguageSelector from './LanguageSelector.astro';
 import { buildMainSiteHref, MAIN_SITE_URL } from '../consts';
-import { resolveBlogNavCopy } from '../i18n/locale-config';
+import { isBlogSupportedLocale, resolveBlogNavCopy } from '../i18n/locale-config';
 
 type LocaleLink = {
 	lang: string;
@@ -18,23 +18,40 @@ const { currentLocale = 'en', localeLinks = [] } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL ?? '/';
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const logoHref = new URL('/logo/New_logo.png', MAIN_SITE_URL).toString();
-const navCopy = resolveBlogNavCopy(currentLocale);
+const navLocale = isBlogSupportedLocale(currentLocale) ? currentLocale : 'en';
+const navCopy = resolveBlogNavCopy(navLocale);
+
+const localizedMainHref = (path = '/') => {
+	const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+
+	if (normalizedPath.startsWith('/auth/')) {
+		return buildMainSiteHref(normalizedPath);
+	}
+
+	if (navLocale === 'en') {
+		return buildMainSiteHref(normalizedPath);
+	}
+
+	return buildMainSiteHref(normalizedPath === '/' ? `/${navLocale}` : `/${navLocale}${normalizedPath}`);
+};
+
+const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalizedBaseUrl}${navLocale}/`;
 ---
 
 <header>
 	<nav>
 		<div class="logo-container">
-			<a href={buildMainSiteHref('/')} aria-label={navCopy.homeAria}>
+			<a href={localizedMainHref('/')} aria-label={navCopy.homeAria}>
 				<img src={logoHref} alt={navCopy.logoAlt} height="50" style="height: 50px; width: auto;" />
 			</a>
 		</div>
 		
 		<div class="internal-links">
-			<a href={buildMainSiteHref('/features')}>{navCopy.features}</a>
-			<a href={buildMainSiteHref('/pricing')}>{navCopy.pricing}</a>
-			<a href={buildMainSiteHref('/guides')}>{navCopy.guides}</a>
-			<HeaderLink href={normalizedBaseUrl}>{navCopy.blog}</HeaderLink>
-			<a href={buildMainSiteHref('/contact')}>{navCopy.contactUs}</a>
+			<a href={localizedMainHref('/features')}>{navCopy.features}</a>
+			<a href={localizedMainHref('/pricing')}>{navCopy.pricing}</a>
+			<a href={localizedMainHref('/guides')}>{navCopy.guides}</a>
+			<HeaderLink href={localizedBlogHref}>{navCopy.blog}</HeaderLink>
+			<a href={localizedMainHref('/contact')}>{navCopy.contactUs}</a>
 		</div>
 
 		<div class="auth-buttons">

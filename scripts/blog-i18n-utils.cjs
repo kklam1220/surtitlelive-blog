@@ -91,7 +91,10 @@ function parseFrontmatter(fileContent) {
 function listSourcePosts(sourceDirAbsolute) {
   const entries = fs
     .readdirSync(sourceDirAbsolute, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && /\.(md|mdx)$/i.test(entry.name))
+    .filter(
+      (entry) =>
+        entry.isFile() && /\.(md|mdx)$/i.test(entry.name) && !entry.name.startsWith("_"),
+    )
     .map((entry) => entry.name)
     .sort();
 

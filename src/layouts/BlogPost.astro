@@ -15,6 +15,7 @@ type HeroImage = ImageMetadata | string;
 type Props = Omit<CollectionEntry<'blog'>['data'], 'heroImage'> & {
 	heroImage?: HeroImage;
 	heroImageAlt?: string;
+	robots?: string;
 };
 
 const {
@@ -28,7 +29,9 @@ const {
 	lang = "en",
 	canonicalPath,
 	hreflangs = [],
+	localeLinks = hreflangs,
 	faqItems = [],
+	robots,
 } = Astro.props;
 
 const localeMeta = resolveBlogLocaleMeta(lang);
@@ -99,6 +102,7 @@ const fullSchema = [
 				image={metaImage}
 				canonicalPath={canonicalPath}
 				hreflangs={hreflangs}
+				robots={robots}
 			/>
 			<script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />
 			<style>
@@ -148,7 +152,7 @@ const fullSchema = [
 	</head>
 
 	<body>
-		<Header currentLocale={lang} localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
+		<Header currentLocale={lang} localeLinks={localeLinks.filter((item) => item.lang !== 'x-default')} />
 		<main>
 			<article>
 				<div class="hero-image">

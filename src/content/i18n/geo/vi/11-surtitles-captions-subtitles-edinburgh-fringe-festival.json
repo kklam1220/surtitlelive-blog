@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "11-surtitles-captions-subtitles-edinburgh-fringe-festival",
+  "sourceHash": "f213e34059d534b41bdda7da6b9a7e987b5fe8b92797218718a63df5f08411bb",
+  "generatedAt": "2026-05-23T05:00:14.784Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Bảng thuật ngữ",
+    "related": "Thuật ngữ liên quan"
+  },
+  "keyTakeaways": [
+    "Vấn đề không nằm ở việc cả đoàn nói là subtitles, surtitles hay captions; rủi ro nằm ở việc xây dựng sai quy trình làm việc vì từ ngữ chưa từng được định nghĩa.",
+    "Đối với các vở diễn Fringe không nói tiếng Anh, ấn phẩm hướng đến khán giả có thể ghi là English subtitles, nhưng kế hoạch sản xuất thường nên chỉ định rõ English surtitles đã chuẩn bị, được cue trực tiếp bởi người vận hành.",
+    "Captions thường là một cam kết về khả năng tiếp cận: chúng có thể cần lời thoại, thông tin người nói, âm nhạc, hiệu ứng âm thanh và âm thanh ngoài sân khấu, chứ không chỉ là những dòng được dịch.",
+    "Projection Mode và mobile viewer là các quyết định về phương thức truyền tải, không phải định nghĩa nội dung; chúng chỉ hoạt động tốt sau khi cả đoàn biết mình đang chuẩn bị loại văn bản gì.",
+    "Khi thuật ngữ rõ ràng, việc thiết lập SurtitleLive trở nên dễ dàng hơn: các track ngôn ngữ, projection, mobile viewing, operator cueing, blackout và recovery có thể được cấu hình xoay quanh nhu cầu thực sự của khán giả."
+  ],
+  "faq": [
+    {
+      "question": "Cái bẫy thuật ngữ cho các vở diễn không nói tiếng Anh tại Edinburgh Fringe Festival là gì?",
+      "answer": "Một đoàn có thể yêu cầu subtitles, địa điểm có thể hiểu là captions, biên dịch viên có thể chuẩn bị surtitles, và người quản lý sân khấu có thể cần điều khiển cue trực tiếp. Mỗi từ có thể ngụ ý một quy trình làm việc khác nhau, vì vậy cả đoàn nên xác định rõ văn bản, phương thức truyền tải và vận hành trực tiếp trước khi thiết lập."
+    },
+    {
+      "question": "Chúng tôi có thể nói English subtitles trong các ấn phẩm marketing hướng đến khán giả không?",
+      "answer": "Có. Nhiều khán giả hiểu cụm từ English subtitles. Đối với kế hoạch sản xuất, thường tốt hơn là nên chỉ định rõ English surtitles đã chuẩn bị nếu văn bản đó là một bản dịch đã được kiểm tra và được cue trực tiếp trong buổi biểu diễn."
+    },
+    {
+      "question": "Sự khác biệt giữa surtitles và captions trong sân khấu là gì?",
+      "answer": "Surtitles thường có nghĩa là văn bản dịch đã chuẩn bị cho một buổi biểu diễn sống bằng ngôn ngữ khác. Captions thường hỗ trợ khả năng tiếp cận thông tin lời nói và âm thanh, bao gồm lời thoại, nhận dạng người nói, âm thanh ngoài sân khấu, âm nhạc hoặc hiệu ứng."
+    },
+    {
+      "question": "Projection và mobile viewing có phải là cùng một quyết định với surtitles hay captions không?",
+      "answer": "Không. Projection và mobile viewing là các phương thức truyền tải. Surtitles và captions mô tả loại văn bản nào đang được chuẩn bị. Một vở diễn có thể sử dụng surtitles dịch thuật qua projection, qua mobile viewer, hoặc qua cả hai."
+    },
+    {
+      "question": "Thuật ngữ rõ ràng giúp ích gì cho việc thiết lập SurtitleLive?",
+      "answer": "Một khi cả đoàn biết mình đang chuẩn bị surtitles dịch thuật, captions hỗ trợ tiếp cận hay cả hai, họ có thể quyết định những track ngôn ngữ nào sẽ kích hoạt, có nên sử dụng Projection Mode, mobile viewer hay cả hai không, và người vận hành cần cue trực tiếp những gì."
+    },
+    {
+      "question": "Một đoàn Fringe nhỏ nên yêu cầu điều gì thay vì chỉ nói subtitles?",
+      "answer": "Một yêu cầu rõ ràng hơn là: English surtitles đã chuẩn bị cho một vở diễn sống không nói tiếng Anh, được cue bởi người vận hành, truyền tải qua Projection Mode, mobile viewer, hoặc cả hai. Nếu cần captioning hỗ trợ tiếp cận, hãy lên kế hoạch cho thông tin âm thanh và người nói một cách riêng biệt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitles",
+      "definition": "Văn bản đã chuẩn bị được hiển thị trong một buổi biểu diễn sống, thường để dịch một vở diễn được trình diễn bằng ngôn ngữ khác."
+    },
+    {
+      "term": "Captions",
+      "definition": "Văn bản thể hiện lời thoại và các thông tin âm thanh liên quan, thường được sử dụng để hỗ trợ khán giả khiếm thính/Điếc."
+    },
+    {
+      "term": "Subtitles",
+      "definition": "Một thuật ngữ quen thuộc hướng đến khán giả cho văn bản dịch hoặc chép lại, phổ biến hơn trong phim ảnh và video nhưng thường được sử dụng một cách thông thường cho sân khấu sống."
+    },
+    {
+      "term": "Supertitles",
+      "definition": "Một thuật ngữ liên quan chặt chẽ đến surtitles, thường được sử dụng trong opera và một số bối cảnh Bắc Mỹ cho văn bản hiển thị phía trên hoặc gần sân khấu."
+    },
+    {
+      "term": "Closed captions",
+      "definition": "Captions chỉ hiển thị cho những khán giả chọn sử dụng chúng, thường là trên thiết bị cá nhân như điện thoại thông minh hoặc máy tính bảng."
+    },
+    {
+      "term": "Mobile viewer",
+      "definition": "Giao diện xem dựa trên trình duyệt dành cho khán giả, được mở bằng mã QR hoặc liên kết, cho phép mỗi khán giả đọc ngôn ngữ đã kích hoạt trên thiết bị của họ."
+    },
+    {
+      "term": "Projection Mode",
+      "definition": "Chế độ hiển thị dành cho màn hình nhà hát hoặc máy chiếu, được sử dụng khi địa điểm hỗ trợ văn bản hiển thị chung."
+    },
+    {
+      "term": "Operator cueing",
+      "definition": "Quá trình trực tiếp điều khiển văn bản đã chuẩn bị theo nhịp của buổi biểu diễn, bao gồm việc giữ, nhảy hoặc ẩn văn bản khi cần thiết."
+    }
+  ]
+}

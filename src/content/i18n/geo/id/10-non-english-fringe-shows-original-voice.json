@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-23T02:18:48.972Z",
+  "sectionTitles": {
+    "keyTakeaways": "Intisari",
+    "faq": "Tanya Jawab",
+    "glossary": "Glosarium",
+    "related": "Istilah Terkait"
+  },
+  "keyTakeaways": [
+    "SurtitleLive berawal dari persoalan lintas bahasa seorang penulis naskah, bukan dari kategori perangkat lunak: bagaimana sebuah pertunjukan bisa mempertahankan bahasa aslinya sementara penonton lain bisa mengikutinya?",
+    "Surtitle bahasa Inggris seharusnya bekerja sebagai undangan memasuki pertunjukan non-Inggris, bukan sebagai pengganti suara, ritme, dan memori kultural dari bahasa aslinya.",
+    "Penerjemahan sebagai keramahtamahan berarti merancang rute bahasa agar lebih banyak orang bisa bersua dengan karya tanpa meminta karya itu menjadi kurang dirinya sendiri.",
+    "Pilihan bahasa di perangkat memungkinkan satu pertunjukan langsung mendukung penonton berbahasa Inggris, pembaca bahasa asli, dan trek bahasa tambahan yang disiapkan tanpa memadati satu layar bersama.",
+    "Teknologi sunyi mendukung alur kerja panggung: teks yang disiapkan, pilihan bahasa yang ditinjau, pengoperasian cue langsung, penampil seluler, Projection Mode, dan pemulihan ketika pertunjukan berubah."
+  ],
+  "faq": [
+    {
+      "question": "Apa arti \"penerjemahan sebagai keramahtamahan\" untuk teater?",
+      "answer": "Penerjemahan sebagai keramahtamahan berarti memberi penonton cara nyata untuk masuk ke dalam pertunjukan tanpa meminta bahasa asli menghilang. Surtitle bahasa Inggris bisa membantu orang mengikuti cerita sementara bahasa lisan atau nyanyian tetap hidup di atas panggung."
+    },
+    {
+      "question": "Mengapa surtitle bahasa Inggris tidak boleh menggantikan bahasa asli?",
+      "answer": "Bahasa asli membawa ritme, register, pewaktuan, memori kultural, humor, kesunyian, dan tekanan sosial. Terjemahan bisa memandu penonton, tetapi pertunjukan kehilangan sesuatu jika bahasa sumber diperlakukan sebagai kemasan, bukan bagian dari karya seni."
+    },
+    {
+      "question": "Bagaimana pilihan bahasa di perangkat bisa melindungi suara asli?",
+      "answer": "Penampil seluler membiarkan setiap penonton memilih bahasa yang diaktifkan di perangkat mereka sendiri. Artinya, penonton berbahasa Inggris bisa membaca bahasa Inggris, pembaca bahasa asli bisa menjaga teks sumber tetap terlihat, dan tamu undangan atau mitra tur bisa mengikuti bahasa lain yang disiapkan jika grup mendukungnya."
+    },
+    {
+      "question": "Mengapa pengoperasian cue langsung tetap penting jika surtitle sudah disiapkan?",
+      "answer": "Teater bukanlah playback. Aktor berjeda, dialog berubah, adegan melompat, dan pewaktuan bernapas berbeda dari latihan. Operator manusia bisa menahan, memajukan, memulihkan, atau menyembunyikan surtitle yang sudah disiapkan agar dukungan bahasa mengikuti peristiwa langsung."
+    },
+    {
+      "question": "Apakah ini argumen aksesibilitas atau argumen pemasaran?",
+      "answer": "Ini keduanya, tetapi berawal dari kepedulian. Rute bahasa yang jelas bisa membantu lebih banyak orang merasa mampu memilih pertunjukan non-Inggris, termasuk penonton lokal, pengulas, pemrogram, komunitas bahasa sumber, dan pengunjung multibahasa."
+    },
+    {
+      "question": "Di mana saya bisa menemukan panduan pengaturan praktis untuk surtitle di Fringe?",
+      "answer": "Untuk alur kerja langkah demi langkah, baca Blog 9: Cara Menambahkan Surtitle Bahasa Inggris ke Pertunjukan Non-Inggris di Edinburgh Fringe Festival. Artikel ini menjelaskan mengapa alur kerja ini penting secara artistik; Blog 9 menjelaskan cara menyiapkan dan menjalankannya."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Penerjemahan sebagai keramahtamahan",
+      "definition": "Cara merancang terjemahan dan surtitle agar penonton bisa memasuki sebuah karya tanpa memaksa bahasa asli atau suara kultural menghilang."
+    },
+    {
+      "term": "Suara asli",
+      "definition": "Ritme, register, pewaktuan, humor, kesunyian, tekanan sosial, dan memori kultural yang dibawa oleh bahasa yang digunakan untuk menciptakan pertunjukan."
+    },
+    {
+      "term": "Rute bahasa",
+      "definition": "Jalur yang dipilih untuk memasuki pertunjukan langsung, seperti surtitle bahasa Inggris, teks bahasa asli, atau trek bahasa lain yang disiapkan."
+    },
+    {
+      "term": "Surtitle bahasa Inggris",
+      "definition": "Teks bahasa Inggris yang disiapkan dan ditampilkan selama pertunjukan langsung untuk membantu penonton mengikuti karya yang diucapkan atau dinyanyikan dalam bahasa lain."
+    },
+    {
+      "term": "Penampil seluler",
+      "definition": "Tampilan penonton berbasis peramban yang dibuka melalui kode QR atau tautan, memungkinkan setiap penonton membaca bahasa surtitle yang diaktifkan di perangkat mereka sendiri."
+    },
+    {
+      "term": "Projection Mode",
+      "definition": "Mode tampilan surtitle yang ditujukan untuk layar teater atau proyektor, sering digunakan bersama penampil seluler ketika venue mendukung proyeksi."
+    },
+    {
+      "term": "Pengoperasian cue langsung",
+      "definition": "Proses langsung memajukan surtitle yang sudah disiapkan seirama dengan pertunjukan, termasuk menahan, melompati, atau menyembunyikan teks ketika pertunjukan berubah."
+    }
+  ]
+}

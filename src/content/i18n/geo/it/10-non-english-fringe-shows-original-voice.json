@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-22T05:20:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "In sintesi",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Termini correlati"
+  },
+  "keyTakeaways": [
+    "SurtitleLive non è nato da una categoria di software, ma dal problema translinguistico di un drammaturgo: come può uno spettacolo conservare la propria lingua originale mentre un altro pubblico lo segue?",
+    "I sopratitoli in inglese dovrebbero essere un invito a entrare in uno spettacolo non anglofono, non una sostituzione della voce, del ritmo e della memoria culturale della lingua originale.",
+    "La traduzione come ospitalità significa progettare percorsi linguistici perché più persone incontrino l'opera senza chiederle di diventare meno se stessa.",
+    "La scelta della lingua su mobile permette a un'unica rappresentazione dal vivo di servire il pubblico anglofono, i lettori della lingua originale e altre tracce di lingua preparate, senza affollare uno schermo condiviso.",
+    "Una tecnologia silenziosa sostiene il flusso di lavoro sul palco: testo preparato, scelte di lingua riviste, lancio dal vivo, visori mobili, Modalità Proiezione e recupero quando lo spettacolo cambia."
+  ],
+  "faq": [
+    {
+      "question": "Che cosa significa «la traduzione come ospitalità» per il teatro?",
+      "answer": "La traduzione come ospitalità significa offrire al pubblico un modo reale di entrare in uno spettacolo senza chiedere alla lingua originale di sparire. I sopratitoli in inglese possono aiutare a seguire la storia mentre la lingua parlata o cantata resta viva sul palco."
+    },
+    {
+      "question": "Perché i sopratitoli in inglese non dovrebbero sostituire la lingua originale?",
+      "answer": "La lingua originale porta ritmo, registro, tempi, memoria culturale, umorismo, silenzio e pressione sociale. Una traduzione può guidare il pubblico, ma lo spettacolo perde qualcosa se la lingua di partenza viene trattata come un imballaggio invece che come parte dell'opera."
+    },
+    {
+      "question": "Come protegge la voce originale la scelta della lingua su mobile?",
+      "answer": "I visori mobili lasciano che ogni spettatore scelga una lingua attivata sul proprio dispositivo. Così il pubblico anglofono può leggere l'inglese, i lettori della lingua originale possono tenere visibile il testo di partenza, e gli ospiti invitati o i partner di tournée possono seguire un'altra lingua preparata quando la compagnia la supporta."
+    },
+    {
+      "question": "Perché il lancio dal vivo conta ancora se i sopratitoli sono preparati?",
+      "answer": "Il teatro non è una riproduzione. Gli interpreti fanno pause, le battute cambiano, le scene saltano e i tempi respirano in modo diverso dalle prove. Un operatore umano può trattenere, lanciare, recuperare o nascondere i sopratitoli preparati perché il supporto linguistico segua l'evento dal vivo."
+    },
+    {
+      "question": "È un argomento di accessibilità o di marketing?",
+      "answer": "È entrambe le cose, ma parte dalla cura. Percorsi linguistici chiari possono aiutare più persone a sentirsi in grado di scegliere uno spettacolo non anglofono: pubblico locale, critica, programmatori, comunità della lingua di partenza e visitatori multilingue."
+    },
+    {
+      "question": "Dove trovo la guida pratica alla configurazione per i sopratitoli al Fringe?",
+      "answer": "Per il flusso passo passo, leggi l'articolo 9: Come aggiungere i sopratitoli in inglese a uno spettacolo non anglofono all'Edinburgh Fringe Festival. Questo articolo spiega perché il flusso di lavoro conta dal punto di vista artistico; l'articolo 9 spiega come prepararlo e gestirlo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Traduzione come ospitalità",
+      "definition": "Un modo di progettare la traduzione e i sopratitoli perché il pubblico possa entrare in un'opera senza costringere la lingua originale o la voce culturale a sparire."
+    },
+    {
+      "term": "Voce originale",
+      "definition": "Il ritmo, il registro, i tempi, l'umorismo, il silenzio, la pressione sociale e la memoria culturale portati dalla lingua in cui uno spettacolo è stato creato."
+    },
+    {
+      "term": "Percorso linguistico",
+      "definition": "Una via scelta verso una rappresentazione dal vivo: sopratitoli in inglese, testo nella lingua originale o un'altra traccia di lingua preparata."
+    },
+    {
+      "term": "Sopratitoli in inglese",
+      "definition": "Testo in inglese preparato, mostrato durante una rappresentazione dal vivo per aiutare il pubblico a seguire un'opera recitata o cantata in un'altra lingua."
+    },
+    {
+      "term": "Visore mobile",
+      "definition": "Una vista per il pubblico nel browser, aperta tramite codice QR o link, che permette a ciascuno di leggere una lingua di sopratitoli attivata sul proprio dispositivo."
+    },
+    {
+      "term": "Modalità Proiezione",
+      "definition": "Una modalità di visualizzazione dei sopratitoli pensata per uno schermo di sala o un proiettore, spesso usata insieme ai visori mobili quando la sala consente la proiezione."
+    },
+    {
+      "term": "Lancio dal vivo",
+      "definition": "Il processo dal vivo di far avanzare i sopratitoli preparati al ritmo della rappresentazione, incluso trattenere, saltare o nascondere il testo quando lo spettacolo cambia."
+    }
+  ]
+}

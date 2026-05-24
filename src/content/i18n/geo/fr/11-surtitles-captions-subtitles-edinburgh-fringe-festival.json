@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "11-surtitles-captions-subtitles-edinburgh-fringe-festival",
+  "sourceHash": "f213e34059d534b41bdda7da6b9a7e987b5fe8b92797218718a63df5f08411bb",
+  "generatedAt": "2026-05-23T03:20:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Termes liés"
+  },
+  "keyTakeaways": [
+    "Le problème n'est pas que l'équipe dise sous-titres, surtitres ou sous-titrage d'accessibilité ; le risque, c'est de bâtir le mauvais flux de travail parce que le mot n'a jamais été défini.",
+    "Pour les spectacles non anglophones au Fringe, la communication au public peut dire « sous-titres anglais », mais la planification de production devrait généralement préciser des surtitres anglais préparés, lancés en direct par un opérateur.",
+    "Le sous-titrage d'accessibilité est souvent un engagement d'accès : il peut demander dialogue, information sur les locuteurs, musique, effets sonores et son hors scène, pas seulement des répliques traduites.",
+    "Le Mode Projection et la visionneuse mobile sont des décisions de diffusion, pas des définitions de contenu ; ils ne fonctionnent bien qu'une fois que l'équipe sait quel texte elle prépare.",
+    "Quand la terminologie est claire, la mise en place de SurtitleLive devient plus facile : pistes de langue, projection, lecture mobile, lancement par l'opérateur, passage au noir et rattrapage peuvent se configurer autour du vrai besoin du public."
+  ],
+  "faq": [
+    {
+      "question": "Quel est le piège terminologique pour les spectacles non anglophones au Festival Fringe d'Édimbourg ?",
+      "answer": "Une compagnie peut demander des sous-titres, une salle peut entendre du sous-titrage d'accessibilité, un traducteur peut préparer des surtitres et un régisseur peut avoir besoin d'un contrôle des tops en direct. Chaque mot peut impliquer un flux différent ; l'équipe devrait donc définir le texte, le mode de diffusion et l'exploitation en direct avant la mise en place."
+    },
+    {
+      "question": "Peut-on dire « sous-titres anglais » dans la communication au public ?",
+      "answer": "Oui. Beaucoup de spectateurs comprennent l'expression « sous-titres anglais ». Pour la planification de production, il vaut généralement mieux préciser des surtitres anglais préparés si le texte est une traduction relue, lancée en direct pendant la représentation."
+    },
+    {
+      "question": "Quelle est la différence entre surtitres et sous-titrage d'accessibilité au théâtre ?",
+      "answer": "Les surtitres désignent généralement un texte de traduction préparé pour une représentation en direct dans une autre langue. Le sous-titrage d'accessibilité soutient généralement l'accès à la parole et au son, y compris dialogue, identification des locuteurs, sons hors scène, musique ou effets."
+    },
+    {
+      "question": "La projection et la lecture mobile relèvent-elles de la même décision que les surtitres ou le sous-titrage d'accessibilité ?",
+      "answer": "Non. La projection et la lecture mobile sont des modes de diffusion. Les surtitres et le sous-titrage d'accessibilité décrivent quel type de texte est préparé. Un spectacle peut diffuser des surtitres de traduction par projection, par visionneuse mobile, ou les deux."
+    },
+    {
+      "question": "En quoi une terminologie claire aide-t-elle la mise en place de SurtitleLive ?",
+      "answer": "Une fois que l'équipe sait si elle prépare des surtitres de traduction, du sous-titrage d'accessibilité, ou les deux, elle peut décider quelles pistes de langue activer, utiliser le Mode Projection, la visionneuse mobile, ou les deux, et ce que l'opérateur doit lancer en direct."
+    },
+    {
+      "question": "Que devrait demander une petite équipe du Fringe au lieu de seulement « des sous-titres » ?",
+      "answer": "Une demande plus claire : des surtitres anglais préparés pour un spectacle non anglophone en direct, lancés par un opérateur, diffusés en Mode Projection, par visionneuse mobile, ou les deux. Si un accès par sous-titrage d'accessibilité est requis, planifier séparément l'information sonore et celle sur les locuteurs."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitres",
+      "definition": "Un texte préparé, affiché pendant une représentation en direct, généralement pour traduire un spectacle joué dans une autre langue."
+    },
+    {
+      "term": "Sous-titrage d'accessibilité (captions)",
+      "definition": "Un texte qui représente le dialogue et l'information sonore pertinente, souvent utilisé pour soutenir les personnes sourdes ou malentendantes."
+    },
+    {
+      "term": "Sous-titres",
+      "definition": "Un terme familier, tourné vers le public, pour un texte traduit ou transcrit ; plus courant au cinéma et en vidéo, mais souvent employé de façon informelle pour le théâtre en direct."
+    },
+    {
+      "term": "Supertitres (supertitles)",
+      "definition": "Un terme étroitement lié aux surtitres, souvent employé à l'opéra et dans certains contextes nord-américains pour un texte montré au-dessus de la scène ou à proximité."
+    },
+    {
+      "term": "Sous-titres optionnels (closed captions)",
+      "definition": "Un sous-titrage d'accessibilité visible uniquement par les spectateurs qui choisissent de l'utiliser, souvent sur un appareil personnel comme un smartphone ou une tablette."
+    },
+    {
+      "term": "Visionneuse mobile",
+      "definition": "Une vue spectateur dans le navigateur, ouverte par QR code ou lien, qui permet à chacun de lire une langue activée sur son propre appareil."
+    },
+    {
+      "term": "Mode Projection",
+      "definition": "Un mode d'affichage destiné aux écrans de salle ou aux projecteurs, utilisé quand la salle permet un texte visible et partagé."
+    },
+    {
+      "term": "Lancement par l'opérateur",
+      "definition": "Le processus en direct qui consiste à faire avancer le texte préparé au rythme de la représentation, y compris retenir, sauter ou masquer le texte au besoin."
+    }
+  ]
+}

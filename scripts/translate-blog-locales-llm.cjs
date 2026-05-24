@@ -143,18 +143,35 @@ function buildPrompt({ locale, source }) {
 }
 
 function getLocalizedArticleInstructions(locale, source) {
-  if (source.slug !== "9-english-surtitles-non-english-show-fringe") {
-    return [];
-  }
-
   const showLanguage = LOCALE_PRIMARY_SHOW_LANGUAGE[locale];
   if (!showLanguage) {
     return [];
   }
 
-  return [
-    `- For the opening sentence of this article, localize the show-language example to the target locale: translate the meaning of "If your ${showLanguage} or other non-English show is going to the Edinburgh Fringe, the question is usually not abstract." Do not preserve the English source list "French, German, Spanish" in that sentence.`,
-  ];
+  if (source.slug === "9-english-surtitles-non-english-show-fringe") {
+    return [
+      `- For the opening sentence of this article, localize the show-language example to the target locale: translate the meaning of "If your ${showLanguage} or other non-English show is going to the Edinburgh Fringe, the question is usually not abstract." Do not preserve the English source list "French, German, Spanish" in that sentence.`,
+    ];
+  }
+
+  if (source.slug === "10-non-english-fringe-shows-original-voice") {
+    return [
+      `- In the sentence matching "A joke in Czech does not move with the same rhythm once it is explained.", localize the illustrative show-language example to ${showLanguage}. Translate the meaning as "A joke in ${showLanguage} does not move with the same rhythm once it is explained." Do not preserve "Czech" in that sentence unless Czech is the target example language.`,
+    ];
+  }
+
+  if (source.slug === "3-how-we-protect-your-work") {
+    return [
+      "- This is a security/IP claim-sensitive article. Preserve the claim-safe tone exactly.",
+      '- Use risk-reduction language such as "helps reduce", "designed to limit", "risk reduction", "configured expiry window", and "server-side revocation".',
+      '- Do not translate into absolute security promises such as "guarantee protection", "prevent copying", "impossible to copy", "secure vault", "bank-grade", "packet-level encryption", "piracy-proof", "permanently safe", or "expires immediately when the curtain falls".',
+      "- Preserve the distinction that SurtitleLive reduces casual copying and uncontrolled access risk; it is not DRM and not absolute copy protection.",
+      "- Keep these technical terms accurate: AES-256-GCM, HTTPS/TLS, DRM, OCR, bearer token, encrypted runtime segments, browser memory, expiry windows, server-side revocation.",
+      "- Keep the limitations explicit: screenshots, cameras, OCR, and custom clients with valid access cannot be fully prevented.",
+    ];
+  }
+
+  return [];
 }
 
 async function callGeminiText({ endpoint, headers, text }) {

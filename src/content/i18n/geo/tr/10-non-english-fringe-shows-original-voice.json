@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-23T02:32:58.701Z",
+  "sectionTitles": {
+    "keyTakeaways": "Temel Çıkarımlar",
+    "faq": "SSS",
+    "glossary": "Sözlük",
+    "related": "İlgili Terimler"
+  },
+  "keyTakeaways": [
+    "SurtitleLive, bir yazılım kategorisinden değil, bir oyun yazarının diller arası sorunundan doğdu: Bir performans, başka bir seyirci onu takip ederken orijinal dilini nasıl koruyabilir?",
+    "İngilizce üstyazılar, İngilizce konuşulmayan bir performansa, orijinal dilin sesinin, ritminin ve kültürel hafızasının yerine geçen bir ikame olarak değil, bir davet olarak işlev görmelidir.",
+    "Misafirperverlik olarak çeviri, eserin daha az kendisi olmasını istemeden daha fazla insanın eserle buluşabilmesi için dil rotaları tasarlamak anlamına gelir.",
+    "Mobil dil seçimi, tek bir canlı performansın, tek bir paylaşımlı ekranı kalabalıklaştırmadan İngilizce konuşan seyircileri, orijinal dil okurlarını ve ek hazırlanmış dil izlerini desteklemesini sağlar.",
+    "Sessiz teknoloji sahne iş akışını destekler: hazırlanmış metin, gözden geçirilmiş dil seçimleri, canlı cue yönetimi, mobil izleyiciler, Projeksiyon Modu (Projection Mode) ve performans değiştiğinde toparlanma."
+  ],
+  "faq": [
+    {
+      "question": "\"Misafirperverlik olarak çeviri\" tiyatro için ne anlama gelir?",
+      "answer": "Misafirperverlik olarak çeviri, orijinal dilin yok olmasını istemeden seyircilere bir performansa girmeleri için gerçek bir yol sunmak anlamına gelir. İngilizce üstyazılar, sahnede konuşulan veya söylenen dil canlı kalırken insanların hikayeyi takip etmelerine yardımcı olabilir."
+    },
+    {
+      "question": "İngilizce üstyazılar neden orijinal dilin yerini almamalıdır?",
+      "answer": "Orijinal dil; ritmi, kesiti, zamanlamayı, kültürel hafızayı, mizahı, sessizliği ve toplumsal baskıyı taşır. Bir çeviri seyirciye rehberlik edebilir, ancak kaynak dil bir ambalaj olarak değil de sanat eserinin bir parçası olarak ele alınmazsa performans bir şeyler kaybeder."
+    },
+    {
+      "question": "Mobil dil seçimi orijinal sesi nasıl koruyabilir?",
+      "answer": "Mobil izleyiciler, her seyircinin kendi cihazında etkinleştirilmiş bir dili seçmesine olanak tanır. Bu, İngilizce konuşan seyircilerin İngilizce okuyabileceği, orijinal dil okurlarının kaynak metni görünür tutabileceği ve davetli konukların veya turne ortaklarının, topluluk desteklediğinde hazırlanmış başka bir dili takip edebileceği anlamına gelir."
+    },
+    {
+      "question": "Üstyazılar hazırlanmışsa canlı cue yönetimi neden hâlâ önemlidir?",
+      "answer": "Tiyatro geri oynatma değildir. Oyuncular duraklar, replikler değişir, sahneler atlanır ve zamanlama provadan farklı nefes alır. Bir insan operatör, hazırlanmış üstyazıları tutabilir, ilerletebilir, toparlayabilir veya gizleyebilir, böylece dil desteği canlı etkinliği takip eder."
+    },
+    {
+      "question": "Bu bir erişilebilirlik argümanı mı yoksa bir pazarlama argümanı mı?",
+      "answer": "Her ikisi de, ancak özenle başlar. Net dil rotaları, yerel seyirciler, eleştirmenler, programcılar, kaynak dil toplulukları ve çok dilli ziyaretçiler dahil olmak üzere daha fazla insanın İngilizce konuşulmayan bir gösteriyi seçebileceğini hissetmesine yardımcı olabilir."
+    },
+    {
+      "question": "Fringe üstyazıları için pratik kurulum kılavuzunu nerede bulabilirim?",
+      "answer": "Adım adım iş akışı için, Blog 9'u okuyun: Edinburgh Fringe Festivali'nde İngilizce Konuşulmayan Bir Gösteriye İngilizce Üstyazı Nasıl Eklenir? Bu makale, iş akışının sanatsal olarak neden önemli olduğunu açıklar; Blog 9 ise nasıl hazırlanıp yürütüleceğini anlatır."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Misafirperverlik olarak çeviri",
+      "definition": "Orijinal dilin veya kültürel sesin yok olmasına zorlamadan seyircilerin bir esere girebilmesi için çeviri ve üstyazıları tasarlama biçimi."
+    },
+    {
+      "term": "Orijinal ses",
+      "definition": "Bir performansın yapıldığı dilin taşıdığı ritim, kesit, zamanlama, mizah, sessizlik, toplumsal baskı ve kültürel hafıza."
+    },
+    {
+      "term": "Dil rotası",
+      "definition": "İngilizce üstyazılar, orijinal dil metni veya hazırlanmış başka bir dil izi gibi canlı bir performansa giden seçilmiş bir yol."
+    },
+    {
+      "term": "İngilizce üstyazılar",
+      "definition": "Başka bir dilde konuşulan veya söylenen bir eseri seyircilerin takip etmesine yardımcı olmak için canlı bir performans sırasında gösterilen hazırlanmış İngilizce metin."
+    },
+    {
+      "term": "Mobil izleyici",
+      "definition": "QR kod veya bağlantı ile açılan, her seyircinin kendi cihazında etkinleştirilmiş bir üstyazı dilini okumasına olanak tanıyan tarayıcı tabanlı bir seyirci görünümü."
+    },
+    {
+      "term": "Projeksiyon Modu",
+      "definition": "Bir tiyatro ekranı veya projektör için tasarlanmış, genellikle mekân projeksiyonu desteklediğinde mobil izleyicilerle birlikte kullanılan bir üstyazı gösterim modu."
+    },
+    {
+      "term": "Canlı cue yönetimi",
+      "definition": "Hazırlanmış üstyazıları performansla eş zamanlı olarak ilerletme, gösteri değiştiğinde metni tutma, atlama veya gizlemeyi içeren canlı süreç."
+    }
+  ]
+}

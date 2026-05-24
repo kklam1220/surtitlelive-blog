@@ -19,21 +19,22 @@ The Cloudflare Pages project serves the Astro build from its root output (`/`, `
 At the same time, the public SurtitleLive blog contract remains `/blog/*`:
 
 - canonical URLs: `https://surtitlelive.com/blog/...`
-- custom-domain compatibility URLs: `https://blog.surtitlelive.com/blog/...`
+- dedicated-origin render URLs: `https://blog.surtitlelive.com/:slug` and `https://blog.surtitlelive.com/:locale/:slug`
+- custom-domain compatibility URLs for HTML under `https://blog.surtitlelive.com/blog/...` redirect to the apex canonical URLs
 
-This only works because the deployment output must include [\_redirects](./public/_redirects), which rewrites:
+This only works because the deployment output must include [\_redirects](./public/_redirects), which keeps assets/feed compatibility rewrites and canonicalizes duplicate HTML paths:
 
-- `/blog/` -> `/`
-- `/blog/:slug` -> `/:slug`
-- `/blog/:locale/:slug` -> `/:locale/:slug`
+- `/blog/` -> `https://surtitlelive.com/blog/` (301)
+- `/blog/:slug` -> `https://surtitlelive.com/blog/:slug/` (301)
+- `/blog/:locale/:slug` -> `https://surtitlelive.com/blog/:locale/:slug/` (301)
 - `/blog/_astro/*` -> `/_astro/*`
 - `/blog/fonts/*` -> `/blog/fonts/*`
 - `/blog/logo/*` -> `/blog/logo/*`
 - `/blog/rss.xml` / `/blog/sitemap-*.xml` -> root feed/sitemap outputs
 
-If `_redirects` is missing or stale, the custom domain will start returning homepage HTML for article/image URLs, which is exactly the failure mode where images disappear and article clicks loop back to the hub.
+If `_redirects` is missing or stale, the custom domain can start returning homepage HTML for article/image URLs, or it can expose duplicate `/blog/*` HTML on the dedicated origin instead of consolidating crawler signals on the apex canonical.
 
-On the product app side, `web/src/proxy.ts` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths before locale negotiation and App Router filesystem routes run. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only.
+On the product app side, `web/src/proxy.ts` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths before locale negotiation and App Router filesystem routes run. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only and must also target root-output origin paths for HTML.
 
 ---
 
@@ -121,7 +122,7 @@ To ensure images load correctly in production:
 *   **Drafts**: If you have unfinished posts, create a `drafts` folder inside `content/` and ensure your sync script excludes it, or use `draft: true` in frontmatter (if configured in content collection).
 *   **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
 *   **Base-Aware Fonts/Assets**: This Astro app is deployed with `base: '/blog/'`. Font preloads and `@font-face` rules are emitted from `src/components/BaseHead.astro` and must resolve to `/blog/fonts/...` exactly once in the built output. Never ship `/blog/blog/fonts/...`, bare `/fonts/...`, or unresolved template placeholders.
-*   **Base-Aware Logo**: Shared chrome assets must also stay under the `/blog/` public contract. `src/components/Header.astro` must point at `/blog/logo/New_logo.png`, not `/logo/New_logo.png`, and it should keep the compatibility-aware cache-busting query string so Cloudflare does not keep an old HTML/logo cache entry after a Pages routing-contract change.
+*   **Canonical Logo**: Shared chrome should use the canonical main-site logo asset. `src/components/Header.astro` must point at `https://surtitlelive.com/logo/New_logo.png`, not `/blog/logo/New_logo.png`, so the visible header does not depend on the blog-origin compatibility rewrite layer.
 *   **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
 *   **Pages Rewrite Contract**: Do not remove `public/_redirects`. The blog build is static-root output, but the custom domain still has to honor `/blog/*` for compatibility and SEO handoff.
 
@@ -153,14 +154,14 @@ To ensure images load correctly in production:
     Expected result:
     - `/blog/fonts/...` returns `200` with `Content-Type: font/woff`
     - `/blog/blog/fonts/...` must not be referenced by the HTML/CSS. If it returns `text/html`, you are still seeing a stale deploy or a cached old document, not a valid font file.
-7.  If article URLs or `_astro` images under `https://blog.surtitlelive.com/blog/...` return the homepage instead of the requested resource, inspect the deployed `_redirects` contract first. The usual probes are:
+7.  If article URLs or `_astro` images under `https://blog.surtitlelive.com/blog/...` return the homepage or expose duplicate article HTML, inspect the deployed `_redirects` contract first. The usual probes are:
     ```bash
     curl -I https://blog.surtitlelive.com/blog/7-geometry-of-dramatic-parsing/
     curl -I https://blog.surtitlelive.com/blog/_astro/<asset>.webp
     curl -I https://blog.surtitlelive.com/blog/rss.xml
     ```
     Expected result:
-    - article paths return article HTML, not the homepage hub
+    - article paths return `301` to the apex canonical article URL
     - `_astro` assets return `image/*`, not `text/html`
     - `/blog/rss.xml` and `/blog/sitemap-index.xml` resolve through `_redirects` to the root feed/sitemap
 8.  If `https://surtitlelive.com/blog/<slug>/` returns the main-site 404 while the dedicated blog origin still works, inspect the web tier handoff first:

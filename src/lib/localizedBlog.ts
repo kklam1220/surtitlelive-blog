@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { isBlogSupportedLocale, type BlogSupportedLocale } from "../i18n/locale-config";
+import { isBlogArticleIndexable, isBlogIndexedLocale, isBlogSupportedLocale, type BlogSupportedLocale } from "../i18n/locale-config";
 
 type LocalizedFrontmatter = {
   title: string;
@@ -26,6 +26,7 @@ export type LocalizedBlogPayload = {
 };
 
 const LOCALIZED_ROOT = path.join(process.cwd(), "src", "content", "i18n", "blog");
+const SOURCE_ROOT = path.join(process.cwd(), "src", "content", "blog");
 
 type LocalizedScriptExample = {
   punctuationBlock: string;
@@ -174,10 +175,14 @@ export function listLocalizedSlugs(locale: string): string[] {
     .readdirSync(localeDir, { withFileTypes: true })
     .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) => entry.name.replace(/\.json$/i, ""))
+    .filter((slug) => hasPublishedSourcePost(slug))
     .sort();
 }
 
 export function readLocalizedPost(locale: string, slug: string): LocalizedBlogPayload | null {
+  if (!hasPublishedSourcePost(slug)) {
+    return null;
+  }
   const filePath = path.join(LOCALIZED_ROOT, locale, `${slug}.json`);
   if (!fs.existsSync(filePath)) {
     return null;
@@ -191,6 +196,13 @@ export function readLocalizedPost(locale: string, slug: string): LocalizedBlogPa
     payload.body = localizeKnownScriptExamples(payload.locale, payload.slug, payload.body);
   }
   return payload;
+}
+
+function hasPublishedSourcePost(slug: string): boolean {
+  return [".md", ".mdx"].some((extension) => {
+    const fileName = `${slug}${extension}`;
+    return fs.existsSync(path.join(SOURCE_ROOT, fileName)) && !fileName.startsWith("_");
+  });
 }
 
 export function listLocalizedPostsForLocale(locale: string): LocalizedBlogPayload[] {
@@ -212,4 +224,12 @@ export function listLocalizedLocalesForSlug(slug: string): string[] {
     const payload = readLocalizedPost(locale, slug);
     return Boolean(payload && payload.status === "translated");
   });
+}
+
+export function listIndexedLocalizedLocales(): string[] {
+  return listLocalizedLocales().filter((locale) => isBlogIndexedLocale(locale));
+}
+
+export function listIndexedLocalizedLocalesForSlug(slug: string): string[] {
+  return listLocalizedLocalesForSlug(slug).filter((locale) => isBlogArticleIndexable(locale, slug));
 }

@@ -3,6 +3,7 @@ import { marked } from "marked";
 import BlogPost from "../../layouts/BlogPost.astro";
 import {
   listLocalizedLocales,
+  listIndexedLocalizedLocalesForSlug,
   listLocalizedLocalesForSlug,
   listLocalizedPostsForLocale,
   listLocalizedSlugs,
@@ -10,7 +11,7 @@ import {
 } from "../../lib/localizedBlog";
 import { rewriteLocalizedBlogImageReferences } from "../../lib/blogAssets";
 import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
-import { resolveBlogLocaleMeta } from "../../i18n/locale-config";
+import { isBlogArticleIndexable, resolveBlogLocaleMeta } from "../../i18n/locale-config";
 
 export async function getStaticPaths() {
   const paths = [];
@@ -43,12 +44,22 @@ const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null 
 const baseUrl = import.meta.env.BASE_URL ?? "/";
 const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 const canonicalPath = `${normalizedBaseUrl}${locale}/${post.slug}/`;
+const isIndexedArticle = isBlogArticleIndexable(locale, post.slug);
+const indexedLocalizedLocalesForSlug = listIndexedLocalizedLocalesForSlug(post.slug);
 const relatedPosts = listLocalizedPostsForLocale(locale)
   .filter((item) => item.slug !== post.slug)
   .slice(0, 3);
-const hreflangs = [
+const localeLinks = [
   { lang: "en", path: `${normalizedBaseUrl}${post.slug}/` },
   ...localizedLocalesForSlug.map((item) => ({
+    lang: item,
+    path: `${normalizedBaseUrl}${item}/${post.slug}/`,
+  })),
+  { lang: "x-default", path: `${normalizedBaseUrl}${post.slug}/` },
+];
+const hreflangs = [
+  { lang: "en", path: `${normalizedBaseUrl}${post.slug}/` },
+  ...indexedLocalizedLocalesForSlug.map((item) => ({
     lang: item,
     path: `${normalizedBaseUrl}${item}/${post.slug}/`,
   })),
@@ -67,7 +78,9 @@ const hreflangs = [
   heroImageAlt={post.frontmatter.heroImageAlt}
   canonicalPath={canonicalPath}
   hreflangs={hreflangs}
+  localeLinks={localeLinks}
   faqItems={visibleGeoBlock?.faq ?? []}
+  robots={isIndexedArticle ? undefined : "noindex,follow"}
 >
   <div set:html={html} />
   {

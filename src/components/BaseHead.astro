@@ -14,6 +14,7 @@ interface Props {
 	image?: MetaImage;
 	canonicalPath?: string;
 	hreflangs?: Array<{ lang: string; path: string }>;
+	robots?: string;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
 	image = FallbackImage,
 	canonicalPath = Astro.url.pathname,
 	hreflangs = [],
+	robots,
 } = Astro.props;
 
 const canonicalURL = new URL(canonicalPath, Astro.site);
@@ -81,6 +83,7 @@ const fontFaceStyles = `
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+{robots && <meta name="robots" content={robots} />}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />

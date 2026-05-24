@@ -45,9 +45,9 @@
 
 重要：
 - 這個 Pages 專案必須保留 `public/_redirects`
-- 它負責把 `blog.surtitlelive.com/blog/*` 代理回 Astro 實際輸出的 root 路徑，並明確保留 `/blog/fonts/*` 這類 public compatibility asset
+- 它負責把 `blog.surtitlelive.com/blog/*` HTML 兼容入口 301 到 `https://surtitlelive.com/blog/*` canonical，並明確保留 `/blog/fonts/*`、`/blog/_astro/*`、feed 和 sitemap 這類 public compatibility asset/feed rewrite
 - Blog header logo uses the canonical main-site asset `https://surtitlelive.com/logo/New_logo.png`; do not point it at `/blog/logo/*`, because that path depends on the blog-origin compatibility rewrite layer.
-- 如果缺少這個檔案，文章頁和圖片會在 `/blog/*` 下回首頁 HTML
+- 如果缺少這個檔案，文章頁和圖片會在 `/blog/*` 下回首頁 HTML，或讓 dedicated origin 暴露重複 HTML URL
 - 它只修復 dedicated blog origin。`https://surtitlelive.com/blog/*` 的 canonical 入口現在由主站 `web/src/proxy.ts` 在最前面 handoff 到 blog origin 的 root-output 路徑；`web/next.config.ts` 的 `beforeFiles` rewrite 只是次級兼容層，不是主要保證
 
 #### 環境變數（可選）
@@ -107,8 +107,8 @@ Cloudflare 會自動處理：
 - [ ] 預覽 URL (`*.pages.dev`) 可以訪問
 - [ ] 博客首頁正確顯示
 - [ ] 可以查看個別博客文章
-- [ ] `https://blog.surtitlelive.com/blog/` 可以顯示博客首頁
-- [ ] `https://blog.surtitlelive.com/blog/<slug>/` 可以顯示文章，而不是回首頁
+- [ ] `https://blog.surtitlelive.com/blog/` 會 301 到 `https://surtitlelive.com/blog/`
+- [ ] `https://blog.surtitlelive.com/blog/<slug>/` 會 301 到 `https://surtitlelive.com/blog/<slug>/`
 - [ ] `https://blog.surtitlelive.com/blog/_astro/...` 返回圖片而不是 HTML
 - [ ] RSS feed 可訪問：`/rss.xml`
 - [ ] Sitemap 可訪問：`/sitemap-index.xml`
@@ -264,7 +264,7 @@ curl -I https://blog.surtitlelive.com/blog/_astro/script-parsing-theatre-subtitl
 ```
 
 預期：
-- 文章 URL 應回文章頁 HTML
+- 文章 URL 應回 301 到 `https://surtitlelive.com/blog/...`
 - `_astro` URL 應回 `image/*`
 
 ---

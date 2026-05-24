@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-23T02:38:44.441Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Thuật ngữ liên quan"
+  },
+  "keyTakeaways": [
+    "SurtitleLive khởi nguồn từ vấn đề xuyên ngôn ngữ của một nhà viết kịch, không phải từ một phân khúc phần mềm: làm thế nào một buổi diễn có thể giữ lại ngôn ngữ gốc của nó trong khi một nhóm khán giả khác theo dõi được nó?",
+    "Phụ đề tiếng Anh nên hoạt động như một lời mời vào buổi diễn không nói tiếng Anh, không phải như một sự thay thế cho tiếng nói, nhịp điệu và ký ức văn hóa của ngôn ngữ gốc.",
+    "Dịch thuật như một lòng hiếu khách có nghĩa là thiết kế các lối vào ngôn ngữ để nhiều người hơn có thể gặp gỡ tác phẩm mà không đòi hỏi tác phẩm phải bớt là chính nó đi.",
+    "Lựa chọn ngôn ngữ trên thiết bị di động cho phép một buổi biểu diễn trực tiếp duy nhất hỗ trợ khán giả nói tiếng Anh, người đọc ngôn ngữ gốc và các bản ngôn ngữ bổ sung đã chuẩn bị mà không làm chật chội một màn hình chung.",
+    "Công nghệ tĩnh lặng hỗ trợ quy trình làm việc trên sân khấu: văn bản chuẩn bị sẵn, các lựa chọn ngôn ngữ được xem xét, chạy phụ đề trực tiếp, trình xem trên thiết bị di động, Chế độ Chiếu (Projection Mode), và khả năng khôi phục khi buổi diễn thay đổi."
+  ],
+  "faq": [
+    {
+      "question": "\"Dịch thuật như một lòng hiếu khách\" có nghĩa là gì đối với sân khấu?",
+      "answer": "Dịch thuật như một lòng hiếu khách có nghĩa là trao cho khán giả một cách thực sự để bước vào buổi biểu diễn mà không đòi hỏi ngôn ngữ gốc phải biến mất. Phụ đề tiếng Anh có thể giúp mọi người theo dõi câu chuyện trong khi ngôn ngữ nói hoặc hát vẫn sống động trên sân khấu."
+    },
+    {
+      "question": "Tại sao phụ đề tiếng Anh không nên thay thế ngôn ngữ gốc?",
+      "answer": "Ngôn ngữ gốc mang theo nhịp điệu, sắc thái ngữ vực, nhịp độ, ký ức văn hóa, sự hài hước, sự im lặng và áp lực xã hội. Một bản dịch có thể dẫn đường cho khán giả, nhưng buổi diễn sẽ mất mát điều gì đó nếu ngôn ngữ nguồn bị coi như lớp vỏ bọc thay vì một phần của tác phẩm nghệ thuật."
+    },
+    {
+      "question": "Lựa chọn ngôn ngữ trên thiết bị di động bảo vệ tiếng nói nguyên bản như thế nào?",
+      "answer": "Trình xem trên thiết bị di động cho phép mỗi khán giả chọn một ngôn ngữ được kích hoạt trên thiết bị riêng của họ. Điều đó có nghĩa là khán giả nói tiếng Anh có thể đọc tiếng Anh, người đọc ngôn ngữ gốc có thể giữ văn bản nguồn hiển thị, và khách mời hoặc đối tác lưu diễn có thể theo dõi một ngôn ngữ đã chuẩn bị khác khi đoàn hỗ trợ điều đó."
+    },
+    {
+      "question": "Tại sao việc chạy phụ đề trực tiếp vẫn quan trọng nếu phụ đề đã được chuẩn bị sẵn?",
+      "answer": "Sân khấu không phải là phát lại. Diễn viên tạm dừng, câu thoại thay đổi, cảnh nhảy cóc và nhịp độ thở khác với lúc tập luyện. Một người vận hành có thể giữ, chuyển tiếp, khôi phục hoặc ẩn phụ đề đã chuẩn bị để sự hỗ trợ ngôn ngữ theo sát sự kiện sống."
+    },
+    {
+      "question": "Đây là một lập luận về khả năng tiếp cận hay một lập luận tiếp thị?",
+      "answer": "Nó là cả hai, nhưng khởi nguồn từ sự tận tâm. Các lối vào ngôn ngữ rõ ràng có thể giúp nhiều người hơn cảm thấy có thể chọn một buổi diễn không nói tiếng Anh, bao gồm khán giả địa phương, nhà phê bình, nhà lập trình, cộng đồng ngôn ngữ nguồn và du khách đa ngôn ngữ."
+    },
+    {
+      "question": "Tôi có thể tìm hướng dẫn thiết lập thực tế cho phụ đề Fringe ở đâu?",
+      "answer": "Để có quy trình làm việc từng bước, hãy đọc Blog 9: Cách Thêm Phụ Đề Tiếng Anh Cho Buổi Diễn Không Nói Tiếng Anh Tại Edinburgh Fringe Festival. Bài viết này giải thích tại sao quy trình đó quan trọng về mặt nghệ thuật; Blog 9 giải thích cách chuẩn bị và vận hành nó."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Dịch thuật như một lòng hiếu khách",
+      "definition": "Một cách thiết kế dịch thuật và phụ đề để khán giả có thể bước vào tác phẩm mà không ép buộc ngôn ngữ gốc hoặc tiếng nói văn hóa phải biến mất."
+    },
+    {
+      "term": "Tiếng nói nguyên bản",
+      "definition": "Nhịp điệu, sắc thái ngữ vực, nhịp độ, sự hài hước, sự im lặng, áp lực xã hội và ký ức văn hóa được mang theo bởi ngôn ngữ mà tác phẩm được tạo ra."
+    },
+    {
+      "term": "Lối vào ngôn ngữ",
+      "definition": "Một con đường được chọn để bước vào buổi biểu diễn trực tiếp, chẳng hạn như phụ đề tiếng Anh, văn bản ngôn ngữ gốc, hoặc một bản ngôn ngữ khác đã được chuẩn bị."
+    },
+    {
+      "term": "Phụ đề tiếng Anh",
+      "definition": "Văn bản tiếng Anh được chuẩn bị sẵn, hiển thị trong một buổi biểu diễn trực tiếp để giúp khán giả theo dõi tác phẩm được nói hoặc hát bằng một ngôn ngữ khác."
+    },
+    {
+      "term": "Trình xem trên thiết bị di động",
+      "definition": "Giao diện xem dành cho khán giả dựa trên trình duyệt, được mở bằng mã QR hoặc liên kết, cho phép mỗi khán giả đọc một ngôn ngữ phụ đề được kích hoạt trên thiết bị riêng của họ."
+    },
+    {
+      "term": "Chế độ Chiếu (Projection Mode)",
+      "definition": "Chế độ hiển thị phụ đề dành cho màn hình sân khấu hoặc máy chiếu, thường được sử dụng cùng với trình xem trên thiết bị di động khi địa điểm hỗ trợ trình chiếu."
+    },
+    {
+      "term": "Chạy phụ đề trực tiếp",
+      "definition": "Quá trình trực tiếp chuyển tiếp các phụ đề đã chuẩn bị theo nhịp buổi biểu diễn, bao gồm việc giữ, nhảy cóc hoặc ẩn văn bản khi chương trình thay đổi."
+    }
+  ]
+}

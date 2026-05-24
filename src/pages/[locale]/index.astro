@@ -3,10 +3,10 @@ import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
-import { resolveBlogLocaleMeta } from "../../i18n/locale-config";
+import { isBlogIndexedLocale, resolveBlogLocaleMeta } from "../../i18n/locale-config";
 import { Image } from "astro:assets";
 import { resolveBlogImage } from "../../lib/blogAssets";
-import { listLocalizedLocales, listLocalizedPostsForLocale } from "../../lib/localizedBlog";
+import { listIndexedLocalizedLocales, listLocalizedLocales, listLocalizedPostsForLocale } from "../../lib/localizedBlog";
 
 export async function getStaticPaths() {
   const allLocales = listLocalizedLocales();
@@ -25,9 +25,15 @@ const localeMeta = resolveBlogLocaleMeta(locale);
 const baseUrl = import.meta.env.BASE_URL ?? "/";
 const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 const canonicalPath = `${normalizedBaseUrl}${locale}/`;
-const hreflangs = [
+const isIndexedLocale = isBlogIndexedLocale(locale);
+const localeLinks = [
   { lang: "en", path: normalizedBaseUrl },
   ...allLocales.map((item) => ({ lang: item, path: `${normalizedBaseUrl}${item}/` })),
+  { lang: "x-default", path: normalizedBaseUrl },
+];
+const hreflangs = [
+  { lang: "en", path: normalizedBaseUrl },
+  ...listIndexedLocalizedLocales().map((item) => ({ lang: item, path: `${normalizedBaseUrl}${item}/` })),
   { lang: "x-default", path: normalizedBaseUrl },
 ];
 ---
@@ -40,6 +46,7 @@ const hreflangs = [
       description={localeMeta.blogDescription}
       canonicalPath={canonicalPath}
       hreflangs={hreflangs}
+      robots={isIndexedLocale ? undefined : "noindex,follow"}
     />
     <style>
       main {
@@ -83,7 +90,7 @@ const hreflangs = [
     </style>
   </head>
   <body>
-    <Header currentLocale={locale} localeLinks={hreflangs.filter((item) => item.lang !== 'x-default')} />
+    <Header currentLocale={locale} localeLinks={localeLinks.filter((item) => item.lang !== 'x-default')} />
     <main>
       <h1>{localeMeta.blogTitle}</h1>
       <div class="grid">

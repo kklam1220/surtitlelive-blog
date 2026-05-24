@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.surtitlelive.com/sitemap-index.xml
+Sitemap: https://surtitlelive.com/blog/sitemap-index.xml

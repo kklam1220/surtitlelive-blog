@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-22T05:23:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos-chave",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Termos relacionados"
+  },
+  "keyTakeaways": [
+    "O SurtitleLive não nasceu de uma categoria de software, mas do problema translinguístico de um dramaturgo: como pode um espetáculo manter a sua língua original enquanto outro público o segue?",
+    "As legendas em inglês deviam ser um convite a entrar num espetáculo não anglófono, não uma substituição da voz, do ritmo e da memória cultural da língua original.",
+    "A tradução como hospitalidade é desenhar percursos de língua para que mais pessoas encontrem a obra sem lhe pedir que seja menos ela própria.",
+    "A escolha de língua no telemóvel permite que uma única representação ao vivo sirva o público anglófono, os leitores da língua original e outras faixas de língua preparadas, sem sobrecarregar um ecrã partilhado.",
+    "Uma tecnologia discreta sustenta o fluxo de trabalho em palco: texto preparado, escolhas de língua revistas, lançamento ao vivo, visualizadores móveis, Modo de Projeção e recuperação quando o espetáculo muda."
+  ],
+  "faq": [
+    {
+      "question": "O que significa «a tradução como hospitalidade» para o teatro?",
+      "answer": "A tradução como hospitalidade é dar ao público uma forma real de entrar num espetáculo sem pedir à língua original que desapareça. As legendas em inglês podem ajudar a seguir a história enquanto a língua falada ou cantada continua viva em palco."
+    },
+    {
+      "question": "Porque é que as legendas em inglês não deviam substituir a língua original?",
+      "answer": "A língua original carrega ritmo, registo, tempo, memória cultural, humor, silêncio e pressão social. Uma tradução pode guiar o público, mas o espetáculo perde algo se a língua de partida for tratada como embalagem em vez de parte da obra."
+    },
+    {
+      "question": "Como protege a escolha de língua no telemóvel a voz original?",
+      "answer": "Os visualizadores móveis deixam cada espectador escolher uma língua ativada no próprio dispositivo. Assim, o público anglófono pode ler inglês, os leitores da língua original podem manter visível o texto de partida, e os convidados ou parceiros de digressão podem seguir outra língua preparada quando a companhia a suporta."
+    },
+    {
+      "question": "Porque é que o lançamento ao vivo continua a importar se as legendas estão preparadas?",
+      "answer": "O teatro não é reprodução. Os intérpretes fazem pausas, as falas mudam, as cenas saltam e o ritmo respira de forma diferente do ensaio. Um operador humano pode segurar, lançar, recuperar ou ocultar as legendas preparadas para que o apoio linguístico siga o acontecimento ao vivo."
+    },
+    {
+      "question": "É um argumento de acessibilidade ou de marketing?",
+      "answer": "É os dois, mas parte do cuidado. Percursos de língua claros podem ajudar mais pessoas a sentirem-se capazes de escolher um espetáculo não anglófono: público local, crítica, programadores, comunidades da língua de partida e visitantes multilingues."
+    },
+    {
+      "question": "Onde encontro o guia prático de configuração para as legendas do Fringe?",
+      "answer": "Para o fluxo passo a passo, lê o artigo 9: Como adicionar legendas em inglês a um espetáculo não anglófono no Festival Fringe de Edimburgo. Este artigo explica por que o fluxo de trabalho importa do ponto de vista artístico; o artigo 9 explica como prepará-lo e executá-lo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Tradução como hospitalidade",
+      "definition": "Uma forma de desenhar a tradução e as legendas para que o público possa entrar numa obra sem forçar a língua original ou a voz cultural a desaparecer."
+    },
+    {
+      "term": "Voz original",
+      "definition": "O ritmo, o registo, o tempo, o humor, o silêncio, a pressão social e a memória cultural transportados pela língua em que um espetáculo foi criado."
+    },
+    {
+      "term": "Percurso de língua",
+      "definition": "Um caminho escolhido para uma representação ao vivo: legendas em inglês, texto na língua original ou outra faixa de língua preparada."
+    },
+    {
+      "term": "Legendas em inglês",
+      "definition": "Texto em inglês preparado, mostrado durante uma representação ao vivo para ajudar o público a seguir uma obra falada ou cantada noutra língua."
+    },
+    {
+      "term": "Visualizador móvel",
+      "definition": "Uma vista para o público no navegador, aberta por código QR ou link, que permite a cada pessoa ler uma língua de legendas ativada no próprio dispositivo."
+    },
+    {
+      "term": "Modo de Projeção",
+      "definition": "Um modo de exibição de legendas pensado para um ecrã de sala ou um projetor, muitas vezes usado em paralelo com visualizadores móveis quando a sala permite projeção."
+    },
+    {
+      "term": "Lançamento ao vivo",
+      "definition": "O processo ao vivo de fazer avançar as legendas preparadas ao ritmo da representação, incluindo segurar, saltar ou ocultar o texto quando o espetáculo muda."
+    }
+  ]
+}

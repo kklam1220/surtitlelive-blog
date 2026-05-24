@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "10-non-english-fringe-shows-original-voice",
+  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
+  "generatedAt": "2026-05-23T02:27:05.213Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kluczowe wnioski",
+    "faq": "FAQ",
+    "glossary": "Słownik",
+    "related": "Powiązane terminy"
+  },
+  "keyTakeaways": [
+    "SurtitleLive narodziło się z problemu dramatopisarza pracującego na styku języków, nie z kategorii oprogramowania: jak spektakl może zachować swój oryginalny język, podczas gdy inna publiczność za nim podąża?",
+    "Angielskie napisy sceniczne powinny działać jak zaproszenie do nieanglojęzycznego spektaklu, a nie jak zastąpienie głosu, rytmu i pamięci kulturowej oryginalnego języka.",
+    "Tłumaczenie jako gościnność oznacza projektowanie ścieżek językowych tak, aby więcej osób mogło spotkać się z dziełem, nie wymagając od niego, by stało się mniej sobą.",
+    "Wybór języka na urządzeniach mobilnych pozwala jednemu żywemu spektaklowi obsługiwać anglojęzyczną publiczność, czytelników języka oryginału i dodatkowe przygotowane ścieżki językowe bez przeładowywania jednego wspólnego ekranu.",
+    "Wyciszona technologia wspiera sceniczny przepływ pracy: przygotowany tekst, przejrzane wybory językowe, wyzwalanie na żywo, przeglądarki w telefonach widzów, Tryb Projekcyjny i odzyskiwanie kontroli, gdy spektakl się zmienia."
+  ],
+  "faq": [
+    {
+      "question": "Co oznacza „tłumaczenie jako gościnność” w teatrze?",
+      "answer": "Tłumaczenie jako gościnność oznacza danie publiczności realnej drogi wejścia w spektakl bez wymagania, by oryginalny język zniknął. Angielskie napisy sceniczne mogą pomóc ludziom śledzić historię, podczas gdy mówiony lub śpiewany język pozostaje żywy na scenie."
+    },
+    {
+      "question": "Dlaczego angielskie napisy sceniczne nie powinny zastępować oryginalnego języka?",
+      "answer": "Język oryginału niesie rytm, rejestr, timing, pamięć kulturową, humor, ciszę i presję społeczną. Tłumaczenie może prowadzić publiczność, ale spektakl traci coś, gdy język źródłowy traktuje się jak opakowanie, a nie część dzieła sztuki."
+    },
+    {
+      "question": "W jaki sposób wybór języka na urządzeniach mobilnych może chronić oryginalny głos?",
+      "answer": "Przeglądarki na telefonach widzów pozwalają każdemu wybrać udostępniony język na własnym urządzeniu. Dzięki temu anglojęzyczna publiczność może czytać po angielsku, odbiorcy języka oryginału mogą widzieć tekst źródłowy, a zaproszeni goście lub partnerzy koncertujący mogą śledzić inny przygotowany język, gdy zespół go obsługuje."
+    },
+    {
+      "question": "Dlaczego wyzwalanie na żywo wciąż ma znaczenie, skoro napisy sceniczne są przygotowane wcześniej?",
+      "answer": "Teatr nie jest odtwarzaniem. Aktorzy robią pauzy, kwestie się zmieniają, sceny przeskakują, a timing oddycha inaczej niż na próbie. Człowiek-operator może wstrzymać, przyspieszyć, odzyskać lub ukryć przygotowane napisy sceniczne, tak aby wsparcie językowe podążało za żywym wydarzeniem."
+    },
+    {
+      "question": "Czy to argument o dostępność, czy o marketing?",
+      "answer": "To jedno i drugie, ale punktem wyjścia jest troska. Jasne ścieżki językowe mogą pomóc większej liczbie osób poczuć się na siłach, by wybrać nieanglojęzyczny spektakl – w tym miejscowej publiczności, recenzentom, programerom, społecznościom języka źródłowego i wielojęzycznym gościom."
+    },
+    {
+      "question": "Gdzie znajdę praktyczny przewodnik po przygotowaniu napisów scenicznych na Fringe?",
+      "answer": "Instrukcję krok po kroku znajdziesz w artykule 9: Jak dodać angielskie napisy sceniczne do nieanglojęzycznego spektaklu na Edinburgh Festival Fringe. Ten artykuł wyjaśnia, dlaczego ten przepływ pracy ma znaczenie artystyczne; artykuł 9 wyjaśnia, jak go przygotować i przeprowadzić."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Tłumaczenie jako gościnność",
+      "definition": "Sposób projektowania tłumaczenia i napisów scenicznych tak, by publiczność mogła wejść w dzieło, nie zmuszając oryginalnego języka ani głosu kulturowego do zniknięcia."
+    },
+    {
+      "term": "Oryginalny głos",
+      "definition": "Rytm, rejestr, timing, humor, cisza, presja społeczna i pamięć kulturowa niesiona przez język, w którym spektakl został stworzony."
+    },
+    {
+      "term": "Ścieżka językowa",
+      "definition": "Wybrana droga wejścia w żywy spektakl, na przykład angielskie napisy sceniczne, tekst w języku oryginału lub inna przygotowana ścieżka językowa."
+    },
+    {
+      "term": "Angielskie napisy sceniczne",
+      "definition": "Przygotowany tekst angielski wyświetlany podczas żywego spektaklu, pomagający publiczności śledzić utwór mówiony lub śpiewany w innym języku."
+    },
+    {
+      "term": "Przeglądarka na telefonie widza",
+      "definition": "Oparty na przeglądarce widok dla publiczności otwierany przez kod QR lub link, pozwalający każdemu widzowi czytać udostępniony język napisów scenicznych na własnym urządzeniu."
+    },
+    {
+      "term": "Tryb Projekcyjny",
+      "definition": "Tryb wyświetlania napisów scenicznych przeznaczony na ekran teatralny lub projektor, często używany równolegle z przeglądarkami na telefonach, gdy miejsce dysponuje projektorem."
+    },
+    {
+      "term": "Wyzwalanie na żywo",
+      "definition": "Proces wyzwalania przygotowanych napisów scenicznych w czasie rzeczywistym, w synchronizacji ze spektaklem, obejmujący wstrzymywanie, przeskakiwanie lub ukrywanie tekstu, gdy przedstawienie się zmienia."
+    }
+  ]
+}

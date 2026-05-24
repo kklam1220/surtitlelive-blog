@@ -2,6 +2,25 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const distDir = path.resolve(__dirname, '..', 'dist');
+const blogRoot = path.resolve(__dirname, '..');
+const astroConfigPath = path.join(blogRoot, 'astro.config.mjs');
+const localeConfigPath = path.join(blogRoot, 'src', 'i18n', 'locale-config.ts');
+
+function extractQuotedValues(source, regex, label) {
+  const match = source.match(regex);
+  if (!match) {
+    throw new Error(`Missing ${label} policy declaration.`);
+  }
+  return [...match[1].matchAll(/'([^']+)'/g)].map((item) => item[1]).sort();
+}
+
+function assertSameStringSet(actual, expected, message) {
+  const actualText = actual.join(',');
+  const expectedText = expected.join(',');
+  if (actualText !== expectedText) {
+    throw new Error(`${message}\nActual: ${actualText}\nExpected: ${expectedText}`);
+  }
+}
 
 function collectFiles(dir, predicate, acc = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -74,11 +93,33 @@ if (!fs.existsSync(distDir)) {
   throw new Error('Blog dist/ does not exist. Run `npm run build --prefix blog` first.');
 }
 
+const astroConfigSource = fs.readFileSync(astroConfigPath, 'utf8');
+const localeConfigSource = fs.readFileSync(localeConfigPath, 'utf8');
+assertSameStringSet(
+  extractQuotedValues(astroConfigSource, /const BLOG_INDEXED_LOCALES = new Set\(\[([\s\S]*?)\]\);/, 'Astro indexed-locale sitemap filter'),
+  extractQuotedValues(localeConfigSource, /export const BLOG_INDEXED_LOCALES = \[([\s\S]*?)\] as const/, 'indexed blog locales'),
+  'Astro sitemap indexed-locale filter drifted from blog locale-config.',
+);
+assertSameStringSet(
+  extractQuotedValues(astroConfigSource, /const BLOG_SECONDARY_LOCALES = new Set\(\[([\s\S]*?)\]\);/, 'Astro secondary-locale sitemap filter'),
+  extractQuotedValues(localeConfigSource, /export const BLOG_SECONDARY_LOCALES = \[([\s\S]*?)\] as const/, 'secondary blog locales'),
+  'Astro sitemap secondary-locale filter drifted from blog locale-config.',
+);
+assertSameStringSet(
+  extractQuotedValues(astroConfigSource, /const BLOG_ALL_LOCALE_INDEXED_SLUGS = new Set\(\[([\s\S]*?)\]\);/, 'Astro all-locale indexed slug filter'),
+  extractQuotedValues(localeConfigSource, /export const BLOG_ALL_LOCALE_INDEXED_SLUGS = \[([\s\S]*?)\] as const/, 'all-locale indexed blog slugs'),
+  'Astro sitemap all-locale indexed slug filter drifted from blog locale-config.',
+);
+
 const htmlFiles = collectFiles(distDir, (file) => file.endsWith('.html'));
 const cssFiles = collectFiles(distDir, (file) => file.endsWith('.css'));
 const xmlFiles = collectFiles(distDir, (file) => file.endsWith('.xml'));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
 const redirectsFile = path.join(distDir, '_redirects');
+const sitemapText = xmlFiles
+  .filter((file) => path.basename(file).startsWith('sitemap'))
+  .map((file) => fs.readFileSync(file, 'utf8'))
+  .join('\n');
 
 for (const filePath of htmlFiles) {
   const content = fs.readFileSync(filePath, 'utf8');
@@ -125,6 +166,29 @@ assertNoMatch(
   /https:\/\/www\.surtitlelive\.com/,
   'Detected deprecated www.surtitlelive.com host in built blog HTML.',
 );
+
+if (/https:\/\/blog\.surtitlelive\.com\/sitemap-index\.xml/.test(sitemapText)) {
+  throw new Error('Detected blog-origin sitemap host. Blog sitemap URLs must use apex /blog/*.');
+}
+
+if (!sitemapText.includes('https://surtitlelive.com/blog/7-geometry-of-dramatic-parsing/')) {
+  throw new Error('Missing English blog article from sitemap.');
+}
+
+for (const locale of ['de', 'es', 'fr', 'ja', 'ko', 'zh-TW']) {
+  if (!sitemapText.includes(`https://surtitlelive.com/blog/${locale}/7-geometry-of-dramatic-parsing/`)) {
+    throw new Error(`Missing first-tier localized blog article from sitemap: ${locale}/7-geometry-of-dramatic-parsing`);
+  }
+}
+
+for (const locale of ['ar', 'id', 'it', 'pl', 'pt', 'ru', 'th', 'tr', 'uk', 'vi', 'zh-CN']) {
+  if (sitemapText.includes(`https://surtitlelive.com/blog/${locale}/7-geometry-of-dramatic-parsing/`)) {
+    throw new Error(`Secondary-tier localized blog article leaked into sitemap: ${locale}/7-geometry-of-dramatic-parsing`);
+  }
+  if (!sitemapText.includes(`https://surtitlelive.com/blog/${locale}/9-english-surtitles-non-english-show-fringe/`)) {
+    throw new Error(`Missing all-locale indexed fringe surtitles article from sitemap: ${locale}/9-english-surtitles-non-english-show-fringe`);
+  }
+}
 
 assertNoMatch(
   textFiles,
@@ -179,12 +243,33 @@ for (const requiredRule of [
   '/blog/logo/* /blog/logo/:splat 200',
   '/blog/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
   '/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
-  '/blog/:locale/:slug/ /:locale/:slug/ 200',
-  '/blog/:slug/ /:slug/ 200',
-  '/blog/ / 200',
+  '/blog/:locale/rss.xml /:locale/rss.xml 200',
+  '/blog/:locale/:slug/ https://surtitlelive.com/blog/:locale/:slug/ 301',
+  '/blog/:locale/:slug https://surtitlelive.com/blog/:locale/:slug/ 301',
+  '/blog/:locale/ https://surtitlelive.com/blog/:locale/ 301',
+  '/blog/:locale https://surtitlelive.com/blog/:locale/ 301',
+  '/blog/:slug/ https://surtitlelive.com/blog/:slug/ 301',
+  '/blog/:slug https://surtitlelive.com/blog/:slug/ 301',
+  '/blog/ https://surtitlelive.com/blog/ 301',
+  '/blog https://surtitlelive.com/blog/ 301',
 ]) {
   if (!redirectsContent.includes(requiredRule)) {
     throw new Error(`Missing required Pages redirect rule: ${requiredRule}`);
+  }
+}
+
+for (const forbiddenRule of [
+  '/blog/:locale/:slug/ /:locale/:slug/ 200',
+  '/blog/:locale/:slug /:locale/:slug 200',
+  '/blog/:locale/ /:locale/ 200',
+  '/blog/:locale /:locale 200',
+  '/blog/:slug/ /:slug/ 200',
+  '/blog/:slug /:slug 200',
+  '/blog/ / 200',
+  '/blog / 200',
+]) {
+  if (redirectsContent.includes(forbiddenRule)) {
+    throw new Error(`Deprecated duplicate blog-origin HTML rewrite is still present: ${forbiddenRule}`);
   }
 }
 
@@ -239,6 +324,57 @@ assertFileHasMatch(
   path.join('ko', 'index.html'),
   /SurtitleLive 블로그|추천 글/,
   'Missing formal Korean blog hub metadata or heading.',
+);
+
+assertFileHasMatch(
+  path.join('it', '7-geometry-of-dramatic-parsing', 'index.html'),
+  /<meta name="robots" content="noindex,follow">/,
+  'Missing noindex/follow on a secondary-tier localized blog article.',
+);
+
+assertFileHasNoMatch(
+  path.join('it', '9-english-surtitles-non-english-show-fringe', 'index.html'),
+  /<meta name="robots" content="noindex,follow">/,
+  'The all-locale indexed fringe surtitles article must not be noindexed.',
+);
+
+for (const [locale, expectedCopy] of [
+  ['ko', { features: '기능', guides: '가이드', blog: '블로그', signUp: '회원가입' }],
+  ['zh-TW', { features: '功能', guides: '指南', blog: '部落格', signUp: '註冊' }],
+]) {
+  const indexPath = path.join(locale, 'index.html');
+
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(`href="https://surtitlelive\\.com/${locale}/features"[^>]*>\\s*${expectedCopy.features}\\s*<`),
+    `Missing localized main-site Features href on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(`href="https://surtitlelive\\.com/${locale}/guides"[^>]*>\\s*${expectedCopy.guides}\\s*<`),
+    `Missing localized main-site Guides href on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(`href="/blog/${locale}/"[^>]*>\\s*${expectedCopy.blog}\\s*<`),
+    `Missing locale-preserving Blog href on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(`href="https://surtitlelive\\.com/auth/register"[^>]*>\\s*${expectedCopy.signUp}\\s*<`),
+    `Missing account-registration sign-up copy on the ${locale} blog header.`,
+  );
+  assertFileHasNoMatch(
+    indexPath,
+    /href="https:\/\/surtitlelive\.com\/ja\//,
+    `Detected Japanese main-site href leak on the ${locale} blog header.`,
+  );
+}
+
+assertFileHasNoMatch(
+  path.join('zh-TW', 'index.html'),
+  /報名/,
+  'Detected event-registration wording on the Traditional Chinese blog header.',
 );
 
 for (const locale of [

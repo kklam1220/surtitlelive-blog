@@ -13,12 +13,11 @@ This project has two simultaneous URL concerns:
 
 That means the published build must carry `public/_redirects` so the custom domain can correctly resolve:
 
-- `/blog/` -> `/`
-- `/blog/<slug>/` -> `/<slug>/`
-- `/blog/<locale>/<slug>/` -> `/<locale>/<slug>/`
-- `/blog/_astro/*` -> `/_astro/*`
+- root-output render paths such as `/`, `/<slug>/`, and `/<locale>/<slug>/`
+- duplicate HTML compatibility paths such as `/blog/`, `/blog/<slug>/`, and `/blog/<locale>/<slug>/` as 301 redirects to the apex canonical URLs
+- compatibility assets and feeds such as `/blog/_astro/*`, `/blog/fonts/*`, `/blog/rss.xml`, and `/blog/<locale>/rss.xml`
 
-Without that Pages rewrite layer, the custom domain returns the homepage HTML for article and image URLs under `/blog/*`.
+Without that Pages redirect layer, the custom domain can return homepage HTML for asset URLs under `/blog/*` or expose duplicate article HTML on the dedicated origin.
 
 ## 🚀 Quick Start
 
@@ -50,6 +49,9 @@ Preview the production build locally.
 ## 📝 Creating Blog Posts
 
 Blog posts are Markdown files located in `src/content/blog/`.
+Files whose names start with `_` are local drafts. Astro and the blog
+localization scripts ignore them, so rename the file before treating it as a
+published post.
 
 ### Create a New Post
 
@@ -107,6 +109,8 @@ Published localized routes:
 - `/blog/<locale>/rss.xml` (localized feed)
 
 The blog now exposes a built-in language selector in `src/components/Header.astro`. It is intentionally Astro-native and independent from the main site's Next.js locale router, but it must stay aligned with the same 18 supported locales so users can switch language directly inside the blog without leaving the independent Pages deployment path.
+
+Indexing is intentionally narrower than reachability. The tier-1 indexed blog locales are English, German, Spanish, French, Japanese, Korean, and Traditional Chinese; other localized blog pages remain reachable but render `noindex,follow` and are excluded from the Astro sitemap unless a slug is explicitly allowlisted. Current all-locale indexed exception: `9-english-surtitles-non-english-show-fringe`.
 
 ## 🎨 Adding Images
 
@@ -174,7 +178,7 @@ The deployment output must include:
 - `public/blog/fonts/*`
 - `public/blog/logo/New_logo.png`
 
-These are not optional niceties. They are part of the runtime contract that keeps `blog.surtitlelive.com/blog/*` working while the Astro build itself remains root-output static files.
+These are not optional niceties. They are part of the runtime contract that keeps blog-origin assets compatible and blog-origin duplicate HTML canonicalized while the Astro build itself remains root-output static files.
 
 #### Preview Deployments
 
@@ -223,29 +227,30 @@ export default defineConfig({
 });
 ```
 
-Keep `base: '/blog/'` unless you are intentionally redesigning the entire main-site/blog routing model. The current production setup depends on `/blog/*` links in generated HTML plus Cloudflare Pages `_redirects` to bridge those URLs back to the root-output build.
+Keep `base: '/blog/'` unless you are intentionally redesigning the entire main-site/blog routing model. The current production setup depends on `/blog/*` links in generated HTML plus Cloudflare Pages `_redirects` to keep assets/feed URLs compatible and to redirect duplicate origin HTML back to the apex canonical blog URLs.
 
 ## 🔗 Integration with Main App
 
-The main SurtitleLive application links to this blog at `https://blog.surtitlelive.com`.
+The main SurtitleLive application exposes this blog canonically at `https://surtitlelive.com/blog/`.
 
 This blog links back to the main app using the canonical apex host `https://surtitlelive.com`, not `https://www.surtitlelive.com`.
 
-The main app keeps `/blog/*` canonical on the apex host through `web/src/proxy.ts`, which rewrites canonical `/blog/*` requests directly onto the dedicated blog origin's root-output paths before App Router routing runs. `web/next.config.ts` retains a secondary compatibility rewrite, but it is no longer the primary runtime guarantee. The Astro app itself must therefore remain compatible with both:
+The main app keeps `/blog/*` canonical on the apex host through `web/src/proxy.ts`, which rewrites canonical `/blog/*` requests directly onto the dedicated blog origin's root-output paths before App Router routing runs. `web/next.config.ts` retains a secondary compatibility rewrite, but it is no longer the primary runtime guarantee. The Astro app itself must therefore preserve these distinct surfaces:
 
-- `https://surtitlelive.com/blog/*`
-- `https://blog.surtitlelive.com/blog/*`
+- canonical public URLs under `https://surtitlelive.com/blog/*`
+- dedicated-origin render URLs under `https://blog.surtitlelive.com/*`
+- dedicated-origin `/blog/*` compatibility URLs that either 301 to the apex canonical HTML URL or 200-rewrite asset/feed/sitemap files
 
 The dedicated Cloudflare Pages compatibility layer is explicitly owned by `public/_redirects`. That file must keep bridge rules for:
 
 - `/blog/_astro/*` -> `/_astro/*`
 - `/blog/fonts/*` -> `/blog/fonts/*`
 - `/blog/logo/*` -> `/blog/logo/*`
-- `/blog/:slug` and `/blog/:locale/:slug` -> root-output article paths
+- `/blog/:slug` and `/blog/:locale/:slug` -> apex canonical article paths with 301 redirects
 
-Shared chrome assets should also be cache-busted when the compatibility contract changes. `src/components/Header.astro` now versions the logo URL from the latest `public/blog/logo/New_logo.png` and `public/_redirects` mtimes, so a Pages deploy that changes the compatibility layer does not keep serving a stale Cloudflare-cached logo.
+Shared chrome must use canonical main-site assets when possible. `src/components/Header.astro` points the logo at `https://surtitlelive.com/logo/New_logo.png` so the visible header does not depend on blog-origin `/blog/logo/*` compatibility rewrites.
 
-Compatibility-only App Router blog pages still exist under `web/src/app/blog/...` and `web/src/app/[locale]/blog/...`, but they are fallback redirects only. Locale fallbacks must preserve both locale and slug when they hand off to the dedicated blog origin.
+Compatibility-only App Router blog pages still exist under `web/src/app/blog/...` and `web/src/app/[locale]/blog/...`, but they are fallback redirects only. Production fallbacks must hand off to the dedicated blog origin's root-output paths while preserving locale and slug.
 
 ## ✅ Build Contract Checks
 
