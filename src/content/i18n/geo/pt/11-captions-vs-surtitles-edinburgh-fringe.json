@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "pt",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Principais Conclusões",
@@ -11,10 +11,10 @@
     "related": "Termos Relacionados"
   },
   "keyTakeaways": [
-    "Para as equipas do Edinburgh Fringe, legendas, sobretítulos, legendas genéricas, Modo de Projeção e acesso móvel para o público descrevem decisões diferentes, não um fluxo de trabalho intermutável.",
+    "Para as equipas do Edinburgh Fringe, legendas, sobretítulos, legendas genéricas, modo de projeção e acesso móvel para o público descrevem decisões diferentes, não um fluxo de trabalho intermutável.",
     "Um espetáculo não-inglês que precisa principalmente de tradução deve geralmente especificar sobretítulos em inglês preparados para performance ao vivo, mesmo que a comunicação para o público diga legendas em inglês.",
     "As legendas podem precisar de identificação do orador, música, efeitos sonoros, áudio fora de palco e outras informações de acessibilidade, não apenas diálogo traduzido.",
-    "O Modo de Projeção e a acesso móvel para o público são escolhas de apresentação para o público; devem ser escolhidos depois de a equipa definir se o texto é tradução, legendagem ou ambos.",
+    "O modo de projeção e o acesso móvel para o público são escolhas de apresentação para o público; devem ser escolhidos depois de a equipa definir se o texto é tradução, legendagem ou ambos.",
     "Antes do ensaio técnico, as equipas do Fringe devem confirmar o conteúdo do texto, o método de apresentação, as faixas de idioma, os requisitos de acessibilidade e quem é responsável pela operação do texto ao vivo."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "Sobretítulos geralmente significam texto de tradução preparado para uma performance ao vivo noutro idioma. Legendas geralmente apoiam o acesso à fala e informações sonoras, incluindo diálogo, identificação do orador, vozes fora de palco, música ou efeitos."
     },
     {
-      "question": "O Modo de Projeção e a acesso móvel para o público são o mesmo que legendas ou sobretítulos?",
-      "answer": "Não. O Modo de Projeção e a acesso móvel para o público descrevem como o público recebe o texto. Legendas e sobretítulos descrevem que tipo de texto está a ser preparado."
+      "question": "O modo de projeção e o acesso móvel para o público são o mesmo que legendas ou sobretítulos?",
+      "answer": "Não. O modo de projeção e o acesso móvel para o público descrevem como o público recebe o texto. Legendas e sobretítulos descrevem que tipo de texto está a ser preparado."
     },
     {
       "question": "O que deve um produtor confirmar antes do ensaio técnico?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Quando é que o SurtitleLive é adequado para um espetáculo do Fringe?",
-      "answer": "O SurtitleLive é mais adequado quando a equipa tem um guião ou texto de performance maioritariamente estável, pode rever o texto antes da estreia, e precisa de texto preparado entregue via Modo de Projeção, acesso móvel para o público, ou ambos durante um espetáculo ao vivo."
+      "answer": "O SurtitleLive é mais adequado quando a equipa tem um guião ou texto de performance maioritariamente estável, pode rever o texto antes da estreia, e precisa de texto preparado entregue via modo de projeção, acesso móvel para o público, ou ambos durante um espetáculo ao vivo."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Um termo familiar para o público para texto traduzido ou transcrito, frequentemente usado casualmente mesmo quando o fluxo de trabalho da produção é de surtitulagem ao vivo."
     },
     {
-      "term": "Modo de Projeção",
-      "definition": "Um modo de exibição do SurtitleLive destinado a ecrãs de teatro ou projetores quando o local suporta texto visível partilhado."
+      "term": "modo de projeção",
+      "definition": "Um modo de apresentação para ecrãs de teatro ou projetores quando o local suporta texto visível partilhado."
     },
     {
       "term": "Visualizador móvel",

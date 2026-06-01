@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "it",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Punti chiave",
@@ -11,10 +11,10 @@
     "related": "Termini correlati"
   },
   "keyTakeaways": [
-    "Per i team dell'Edinburgh Fringe, captions, sopratitoli, sottotitoli, Projection Mode e accesso mobile per il pubblico descrivono decisioni diverse, non un unico flusso di lavoro intercambiabile.",
+    "Per i team dell'Edinburgh Fringe, captions, sopratitoli, sottotitoli, modalità proiezione e accesso mobile per il pubblico descrivono decisioni diverse, non un unico flusso di lavoro intercambiabile.",
     "Uno spettacolo non anglofono che necessita principalmente di traduzione dovrebbe di solito specificare sopratitoli in inglese preparati per la performance dal vivo, anche se il testo rivolto al pubblico indica \"sottotitoli in inglese\".",
     "Le captions potrebbero aver bisogno di identificazione dell'oratore, musica, effetti sonori, audio fuori scena e altre informazioni di accesso, non solo del dialogo tradotto.",
-    "Projection Mode e l’accesso mobile per il pubblico sono scelte di consegna per il pubblico; dovrebbero essere scelte dopo che il team ha definito se il testo è traduzione, captions o entrambi.",
+    "modalità proiezione e l’accesso mobile per il pubblico sono scelte di consegna per il pubblico; dovrebbero essere scelte dopo che il team ha definito se il testo è traduzione, captions o entrambi.",
     "Prima delle prove tecniche, i team del Fringe dovrebbero confermare il contenuto del testo, il metodo di consegna, le tracce linguistiche, i requisiti di accessibilità e chi è responsabile dell'operazione del testo dal vivo."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "I sopratitoli di solito indicano un testo di traduzione preparato per una performance dal vivo in un'altra lingua. Le captions di solito supportano l'accesso alle informazioni vocali e sonore, inclusi dialoghi, identificazione dell'oratore, voci fuori scena, musica o effetti."
     },
     {
-      "question": "Projection Mode e l’accesso mobile per il pubblico sono la stessa cosa delle captions o dei sopratitoli?",
-      "answer": "No. Projection Mode e l’accesso mobile per il pubblico descrivono come il pubblico riceve il testo. Captions e sopratitoli descrivono il tipo di testo che viene preparato."
+      "question": "modalità proiezione e l’accesso mobile per il pubblico sono la stessa cosa delle captions o dei sopratitoli?",
+      "answer": "No. modalità proiezione e l’accesso mobile per il pubblico descrivono come il pubblico riceve il testo. Captions e sopratitoli descrivono il tipo di testo che viene preparato."
     },
     {
       "question": "Cosa dovrebbe confermare un produttore prima delle prove tecniche?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Quando SurtitleLive è adatto per uno spettacolo del Fringe?",
-      "answer": "SurtitleLive è più adatto quando il team ha un copione o un testo di performance per lo più stabile, può revisionare il testo prima dell'apertura e necessita di testo preparato consegnato tramite Projection Mode, accesso mobile per il pubblico o entrambi durante uno spettacolo dal vivo."
+      "answer": "SurtitleLive è più adatto quando il team ha un copione o un testo di performance per lo più stabile, può revisionare il testo prima dell'apertura e necessita di testo preparato consegnato tramite la modalità proiezione, accesso mobile per il pubblico o entrambi durante uno spettacolo dal vivo."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Un termine familiare rivolto al pubblico per testo tradotto o trascritto, spesso usato casualmente anche quando il flusso di lavoro di produzione è di sopratitolazione dal vivo."
     },
     {
-      "term": "Projection Mode",
-      "definition": "Una modalità di visualizzazione di SurtitleLive destinata a schermi teatrali o proiettori quando il teatro supporta testo visibile condiviso."
+      "term": "modalità proiezione",
+      "definition": "Una modalità di visualizzazione per schermi teatrali o proiettori quando lo spazio consente un testo condiviso visibile."
     },
     {
       "term": "Accesso mobile per il pubblico",

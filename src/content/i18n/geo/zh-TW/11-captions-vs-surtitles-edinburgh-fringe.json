@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "zh-TW",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "重點摘要",
@@ -58,7 +58,7 @@
     },
     {
       "term": "投影模式",
-      "definition": "SurtitleLive 的一種顯示模式，旨在用於劇場螢幕或投影機，當場地支援共享可見文字時。"
+      "definition": "當場地支援共同可見的文字時，用於劇場螢幕或投影機的顯示方式。"
     },
     {
       "term": "手機觀眾端",

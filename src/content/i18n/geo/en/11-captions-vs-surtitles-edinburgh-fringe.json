@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "en",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-05-31T00:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
@@ -11,10 +11,10 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "For Edinburgh Fringe teams, captions, surtitles, subtitles, Projection Mode, and mobile viewer delivery describe different decisions, not one interchangeable workflow.",
+    "For Edinburgh Fringe teams, captions, surtitles, subtitles, projection mode, and mobile viewer delivery describe different decisions, not one interchangeable workflow.",
     "A non-English show that mainly needs translation should usually specify prepared English surtitles for live performance, even if audience-facing copy says English subtitles.",
     "Captions may need speaker identification, music, sound effects, off-stage audio, and other access information, not only translated dialogue.",
-    "Projection Mode and mobile viewer delivery are audience delivery choices; they should be chosen after the team defines whether the text is translation, captioning, or both.",
+    "projection mode and mobile viewer delivery are audience delivery choices; they should be chosen after the team defines whether the text is translation, captioning, or both.",
     "Before tech rehearsal, Fringe teams should confirm text content, delivery method, language tracks, access requirements, and who owns live text operation."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "Surtitles usually mean prepared translation text for a live performance in another language. Captions usually support access to speech and sound information, including dialogue, speaker identification, off-stage voices, music, or effects."
     },
     {
-      "question": "Are Projection Mode and mobile viewer delivery the same as captions or surtitles?",
-      "answer": "No. Projection Mode and mobile viewer delivery describe how the audience receives the text. Captions and surtitles describe what kind of text is being prepared."
+      "question": "Are projection mode and mobile viewer delivery the same as captions or surtitles?",
+      "answer": "No. projection mode and mobile viewer delivery describe how the audience receives the text. Captions and surtitles describe what kind of text is being prepared."
     },
     {
       "question": "What should a producer confirm before tech rehearsal?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "When is SurtitleLive a fit for a Fringe show?",
-      "answer": "SurtitleLive fits best when the team has a script or mostly stable performance text, can review the text before opening, and needs prepared text delivered by Projection Mode, mobile viewer, or both during a live show."
+      "answer": "SurtitleLive fits best when the team has a script or mostly stable performance text, can review the text before opening, and needs prepared text delivered by projection mode, mobile viewer, or both during a live show."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "A familiar audience-facing term for translated or transcribed text, often used casually even when the production workflow is live surtitling."
     },
     {
-      "term": "Projection Mode",
-      "definition": "A SurtitleLive display mode intended for theatre screens or projectors when the venue supports shared visible text."
+      "term": "projection mode",
+      "definition": "A projection display setup for theatre screens or projectors when the venue supports shared visible text."
     },
     {
       "term": "Mobile viewer",

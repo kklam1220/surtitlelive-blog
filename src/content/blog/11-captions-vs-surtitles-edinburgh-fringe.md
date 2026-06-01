@@ -1,6 +1,6 @@
 ---
 title: 'Does Your Edinburgh Fringe Show Need Captions or Surtitles?'
-description: 'A decision guide for non-English Edinburgh Fringe teams choosing between English surtitles, accessibility captions, Projection Mode, and mobile viewer delivery before tech rehearsal.'
+description: 'A decision guide for non-English Edinburgh Fringe teams choosing between English surtitles, accessibility captions, projection mode, and mobile viewer delivery before tech rehearsal.'
 pubDate: '2026-05-31'
 heroImage: './blog-11.png'
 heroImageAlt: 'SurtitleLive setup showing captions and surtitles delivery choices for an Edinburgh Fringe production'
@@ -37,7 +37,7 @@ The first problem is translation. The show is performed in one language, and Eng
 
 The second problem is access. D/deaf or hard-of-hearing audiences may need text that represents not only dialogue, but also speaker identification, music, sound effects, or off-stage sound. This is a captioning workflow.
 
-The third problem is delivery. The audience may read the text on a projected screen, in SurtitleLive Projection Mode, on their own phones through a mobile viewer, or through more than one delivery path.
+The third problem is delivery. The audience may read the text on a projected screen, in projection mode, on their own phones through a mobile viewer, or through more than one delivery path.
 
 Those decisions are connected, but they are not the same decision.
 
@@ -118,7 +118,7 @@ The internal production note can say:
 
 Those two sentences serve different audiences. Keeping both can reduce confusion.
 
-## Projection Mode and mobile viewer are delivery choices
+## Projection mode and mobile viewer are delivery choices
 
 A screen is not a content strategy.
 
@@ -153,7 +153,7 @@ Before tech rehearsal, a producer or company manager should be able to answer th
 
 **Delivery**
 
-- Will audiences read from Projection Mode, mobile viewer delivery, or both?
+- Will audiences read from projection mode, mobile viewer delivery, or both?
 - If using projection, where will the screen or projector output sit?
 - If using mobile viewing, how will audiences receive the link or QR code?
 - If there are multiple languages, who decides which tracks are enabled?
@@ -174,7 +174,7 @@ SurtitleLive is designed around prepared live text, not around one fixed screen 
 Once the team knows whether it is preparing translation surtitles, access captions, or both, the setup becomes easier to configure:
 
 - language tracks
-- Projection Mode
+- projection mode
 - mobile viewer delivery
 - operator cueing
 - blackout or hide-text behavior
@@ -198,7 +198,7 @@ Instead of asking a venue or tool provider:
 
 Ask something closer to this:
 
-**We need prepared English surtitles for a live non-English show. We may need Projection Mode, mobile viewer access, or both. If captioning access is required, we need to plan sound and speaker information separately.**
+**We need prepared English surtitles for a live non-English show. We may need projection mode, mobile viewer access, or both. If captioning access is required, we need to plan sound and speaker information separately.**
 
 That request is longer.
 
@@ -216,7 +216,7 @@ Use "surtitles" when planning prepared live translation.
 
 Use "captions" when planning access text for sound as well as speech.
 
-Use "Projection Mode" or "mobile viewer" when deciding how the audience will receive the text.
+Use "projection mode" or "mobile viewer" when deciding how the audience will receive the text.
 
 The word does not need to be perfect in every poster.
 

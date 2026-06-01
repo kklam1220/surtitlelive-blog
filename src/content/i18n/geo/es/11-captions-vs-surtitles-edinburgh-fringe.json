@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "es",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Puntos clave",
@@ -11,10 +11,10 @@
     "related": "Términos relacionados"
   },
   "keyTakeaways": [
-    "Para los equipos del Edinburgh Fringe, los captions de accesibilidad, los sobretítulos, los subtítulos, el Modo Proyección y la entrega por acceso móvil para el público para el público describen decisiones diferentes, no un flujo de trabajo intercambiable.",
+    "Para los equipos del Edinburgh Fringe, los captions de accesibilidad, los sobretítulos, los subtítulos, el modo de proyección y la entrega por acceso móvil para el público describen decisiones diferentes, no un flujo de trabajo intercambiable.",
     "Un espectáculo no angloparlante que principalmente necesita traducción debería especificar normalmente sobretítulos en inglés preparados para la actuación en directo, incluso si el material dirigido al público dice subtítulos en inglés.",
     "Los captions de accesibilidad pueden necesitar identificación del orador, música, efectos de sonido, audio fuera de escena y otra información de acceso, no solo diálogo traducido.",
-    "El Modo Proyección y la entrega por acceso móvil para el público para el público son opciones de presentación para el público; deben elegirse después de que el equipo defina si el texto es traducción, subtitulado de acceso o ambos.",
+    "El modo de proyección y la entrega por acceso móvil para el público son opciones de presentación para el público; deben elegirse después de que el equipo defina si el texto es traducción, subtitulado de acceso o ambos.",
     "Antes del ensayo técnico, los equipos del Fringe deben confirmar el contenido del texto, el método de presentación, las pistas de idioma, los requisitos de acceso y quién es responsable de la operación del texto en directo."
   ],
   "faq": [
@@ -31,16 +31,16 @@
       "answer": "Los sobretítulos suelen referirse a texto de traducción preparado para una actuación en directo en otro idioma. Los captions de accesibilidad suelen apoyar el acceso a la información de voz y sonido, incluyendo diálogos, identificación del orador, voces fuera de escena, música o efectos."
     },
     {
-      "question": "¿Son el Modo Proyección y la entrega por acceso móvil para el público para el público lo mismo que los captions de accesibilidad o los sobretítulos?",
-      "answer": "No. El Modo Proyección y la entrega por acceso móvil para el público para el público describen cómo recibe el público el texto. Los captions de accesibilidad y los sobretítulos describen qué tipo de texto se está preparando."
+      "question": "¿Son el modo de proyección y la entrega por acceso móvil para el público lo mismo que los captions de accesibilidad o los sobretítulos?",
+      "answer": "No. El modo de proyección y la entrega por acceso móvil para el público describen cómo recibe el público el texto. Los captions de accesibilidad y los sobretítulos describen qué tipo de texto se está preparando."
     },
     {
       "question": "¿Qué debe confirmar un productor antes del ensayo técnico?",
-      "answer": "Confirmar si el espectáculo necesita sobretítulos en inglés, captions de accesibilidad o ambos; qué idiomas están habilitados; si se utilizará proyección, entrega por acceso móvil para el público para el público o ambos; quién revisa el texto; y quién opera o supervisa la entrega en directo."
+      "answer": "Confirmar si el espectáculo necesita sobretítulos en inglés, captions de accesibilidad o ambos; qué idiomas están habilitados; si se utilizará proyección, entrega por acceso móvil para el público o ambos; quién revisa el texto; y quién opera o supervisa la entrega en directo."
     },
     {
       "question": "¿Cuándo es SurtitleLive adecuado para un espectáculo del Fringe?",
-      "answer": "SurtitleLive encaja mejor cuando el equipo tiene un guion o un texto de actuación mayormente estable, puede revisar el texto antes del estreno y necesita texto preparado entregado por el Modo Proyección, el acceso móvil para el público para el público o ambos durante un espectáculo en directo."
+      "answer": "SurtitleLive encaja mejor cuando el equipo tiene un guion o un texto de actuación mayormente estable, puede revisar el texto antes del estreno y necesita texto preparado entregado por el modo de proyección, el acceso móvil para el público o ambos durante un espectáculo en directo."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Un término familiar para el público para texto traducido o transcrito, a menudo usado casualmente incluso cuando el flujo de trabajo de producción es el sobretitulado en directo."
     },
     {
-      "term": "Modo Proyección",
-      "definition": "Un modo de visualización de SurtitleLive destinado a pantallas de teatro o proyectores cuando el espacio permite texto visible compartido."
+      "term": "modo de proyección",
+      "definition": "Un modo de visualización para pantallas de teatro o proyectores cuando el espacio permite texto visible compartido."
     },
     {
       "term": "Visor móvil",

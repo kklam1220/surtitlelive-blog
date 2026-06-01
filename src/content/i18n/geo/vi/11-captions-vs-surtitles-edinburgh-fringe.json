@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "vi",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Những điểm chính",
@@ -11,10 +11,10 @@
     "related": "Các thuật ngữ liên quan"
   },
   "keyTakeaways": [
-    "Đối với các đoàn diễn tại Edinburgh Fringe, phụ đề mô tả (captions), phụ đề dịch (surtitles), phụ đề (subtitles), Chế độ Trình chiếu (Projection Mode) và giao diện di động cho khán giả cho khán giả (mobile viewer) mô tả các quyết định khác nhau, không phải một quy trình làm việc có thể thay thế cho nhau.",
+    "Đối với các đoàn diễn tại Edinburgh Fringe, phụ đề mô tả (captions), phụ đề dịch (surtitles), phụ đề (subtitles), chế độ trình chiếu (chế độ trình chiếu) và giao diện di động cho khán giả (mobile viewer) mô tả các quyết định khác nhau, không phải một quy trình làm việc có thể thay thế cho nhau.",
     "Một buổi diễn không nói tiếng Anh chủ yếu cần dịch thuật thường nên chỉ định phụ đề dịch tiếng Anh đã chuẩn bị cho buổi diễn trực tiếp, ngay cả khi nội dung hướng đến khán giả ghi là phụ đề tiếng Anh.",
     "Phụ đề mô tả có thể cần nhận diện người nói, âm nhạc, hiệu ứng âm thanh, âm thanh ngoài sân khấu và các thông tin hỗ trợ tiếp cận khác, không chỉ lời thoại đã dịch.",
-    "Chế độ Trình chiếu và giao diện di động cho khán giả cho khán giả là các lựa chọn hiển thị cho khán giả; chúng nên được chọn sau khi nhóm xác định liệu văn bản là bản dịch, phụ đề mô tả hay cả hai.",
+    "chế độ trình chiếu và giao diện di động cho khán giả là các lựa chọn hiển thị cho khán giả; chúng nên được chọn sau khi nhóm xác định liệu văn bản là bản dịch, phụ đề mô tả hay cả hai.",
     "Trước buổi tổng duyệt kỹ thuật, các đoàn Fringe nên xác nhận nội dung văn bản, phương thức hiển thị, các bản ngôn ngữ, yêu cầu hỗ trợ tiếp cận và ai chịu trách nhiệm vận hành văn bản trực tiếp."
   ],
   "faq": [
@@ -31,16 +31,16 @@
       "answer": "Phụ đề dịch thường có nghĩa là văn bản dịch đã chuẩn bị cho một buổi diễn trực tiếp bằng ngôn ngữ khác. Phụ đề mô tả thường hỗ trợ khả năng tiếp cận thông tin lời nói và âm thanh, bao gồm lời thoại, nhận diện người nói, giọng nói ngoài sân khấu, âm nhạc hoặc hiệu ứng."
     },
     {
-      "question": "Chế độ Trình chiếu và giao diện di động cho khán giả cho khán giả có giống với phụ đề mô tả hay phụ đề dịch không?",
-      "answer": "Không. Chế độ Trình chiếu và giao diện di động cho khán giả cho khán giả mô tả cách khán giả nhận văn bản. Phụ đề mô tả và phụ đề dịch mô tả loại văn bản đang được chuẩn bị."
+      "question": "chế độ trình chiếu và giao diện di động cho khán giả có giống với phụ đề mô tả hay phụ đề dịch không?",
+      "answer": "Không. chế độ trình chiếu và giao diện di động cho khán giả mô tả cách khán giả nhận văn bản. Phụ đề mô tả và phụ đề dịch mô tả loại văn bản đang được chuẩn bị."
     },
     {
       "question": "Một nhà sản xuất nên xác nhận điều gì trước buổi tổng duyệt kỹ thuật?",
-      "answer": "Xác nhận liệu buổi diễn có cần phụ đề dịch tiếng Anh, phụ đề mô tả, hay cả hai; những ngôn ngữ nào được bật; liệu trình chiếu, giao diện di động cho khán giả cho khán giả, hay cả hai sẽ được sử dụng; ai xem xét văn bản; và ai vận hành hoặc giám sát việc hiển thị trực tiếp."
+      "answer": "Xác nhận liệu buổi diễn có cần phụ đề dịch tiếng Anh, phụ đề mô tả, hay cả hai; những ngôn ngữ nào được bật; liệu trình chiếu, giao diện di động cho khán giả, hay cả hai sẽ được sử dụng; ai xem xét văn bản; và ai vận hành hoặc giám sát việc hiển thị trực tiếp."
     },
     {
       "question": "Khi nào SurtitleLive phù hợp cho một buổi diễn Fringe?",
-      "answer": "SurtitleLive phù hợp nhất khi nhóm có kịch bản hoặc văn bản biểu diễn tương đối ổn định, có thể xem xét văn bản trước khi công diễn và cần văn bản đã chuẩn bị được hiển thị bằng Chế độ Trình chiếu, giao diện di động cho khán giả, hoặc cả hai trong một buổi diễn trực tiếp."
+      "answer": "SurtitleLive phù hợp nhất khi nhóm có kịch bản hoặc văn bản biểu diễn tương đối ổn định, có thể xem xét văn bản trước khi công diễn và cần văn bản đã chuẩn bị được hiển thị bằng chế độ trình chiếu, giao diện di động cho khán giả, hoặc cả hai trong một buổi diễn trực tiếp."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Một thuật ngữ quen thuộc hướng đến khán giả cho văn bản đã dịch hoặc đã chép, thường được sử dụng một cách thông thường ngay cả khi quy trình sản xuất là phụ đề dịch trực tiếp."
     },
     {
-      "term": "Chế độ Trình chiếu",
-      "definition": "Một chế độ hiển thị của SurtitleLive dành cho màn hình nhà hát hoặc máy chiếu khi địa điểm hỗ trợ văn bản hiển thị chung."
+      "term": "chế độ trình chiếu",
+      "definition": "Cách hiển thị trên màn hình nhà hát hoặc máy chiếu khi địa điểm hỗ trợ văn bản hiển thị chung."
     },
     {
       "term": "Trình xem di động",

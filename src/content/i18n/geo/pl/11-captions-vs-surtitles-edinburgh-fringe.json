@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "pl",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Kluczowe wnioski",
@@ -11,10 +11,10 @@
     "related": "Powiązane terminy"
   },
   "keyTakeaways": [
-    "Dla zespołów Edinburgh Fringe, napisy dostępnościowe, nadtytuły, napisy, Tryb Projekcji i odbiór przez urządzenia mobilne widzów opisują różne decyzje, a nie jeden wymienny przepływ pracy.",
+    "Dla zespołów Edinburgh Fringe, napisy dostępnościowe, nadtytuły, napisy, tryb projekcji i odbiór przez urządzenia mobilne widzów opisują różne decyzje, a nie jeden wymienny przepływ pracy.",
     "Nieanglojęzyczny spektakl, który głównie potrzebuje tłumaczenia, powinien zazwyczaj określać przygotowane angielskie nadtytuły do występu na żywo, nawet jeśli materiały dla publiczności mówią o angielskich napisach.",
     "Napisy dostępnościowe mogą wymagać identyfikacji mówców, muzyki, efektów dźwiękowych, dźwięków spoza sceny i innych informacji o dostępności, a nie tylko przetłumaczonych dialogów.",
-    "Tryb Projekcji i odbiór przez urządzenia mobilne widzów to wybory dotyczące dostarczania dla publiczności; powinny być wybrane po tym, jak zespół zdefiniuje, czy tekst jest tłumaczeniem, napisami dla niesłyszących, czy jednym i drugim.",
+    "tryb projekcji i odbiór przez urządzenia mobilne widzów to wybory dotyczące dostarczania dla publiczności; powinny być wybrane po tym, jak zespół zdefiniuje, czy tekst jest tłumaczeniem, napisami dla niesłyszących, czy jednym i drugim.",
     "Przed próbą techniczną, zespoły Fringe powinny potwierdzić treść tekstu, metodę dostarczania, ścieżki językowe, wymagania dotyczące dostępności oraz kto odpowiada za obsługę tekstu na żywo."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "Nadtytuły zazwyczaj oznaczają przygotowany tekst tłumaczeniowy do występu na żywo w innym języku. Napisy dostępnościowe zazwyczaj wspierają dostęp do informacji o mowie i dźwięku, w tym dialogów, identyfikacji mówców, głosów spoza sceny, muzyki lub efektów."
     },
     {
-      "question": "Czy Tryb Projekcji i odbiór przez urządzenia mobilne widzów są tym samym co napisy dostępnościowe lub nadtytuły?",
-      "answer": "Nie. Tryb Projekcji i odbiór przez urządzenia mobilne widzów opisują, w jaki sposób publiczność otrzymuje tekst. Napisy dostępnościowe i nadtytuły opisują, jaki rodzaj tekstu jest przygotowywany."
+      "question": "Czy tryb projekcji i odbiór przez urządzenia mobilne widzów są tym samym co napisy dostępnościowe lub nadtytuły?",
+      "answer": "Nie. tryb projekcji i odbiór przez urządzenia mobilne widzów opisują, w jaki sposób publiczność otrzymuje tekst. Napisy dostępnościowe i nadtytuły opisują, jaki rodzaj tekstu jest przygotowywany."
     },
     {
       "question": "Co powinien potwierdzić producent przed próbą techniczną?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Kiedy SurtitleLive pasuje do spektaklu na Fringe?",
-      "answer": "SurtitleLive najlepiej pasuje, gdy zespół ma scenariusz lub w większości stabilny tekst spektaklu, może zrecenzować tekst przed premierą i potrzebuje przygotowanego tekstu dostarczanego przez Tryb Projekcji, urządzenia mobilne widzów lub oba podczas spektaklu na żywo."
+      "answer": "SurtitleLive najlepiej pasuje, gdy zespół ma scenariusz lub w większości stabilny tekst spektaklu, może zrecenzować tekst przed premierą i potrzebuje przygotowanego tekstu dostarczanego przez tryb projekcji, urządzenia mobilne widzów lub oba podczas spektaklu na żywo."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Znany termin skierowany do publiczności, oznaczający przetłumaczony lub transkrybowany tekst, często używany swobodnie, nawet gdy przepływ pracy produkcyjnej to nadtytuły na żywo."
     },
     {
-      "term": "Tryb Projekcji",
-      "definition": "Tryb wyświetlania SurtitleLive przeznaczony dla ekranów teatralnych lub projektorów, gdy miejsce wspiera wspólny widoczny tekst."
+      "term": "tryb projekcji",
+      "definition": "Sposób wyświetlania na ekranach teatralnych lub projektorach, gdy miejsce pozwala na wspólnie widoczny tekst."
     },
     {
       "term": "Mobilny viewer",

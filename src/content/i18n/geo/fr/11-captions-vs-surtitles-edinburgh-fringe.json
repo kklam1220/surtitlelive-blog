@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "fr",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Points clés à retenir",
@@ -11,10 +11,10 @@
     "related": "Termes associés"
   },
   "keyTakeaways": [
-    "Pour les équipes de l'Edinburgh Fringe, les captions d’accessibilité, les surtitres, les sous-titres génériques, le Projection Mode et l’accès mobile pour le public décrivent des décisions différentes, et non un flux de travail interchangeable.",
+    "Pour les équipes de l'Edinburgh Fringe, les captions d’accessibilité, les surtitres, les sous-titres génériques, le mode de projection et l’accès mobile pour le public décrivent des décisions différentes, et non un flux de travail interchangeable.",
     "Un spectacle non anglophone nécessitant principalement une traduction devrait généralement spécifier des surtitres anglais préparés pour la performance en direct, même si la communication publique mentionne des sous-titres anglais.",
     "Les captions d’accessibilité peuvent nécessiter l'identification des intervenants, la musique, les effets sonores, l'audio hors scène et d'autres informations d'accès, et pas seulement le dialogue traduit.",
-    "Le Projection Mode et l’accès mobile pour le public sont des choix de présentation pour le public ; ils doivent être faits après que l'équipe ait défini si le texte est une traduction, des captions d’accessibilité, ou les deux.",
+    "Le mode de projection et l’accès mobile pour le public sont des choix de présentation pour le public ; ils doivent être faits après que l'équipe ait défini si le texte est une traduction, des captions d’accessibilité, ou les deux.",
     "Avant la répétition technique, les équipes du Fringe doivent confirmer le contenu du texte, la méthode de diffusion, les pistes linguistiques, les exigences d'accès et la personne responsable de l'opération du texte en direct."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "Les surtitres désignent généralement un texte de traduction préparé pour une performance en direct dans une autre langue. Les captions d’accessibilité soutiennent généralement l'accès aux informations vocales et sonores, y compris le dialogue, l'identification des intervenants, les voix hors scène, la musique ou les effets."
     },
     {
-      "question": "Le Projection Mode et l’accès mobile pour le public sont-ils la même chose que les captions d’accessibilité ou les surtitres ?",
-      "answer": "Non. Le Projection Mode et l’accès mobile pour le public décrivent comment le public reçoit le texte. Les captions d’accessibilité et les surtitres décrivent le type de texte en préparation."
+      "question": "Le mode de projection et l’accès mobile pour le public sont-ils la même chose que les captions d’accessibilité ou les surtitres ?",
+      "answer": "Non. Le mode de projection et l’accès mobile pour le public décrivent comment le public reçoit le texte. Les captions d’accessibilité et les surtitres décrivent le type de texte en préparation."
     },
     {
       "question": "Que doit confirmer un producteur avant la répétition technique ?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Quand SurtitleLive est-il adapté à un spectacle du Fringe ?",
-      "answer": "SurtitleLive convient le mieux lorsque l'équipe dispose d'un script ou d'un texte de performance majoritairement stable, peut réviser le texte avant l'ouverture, et a besoin d'un texte préparé diffusé via le Projection Mode, l’accès mobile pour le public, ou les deux pendant un spectacle en direct."
+      "answer": "SurtitleLive convient le mieux lorsque l'équipe dispose d'un script ou d'un texte de performance majoritairement stable, peut réviser le texte avant l'ouverture, et a besoin d'un texte préparé diffusé via le mode de projection, l’accès mobile pour le public, ou les deux pendant un spectacle en direct."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Un terme familier pour le public désignant un texte traduit ou transcrit, souvent utilisé de manière informelle même lorsque le flux de travail de production est du surtitrage en direct."
     },
     {
-      "term": "Projection Mode",
-      "definition": "Un mode d'affichage SurtitleLive destiné aux écrans de théâtre ou aux projecteurs lorsque le lieu permet un texte visible partagé."
+      "term": "mode de projection",
+      "definition": "Un mode d’affichage pour les écrans de théâtre ou les projecteurs lorsque le lieu permet un texte visible partagé."
     },
     {
       "term": "Vue mobile pour le public",

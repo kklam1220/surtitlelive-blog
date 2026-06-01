@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "tr",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
+  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
   "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Temel Çıkarımlar",
@@ -11,10 +11,10 @@
     "related": "İlgili Terimler"
   },
   "keyTakeaways": [
-    "Edinburgh Fringe ekipleri için erişim altyazıları, üstyazılar, altyazılar, Projection Mode ve seyirciye yönelik mobil görünüm ekranı teslimatı, birbirinin yerine geçebilen tek bir iş akışı değil, farklı kararları tanımlar.",
+    "Edinburgh Fringe ekipleri için erişim altyazıları, üstyazılar, altyazılar, projeksiyon modu ve seyirciye yönelik mobil görünüm ekranı teslimatı, birbirinin yerine geçebilen tek bir iş akışı değil, farklı kararları tanımlar.",
     "Esas olarak çeviriye ihtiyaç duyan İngilizce olmayan bir gösteri, izleyiciye yönelik metinde İngilizce altyazı yazsa bile, genellikle canlı performans için hazırlanmış İngilizce üstyazılar belirtmelidir.",
     "Erişim altyazıları, yalnızca çevrilmiş diyalog değil, aynı zamanda konuşmacı tanımlaması, müzik, ses efektleri, sahne dışı ses ve diğer erişim bilgilerini de gerektirebilir.",
-    "Projection Mode ve seyirciye yönelik mobil görünüm ekranı teslimatı, izleyiciye yönelik teslimat seçenekleridir; metnin çeviri mi, erişim altyazısı mı yoksa her ikisi mi olduğunu ekip tanımladıktan sonra seçilmelidir.",
+    "projeksiyon modu ve seyirciye yönelik mobil görünüm ekranı teslimatı, izleyiciye yönelik teslimat seçenekleridir; metnin çeviri mi, erişim altyazısı mı yoksa her ikisi mi olduğunu ekip tanımladıktan sonra seçilmelidir.",
     "Teknik provadan önce, Fringe ekipleri metin içeriğini, teslimat yöntemini, dil parçalarını, erişim gereksinimlerini ve canlı metin operasyonunun sorumlusunu teyit etmelidir."
   ],
   "faq": [
@@ -31,8 +31,8 @@
       "answer": "Üstyazılar genellikle başka bir dildeki canlı performans için hazırlanmış çeviri metni anlamına gelir. Erişim altyazıları genellikle diyalog, konuşmacı tanımlaması, sahne dışı sesler, müzik veya efektler dahil olmak üzere konuşma ve ses bilgilerine erişimi destekler."
     },
     {
-      "question": "Projection Mode ve seyirciye yönelik mobil görünüm ekranı teslimatı, erişim altyazıları veya üstyazılar ile aynı mıdır?",
-      "answer": "Hayır. Projection Mode ve seyirciye yönelik mobil görünüm ekranı teslimatı, izleyicinin metni nasıl aldığını açıklar. Erişim altyazıları ve üstyazılar ise ne tür bir metnin hazırlandığını açıklar."
+      "question": "projeksiyon modu ve seyirciye yönelik mobil görünüm ekranı teslimatı, erişim altyazıları veya üstyazılar ile aynı mıdır?",
+      "answer": "Hayır. projeksiyon modu ve seyirciye yönelik mobil görünüm ekranı teslimatı, izleyicinin metni nasıl aldığını açıklar. Erişim altyazıları ve üstyazılar ise ne tür bir metnin hazırlandığını açıklar."
     },
     {
       "question": "Bir yapımcı teknik provadan önce neyi teyit etmelidir?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "SurtitleLive bir Fringe gösterisi için ne zaman uygun olur?",
-      "answer": "SurtitleLive, ekibin bir senaryosu veya çoğunlukla sabit bir performans metni olduğunda, açılıştan önce metni gözden geçirebildiğinde ve canlı bir gösteri sırasında Projection Mode, seyirciye yönelik mobil görünüm ekranı veya her ikisi aracılığıyla hazırlanmış metnin teslim edilmesine ihtiyaç duyduğunda en uygunudur."
+      "answer": "SurtitleLive, ekibin bir senaryosu veya çoğunlukla sabit bir performans metni olduğunda, açılıştan önce metni gözden geçirebildiğinde ve canlı bir gösteri sırasında projeksiyon modu, seyirciye yönelik mobil görünüm ekranı veya her ikisi aracılığıyla hazırlanmış metnin teslim edilmesine ihtiyaç duyduğunda en uygunudur."
     }
   ],
   "glossary": [
@@ -57,8 +57,8 @@
       "definition": "Çevrilmiş veya yazıya dökülmüş metin için tanıdık, izleyiciye yönelik bir terimdir, prodüksiyon iş akışı canlı üstyazı hazırlama olsa bile genellikle gündelik dilde kullanılır."
     },
     {
-      "term": "Projection Mode",
-      "definition": "Mekanın paylaşılan görünür metni desteklediği durumlarda tiyatro ekranları veya projektörler için tasarlanmış bir SurtitleLive görüntüleme modu."
+      "term": "projeksiyon modu",
+      "definition": "Mekân ortak görülebilir metni desteklediğinde tiyatro ekranları veya projektörler için kullanılan görüntüleme biçimi."
     },
     {
       "term": "mobile viewer (seyirciye yönelik mobil görünüm ekranı)",
