@@ -3,7 +3,7 @@
   "locale": "it",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
   "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
-  "generatedAt": "2026-06-01T00:15:49.978Z",
+  "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Punti chiave",
     "faq": "Domande frequenti",
@@ -11,36 +11,36 @@
     "related": "Termini correlati"
   },
   "keyTakeaways": [
-    "Per i team dell'Edinburgh Fringe, didascalie, sopratitoli, sottotitoli, Projection Mode e consegna tramite visualizzatore mobile descrivono decisioni diverse, non un unico flusso di lavoro intercambiabile.",
+    "Per i team dell'Edinburgh Fringe, captions, sopratitoli, sottotitoli, Projection Mode e accesso mobile per il pubblico descrivono decisioni diverse, non un unico flusso di lavoro intercambiabile.",
     "Uno spettacolo non anglofono che necessita principalmente di traduzione dovrebbe di solito specificare sopratitoli in inglese preparati per la performance dal vivo, anche se il testo rivolto al pubblico indica \"sottotitoli in inglese\".",
-    "Le didascalie potrebbero aver bisogno di identificazione dell'oratore, musica, effetti sonori, audio fuori scena e altre informazioni di accesso, non solo del dialogo tradotto.",
-    "Projection Mode e la consegna tramite visualizzatore mobile sono scelte di consegna per il pubblico; dovrebbero essere scelte dopo che il team ha definito se il testo è traduzione, didascalie o entrambi.",
+    "Le captions potrebbero aver bisogno di identificazione dell'oratore, musica, effetti sonori, audio fuori scena e altre informazioni di accesso, non solo del dialogo tradotto.",
+    "Projection Mode e l’accesso mobile per il pubblico sono scelte di consegna per il pubblico; dovrebbero essere scelte dopo che il team ha definito se il testo è traduzione, captions o entrambi.",
     "Prima delle prove tecniche, i team del Fringe dovrebbero confermare il contenuto del testo, il metodo di consegna, le tracce linguistiche, i requisiti di accessibilità e chi è responsabile dell'operazione del testo dal vivo."
   ],
   "faq": [
     {
-      "question": "Uno spettacolo all'Edinburgh Fringe ha bisogno di didascalie o sopratitoli?",
-      "answer": "Dipende dalle esigenze del pubblico. Uno spettacolo non anglofono che necessita di traduzione per il pubblico anglofono di solito richiede sopratitoli in inglese preparati. Uno spettacolo con requisiti di accessibilità per persone sorde o con problemi di udito potrebbe aver bisogno di didascalie che includano etichette per gli oratori, musica, effetti sonori e altre informazioni audio."
+      "question": "Uno spettacolo all'Edinburgh Fringe ha bisogno di captions o sopratitoli?",
+      "answer": "Dipende dalle esigenze del pubblico. Uno spettacolo non anglofono che necessita di traduzione per il pubblico anglofono di solito richiede sopratitoli in inglese preparati. Uno spettacolo con requisiti di accessibilità per persone sorde o con problemi di udito potrebbe aver bisogno di captions che includano etichette per gli oratori, musica, effetti sonori e altre informazioni audio."
     },
     {
       "question": "Possiamo dire \"sottotitoli in inglese\" nel nostro annuncio del Fringe?",
       "answer": "Sì. \"Sottotitoli in inglese\" è spesso un linguaggio chiaro e comprensibile per il pubblico. Per la pianificazione della produzione, \"sopratitoli in inglese preparati\" è di solito più preciso quando il testo è una traduzione revisionata e gestita durante uno spettacolo dal vivo."
     },
     {
-      "question": "Qual è la differenza tra sopratitoli e didascalie per le produzioni del Fringe?",
-      "answer": "I sopratitoli di solito indicano un testo di traduzione preparato per una performance dal vivo in un'altra lingua. Le didascalie di solito supportano l'accesso alle informazioni vocali e sonore, inclusi dialoghi, identificazione dell'oratore, voci fuori scena, musica o effetti."
+      "question": "Qual è la differenza tra sopratitoli e captions per le produzioni del Fringe?",
+      "answer": "I sopratitoli di solito indicano un testo di traduzione preparato per una performance dal vivo in un'altra lingua. Le captions di solito supportano l'accesso alle informazioni vocali e sonore, inclusi dialoghi, identificazione dell'oratore, voci fuori scena, musica o effetti."
     },
     {
-      "question": "Projection Mode e la consegna tramite visualizzatore mobile sono la stessa cosa delle didascalie o dei sopratitoli?",
-      "answer": "No. Projection Mode e la consegna tramite visualizzatore mobile descrivono come il pubblico riceve il testo. Didascalie e sopratitoli descrivono il tipo di testo che viene preparato."
+      "question": "Projection Mode e l’accesso mobile per il pubblico sono la stessa cosa delle captions o dei sopratitoli?",
+      "answer": "No. Projection Mode e l’accesso mobile per il pubblico descrivono come il pubblico riceve il testo. Captions e sopratitoli descrivono il tipo di testo che viene preparato."
     },
     {
       "question": "Cosa dovrebbe confermare un produttore prima delle prove tecniche?",
-      "answer": "Confermare se lo spettacolo necessita di sopratitoli in inglese, didascalie o entrambi; quali lingue sono abilitate; se verrà utilizzata la proiezione, la consegna tramite visualizzatore mobile o entrambi; chi revisiona il testo; e chi opera o supervisiona la consegna dal vivo."
+      "answer": "Confermare se lo spettacolo necessita di sopratitoli in inglese, captions o entrambi; quali lingue sono abilitate; se verrà utilizzata la proiezione, la accesso mobile per il pubblico o entrambi; chi revisiona il testo; e chi opera o supervisiona la consegna dal vivo."
     },
     {
       "question": "Quando SurtitleLive è adatto per uno spettacolo del Fringe?",
-      "answer": "SurtitleLive è più adatto quando il team ha un copione o un testo di performance per lo più stabile, può revisionare il testo prima dell'apertura e necessita di testo preparato consegnato tramite Projection Mode, visualizzatore mobile o entrambi durante uno spettacolo dal vivo."
+      "answer": "SurtitleLive è più adatto quando il team ha un copione o un testo di performance per lo più stabile, può revisionare il testo prima dell'apertura e necessita di testo preparato consegnato tramite Projection Mode, accesso mobile per il pubblico o entrambi durante uno spettacolo dal vivo."
     }
   ],
   "glossary": [
@@ -49,7 +49,7 @@
       "definition": "Testo di traduzione in inglese preparato, mostrato o consegnato durante una performance dal vivo non anglofona."
     },
     {
-      "term": "Didascalie",
+      "term": "Captions",
       "definition": "Testo che rappresenta il dialogo e le informazioni sonore rilevanti, spesso utilizzato per supportare il pubblico sordo o con problemi di udito."
     },
     {
@@ -61,16 +61,16 @@
       "definition": "Una modalità di visualizzazione di SurtitleLive destinata a schermi teatrali o proiettori quando il teatro supporta testo visibile condiviso."
     },
     {
-      "term": "Visualizzatore mobile",
+      "term": "Accesso mobile per il pubblico",
       "definition": "Una visualizzazione per il pubblico basata su browser, aperta tramite link o codice QR, in modo che gli spettatori possano leggere il testo abilitato sui propri telefoni."
     },
     {
       "term": "Identificazione dell'oratore",
-      "definition": "Informazioni nelle didascalie che indicano al pubblico chi sta parlando, specialmente quando l'oratore potrebbe non essere visivamente ovvio."
+      "definition": "Informazioni nelle captions che indicano al pubblico chi sta parlando, specialmente quando l'oratore potrebbe non essere visivamente ovvio."
     },
     {
       "term": "Informazioni sonore",
-      "definition": "Contenuto delle didascalie che rappresenta audio significativo non dialogico come musica, suoni fuori scena, effetti o silenzio."
+      "definition": "Contenuto delle captions che rappresenta audio significativo non dialogico come musica, suoni fuori scena, effetti o silenzio."
     },
     {
       "term": "Prove tecniche",

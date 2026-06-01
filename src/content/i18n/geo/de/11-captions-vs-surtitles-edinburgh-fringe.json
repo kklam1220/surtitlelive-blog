@@ -3,7 +3,7 @@
   "locale": "de",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
   "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
-  "generatedAt": "2026-06-01T00:12:01.245Z",
+  "generatedAt": "2026-06-01T01:17:14.459Z",
   "sectionTitles": {
     "keyTakeaways": "Wichtige Erkenntnisse",
     "faq": "Häufig gestellte Fragen",
@@ -11,36 +11,36 @@
     "related": "Verwandte Begriffe"
   },
   "keyTakeaways": [
-    "Für Edinburgh Fringe Teams beschreiben barrierefreie Untertitel, Übertitel, Untertitel, der Projektionsmodus und die Bereitstellung über den mobilen Viewer unterschiedliche Entscheidungen, nicht einen austauschbaren Workflow.",
+    "Für Edinburgh Fringe Teams beschreiben barrierefreie Captions, Übertitel, Untertitel, der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum unterschiedliche Entscheidungen, nicht einen austauschbaren Workflow.",
     "Eine nicht-englischsprachige Show, die hauptsächlich eine Übersetzung benötigt, sollte in der Regel vorbereitete englische Übertitel für die Live-Aufführung angeben, auch wenn der publikumswirksame Text „englische Untertitel“ lautet.",
-    "Barrierefreie Untertitel können Sprecheridentifikation, Musik, Soundeffekte, Off-Stage-Audio und andere Zugangsinformationen erfordern, nicht nur übersetzte Dialoge.",
-    "Der Projektionsmodus und die Bereitstellung über den mobilen Viewer sind Bereitstellungsoptionen für das Publikum; sie sollten gewählt werden, nachdem das Team definiert hat, ob der Text eine Übersetzung, eine barrierefreie Untertitelung oder beides ist.",
-    "Vor der technischen Probe sollten Fringe-Teams den Textinhalt, die Bereitstellungsmethode, die Sprachspuren, die Zugangsbedingungen und die Verantwortlichkeit für den Live-Textbetrieb bestätigen."
+    "Barrierefreie Captions können Sprecheridentifikation, Musik, Soundeffekte, Off-Stage-Audio und andere Zugangsinformationen erfordern, nicht nur übersetzte Dialoge.",
+    "Der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum sind Ausspielungsoptionen für das Publikum; sie sollten gewählt werden, nachdem das Team definiert hat, ob der Text eine Übersetzung, eine barrierefreie Captionsung oder beides ist.",
+    "Vor der technischen Probe sollten Fringe-Teams den Textinhalt, die Ausspielungsmethode, die Sprachspuren, die Zugangsbedingungen und die Verantwortlichkeit für den Live-Textbetrieb bestätigen."
   ],
   "faq": [
     {
-      "question": "Braucht eine Edinburgh Fringe Show barrierefreie Untertitel oder Übertitel?",
-      "answer": "Das hängt vom Publikumsbedarf ab. Eine nicht-englischsprachige Show, die eine Übersetzung für englischsprachige Zuschauer benötigt, braucht in der Regel vorbereitete englische Übertitel. Eine Show mit Zugangsbedingungen für gehörlose oder schwerhörige Menschen benötigt möglicherweise barrierefreie Untertitel, die Sprecherkennzeichnungen, Musik, Soundeffekte und andere Audioinformationen enthalten."
+      "question": "Braucht eine Edinburgh Fringe Show barrierefreie Captions oder Übertitel?",
+      "answer": "Das hängt vom Publikumsbedarf ab. Eine nicht-englischsprachige Show, die eine Übersetzung für englischsprachige Zuschauer benötigt, braucht in der Regel vorbereitete englische Übertitel. Eine Show mit Zugangsbedingungen für gehörlose oder schwerhörige Menschen benötigt möglicherweise barrierefreie Captions, die Sprecherkennzeichnungen, Musik, Soundeffekte und andere Audioinformationen enthalten."
     },
     {
       "question": "Können wir in unserer Fringe-Ankündigung „englische Untertitel“ angeben?",
       "answer": "Ja. „Englische Untertitel“ ist oft eine klare, publikumswirksame Formulierung. Für die Produktionsplanung sind vorbereitete englische Übertitel in der Regel präziser, wenn der Text eine überprüfte Übersetzung ist, die während einer Live-Show eingespielt wird."
     },
     {
-      "question": "Was ist der Unterschied zwischen Übertiteln und barrierefreien Untertiteln für Fringe-Produktionen?",
-      "answer": "Übertitel bedeuten in der Regel vorbereiteten Übersetzungstext für eine Live-Aufführung in einer anderen Sprache. Barrierefreie Untertitel unterstützen in der Regel den Zugang zu Sprach- und Toninformationen, einschließlich Dialogen, Sprecheridentifikation, Stimmen von außerhalb der Bühne, Musik oder Effekten."
+      "question": "Was ist der Unterschied zwischen Übertiteln und barrierefreien Captions für Fringe-Produktionen?",
+      "answer": "Übertitel bedeuten in der Regel vorbereiteten Übersetzungstext für eine Live-Aufführung in einer anderen Sprache. Barrierefreie Captions unterstützen in der Regel den Zugang zu Sprach- und Toninformationen, einschließlich Dialogen, Sprecheridentifikation, Stimmen von außerhalb der Bühne, Musik oder Effekten."
     },
     {
-      "question": "Sind der Projektionsmodus und die Bereitstellung über den mobilen Viewer dasselbe wie barrierefreie Untertitel oder Übertitel?",
-      "answer": "Nein. Der Projektionsmodus und die Bereitstellung über den mobilen Viewer beschreiben, wie das Publikum den Text erhält. Barrierefreie Untertitel und Übertitel beschreiben, welche Art von Text vorbereitet wird."
+      "question": "Sind der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum dasselbe wie barrierefreie Captions oder Übertitel?",
+      "answer": "Nein. Der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum beschreiben, wie das Publikum den Text erhält. Barrierefreie Captions und Übertitel beschreiben, welche Art von Text vorbereitet wird."
     },
     {
       "question": "Was sollte ein Produzent vor der technischen Probe bestätigen?",
-      "answer": "Bestätigen Sie, ob die Show englische Übertitel, barrierefreie Untertitel oder beides benötigt; welche Sprachen aktiviert sind; ob Projektion, mobile Viewer-Bereitstellung oder beides verwendet wird; wer den Text überprüft; und wer die Live-Bereitstellung bedient oder überwacht."
+      "answer": "Bestätigen Sie, ob die Show englische Übertitel, barrierefreie Captions oder beides benötigt; welche Sprachen aktiviert sind; ob Projektion, mobile Ansicht für das Publikum oder beides verwendet wird; wer den Text überprüft; und wer die Live-Ausspielung bedient oder überwacht."
     },
     {
       "question": "Wann passt SurtitleLive zu einer Fringe Show?",
-      "answer": "SurtitleLive passt am besten, wenn das Team ein Skript oder einen größtenteils stabilen Aufführungstext hat, den Text vor der Premiere überprüfen kann und vorbereiteten Text benötigt, der während einer Live-Show über den Projektionsmodus, den mobilen Viewer oder beides bereitgestellt wird."
+      "answer": "SurtitleLive passt am besten, wenn das Team ein Skript oder einen größtenteils stabilen Aufführungstext hat, den Text vor der Premiere überprüfen kann und vorbereiteten Text benötigt, der während einer Live-Show über den Projektionsmodus, die mobile Ansicht für das Publikum oder beides bereitgestellt wird."
     }
   ],
   "glossary": [
@@ -49,7 +49,7 @@
       "definition": "Vorbereiteter englischer Übersetzungstext, der während einer nicht-englischsprachigen Live-Aufführung angezeigt oder bereitgestellt wird."
     },
     {
-      "term": "Barrierefreie Untertitel",
+      "term": "Barrierefreie Captions",
       "definition": "Text, der Dialoge und relevante Toninformationen darstellt und oft zur Unterstützung von gehörlosen oder schwerhörigen Zuschauern verwendet wird."
     },
     {
@@ -66,15 +66,15 @@
     },
     {
       "term": "Sprecheridentifikation",
-      "definition": "Informationen in barrierefreien Untertiteln, die dem Publikum mitteilen, wer spricht, besonders wenn der Sprecher visuell nicht offensichtlich ist."
+      "definition": "Informationen in barrierefreien Captions, die dem Publikum mitteilen, wer spricht, besonders wenn der Sprecher visuell nicht offensichtlich ist."
     },
     {
       "term": "Toninformationen",
-      "definition": "Inhalt von barrierefreien Untertiteln, der bedeutungsvolle Nicht-Dialog-Audios wie Musik, Geräusche von außerhalb der Bühne, Effekte oder Stille darstellt."
+      "definition": "Inhalt von barrierefreien Captions, der bedeutungsvolle Nicht-Dialog-Audios wie Musik, Geräusche von außerhalb der Bühne, Effekte oder Stille darstellt."
     },
     {
       "term": "Technische Probe",
-      "definition": "Die Probenphase, in der die Produktion die Einrichtung des Veranstaltungsortes, die Bereitstellungsmethode, das Text-Timing und den Live-Betrieb vor der Aufführung testet."
+      "definition": "Die Probenphase, in der die Produktion die Einrichtung des Veranstaltungsortes, die Ausspielungsmethode, das Text-Timing und den Live-Betrieb vor der Aufführung testet."
     }
   ]
 }

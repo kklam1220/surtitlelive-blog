@@ -1,7 +1,4 @@
 ---
-# DRAFT - NOT PUBLISHED. The leading underscore keeps Astro from building this
-# into a page. To publish: rename to remove the `_` prefix and `-DRAFT` suffix,
-# set the final pubDate, and confirm the matching GEO JSON.
 title: 'Does Your Edinburgh Fringe Show Need Captions or Surtitles?'
 description: 'A decision guide for non-English Edinburgh Fringe teams choosing between English surtitles, accessibility captions, Projection Mode, and mobile viewer delivery before tech rehearsal.'
 pubDate: '2026-05-31'
