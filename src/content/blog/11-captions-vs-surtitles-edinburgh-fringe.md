@@ -4,7 +4,7 @@
 # set the final pubDate, and confirm the matching GEO JSON.
 title: 'Does Your Edinburgh Fringe Show Need Captions or Surtitles?'
 description: 'A decision guide for non-English Edinburgh Fringe teams choosing between English surtitles, accessibility captions, Projection Mode, and mobile viewer delivery before tech rehearsal.'
-pubDate: '2026-05-22'
+pubDate: '2026-05-31'
 heroImage: './blog-11.png'
 heroImageAlt: 'SurtitleLive setup showing captions and surtitles delivery choices for an Edinburgh Fringe production'
 tags: ['Edinburgh Fringe', 'English surtitles', 'Captions', 'Non-English theatre', 'SurtitleLive']

@@ -4,14 +4,14 @@
   "sourceLocale": "en",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
   "sourcePath": "blog/src/content/blog/11-captions-vs-surtitles-edinburgh-fringe.md",
-  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
   "status": "translated",
   "updatedAt": "2026-06-01T00:17:52.833Z",
   "translatedAt": "2026-06-01T00:17:52.833Z",
   "frontmatter": {
     "title": "에든버러 프린지 공연, 캡션이 필요할까요, 서타이틀이 필요할까요?",
     "description": "기술 리허설 전에 영어 서타이틀, 접근성 캡션, 프로젝션 모드, 모바일 뷰어 중 어떤 것을 선택할지 고민하는 비영어권 에든버러 프린지 팀을 위한 의사결정 가이드.",
-    "pubDate": "2026-05-22",
+    "pubDate": "2026-05-31",
     "heroImage": "./blog-11.png",
     "heroImageAlt": "에든버러 프린지 공연을 위한 캡션 및 서타이틀 제공 옵션을 보여주는 SurtitleLive 설정",
     "tags": [

@@ -4,14 +4,14 @@
   "sourceLocale": "en",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
   "sourcePath": "blog/src/content/blog/11-captions-vs-surtitles-edinburgh-fringe.md",
-  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "sourceHash": "88b8a3f4af48c84d6e4b1ca041f55e55b8f07f728dfb491a25c02031e038e28f",
   "status": "translated",
   "updatedAt": "2026-06-01T00:16:50.618Z",
   "translatedAt": "2026-06-01T00:16:50.618Z",
   "frontmatter": {
     "title": "エディンバラ・フリンジの公演にキャプションと舞台字幕、どちらが必要ですか？",
     "description": "非英語圏のエディンバラ・フリンジ参加チーム向けに、テクニカルリハーサル前に英語の舞台字幕、アクセシビリティ・キャプション、Projection Mode、モバイルビューア配信のどれを選ぶべきかを解説する決定ガイドです。",
-    "pubDate": "2026-05-22",
+    "pubDate": "2026-05-31",
     "heroImage": "./blog-11.png",
     "heroImageAlt": "SurtitleLiveのセットアップ。エディンバラ・フリンジ公演におけるキャプションと舞台字幕の配信選択肢を示しています。",
     "tags": [
