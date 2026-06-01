@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "11-captions-vs-surtitles-edinburgh-fringe",
+  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "generatedAt": "2026-06-01T00:19:36.883Z",
+  "sectionTitles": {
+    "keyTakeaways": "Principais Conclusões",
+    "faq": "Perguntas Frequentes",
+    "glossary": "Glossário",
+    "related": "Termos Relacionados"
+  },
+  "keyTakeaways": [
+    "Para as equipas do Edinburgh Fringe, legendas, surtítulos, legendas genéricas, Modo de Projeção e entrega via visualizador móvel descrevem decisões diferentes, não um fluxo de trabalho intermutável.",
+    "Um espetáculo não-inglês que precisa principalmente de tradução deve geralmente especificar surtítulos em inglês preparados para performance ao vivo, mesmo que a comunicação para o público diga legendas em inglês.",
+    "As legendas podem precisar de identificação do orador, música, efeitos sonoros, áudio fora de palco e outras informações de acessibilidade, não apenas diálogo traduzido.",
+    "O Modo de Projeção e a entrega via visualizador móvel são escolhas de entrega para o público; devem ser escolhidos depois de a equipa definir se o texto é tradução, legendagem ou ambos.",
+    "Antes do ensaio técnico, as equipas do Fringe devem confirmar o conteúdo do texto, o método de entrega, as faixas de idioma, os requisitos de acessibilidade e quem é responsável pela operação do texto ao vivo."
+  ],
+  "faq": [
+    {
+      "question": "Um espetáculo do Edinburgh Fringe precisa de legendas ou surtítulos?",
+      "answer": "Depende da necessidade do público. Um espetáculo não-inglês que precisa de tradução para públicos de língua inglesa geralmente precisa de surtítulos em inglês preparados. Um espetáculo com requisitos de acessibilidade para pessoas Surdas ou com deficiência auditiva pode precisar de legendas que incluam identificação do orador, música, efeitos sonoros e outras informações de áudio."
+    },
+    {
+      "question": "Podemos dizer legendas em inglês na nossa listagem do Fringe?",
+      "answer": "Sim. 'Legendas em inglês' é frequentemente uma linguagem clara para o público. Para o planeamento da produção, 'surtítulos em inglês preparados' é geralmente mais preciso quando o texto é uma tradução revista e marcada durante um espetáculo ao vivo."
+    },
+    {
+      "question": "Qual é a diferença entre surtítulos e legendas para produções do Fringe?",
+      "answer": "Surtítulos geralmente significam texto de tradução preparado para uma performance ao vivo noutro idioma. Legendas geralmente apoiam o acesso à fala e informações sonoras, incluindo diálogo, identificação do orador, vozes fora de palco, música ou efeitos."
+    },
+    {
+      "question": "O Modo de Projeção e a entrega via visualizador móvel são o mesmo que legendas ou surtítulos?",
+      "answer": "Não. O Modo de Projeção e a entrega via visualizador móvel descrevem como o público recebe o texto. Legendas e surtítulos descrevem que tipo de texto está a ser preparado."
+    },
+    {
+      "question": "O que deve um produtor confirmar antes do ensaio técnico?",
+      "answer": "Confirmar se o espetáculo precisa de surtítulos em inglês, legendas, ou ambos; quais idiomas estão ativados; se será usada projeção, entrega via visualizador móvel, ou ambos; quem revê o texto; e quem opera ou supervisiona a entrega ao vivo."
+    },
+    {
+      "question": "Quando é que o SurtitleLive é adequado para um espetáculo do Fringe?",
+      "answer": "O SurtitleLive é mais adequado quando a equipa tem um guião ou texto de performance maioritariamente estável, pode rever o texto antes da estreia, e precisa de texto preparado entregue via Modo de Projeção, visualizador móvel, ou ambos durante um espetáculo ao vivo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtítulos em inglês",
+      "definition": "Texto de tradução em inglês preparado, exibido ou entregue durante uma performance ao vivo não-inglesa."
+    },
+    {
+      "term": "Legendas (de acessibilidade)",
+      "definition": "Texto que representa o diálogo e informações sonoras relevantes, frequentemente usado para apoiar públicos Surdos ou com deficiência auditiva."
+    },
+    {
+      "term": "Legendas (genéricas)",
+      "definition": "Um termo familiar para o público para texto traduzido ou transcrito, frequentemente usado casualmente mesmo quando o fluxo de trabalho da produção é de surtitulagem ao vivo."
+    },
+    {
+      "term": "Modo de Projeção",
+      "definition": "Um modo de exibição do SurtitleLive destinado a ecrãs de teatro ou projetores quando o local suporta texto visível partilhado."
+    },
+    {
+      "term": "Visualizador móvel",
+      "definition": "Uma visualização para o público baseada em navegador, aberta por link ou código QR, para que os membros do público possam ler o texto ativado nos seus próprios telefones."
+    },
+    {
+      "term": "Identificação do orador",
+      "definition": "Informação de legenda que indica ao público quem está a falar, especialmente quando o orador pode não ser visualmente óbvio."
+    },
+    {
+      "term": "Informação sonora",
+      "definition": "Conteúdo de legenda que representa áudio significativo não-dialogado, como música, som fora de palco, efeitos ou silêncio."
+    },
+    {
+      "term": "Ensaio técnico",
+      "definition": "O período de ensaio em que a produção testa a configuração do local, o método de entrega, o tempo do texto e a operação ao vivo antes da performance."
+    }
+  ]
+}

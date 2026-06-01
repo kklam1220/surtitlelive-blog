@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "11-captions-vs-surtitles-edinburgh-fringe",
+  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "generatedAt": "2026-06-01T00:18:58.704Z",
+  "sectionTitles": {
+    "keyTakeaways": "Kluczowe wnioski",
+    "faq": "FAQ",
+    "glossary": "Słowniczek",
+    "related": "Powiązane terminy"
+  },
+  "keyTakeaways": [
+    "Dla zespołów Edinburgh Fringe, napisy dla niesłyszących, supertytuły, napisy, Tryb Projekcji i dostarczanie przez mobilny viewer opisują różne decyzje, a nie jeden wymienny przepływ pracy.",
+    "Nieanglojęzyczny spektakl, który głównie potrzebuje tłumaczenia, powinien zazwyczaj określać przygotowane angielskie supertytuły do występu na żywo, nawet jeśli materiały dla publiczności mówią o angielskich napisach.",
+    "Napisy dla niesłyszących mogą wymagać identyfikacji mówców, muzyki, efektów dźwiękowych, dźwięków spoza sceny i innych informacji o dostępności, a nie tylko przetłumaczonych dialogów.",
+    "Tryb Projekcji i dostarczanie przez mobilny viewer to wybory dotyczące dostarczania dla publiczności; powinny być wybrane po tym, jak zespół zdefiniuje, czy tekst jest tłumaczeniem, napisami dla niesłyszących, czy jednym i drugim.",
+    "Przed próbą techniczną, zespoły Fringe powinny potwierdzić treść tekstu, metodę dostarczania, ścieżki językowe, wymagania dotyczące dostępności oraz kto odpowiada za obsługę tekstu na żywo."
+  ],
+  "faq": [
+    {
+      "question": "Czy spektakl na Edinburgh Fringe potrzebuje napisów dla niesłyszących czy supertytułów?",
+      "answer": "To zależy od potrzeb publiczności. Nieanglojęzyczny spektakl, który potrzebuje tłumaczenia dla anglojęzycznej publiczności, zazwyczaj potrzebuje przygotowanych angielskich supertytułów. Spektakl z wymaganiami dostępu dla osób głuchych lub niedosłyszących może potrzebować napisów dla niesłyszących, które zawierają etykiety mówców, muzykę, efekty dźwiękowe i inne informacje dźwiękowe."
+    },
+    {
+      "question": "Czy możemy użyć sformułowania „angielskie napisy” w naszym ogłoszeniu na Fringe?",
+      "answer": "Tak. „Angielskie napisy” to często jasne sformułowanie dla publiczności. W planowaniu produkcji, „przygotowane angielskie supertytuły” jest zazwyczaj bardziej precyzyjne, gdy tekst jest zrecenzowanym tłumaczeniem wyświetlanym podczas spektaklu na żywo."
+    },
+    {
+      "question": "Jaka jest różnica między supertytułami a napisami dla niesłyszących w produkcjach Fringe?",
+      "answer": "Supertytuły zazwyczaj oznaczają przygotowany tekst tłumaczeniowy do występu na żywo w innym języku. Napisy dla niesłyszących zazwyczaj wspierają dostęp do informacji o mowie i dźwięku, w tym dialogów, identyfikacji mówców, głosów spoza sceny, muzyki lub efektów."
+    },
+    {
+      "question": "Czy Tryb Projekcji i dostarczanie przez mobilny viewer są tym samym co napisy dla niesłyszących lub supertytuły?",
+      "answer": "Nie. Tryb Projekcji i dostarczanie przez mobilny viewer opisują, w jaki sposób publiczność otrzymuje tekst. Napisy dla niesłyszących i supertytuły opisują, jaki rodzaj tekstu jest przygotowywany."
+    },
+    {
+      "question": "Co powinien potwierdzić producent przed próbą techniczną?",
+      "answer": "Potwierdź, czy spektakl potrzebuje angielskich supertytułów, napisów dla niesłyszących, czy obu; które języki są włączone; czy będzie używana projekcja, dostarczanie przez mobilny viewer, czy oba; kto recenzuje tekst; i kto obsługuje lub nadzoruje dostarczanie na żywo."
+    },
+    {
+      "question": "Kiedy SurtitleLive pasuje do spektaklu na Fringe?",
+      "answer": "SurtitleLive najlepiej pasuje, gdy zespół ma scenariusz lub w większości stabilny tekst spektaklu, może zrecenzować tekst przed premierą i potrzebuje przygotowanego tekstu dostarczanego przez Tryb Projekcji, mobilny viewer lub oba podczas spektaklu na żywo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Angielskie supertytuły",
+      "definition": "Przygotowany angielski tekst tłumaczeniowy wyświetlany lub dostarczany podczas nieanglojęzycznego spektaklu na żywo."
+    },
+    {
+      "term": "Napisy dla niesłyszących",
+      "definition": "Tekst, który przedstawia dialogi i istotne informacje dźwiękowe, często używany do wspierania publiczności głuchej lub niedosłyszącej."
+    },
+    {
+      "term": "Napisy",
+      "definition": "Znany termin skierowany do publiczności, oznaczający przetłumaczony lub transkrybowany tekst, często używany swobodnie, nawet gdy przepływ pracy produkcyjnej to supertytuły na żywo."
+    },
+    {
+      "term": "Tryb Projekcji",
+      "definition": "Tryb wyświetlania SurtitleLive przeznaczony dla ekranów teatralnych lub projektorów, gdy miejsce wspiera wspólny widoczny tekst."
+    },
+    {
+      "term": "Mobilny viewer",
+      "definition": "Widok dla publiczności oparty na przeglądarce, otwierany za pomocą linku lub kodu QR, dzięki czemu widzowie mogą czytać dostępny tekst na własnych telefonach."
+    },
+    {
+      "term": "Identyfikacja mówcy",
+      "definition": "Informacja w napisach dla niesłyszących, która informuje publiczność, kto mówi, zwłaszcza gdy mówca może nie być wizualnie oczywisty."
+    },
+    {
+      "term": "Informacje dźwiękowe",
+      "definition": "Treść napisów dla niesłyszących, która przedstawia znaczące dźwięki inne niż dialogi, takie jak muzyka, dźwięki spoza sceny, efekty lub cisza."
+    },
+    {
+      "term": "Próba techniczna",
+      "definition": "Okres prób, podczas którego produkcja testuje konfigurację miejsca, metodę dostarczania, synchronizację tekstu i obsługę na żywo przed występem."
+    }
+  ]
+}

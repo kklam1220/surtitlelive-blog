@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "11-captions-vs-surtitles-edinburgh-fringe",
+  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "generatedAt": "2026-06-01T00:13:58.425Z",
+  "sectionTitles": {
+    "keyTakeaways": "Points clés à retenir",
+    "faq": "FAQ",
+    "glossary": "Glossaire",
+    "related": "Termes associés"
+  },
+  "keyTakeaways": [
+    "Pour les équipes de l'Edinburgh Fringe, les sous-titres d'accès, les surtitres, les sous-titres génériques, le Mode Projection et la diffusion via visionneuse mobile décrivent des décisions différentes, et non un flux de travail interchangeable.",
+    "Un spectacle non anglophone nécessitant principalement une traduction devrait généralement spécifier des surtitres anglais préparés pour la performance en direct, même si la communication publique mentionne des sous-titres anglais.",
+    "Les sous-titres d'accès peuvent nécessiter l'identification des intervenants, la musique, les effets sonores, l'audio hors scène et d'autres informations d'accès, et pas seulement le dialogue traduit.",
+    "Le Mode Projection et la diffusion via visionneuse mobile sont des choix de diffusion pour le public ; ils doivent être faits après que l'équipe ait défini si le texte est une traduction, des sous-titres d'accès, ou les deux.",
+    "Avant la répétition technique, les équipes du Fringe doivent confirmer le contenu du texte, la méthode de diffusion, les pistes linguistiques, les exigences d'accès et la personne responsable de l'opération du texte en direct."
+  ],
+  "faq": [
+    {
+      "question": "Un spectacle à l'Edinburgh Fringe a-t-il besoin de sous-titres d'accès ou de surtitres ?",
+      "answer": "Cela dépend des besoins du public. Un spectacle non anglophone nécessitant une traduction pour un public anglophone a généralement besoin de surtitres anglais préparés. Un spectacle avec des exigences d'accès pour les personnes sourdes ou malentendantes peut nécessiter des sous-titres d'accès incluant l'identification des intervenants, la musique, les effets sonores et d'autres informations audio."
+    },
+    {
+      "question": "Pouvons-nous mentionner 'sous-titres anglais' dans notre annonce du Fringe ?",
+      "answer": "Oui. 'Sous-titres anglais' est souvent un langage clair pour le public. Pour la planification de la production, 'surtitres anglais préparés' est généralement plus précis lorsque le texte est une traduction révisée et déclenchée pendant un spectacle en direct."
+    },
+    {
+      "question": "Quelle est la différence entre les surtitres et les sous-titres d'accès pour les productions du Fringe ?",
+      "answer": "Les surtitres désignent généralement un texte de traduction préparé pour une performance en direct dans une autre langue. Les sous-titres d'accès soutiennent généralement l'accès aux informations vocales et sonores, y compris le dialogue, l'identification des intervenants, les voix hors scène, la musique ou les effets."
+    },
+    {
+      "question": "Le Mode Projection et la diffusion via visionneuse mobile sont-ils la même chose que les sous-titres d'accès ou les surtitres ?",
+      "answer": "Non. Le Mode Projection et la diffusion via visionneuse mobile décrivent comment le public reçoit le texte. Les sous-titres d'accès et les surtitres décrivent le type de texte en préparation."
+    },
+    {
+      "question": "Que doit confirmer un producteur avant la répétition technique ?",
+      "answer": "Confirmer si le spectacle a besoin de surtitres anglais, de sous-titres d'accès, ou des deux ; quelles langues sont activées ; si la projection, la diffusion via visionneuse mobile, ou les deux seront utilisées ; qui révise le texte ; et qui opère ou supervise la diffusion en direct."
+    },
+    {
+      "question": "Quand SurtitleLive est-il adapté à un spectacle du Fringe ?",
+      "answer": "SurtitleLive convient le mieux lorsque l'équipe dispose d'un script ou d'un texte de performance majoritairement stable, peut réviser le texte avant l'ouverture, et a besoin d'un texte préparé diffusé via le Mode Projection, la visionneuse mobile, ou les deux pendant un spectacle en direct."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitres anglais",
+      "definition": "Texte de traduction anglais préparé, affiché ou diffusé pendant une performance en direct non anglophone."
+    },
+    {
+      "term": "Sous-titres d'accès",
+      "definition": "Texte qui représente le dialogue et les informations sonores pertinentes, souvent utilisé pour soutenir les publics sourds ou malentendants."
+    },
+    {
+      "term": "Sous-titres génériques",
+      "definition": "Un terme familier pour le public désignant un texte traduit ou transcrit, souvent utilisé de manière informelle même lorsque le flux de travail de production est du surtitrage en direct."
+    },
+    {
+      "term": "Mode Projection",
+      "definition": "Un mode d'affichage SurtitleLive destiné aux écrans de théâtre ou aux projecteurs lorsque le lieu permet un texte visible partagé."
+    },
+    {
+      "term": "Visionneuse mobile",
+      "definition": "Une vue pour le public basée sur un navigateur, ouverte par un lien ou un code QR, permettant aux spectateurs de lire le texte activé sur leurs propres téléphones."
+    },
+    {
+      "term": "Identification des intervenants",
+      "definition": "Information de sous-titrage d'accès qui indique au public qui parle, surtout lorsque l'intervenant n'est pas visuellement évident."
+    },
+    {
+      "term": "Informations sonores",
+      "definition": "Contenu de sous-titrage d'accès qui représente un audio significatif non dialogué tel que la musique, le son hors scène, les effets ou le silence."
+    },
+    {
+      "term": "Répétition technique",
+      "definition": "La période de répétition pendant laquelle la production teste la configuration du lieu, la méthode de diffusion, le timing du texte et l'opération en direct avant la performance."
+    }
+  ]
+}

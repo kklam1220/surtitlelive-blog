@@ -116,6 +116,7 @@ const cssFiles = collectFiles(distDir, (file) => file.endsWith('.css'));
 const xmlFiles = collectFiles(distDir, (file) => file.endsWith('.xml'));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
 const redirectsFile = path.join(distDir, '_redirects');
+const headersFile = path.join(distDir, '_headers');
 const sitemapText = xmlFiles
   .filter((file) => path.basename(file).startsWith('sitemap'))
   .map((file) => fs.readFileSync(file, 'utf8'))
@@ -232,17 +233,34 @@ assertHasMatch(
   'Missing canonical main-site logo URL in built blog HTML.',
 );
 
+assertNoMatch(
+  htmlFiles,
+  /https:\/\/surtitlelive\.com\/logo\.png/,
+  'Detected obsolete root logo URL. Use https://surtitlelive.com/logo/New_logo.png.',
+);
+
+assertHasMatch(
+  htmlFiles,
+  /"logo":\{"@type":"ImageObject","url":"https:\/\/surtitlelive\.com\/logo\/New_logo\.png"\}/,
+  'Missing canonical publisher logo URL in BlogPosting JSON-LD.',
+);
+
 if (!fs.existsSync(redirectsFile)) {
   throw new Error('Missing Cloudflare Pages _redirects file in built blog output.');
 }
 
+if (!fs.existsSync(headersFile)) {
+  throw new Error('Missing Cloudflare Pages _headers file in built blog output.');
+}
+
 const redirectsContent = fs.readFileSync(redirectsFile, 'utf8');
+const headersContent = fs.readFileSync(headersFile, 'utf8');
 for (const requiredRule of [
   '/blog/_astro/* /_astro/:splat 200',
   '/blog/fonts/* /blog/fonts/:splat 200',
   '/blog/logo/* /blog/logo/:splat 200',
-  '/blog/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
-  '/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302',
+  '/blog/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
+  '/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
   '/blog/:locale/rss.xml /:locale/rss.xml 200',
   '/blog/:locale/:slug/ https://surtitlelive.com/blog/:locale/:slug/ 301',
   '/blog/:locale/:slug https://surtitlelive.com/blog/:locale/:slug/ 301',
@@ -270,6 +288,16 @@ for (const forbiddenRule of [
 ]) {
   if (redirectsContent.includes(forbiddenRule)) {
     throw new Error(`Deprecated duplicate blog-origin HTML rewrite is still present: ${forbiddenRule}`);
+  }
+}
+
+for (const requiredHeaderRule of [
+  '/*',
+  '/blog/*',
+  'X-Robots-Tag: noindex, follow',
+]) {
+  if (!headersContent.includes(requiredHeaderRule)) {
+    throw new Error(`Missing required Pages header rule: ${requiredHeaderRule}`);
   }
 }
 

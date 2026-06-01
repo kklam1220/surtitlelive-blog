@@ -6,10 +6,10 @@
 /blog/rss.xml /rss.xml 200
 /blog/sitemap-index.xml /sitemap-index.xml 200
 /blog/sitemap-0.xml /sitemap-0.xml 200
-/blog/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302
-/blog/:locale/3-how-we-protect-your-work /blog/3-how-we-protect-your-work/ 302
-/:locale/3-how-we-protect-your-work/ /blog/3-how-we-protect-your-work/ 302
-/:locale/3-how-we-protect-your-work /blog/3-how-we-protect-your-work/ 302
+/blog/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
+/blog/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
+/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
+/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
 /blog/:locale/rss.xml /:locale/rss.xml 200
 /blog/:locale/:slug/ https://surtitlelive.com/blog/:locale/:slug/ 301
 /blog/:locale/:slug https://surtitlelive.com/blog/:locale/:slug/ 301

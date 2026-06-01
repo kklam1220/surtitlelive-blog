@@ -32,9 +32,11 @@ This only works because the deployment output must include [\_redirects](./publi
 - `/blog/logo/*` -> `/blog/logo/*`
 - `/blog/rss.xml` / `/blog/sitemap-*.xml` -> root feed/sitemap outputs
 
-If `_redirects` is missing or stale, the custom domain can start returning homepage HTML for article/image URLs, or it can expose duplicate `/blog/*` HTML on the dedicated origin instead of consolidating crawler signals on the apex canonical.
+The deployment output must also include [\_headers](./public/_headers), which adds `X-Robots-Tag: noindex, follow` to direct blog-origin HTML responses. Redirects remain the preferred consolidation signal for `/blog/*`, but the header prevents accidental indexing if a stale Pages deployment or CDN rule serves duplicate compatibility HTML instead of redirecting. The root-output direct origin (`https://blog.surtitlelive.com/:slug`) cannot be redirected by Pages because the apex Worker fetches that path to serve the canonical `https://surtitlelive.com/blog/:slug/` URL. The Worker must therefore remove `X-Robots-Tag` from proxied apex `/blog/*` responses while leaving the direct blog-origin response noindexed.
 
-On the product app side, `web/src/proxy.ts` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths before locale negotiation and App Router filesystem routes run. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only and must also target root-output origin paths for HTML.
+If `_redirects` or `_headers` is missing or stale, the custom domain can start returning homepage HTML for article/image URLs, expose duplicate `/blog/*` HTML on the dedicated origin, or weaken crawler consolidation on the apex canonical.
+
+On the edge side, `scripts/cloudflare/surtitlelive-proxy.worker.js` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths and strip the direct-origin `X-Robots-Tag` before returning the apex response. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only and must also target root-output origin paths for HTML.
 
 ---
 
@@ -125,6 +127,7 @@ To ensure images load correctly in production:
 *   **Canonical Logo**: Shared chrome should use the canonical main-site logo asset. `src/components/Header.astro` must point at `https://surtitlelive.com/logo/New_logo.png`, not `/blog/logo/New_logo.png`, so the visible header does not depend on the blog-origin compatibility rewrite layer.
 *   **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
 *   **Pages Rewrite Contract**: Do not remove `public/_redirects`. The blog build is static-root output, but the custom domain still has to honor `/blog/*` for compatibility and SEO handoff.
+*   **Pages Indexing Guard**: Do not remove `public/_headers`. It keeps direct blog-origin `/blog/*` compatibility responses out of the index if a redirect is bypassed, while leaving canonical apex `/blog/*` responses unaffected.
 
 ---
 

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "11-captions-vs-surtitles-edinburgh-fringe",
+  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "generatedAt": "2026-06-01T00:22:31.378Z",
+  "sectionTitles": {
+    "keyTakeaways": "Temel Çıkarımlar",
+    "faq": "Sıkça Sorulan Sorular",
+    "glossary": "Terimler Sözlüğü",
+    "related": "İlgili Terimler"
+  },
+  "keyTakeaways": [
+    "Edinburgh Fringe ekipleri için erişim altyazıları, üstyazılar, altyazılar, Projection Mode ve mobil izleyici ekranı teslimatı, birbirinin yerine geçebilen tek bir iş akışı değil, farklı kararları tanımlar.",
+    "Esas olarak çeviriye ihtiyaç duyan İngilizce olmayan bir gösteri, izleyiciye yönelik metinde İngilizce altyazı yazsa bile, genellikle canlı performans için hazırlanmış İngilizce üstyazılar belirtmelidir.",
+    "Erişim altyazıları, yalnızca çevrilmiş diyalog değil, aynı zamanda konuşmacı tanımlaması, müzik, ses efektleri, sahne dışı ses ve diğer erişim bilgilerini de gerektirebilir.",
+    "Projection Mode ve mobil izleyici ekranı teslimatı, izleyiciye yönelik teslimat seçenekleridir; metnin çeviri mi, erişim altyazısı mı yoksa her ikisi mi olduğunu ekip tanımladıktan sonra seçilmelidir.",
+    "Teknik provadan önce, Fringe ekipleri metin içeriğini, teslimat yöntemini, dil parçalarını, erişim gereksinimlerini ve canlı metin operasyonunun sorumlusunu teyit etmelidir."
+  ],
+  "faq": [
+    {
+      "question": "Bir Edinburgh Fringe gösterisinin captions (erişim altyazıları) veya surtitles (üstyazılar) ihtiyacı var mı?",
+      "answer": "İzleyici ihtiyacına bağlıdır. İngilizce konuşan izleyiciler için çeviriye ihtiyaç duyan İngilizce olmayan bir gösteri genellikle hazırlanmış İngilizce üstyazılara ihtiyaç duyar. İşitme engelli veya işitme güçlüğü çekenler için erişim gereksinimleri olan bir gösteri, konuşmacı etiketleri, müzik, ses efektleri ve diğer ses bilgilerini içeren erişim altyazılarına ihtiyaç duyabilir."
+    },
+    {
+      "question": "Fringe listemizde İngilizce altyazı diyebilir miyiz?",
+      "answer": "Evet. İngilizce altyazı genellikle net bir izleyiciye yönelik dildir. Prodüksiyon planlaması için, metin canlı bir gösteri sırasında işaretlenen gözden geçirilmiş bir çeviri olduğunda hazırlanmış İngilizce üstyazılar genellikle daha kesindir."
+    },
+    {
+      "question": "Fringe prodüksiyonları için üstyazılar ve erişim altyazıları arasındaki fark nedir?",
+      "answer": "Üstyazılar genellikle başka bir dildeki canlı performans için hazırlanmış çeviri metni anlamına gelir. Erişim altyazıları genellikle diyalog, konuşmacı tanımlaması, sahne dışı sesler, müzik veya efektler dahil olmak üzere konuşma ve ses bilgilerine erişimi destekler."
+    },
+    {
+      "question": "Projection Mode ve mobil izleyici ekranı teslimatı, erişim altyazıları veya üstyazılar ile aynı mıdır?",
+      "answer": "Hayır. Projection Mode ve mobil izleyici ekranı teslimatı, izleyicinin metni nasıl aldığını açıklar. Erişim altyazıları ve üstyazılar ise ne tür bir metnin hazırlandığını açıklar."
+    },
+    {
+      "question": "Bir yapımcı teknik provadan önce neyi teyit etmelidir?",
+      "answer": "Gösterinin İngilizce üstyazılara, erişim altyazılarına veya her ikisine de ihtiyacı olup olmadığını; hangi dillerin etkinleştirildiğini; projeksiyon, mobil izleyici ekranı teslimatı veya her ikisinin de kullanılıp kullanılmayacağını; metni kimin gözden geçirdiğini; ve canlı teslimatı kimin işlettiğini veya denetlediğini teyit edin."
+    },
+    {
+      "question": "SurtitleLive bir Fringe gösterisi için ne zaman uygun olur?",
+      "answer": "SurtitleLive, ekibin bir senaryosu veya çoğunlukla sabit bir performans metni olduğunda, açılıştan önce metni gözden geçirebildiğinde ve canlı bir gösteri sırasında Projection Mode, mobil izleyici ekranı veya her ikisi aracılığıyla hazırlanmış metnin teslim edilmesine ihtiyaç duyduğunda en uygunudur."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "English surtitles (İngilizce üstyazılar)",
+      "definition": "Canlı, İngilizce olmayan bir performans sırasında gösterilen veya teslim edilen hazırlanmış İngilizce çeviri metni."
+    },
+    {
+      "term": "captions (erişim altyazıları)",
+      "definition": "Diyaloğu ve ilgili ses bilgilerini temsil eden metin, genellikle işitme engelli veya işitme güçlüğü çeken izleyicileri desteklemek için kullanılır."
+    },
+    {
+      "term": "subtitles (altyazılar)",
+      "definition": "Çevrilmiş veya yazıya dökülmüş metin için tanıdık, izleyiciye yönelik bir terimdir, prodüksiyon iş akışı canlı üstyazı hazırlama olsa bile genellikle gündelik dilde kullanılır."
+    },
+    {
+      "term": "Projection Mode",
+      "definition": "Mekanın paylaşılan görünür metni desteklediği durumlarda tiyatro ekranları veya projektörler için tasarlanmış bir SurtitleLive görüntüleme modu."
+    },
+    {
+      "term": "mobile viewer (mobil izleyici ekranı)",
+      "definition": "İzleyicilerin kendi telefonlarında etkinleştirilmiş metni okuyabilmeleri için bağlantı veya QR kodu ile açılan tarayıcı tabanlı bir izleyici görünümü."
+    },
+    {
+      "term": "Konuşmacı tanımlaması",
+      "definition": "Özellikle konuşmacının görsel olarak belirgin olmayabileceği durumlarda, izleyiciye kimin konuştuğunu söyleyen erişim altyazısı bilgisi."
+    },
+    {
+      "term": "Ses bilgisi",
+      "definition": "Müzik, sahne dışı ses, efektler veya sessizlik gibi anlamlı diyalog dışı sesleri temsil eden erişim altyazısı içeriği."
+    },
+    {
+      "term": "Teknik prova",
+      "definition": "Prodüksiyonun performans öncesinde mekan kurulumunu, teslimat yöntemini, metin zamanlamasını ve canlı operasyonu test ettiği prova dönemi."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "11-captions-vs-surtitles-edinburgh-fringe",
+  "sourceHash": "37c88976033bc7997274a89b7dfe0925d15722ad36cc584466fc4bcb6e44a7a1",
+  "generatedAt": "2026-05-31T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "For Edinburgh Fringe teams, captions, surtitles, subtitles, Projection Mode, and mobile viewer delivery describe different decisions, not one interchangeable workflow.",
+    "A non-English show that mainly needs translation should usually specify prepared English surtitles for live performance, even if audience-facing copy says English subtitles.",
+    "Captions may need speaker identification, music, sound effects, off-stage audio, and other access information, not only translated dialogue.",
+    "Projection Mode and mobile viewer delivery are audience delivery choices; they should be chosen after the team defines whether the text is translation, captioning, or both.",
+    "Before tech rehearsal, Fringe teams should confirm text content, delivery method, language tracks, access requirements, and who owns live text operation."
+  ],
+  "faq": [
+    {
+      "question": "Does an Edinburgh Fringe show need captions or surtitles?",
+      "answer": "It depends on the audience need. A non-English show that needs translation for English-speaking audiences usually needs prepared English surtitles. A show with D/deaf or hard-of-hearing access requirements may need captions that include speaker labels, music, sound effects, and other audio information."
+    },
+    {
+      "question": "Can we say English subtitles in our Fringe listing?",
+      "answer": "Yes. English subtitles is often clear audience-facing language. For production planning, prepared English surtitles is usually more precise when the text is a reviewed translation cued during a live show."
+    },
+    {
+      "question": "What is the difference between surtitles and captions for Fringe productions?",
+      "answer": "Surtitles usually mean prepared translation text for a live performance in another language. Captions usually support access to speech and sound information, including dialogue, speaker identification, off-stage voices, music, or effects."
+    },
+    {
+      "question": "Are Projection Mode and mobile viewer delivery the same as captions or surtitles?",
+      "answer": "No. Projection Mode and mobile viewer delivery describe how the audience receives the text. Captions and surtitles describe what kind of text is being prepared."
+    },
+    {
+      "question": "What should a producer confirm before tech rehearsal?",
+      "answer": "Confirm whether the show needs English surtitles, captions, or both; which languages are enabled; whether projection, mobile viewer delivery, or both will be used; who reviews the text; and who operates or supervises live delivery."
+    },
+    {
+      "question": "When is SurtitleLive a fit for a Fringe show?",
+      "answer": "SurtitleLive fits best when the team has a script or mostly stable performance text, can review the text before opening, and needs prepared text delivered by Projection Mode, mobile viewer, or both during a live show."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "English surtitles",
+      "definition": "Prepared English translation text shown or delivered during a live non-English performance."
+    },
+    {
+      "term": "Captions",
+      "definition": "Text that represents dialogue and relevant sound information, often used to support D/deaf or hard-of-hearing audiences."
+    },
+    {
+      "term": "Subtitles",
+      "definition": "A familiar audience-facing term for translated or transcribed text, often used casually even when the production workflow is live surtitling."
+    },
+    {
+      "term": "Projection Mode",
+      "definition": "A SurtitleLive display mode intended for theatre screens or projectors when the venue supports shared visible text."
+    },
+    {
+      "term": "Mobile viewer",
+      "definition": "A browser-based audience view opened by link or QR code so audience members can read enabled text on their own phones."
+    },
+    {
+      "term": "Speaker identification",
+      "definition": "Caption information that tells the audience who is speaking, especially when the speaker may not be visually obvious."
+    },
+    {
+      "term": "Sound information",
+      "definition": "Caption content that represents meaningful non-dialogue audio such as music, off-stage sound, effects, or silence."
+    },
+    {
+      "term": "Tech rehearsal",
+      "definition": "The rehearsal period when the production tests venue setup, delivery method, text timing, and live operation before performance."
+    }
+  ]
+}

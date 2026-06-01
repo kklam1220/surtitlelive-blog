@@ -14,7 +14,7 @@ This project has two simultaneous URL concerns:
 That means the published build must carry `public/_redirects` so the custom domain can correctly resolve:
 
 - root-output render paths such as `/`, `/<slug>/`, and `/<locale>/<slug>/`
-- duplicate HTML compatibility paths such as `/blog/`, `/blog/<slug>/`, and `/blog/<locale>/<slug>/` as 301 redirects to the apex canonical URLs
+- duplicate HTML compatibility paths such as `/blog/`, `/blog/<slug>/`, and `/blog/<locale>/<slug>/` as 301 redirects to the apex canonical URLs, with `X-Robots-Tag: noindex, follow` as a fallback if a compatibility HTML path is ever served directly from the blog origin
 - compatibility assets and feeds such as `/blog/_astro/*`, `/blog/fonts/*`, `/blog/rss.xml`, and `/blog/<locale>/rss.xml`
 
 Without that Pages redirect layer, the custom domain can return homepage HTML for asset URLs under `/blog/*` or expose duplicate article HTML on the dedicated origin.
@@ -175,6 +175,7 @@ Cloudflare Pages will:
 The deployment output must include:
 
 - `public/_redirects`
+- `public/_headers`
 - `public/blog/fonts/*`
 - `public/blog/logo/New_logo.png`
 

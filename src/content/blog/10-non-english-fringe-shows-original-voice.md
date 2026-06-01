@@ -1,7 +1,4 @@
 ---
-# DRAFT - NOT PUBLISHED. The leading underscore keeps Astro from building this
-# into a page. To publish: rename to remove the `_` prefix and `-DRAFT` suffix,
-# set the final pubDate, and confirm the matching GEO JSON.
 title: 'Translation as Hospitality: Welcoming Fringe Audiences Without Losing the Original Voice'
 description: 'A reflection for non-English Fringe companies on English surtitles, mobile language choice, and translation as hospitality: helping audiences enter the work without flattening the original voice.'
 pubDate: '2026-05-23'
