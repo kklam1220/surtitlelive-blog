@@ -113,6 +113,8 @@ const fullSchema = [
 				}
 				.hero-image {
 					width: 100%;
+					box-sizing: border-box;
+					padding: 0 1rem;
 				}
 				.hero-image img {
 					display: block;
@@ -156,7 +158,7 @@ const fullSchema = [
 		<main>
 			<article>
 				<div class="hero-image">
-					{renderableHeroImage && <Image width={1020} height={510} src={renderableHeroImage} alt={heroImageAlt || title} />}
+					{renderableHeroImage && <Image width={1020} src={renderableHeroImage} alt={heroImageAlt || title} />}
 				</div>
 				<div class="prose">
 					<div class="title">

@@ -168,7 +168,7 @@ Your feedback will help us improve SurtitleLive for small companies, touring sho
 
 To apply, email us at:
 
-**[info@surtitlelive.com](mailto:info@surtitlelive.com)**
+**info [at] surtitlelive.com**
 
 Please use this email subject line:
 
@@ -280,4 +280,4 @@ If your team is preparing multilingual surtitles, accessibility captions, mobile
 
 This programme is especially for non-English, multilingual, and international theatre companies who want local audiences, reviewers, programmers, and festival visitors to understand the work without asking the company to rebuild the show around a complex technical setup.
 
-Email **[info@surtitlelive.com](mailto:info@surtitlelive.com)** to apply for the **SurtitleLive Fringe Support Programme 2026** and help make this Fringe season easier to follow, easier to access, and easier to share.
+Email **info [at] surtitlelive.com** to apply for the **SurtitleLive Fringe Support Programme 2026** and help make this Fringe season easier to follow, easier to access, and easier to share.
