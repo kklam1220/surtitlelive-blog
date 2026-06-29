@@ -2,9 +2,6 @@
   "sourceLocale": "en",
   "sourceDir": "src/content/blog",
   "localizedDir": "src/content/i18n/blog",
-  "deferredLocalizedSlugs": [
-    "3-how-we-protect-your-work"
-  ],
   "locales": [
     "ar",
     "de",
@@ -24,8 +21,7 @@
     "zh-CN",
     "zh-TW"
   ],
-  "gemini": {
-    "model": "gemini-2.0-flash",
-    "baseUrl": "https://generativelanguage.googleapis.com/v1beta"
-  }
+  "deferredLocalizedSlugs": [
+    "3-how-we-protect-your-work"
+  ]
 }

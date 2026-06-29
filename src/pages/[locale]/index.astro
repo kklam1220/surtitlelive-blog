@@ -73,10 +73,7 @@ const hreflangs = [
         display: block;
         width: 100%;
         aspect-ratio: 2 / 1;
-        box-sizing: border-box;
-        padding: 0.75rem;
-        object-fit: contain;
-        background: rgb(var(--gray-light));
+        object-fit: cover;
         border-bottom: 1px solid #e5e7eb;
       }
       .card h2 {
@@ -109,6 +106,7 @@ const hreflangs = [
                       src={heroImage}
                       alt={post.frontmatter.heroImageAlt || post.frontmatter.title}
                       width={720}
+                      height={360}
                     />
                   )}
                   <div class="card-body">

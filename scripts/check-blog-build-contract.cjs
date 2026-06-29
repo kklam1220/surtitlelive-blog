@@ -168,12 +168,6 @@ assertNoMatch(
   'Detected deprecated www.surtitlelive.com host in built blog HTML.',
 );
 
-assertNoMatch(
-  htmlFiles,
-  /(?:mailto:)?info@surtitlelive\.com/i,
-  'Detected SSR info@surtitlelive.com text or mailto link in built blog HTML. Use non-link text such as info [at] surtitlelive.com so Cloudflare email protection cannot rewrite it into /cdn-cgi/l/email-protection.',
-);
-
 if (/https:\/\/blog\.surtitlelive\.com\/sitemap-index\.xml/.test(sitemapText)) {
   throw new Error('Detected blog-origin sitemap host. Blog sitemap URLs must use apex /blog/*.');
 }

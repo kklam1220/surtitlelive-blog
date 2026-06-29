@@ -83,10 +83,6 @@ Your blog content here...
 ## 🌍 Blog Localization Workflow (LLM)
 
 English posts in `src/content/blog/*.md` and `*.mdx` are the only source of truth.
-The supported locale list, deferred localized slugs, and translation-provider
-defaults live in `i18n/blog-localization.config.json`; keep that config in this
-monorepo because the deployment sync preflight runs from this source tree before
-copying files to the dedicated Pages repository.
 
 ```bash
 npm run blog:i18n:sync

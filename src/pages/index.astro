@@ -97,17 +97,12 @@ const localeLinks = [
 				aspect-ratio: 16 / 9;
 				background-color: rgb(var(--gray-light));
 				overflow: hidden;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 			}
 
 			.img-container img {
 				width: 100%;
 				height: 100%;
-				box-sizing: border-box;
-				padding: 0.75rem;
-				object-fit: contain;
+				object-fit: cover;
 				transition: transform 0.3s ease;
 			}
 
@@ -183,7 +178,9 @@ const localeLinks = [
                                                 <Image 
                                                     src={post.data.heroImage} 
                                                     width={1020} 
+                                                    height={510} 
                                                     alt={post.data.title} 
+                                                    style="max-width: 100%; height: auto; object-fit: cover;"
                                                     loading="lazy"
                                                 />
                                             ) : (
@@ -192,6 +189,7 @@ const localeLinks = [
                                                     height={360} 
                                                     src="/blog-placeholder-1.jpg"
                                                     alt={post.data.title} 
+                                                    style="max-width: 100%; height: auto; object-fit: cover;"
                                                     loading="lazy" 
                                                 />
                                             )}
