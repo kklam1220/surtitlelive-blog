@@ -1,5 +1,6 @@
 ---
-import { marked } from "marked";
+import { Marked } from "marked";
+import { getShikiHighlighter } from "../../lib/shikiHighlighter";
 import BlogPost from "../../layouts/BlogPost.astro";
 import {
   listLocalizedLocales,
@@ -38,7 +39,30 @@ const { locale, localizedLocalesForSlug, post } = Astro.props;
 const localeMeta = resolveBlogLocaleMeta(locale);
 const pubDate = new Date(post.frontmatter.pubDate || Date.now());
 const updatedDate = post.frontmatter.updatedDate ? new Date(post.frontmatter.updatedDate) : undefined;
-const html = marked.parse(rewriteLocalizedBlogImageReferences(post.body || ""));
+
+// Get the Shiki highlighter singleton instance
+const shikiHighlighter = await getShikiHighlighter();
+
+const markedInstance = new Marked({
+  renderer: {
+    code({ text, lang }) {
+      try {
+        const cleanLang = (lang || "").toLowerCase().trim();
+        if (cleanLang === "mermaid") {
+          return `<pre class="mermaid">${text}</pre>`;
+        }
+        return shikiHighlighter.codeToHtml(text, {
+          lang: cleanLang || "plaintext",
+          theme: "github-dark"
+        });
+      } catch (e) {
+        return `<pre><code>${text}</code></pre>`;
+      }
+    }
+  }
+});
+
+const html = markedInstance.parse(rewriteLocalizedBlogImageReferences(post.body || ""));
 const geoBlock = readGeoBlock(locale, post.slug);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null : geoBlock;
 const baseUrl = import.meta.env.BASE_URL ?? "/";
