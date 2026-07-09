@@ -40,20 +40,22 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 
 <header>
 	<nav>
-		<div class="logo-container">
-			<a href={localizedMainHref('/')} aria-label={navCopy.homeAria}>
-				<img src={logoHref} alt={navCopy.logoAlt} height="50" style="height: 50px; width: auto;" />
-			</a>
-		</div>
+		<div class="nav-brand">
+			<div class="logo-container">
+				<a href={localizedMainHref('/')} aria-label={navCopy.homeAria}>
+					<img src={logoHref} alt={navCopy.logoAlt} height="50" style="height: 50px; width: auto;" />
+				</a>
+			</div>
 
-		<button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-			<svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-			</svg>
-			<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="display: none;">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-			</svg>
-		</button>
+			<button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+				<svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+				<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="display: none;">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</button>
+		</div>
 		
 		<div class="nav-menu">
 			<div class="internal-links">
@@ -89,10 +91,33 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 				</a>
 			</div>
 
+			<div class="mobile-divider"></div>
+
 			<div class="auth-buttons">
-				<LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} />
-				<a href={buildMainSiteHref('/auth/login')} class="login-link">{navCopy.login}</a>
-				<a href={buildMainSiteHref('/auth/register')} class="signup-btn">{navCopy.signUp}</a>
+				<div class="mobile-section">
+					<div class="mobile-section-title">{navLocale === 'zh-TW' ? '語言' : 'LANGUAGE'}</div>
+					<LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} />
+				</div>
+				
+				<div class="mobile-divider"></div>
+				
+				<div class="mobile-section">
+					<div class="mobile-section-title">{navLocale === 'zh-TW' ? '帳戶' : 'ACCOUNT'}</div>
+					<div class="auth-links">
+						<a href={buildMainSiteHref('/auth/login')} class="login-link">
+							{navCopy.login}
+							<svg class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+							</svg>
+						</a>
+						<a href={buildMainSiteHref('/auth/register')} class="signup-btn">
+							{navCopy.signUp}
+							<svg class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+							</svg>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -133,6 +158,9 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		margin: 0 auto;
 		gap: 2rem;
 	}
+	.nav-brand {
+		display: contents;
+	}
 	.nav-menu {
 		display: flex;
 		align-items: center;
@@ -158,10 +186,16 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		align-items: center;
 		gap: 1.5rem;
 	}
+	.auth-links {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
 	.login-link {
 		color: #374151;
 		font-weight: 500;
 		font-size: 0.875rem; /* Match text-sm (14px) */
+		text-decoration: none;
 	}
 	.login-link:hover {
 		color: black;
@@ -174,6 +208,7 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		font-weight: 600;
 		font-size: 0.875rem; /* Match text-sm (14px) */
 		transition: background-color 0.2s;
+		text-decoration: none;
 	}
 	.signup-btn:hover {
 		background-color: #333;
@@ -181,18 +216,26 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		text-decoration: none;
 	}
 
-	.mobile-menu-toggle {
-		display: none;
-	}
-	.mobile-arrow {
+	.mobile-menu-toggle,
+	.mobile-arrow,
+	.mobile-divider,
+	.mobile-section-title,
+	.btn-icon {
 		display: none;
 	}
 
 	@media (max-width: 720px) {
 		nav {
-			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: stretch;
 			padding: 1rem;
 			gap: 0;
+		}
+		.nav-brand {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
 		}
 		.mobile-menu-toggle {
 			display: block;
@@ -212,18 +255,21 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		.mobile-menu-toggle.open .close-icon {
 			display: block !important;
 		}
+
 		.nav-menu {
 			display: none;
-			width: 100%;
 			flex-direction: column;
+			width: 100%;
 			gap: 1.5rem;
-			padding-top: 1rem;
+			padding-top: 1.5rem;
 			border-top: 1px solid #f3f4f6;
-			margin-top: 0.5rem;
+			margin-top: 1rem;
+			flex: none;
 		}
 		.nav-menu.open {
 			display: flex;
 		}
+
 		.internal-links {
 			flex-direction: column;
 			align-items: stretch;
@@ -234,13 +280,17 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 			display: flex !important;
 			align-items: center;
 			justify-content: space-between;
-			padding: 0.75rem 1rem;
-			border-radius: 8px;
+			padding: 0.85rem 1rem;
+			border-radius: 12px;
 			font-size: 1rem;
+			font-weight: 500;
+			color: #374151;
 			width: 100%;
 			box-sizing: border-box;
+			transition: background-color 0.2s, color 0.2s;
 		}
-		.internal-links a:hover {
+		.internal-links a:hover,
+		.internal-links a.active {
 			background-color: #f9fafb;
 			color: black;
 		}
@@ -250,19 +300,88 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 			height: 1.25rem;
 			color: #9ca3af;
 		}
+
+		.mobile-divider {
+			display: block;
+			height: 1px;
+			background-color: #f3f4f6;
+			width: 100%;
+			margin: 0.5rem 0;
+		}
+
 		.auth-buttons {
 			flex-direction: column;
+			align-items: stretch;
 			width: 100%;
-			gap: 0.75rem;
-			padding: 0;
+			gap: 1.5rem;
 		}
-		.login-link,
-		.signup-btn {
+		
+		.mobile-section {
 			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+			width: 100%;
+		}
+		.mobile-section-title {
+			display: block;
+			font-size: 0.75rem;
+			font-weight: 600;
+			color: #9ca3af;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			padding-left: 0.5rem;
+		}
+		
+		.auth-links {
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+			width: 100%;
+		}
+
+		.btn-icon {
+			display: block;
+			width: 1.25rem;
+			height: 1.25rem;
+			margin-left: 0.5rem;
+		}
+
+		.login-link {
+			display: flex;
+			align-items: center;
 			justify-content: center;
 			width: 100%;
-			padding: 0.75rem;
+			padding: 0.85rem;
+			border: 1px solid #e5e7eb;
+			border-radius: 12px;
+			color: #374151;
+			font-weight: 500;
+			font-size: 0.95rem;
 			box-sizing: border-box;
+			background-color: #fff;
+			transition: background-color 0.2s;
+		}
+		.login-link:hover {
+			background-color: #f9fafb;
+			color: black;
+		}
+
+		.signup-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 0.85rem;
+			background-color: black;
+			color: white;
+			border-radius: 12px;
+			font-weight: 600;
+			font-size: 0.95rem;
+			box-sizing: border-box;
+			transition: background-color 0.2s;
+		}
+		.signup-btn:hover {
+			background-color: #222;
 		}
 	}
 </style>
