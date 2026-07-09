@@ -245,7 +245,7 @@ Generating Text cues is only half the job.
 
 A QLab Text cue must output somewhere. In the official QLab Text cue inspector, the I/O tab assigns the cue to a video output stage. If the cue has no stage, the Text cue can be broken or fail to appear where expected.
 
-![QLab Text cue inspector showing video stage assignment in the I/O tab](./blog-13-4.gif)
+![QLab Text cue inspector showing video stage assignment in the I/O tab](/blog/_astro/blog-13-4.gif)
 
 Before importing hundreds of subtitle cues, create and test the stage:
 
