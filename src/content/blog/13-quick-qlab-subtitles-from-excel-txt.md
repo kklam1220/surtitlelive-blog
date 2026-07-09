@@ -3,6 +3,8 @@ title: 'How to Make QLab Subtitles Fast from Excel, CSV, or TXT'
 description: 'A practical QLab 5 workflow for creating subtitle and surtitle Text cues from spreadsheets or plain text, with a clear comparison to official QLab documentation and when to use SurtitleLive QLab Sync.'
 pubDate: '2026-07-09'
 tags: ['QLab', 'Surtitles', 'Subtitles', 'AppleScript', 'Theatre Tech', 'SurtitleLive']
+heroImage: './blog-13-1.png'
+heroImageAlt: 'QLab cue list showing batch generated subtitle group cues'
 ---
 
 If you already run your show in QLab, the slow part is rarely the projector.
