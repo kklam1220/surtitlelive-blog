@@ -454,7 +454,7 @@ async function main() {
     : args.model || process.env.GEMINI_BLOG_MODEL || config.gemini?.model || "gemini-2.0-flash";
   const baseUrl = provider === "dashscope-deepseek"
     ? args.baseUrl || process.env.DASHSCOPE_BASE_URL || process.env.QWEN_BASE_URL || DEFAULT_DASHSCOPE_BASE_URL
-    : args.baseUrl || process.env.GEMINI_BASE_URL || config.gemini?.baseUrl || "https://generativelanguage.googleapis.com/v1";
+    : args.baseUrl || process.env.GEMINI_BASE_URL || config.gemini?.baseUrl || "https://generativelanguage.googleapis.com/v1beta";
   const enableThinking = args.thinking !== null
     ? args.thinking
     : booleanFromEnv(

@@ -167,8 +167,6 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 end tell
 ```
 
-![QLab cue list showing batch generated subtitle group cues](./blog-13-1.png)
-
 *You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](./blog-13-qlab-subtitles-demo-assets.zip).*
 
 This is not a finished production importer. It is a readable starting point.
