@@ -57,7 +57,7 @@ If your source is Excel or Google Sheets, start with one subtitle per row.
 Keep the sheet boring. Boring is good. Boring survives tech rehearsal.
 
 ![Boring Excel spreadsheet structure for QLab subtitles](./blog-13-2.png)
-*Download the template here: [QLab Subtitles Excel Template (XLSX)](/blog-13-xlsx.xlsx)*
+*Download the template here: [QLab Subtitles Excel Template (XLSX)](/blog/blog-13-xlsx.xlsx)*
 
 | Column | Example | Why it matters |
 | --- | --- | --- |
@@ -167,7 +167,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 end tell
 ```
 
-*You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](/blog-13-qlab-subtitles-demo-assets.zip).*
+*You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](/blog/blog-13-qlab-subtitles-demo-assets.zip).*
 
 This is not a finished production importer. It is a readable starting point.
 
