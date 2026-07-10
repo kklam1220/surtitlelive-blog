@@ -414,4 +414,5 @@ Stop relying only on DIY scripts when the subtitle workflow needs translation re
 - QLab 5 AppleScript Dictionary: https://qlab.app/docs/v5/scripting/applescript-dictionary-v5/
 - QLab Cookbook — Grid: https://qlab.app/cookbook/grid/
 - SurtitleLive QLab workflow: https://surtitlelive.com/qlab
-- Captions vs surtitles decision guide: /blog/11-captions-vs-surtitles-edinburgh-fringe/
+- SurtitleLive Exporting a QLab Import Pack: https://surtitlelive.com/guides/export-qlab-import-pack
+- SurtitleLive QLab control for ASM and Viewer sync User guides: https://surtitlelive.com/guides/qlab-asm-viewer-sync-beta
