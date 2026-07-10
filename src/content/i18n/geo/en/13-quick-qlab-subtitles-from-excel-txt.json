@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "13-quick-qlab-subtitles-from-excel-txt",
+  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
+  "generatedAt": "2026-07-10T04:12:07.371Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways for QLab Subtitles",
+    "faq": "Frequently Asked Questions about QLab Subtitles",
+    "glossary": "QLab Subtitle Terminology",
+    "related": "Related Resources for QLab Subtitles"
+  },
+  "keyTakeaways": [
+    "QLab uses Text cues for displaying subtitles, integrating them into the show timeline.",
+    "Automate QLab subtitle creation from Excel, CSV, or TXT using script-driven workflows.",
+    "Structure source data with one subtitle per row for efficient QLab cue generation.",
+    "A QLab Video License is essential for Text cues to function and project correctly."
+  ],
+  "faq": [
+    {
+      "question": "Can QLab display subtitles?",
+      "answer": "Yes, QLab displays subtitles using Text cues, which render styled text as video output. These cues integrate into your show timeline, can be formatted, and assigned to a projector stage, triggered like any other QLab cue."
+    },
+    {
+      "question": "What's the fastest way to create QLab subtitles from a spreadsheet?",
+      "answer": "The fastest method involves structuring your spreadsheet with one subtitle per row. Then, use an AppleScript to read each row and automatically generate corresponding QLab Text cues, setting properties like text, number, and alignment."
+    },
+    {
+      "question": "Does QLab natively import Excel files for subtitles?",
+      "answer": "QLab does not have a one-click native XLSX subtitle import. Instead, you create QLab Text cues from Excel, CSV, or TXT using script-driven workflows, often adapting patterns from the QLab Cookbook for automation."
+    },
+    {
+      "question": "What QLab license is required to use Text cues for subtitles?",
+      "answer": "A QLab Video License or a Bundle License that includes Video is required to use Text cues. Without it, QLab will mark Text cues as broken, and they will not be able to project any subtitle content."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Text cue",
+      "definition": "A QLab cue type that displays styled text as video output, commonly used for subtitles or other projected text."
+    },
+    {
+      "term": "Surtitles",
+      "definition": "Projected text displayed above a stage, typically providing translations of dialogue or lyrics for an audience."
+    },
+    {
+      "term": "QLab workspace",
+      "definition": "The primary document in QLab where all cues, settings, and show logic are organized and saved."
+    },
+    {
+      "term": "AppleScript",
+      "definition": "A scripting language for macOS that allows automation of applications, including QLab, to perform repetitive tasks like cue generation."
+    },
+    {
+      "term": "Stage",
+      "definition": "In QLab, a virtual representation of a physical video output device or screen, to which Text cues are assigned for projection."
+    }
+  ]
+}

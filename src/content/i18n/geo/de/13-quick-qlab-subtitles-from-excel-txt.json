@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "13-quick-qlab-subtitles-from-excel-txt",
+  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
+  "generatedAt": "2026-07-10T04:12:18.383Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wichtige Erkenntnisse",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Themen"
+  },
+  "keyTakeaways": [
+    "QLab zeigt Untertitel als Text-Cues an, steuerbar wie andere Show-Elemente.",
+    "Automatisieren Sie die Erstellung von Untertiteln aus Excel, CSV oder TXT, um Zeit zu sparen.",
+    "Ein AppleScript-Workflow wandelt Tabellenzeilen effizient in QLab-Text-Cues um.",
+    "Richten Sie die QLab-Videoausgabebühne vor dem Import sorgfältig ein und testen Sie sie."
+  ],
+  "faq": [
+    {
+      "question": "Kann QLab Untertitel anzeigen?",
+      "answer": "Ja, QLab zeigt Untertitel als Text-Cues an. Diese können formatiert, einer Videoausgabebühne zugewiesen und wie andere Cues ausgelöst werden, was sie zu einem integralen Bestandteil der Show-Steuerung macht."
+    },
+    {
+      "question": "Wie erstelle ich schnell QLab-Untertitel aus Excel, CSV oder TXT?",
+      "answer": "Nutzen Sie einen skriptgesteuerten Workflow. Eine Tabellenzeile oder ein Textblock wird dabei in einen QLab-Text-Cue umgewandelt. AppleScript kann Excel-Daten lesen und entsprechende Cues im QLab-Arbeitsbereich generieren."
+    },
+    {
+      "question": "Welche Struktur ist für Untertitel-Quelldaten am besten geeignet?",
+      "answer": "Eine einfache Struktur mit einem Untertitel pro Zeile ist ideal. Wesentliche Spalten sind `cue_number` und `subtitle_text`. Zusätzliche Spalten wie `operator_note` oder `language` können bei Bedarf hinzugefügt werden."
+    },
+    {
+      "question": "Was ist vor dem Import von Untertiteln in QLab wichtig?",
+      "answer": "Konfigurieren und testen Sie die QLab-Videoausgabebühne sorgfältig. Stellen Sie sicher, dass Schriftart, Größe, Farbe und Position des Textes korrekt sind und vom Publikum gut lesbar sind, bevor Sie die Automatisierung starten."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Text-Cue",
+      "definition": "Ein QLab-Cue-Typ, der formatierten Text als Videoausgabe anzeigt. Er wird für Untertitel oder Übertitel verwendet und kann Schriftart, Größe, Farbe und Position steuern."
+    },
+    {
+      "term": "Übertitel",
+      "definition": "Text, der während einer Theateraufführung über der Bühne projiziert wird, um Dialoge zu übersetzen oder für Hörgeschädigte zugänglich zu machen."
+    },
+    {
+      "term": "AppleScript",
+      "definition": "Eine Skriptsprache für macOS, die zur Automatisierung von Anwendungen wie QLab verwendet wird, um wiederkehrende Aufgaben zu vereinfachen, z.B. das Generieren vieler Cues."
+    },
+    {
+      "term": "Videoausgabebühne",
+      "definition": "Eine Konfiguration in QLab, die festlegt, auf welchem Projektor oder Bildschirm Videoinhalte, einschließlich Text-Cues, angezeigt werden sollen."
+    },
+    {
+      "term": "Cue-Nummer",
+      "definition": "Eine eindeutige alphanumerische Kennung, die jedem Cue in einer QLab-Cue-Liste zugewiesen wird, um ihn zu organisieren und auszulösen."
+    }
+  ]
+}

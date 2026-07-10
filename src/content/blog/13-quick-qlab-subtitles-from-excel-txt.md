@@ -65,7 +65,7 @@ Keep the sheet boring. Boring is good. Boring survives tech rehearsal.
 | `subtitle_text` | `Welcome to the show.` | The text the audience sees. |
 | `operator_note` | `After doorbell` | A cueing note for the operator. |
 | `language` | `en` | Useful if you are preparing more than one version. |
-| `stage` | `Surtitles` | Optional QLab video output stage name. |
+| `stage` | *(blank)* | Leave blank to use QLab's default stage. A named stage is optional. |
 | `alignment` | `center` | Usually `center`, but keep it explicit. |
 
 For a first pass, only two columns are essential:
@@ -87,85 +87,42 @@ The idea is simple:
 
 1. Open the subtitle spreadsheet in Excel.
 2. Open the target QLab 5 workspace.
-3. Set your Text cue template in QLab first.
+3. Create and project one manual Text cue to confirm the Video License, stage, output route, and projector all work.
 4. Run an AppleScript that reads each row.
-5. For each row, create a QLab Text cue.
-6. Set the cue number, cue name, text, alignment, width, notes, and optionally the stage.
-7. Move or copy the generated cues into the real show timeline.
+5. For each row, create a top-level Timeline Group containing the subtitle Text cue and, from the second subtitle onward, a Fade cue that clears the previous line.
+6. Set the operator-facing cue number and name, subtitle text, alignment, width, notes, and optionally the stage.
+7. Review the generated top-level Groups in the active QLab cue list before using them in the show.
 
 The official Cookbook example uses Excel to create a more complex visual workspace with groups and multiple Text cues per row. For subtitles, you can simplify that pattern: **one spreadsheet row becomes one subtitle Text cue**.
 
 A minimal AppleScript skeleton might look like this:
 
 ```applescript
-tell application id "com.microsoft.Excel" to tell worksheet 1
-  set theRowCount to count of rows of used range
-end tell
-
-tell application id "com.figure53.QLab.5" to tell front workspace
-  -- Create a temporary import group so generated cues are easy to review
-  make type "group"
-  set importGroup to last item of (selected as list)
-  set mode of importGroup to timeline
-  set q number of importGroup to "SUBS"
-  set q name of importGroup to "Generated subtitles from Excel"
-
-  set lastTextCue to ""
-  repeat with rowIndex from 2 to theRowCount
-    tell application id "com.microsoft.Excel" to tell worksheet 1
-      set theCueNumber to (value of cell 1 of row rowIndex) as text
-      set theSubtitleText to (value of cell 2 of row rowIndex) as text
-      set theOperatorNote to ""
-      try
-        set theOperatorNote to (value of cell 3 of row rowIndex) as text
-      end try
-    end tell
-
-    -- Skip blank rows
-    if theCueNumber is not "" and theSubtitleText is not "" then
-      -- Create a Group cue (Timeline mode) for this subtitle step
-      make type "group"
-      set subGroup to last item of (selected as list)
-      set mode of subGroup to timeline
-      set q number of subGroup to theCueNumber
-      set q name of subGroup to "Subtitle " & theCueNumber
-
-      -- Move the group into the import container
-      move subGroup to end of importGroup
-
-      make type "text"
-      set currentTextCue to last item of (selected as list)
-      set q name of currentTextCue to "Text " & theCueNumber
-      set text of currentTextCue to theSubtitleText
-      move currentTextCue to end of subGroup
-
-      -- If there is a previous subtitle, create a Fade cue to fade it out
-      if lastTextCue is not "" then
-        make type "fade"
-        set theFade to last item of (selected as list)
-        set q name of theFade to "Fade Out Previous"
-        set cue target of theFade to lastTextCue
-        set duration of theFade to 0.05
-        set stop target when done of theFade to true
-        set do opacity of theFade to true
-        set opacity of theFade to 0
-        move theFade to end of subGroup
-        
-        -- Current text cue waits 0.05s for the previous one to fade out
-        set pre wait of currentTextCue to 0.05
-      end if
-
-      -- Apply layout settings to the Text cue
-      set theCue to currentTextCue
-      set text alignment of theCue to "center"
-      set fixed width of theCue to 1600
-      set notes of theCue to theOperatorNote
-
-      set lastTextCue to currentTextCue
-    end if
-  end repeat
-end tell
+-- Official QLab 5 pattern:
+-- https://qlab.app/docs/v5/scripting/examples/#create-and-move-a-new-cue
+on makeCueInGroup(cueType, destinationContainer)
+  tell application id "com.figure53.QLab.5" to tell front workspace
+    make type cueType
+    set newCue to last item of (selected as list)
+    set q number of newCue to ""
+    set newCueID to uniqueID of newCue
+    set sourceList to parent of newCue
+    move cue id newCueID of sourceList to end of destinationContainer
+    return cue id newCueID of destinationContainer
+  end tell
+end makeCueInGroup
 ```
+
+The complete companion script keeps the QLab cue list readable during a show:
+
+- Every subtitle is a top-level Timeline Group in the active cue list. There is no extra import Group around the show cues.
+- Sound, Light, Video, Wait, and other show cues can therefore be inserted between any two subtitle steps.
+- Excel's `cue_number` becomes the QLab **Number**.
+- Excel's `subtitle_text` becomes the visible QLab **Name** of the operator-facing Timeline Group.
+- The operator therefore sees `20 | Going on to the Hartlocks’ tonight, Margaret?`, not only `20 | Subtitle 20`.
+- From the second subtitle onward, each Timeline Group contains `CLEAR PREVIOUS` followed by `DISPLAY en`. The new Text cue has a 0.05-second pre-wait, so the old line is faded and stopped before the new line appears.
+- The first subtitle contains only `DISPLAY en` because there is no previous subtitle to clear.
+- A final top-level `CLEAR LAST SUBTITLE` step removes the final line at the end of the subtitle sequence.
 
 *You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](https://surtitlelive-blog.pages.dev/blog-13-qlab-subtitles-demo-assets.zip).*
 
@@ -178,10 +135,10 @@ For a real show, add checks before writing into the QLab workspace:
 - trim extra spaces from subtitle text
 - warn if a line is too long
 - reject rows marked as draft or not approved
-- put generated cues into a temporary group first
+- generate into a disposable copy of the QLab workspace first
 - keep a timestamped backup of the QLab workspace
 
-The safest workflow is to generate cues into a separate QLab workspace or a clearly named group, review them, and only then paste them into the live show file.
+The safest workflow is to generate cues into a disposable copy of the QLab workspace, review the resulting top-level Groups, and only then repeat the import in the real show workspace or transfer the reviewed cues according to your show's change-control process.
 
 ## Method 2: CSV to QLab subtitles
 
@@ -241,22 +198,61 @@ For serious surtitles, convert TXT into a spreadsheet or a dedicated surtitle ed
 
 ## Projection setup: do not forget the stage
 
-Generating Text cues is only half the job.
+Generating Text cues is only half the job. QLab also needs a working path from the Text cue to a stage, from the stage to an output route, and from that route to a physical display or projector.
 
-A QLab Text cue must output somewhere. In the official QLab Text cue inspector, the I/O tab assigns the cue to a video output stage. If the cue has no stage, the Text cue can be broken or fail to appear where expected.
+QLab's official documentation states that a **Video License is required to use Text cues**. This guide therefore assumes that QLab has an active Video License or a Bundle License that includes Video. Without it, the importer can create Text cues, but QLab marks them as broken and they cannot project. See QLab's official [Text Cues documentation](https://qlab.app/docs/v5/video/text-cues/) and [license feature table](https://qlab.app/docs/v5/general/features/).
+
+Before continuing, open **QLab → Manage Your Licenses** and confirm that Video is licensed. An Audio-only license is not sufficient for Text cues.
+
+### Beginner setup: connect one projector
+
+Do this before running the Excel importer:
+
+1. Connect the projector or external display to the Mac and turn it on.
+2. Open macOS **System Settings → Displays** and confirm the projector appears. For normal surtitles, use it as an extended display rather than mirroring the operator screen.
+3. Open QLab. If possible, create a new workspace after the projector is connected. QLab normally creates a stage for each connected display when it creates the workspace.
+4. Open **Workspace Settings → Video**.
+5. In **Video Outputs**, find the stage for the projector. Confirm that the **Devices** column names the projector or external display. A stage with no device cannot project the subtitles.
+6. If no suitable stage exists, open **Output Routing**, create an output route using the projector as its device, return to **Video Outputs**, then choose **New Video Stage → Stage with output** and select that route.
+7. Give the stage a simple name such as `Surtitles`. Avoid changing its name after importing if the Excel sheet refers to it by name.
+
+QLab's terms describe a signal path:
+
+**Text cue → Stage → Region → Output Route → Projector**
+
+If any link is missing, QLab can create the cue but mark it as broken or show nothing on the projector.
+
+### Test one Text cue before importing Excel
+
+1. Create one Text cue manually in QLab.
+2. Enter a short test line such as `Subtitle test`.
+3. In the Text cue's **I/O** inspector, select the projector stage.
+4. Run the cue.
+5. Confirm the text appears on the projector, not only in QLab's preview or stage monitor.
+6. Adjust font, size, color, width, alignment, and position until it is readable from the back row.
+
+Only run the Excel importer after this manual Text cue works.
+
+### What to put in Excel's `stage` column
+
+- Leave `stage` blank for the easiest workflow. The script keeps QLab's default stage for each new Text cue.
+- Enter a stage name only when you intentionally created that stage and the spelling matches QLab exactly.
+- If the spreadsheet contains a stage name that QLab cannot find, the companion script keeps the default stage and records the fallback in the cue notes.
 
 ![QLab Text cue inspector showing video stage assignment in the I/O tab](/blog/_astro/blog-13-4.gif)
 
-Before importing hundreds of subtitle cues, create and test the stage:
+### If the importer runs but the subtitles do not project
 
-- connect the projector or display
-- configure the QLab video output stage
-- make one manual Text cue
-- set the font, size, color, width, alignment, and position
-- confirm it is readable from the back row
-- save that cue as the template or copy its settings into the generated cues
+| What you see | What it means | What to do |
+| --- | --- | --- |
+| QLab shows `QLab Video License or output required` | The subtitle cues were created, but at least one Text cue is broken. | First confirm a Video or Bundle License is active. Then configure **Workspace Settings → Video** and test the cues already created. Do not import them again. |
+| Every generated Text cue is broken and no Video stages are available | QLab does not have an active Video License. | Install or activate a Video or Bundle License. Text cues cannot project without it. |
+| A Text cue has a red error mark or reports `broken` | Its stage, route, or output device is unavailable. | Check the Text cue's I/O stage, then check the stage's region, route, and device. |
+| The cue runs but nothing reaches the projector | QLab is probably using the wrong stage or the route points to the wrong display. | Select the intended stage in the Text cue and verify the route's device. |
+| The script reports that cue number `10` already exists | A previous import or another show cue already uses that number. | Use a new/copy workspace or remove the earlier test import after confirming it is safe. |
+| QLab contains generated subtitle groups but running the script again fails | The first import already succeeded structurally. | Fix the video output and use the existing cues instead of importing duplicates. |
 
-Do this before automation. Automation repeats your setup. If the template is wrong, automation repeats the wrong setup very quickly.
+Automation repeats your setup. If the output path or Text cue styling is wrong, automation repeats that mistake very quickly.
 
 ## What usually breaks in DIY QLab subtitle workflows
 

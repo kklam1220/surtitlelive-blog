@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "13-quick-qlab-subtitles-from-excel-txt",
+  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
+  "generatedAt": "2026-07-10T04:13:10.567Z",
+  "sectionTitles": {
+    "keyTakeaways": "核心要點",
+    "faq": "常見問題",
+    "glossary": "詞彙解釋",
+    "related": "相關資源"
+  },
+  "keyTakeaways": [
+    "從 Excel、CSV 或 TXT 可透過腳本建立 QLab 字幕文字提示，實現自動化工作流程。",
+    "QLab 文字提示能將格式化文字渲染為影片輸出，可指派至舞台，用於投影字幕。",
+    "建議將生成的字幕提示先置於獨立群組或工作區審查，確認無誤後再移至演出檔案。",
+    "複雜字幕需求如多語言、手機觀看，SurtitleLive 提供專用編輯與同步，優於單純 QLab 腳本。"
+  ],
+  "faq": [
+    {
+      "question": "QLab 可以顯示字幕嗎？",
+      "answer": "可以。QLab 文字提示能將格式化文字顯示為影片輸出，因此常用於投影字幕、surtitle、隱藏式字幕、公告等文字型視覺內容。"
+    },
+    {
+      "question": "我可以直接將 Excel 字幕匯入 QLab 嗎？",
+      "answer": "QLab 官方文件展示了使用 AppleScript 進行 Excel 驅動的提示產生，但這並非內建的一鍵匯入功能。實務上，需將 Excel 作為來源資料，再透過腳本或匯入器建立 QLab 文字提示。"
+    },
+    {
+      "question": "我可以從 CSV 製作 QLab 字幕嗎？",
+      "answer": "可以，透過一個匯入器。CSV 是純文字，比 XLSX 更易解析和自動化。腳本可讀取每一列 CSV 資料，並為每個字幕建立一個 QLab 文字提示。這使得工作流程更容易版本控制與重複。"
+    },
+    {
+      "question": "QLab 會將字幕同步到觀眾手機嗎？",
+      "answer": "QLab 僅處理本地投影。觀眾手機傳送需瀏覽器/手機工作流程。SurtitleLive QLab Sync 專為此設計：QLab 執行演出時間軸，SurtitleLive 則負責更新觀眾手機的字幕狀態，確保同步。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "文字提示 (Text Cue)",
+      "definition": "QLab 提示類型，用於將格式化文字渲染為影片輸出。可設定字型、大小、顏色等，並指派到影片輸出舞台進行投影。"
+    },
+    {
+      "term": "舞台 (Stage)",
+      "definition": "QLab 中指定影片輸出的目的地，如投影機或螢幕。文字提示需指派至舞台才能顯示。"
+    },
+    {
+      "term": "AppleScript",
+      "definition": "Apple 提供的腳本語言，用於自動化 macOS 應用程式（如 QLab）的任務，例如從試算表建立大量提示。"
+    },
+    {
+      "term": "舞台字幕 (Surtitles)",
+      "definition": "舞台演出中，在舞台上方或側邊顯示的翻譯或對白文字，幫助觀眾理解內容。"
+    },
+    {
+      "term": "QLab 工作區 (QLab Workspace)",
+      "definition": "QLab 軟體中包含所有演出提示、設定和資源的檔案，是演出控制的核心。"
+    }
+  ]
+}
