@@ -214,7 +214,7 @@ Use the subject line:
 
 **Fringe Support Application – [Your Show Name]**
 
-Send the application to **support@surtitlelive.com**.
+Send the application to **info@surtitlelive.com**.
 
 ### 3. Include the following information
 
@@ -280,6 +280,6 @@ A separately prepared QLab projection workflow can continue to control local pro
 
 Preparing captions or surtitles early gives your team more time to review the text, rehearse the cues, explain the service to audiences, and test the actual venue setup.
 
-[Create your free SurtitleLive account](https://surtitlelive.com/auth/register), then email **support@surtitlelive.com** with the subject line:
+[Create your free SurtitleLive account](https://surtitlelive.com/auth/register), then email **info@surtitlelive.com** with the subject line:
 
 **Fringe Support Application – [Your Show Name]**
