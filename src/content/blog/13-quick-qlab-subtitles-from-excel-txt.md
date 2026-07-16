@@ -57,7 +57,7 @@ If your source is Excel or Google Sheets, start with one subtitle per row.
 Keep the sheet boring. Boring is good. Boring survives tech rehearsal.
 
 ![Boring Excel spreadsheet structure for QLab subtitles](./blog-13-2.png)
-*Download the template here: [QLab Subtitles Excel Template (XLSX)](https://surtitlelive-blog.pages.dev/blog-13-xlsx.xlsx)*
+*You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](https://surtitlelive-blog.pages.dev/blog-13-qlab-subtitles-demo-assets.zip).*
 
 | Column | Example | Why it matters |
 | --- | --- | --- |
@@ -124,7 +124,6 @@ The complete companion script keeps the QLab cue list readable during a show:
 - The first subtitle contains only `DISPLAY en` because there is no previous subtitle to clear.
 - A final top-level `CLEAR LAST SUBTITLE` step removes the final line at the end of the subtitle sequence.
 
-*You can download the complete companion package containing this AppleScript, the Excel template, and screenshot here: [QLab Subtitles Demo Assets (ZIP)](https://surtitlelive-blog.pages.dev/blog-13-qlab-subtitles-demo-assets.zip).*
 
 This is not a finished production importer. It is a readable starting point.
 
