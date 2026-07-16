@@ -1,10 +1,18 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { execFileSync } = require('node:child_process');
 
 const distDir = path.resolve(__dirname, '..', 'dist');
 const blogRoot = path.resolve(__dirname, '..');
 const astroConfigPath = path.join(blogRoot, 'astro.config.mjs');
 const localeConfigPath = path.join(blogRoot, 'src', 'i18n', 'locale-config.ts');
+const qlabDemoScriptPath = path.join(
+  blogRoot,
+  'qlab-subtitles-demo-assets',
+  'create-qlab-subtitles-from-excel.applescript',
+);
+const qlabDemoZipPath = path.join(blogRoot, 'public', 'blog-13-qlab-subtitles-demo-assets.zip');
+const qlabDemoZipEntry = 'qlab-subtitles-demo-assets/create-qlab-subtitles-from-excel.applescript';
 
 function extractQuotedValues(source, regex, label) {
   const match = source.match(regex);
@@ -89,9 +97,36 @@ function assertFileMatchCount(relativePath, pattern, expectedCount, message) {
   }
 }
 
+function assertQlabDemoScriptTargetsActiveCueList(source, label) {
+  if (!/set destinationCueList to current cue list/.test(source)) {
+    throw new Error(`${label} does not capture QLab's active cue list.`);
+  }
+  if (/first cue list/.test(source)) {
+    throw new Error(`${label} still targets QLab's first cue list.`);
+  }
+  const destinationUses = source.match(/makeCueInGroup\("group", destinationCueList\)/g) ?? [];
+  if (destinationUses.length !== 2) {
+    throw new Error(`${label} must route subtitle and final-clear Groups to the captured active cue list.`);
+  }
+}
+
 if (!fs.existsSync(distDir)) {
   throw new Error('Blog dist/ does not exist. Run `npm run build --prefix blog` first.');
 }
+
+assertQlabDemoScriptTargetsActiveCueList(
+  fs.readFileSync(qlabDemoScriptPath, 'utf8'),
+  'QLab companion AppleScript source',
+);
+const zippedQlabDemoScript = execFileSync(
+  'unzip',
+  ['-p', qlabDemoZipPath, qlabDemoZipEntry],
+  { encoding: 'utf8' },
+);
+assertQlabDemoScriptTargetsActiveCueList(
+  zippedQlabDemoScript,
+  'QLab companion ZIP AppleScript',
+);
 
 const astroConfigSource = fs.readFileSync(astroConfigPath, 'utf8');
 const localeConfigSource = fs.readFileSync(localeConfigPath, 'utf8');

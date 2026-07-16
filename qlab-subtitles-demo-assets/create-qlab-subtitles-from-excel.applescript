@@ -32,6 +32,9 @@ tell application id "com.microsoft.Excel"
 end tell
 
 tell application id "com.figure53.QLab.5" to tell front workspace
+	set destinationCueList to current cue list
+	if destinationCueList is missing value then error "Open the QLab cue list that should receive the subtitles, then run this script again."
+
 	repeat with rowData in excelRows
 		set cueNumber to my plainText(item 1 of rowData)
 		if cueNumber is not "" then
@@ -56,7 +59,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 			set stageName to my plainText(item 5 of rowData)
 			set alignmentName to my plainText(item 6 of rowData)
 
-			set subtitleGroup to my makeCueInGroup("group", first cue list)
+			set subtitleGroup to my makeCueInGroup("group", destinationCueList)
 			set mode of subtitleGroup to timeline
 			set q number of subtitleGroup to cueNumber
 			set q name of subtitleGroup to subtitleText
@@ -101,7 +104,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 	end repeat
 
 	if lastTextCue is not missing value then
-		set clearGroup to my makeCueInGroup("group", first cue list)
+		set clearGroup to my makeCueInGroup("group", destinationCueList)
 		set mode of clearGroup to timeline
 		set q name of clearGroup to "CLEAR LAST SUBTITLE"
 		set clearFade to my makeCueInGroup("fade", clearGroup)

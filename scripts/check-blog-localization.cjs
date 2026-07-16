@@ -36,6 +36,22 @@ function hasInvalidBodyMarkup(localizedPayload) {
   );
 }
 
+function hasInvalidQlabCompanionSemantics(post, localizedPayload) {
+  if (post.slug !== "13-quick-qlab-subtitles-from-excel-txt") {
+    return false;
+  }
+
+  const body = localizedPayload.body || "";
+  const requiredLiteralCueNames = [
+    "CLEAR PREVIOUS",
+    "CLEAR LAST SUBTITLE",
+  ];
+  return (
+    requiredLiteralCueNames.some((cueName) => !body.includes(cueName)) ||
+    !/\bDISPLAY\s+[A-Za-z][A-Za-z-]*\b/.test(body)
+  );
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const config = loadConfig();
@@ -55,6 +71,7 @@ function main() {
     let englishCopy = 0;
     let invalid = 0;
     let invalidBodyMarkup = 0;
+    let invalidQlabSemantics = 0;
     let deferred = 0;
 
     for (const post of posts) {
@@ -88,10 +105,14 @@ function main() {
         invalidBodyMarkup += 1;
         hasError = true;
       }
+      if (hasInvalidQlabCompanionSemantics(post, payload)) {
+        invalidQlabSemantics += 1;
+        hasError = true;
+      }
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} deferred=${deferred}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} deferred=${deferred}`,
     );
   }
 
