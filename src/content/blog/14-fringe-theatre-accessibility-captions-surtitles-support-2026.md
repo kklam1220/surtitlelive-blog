@@ -1,39 +1,43 @@
 ---
-title: 'Free Fringe Theatre Accessibility Captions & Surtitles Support 2026'
-description: 'Selected Fringe companies performing from July to September 2026 can apply for a free 14-day SurtitleLive Pro trial for projected or mobile theatre captions and surtitles.'
+title: 'Fringe Captions & Surtitles Support for Independent Theatre in 2026'
+description: 'Selected Fringe companies performing from July to September 2026 can apply for 14 days of complimentary SurtitleLive Pro access for prepared theatre captions and surtitles.'
 pubDate: '2026-06-15'
 tags: ['Fringe Theatre Accessibility', 'Theatre Captions', 'English Surtitles', 'Edinburgh Fringe', 'Mobile Theatre Captions']
 heroImage: './blog-14.png'
 heroImageAlt: 'A child watches a puppet theatre performance while reading captions on a mobile phone'
 ---
 
-Fringe accessibility is often one of the last production decisions a company makes.
+Fringe accessibility is often treated as one of the last production decisions a company makes. It should not be.
 
 You may already have a strong show, a translated script, and confirmed festival dates, but still be deciding how audiences will read the text during a live performance.
 
 Some productions need English surtitles so audiences, reviewers, and programmers can follow a show performed in another language. Others need accessibility captions for D/deaf and hard-of-hearing audience members. Some need both.
 
-The **SurtitleLive Fringe Support Programme 2026** gives selected independent theatre companies free, time-limited access to SurtitleLive Pro for prepared captions and surtitles delivered through projection, audience phones, or both.
+The **SurtitleLive Fringe Support Programme 2026** gives selected independent theatre companies complimentary, time-limited access to SurtitleLive Pro for prepared captions and surtitles delivered through projection, audience phones, or both.
+
+Software cannot make a production accessible by itself. The purpose of this programme is narrower and more useful: to remove one practical barrier for teams that are ready to prepare, review, rehearse, describe, and operate a written access service responsibly.
 
 ## Fringe Support Programme 2026 at a glance
 
-- **Offer:** A free 14-day SurtitleLive Pro trial
+- **Offer:** 14 days of complimentary SurtitleLive Pro access for selected productions
 - **Performance dates:** July, August, or September 2026
 - **Best suited to:** Scripted or mostly scripted Fringe and showcase productions
 - **Delivery options:** Projected text, QR-code mobile viewing, or both
 - **Application process:** Create a free account, then submit a short email application
-- **Important:** This is software access, not a cash grant or a managed live-captioning service
+- **Important:** This is software access, not a cash grant, translation commission, accessibility certification, or managed live-captioning service
 
-Applications are reviewed on a rolling basis while programme capacity remains.
+Applications are reviewed on a rolling basis while programme capacity remains. Access is confirmed only when an applicant receives written acceptance from SurtitleLive.
+
+> **An independent programme:** This offer is operated by SurtitleLive and is not affiliated with or endorsed by the Edinburgh Festival Fringe Society or any named festival. Festivals and venues may have their own captioning equipment, funding, access listings, deadlines, and technical rules. For Edinburgh in 2026, consult the Fringe Society's current [captioning guidance](https://www.edfringe.com/take-part/artists/organise-a-show/make-your-show-accessible/captioning/) and [accessibility information for artists](https://www.edfringe.com/about-us/news-and-blog/accessibility-for-artists-at-fringe-2026/) alongside your venue's requirements.
 
 ## What the programme is designed to support
 
 The programme is intended for independent theatre makers, touring companies, and international ensembles that can prepare most of their performance text before the show.
 
-It can support:
+Depending on the text your team prepares, it can support:
 
 - English surtitles for non-English performances
-- Accessibility captions for scripted dialogue
+- Accessibility captions for prepared, scripted dialogue
 - Speaker labels and relevant non-speech sound information
 - Projected captions or surtitles
 - Mobile theatre captions accessed through a QR code
@@ -41,7 +45,7 @@ It can support:
 - Prepared multilingual viewer options
 - Portable workflows for small touring teams
 
-Applications are welcome from companies appearing at the Edinburgh Festival Fringe, Dublin Fringe, Stockholm Fringe, Gothenburg Fringe, Amsterdam Fringe, and comparable summer Fringe festivals or independent showcase programmes.
+Applications are welcome from companies appearing at the Edinburgh Festival Fringe, Dublin Fringe, Stockholm Fringe, Gothenburg Fringe, Amsterdam Fringe, and comparable summer Fringe festivals or independent showcase programmes. Naming a festival here does not imply a partnership with that festival.
 
 ## Does your show need captions, surtitles, or both?
 
@@ -49,15 +53,15 @@ Although the terms are often used interchangeably, captions and surtitles solve 
 
 **English surtitles** translate a performance from its original language into English. They are commonly used when a production is performed in French, German, Spanish, Cantonese, Ukrainian, or another language for an English-speaking audience.
 
-**Accessibility captions** are designed to make performance information available to D/deaf and hard-of-hearing audience members. In addition to dialogue, they may include speaker identification, relevant sound effects, off-stage voices, and musical information.
+**Accessibility captions** are designed to make performance information available to D/deaf and hard-of-hearing audience members. In addition to dialogue, they may include speaker identification, relevant sound effects, off-stage voices, and musical information. A translated dialogue-only script should not be advertised as accessibility captioning until these elements and the intended audience experience have been considered.
 
 A translated show can require both. For example, the English text may translate the original dialogue while also identifying speakers and describing important sounds.
 
 Read our detailed guide to [captions and surtitles for Edinburgh Fringe shows](/blog/11-captions-vs-surtitles-edinburgh-fringe/) before preparing your script.
 
-## What is included in the 14-day Pro trial?
+## What is included in the 14-day Pro access period?
 
-Selected teams receive a 14-day SurtitleLive Pro access window that can be scheduled around important rehearsal and performance dates.
+Selected teams receive a 14-day SurtitleLive Pro access window scheduled around agreed rehearsal and performance dates. It is a programme allocation rather than a new recurring subscription, and selection does not promise access outside the confirmed dates.
 
 ### Script preparation and rehearsal
 
@@ -81,7 +85,7 @@ Projection can provide a shared reading surface for the audience without requiri
 
 Audience members can scan a QR code and open the prepared captions or surtitles in a standard mobile browser. No dedicated viewer app is required.
 
-Mobile delivery can reduce the need for a permanently installed audience display, although the production must still plan for operator equipment, venue connectivity, audience instructions, and device use inside the performance space.
+Mobile delivery can reduce the need for a permanently installed audience display, although the production must still plan for operator equipment, venue connectivity, audience instructions, charging and device use inside the performance space. A phone option is not automatically an accessible experience: invite feedback from the people expected to use it, and do not describe the service more broadly than the tested setup supports.
 
 Learn more about [mobile theatre subtitles for audience phones](/mobile-theatre-subtitles) and [QR-code theatre subtitles](/qr-code-theatre-subtitles).
 
@@ -89,19 +93,21 @@ Learn more about [mobile theatre subtitles for audience phones](/mobile-theatre-
 
 Where appropriate, the same prepared performance can be delivered to a venue display and audience phones at the same time.
 
-This allows a company to provide a shared projected option while also giving individual audience members control over their own device settings.
+This allows a company to provide a shared projected option while also giving individual audience members control over supported viewer settings on their own devices.
 
 ### Current plan limits
 
-The trial uses the current SurtitleLive Pro plan capabilities and limits. These may include limits on audience devices, active shows, languages, storage, usage credits, and other features.
+Programme access uses the SurtitleLive Pro capabilities and limits assigned to the selected account. The acceptance email and the account itself determine the access window and available entitlements.
 
-Check the [current SurtitleLive pricing and plan limits](/pricing) before your access period begins. The published pricing page is the source of truth if a limit changes after this article is published.
+Check the [current SurtitleLive pricing and access options](/pricing) before your access period begins. Public pricing governs ordinary purchases; the written programme acceptance governs this complimentary allocation.
 
 ### QLab workflows
 
 Teams using QLab can incorporate prepared text into an existing show-control workflow through supported export options.
 
-Optional QLab-to-SurtitleLive live sync is a beta workflow that uses a local bridge and an already-open SurtitleLive operator surface. It should be tested during technical rehearsals before being relied upon in performance.
+For local projection, the Editor QLab Projection Pack is prepared for offline use. For a finalized live show, the QLab Projection Pack can send non-secret cue identity from QLab Script cues to the loopback-only SurtitleLive bridge on the same Mac. An already-open, connected ASM console then publishes the corresponding cue through SurtitleLive's existing control channel.
+
+This path is deliberately operator-armed: start the supplied local bridge, open and unlock ASM, connect the bridge, wait until the Viewer is ready, choose **Go Live**, and only then choose **Allow QLab control**. Rehearse the complete path and retain manual ASM cueing as the fallback. The local bridge does not make the mobile Viewer offline and does not send QLab directly to the SurtitleLive backend.
 
 See [how to make QLab subtitles from Excel, CSV, or TXT](/blog/13-quick-qlab-subtitles-from-excel-txt/) for a practical preparation workflow.
 
@@ -118,7 +124,7 @@ The basic audience journey is:
 5. A live operator advances each prepared cue during the performance.
 6. Connected audience devices receive the updated text.
 
-Mobile viewing is an option rather than an automatic solution for every venue. Companies should consider phone-use policies, screen brightness, seating, audience comfort, connectivity, and how front-of-house staff will explain the service.
+Mobile viewing is an option rather than an automatic solution for every venue. Companies should consider phone-use policies, screen brightness, seating, audience comfort, connectivity, charging, and how front-of-house staff will explain the service. Publish accurate access information: state where the text appears, which language it uses, whether sound information is included, and whether audience members need their own connected device.
 
 ## Internet and fallback planning
 
@@ -126,7 +132,7 @@ Audience-phone delivery requires working connectivity between the performance sy
 
 A separately prepared local QLab projection workflow can keep local projection under QLab's control if audience-phone sync is interrupted. That workflow requires advance setup and rehearsal; it does not make mobile audience viewing offline and should not be treated as a general offline guarantee.
 
-Test the exact venue setup during a technical rehearsal and prepare a simple fallback plan for any access service on which audiences will depend.
+Test the exact venue setup during a technical rehearsal and prepare a simple fallback plan for any access service on which audiences will depend. Where possible, include D/deaf, hard-of-hearing, multilingual, or otherwise intended audience members in that review; technical success alone does not establish that the reading experience works.
 
 ## Where SurtitleLive is a good fit
 
@@ -143,7 +149,7 @@ The programme is best suited to productions that:
 
 SurtitleLive is not a replacement for every theatre access service.
 
-A live captioner, CART provider, speech-to-text professional, or hybrid workflow may be more appropriate when a show:
+A live captioner, speech-to-text reporter, CART provider, or hybrid workflow may be more appropriate when a show:
 
 - Is substantially improvised
 - Includes extended unscripted audience interaction
@@ -151,7 +157,7 @@ A live captioner, CART provider, speech-to-text professional, or hybrid workflow
 - Requires verbatim live transcription
 - Does not have an operator available to cue prepared text
 
-Audio description, hearing loops, smart glasses, sign-language interpretation, and venue-wide access hardware should also be planned as separate services.
+Audio description, hearing loops, smart glasses, sign-language interpretation, relaxed-performance planning, step-free access, and venue-wide access hardware are separate considerations. Written text is one part of access planning, not a certificate that the production or venue is accessible.
 
 For a broader product-fit overview, read about [theatre captioning software for live performances](/theatre-captioning-software).
 
@@ -187,11 +193,11 @@ Your company agrees to provide:
 
 Your company agrees to complete a brief survey after the festival describing its setup, audience use, problems encountered, and suggestions for future versions of the programme.
 
-All applications are subject to eligibility review and available programme capacity.
+All applications are subject to eligibility review and available programme capacity. Meeting the criteria does not guarantee selection.
 
 ## What participating companies provide in return
 
-There is no charge for selected programme access.
+There is no charge for the confirmed programme access period. The programme does not automatically enrol a selected company in a paid renewal.
 
 To help promote theatre accessibility and the work of participating companies, we ask selected teams to:
 
@@ -200,7 +206,7 @@ To help promote theatre accessibility and the work of participating companies, w
 - Provide the agreed promotional assets
 - Complete the post-festival feedback survey
 
-Any use of company logos, images, or production information should follow the participation terms agreed with the selected company.
+Any use of company logos, images, quotes, or production information should follow the participation terms agreed with the selected company. Participation in the software programme does not entitle SurtitleLive to claim that a production is fully accessible or endorsed by its audiences.
 
 ## How to apply
 
@@ -232,7 +238,7 @@ Send the application to **info@surtitlelive.com**.
 - Name or role of the person expected to operate the text
 - Company logo and one or two authorised promotional images
 
-Applications are reviewed on a rolling basis. Where possible, apply at least two to three weeks before your technical rehearsal so there is time to prepare the script, train the operator, and test the venue workflow.
+Applications are reviewed on a rolling basis while capacity remains. Where possible, apply at least two to three weeks before your technical rehearsal so there is time to prepare the script, train the operator, and test the venue workflow. Do not announce the software support until selection and dates have been confirmed in writing.
 
 ## Common questions
 
@@ -250,7 +256,7 @@ The final setup should be tested in the actual venue, including sightlines, conn
 
 Yes. SurtitleLive can work with prepared scripts and translations in multiple languages, subject to current plan limits.
 
-Translations and accessibility information should be reviewed by a qualified person before performance.
+Translations and accessibility information should be reviewed by an appropriate language or access practitioner—and, where possible, by intended audience members—before performance.
 
 ### Is this a grant?
 
@@ -262,7 +268,7 @@ It does not provide a cash grant, production crew, translation service, live cap
 
 Include the complete run and technical rehearsal dates in your application.
 
-The standard programme access period is 14 days, so your team should identify the rehearsal and performance dates during which access would be most useful. Selection does not imply an extension beyond the stated programme period.
+The standard programme access period is 14 days, so your team should identify the rehearsal and performance dates during which access would be most useful. Selection does not imply an extension beyond the dates confirmed in writing.
 
 ### Can we use it for an improvised show?
 
@@ -278,7 +284,7 @@ A separately prepared QLab projection workflow can continue to control local pro
 
 ## Apply for Fringe captioning and surtitles support
 
-Preparing captions or surtitles early gives your team more time to review the text, rehearse the cues, explain the service to audiences, and test the actual venue setup.
+Preparing captions or surtitles early gives your team more time to review the text, rehearse the cues, describe the service honestly to audiences, and test the actual venue setup. The strongest access claim is not that software was switched on; it is that the promised experience was prepared, tested, and delivered with care.
 
 [Create your free SurtitleLive account](https://surtitlelive.com/auth/register), then email **info@surtitlelive.com** with the subject line:
 

@@ -11,27 +11,27 @@
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "Theater-Übertitelsoftware sollte Stücktexte strukturorientiert analysieren, bevor KI eingesetzt wird.",
-    "Deterministisches Parsing schafft eine Basislinie für konsistente Cue-Erstellung aus Theaterstücken.",
-    "Die Strukturierung von Stücktexten vor der KI-Analyse reduziert Fehler bei der Cue-Erstellung.",
-    "Die Überprüfung der Cue-Sequenz verbessert die Genauigkeit, indem der Kontext benachbarter Blöcke berücksichtigt wird."
+    "Untertitelsoftware für Theater sollte zunächst die Struktur des Stücktexts auswerten und KI nur bei echten Zweifelsfällen hinzuziehen.",
+    "Regelbasiertes Parsing liefert mit derselben Datei und Parser-Version reproduzierbare Ergebnisse.",
+    "Die Trennung von Vorspann und aufführbarem Text verhindert, dass Rollenlisten oder Titelseiten zu falschen Untertiteln werden.",
+    "Eine Prüfung zusammenhängender Blöcke macht Unstimmigkeiten sichtbar, die bei einer reinen Zeilenanalyse unentdeckt blieben."
   ],
   "faq": [
     {
       "question": "Warum ist deterministisches Parsing wichtig?",
-      "answer": "Es sorgt für Wiederholbarkeit. Bei gleichem Stücktext sollte der Parser immer die gleichen strukturellen Entscheidungen treffen, was eine konsistente Basis für die Cue-Erstellung bietet."
+      "answer": "Es sorgt für reproduzierbare Ergebnisse: Derselbe Stücktext sollte mit derselben Parser-Version gleich gegliedert werden. Das schafft eine verlässliche Grundlage für die weitere menschliche Bearbeitung."
     },
     {
       "question": "Wie trennt SurtitleLive den Vorspann vom Hauptteil des Stücktexts?",
-      "answer": "SurtitleLive verwendet Body-First-Zoning, um zu identifizieren, wo der aufführbare Stücktextkörper beginnt, damit der Vorspann die Dialogerkennung nicht verzerrt."
+      "answer": "Der Parser sucht zunächst den Beginn des aufführbaren Texts. Titelseiten, Rollenlisten und Produktionsnotizen lassen sich dadurch von den Bereichen trennen, in denen tatsächlich Dialog zu erwarten ist."
     },
     {
       "question": "Welche Rolle spielt KI im Parsing-Prozess?",
-      "answer": "KI wird selektiv für unklare Regionen eingesetzt, in denen deterministische Beweise schwach oder widersprüchlich sind. Sie vermeidet Entscheidungen, die bereits durch starke strukturelle Beweise gestützt werden."
+      "answer": "KI kommt gezielt dort zum Einsatz, wo strukturelle Hinweise schwach sind oder einander widersprechen. Eindeutige Blöcke werden dagegen regelbasiert verarbeitet."
     },
     {
       "question": "Was sind die Vorteile dieses Ansatzes für Theaterteams?",
-      "answer": "Für Produktionsteams macht das deterministisch-erste Parsen die Stücktextvorbereitung vorhersehbarer. Für Operatoren bedeutet dies weniger vermeidbare falsche Cues und eine sauberere Übergabe der Probe."
+      "answer": "Die Vorbereitung wird berechenbarer, vermeidbare Fehlzeilen werden seltener und der Entwurf lässt sich in der Probe leichter prüfen. Eine menschliche Abnahme vor der Vorstellung bleibt dennoch erforderlich."
     }
   ],
   "glossary": [
@@ -41,19 +41,19 @@
     },
     {
       "term": "Cue",
-      "definition": "Ein spezifischer Punkt im Stücktext, der einen Übertitel auslöst. Auch: Bühnenanweisung."
+      "definition": "Eine einzelne vorbereitete Untertitel- oder Übertiteleinheit, die der Operator während der Vorstellung zum passenden Zeitpunkt ausspielt."
     },
     {
       "term": "Deterministisches Parsing",
-      "definition": "Ein Ansatz, bei dem der Parser bei gleichem Input immer das gleiche Ergebnis liefert, basierend auf vordefinierten Regeln."
+      "definition": "Ein regelbasierter Ansatz, bei dem dieselbe Eingabe mit derselben Parser-Version dasselbe strukturelle Ergebnis liefert."
     },
     {
-      "term": "Body-First-Zoning",
-      "definition": "Die Technik, bei der der Parser zuerst den Hauptteil des Stücktexts identifiziert, um den Vorspann (z. B. Titelseite, Besetzungsliste) abzugrenzen."
+      "term": "Trennung von Vorspann und Spieltext",
+      "definition": "Ein Verfahren, das zunächst den aufführbaren Teil des Stücktexts bestimmt und Titelseiten, Besetzung oder Produktionsnotizen davon abgrenzt."
     },
     {
-      "term": "Archetypenerkennung",
-      "definition": "Die Identifizierung wiederkehrender Layoutmuster in Stücktexten, wie z. B. Doppelpunkt-Dialog oder Sprecher in eigener Zeile."
+      "term": "Layoutmuster",
+      "definition": "Eine wiederkehrende Schreibweise, etwa ein Rollenname in eigener Zeile oder ein Dialog nach einem Doppelpunkt, aus der sich passende Parserregeln ableiten lassen."
     }
   ]
 }

@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "7-geometry-of-dramatic-parsing",
-  "sourceHash": "f101a9a0cbcf0deb1c5730ef4a1a32c0bf1a6d1f05005aadeedefe1be43e1029",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "1b1b0fbc967615f487c184bd6ec9a9d36dd638b53d989a520c752c343aeb7338",
+  "generatedAt": "2026-07-20T16:35:47.079Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "Theatre scripts rely on spatial layout (indentation, capitalization) to define dialogue and speakers, not just linguistic content.",
-    "Accurate cue detection is critical for live theatre subtitles; misidentification leads to incorrect subtitle timing.",
-    "Parsing accuracy varies by language; punctuation-driven scripts (e.g., Chinese) are easier to parse than layout-driven scripts (e.g., English).",
-    "SurtitleLive uses a layout-first parsing approach, extracting layout attributes to identify dialogue blocks and stage directions."
+    "A theatre script carries meaning through formatting and document regions as well as words.",
+    "Indentation, styles, punctuation, and capitalisation are evidence to combine—not universal classification rules.",
+    "Preserving the original Word .docx structure can produce a clearer, reviewable surtitle cue draft than flattening the script to plain text.",
+    "Human review and rehearsal remain responsible for cue boundaries, speaker attribution, translation, presentation, and timing."
   ],
   "faq": [
     {
-      "question": "What is a subtitle cue in theatre?",
-      "answer": "A subtitle cue is the moment when a line of dialogue should appear on the subtitle display. Cue detection requires identifying dialogue blocks and speaker transitions within the script."
+      "question": "Why does script formatting matter for theatre surtitles?",
+      "answer": "Formatting can reveal speaker relationships, dialogue blocks, directions, headings, and document regions that the words alone do not identify."
     },
     {
-      "question": "How does the system handle inconsistent formatting?",
-      "answer": "Our system clusters similar layouts. If a document profile changes, the parser performs Layout Segmentation to adapt its strategy in real-time."
+      "question": "Are italics or colons reliable enough on their own?",
+      "answer": "No. Both can be strong signals, but their meaning depends on neighbouring text and patterns elsewhere in the document."
     },
     {
-      "question": "Why is layout important when parsing scripts for subtitles?",
-      "answer": "Many scripts use indentation and spacing instead of punctuation to encode structure. A layout-first parser detects cues more reliably than semantic models alone."
+      "question": "What script format does SurtitleLive currently analyse?",
+      "answer": "The supported script-analysis input is an original Word .docx file. PDF and other non-DOCX formats are outside the current analysis workflow."
     },
     {
-      "question": "How does SurtitleLive use AI in script parsing?",
-      "answer": "SurtitleLive employs a three-tier AI model: deterministic rules for explicit formats, AI review for uncertain cases, and AI classification for ambiguous regions, all anchored by layout patterns."
+      "question": "Does layout-aware parsing replace human review?",
+      "answer": "No. It prepares an editable draft; the production team still checks the content and rehearses how it will be delivered."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "The complete text of a play, including dialogue and stage directions."
+      "term": "Document region",
+      "definition": "A part of a script, such as front matter, the performable body, or an appendix, whose content follows a distinct purpose or pattern."
     },
     {
-      "term": "Cue",
-      "definition": "A specific point in the script that triggers a subtitle to appear or disappear."
+      "term": "Layout signal",
+      "definition": "Formatting evidence such as indentation, alignment, spacing, style, or punctuation that may help identify a script element."
     },
     {
-      "term": "Character",
-      "definition": "A dramatic role played by an actor in a theatrical production."
+      "term": "OOXML",
+      "definition": "The structured document format underlying Word .docx files, which can preserve paragraph and text formatting."
     },
     {
-      "term": "Stage Direction",
-      "definition": "An instruction in the script indicating movement, action, or tone, often indicated by italics."
+      "term": "Twip",
+      "definition": "A document-layout unit equal to one twentieth of a point."
     },
     {
-      "term": "Parsing",
-      "definition": "The process of analyzing a script to identify its components (dialogue, character names, stage directions) for subtitle generation."
+      "term": "Cue draft",
+      "definition": "An editable sequence prepared from a script for human review, correction, translation, and rehearsal before live delivery."
     }
   ]
 }

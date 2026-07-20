@@ -3,7 +3,7 @@
   "locale": "pl",
   "slug": "3-how-we-protect-your-work",
   "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
-  "generatedAt": "2026-05-22T14:06:16.086Z",
+  "generatedAt": "2026-07-20T18:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Kluczowe wnioski",
     "faq": "FAQ",
@@ -11,15 +11,15 @@
     "related": "Powiązane terminy"
   },
   "keyTakeaways": [
-    "SurtitleLive korzysta z dostarczania treści na żądanie w czasie rzeczywistym, dzięki czemu oficjalna przeglądarka unika wczytywania całego pakietu skryptu w postaci zwykłego tekstu z góry.",
-    "Treść napisów w czasie rzeczywistym jest dostarczana jako zaszyfrowane segmenty i odszyfrowywana w pamięci przeglądarki w celu wyświetlenia.",
-    "Tymczasowe tokeny bearer, okna wygaśnięcia i mechanizmy unieważniania po stronie serwera pomagają ograniczyć czas, przez jaki dostęp widza pozostaje użyteczny.",
+    "SurtitleLive dostarcza napisy na żądanie, dlatego oficjalny widok dla publiczności nie wczytuje z góry całego tekstu spektaklu w jawnej postaci.",
+    "Treść napisów trafia do przeglądarki w zaszyfrowanych segmentach i jest odszyfrowywana w jej pamięci wyłącznie na potrzeby wyświetlania.",
+    "Tymczasowe tokeny dostępu, terminy wygaśnięcia i możliwość unieważnienia po stronie serwera pomagają ograniczyć czas, przez który dostęp widza pozostaje aktywny.",
     "Te zabezpieczenia zmniejszają ryzyko przypadkowego kopiowania i niekontrolowanego dostępu; nie są to DRM ani obietnica absolutnej ochrony przed kopiowaniem."
   ],
   "faq": [
     {
       "question": "W jaki sposób SurtitleLive ogranicza przypadkowe kopiowanie skryptów?",
-      "answer": "Oficjalna przeglądarka ładuje zaszyfrowane segmenty czasu rzeczywistego na żądanie wokół bieżącej wskazówki, zamiast prezentować cały skrypt jako jeden czytelny ładunek przeglądarki w momencie wejścia."
+      "answer": "Oficjalny widok dla publiczności pobiera zaszyfrowane segmenty na żądanie, w pobliżu bieżącej kwestii, zamiast udostępniać przy wejściu cały tekst spektaklu jako jeden czytelny zasób."
     },
     {
       "question": "Czy SurtitleLive może zagwarantować, że skrypt nigdy nie zostanie skopiowany?",
@@ -27,17 +27,17 @@
     },
     {
       "question": "Co się stanie, jeśli link widza musi zostać ograniczony?",
-      "answer": "Dostęp w czasie rzeczywistym może być ograniczony za pomocą tymczasowych tokenów bearer, skonfigurowanych okien wygaśnięcia i unieważniania po stronie serwera dla nowych lub odnowionych żądań czasu rzeczywistego."
+      "answer": "Dostęp można ograniczyć za pomocą tymczasowych tokenów, ustalonych terminów wygaśnięcia oraz unieważnienia po stronie serwera, które obejmuje nowe i odnawiane żądania."
     },
     {
       "question": "Jak dane są chronione podczas transmisji?",
-      "answer": "Połączenia korzystają z HTTPS/TLS, a dostarczanie czasu rzeczywistego wykorzystuje zaszyfrowane segmenty czasu rzeczywistego jako część warstwowego modelu bezpieczeństwa, który obejmuje również zakresowanie dostępu i kontrole operacyjne."
+      "answer": "Połączenia korzystają z HTTPS/TLS, a napisy są dostarczane w zaszyfrowanych segmentach. To element wielowarstwowego modelu, który obejmuje również ograniczanie dostępu i zabezpieczenia operacyjne."
     }
   ],
   "glossary": [
     {
-      "term": "Segment czasu rzeczywistego",
-      "definition": "Mała zaszyfrowana jednostka napisów żądana wokół postępu przedstawienia zamiast pełnego pakietu skryptu w postaci zwykłego tekstu."
+      "term": "Segment napisów",
+      "definition": "Niewielka, zaszyfrowana część napisów pobierana stosownie do przebiegu spektaklu zamiast całego tekstu w jawnej postaci."
     },
     {
       "term": "Dostęp widza",

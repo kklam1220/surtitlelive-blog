@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "de",
   "slug": "6-ai-prepares-artists-protect",
-  "sourceHash": "0fdb81eba442f596813d6c857afb93ef93dd7b552750a7a228b10f42f2e129f9",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e62b53c1f42d3c7ad9d9455eaa7e3059dfb77ebb0b8e1dfeeed7d96d821485ea",
+  "generatedAt": "2026-07-20T17:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Kernpunkte",
     "faq": "Häufig gestellte Fragen",
@@ -11,49 +11,49 @@
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "SurtitleLive ist ein KI-gestützter Workflow, der PowerPoint für Theaterübertitel ersetzt.",
-    "KI analysiert Skripte und formatiert Übertitel, während Künstler die Live-Steuerung behalten.",
-    "Im Gegensatz zu PowerPoint ermöglicht SurtitleLive flexible Anpassungen an Änderungen während der Vorstellung.",
-    "KI dient als Mitarbeiter für die Textvorbereitung, während menschliche Künstler die Bedeutung schützen."
+    "Professionelle Übertitel sind geprüft, geprobt und verantwortet; ein KI-Entwurf allein ist nicht aufführungsreif.",
+    "Der `.docx`-Import erzeugt einen bearbeitbaren Cue-Entwurf, dessen Analyseergebnis und Zeilentypen kontrolliert werden müssen.",
+    "KI-Übersetzung findet während der redaktionellen Vorbereitung statt, nicht als automatische Live-Sprachübersetzung.",
+    "Projektion, mobile Ausgabe und Exporte brauchen eine maßgebliche Textfassung, klare Zuständigkeiten und erprobte Rückfallebenen."
   ],
   "faq": [
     {
-      "question": "Wird KI menschliche Theaterübersetzer ersetzen?",
-      "answer": "Nein. SurtitleLive positioniert KI als Werkzeug zur Vorverarbeitung. Künstlerische Entscheidungen und emotionale Interpretation bleiben in menschlicher Hand."
+      "question": "Erstellt SurtitleLive aus einer `.docx`-Datei automatisch aufführungsreife Übertitel?",
+      "answer": "Nein. Der Import bereitet einen editierbaren Cue-Entwurf vor. Das Team prüft Analyse, Rollennamen, Dialog, Regieanweisungen, Cue-Grenzen und fehlende oder ungewöhnliche Dokumentbereiche."
     },
     {
-      "question": "Warum SurtitleLive anstelle von PowerPoint für die Echtzeit-Übersetzung verwenden?",
-      "answer": "PowerPoint ist linear und statisch. SurtitleLive ist ein Live-Übertitelsystem, das für die Unvorhersehbarkeit des Live-Theaters entwickelt wurde und sicherstellt, dass Übersetzungen mit den Schauspielern synchron sind."
+      "question": "Übersetzt SurtitleLive gesprochene Sprache live?",
+      "answer": "Nein. Die KI-gestützte Übersetzung ist ein Arbeitsschritt im Editor. Entwürfe bleiben editierbar und müssen von einer fachkundigen Person mit der Ausgangssprache verglichen werden."
     },
     {
-      "question": "Wie verbessert SurtitleLive den Theaterübertitelungs-Workflow?",
-      "answer": "SurtitleLive automatisiert die Skriptanalyse, ermöglicht die manuelle Steuerung und beschleunigt die mehrsprachige Generierung, wodurch sich Künstler auf die Verfeinerung konzentrieren können."
+      "question": "Gibt es eine universelle Lesegeschwindigkeit für Theaterübertitel?",
+      "answer": "Nein. Sprache, Publikum, Textdichte, Anzeige und Zweck unterscheiden sich. Messwerte können problematische Cues zeigen; die Lesbarkeit muss jedoch unter realen Probenbedingungen geprüft werden."
     },
     {
-      "question": "Was ist der Unterschied zwischen einem KI-Entwurf und einer endgültigen Übersetzung?",
-      "answer": "KI erstellt einen ersten Entwurf, aber menschliche Übersetzer verfeinern ihn, um emotionale Nuancen, Subtext und den Kontext der Live-Performance zu berücksichtigen."
+      "question": "Muss eine Produktion PowerPoint vollständig ersetzen?",
+      "answer": "Nein. Eine `.pptx` kann für bestimmte Übergaben sinnvoll sein. Entscheidend ist, welche Fassung maßgeblich bleibt, damit Änderungen nicht unkontrolliert zwischen Editor und Exporten auseinanderlaufen."
     }
   ],
   "glossary": [
     {
-      "term": "Skript",
-      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+      "term": "Cue-Entwurf",
+      "definition": "Eine bearbeitbare Ausgangsfassung der Einheiten, die während der Vorstellung einzeln angezeigt werden sollen."
     },
     {
-      "term": "Cue",
-      "definition": "Ein Signal im Skript, das den Zeitpunkt für eine Aktion oder einen Übertitel angibt."
+      "term": "Maßgebliche Quelle",
+      "definition": "Die eindeutig bezeichnete Fassung, aus der geprüfte Texte und Ausgabeartefakte abgeleitet werden."
     },
     {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+      "term": "Redaktionelle KI-Übersetzung",
+      "definition": "KI-gestützte Erstellung eines Übersetzungsentwurfs während der Vorbereitung, mit anschließender menschlicher Prüfung."
     },
     {
-      "term": "Übertitel",
-      "definition": "Text, der über oder neben der Bühne angezeigt wird, um Dialoge in einer anderen Sprache zu übersetzen."
+      "term": "Wiederaufnahme",
+      "definition": "Das geplante Vorgehen, mit dem ein Operator nach übersprungenen, wiederholten oder verschobenen Textstellen zum passenden Cue zurückfindet."
     },
     {
-      "term": "KI-gestützte Übersetzung",
-      "definition": "Verwendung künstlicher Intelligenz zur Unterstützung und Beschleunigung des Übersetzungsprozesses für Theaterstücke."
+      "term": "Ausgabeartefakt",
+      "definition": "Eine exportierte Datei wie `.xlsx` oder `.pptx`, die der Prüfung oder Übergabe dient, aber nicht unbemerkt zur zweiten redaktionellen Quelle werden soll."
     }
   ]
 }

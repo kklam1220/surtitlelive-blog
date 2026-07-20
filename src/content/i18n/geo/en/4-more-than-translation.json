@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "4-more-than-translation",
-  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e2f490b42515cc4be870bd50da00cfdcb934d926f9340ddab29d7ad92a160dc3",
+  "generatedAt": "2026-07-20T17:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "Frequently Asked Questions",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "Surtitles are more than translation; they foster cultural inclusion and artistic freedom.",
-    "Performing in a 'heart language' preserves cultural nuances and emotional depth for artists.",
-    "SurtitleLive empowers artists to perform authentically and invites diverse audiences to engage with their stories.",
-    "Affordable surtitling tech creates inclusive spaces, enabling communities to share stories and connect through theatre."
+    "Surtitles can let the original performance language remain artistically central while offering another audience a parallel reading path.",
+    "Translation is an editorial and dramaturgical act; it cannot preserve every rhythm, joke, reference, or social register without making choices.",
+    "Language access does not automatically create complete inclusion or accessibility, and translated surtitles are not interchangeable with same-language accessibility captions.",
+    "Technology should expand a company's delivery choices without deciding the artistic language or hiding the paid work of translation, rehearsal, operation, and audience support."
   ],
   "faq": [
     {
-      "question": "How do surtitles empower artists?",
-      "answer": "Surtitles allow performers to use their native language, preserving emotional depth and cultural details, fostering authentic expression without fear of being misunderstood."
+      "question": "How can surtitles support artistic agency?",
+      "answer": "They can allow a company to perform in the language of the work while giving other audience members a considered translation path. The original language does not need to become secondary simply to make an invitation possible."
     },
     {
-      "question": "How does SurtitleLive promote inclusivity?",
-      "answer": "SurtitleLive's affordable, user-friendly software and BYOD model enable diverse communities to share their stories in various settings, breaking down language barriers and fostering cultural exchange."
+      "question": "What does translation as cultural hospitality mean?",
+      "answer": "It means making entry possible without erasing difference: keeping the original language audible, editing the translation for live reading, giving necessary context, and leaving room for audiences to encounter something unfamiliar."
     },
     {
-      "question": "What is the 'heart language' and why is it important?",
-      "answer": "The 'heart language' is the language one grows up with. Performing in this language allows artists to express themselves with greater authenticity, preserving heritage and unique stories."
+      "question": "Do translated surtitles make a production fully accessible?",
+      "answer": "No. Language access is one part of inclusion. Deaf and hard-of-hearing audiences may need same-language captions with speaker and sound information, while mobile and projected delivery can each create different barriers."
     },
     {
-      "question": "How does SurtitleLive's technology respect the theatrical atmosphere?",
-      "answer": "SurtitleLive's 'dark mode' minimizes distractions, ensuring the audience's focus remains on the performance and the human connection happening on stage, not the technology itself."
+      "question": "What role should surtitle technology play?",
+      "answer": "It should give teams workable projection, browser, or hybrid options. Human editors still shape the translation, operators still cue the live text, and the venue and company remain responsible for the audience experience."
     }
   ],
   "glossary": [
     {
+      "term": "Artistic agency",
+      "definition": "The ability of artists and companies to make meaningful choices about the language, form, and presentation of their work."
+    },
+    {
+      "term": "Cultural hospitality",
+      "definition": "An approach that helps audiences enter a work without requiring its language or cultural character to be assimilated into the familiar."
+    },
+    {
       "term": "Surtitles",
-      "definition": "Text displayed above or beside a stage, translating dialogue or providing narrative information for the audience."
+      "definition": "Edited performance text shown through a shared display or personal viewer, often to translate live dialogue."
     },
     {
-      "term": "Cue",
-      "definition": "A signal or prompt in a script or performance that indicates an action, line of dialogue, or technical change."
+      "term": "Accessibility captions",
+      "definition": "Same-language text that may include speaker identification and meaningful sound information for Deaf and hard-of-hearing audiences."
     },
     {
-      "term": "Script",
-      "definition": "The written text of a play, including dialogue, stage directions, and character descriptions."
-    },
-    {
-      "term": "Character",
-      "definition": "A person or role portrayed by an actor in a play or performance."
-    },
-    {
-      "term": "BYOD (Bring Your Own Device)",
-      "definition": "A model where audience members use their personal devices (smartphones, tablets) to view surtitles during a performance."
+      "term": "Dramaturgical judgment",
+      "definition": "Editorial choices about meaning, rhythm, context, and how much text an audience can read while still attending to the stage."
     }
   ]
 }

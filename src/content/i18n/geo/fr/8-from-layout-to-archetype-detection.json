@@ -11,27 +11,27 @@
     "related": "Sujets connexes"
   },
   "keyTakeaways": [
-    "Un logiciel de sous-titrage théâtral doit analyser la structure du script avant d'utiliser l'IA pour éviter des erreurs.",
-    "L'analyse déterministe utilise la mise en forme (indentation, espacement) pour interpréter le script de manière fiable.",
-    "Le zonage du corps sépare les éléments liminaires (distribution, titre) du corps du script pour une analyse précise.",
-    "L'IA est utilisée sélectivement pour les régions ambiguës, après l'analyse structurelle, afin d'améliorer la précision des cues."
+    "Un logiciel de surtitrage doit d’abord lire la structure du texte et ne solliciter l’IA que lorsque les indices restent ambigus.",
+    "Des règles déterministes rendent le résultat reproductible avec un même fichier et une même version de l’analyseur.",
+    "La séparation des pages liminaires et du corps jouable évite de transformer une distribution ou une page de titre en surtitres.",
+    "L’examen de blocs successifs révèle des incohérences qu’une analyse strictement ligne par ligne laisserait passer."
   ],
   "faq": [
     {
       "question": "Pourquoi l'analyse déterministe est-elle importante avant l'IA dans le sous-titrage théâtral ?",
-      "answer": "L'analyse déterministe assure la répétabilité et la fiabilité. Elle utilise la structure du script pour prendre des décisions éclairées avant d'impliquer l'IA, réduisant ainsi les erreurs potentielles dans les cues en direct."
+      "answer": "Elle produit un résultat reproductible avec le même texte et la même version de l’analyseur. Cette base stable facilite ensuite la vérification humaine de la conduite."
     },
     {
       "question": "Comment le zonage du corps améliore-t-il la précision de l'analyse des scripts ?",
-      "answer": "Le zonage du corps sépare les éléments liminaires (listes de distribution, notes) du corps principal du script. Cela empêche l'analyseur de confondre ces éléments avec des dialogues, améliorant ainsi la précision des cues."
+      "answer": "L’analyseur repère d’abord le début du texte destiné à être joué. Les pages de titre, distributions et notes de production risquent ainsi moins d’être prises pour du dialogue."
     },
     {
       "question": "Quel rôle l'IA joue-t-elle dans le workflow d'analyse des scripts de SurtitleLive ?",
-      "answer": "L'IA est utilisée sélectivement pour les régions ambiguës du script où les preuves structurelles sont faibles ou contradictoires. Cela permet de concentrer l'IA sur les zones nécessitant une interprétation plus approfondie, améliorant ainsi l'efficacité."
+      "answer": "L’IA intervient uniquement lorsque les indices structurels sont faibles ou contradictoires. Les blocs dont la fonction est claire restent traités par des règles déterministes."
     },
     {
       "question": "Comment SurtitleLive vérifie-t-il les modifications apportées à son analyseur de scripts ?",
-      "answer": "SurtitleLive utilise des fixtures de script organisées et des cas de régression pour tester les modifications de l'analyseur. Ces tests vérifient que les lignes de locuteur, les indications scéniques et les éléments liminaires sont correctement identifiés et analysés."
+      "answer": "SurtitleLive confronte chaque modification à des textes de référence et à des cas de régression. Une amélioration pour une mise en page ne doit pas en dégrader une autre, et la vérification humaine reste obligatoire avant la représentation."
     }
   ],
   "glossary": [
@@ -41,19 +41,19 @@
     },
     {
       "term": "Cue",
-      "definition": "Unité de texte affichée comme sous-titre ou surtitre pendant une représentation théâtrale."
+      "definition": "Unité préparée de sous-titre ou de surtitre, déclenchée par l’opérateur au moment voulu pendant la représentation."
     },
     {
       "term": "Analyse déterministe",
       "definition": "Méthode d'analyse qui utilise des règles fixes et la structure du document pour interpréter le script de manière cohérente."
     },
     {
-      "term": "Zonage du corps",
-      "definition": "Processus de séparation des éléments liminaires (titres, distribution) du corps principal du script pour une analyse plus précise."
+      "term": "Séparation des liminaires et du corps",
+      "definition": "Repérage du texte destiné à être joué afin d’écarter les titres, distributions et notes de production de la détection du dialogue."
     },
     {
-      "term": "Archétype",
-      "definition": "Modèle de mise en page de script (ex: Locuteur: Dialogue) utilisé pour adapter l'analyse aux différentes conventions d'écriture."
+      "term": "Format de mise en page",
+      "definition": "Disposition récurrente — nom du personnage sur une ligne, dialogue après deux-points, par exemple — qui permet d’appliquer les règles adaptées à chaque zone."
     }
   ]
 }

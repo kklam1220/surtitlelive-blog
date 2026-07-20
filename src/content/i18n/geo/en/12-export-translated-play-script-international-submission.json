@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "12-export-translated-play-script-international-submission",
+  "sourceHash": "f38051fe6a8c9714db7e5a17dd90c6a40422fbef0fd578a6dfe2aa6852c6830c",
+  "generatedAt": "2026-07-20T17:20:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Terms"
+  },
+  "keyTakeaways": [
+    "A readable Word export is a handoff document, not certification that a translation, rights clearance, or submission package is complete.",
+    "SurtitleLive's current Word export produces one selected language in colon or centred-character layout, with stage-direction and missing-translation choices.",
+    "Review structure before translation, then review the target language both line by line and scene by scene.",
+    "Follow the recipient's requirements and add credits, version status, rights information, contacts, and supporting material where required."
+  ],
+  "faq": [
+    {
+      "question": "Can SurtitleLive export a translated play as a Word document?",
+      "answer": "Yes. The Editor exports one selected source or translated language as a DOCX in colon or centred-character layout."
+    },
+    {
+      "question": "Does the Word export create a bilingual parallel script?",
+      "answer": "No. Provide separate source and target exports or assemble and review a bilingual document outside the current Word-export flow."
+    },
+    {
+      "question": "What is the safest missing-translation setting for a submission copy?",
+      "answer": "Stopping the export until missing target-language lines are resolved is generally the clearest external-submission default."
+    },
+    {
+      "question": "Can the exported script be projected as live surtitles?",
+      "answer": "Not unchanged. Live audience text needs separate segmentation, cueing, display decisions, and rehearsal."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Reading copy",
+      "definition": "A script prepared for a recipient to assess the work, distinct from a rehearsal or performance document."
+    },
+    {
+      "term": "Missing-translation policy",
+      "definition": "The chosen behaviour when a target-language line is absent: stop, use source text, leave blank, or mark the gap."
+    },
+    {
+      "term": "Colon layout",
+      "definition": "A Word script layout in which a speaker label and colon precede the dialogue."
+    },
+    {
+      "term": "Centred-character layout",
+      "definition": "A Word script layout in which the character name appears centred on a separate line."
+    },
+    {
+      "term": "Version label",
+      "definition": "A truthful description of a document's purpose and review state, such as translator-reviewed reading copy."
+    }
+  ]
+}

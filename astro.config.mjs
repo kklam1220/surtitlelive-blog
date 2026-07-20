@@ -4,9 +4,28 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
-const BLOG_INDEXED_LOCALES = new Set(['en', 'de', 'es', 'fr', 'ja', 'ko', 'zh-TW']);
-const BLOG_SECONDARY_LOCALES = new Set(['ar', 'id', 'it', 'pl', 'pt', 'ru', 'th', 'tr', 'uk', 'vi', 'zh-CN']);
-const BLOG_ALL_LOCALE_INDEXED_SLUGS = new Set(['9-english-surtitles-non-english-show-fringe']);
+const BLOG_INDEXED_LOCALES = new Set([
+	'en',
+	'ar',
+	'de',
+	'es',
+	'fr',
+	'id',
+	'it',
+	'ja',
+	'ko',
+	'pl',
+	'pt',
+	'ru',
+	'th',
+	'tr',
+	'uk',
+	'vi',
+	'zh-CN',
+	'zh-TW',
+]);
+const BLOG_SECONDARY_LOCALES = new Set([]);
+const BLOG_ALL_LOCALE_INDEXED_SLUGS = new Set([]);
 
 function shouldEmitSitemapPage(page) {
 	const { pathname } = new URL(page);

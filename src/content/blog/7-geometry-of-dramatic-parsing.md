@@ -1,153 +1,209 @@
 ---
-title: 'The Geometry of Script Parsing: How Theatre Subtitles and Supertitles Detect Dialogue'
-description: 'Discover why theatre script parsing is a geometry problem, not just language. Learn how SurtitleLive uses layout-first parsing to detect dialogue blocks and generate reliable subtitle cues for theatre surtitles and captions.'
+title: 'Why Script Formatting Matters When Creating Theatre Surtitles'
+description: 'A practical explanation of how spacing, styles, punctuation, and document regions help turn a Word theatre script into a reviewable surtitle cue draft.'
 pubDate: '2026-03-11'
 heroImage: './script-parsing-theatre-subtitles.png'
-heroImageAlt: 'script parsing pipeline for theatre subtitles and surtitles'
-tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'AI Systems', 'SurtitleLive']
+heroImageAlt: 'Word script formatting being interpreted as evidence for a theatre surtitle cue draft'
+tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'DOCX', 'SurtitleLive']
 ---
-Modern theatre subtitle systems depend on one critical capability: accurate cue detection from scripts.
+The words in a theatre script are only part of the document.
 
-Whether generating supertitles for opera, subtitles for stage productions, or live captions for accessibility, the system must reliably determine:
-*   **Who is speaking**
-*   **When a line begins**
-*   **Where dialogue blocks appear in the script**
+A character name centred above a speech, a line indented beneath it, an italic direction, or a cast list before Act One can all change how the same words should be read. A performer sees those conventions almost without thinking. Software preparing a surtitle cue draft has to make the distinctions explicitly.
 
-At first glance, this sounds like a natural language processing problem. In practice, it isn't. During the development of **SurtitleLive v2**, we analyzed nearly 100 scripts from different languages and theatrical traditions. That process led us to a surprising conclusion: **A theatre script is not primarily linguistic data. It is spatial data.**
+This is why turning a script into theatre surtitles is not simply a matter of extracting sentences. The system must preserve enough of the document to ask a more useful question:
 
-## 1. The Western Script Problem: Structure without Punctuation
+> What evidence on the page suggests that this text is dialogue, a speaker label, a direction, a heading, or material that should remain uncertain?
 
-A typical English theatrical script relies on layout conventions rather than punctuation to define roles.
+The important word is **evidence**. Formatting can reveal structure, but it is not infallible. Scripts vary across writers, languages, companies, templates, and rehearsal versions. A responsible workflow uses layout to prepare a better draft, then keeps a human in charge of what reaches rehearsal and the audience.
 
-### Example: A typical stage script layout
+## Plain text can erase part of the script
+
+Consider a familiar layout:
 
 > **HAMLET**  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be, or not to be: that is the question.
+> &nbsp;&nbsp;&nbsp;&nbsp;To be, or not to be: that is the question.
+>
+> *He turns away.*
 >
 > **OPHELIA**  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My lord, I have remembrances of yours.
+> &nbsp;&nbsp;&nbsp;&nbsp;My lord?
 
-For a human reader, the interpretation is obvious:
+A reader can infer several relationships:
 
-| Block | Interpretation |
+| Page signal | Possible meaning |
 | :--- | :--- |
-| **HAMLET** | Character name |
-| **Indented text** | Dialogue |
-| **OPHELIA** | Character name |
+| A short, capitalised line | Speaker label |
+| Indented text beneath it | Dialogue belonging to that speaker |
+| A separate italic sentence | Stage direction |
+| Repeated spacing between groups | Boundary between dramatic units |
 
-But for a parser that only sees plain text, the structure disappears. We recognize the patterns because character names appear in **ALL CAPS**, dialogue is **indented**, and blocks are separated by vertical spacing. The grammar of Western scripts is typographic, not linguistic.
+Flatten the same passage into one plain-text stream and those relationships weaken:
 
-## 2. From Script Blocks to Subtitle Cues
+```text
+HAMLET To be, or not to be: that is the question. He turns away. OPHELIA My lord?
+```
 
-In a live performance environment, subtitle software does not simply display text. It must convert a script into a sequence of **subtitle cues**.
+The words remain, but their arrangement no longer helps distinguish a spoken line from an instruction. Any later system must reconstruct information that the conversion discarded.
 
-Each detected dialogue block becomes a subtitle cue that can be triggered during a live performance. If the parser misidentifies a dialogue block, the subtitle system will trigger the wrong cue—a failure that is unacceptable in live theatre.
+For surtitle preparation, that matters twice. A structural mistake can put the wrong text into a cue, and it can also attach the right line to the wrong speaker or dramatic moment.
 
-## 3. Punctuation vs. Layout: A Cross-Language Discovery
+## Formatting is a kind of stage-script grammar
 
-Performance varies dramatically depending on the language's reliance on explicit vs. implicit markers.
+Many theatre scripts use visual conventions as a working grammar. Useful signals can include:
 
-### Chinese / Cantonese: Punctuation-Driven
-Chinese theatrical scripts often encode structure explicitly:
+- paragraph indentation and alignment
+- spacing before and after paragraphs
+- Word paragraph styles
+- bold, italic, or other run-level formatting
+- capitalisation, where the writing system makes it meaningful
+- punctuation between a speaker and a line
+- tabs, columns, and repeated block shapes
+- the line's position within the document
 
-> **張三：今天下雨。** (Zhang San: It is raining today.)  
-> **李四：真的嗎？** (Li Si: Really?)  
-> **（他們望向窗外）** ((They look out the window.))
+No one signal should be treated as universal truth. Italics often indicate a stage direction, for example, but a playwright may use italics for emphasis inside dialogue. An all-caps line may be a character name, an act heading, a sound cue, or a note to the production team.
 
-| Pattern | Classification |
-| :--- | :--- |
-| **角色：台詞** (Character: Dialogue) | Dialogue |
-| **（...）** (Parentheses) | Stage direction |
+The safer question is not “Is italic text always a direction?” It is “Does this formatting, together with neighbouring paragraphs and the wider document pattern, provide enough evidence to classify the line?”
 
-This punctuation-driven structure makes parsing almost trivial compared to Western formats.
+## The same words can play different roles
 
-### Parsing Reliability Patterns (2026-03)
+Near the beginning of a script, this may be a cast list:
 
-| Language / Format | Structural Signal | Common Bottleneck |
-| :--- | :--- | :--- |
-| **Chinese / Cantonese** | Explicit punctuation (角色：台詞) | Format consistency |
-| **Japanese** | Stable quotation markers | Minor formatting variations |
-| **English (US/UK)** | Implicit layout structure | Indentation and capitalization |
-| **German / French** | Complex theatrical formatting | Ambiguous block boundaries |
+```text
+CAST
 
-## 4. The Hidden Cost of Converting Scripts to Plain Text
+HAMLET
+OPHELIA
+HORATIO
+```
 
-Many subtitle systems process scripts by first converting documents to plain text, stripping away layout information.
+Later, the same name may introduce speech:
 
-**Original formatted script:**
-> **HAMLET**  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be or not to be
+```text
+HAMLET
+    The play's the thing.
+```
 
-**After plain text conversion:**
-`HAMLET To be or not to be`
+The token `HAMLET` does not contain enough information on its own. Its role depends on where it appears, what surrounds it, and what follows.
 
-Without indentation or block boundaries, the parser must rely on **semantic guessing** to determine whether "HAMLET" is a character name or part of the sentence.
+This is one reason document regions matter. Title pages, cast lists, synopses, production notes, the performable body, and appendices can use similar typography for different purposes. Before treating a short line as a speaker cue, a parser should consider whether it is looking at the body of the play at all.
 
-## 5. The Architectural Pivot: Layout-First Parsing
+For a production team, the practical lesson is simple: preserving headings and document boundaries can be just as valuable as preserving the dialogue itself.
 
-Instead of asking "What does this sentence mean?", the machine asks: **"What does this text block look like geometrically?"**
+## Punctuation helps, but language does not determine layout
 
-By using **OOXML extraction** from `.docx` files, we retrieve precise layout attributes like indentation (measured in twips), capitalization flags, and paragraph styles.
+Some scripts place the speaker and dialogue in one paragraph:
 
-### Example: Layout signals extracted from a script
+```text
+HAMLET: To be, or not to be.
+```
 
-**Block A:**
-*   `indent = 72pt`, `caps_ratio = 1.0`, `line_length = 8`
-*   **→ Classified as Character**
+The same broad convention may appear with full-width punctuation:
 
-**Block B:**
-*   `indent = 36pt`, `caps_ratio = 0.2`, `line_length = 48`
-*   **→ Classified as Dialogue**
+```text
+張三：今天下雨。
+```
 
-## 6. Stage Directions: When Typography Becomes Structure
+A colon is a strong clue, not a guarantee. The line `Location: Backstage` is metadata, not necessarily dialogue. A synopsis may begin with a labelled paragraph. A character may also speak across several following paragraphs after only one explicit label.
 
-In many theatrical scripts, stage directions are indicated purely through typography—often **italics**.
+It is therefore misleading to rank whole languages as easy or difficult to parse. Chinese, Cantonese, Japanese, English, French, German, and other scripts can each use several house styles. Capitalisation is useful in some writing systems and irrelevant in others. Quotation marks, brackets, colons, periods, dashes, indentation, and vertical spacing may all carry different weight from one document to the next.
 
-### Example: Typography as Structure
+A multilingual parser should adapt its signals without turning linguistic tendencies into fixed stereotypes. Strong punctuation can help. It does not remove the need to examine context.
 
-> **HAMLET**  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be, or not to be.
->
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*He pauses and looks toward the audience.*
->
-> **OPHELIA**  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My lord?
+## Why the original Word document is valuable
 
-| Block | Interpretation |
-| :--- | :--- |
-| **HAMLET** | Character name |
-| **Indented sentence** | Dialogue |
-| **Italic text** | Stage direction |
+A Word `.docx` file contains structured document information that a plain-text copy does not. Its underlying OOXML can preserve paragraph properties, inherited styles, alignment, indentation, spacing, and text-run formatting.
 
-Once formatting disappears, the parser cannot distinguish between dialogue and narrative. Some scripts use even more minimal italic notes:
+Some Word measurements are stored in **twips**, a document-layout unit equal to one twentieth of a point. The unit itself is less important to a theatre team than what it preserves: two paragraphs that look differently indented on the page can remain measurably different during analysis.
 
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*pause*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*turns away*
+Those values should not become rigid global rules. An indentation value from one template says little about another template. The useful pattern is relational:
 
-These contain almost no linguistic cues, relying 100% on typographic style attributes like `italic=true`.
+- Does a short label repeatedly precede more deeply indented text?
+- Do italic paragraphs form a consistent class within this document?
+- Does the layout change after the front matter?
+- Does one region use colons while another places speakers on separate lines?
 
-## 7. A Three-Tier AI Model for Reliable Cue Detection
+This turns page geometry into document-specific evidence rather than a universal theatre-format specification.
 
-We repositioned AI as a reviewer rather than a guesser:
+## From document evidence to a cue draft
 
-*   **Tier 1 — Deterministic Rules:** Handles clearly marked formats through deterministic parsing rules before ambiguity handling begins.
-*   **Tier 2 — AI Review:** Acts as a proofreader to validate uncertain classifications. 
-    *   *Example:* `HAMLET (quietly)`. The system determines if "(quietly)" is a stage direction or dialogue based on document context.
-*   **Tier 3 — AI Classification:** Full classification for highly ambiguous regions, anchored by layout patterns found elsewhere in the same document.
+A script parser does not determine the final timing of a performance. Its immediate job is to help transform source material into an editable sequence that a human can inspect.
 
-## Conclusion
+A careful preparation path looks like this:
 
-Theatre scripts appear simple, but their meaning emerges from spatial organization. By moving from semantic guessing to layout-first parsing, **SurtitleLive** helps prepare cue structures that operators can review and trigger during performance.
+1. Preserve the source `.docx` and its version.
+2. Extract text together with useful document structure.
+3. Group related paragraphs into likely dramatic blocks.
+4. Distinguish front matter, body text, headings, dialogue, and directions where the evidence supports it.
+5. Keep ambiguous material visible instead of silently forcing a confident answer.
+6. Open the result as an editable cue draft.
+7. Review the cue boundaries, speaker attribution, translation, and omissions.
+8. Rehearse the cues against the live performance.
+
+The parser can reduce repetitive preparation. It cannot know every artistic intention, late cut, improvised pause, or change introduced in rehearsal.
+
+## Uncertainty is a feature of honest preparation
+
+There are two tempting but unsafe outcomes when a line is ambiguous:
+
+- discard it because it does not match a familiar template
+- classify it confidently because it resembles dialogue
+
+Both can hide important work from the person preparing the show.
+
+A better system distinguishes between strong structural evidence and material that needs review. In a named-character script, an unattributed passage may need to remain visibly unresolved. In a monologue or speakerless text, the absence of character labels may be an intentional document-level pattern rather than an error on every line.
+
+That distinction matters for accessibility as well as translation. Missing text, a stage direction accidentally shown as speech, or an incorrect speaker attribution can all change the audience's understanding. Yet script parsing alone does not create an accessible performance. Same-language captions may also need relevant non-speech information, careful placement, readable presentation, and an audience delivery plan.
+
+Structure is the beginning of that work, not the completion certificate.
+
+## What theatre teams can do before import
+
+A production does not need to redesign its script around software. A few document habits can nevertheless make both human and machine review clearer:
+
+- keep character labels consistent where the production permits
+- use paragraph styles consistently instead of aligning text with repeated spaces
+- distinguish headings, dialogue, and directions with more than one signal
+- avoid flattening the working script into plain text before import
+- remove obsolete rehearsal notes or label them clearly
+- confirm that the uploaded file is the current approved version
+- retain the original script so every cue can be checked against its source
+
+Consistency helps, but unusual dramatic form should not be “corrected” merely to satisfy a parser. The workflow should serve the work, not make the work imitate a template.
+
+## Layout can prepare a draft; people prepare the performance
+
+The deepest value of layout-aware parsing is not that geometry replaces language. It is that the system wastes less of the information already present in the script.
+
+Words, punctuation, typography, neighbouring blocks, and document regions each contribute evidence. Deterministic rules can handle clear patterns; bounded AI assistance may help with genuinely ambiguous regions; human reviewers decide what is accurate, appropriate, and ready to rehearse.
+
+That balance is especially important in live theatre. A cue draft is useful because it remains editable. A translation is trustworthy because someone is accountable for it. A show file becomes ready because the team has reviewed and rehearsed it—not because a parser returned a confident label.
+
+To see how these ideas continue into deterministic parsing, body zoning, and selective AI review, read [Why Theatre Subtitle Software Should Parse Scripts Before Using AI](/blog/8-from-layout-to-archetype-detection/).
 
 ---
 
 ## FAQ
 
-**Q: What is a subtitle cue in theatre?**  
-**A:** A subtitle cue is the moment when a line of dialogue should appear on the subtitle display. Cue detection requires identifying dialogue blocks and speaker transitions within the script.
+**Q: Why is script formatting important for theatre surtitles?**
 
-**Q: How does the system handle inconsistent formatting?**  
-**A:** Our system clusters similar layouts. If a document profile changes, the parser performs Layout Segmentation to adapt its strategy in real-time.
+**A:** Formatting can show relationships that words alone do not: who is speaking, which paragraphs belong together, where a direction begins, and whether a line sits in front matter or the body of the play. Preserving that evidence can produce a cleaner cue draft for human review.
 
-**Q: Why is layout important when parsing scripts for subtitles?**  
-**A:** Many scripts use indentation and spacing instead of punctuation to encode structure. A layout-first parser detects cues more reliably than semantic models alone.
+**Q: Does SurtitleLive support PDF script analysis?**
+
+**A:** The supported script-analysis input is an original Word `.docx` file. PDF and other non-DOCX formats are not part of the current analysis workflow because they may not preserve the document structure needed for reliable preparation.
+
+**Q: Are italics always treated as stage directions?**
+
+**A:** No. Italics are one signal among several. Their meaning depends on surrounding text, paragraph structure, styles, and patterns elsewhere in the document.
+
+**Q: Are colon-formatted scripts easier to parse?**
+
+**A:** A consistent `Speaker: Dialogue` pattern can provide strong evidence, but colons also appear in metadata, headings, and prose. The parser still needs document and regional context.
+
+**Q: What is a twip?**
+
+**A:** A twip is a Word document-layout unit equal to one twentieth of a point. It can help preserve fine-grained differences in indentation and spacing; it is not a theatre-specific measurement or a guarantee of what a paragraph means.
+
+**Q: Does layout-aware parsing remove the need for human review?**
+
+**A:** No. It helps prepare an editable draft. The production team should still check cue boundaries, speakers, omissions, translations, presentation, and timing, then rehearse the result before the show.

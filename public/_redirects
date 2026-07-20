@@ -8,10 +8,6 @@
 /blog/sitemap-0.xml /sitemap-0.xml 200
 /blog/blog-13-xlsx.xlsx /blog-13-xlsx.xlsx 301
 /blog/blog-13-qlab-subtitles-demo-assets.zip /blog-13-qlab-subtitles-demo-assets.zip 301
-/blog/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
-/blog/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
-/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
-/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301
 /blog/:locale/rss.xml /:locale/rss.xml 200
 /blog/:locale/:slug/ https://surtitlelive.com/blog/:locale/:slug/ 301
 /blog/:locale/:slug https://surtitlelive.com/blog/:locale/:slug/ 301

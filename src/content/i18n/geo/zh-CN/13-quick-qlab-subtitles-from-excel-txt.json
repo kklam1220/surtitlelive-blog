@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "zh-CN",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
-  "generatedAt": "2026-07-10T04:12:59.048Z",
+  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "核心要点",
+    "keyTakeaways": "要点",
     "faq": "常见问题",
-    "glossary": "术语表",
+    "glossary": "术语说明",
     "related": "相关资源"
   },
   "keyTakeaways": [
-    "QLab Text提示可用于显示字幕，是演出控制的重要组成部分。",
-    "通过AppleScript，可从Excel、CSV或TXT文件自动化生成大量QLab字幕提示。",
-    "结构化源数据（如电子表格）使字幕修改和QLab提示重建变得可重复。",
-    "SurtitleLive提供高级工作流程，用于多语言、移动端观看和复杂字幕同步。"
+    "QLab 以 Text cues 显示设置好样式的字幕；正式投影需要 Video License 与配置正确的 Stage。",
+    "QLab 没有一键导入 XLSX 字幕表的原生功能，但 AppleScript 或其他导入器可把结构化 Excel、CSV 或 TXT 数据转成 cues。",
+    "从 SurtitleLive 编辑器下载的 QLab Projection Pack 是离线投影交付，不会创建部署或向 Viewer 发布内容。",
+    "完成部署后的 Viewer 同步，使用每个来源 cue 一个本地 Script child、loopback bridge，以及由操作员明确连接并启用的 ASM 控制台。"
   ],
   "faq": [
     {
-      "question": "QLab能显示字幕吗？",
-      "answer": "能。QLab Text提示是QLab视频系统的一部分，可显示样式化文本，并分配到视频输出舞台进行投影。它们可以像其他QLab提示一样进行格式化和触发，是剧场字幕的常用方式。"
+      "question": "QLab 可以显示字幕吗？",
+      "answer": "可以。Text cues 通过 QLab 视频系统渲染文字，并可指定到已经配置好的投影 Stage。"
     },
     {
-      "question": "我可以直接将Excel字幕导入QLab吗？",
-      "answer": "QLab没有内置的一键式Excel字幕导入功能。但你可以使用AppleScript编写脚本，读取Excel行数据，然后自动创建并配置QLab Text提示。这是一种电子表格驱动的自动化工作流程。"
+      "question": "QLab 可以原生导入 Excel 字幕文件吗？",
+      "answer": "没有一键 XLSX 字幕导入。脚本或导入器可以读取结构化电子表格、CSV 或 TXT，再创建 QLab Text cues。"
     },
     {
-      "question": "我可以从CSV或TXT制作QLab字幕吗？",
-      "answer": "可以。CSV是纯文本，易于解析，可用于编写导入器创建QLab提示。TXT文件若结构化（如每块包含提示编号和文本，以空行分隔），也可通过脚本转换为QLab字幕。"
+      "question": "编辑器导出的 QLab Projection Pack 会同步 Viewer 吗？",
+      "answer": "不会。编辑器版本只负责离线 QLab 投影；Viewer 同步须使用完成部署后、由操作员主动启用的 ASM 路径。"
     },
     {
-      "question": "QLab是否将字幕同步到观众手机？",
-      "answer": "QLab Text提示处理本地投影，本身不直接同步到观众手机。若需观众手机观看，通常需要结合SurtitleLive QLab Sync等专用解决方案，通过本地桥接将QLab提示状态推送到云平台，再分发至移动设备。"
+      "question": "本地 bridge 会直接调用 SurtitleLive 云端吗？",
+      "answer": "不会。它只在本地把范围受限、不含机密的 cue 身份交给已打开的 ASM 控制台，再由 ASM 通过既有 control channel 发布 Viewer 状态。"
     }
   ],
   "glossary": [
     {
-      "term": "Text提示 (Text Cue)",
-      "definition": "QLab中用于显示样式化文本的提示类型，可配置字体、大小、颜色等，并输出到视频舞台进行投影。"
+      "term": "Text cue",
+      "definition": "把设置好样式的文字渲染为视频输出的 QLab cue。"
     },
     {
-      "term": "字幕 (Subtitle/Surtitles)",
-      "definition": "剧场演出中，为观众提供对话或歌词翻译的文本，通常投影在舞台上方或侧面，或显示在观众设备上。"
+      "term": "QLab Projection Pack",
+      "definition": "SurtitleLive 为 QLab 导出的投影包，包含固定导入器、cue 数据、操作说明与支持文件。"
     },
     {
-      "term": "提示编号 (Cue Number)",
-      "definition": "QLab中用于唯一标识和排序提示的数字或字母组合，便于操作员触发和管理演出流程。"
+      "term": "Stable cue key",
+      "definition": "用于在重新导入修订版时，找出并更新匹配 caption Group 的非机密 SurtitleLive 身份。"
     },
     {
-      "term": "舞台 (Stage)",
-      "definition": "QLab中用于定义视频输出区域的虚拟概念，可将Text提示、Video提示等分配到特定投影仪或显示器。"
+      "term": "Loopback bridge",
+      "definition": "在 127.0.0.1:37621 运行、把完成部署后的 QLab Script 事件交给 ASM 的本地服务。"
     },
     {
-      "term": "AppleScript",
-      "definition": "苹果macOS系统上的脚本语言，可用于自动化应用程序（如QLab）的任务，包括批量创建和配置提示。"
+      "term": "ASM 控制台",
+      "definition": "接受 QLab control 前，必须打开、解锁、连接、等待 Viewer 就绪并由操作员启用的控制界面。"
     }
   ]
 }

@@ -3,53 +3,53 @@
   "locale": "tr",
   "slug": "3-how-we-protect-your-work",
   "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
-  "generatedAt": "2026-05-22T14:09:34.677Z",
+  "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Önemli Noktalar",
-    "faq": "SSS",
-    "glossary": "Sözlük",
+    "keyTakeaways": "Öne Çıkan Noktalar",
+    "faq": "Sık Sorulan Sorular",
+    "glossary": "Terimler",
     "related": "İlgili Terimler"
   },
   "keyTakeaways": [
-    "SurtitleLive, isteğe bağlı çalışma zamanı dağıtımını kullanır; böylece resmi görüntüleyici, başlangıçta tam bir düz metin senaryo paketi yüklemez.",
-    "Çalışma zamanı altyazı içeriği şifrelenmiş segmentler olarak iletilir ve gösterim için tarayıcı belleğinde çözülür.",
-    "Geçici taşıyıcı belirteçler, son kullanma aralıkları ve sunucu tarafı iptal kontrolleri, görüntüleyici erişiminin ne kadar süreyle kullanışlı kalacağını sınırlamaya yardımcı olur.",
-    "Bu kontroller, sıradan kopyalama ve kontrolsüz erişim riskini azaltır; DRM veya mutlak kopya koruması vaadi değildir."
+    "SurtitleLive’ın resmî izleyici arayüzü, oyun metninin tamamını baştan okunabilir düz metin olarak yüklemek yerine şifreli segmentleri gerektiğinde alır.",
+    "Altyazı içeriği şifreli segmentler hâlinde iletilir ve görüntülenmek üzere tarayıcı belleğinde çözülür.",
+    "Geçici bearer token’lar, tanımlı geçerlilik süreleri ve sunucu tarafındaki erişim iptali, izleyici erişiminin kullanılabilir kaldığı süreyi sınırlar.",
+    "Bu kontroller gelişigüzel kopyalama ve denetimsiz erişim riskini azaltır; DRM değildir ve mutlak koruma vaat etmez."
   ],
   "faq": [
     {
-      "question": "SurtitleLive sıradan senaryo kopyalamayı nasıl azaltır?",
-      "answer": "Resmi Görüntüleyici, girişte tüm senaryoyu tek bir okunabilir tarayıcı yükü olarak sunmak yerine, geçerli işaret çevresinde isteğe bağlı olarak şifrelenmiş çalışma zamanı segmentlerini yükler."
+      "question": "SurtitleLive oyun metninin gelişigüzel kopyalanma riskini nasıl azaltır?",
+      "answer": "Resmî izleyici arayüzü, girişte bütün oyun metnini tek ve okunabilir bir tarayıcı paketi olarak sunmaz; mevcut repliğin çevresindeki şifreli segmentleri gerektiğinde alır."
     },
     {
-      "question": "SurtitleLive bir senaryonun hiçbir zaman kopyalanamayacağını garanti edebilir mi?",
-      "answer": "Hayır. Dijital dağıtım; ekran görüntülerini, kameraları, OCR'yi veya geçerli erişime sahip özel istemcileri engelleyemez. SurtitleLive mutlak kopya koruması olarak değil, risk azaltma olarak değerlendirilmelidir."
+      "question": "SurtitleLive oyun metninin hiçbir zaman kopyalanmayacağını garanti edebilir mi?",
+      "answer": "Hayır. Dijital dağıtım; ekran görüntülerini, kameraları, OCR kullanımını veya geçerli erişime sahip özel istemcileri engelleyemez. SurtitleLive mutlak kopya koruması değil, risk azaltma aracı olarak değerlendirilmelidir."
     },
     {
-      "question": "Bir görüntüleyici bağlantısının kısıtlanması gerekirse ne olur?",
-      "answer": "Çalışma zamanı erişimi, geçici taşıyıcı belirteçler, yapılandırılmış son kullanma aralıkları ve yeni veya yenilenen çalışma zamanı istekleri için sunucu tarafı iptal yoluyla sınırlanabilir."
+      "question": "Bir izleyici bağlantısına erişimi sınırlandırmak gerekirse ne olur?",
+      "answer": "Yeni veya yenilenen gösterim istekleri; geçici bearer token’lar, tanımlı geçerlilik süreleri ve sunucu tarafındaki erişim iptaliyle sınırlandırılabilir."
     },
     {
       "question": "Veriler aktarım sırasında nasıl korunur?",
-      "answer": "Bağlantılar HTTPS/TLS kullanır ve çalışma zamanı dağıtımı, erişim kapsamı belirleme ve operasyonel kontrolleri de içeren katmanlı bir güvenlik modelinin parçası olarak şifrelenmiş çalışma zamanı segmentlerini kullanır."
+      "answer": "Bağlantılar HTTPS/TLS kullanır. Gösterim verileri de erişim kapsamı ve operasyonel kontrolleri içeren katmanlı güvenlik modelinin bir parçası olarak şifreli segmentler hâlinde iletilir."
     }
   ],
   "glossary": [
     {
-      "term": "Çalışma zamanı segmenti",
-      "definition": "Tam bir düz metin senaryo paketi yerine, gösteri ilerlemesi etrafında talep edilen küçük şifrelenmiş altyazı birimi."
+      "term": "Gösterim segmenti",
+      "definition": "Oyun metninin tamamını içeren düz metin paketi yerine, gösterinin ilerleyişine göre istenen küçük ve şifreli altyazı birimi."
     },
     {
-      "term": "Görüntüleyici erişimi",
-      "definition": "Hedef kitle görüntüleyicisi tarafından kullanılan kapsamlı tarayıcı oturumu."
+      "term": "İzleyici erişimi",
+      "definition": "Hedef seyircinin kullandığı, kapsamı ve süresi sınırlandırılmış tarayıcı oturumu."
     },
     {
-      "term": "İptal",
-      "definition": "Bir sorun tespit edildikten sonra yeni veya yenilenen çalışma zamanı erişimini sınırlayabilen sunucu tarafı bir kontrol."
+      "term": "Erişim iptali",
+      "definition": "Bir sorun belirlendiğinde yeni veya yenilenen gösterim erişimini sunucu tarafında sınırlandıran kontrol."
     },
     {
       "term": "Risk azaltma",
-      "definition": "Mutlak önleme iddiasında bulunmadan, pratik kopyalama ve kontrolsüz erişim riskini düşüren bir güvenlik hedefi."
+      "definition": "Mutlak koruma iddiasında bulunmadan kopyalama ve denetimsiz erişim olasılığını düşürmeye yönelik güvenlik yaklaşımı."
     }
   ]
 }

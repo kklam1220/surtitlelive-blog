@@ -23,18 +23,14 @@ export type BlogSupportedLocale = (typeof SUPPORTED_BLOG_LOCALES)[number];
 
 export const BLOG_INDEXED_LOCALES = [
 	'en',
+	'ar',
 	'de',
 	'es',
 	'fr',
-	'ja',
-	'ko',
-	'zh-TW',
-] as const satisfies readonly BlogSupportedLocale[];
-
-export const BLOG_SECONDARY_LOCALES = [
-	'ar',
 	'id',
 	'it',
+	'ja',
+	'ko',
 	'pl',
 	'pt',
 	'ru',
@@ -43,11 +39,12 @@ export const BLOG_SECONDARY_LOCALES = [
 	'uk',
 	'vi',
 	'zh-CN',
+	'zh-TW',
 ] as const satisfies readonly BlogSupportedLocale[];
 
-export const BLOG_ALL_LOCALE_INDEXED_SLUGS = [
-	'9-english-surtitles-non-english-show-fringe',
-] as const;
+export const BLOG_SECONDARY_LOCALES = [] as const satisfies readonly BlogSupportedLocale[];
+
+export const BLOG_ALL_LOCALE_INDEXED_SLUGS = [] as const;
 
 export interface BlogLocaleMeta {
 	native: string;

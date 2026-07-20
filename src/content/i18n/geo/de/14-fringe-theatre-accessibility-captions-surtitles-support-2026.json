@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
+  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "generatedAt": "2026-07-20T23:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste in Kürze",
+    "faq": "Häufige Fragen",
+    "glossary": "Begriffe",
+    "related": "Weiterführende Inhalte"
+  },
+  "keyTakeaways": [
+    "Das SurtitleLive-Programm 2026 bietet ausgewählten unabhängigen Fringe-Produktionen 14 Tage kostenfreien Pro-Zugang für vorbereitete Untertitel oder Übertitel.",
+    "Der Softwarezugang ist weder Geldzuschuss noch Übersetzungsauftrag, betreuter Captioning-Dienst, Barrierefreiheitszertifikat oder Empfehlung eines Festivals.",
+    "Barrierefreie Untertitel können neben Dialogen auch Sprecherangaben und wichtige Geräusche enthalten. Eine reine Dialogübersetzung sollte daher nicht als umfassendes barrierefreies Captioning beworben werden.",
+    "Teams sollten den Bedienablauf proben, das tatsächliche Setup im Spielort mit den vorgesehenen Nutzerinnen und Nutzern prüfen, den Dienst präzise beschreiben und einen passenden Fallback bereithalten."
+  ],
+  "faq": [
+    {
+      "question": "Ist das SurtitleLive-Programm mit der Edinburgh Festival Fringe Society verbunden?",
+      "answer": "Nein. Es handelt sich um ein unabhängiges Programm von SurtitleLive. Bewerber sollten zusätzlich die aktuellen Förderangebote, Fristen, Access-Einträge und technischen Vorgaben ihres Festivals und Spielorts prüfen."
+    },
+    {
+      "question": "Handelt es sich um einen Zuschuss oder einen betreuten Captioning-Dienst?",
+      "answer": "Nein. Ausgewählte Produktionen erhalten einen schriftlich bestätigten Zeitraum kostenfreien Softwarezugangs – kein Geld, keine Übersetzung, keine Live-Schriftdolmetschung, keine Produktionscrew und kein Barrierefreiheitszertifikat."
+    },
+    {
+      "question": "Können Projektion und Zuschauer-Smartphones gemeinsam genutzt werden?",
+      "answer": "Ja, sofern Kontoberechtigung und Spielort-Setup beides unterstützen. Sichtlinien, Verbindung, Einlasshinweise und das tatsächliche Leseerlebnis müssen vorab geprüft werden. Der lokale QLab-Workflow macht die mobile Ansicht nicht offline-fähig; manuelles ASM-Cueing bleibt der Fallback."
+    },
+    {
+      "question": "Wie läuft die Bewerbung ab, und ist die Auswahl garantiert?",
+      "answer": "Das Team erstellt ein kostenloses Konto und sendet die verlangten Produktionsdaten per E-Mail. Die Erfüllung der Kriterien garantiert keine Auswahl; Zugang und Termine gelten erst nach schriftlicher Zusage als bestätigt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Programmzugang",
+      "definition": "Der schriftlich bestätigte, kostenfreie 14-tägige SurtitleLive-Pro-Zugang für eine ausgewählte Produktion."
+    },
+    {
+      "term": "Übertitel",
+      "definition": "Übersetzter Aufführungstext, der häufig über oder nahe der Bühne angezeigt wird, damit das Publikum einer fremdsprachigen Vorstellung folgen kann."
+    },
+    {
+      "term": "Barrierefreie Untertitel",
+      "definition": "Schriftliche Aufführungsinformationen für taube und schwerhörige Menschen, die Dialoge, Sprecherangaben, relevante Geräusche, Stimmen aus dem Off und Musikhinweise umfassen können."
+    },
+    {
+      "term": "Mobile Zuschaueransicht",
+      "definition": "Die browserbasierte Anzeige vorbereiteter Texte auf den Smartphones des Publikums; sie benötigt Verbindung und ein im Spielort erprobtes Nutzungskonzept."
+    },
+    {
+      "term": "Freigegebener QLab-Ablauf",
+      "definition": "Der bewusst aktivierte Live-Weg über lokale Bridge und verbundene ASM-Konsole: erst Go Live, dann Allow QLab control, mit manuellem ASM-Cueing als Rückfallebene."
+    }
+  ]
+}

@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "de",
   "slug": "5-the-human-gatekeeper-ai-translation",
-  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "6f986a453f099fb804328fd52ba00a7704db7364dca318d511c344752e88a0ae",
+  "generatedAt": "2026-07-20T16:15:19.458Z",
   "sectionTitles": {
     "keyTakeaways": "Kernaussagen",
-    "faq": "Häufig gestellte Fragen",
+    "faq": "Häufige Fragen",
     "glossary": "Glossar",
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "KI-Übersetzung allein erfasst nicht Subtext, Absicht und emotionale Tiefe im Theater.",
-    "Theaterübersetzung erfordert Berücksichtigung physischer Einschränkungen wie Lesegeschwindigkeit und Timing.",
-    "Kontext über einzelne Sätze hinaus ist entscheidend; KI fehlt oft die ganzheitliche Sicht auf ein Stück.",
-    "Die Zukunft liegt in KI-gestützten, von Menschen geführten Workflows, die Geschwindigkeit mit künstlerischem Urteilsvermögen verbinden."
+    "Moderne KI kann Kontext verarbeiten und brauchbare Theaterübersetzungen entwerfen; die Verantwortung für die Bühnenfassung kann sie nicht übernehmen.",
+    "Von Menschen geführt bedeutet Quellenvergleich, bezahlte Facharbeit, redaktionelle Entscheidungsbefugnis, Probe und Anerkennung — nicht bloß Korrekturlesen.",
+    "Übersetzte Übertitel und gleichsprachige Barrierefreiheits-Captions verfolgen unterschiedliche Ziele und müssen für reale Anzeige- und Lesebedingungen redigiert werden.",
+    "SurtitleLive unterstützt KI-gestützte Übersetzung während der redaktionellen Vorbereitung; es ist keine Live-Sprachübersetzung und garantiert weder Stimme noch Reim oder dramaturgische Absicht."
   ],
   "faq": [
     {
-      "question": "Warum ist KI-Übersetzung allein für Theater ungeeignet?",
-      "answer": "KI optimiert für Wahrscheinlichkeit, nicht für dramatische Absicht. Sie erfasst keinen Subtext, Rhythmus und emotionale Nuancen, die für Theateraufführungen entscheidend sind. Eine menschliche Bearbeitung ist notwendig."
+      "question": "Warum kann eine flüssige KI-Übersetzung dramaturgisch trotzdem falsch sein?",
+      "answer": "Mehrere Fassungen können sprachlich plausibel sein, aber Ambivalenz, Figurenbeziehung, Rhythmus oder einen späteren Rückbezug unterschiedlich behandeln. Welche Version zur Inszenierung gehört, ist deshalb eine verantwortete Produktionsentscheidung."
     },
     {
-      "question": "Welche physischen Einschränkungen beeinflussen die Theaterübersetzung?",
-      "answer": "Übertitel müssen lesbar sein und mit dem Tempo der Aufführung übereinstimmen. Zu lange oder zu früh angezeigte Übertitel können das Publikum ablenken und die dramatische Wirkung beeinträchtigen. Präzision ist wichtig."
+      "question": "Was gehört zu einer verantwortungsvollen menschlichen Prüfung?",
+      "answer": "Jede Zeile wird mit der Vorlage verglichen und auf Figurenstimme, Auslassungen, Ergänzungen, kulturelle Verweise und Terminologie geprüft. Die zuständige Person braucht bezahlte Zeit, passende Sprachkenntnisse und die Befugnis, einen Entwurf abzulehnen."
     },
     {
-      "question": "Wie beeinflusst der Kontext die Theaterübersetzung?",
-      "answer": "Die Bedeutung im Theater entwickelt sich über Szenen hinweg. KI-Übersetzungen arbeiten oft Satz für Satz und verpassen so wiederkehrende Bilder, tonale Verschiebungen und Charakterentwicklungen, die die Übersetzung beeinflussen sollten."
+      "question": "Warum müssen Übertitel in der Probe getestet werden?",
+      "answer": "Lesbarkeit hängt von Sprache, Publikum, Textdichte, Sichtachsen, Gerät und tatsächlichem Spieltiming ab. Zu frühe, zu späte oder zu dichte Cues können Handlung vorwegnehmen oder den Blick von der Bühne abziehen."
     },
     {
-      "question": "Wie sieht die Zukunft der Theaterübersetzung aus?",
-      "answer": "Die Zukunft liegt in der Kombination von KI-Geschwindigkeit mit menschlicher Präzision. KI kann Entwürfe erstellen, aber menschliche Übersetzer verfeinern Ton, Rhythmus und Timing, um sicherzustellen, dass die Übersetzung die künstlerische Absicht widerspiegelt."
+      "question": "Ist SurtitleLive eine Live-Sprachübersetzung?",
+      "answer": "Nein. SurtitleLive unterstützt die Erstellung und Bearbeitung von Übersetzungsentwürfen vor der Aufführung und bereitet freigegebenen Text für das Live-Cueing vor. Die inhaltliche und dramaturgische Prüfung bleibt bei der Produktion."
     }
   ],
   "glossary": [
     {
-      "term": "Skript",
-      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+      "term": "Menschengesteuerter Workflow",
+      "definition": "Ein Ablauf, in dem KI Entwürfe liefern kann, qualifizierte Menschen aber Quellenvergleich, redaktionelle Entscheidungen, Freigabe und Anerkennung verantworten."
     },
     {
-      "term": "Cue",
-      "definition": "Ein Signal im Skript, das einen Wechsel in der Bühnenbeleuchtung, im Ton oder in den Übertiteln auslöst."
-    },
-    {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle in einem Theaterstück, dargestellt von einem Schauspieler."
-    },
-    {
-      "term": "Subtext",
-      "definition": "Die unausgesprochene oder implizite Bedeutung hinter den Worten eines Charakters, die durch Kontext und Darbietung vermittelt wird."
+      "term": "Dramaturgische Absicht",
+      "definition": "Die beabsichtigte Wirkung einer Zeile innerhalb von Figur, Szene, Rhythmus und Gesamtbogen der Aufführung."
     },
     {
       "term": "Übertitel",
-      "definition": "Textanzeigen, die den Dialog einer Theateraufführung in einer anderen Sprache übersetzen und dem Publikum helfen, die Handlung zu verstehen."
+      "definition": "Für eine Aufführung redigierter Text, häufig als Übersetzung auf einer gemeinsamen oder persönlichen Anzeige ausgegeben und live gecuet."
+    },
+    {
+      "term": "Barrierefreiheits-Captions",
+      "definition": "Gleichsprachiger Textzugang, der neben Sprache auch Sprecherkennzeichnung und relevante Geräuschinformationen enthalten kann."
+    },
+    {
+      "term": "Live-Cueing",
+      "definition": "Das zeitlich abgestimmte Auslösen vorbereiteter und freigegebener Textzeilen während der tatsächlichen Aufführung."
     }
   ]
 }

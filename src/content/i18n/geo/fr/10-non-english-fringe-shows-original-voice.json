@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "fr",
   "slug": "10-non-english-fringe-shows-original-voice",
-  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
-  "generatedAt": "2026-05-22T05:11:00.000Z",
+  "sourceHash": "b27e60b0d5eb31df94e0ca335a4233e099e429085e4d1ff98a2f30b1b7aac6b4",
+  "generatedAt": "2026-07-20T18:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "À retenir",
     "faq": "Questions fréquentes",
@@ -11,66 +11,49 @@
     "related": "Termes liés"
   },
   "keyTakeaways": [
-    "SurtitleLive est né non d'une catégorie de logiciel, mais du problème translinguistique d'un dramaturge : comment un spectacle peut-il garder sa langue d'origine tout en permettant à un autre public de le suivre ?",
-    "Les surtitres anglais devraient être une invitation à entrer dans un spectacle non anglophone, et non un remplacement de la voix, du rythme et de la mémoire culturelle de la langue d'origine.",
-    "La traduction comme hospitalité, c'est concevoir des chemins de langue pour que plus de gens rencontrent l'œuvre sans lui demander de devenir moins elle-même.",
-    "Le choix de la langue sur mobile permet à une seule représentation en direct de servir le public anglophone, les lecteurs de la langue d'origine et d'autres pistes de langue préparées, sans surcharger un écran partagé.",
-    "Une technologie discrète soutient le flux de travail au plateau : texte préparé, choix de langue relus, lancement en direct, visionneuses mobiles, Mode Projection, et rattrapage quand le spectacle change."
+    "La traduction comme hospitalité ouvre un chemin intelligible vers l'œuvre sans remplacer sa langue d'origine, son rythme ni sa mémoire culturelle.",
+    "La personne qui traduit a besoin de contexte, d'une véritable autorité éditoriale, de temps en répétition et d'un crédit clair ; la relecture humaine ne se réduit pas à valider tardivement un brouillon automatique anonyme.",
+    "Surtitres traduits et sous-titres d'accessibilité ne rendent pas nécessairement le même service : ces derniers peuvent aussi devoir identifier les locuteurs, la musique, les sons et les voix hors scène.",
+    "Le choix de langue sur mobile n'est ni neutre ni automatiquement accessible. Seules les langues préparées, relues et activées sont proposées ; appareils, fatigue visuelle, règles de la salle, connexion et solution de repli doivent être anticipés."
   ],
   "faq": [
     {
-      "question": "Que signifie « la traduction comme hospitalité » pour le théâtre ?",
-      "answer": "La traduction comme hospitalité, c'est offrir au public un vrai moyen d'entrer dans un spectacle sans demander à la langue d'origine de disparaître. Les surtitres anglais peuvent aider à suivre l'histoire pendant que la langue parlée ou chantée reste vivante sur scène."
+      "question": "Que signifie « la traduction comme hospitalité » au théâtre ?",
+      "answer": "Elle donne au public un véritable chemin vers la représentation sans demander à la langue d'origine de disparaître. Les surtitres servent de pont vers le spectacle, non de substitut."
     },
     {
-      "question": "Pourquoi les surtitres anglais ne devraient-ils pas remplacer la langue d'origine ?",
-      "answer": "La langue d'origine porte le rythme, le registre, le tempo, la mémoire culturelle, l'humour, le silence et la pression sociale. Une traduction peut guider le public, mais le spectacle perd quelque chose si la langue source est traitée comme un emballage plutôt que comme une partie de l'œuvre."
+      "question": "Quel rôle la personne qui traduit doit-elle jouer ?",
+      "answer": "Elle doit connaître le contexte de l'œuvre, pouvoir questionner une réplique, voir le travail en répétition et être clairement créditée. La production reste responsable du texte que le public lira."
     },
     {
-      "question": "Comment le choix de la langue sur mobile protège-t-il la voix originale ?",
-      "answer": "Les visionneuses mobiles laissent chaque spectateur choisir une langue activée sur son propre appareil. Le public anglophone peut donc lire l'anglais, les lecteurs de la langue d'origine peuvent garder le texte source visible, et les invités ou partenaires de tournée peuvent suivre une autre langue préparée lorsque la compagnie la prend en charge."
+      "question": "Des surtitres anglais constituent-ils déjà un service d'accessibilité complet ?",
+      "answer": "Pas nécessairement. Les surtitres traduisent le texte parlé ou chanté. Des sous-titres d'accessibilité peuvent aussi nécessiter l'identification des locuteurs et des informations sonores non verbales pertinentes."
     },
     {
-      "question": "Pourquoi le lancement en direct compte-t-il encore si les surtitres sont préparés ?",
-      "answer": "Le théâtre n'est pas une lecture automatique. Les comédiens marquent des pauses, les répliques changent, les scènes sautent et le minutage respire autrement qu'en répétition. Un opérateur humain peut retenir, lancer, rattraper ou masquer des surtitres préparés pour que le soutien linguistique suive l'événement vivant."
-    },
-    {
-      "question": "Est-ce un argument d'accessibilité ou de marketing ?",
-      "answer": "C'est les deux, mais cela part du soin. Des chemins de langue clairs peuvent aider plus de gens à se sentir capables de choisir un spectacle non anglophone : public local, critiques, programmateurs, communautés de la langue source et visiteurs multilingues."
-    },
-    {
-      "question": "Où trouver le guide pratique de mise en place pour les surtitres au Fringe ?",
-      "answer": "Pour le déroulé pas à pas, lisez l'article 9 : Comment ajouter des surtitres anglais à un spectacle non anglophone au Festival Fringe d'Édimbourg. Cet article-ci explique pourquoi le flux de travail compte sur le plan artistique ; l'article 9 explique comment le préparer et le mener."
+      "question": "La visionneuse mobile convient-elle à tous les publics ?",
+      "answer": "Non. Elle peut offrir un choix de langue individuel, mais suppose parfois un appareil adapté, une lecture confortable, l'autorisation d'utiliser un téléphone et une connexion fiable. Le parcours doit être expliqué, testé avec les personnes concernées et accompagné d'une solution de repli appropriée."
     }
   ],
   "glossary": [
     {
       "term": "Traduction comme hospitalité",
-      "definition": "Une façon de concevoir la traduction et les surtitres pour que le public puisse entrer dans une œuvre sans forcer la langue d'origine ou la voix culturelle à disparaître."
+      "definition": "Une approche qui crée un accès à l'œuvre tout en préservant l'autonomie artistique de sa langue d'origine."
     },
     {
-      "term": "Voix originale",
-      "definition": "Le rythme, le registre, le tempo, l'humour, le silence, la pression sociale et la mémoire culturelle portés par la langue dans laquelle un spectacle a été créé."
+      "term": "Surtitres",
+      "definition": "Texte préparé qui traduit les paroles dites ou chantées d'une représentation et qui est lancé au rythme du direct."
     },
     {
-      "term": "Chemin de langue",
-      "definition": "Un parcours choisi vers une représentation en direct : surtitres anglais, texte en langue d'origine ou autre piste de langue préparée."
+      "term": "Sous-titres d'accessibilité",
+      "definition": "Accès textuel pouvant transmettre, outre les paroles, les locuteurs, la musique, les sons et les voix hors scène pertinents."
     },
     {
-      "term": "Surtitres anglais",
-      "definition": "Texte anglais préparé, affiché pendant une représentation en direct pour aider le public à suivre une œuvre jouée ou chantée dans une autre langue."
+      "term": "Relecture humaine",
+      "definition": "Travail linguistique responsable, nourri par le contexte, une autorité éditoriale et la répétition, et non simple validation formelle."
     },
     {
       "term": "Visionneuse mobile",
-      "definition": "Une vue spectateur dans le navigateur, ouverte par QR code ou lien, qui permet à chacun de lire une langue de surtitres activée sur son propre appareil."
-    },
-    {
-      "term": "Mode Projection",
-      "definition": "Un mode d'affichage des surtitres destiné à un écran de salle ou à un projecteur, souvent utilisé en parallèle des visionneuses mobiles quand la salle permet la projection."
-    },
-    {
-      "term": "Lancement en direct",
-      "definition": "Le travail en direct qui consiste à faire avancer les surtitres préparés au rythme de la représentation, y compris retenir, sauter ou masquer le texte quand le spectacle change."
+      "definition": "Vue spectateur dans le navigateur pour des pistes linguistiques préparées, relues et activées ; elle n'est qu'un mode de diffusion possible parmi d'autres."
     }
   ]
 }

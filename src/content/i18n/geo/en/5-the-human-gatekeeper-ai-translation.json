@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "5-the-human-gatekeeper-ai-translation",
-  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "6f986a453f099fb804328fd52ba00a7704db7364dca318d511c344752e88a0ae",
+  "generatedAt": "2026-07-20T17:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "AI translation excels at speed and accessibility but often misses the subtext and emotional nuances crucial for theatre.",
-    "Theatre translation requires understanding dramatic intention, rhythm, and character voice, elements AI struggles to capture fully.",
-    "Surtitling involves physical constraints like timing and readability, demanding adjustments beyond standard AI translation capabilities.",
-    "The optimal approach combines AI for initial drafts with human expertise to refine tone, pacing, and artistic intention in theatre translation."
+    "Modern AI can use substantial script context and produce useful theatre translation drafts, but fluency does not authorize a dramatic choice.",
+    "Human-led review requires source comparison, named editorial authority, paid language expertise, and the power to reject or revise model output.",
+    "Surtitles must be edited and rehearsed for actual reading conditions; no universal reading-rate number suits every language, audience, or display.",
+    "SurtitleLive supports editor-time AI-assisted drafting and live cue preparation, not live speech translation or a guarantee that AI preserves voice, rhyme, style, or intent."
   ],
   "faq": [
     {
-      "question": "Why can't AI fully replace human translators in theatre?",
-      "answer": "AI struggles with subtext, emotional cues, and dramatic intention, which are vital in theatre. Human translators understand context, character, and performance nuances that AI algorithms often miss, leading to a flatter translation."
+      "question": "Why must AI theatre translation remain human-led?",
+      "answer": "Several fluent translations may be dramatically plausible. People with source-language and production context must decide which wording belongs to the character, scene, audience, and authorized interpretation—and remain accountable for that choice."
     },
     {
-      "question": "What are the physical constraints that affect theatre translation?",
-      "answer": "Surtitles must adhere to strict readability guidelines (characters per second) and timing to avoid distracting the audience. Translations need to be concise and appear/disappear in sync with the actors' delivery and stage action."
+      "question": "Is human review just proofreading an AI draft?",
+      "answer": "No. It includes checking rights and consent, comparing every line with the source, resolving voice and cultural choices, editing for the display, distinguishing translation from accessibility captions, rehearsing cues, and approving late changes."
     },
     {
-      "question": "How does context beyond a single sentence impact theatre translation?",
-      "answer": "Meaning in theatre builds across scenes through recurring imagery, tonal shifts, and character development. Human translators consider the entire play's arc, while AI typically translates sentence by sentence, potentially losing the holistic emotional connection."
+      "question": "What makes a translation suitable for surtitles?",
+      "answer": "It must be readable while the audience also watches the stage. Timing, density, line breaks, cue placement, language, audience needs, and projected or mobile display conditions all affect the editorial decision."
     },
     {
-      "question": "What is the ideal workflow for theatre translation?",
-      "answer": "The best approach is AI-assisted, human-led. AI generates initial drafts and handles formatting, while human translators refine tone, rhythm, and timing within the rehearsal and performance context, ensuring artistic integrity and accuracy."
+      "question": "What does SurtitleLive's AI-assisted translation do?",
+      "answer": "It helps teams generate and edit translation drafts with surrounding context and saved character-name terminology, then prepare approved text for live cueing. It is an editor-time aid, not automatic final authority or live speech translation."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "The written text of a play, including dialogue and stage directions."
+      "term": "Human-led",
+      "definition": "A workflow in which named people retain editorial authority, relevant expertise, paid review time, and accountability for the final text."
     },
     {
-      "term": "Cue",
-      "definition": "A signal in a script or performance that prompts an action, line, or technical change, such as a surtitle appearing."
+      "term": "Dramatic decision",
+      "definition": "A choice about wording that affects character, rhythm, ambiguity, cultural meaning, or the production's interpretation."
     },
     {
-      "term": "Character",
-      "definition": "A dramatic role or persona within a play, portrayed by an actor."
+      "term": "AI-assisted draft",
+      "definition": "Model-generated text treated as editable source material rather than approved performance copy."
     },
     {
-      "term": "Subtext",
-      "definition": "The underlying meaning or implicit message in a line or scene, not explicitly stated but understood through context and delivery."
+      "term": "Reading conditions",
+      "definition": "The language, audience, text density, timing, sightline, and display factors that shape whether live text can be read comfortably."
     },
     {
-      "term": "Surtitles",
-      "definition": "Translated text displayed above or beside a stage, providing real-time translation for the audience."
+      "term": "Editorial authority",
+      "definition": "The agreed responsibility and permission to approve, reject, or revise what reaches the audience."
     }
   ]
 }

@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "1-why-powerpoint-fails-theatre",
-  "sourceHash": "395e369e1cea6539c1061474690c00569bfc20eb64ee65a5d03501b42d9087db",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "2cb061709a79256a3c358ae87a4af5f78fd1156664b4b9f350f63f8a53ff162e",
+  "generatedAt": "2026-07-20T15:40:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "Frequently Asked Questions",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "Traditional slide-based surtitling software like PowerPoint can be limiting for live theatre performances.",
-    "SurtitleLive treats your script as data, enabling a more flexible and responsive surtitling workflow.",
-    "AI-powered ingestion in SurtitleLive streamlines script preparation, reducing manual formatting time.",
-    "SurtitleLive offers non-linear navigation, blackout control, and BYOD multilingual options for modern theatre."
+    "PowerPoint or Keynote can remain a sensible choice for a short, fixed surtitle sequence with one display and a rehearsed operator.",
+    "A purpose-built live workflow becomes more valuable when the production needs direct cue selection, blackout control, fast recovery, or multiple audience delivery paths.",
+    "Translated surtitles and same-language captions answer different audience needs; neither projection nor phone delivery is automatically accessible to everyone.",
+    "SurtitleLive can assist with script preparation and structured cue operation, but the production team remains responsible for text, timing, translation approval, rehearsal, and fallback planning."
   ],
   "faq": [
     {
-      "question": "What are the limitations of using slide-based software for surtitling?",
-      "answer": "Slide-based software can be inflexible for live performances due to manual formatting, linear lock-in, and challenges in providing multilingual accessibility. This can lead to operator error and audience distraction."
+      "question": "When is PowerPoint suitable for theatre surtitles?",
+      "answer": "A slide deck can work well for a short, stable cue list on one display when the operator has enough preparation and rehearsal time. The production should still test skips, repeats, blackouts, and its agreed fallback."
     },
     {
-      "question": "How does SurtitleLive improve script preparation?",
-      "answer": "SurtitleLive uses AI-powered ingestion to analyze the script structure, identify character names and dialogue, and automate the initial formatting. This significantly reduces manual copy-pasting and editing."
+      "question": "When should a production consider purpose-built surtitling software?",
+      "answer": "Consider it when the show needs direct cue selection, recovery without exposing the search to the audience, coordinated language tracks, or both projected and personal-device outputs."
     },
     {
-      "question": "What is non-linear navigation, and why is it important?",
-      "answer": "Non-linear navigation allows operators to jump to any line in the script instantly, crucial when actors skip lines or scenes. This prevents flashing through irrelevant slides and maintains audience immersion."
+      "question": "Does delivering captions to phones make a performance accessible?",
+      "answer": "Not by itself. Phone delivery can offer language choice and individual viewing, but it also depends on devices, battery, network access, and digital confidence. Productions should explain those requirements and plan a reasonable alternative where needed."
     },
     {
-      "question": "How does SurtitleLive support multilingual audiences?",
-      "answer": "SurtitleLive allows you to broadcast pre-prepared titles directly to audience smartphones. Audience members can scan a QR code and choose their preferred language from pre-loaded translation tracks."
+      "question": "What role does AI play in SurtitleLive script preparation?",
+      "answer": "AI can help identify dialogue and speakers and create an editable draft. It does not make the production's editorial decisions: people still review extraction, line breaks, names, translations, and performance timing."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "The written text of a play, including dialogue and stage directions."
-    },
-    {
       "term": "Cue",
-      "definition": "A specific point in the script where a surtitle should appear or change."
-    },
-    {
-      "term": "Character",
-      "definition": "A dramatic role or person represented in a play."
+      "definition": "A prepared unit of text that an operator selects for display at the appropriate moment in a performance."
     },
     {
       "term": "Blackout Control",
-      "definition": "The ability to quickly hide or remove surtitles from the display, often used to avoid displaying incorrect information during errors."
+      "definition": "A deliberate control that hides the audience text while the operator searches, recovers, or follows an agreed show action."
     },
     {
-      "term": "Surtitle",
-      "definition": "Translated or transcribed text projected above a stage, providing audience members with real-time understanding of the dialogue."
+      "term": "Translated Surtitles",
+      "definition": "Prepared text that helps an audience understand dialogue performed in another language."
+    },
+    {
+      "term": "Same-Language Captions",
+      "definition": "Text in the performance language that may also identify speakers and convey meaningful sound information."
+    },
+    {
+      "term": "Audience Delivery Path",
+      "definition": "The practical route through which an audience reads the text, such as a shared projection, a personal device, or a planned combination."
     }
   ]
 }

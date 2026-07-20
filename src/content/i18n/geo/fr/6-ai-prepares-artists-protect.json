@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "fr",
   "slug": "6-ai-prepares-artists-protect",
-  "sourceHash": "0fdb81eba442f596813d6c857afb93ef93dd7b552750a7a228b10f42f2e129f9",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e62b53c1f42d3c7ad9d9455eaa7e3059dfb77ebb0b8e1dfeeed7d96d821485ea",
+  "generatedAt": "2026-07-20T17:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Points clés",
-    "faq": "FAQ",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
     "related": "Sujets connexes"
   },
   "keyTakeaways": [
-    "SurtitleLive est un flux de travail de sous-titrage de théâtre basé sur l'IA qui remplace les processus PowerPoint manuels.",
-    "L'IA analyse les scripts `.docx`, automatise le formatage et permet aux artistes de contrôler les cues de sous-titres en direct.",
-    "L'IA gère le traitement technique, tandis que les artistes conservent l'autorité sur le sens et l'émotion.",
-    "SurtitleLive facilite la génération rapide de traductions synchronisées pour plusieurs langues."
+    "Des surtitres professionnels sont relus, répétés et placés sous une responsabilité claire ; un brouillon d’IA ne suffit pas.",
+    "L’import d’un `.docx` produit un brouillon de cues modifiable dont il faut contrôler l’analyse et les types de lignes.",
+    "La traduction par IA intervient pendant la préparation éditoriale, et non comme traduction automatique de la parole en direct.",
+    "Projection, mobile et exports exigent une version de référence, des responsabilités nommées et des solutions de repli répétées."
   ],
   "faq": [
     {
-      "question": "L'IA remplacera-t-elle les traducteurs de théâtre humains ?",
-      "answer": "Non. SurtitleLive positionne l'IA comme un outil de prétraitement. Les décisions artistiques et l'interprétation émotionnelle restent entre les mains des artistes humains."
+      "question": "SurtitleLive transforme-t-il automatiquement un `.docx` en surtitres prêts pour la scène ?",
+      "answer": "Non. L’import prépare un brouillon de cues modifiable. L’équipe contrôle l’analyse, les personnages, les dialogues, les didascalies, les limites des cues ainsi que les éléments manquants ou atypiques."
     },
     {
-      "question": "Pourquoi utiliser SurtitleLive au lieu de PowerPoint pour la traduction de représentations en temps réel ?",
-      "answer": "PowerPoint est linéaire et statique, causant des problèmes si les acteurs sautent des lignes ou changent de rythme. SurtitleLive est conçu pour le théâtre en direct, garantissant que vos traductions respirent avec les acteurs."
+      "question": "SurtitleLive traduit-il la parole en direct ?",
+      "answer": "Non. La traduction assistée par IA est une étape de travail dans l’éditeur. Les brouillons restent modifiables et doivent être comparés à la source par une personne compétente."
     },
     {
-      "question": "Comment SurtitleLive gère-t-il les modifications de script en direct pendant les répétitions ?",
-      "answer": "SurtitleLive permet de fusionner, diviser et réorganiser facilement les lignes par glisser-déposer, s'adaptant instantanément aux changements en direct."
+      "question": "Existe-t-il une vitesse de lecture universelle pour les surtitres de théâtre ?",
+      "answer": "Non. Langue, public, densité, affichage et fonction varient. Les mesures peuvent signaler un cue trop chargé, mais la lisibilité se vérifie en conditions de répétition."
     },
     {
-      "question": "Quels types de fichiers SurtitleLive peut-il exporter ?",
-      "answer": "SurtitleLive peut exporter vers Excel (.xlsx) et PowerPoint (.pptx), assurant une intégration transparente avec d'autres outils et plateformes."
+      "question": "Faut-il abandonner entièrement PowerPoint ?",
+      "answer": "Non. Un `.pptx` peut convenir à certaines remises. Il faut surtout désigner la version qui fait foi afin que les corrections ne divergent pas entre l’éditeur et les exports."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "Le texte complet d'une pièce de théâtre, contenant les dialogues des personnages et les indications scéniques."
+      "term": "Brouillon de cues",
+      "definition": "Première version modifiable des unités de texte destinées à être affichées séparément pendant la représentation."
     },
     {
-      "term": "Cue",
-      "definition": "Un point spécifique dans le script qui déclenche l'affichage d'un surtitre."
+      "term": "Source de référence",
+      "definition": "Version clairement identifiée dont dérivent le texte validé et les supports de diffusion."
     },
     {
-      "term": "Personnage",
-      "definition": "Un rôle dramatique interprété par un acteur dans une pièce de théâtre."
+      "term": "Traduction éditoriale par IA",
+      "definition": "Création assistée d’un brouillon de traduction pendant la préparation, suivie d’une relecture humaine."
     },
     {
-      "term": "Surtitres",
-      "definition": "Traduction ou transcription du dialogue affichée au-dessus ou à côté de la scène."
+      "term": "Reprise",
+      "definition": "Procédure prévue pour retrouver le cue pertinent après une réplique sautée, répétée ou déplacée."
     },
     {
-      "term": "Analyse de script par l'IA",
-      "definition": "Utilisation de l'intelligence artificielle pour extraire et organiser automatiquement le dialogue d'un script."
+      "term": "Support exporté",
+      "definition": "Fichier tel qu’un `.xlsx` ou un `.pptx`, destiné à la relecture ou à la remise, qui ne doit pas devenir une seconde source éditoriale incontrôlée."
     }
   ]
 }

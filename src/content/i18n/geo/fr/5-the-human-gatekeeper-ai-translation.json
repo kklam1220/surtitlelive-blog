@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "fr",
   "slug": "5-the-human-gatekeeper-ai-translation",
-  "sourceHash": "27efd7f8e0a8c7a9f478ddf0dfca1b93ddc3d791ff14bfc34773316c2e8e4eee",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "6f986a453f099fb804328fd52ba00a7704db7364dca318d511c344752e88a0ae",
+  "generatedAt": "2026-07-20T16:15:19.458Z",
   "sectionTitles": {
-    "keyTakeaways": "Points clés à retenir",
-    "faq": "FAQ",
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
     "related": "Sujets connexes"
   },
   "keyTakeaways": [
-    "L'IA excelle dans la traduction rapide, mais elle peine à saisir le sous-texte et l'intention dramatique essentiels au théâtre.",
-    "La traduction théâtrale est soumise à des contraintes physiques, telles que les limites de caractères par seconde pour la lisibilité des surtitres.",
-    "Le contexte au-delà de la phrase est crucial : l'IA doit tenir compte de l'arc émotionnel de la pièce, ce qu'elle ne fait pas actuellement.",
-    "L'avenir réside dans une approche hybride : l'IA assiste les traducteurs humains, qui conservent le contrôle artistique."
+    "Une IA moderne peut exploiter le contexte et produire une bonne ébauche ; elle ne peut pas assumer la responsabilité du texte présenté au public.",
+    "Un processus conduit par l’humain suppose comparaison à la source, travail qualifié rémunéré, autorité éditoriale, répétitions et crédit — pas une simple relecture.",
+    "Surtitres traduits et sous-titres d’accessibilité dans la même langue ne répondent pas aux mêmes besoins et doivent être adaptés aux conditions physiques de lecture.",
+    "SurtitleLive assiste la traduction au stade de l’édition ; ce n’est pas de la traduction vocale en direct et la plateforme ne garantit ni voix, ni rime, ni intention dramaturgique."
   ],
   "faq": [
     {
-      "question": "Pourquoi l'IA seule ne suffit-elle pas pour la traduction théâtrale ?",
-      "answer": "L'IA peut traduire des mots, mais elle ne saisit pas l'intention, le rythme et le sous-texte cruciaux pour le théâtre. Elle optimise la probabilité, alors que le théâtre vit de l'intention."
+      "question": "Pourquoi une traduction fluide peut-elle rester dramaturgiquement fausse ?",
+      "answer": "Plusieurs versions peuvent être plausibles tout en traitant différemment une ambiguïté, une relation, un rythme ou un rappel ultérieur. Choisir celle qui appartient au spectacle engage donc la responsabilité de la production."
     },
     {
-      "question": "Quelles sont les contraintes physiques de la traduction théâtrale ?",
-      "answer": "Les surtitres doivent être concis (15 à 20 caractères par seconde) pour que le public puisse lire sans perdre sa concentration sur la scène. La longueur et le timing sont essentiels."
+      "question": "Que recouvre une véritable révision humaine ?",
+      "answer": "Chaque réplique est comparée à la source et vérifiée pour la voix, les omissions, les ajouts, les références culturelles et la terminologie. La personne responsable doit disposer de temps rémunéré, des compétences linguistiques utiles et du pouvoir de refuser."
     },
     {
-      "question": "Comment le contexte affecte-t-il la traduction théâtrale ?",
-      "answer": "Le sens d'une pièce s'accumule au fil des scènes. Un traducteur humain ajuste le langage pour qu'il corresponde à l'arc émotionnel, ce que l'IA ne peut pas faire de manière autonome."
+      "question": "Pourquoi tester les surtitres en répétition ?",
+      "answer": "La lisibilité dépend de la langue, du public, de la densité, des lignes de vue, du dispositif et du rythme réel du jeu. Un lancement trop précoce, tardif ou dense peut éventer l’action ou détourner le regard."
     },
     {
-      "question": "Quel est l'avenir de la traduction théâtrale avec l'IA ?",
-      "answer": "L'avenir est une IA assistée par l'humain. L'IA accélère les premières ébauches, tandis que les traducteurs humains affinent le ton, le rythme et le timing, garantissant ainsi la paternité artistique."
+      "question": "SurtitleLive traduit-il la parole en direct ?",
+      "answer": "Non. SurtitleLive aide à préparer et modifier les traductions avant la représentation, puis à conduire en direct le texte validé. La vérification linguistique et dramaturgique demeure du ressort de la production."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "Texte d'une pièce de théâtre, contenant les dialogues et les indications scéniques."
+      "term": "Processus conduit par l’humain",
+      "definition": "Organisation dans laquelle l’IA peut proposer des ébauches, tandis que des professionnels assument comparaison à la source, choix éditoriaux, validation et crédit."
     },
     {
-      "term": "Cue",
-      "definition": "Signal indiquant un changement sur scène, comme le lancement d'un surtitre ou d'un effet de lumière."
-    },
-    {
-      "term": "Character",
-      "definition": "Rôle dramatique interprété par un acteur dans une pièce de théâtre."
-    },
-    {
-      "term": "Sous-texte",
-      "definition": "Signification implicite ou non exprimée d'un dialogue, souvent révélée par le contexte et la performance."
+      "term": "Intention dramaturgique",
+      "definition": "Effet recherché d’une réplique au regard du personnage, de la scène, du rythme et de l’arc général du spectacle."
     },
     {
       "term": "Surtitres",
-      "definition": "Traduction affichée au-dessus ou en dessous de la scène pour rendre une représentation accessible à un public multilingue."
+      "definition": "Texte adapté à une représentation, souvent traduit, affiché sur un écran collectif ou individuel et lancé en direct."
+    },
+    {
+      "term": "Sous-titres d’accessibilité",
+      "definition": "Accès textuel dans la même langue pouvant inclure l’identification des locuteurs et les sons porteurs de sens."
+    },
+    {
+      "term": "Conduite en direct",
+      "definition": "Déclenchement synchronisé, pendant la représentation, de répliques préparées et validées."
     }
   ]
 }

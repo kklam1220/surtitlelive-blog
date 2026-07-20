@@ -211,18 +211,27 @@ if (!sitemapText.includes('https://surtitlelive.com/blog/7-geometry-of-dramatic-
   throw new Error('Missing English blog article from sitemap.');
 }
 
-for (const locale of ['de', 'es', 'fr', 'ja', 'ko', 'zh-TW']) {
+for (const locale of [
+  'ar',
+  'de',
+  'es',
+  'fr',
+  'id',
+  'it',
+  'ja',
+  'ko',
+  'pl',
+  'pt',
+  'ru',
+  'th',
+  'tr',
+  'uk',
+  'vi',
+  'zh-CN',
+  'zh-TW',
+]) {
   if (!sitemapText.includes(`https://surtitlelive.com/blog/${locale}/7-geometry-of-dramatic-parsing/`)) {
-    throw new Error(`Missing first-tier localized blog article from sitemap: ${locale}/7-geometry-of-dramatic-parsing`);
-  }
-}
-
-for (const locale of ['ar', 'id', 'it', 'pl', 'pt', 'ru', 'th', 'tr', 'uk', 'vi', 'zh-CN']) {
-  if (sitemapText.includes(`https://surtitlelive.com/blog/${locale}/7-geometry-of-dramatic-parsing/`)) {
-    throw new Error(`Secondary-tier localized blog article leaked into sitemap: ${locale}/7-geometry-of-dramatic-parsing`);
-  }
-  if (!sitemapText.includes(`https://surtitlelive.com/blog/${locale}/9-english-surtitles-non-english-show-fringe/`)) {
-    throw new Error(`Missing all-locale indexed fringe surtitles article from sitemap: ${locale}/9-english-surtitles-non-english-show-fringe`);
+    throw new Error(`Missing reviewed localized blog article from sitemap: ${locale}/7-geometry-of-dramatic-parsing`);
   }
 }
 
@@ -294,8 +303,6 @@ for (const requiredRule of [
   '/blog/_astro/* /_astro/:splat 200',
   '/blog/fonts/* /blog/fonts/:splat 200',
   '/blog/logo/* /blog/logo/:splat 200',
-  '/blog/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
-  '/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
   '/blog/:locale/rss.xml /:locale/rss.xml 200',
   '/blog/:locale/:slug/ https://surtitlelive.com/blog/:locale/:slug/ 301',
   '/blog/:locale/:slug https://surtitlelive.com/blog/:locale/:slug/ 301',
@@ -320,6 +327,10 @@ for (const forbiddenRule of [
   '/blog/:slug /:slug 200',
   '/blog/ / 200',
   '/blog / 200',
+  '/blog/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
+  '/blog/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
+  '/:locale/3-how-we-protect-your-work/ https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
+  '/:locale/3-how-we-protect-your-work https://surtitlelive.com/blog/3-how-we-protect-your-work/ 301',
 ]) {
   if (redirectsContent.includes(forbiddenRule)) {
     throw new Error(`Deprecated duplicate blog-origin HTML rewrite is still present: ${forbiddenRule}`);
@@ -389,16 +400,16 @@ assertFileHasMatch(
   'Missing formal Korean blog hub metadata or heading.',
 );
 
-assertFileHasMatch(
+assertFileHasNoMatch(
   path.join('it', '7-geometry-of-dramatic-parsing', 'index.html'),
   /<meta name="robots" content="noindex,follow">/,
-  'Missing noindex/follow on a secondary-tier localized blog article.',
+  'A reviewed localized blog article must not remain noindexed.',
 );
 
 assertFileHasNoMatch(
   path.join('it', '9-english-surtitles-non-english-show-fringe', 'index.html'),
   /<meta name="robots" content="noindex,follow">/,
-  'The all-locale indexed fringe surtitles article must not be noindexed.',
+  'A reviewed localized fringe surtitles article must not be noindexed.',
 );
 
 for (const [locale, expectedCopy] of [
@@ -459,18 +470,18 @@ for (const locale of [
   'zh-CN',
   'zh-TW',
 ]) {
-  const deferredPath = path.join(distDir, locale, '3-how-we-protect-your-work', 'index.html');
-  if (fs.existsSync(deferredPath)) {
+  const reviewedPath = path.join(distDir, locale, '3-how-we-protect-your-work', 'index.html');
+  if (!fs.existsSync(reviewedPath)) {
     throw new Error(
-      `Deferred localized security/IP article leaked into built blog output: ${deferredPath}`,
+      `Reviewed localized security/IP article is missing from built blog output: ${reviewedPath}`,
     );
   }
 }
 
-assertNoMatch(
+assertHasMatch(
   textFiles,
   /\/(ar|de|es|fr|id|it|ja|ko|pl|pt|ru|th|tr|uk|vi|zh-CN|zh-TW)\/3-how-we-protect-your-work\//,
-  'Deferred localized security/IP article leaked into built blog output links.',
+  'Reviewed localized security/IP article links are missing from built blog output.',
 );
 
 for (const locale of [

@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "6-ai-prepares-artists-protect",
-  "sourceHash": "0fdb81eba442f596813d6c857afb93ef93dd7b552750a7a228b10f42f2e129f9",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e62b53c1f42d3c7ad9d9455eaa7e3059dfb77ebb0b8e1dfeeed7d96d821485ea",
+  "generatedAt": "2026-07-20T17:50:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "SurtitleLive uses AI to streamline theatre subtitling, replacing manual PowerPoint processes.",
-    "AI handles script parsing and formatting, reducing technical workload for artists.",
-    "Human artists retain control over live subtitle cues, ensuring emotional accuracy.",
-    "The workflow emphasizes AI assistance for preparation, with human oversight for creative judgment."
+    "AI can accelerate script preparation and translation drafting, but performance-ready surtitles still require source verification, human review, rehearsal, operation, and audience support.",
+    "A script import should produce an inspectable, editable cue draft rather than hide parsing uncertainty or claim perfect automation.",
+    "Projection, mobile viewing, spreadsheets, and PowerPoint exports can all be valid outputs; the team must keep one approved source of truth.",
+    "A professional live-text workflow is accountable, reviewable, rehearsed, and recoverable when performance departs from the expected path."
   ],
   "faq": [
     {
-      "question": "What is SurtitleLive?",
-      "answer": "SurtitleLive is an AI-assisted theatre subtitling workflow designed to replace manual PowerPoint systems. It streamlines script parsing, translation, and live performance control, allowing artists to focus on creative refinement."
+      "question": "Can AI turn a theatre script directly into finished surtitles?",
+      "answer": "No. AI and document analysis can help prepare an editable draft, but teams still need to verify script structure, shape readable cue units, review every language, rehearse timing, and test the audience delivery path."
     },
     {
-      "question": "How does SurtitleLive improve the subtitling process?",
-      "answer": "SurtitleLive helps structure scripts and prepare cue-ready subtitles, reducing manual setup time. During performance, the operator can move between cues and recover when the show path changes."
+      "question": "Why use a dedicated workflow instead of PowerPoint?",
+      "answer": "PowerPoint can be a practical display tool. A dedicated workflow adds value when a team needs one traceable source, editable cue and language decisions, rehearsal-linked revisions, multiple outputs, and clearer live recovery."
     },
     {
-      "question": "Can SurtitleLive translate scripts into multiple languages?",
-      "answer": "Yes, SurtitleLive supports rapid multi-lingual generation. Once the original text is parsed, synchronized translations for additional languages can be generated quickly, streamlining the process for international audiences."
+      "question": "How should AI translation be used for theatre surtitles?",
+      "answer": "Use it as an editor-time drafting stage after the source and cue structure are stable enough. A competent reviewer must compare source and target, edit for reading conditions, and approve the text before performance."
     },
     {
-      "question": "Is SurtitleLive a fully automated translation tool?",
-      "answer": "No, SurtitleLive is an assisted decision system. It generates AI drafts that require human refinement, rehearsal adjustments, and live performance control to ensure artistic integrity and accuracy."
+      "question": "What should be checked before theatre surtitles go live?",
+      "answer": "Check the source version, parsing, cue boundaries, language approval, audience instructions, representative seats and devices, operator rehearsal, ownership of every delivery path, and a tested fallback."
     }
   ],
   "glossary": [
     {
-      "term": "Script",
-      "definition": "The written text of a play, including dialogue and stage directions."
+      "term": "Cue draft",
+      "definition": "An editable first structure of likely performance-text units that still requires human verification and shaping."
     },
     {
-      "term": "Cue",
-      "definition": "A specific point in the script or performance that triggers a surtitle to appear."
+      "term": "Source of truth",
+      "definition": "The single approved version from which live text and controlled exports are derived."
     },
     {
-      "term": "Character",
-      "definition": "A role or persona portrayed by an actor in a play."
+      "term": "Reviewable automation",
+      "definition": "Automation whose inputs, outputs, uncertainty, and changes remain visible enough for a person to inspect and correct."
     },
     {
-      "term": "Surtitles",
-      "definition": "Translated dialogue displayed above or beside a stage, similar to subtitles in film."
+      "term": "Live recovery",
+      "definition": "The operator's rehearsed ability to return audience text to the performance when lines are skipped, repeated, reordered, or cut."
     },
     {
-      "term": "AI Parsing",
-      "definition": "The use of artificial intelligence to automatically analyze and extract relevant information from a script document."
+      "term": "Readiness gate",
+      "definition": "A defined check of content, audience experience, operation, ownership, and fallback before opening the service to an audience."
     }
   ]
 }

@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "fr",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
-  "generatedAt": "2026-07-10T04:12:31.796Z",
+  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "generatedAt": "2026-07-20T23:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Points Clés",
-    "faq": "Questions Fréquentes",
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
-    "related": "Articles Connexes"
+    "related": "Ressources associées"
   },
   "keyTakeaways": [
-    "QLab affiche les surtitres via des cues de texte stylisées, intégrées au système vidéo et contrôlables comme toute autre cue.",
-    "L'automatisation AppleScript permet de générer rapidement des centaines de cues de texte QLab à partir de sources externes.",
-    "Utilisez Excel, CSV ou TXT comme données source structurées pour créer des cues de sous-titres QLab de manière reproductible.",
-    "Un workflow structuré et des vérifications préalables garantissent la fiabilité des surtitres et facilitent les révisions."
+    "QLab 5 projette des surtitres avec des tops de texte. Excel, CSV ou TXT servent de données à un script AppleScript ou à un importateur ; il ne s’agit pas d’un import XLSX natif en un clic.",
+    "Avant toute génération en série, testez un top de texte manuel, la licence Video ou Bundle, le stage, la route de sortie et le projecteur. L’automatisation reproduit aussi très vite une mauvaise affectation.",
+    "Un QLab Projection Pack conserve les traductions relues et des clés SurtitleLive stables hors du fichier de spectacle ; un nouvel import peut actualiser les groupes correspondants sans écraser les autres tops de régie.",
+    "La synchronisation Viewer doit être armée : QLab envoie une identité non secrète au pont loopback sur 127.0.0.1:37621 ; la console ASM ouverte ne publie qu’après Go Live et Allow QLab control par le canal de contrôle existant."
   ],
   "faq": [
     {
-      "question": "QLab peut-il afficher des sous-titres ou surtitres ?",
-      "answer": "Oui, QLab utilise des cues de texte pour afficher du texte stylisé en sortie vidéo. Elles peuvent être assignées à un projecteur, formatées et déclenchées comme n'importe quelle autre cue QLab, s'intégrant au contrôle global du spectacle."
+      "question": "QLab peut-il créer des surtitres depuis Excel, CSV ou TXT ?",
+      "answer": "Oui, au moyen d’un import piloté par tableur ou par script. La documentation publique de QLab montre l’automatisation d’Excel avec AppleScript, mais pas un import natif XLSX de surtitres en un clic. Chaque ligne ou bloc devient la source d’un top de texte."
     },
     {
-      "question": "Comment importer des sous-titres depuis Excel vers QLab ?",
-      "answer": "QLab n'importe pas nativement les sous-titres Excel en un clic. Le workflow recommandé utilise un AppleScript pour lire les lignes d'une feuille de calcul (Excel, CSV) et créer des cues de texte QLab correspondantes, en définissant leurs propriétés."
+      "question": "Que faut-il tester avant l’import ?",
+      "answer": "Vérifiez la licence Video ou Bundle et faites passer un top de texte manuel par le stage, la région, la route de sortie et le projecteur. Ne lancez la génération en série qu’une fois le texte lisible sur le projecteur réel."
     },
     {
-      "question": "Quelle est la structure de données la plus efficace pour les sous-titres QLab ?",
-      "answer": "La structure la plus rapide est un sous-titre par ligne dans Excel ou CSV, avec des colonnes explicites comme `cue_number`, `subtitle_text`, `operator_note`, `language` et `alignment`. Cela facilite l'automatisation et la révision."
+      "question": "Quelle différence entre le pack de l’Editor et celui d’un spectacle finalisé ?",
+      "answer": "Le pack issu de l’Editor est une remise hors ligne pour la projection QLab locale. Celui d’un spectacle finalisé peut aussi contenir au plus un enfant Script local par top source afin qu’une console ASM explicitement connectée et armée fasse suivre le Viewer déjà déployé."
     },
     {
-      "question": "Pourquoi le format CSV est-il recommandé pour les sous-titres QLab ?",
-      "answer": "Le CSV est un format d'échange robuste, idéal pour l'automatisation. Il permet à l'importateur de lire un fichier brut sans communication directe avec Excel, facilitant le versionnement, les tests et la reproductibilité du workflow."
+      "question": "QLab communique-t-il directement avec les téléphones ou le cloud ?",
+      "answer": "Non. L’enfant Script envoie seulement une identité de top non secrète au pont loopback du Mac de régie. Le pont relaie localement à la console ASM ouverte ; ASM seule publie cue.jump par le canal de contrôle existant."
     }
   ],
   "glossary": [
     {
-      "term": "Cue de texte QLab",
-      "definition": "Une cue dans QLab qui affiche du texte stylisé (police, taille, couleur, alignement) sous forme de sortie vidéo, généralement pour des sous-titres ou surtitres."
+      "term": "Top de texte QLab",
+      "definition": "Top QLab qui rend du texte stylisé en sortie vidéo et peut être affecté à un stage vidéo pour la projection."
     },
     {
-      "term": "Surtitres / Sous-titres",
-      "definition": "Texte projeté ou affiché pour le public, traduisant ou complétant le dialogue d'une pièce de théâtre, d'un opéra ou d'un spectacle."
+      "term": "QLab Projection Pack",
+      "definition": "Export SurtitleLive contenant le guide START HERE, l’importateur AppleScript statique et les données de tops préparées ; un pack de spectacle finalisé peut aussi inclure le chemin de synchronisation ASM."
     },
     {
-      "term": "AppleScript",
-      "definition": "Un langage de script d'Apple permettant d'automatiser des tâches sur macOS, notamment la création et la modification de cues dans QLab à partir de données externes."
+      "term": "Clé de top stable",
+      "definition": "Identité SurtitleLive non secrète qui permet à un nouvel import d’actualiser les groupes correspondants sans modifier les autres tops QLab."
     },
     {
-      "term": "Étage de sortie vidéo QLab",
-      "definition": "Une destination de sortie vidéo configurée dans QLab, à laquelle les cues de texte sont assignées pour être projetées sur un écran ou un projecteur spécifique."
+      "term": "Pont loopback",
+      "definition": "Service local sur 127.0.0.1:37621 qui relaie une identité de top limitée du Script QLab à la console ASM déjà ouverte, sans devenir un second chemin cloud."
     },
     {
-      "term": "Workflow piloté par feuille de calcul",
-      "definition": "Une méthode de production où les données (comme les sous-titres) sont gérées dans une feuille de calcul (Excel, CSV) puis utilisées pour générer automatiquement des éléments dans un autre logiciel (comme QLab)."
+      "term": "Armement ASM",
+      "definition": "Séquence volontaire : QLab enabled, Connect local bridge, action explicite Go Live, puis Allow QLab control."
     }
   ]
 }

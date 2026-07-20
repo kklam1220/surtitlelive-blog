@@ -1,6 +1,6 @@
 ---
 title: 'How to Make QLab Subtitles Fast from Excel, CSV, or TXT'
-description: 'A practical QLab 5 workflow for creating subtitle and surtitle Text cues from spreadsheets or plain text, with a clear comparison to official QLab documentation and when to use SurtitleLive QLab Sync.'
+description: 'A practical QLab 5 workflow for creating subtitle and surtitle Text cues from spreadsheets or plain text, plus the boundary between DIY automation, a QLab Projection Pack, and operator-armed Viewer sync.'
 pubDate: '2026-07-09'
 tags: ['QLab', 'Surtitles', 'Subtitles', 'AppleScript', 'Theatre Tech', 'SurtitleLive']
 heroImage: './blog-13-1.png'
@@ -13,7 +13,7 @@ The slow part is turning a script, translation, spreadsheet, or plain text docum
 
 A stage manager may have a Word script. A translator may have an Excel sheet. A technician may have a plain text list. The QLab operator needs something else: **reliable Text cues that can be placed into the show timeline, rehearsed, moved, renumbered, and triggered under pressure**.
 
-This guide explains a fast QLab 5 workflow for building subtitles from Excel, CSV, or TXT. It also compares the method with the official QLab documentation, so the boundary is clear: what QLab supports directly, what can be automated with AppleScript, and where a dedicated surtitle workflow like SurtitleLive becomes safer.
+This guide explains a fast QLab 5 workflow for building subtitles from Excel, CSV, or TXT. It also compares the method with the official QLab documentation, so the boundary is clear: what QLab supports directly, what can be automated with AppleScript, and when a reviewed QLab Projection Pack is safer than making a show file the only home of the text.
 
 ## Can QLab display subtitles?
 
@@ -42,7 +42,7 @@ Before building a workflow, it is worth separating official QLab behavior from p
 | Generate many cues | The QLab AppleScript dictionary supports `make type "text"` and exposes cue properties such as `text`, `text alignment`, `fixed width`, `stage name`, `translation x`, and `translation y`. | Use a spreadsheet row or text block as the source for each Text cue. |
 | Use spreadsheets | The QLab Cookbook includes a spreadsheet-driven example that reads Excel rows, creates groups, creates Text cues, sets text and formatting, and moves cues into groups. | Adapt the same pattern for subtitles and surtitles rather than flashcards. |
 | Import XLSX natively as subtitles | QLab's public documentation demonstrates Excel automation, not a one-click native XLSX subtitle import feature. | Use Excel/CSV/TXT as source data, then use a script or importer to generate QLab cues. |
-| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | Use SurtitleLive QLab Sync when the same cue needs to drive projection and audience mobile viewing. |
+| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | A finalized-show SurtitleLive QLab Projection Pack can add one local Script child per source cue; the operator must explicitly connect and arm the normal ASM console before it can publish Viewer state. |
 
 This distinction matters for SEO and for production accuracy. The safe phrase is not "QLab imports Excel subtitles natively." The safer, more accurate phrase is:
 
@@ -238,7 +238,7 @@ Only run the Excel importer after this manual Text cue works.
 - Enter a stage name only when you intentionally created that stage and the spelling matches QLab exactly.
 - If the spreadsheet contains a stage name that QLab cannot find, the companion script keeps the default stage and records the fallback in the cue notes.
 
-![QLab Text cue inspector showing video stage assignment in the I/O tab](/blog/_astro/blog-13-4.gif)
+![QLab Text cue inspector showing video stage assignment in the I/O tab](./blog-13-4.gif)
 
 ### If the importer runs but the subtitles do not project
 
@@ -297,9 +297,15 @@ You prepare the script and subtitle segments in SurtitleLive, review translation
 
 This is useful when QLab is already the technical operator's centre of gravity, but the subtitle preparation should not happen inside QLab one cue at a time.
 
-### QLab + SurtitleLive Cloud Sync
+The downloaded pack keeps data and executable instructions separate. Its `1 - START HERE.txt` explains the operator path, `2a - Import into QLab.applescript` is the static importer, and `2b - QLab Cue Data.json` contains the prepared cue data. The Editor-origin pack is an offline projection handoff: it does not create a deployment, open ASM, or publish to Viewer.
 
-Use this when QLab should keep running the show timeline, but audience phones should follow the same subtitle state.
+Each source subtitle keeps a stable SurtitleLive cue key. A revised import can therefore update matching SurtitleLive caption Groups in place, insert newly added source cues, and mark captions removed from SurtitleLive for operator review. It does not silently delete those old Groups or overwrite unrelated sound, light, video, standby, or stage-management cues.
+
+The export options also define the intended projection outputs. One source cue can contain several Text children for different languages or screens while remaining one operator cue moment. Languages sharing a screen need different caption positions; outputs sent to separate projectors need distinct QLab stage names. Test the resulting stage assignments in the actual venue.
+
+### Finalized-show QLab and Viewer sync
+
+Use this when QLab should keep running the show timeline, but the already-deployed SurtitleLive Viewer should follow the same source cue.
 
 The workflow is:
 
@@ -307,9 +313,21 @@ The workflow is:
 
 and, at the same cue point:
 
-**QLab sync cue → local Mac bridge → SurtitleLive Cloud → audience phones**
+**QLab Script child → loopback bridge → open ASM console → existing control channel → Viewer**
 
-In this setup, each SurtitleLive subtitle can import into QLab as a timeline Group. The Group contains a Text cue for local projection and a sync cue for audience phones. The operator still works inside the QLab timeline, while SurtitleLive handles the audience mobile subtitle state.
+For a finalized show, the Deployment Cockpit QLab Projection Pack can import each source subtitle as one timeline Group. A Group may contain one or more Text children for the selected languages or projector outputs, but it has at most one local Script child. All of those children remain under the same stable SurtitleLive cue key.
+
+The Script child sends a non-secret JSON cue identity to a bridge bound to `127.0.0.1:37621`. The bridge does **not** call SurtitleLive's backend or carry an ASM password, Viewer link, runtime token, or cloud credential. It relays the local cue event to the already-open ASM console; ASM remains responsible for publishing the existing `cue.jump` state through the control channel.
+
+This path is intentionally operator-armed:
+
+1. Enable QLab for the finalized show in Deployment Cockpit and download a fresh QLab Projection Pack.
+2. Import the pack into QLab, then double-click `3 - Start Local Bridge.command` and keep its Terminal window open.
+3. Open and unlock the normal ASM console.
+4. Click **QLab enabled**, then **Connect local bridge**.
+5. Wait until Viewer sync is ready, start the show with the normal explicit **Go Live** action, and only then choose **Allow QLab control**.
+
+Connecting the bridge never starts a show automatically. If the local bridge is unavailable, disconnect QLab control and return to the normal manual ASM controls.
 
 ```mermaid
 graph TD
@@ -323,7 +341,8 @@ graph TD
         QLab["QLab 5 Workspace<br>(Show Control Mac)"]:::qlab
         Projector["Stage Projector"]:::hardware
         Screen["Subtitle Screen / LED Wall"]:::hardware
-        Bridge["SurtitleLive Local Bridge<br>(Receives QLab OSC)"]:::qlab
+        Bridge["Loopback Bridge<br>(127.0.0.1:37621)"]:::qlab
+        ASM["Open, Unlocked ASM Console<br>(QLab Control Armed)"]:::qlab
     end
 
     subgraph CloudSpace ["Cloud Service"]
@@ -340,12 +359,13 @@ graph TD
     QLab -->|"1. Video Output (HDMI/SDI)"| Projector
     Projector --> Screen
     
-    QLab -->|"2. Local OSC Trigger"| Bridge
-    Bridge -->|"3. Secure WebSocket"| Cloud
+    QLab -->|"2. Script Cue POST<br>(Non-secret JSON identity)"| Bridge
+    Bridge -->|"3. Local browser event"| ASM
+    ASM -->|"4. Existing control-channel cue.jump"| Cloud
     
-    Cloud -->|"4. Millisecond-level Push"| Phone1
-    Cloud -->|"4. Millisecond-level Push"| Phone2
-    Cloud -->|"4. Millisecond-level Push"| PhoneN
+    Cloud -->|"5. Viewer update"| Phone1
+    Cloud -->|"5. Viewer update"| Phone2
+    Cloud -->|"5. Viewer update"| PhoneN
 
     %% Subgraph Styling
     style Venue fill:#f9f9fb,stroke:#ccc,stroke-width:1px;
@@ -353,7 +373,7 @@ graph TD
     style Viewers fill:#f2fff5,stroke:#c2f0cc,stroke-width:1px;
 ```
 
-This matters because a phone subtitle workflow should not require audience devices to talk directly to QLab. The show computer, the projector, the local bridge, and the audience link all have different jobs.
+This matters because audience devices should not talk directly to QLab, and the loopback bridge should not become a second cloud-control path. QLab runs the local timeline, the bridge carries a bounded cue identity on the show Mac, ASM applies the operator's armed control state, and the existing SurtitleLive control channel updates Viewer.
 
 ## Best practical recommendation
 
@@ -367,7 +387,7 @@ For a translated theatre show:
 
 For a multi-language or mobile-viewer show:
 
-**Use SurtitleLive with QLab export or QLab Sync. Keep QLab as the show timeline, but do not make QLab the only source of truth for subtitle content.**
+**Use a SurtitleLive QLab Projection Pack. Add the finalized-show ASM sync path only when Viewer must follow QLab, and arm it deliberately before the performance.**
 
 The goal is not to replace QLab. The goal is to let QLab do what QLab is excellent at: live show control.
 
@@ -397,7 +417,7 @@ For editable live text, use Text cues. Video cues are better when the subtitle i
 
 ### Does QLab sync subtitles to audience phones?
 
-QLab can project Text cues locally, but audience phone delivery needs a browser/mobile workflow. SurtitleLive QLab Sync is designed for that: QLab remains the show timeline while SurtitleLive updates the audience phone subtitle state.
+QLab can project Text cues locally, but audience phone delivery needs a browser/mobile workflow. A finalized-show SurtitleLive QLab Projection Pack can include local Script children that identify the same source cues to an explicitly connected and armed ASM console. The bridge stays on the show Mac; ASM, not QLab or the bridge, publishes Viewer state through the existing control channel.
 
 ### When should I stop using DIY QLab subtitle scripts?
 

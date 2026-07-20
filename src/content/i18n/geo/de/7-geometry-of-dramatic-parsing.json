@@ -2,58 +2,26 @@
   "version": 1,
   "locale": "de",
   "slug": "7-geometry-of-dramatic-parsing",
-  "sourceHash": "f101a9a0cbcf0deb1c5730ef4a1a32c0bf1a6d1f05005aadeedefe1be43e1029",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
-  "sectionTitles": {
-    "keyTakeaways": "Wichtigste Erkenntnisse",
-    "faq": "Häufig gestellte Fragen",
-    "glossary": "Glossar",
-    "related": "Verwandte Themen"
-  },
+  "sourceHash": "1b1b0fbc967615f487c184bd6ec9a9d36dd638b53d989a520c752c343aeb7338",
+  "generatedAt": "2026-07-20T18:00:00.000Z",
+  "sectionTitles": { "keyTakeaways": "Das Wichtigste", "faq": "Häufige Fragen", "glossary": "Begriffe", "related": "Verwandte Themen" },
   "keyTakeaways": [
-    "Theateruntertitelsoftware benötigt eine genaue Cue-Erkennung aus Skripten, um Dialoge korrekt darzustellen.",
-    "Die Skriptanalyse betrachtet Theaterskripte primär als räumliche Daten, nicht als rein linguistische Informationen.",
-    "Die Genauigkeit der Skriptanalyse hängt stark von der Sprache und den verwendeten Formatierungsstandards ab.",
-    "SurtitleLive verwendet eine Layout-First-Analyse, um Layoutattribute wie Einrückung und Großschreibung zu nutzen."
+    "Die Wörter eines Theatertexts reichen für eine belastbare Cue-Vorlage nicht aus: Einrückungen, Stile und Dokumentbereiche liefern zusätzlichen Kontext.",
+    "Layout ist ein Hinweis, keine Gewissheit. Kursivschrift, Versalien und Doppelpunkte müssen stets zusammen mit dem umgebenden Dokument gelesen werden.",
+    "Die aktuelle Analyse erwartet die ursprüngliche Word-Datei im Format .docx, weil eine reine Textkopie wichtige Struktur verlieren kann.",
+    "Die Analyse erstellt einen bearbeitbaren Entwurf. Inhalt, Übersetzung, Cue-Grenzen, Darstellung und Timing bleiben Aufgaben des Produktionsteams."
   ],
   "faq": [
-    {
-      "question": "Was ist ein Untertitel-Cue im Theater?",
-      "answer": "Ein Untertitel-Cue ist der Zeitpunkt, an dem eine Dialogzeile auf der Untertitelanzeige erscheinen soll. Die Cue-Erkennung erfordert die Identifizierung von Dialogblöcken und Sprecherwechseln innerhalb des Skripts."
-    },
-    {
-      "question": "Wie geht das System mit inkonsistenter Formatierung um?",
-      "answer": "Unser System gruppiert ähnliche Layouts. Wenn sich ein Dokumentprofil ändert, führt der Parser eine Layoutsegmentierung durch, um seine Strategie in Echtzeit anzupassen."
-    },
-    {
-      "question": "Warum ist das Layout wichtig, wenn Skripte für Untertitel analysiert werden?",
-      "answer": "Viele Skripte verwenden Einrückungen und Abstände anstelle von Interpunktion, um die Struktur zu kodieren. Ein Layout-First-Parser erkennt Cues zuverlässiger als semantische Modelle allein."
-    },
-    {
-      "question": "Wie verbessert SurtitleLive die Genauigkeit der Cue-Erkennung?",
-      "answer": "SurtitleLive verwendet ein dreistufiges KI-Modell, das deterministische Regeln, KI-Review und KI-Klassifizierung kombiniert, um eine zuverlässige Cue-Erkennung zu gewährleisten."
-    }
+    { "question": "Warum ist die Formatierung eines Theatertexts für Übertitel relevant?", "answer": "Sie kann sichtbar machen, wer spricht, welche Absätze zusammengehören und ob eine Zeile eher eine Regieanweisung, eine Überschrift oder Dialog ist. Diese Hinweise helfen bei der Vorbereitung; sie ersetzen keine Prüfung." },
+    { "question": "Sind kursiv gesetzte Zeilen immer Regieanweisungen?", "answer": "Nein. Kursiv kann auch Betonung innerhalb eines Dialogs markieren. Entscheidend sind zusätzlich Absatzstruktur, Nachbartext, Stile und das Muster im jeweiligen Dokument." },
+    { "question": "Was ist ein Twip?", "answer": "Ein Twip ist eine Layout-Einheit in Word und entspricht einem Zwanzigstel Punkt. Er kann Unterschiede bei Einzug und Abstand bewahren, sagt aber für sich allein nicht, was ein Absatz bedeutet." },
+    { "question": "Macht layoutbewusste Analyse die menschliche Prüfung überflüssig?", "answer": "Nein. Sie beschleunigt einen editierbaren Cue-Entwurf. Vor der Aufführung müssen Team und Übersetzer:innen weiterhin Inhalt, Zuordnung, Auslassungen, Lesbarkeit und Timing prüfen und proben." }
   ],
   "glossary": [
-    {
-      "term": "Skript",
-      "definition": "Der Text eines Theaterstücks, der die Dialoge und Regieanweisungen enthält."
-    },
-    {
-      "term": "Cue",
-      "definition": "Ein spezifischer Moment im Skript, der einen Wechsel im Untertitel oder Übertitel auslöst."
-    },
-    {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
-    },
-    {
-      "term": "OOXML-Extraktion",
-      "definition": "Der Prozess des Abrufens präziser Layoutattribute aus .docx-Dateien, wie z.B. Einrückung und Absatzstile."
-    },
-    {
-      "term": "Layout-First-Analyse",
-      "definition": "Ein Ansatz zur Skriptanalyse, der sich auf die geometrische Anordnung von Textblöcken konzentriert, anstatt auf semantisches Raten."
-    }
+    { "term": "Cue-Vorlage", "definition": "Eine bearbeitbare Reihenfolge möglicher Einblendungen, die vor der Probe gegen den Quelltext geprüft wird." },
+    { "term": "Dokumentbereich", "definition": "Ein Abschnitt wie Titelseite, Rollenverzeichnis, Spieltext oder Anhang, in dem dieselbe Gestaltung unterschiedliche Bedeutungen haben kann." },
+    { "term": "OOXML", "definition": "Das Dokumentformat hinter Word-Dateien mit der Endung .docx; es kann Absatz- und Zeichenformatierung bewahren." },
+    { "term": "Twip", "definition": "Eine Word-Layout-Einheit von einem Zwanzigstel Punkt, etwa für Einzüge und Abstände." },
+    { "term": "Gleichsprachige Captions", "definition": "Textunterstützung in der gesprochenen Sprache; sie ist nicht dasselbe wie Übersetzung und kann zusätzliche nichtsprachliche Informationen benötigen." }
   ]
 }

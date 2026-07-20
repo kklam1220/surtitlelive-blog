@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "de",
   "slug": "1-why-powerpoint-fails-theatre",
-  "sourceHash": "395e369e1cea6539c1061474690c00569bfc20eb64ee65a5d03501b42d9087db",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "2cb061709a79256a3c358ae87a4af5f78fd1156664b4b9f350f63f8a53ff162e",
+  "generatedAt": "2026-07-20T20:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Wesentliche Erkenntnisse",
     "faq": "Häufig gestellte Fragen",
@@ -11,49 +11,49 @@
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "Herkömmliche Präsentationssoftware kann für Live-Theater-Übertitelung ungeeignet sein, da sie nicht-lineare Abläufe nicht unterstützt.",
-    "SurtitleLive behandelt das Skript als Daten und ermöglicht so eine dynamischere und flexiblere Übertitelungssteuerung.",
-    "KI-gestützte Funktionen in SurtitleLive rationalisieren die Vorbereitung, indem sie Skripte analysieren und die Formatierung automatisieren.",
-    "Die Cloud-basierte Architektur von SurtitleLive ermöglicht mehrsprachige Übertitelung auf den Geräten des Publikums (BYOD)."
+    "PowerPoint oder Keynote können für kurze, feste Cue-Folgen mit einem Display und einer eingespielten Bedienperson eine sinnvolle Lösung sein.",
+    "Sobald eine Produktion direkte Cue-Auswahl, Blackout-Steuerung, rasche Wiederherstellung oder mehrere Ausspielwege braucht, reichen lineare Folien oft nicht mehr aus.",
+    "Übersetzung und Barrierefreiheit sind unterschiedliche Aufgaben: Gleichsprachige Captions können zusätzlich Sprecherkennzeichnung und relevante Klanginformationen erfordern.",
+    "Skriptanalyse und KI-Unterstützung beschleunigen die Vorbereitung, ersetzen aber weder menschliche Prüfung noch Probenzeit oder die Verantwortung des Produktionsteams."
   ],
   "faq": [
     {
-      "question": "Warum ist PowerPoint nicht ideal für Theater-Übertitel?",
-      "answer": "PowerPoint ist linear, was es schwierig macht, sich an Änderungen im Live-Theater anzupassen, wie z. B. das Überspringen von Zeilen durch Schauspieler. Es erfordert auch manuelle Formatierung, was zeitaufwändig ist."
+      "question": "Wann sind PowerPoint oder Keynote für Übertitel geeignet?",
+      "answer": "Sie können für eine kurze, stabile und gut geprobte Cue-Folge mit einem einzigen Display angemessen sein. Entscheidend ist nicht der Markenname des Werkzeugs, sondern ob es die Aufführung schützt und dem vorgesehenen Publikum einen verlässlichen Leseweg bietet."
     },
     {
-      "question": "Wie vereinfacht SurtitleLive die Vorbereitung von Übertiteln?",
-      "answer": "SurtitleLive verwendet KI, um Skripte zu analysieren und die Formatierung zu automatisieren, wodurch die Zeit für das Kopieren und Einfügen von Text in einzelne Folien reduziert wird. Dies ermöglicht es dem Produktionsteam, sich auf die Überprüfung und Verfeinerung zu konzentrieren."
+      "question": "Warum ist die Wiederherstellung bei einer Live-Vorstellung so wichtig?",
+      "answer": "Aufführungen können von der geplanten Reihenfolge abweichen. Die Bedienperson sollte das richtige Cue suchen und direkt auswählen können, ohne dabei übersprungene Inhalte oder die eigene Suche für das Publikum sichtbar zu machen."
     },
     {
-      "question": "Was ist das SurtitleLive Cockpit?",
-      "answer": "Das SurtitleLive Cockpit ist die Benutzeroberfläche, die für Präzision im Live-Theater entwickelt wurde. Es ermöglicht dem Bediener, zu jeder Zeile im Skript zu springen, ohne durch Folien blättern zu müssen, und verfügt über einen Dark Mode für den Einsatz in dunklen Kabinen."
+      "question": "Ersetzt KI die redaktionelle Arbeit an Übertiteln?",
+      "answer": "Nein. Eine Analyse kann helfen, Dialoge und Figuren zu erkennen und einen bearbeitbaren Entwurf anzulegen. Das Produktionsteam prüft weiterhin Extraktion, Umbrüche, Namen, Übersetzungen und Timing in der tatsächlichen Aufführung."
     },
     {
-      "question": "Wie unterstützt SurtitleLive mehrsprachige Übertitel?",
-      "answer": "SurtitleLive ermöglicht es dem Publikum, mit seinen eigenen Geräten (BYOD) über einen QR-Code auf vorbereitete Übersetzungen in verschiedenen Sprachen zuzugreifen. Dies macht teure Dual-Projektor-Systeme überflüssig."
+      "question": "Sind Übertitel auf dem Smartphone automatisch barrierefrei?",
+      "answer": "Nein. Persönliche Geräte ermöglichen Sprachwahl und individuelles Lesen, bringen aber Anforderungen an Gerät, Akku, Netzwerk und digitale Kompetenz mit sich. Sie sollten als geplanter Ausspielweg mit einer angemessenen Alternative eingesetzt werden, wenn die Produktion eine braucht."
     }
   ],
   "glossary": [
     {
-      "term": "Skript",
-      "definition": "Der Text des Theaterstücks, der die Dialoge und Bühnenanweisungen enthält."
+      "term": "Übertitel",
+      "definition": "Für eine Aufführung bereitgestellter Text, häufig als Übersetzung auf einem gemeinsamen Display; die konkrete Ausspielung kann je nach Produktion variieren."
     },
     {
       "term": "Cue",
-      "definition": "Ein spezifischer Punkt im Skript, der ein Ereignis auslöst, z. B. das Anzeigen eines Übertitels."
+      "definition": "Eine gezielt auswählbare Position im vorbereiteten Material, die festlegt, welcher Text zum jeweiligen Moment der Aufführung gezeigt wird."
     },
     {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle, die von einem Schauspieler in einem Theaterstück dargestellt wird."
+      "term": "Blackout-Steuerung",
+      "definition": "Eine Funktion, mit der die Publikumsausgabe bewusst schwarz oder unverändert gehalten werden kann, während die Bedienperson eine Wiederherstellung vorbereitet."
     },
     {
-      "term": "Blackout-Kontrolle",
-      "definition": "Die Fähigkeit, die Übertitel schnell auszublenden, um Fehler zu korrigieren oder sich an unerwartete Änderungen in der Aufführung anzupassen."
+      "term": "Gleichsprachige Captions",
+      "definition": "Textunterstützung in derselben Sprache wie die Aufführung; je nach Bedarf können dazu Sprecherkennzeichnung und bedeutsame Klanginformationen gehören."
     },
     {
-      "term": "BYOD",
-      "definition": "Bring Your Own Device; ermöglicht es dem Publikum, seine eigenen Smartphones oder Tablets zu verwenden, um auf Übertitel in ihrer bevorzugten Sprache zuzugreifen."
+      "term": "Ausspielweg",
+      "definition": "Der Weg, über den das Publikum den Text erhält, etwa ein projiziertes Display, ein persönliches Gerät oder eine bewusst geplante Kombination."
     }
   ]
 }

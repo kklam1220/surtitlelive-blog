@@ -12,18 +12,18 @@
   },
   "keyTakeaways": [
     "Theatre subtitle software should prioritize deterministic parsing of script structure before using AI.",
-    "Deterministic parsing ensures repeatable results, crucial for live subtitle preparation and operator workflows.",
-    "Parsing identifies speaker labels, indentation, and formatting to classify script elements accurately.",
+    "Deterministic parsing provides a repeatable baseline for live subtitle preparation and operator review.",
+    "The parser combines speaker labels, indentation, formatting, and document regions instead of relying on any one signal.",
     "AI is best used selectively for ambiguous cases, after structural elements are identified deterministically."
   ],
   "faq": [
     {
       "question": "Why is deterministic parsing important for theatre subtitles?",
-      "answer": "Deterministic parsing provides a repeatable baseline. It ensures the same script yields the same structural decisions every time, which is vital for consistent cue generation and operator confidence during live performances."
+      "answer": "Deterministic parsing provides a repeatable baseline: the same input and parser version should yield the same structural decisions for the team to review."
     },
     {
       "question": "How does SurtitleLive use document structure before AI?",
-      "answer": "SurtitleLive extracts structural data from script files (like .docx), preserving indentation, spacing, and formatting. This allows the system to identify speaker labels, stage directions, and other elements before AI interpretation."
+      "answer": "SurtitleLive analyses original Word .docx files and preserves indentation, spacing, and formatting as evidence for speaker labels, stage directions, and other elements before selective AI review."
     },
     {
       "question": "What role does AI play in SurtitleLive's parsing process?",

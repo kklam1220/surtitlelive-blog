@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "de",
   "slug": "4-more-than-translation",
-  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e2f490b42515cc4be870bd50da00cfdcb934d926f9340ddab29d7ad92a160dc3",
+  "generatedAt": "2026-07-20T17:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Kernaussagen",
+    "keyTakeaways": "Das Wichtigste in Kürze",
     "faq": "Häufig gestellte Fragen",
-    "glossary": "Glossar",
-    "related": "Verwandte Themen"
+    "glossary": "Begriffserklärungen",
+    "related": "Verwandte Begriffe"
   },
   "keyTakeaways": [
-    "Surtitel sind mehr als nur Übersetzungen; sie fördern kulturelle Inklusion und stärken Künstler.",
-    "Künstler können in ihrer Muttersprache auftreten und ihre Identität und einzigartigen Geschichten authentisch teilen.",
-    "Technologie wie SurtitleLive ermöglicht es auch kleinen Gruppen, professionelle Theater-Surtitel zu erstellen.",
-    "Durch den Abbau von Sprachbarrieren wird das Theater zu einem Treffpunkt für menschliche Geschichten."
+    "Surtitel können die Originalsprache künstlerisch im Mittelpunkt lassen und einem weiteren Publikum zugleich einen parallelen Leseweg eröffnen.",
+    "Übersetzen ist redaktionelle und dramaturgische Arbeit: Rhythmus, Witz, Anspielungen und soziale Register lassen sich nicht ohne bewusste Entscheidungen übertragen.",
+    "Sprachzugang schafft nicht automatisch umfassende Teilhabe oder Barrierefreiheit. Übersetzte Surtitel ersetzen keine gleichsprachigen Übertitel für gehörlose und schwerhörige Menschen.",
+    "Technik sollte die Ausspielmöglichkeiten einer Compagnie erweitern, ohne die künstlerische Sprache vorzugeben oder die bezahlte Arbeit an Übersetzung, Probe, Bedienung und Publikumsbetreuung zu verschleiern."
   ],
   "faq": [
     {
-      "question": "Warum ist es wichtig, Theaterstücke in der Originalsprache aufzuführen?",
-      "answer": "Die Originalsprache ermöglicht es Schauspielern, mit voller Emotion aufzutreten und kulturelle Details authentisch zu vermitteln. Es bewahrt die Identität und die einzigartigen Geschichten des Künstlers."
+      "question": "Wie können Surtitel die künstlerische Selbstbestimmung unterstützen?",
+      "answer": "Eine Compagnie kann in der Sprache des Werks spielen und anderen Publikumsgruppen zugleich einen durchdachten Übersetzungsweg anbieten. Die Originalsprache muss nicht zur Nebensache werden, damit eine Einladung möglich ist."
     },
     {
-      "question": "Wie unterstützt SurtitleLive kleine Kunstorganisationen?",
-      "answer": "SurtitleLive ist erschwinglich und einfach zu bedienen, sodass auch kleine Organisationen mit begrenztem Budget professionelle Surtitel erstellen können. Es ermöglicht die Nutzung eigener Geräte (BYOD) für inklusive Räume."
+      "question": "Was bedeutet Übersetzung als kulturelle Gastfreundschaft?",
+      "answer": "Sie ermöglicht den Zugang, ohne Unterschiede zu tilgen: Die Originalsprache bleibt hörbar, die Übersetzung wird für das Lesen während der Vorstellung redigiert, nötiger Kontext wird gegeben und Unvertrautes darf bestehen bleiben."
     },
     {
-      "question": "Was ist der Vorteil des 'Bring Your Own Device' (BYOD)-Modells?",
-      "answer": "Das BYOD-Modell ermöglicht es, Theater überall einzurichten, von Gemeindezentren bis hin zu professionellen Bühnen, ohne teure Hardware. Das Publikum nutzt seine eigenen Geräte zum Lesen der Surtitel."
+      "question": "Machen übersetzte Surtitel eine Produktion vollständig barrierefrei?",
+      "answer": "Nein. Sprachzugang ist nur ein Teil von Teilhabe. Gehörlose und schwerhörige Menschen benötigen möglicherweise gleichsprachige Übertitel mit Angaben zu Sprechenden und relevanten Geräuschen; mobile Ansicht und Projektion bringen zudem jeweils eigene Hürden mit sich."
     },
     {
-      "question": "Wie trägt der 'Dark Mode' von SurtitleLive zur Theateratmosphäre bei?",
-      "answer": "Der 'Dark Mode' sorgt dafür, dass die Technologie nicht ablenkt und der Fokus auf der menschlichen Verbindung auf der Bühne bleibt. Er respektiert die Atmosphäre der Aufführung."
+      "question": "Welche Aufgabe sollte Surtiteltechnik übernehmen?",
+      "answer": "Sie sollte praktikable Wege für Projektion, Browser oder eine Kombination eröffnen. Menschen redigieren weiterhin die Übersetzung und bedienen die Einsätze; Veranstaltungsort und Compagnie bleiben für das Publikumserlebnis verantwortlich."
     }
   ],
   "glossary": [
     {
+      "term": "Künstlerische Selbstbestimmung",
+      "definition": "Die Möglichkeit von Kunstschaffenden und Compagnien, wesentliche Entscheidungen über Sprache, Form und Präsentation ihres Werks selbst zu treffen."
+    },
+    {
+      "term": "Kulturelle Gastfreundschaft",
+      "definition": "Ein Ansatz, der dem Publikum Zugang zu einem Werk eröffnet, ohne dessen Sprache oder kulturellen Charakter an das Vertraute anzugleichen."
+    },
+    {
       "term": "Surtitel",
-      "definition": "Übersetzungstext, der während einer Theateraufführung auf einem Bildschirm angezeigt wird, um Zuschauern das Verständnis zu erleichtern."
+      "definition": "Für die Aufführung redigierter Text, der auf einer gemeinsamen Anzeige oder einem persönlichen Gerät erscheint und häufig Live-Dialoge übersetzt."
     },
     {
-      "term": "Skript",
-      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen für die Schauspieler enthält."
+      "term": "Barrierefreie Übertitel",
+      "definition": "Gleichsprachiger Text, der für gehörlose und schwerhörige Menschen auch Sprechende und bedeutsame Geräusche kennzeichnen kann."
     },
     {
-      "term": "Cue",
-      "definition": "Ein Signal oder Hinweis im Skript, der den Zeitpunkt für eine bestimmte Aktion oder einen Surtitelwechsel angibt."
-    },
-    {
-      "term": "Charakter",
-      "definition": "Eine fiktive Person, die von einem Schauspieler in einem Theaterstück dargestellt wird."
-    },
-    {
-      "term": "BYOD (Bring Your Own Device)",
-      "definition": "Ein Modell, bei dem Zuschauer ihre eigenen Geräte (z. B. Smartphones oder Tablets) verwenden, um Surtitel anzuzeigen."
+      "term": "Dramaturgisches Urteilsvermögen",
+      "definition": "Redaktionelle Entscheidungen über Bedeutung, Rhythmus, Kontext und die Textmenge, die ein Publikum lesen kann, ohne die Bühne aus den Augen zu verlieren."
     }
   ]
 }

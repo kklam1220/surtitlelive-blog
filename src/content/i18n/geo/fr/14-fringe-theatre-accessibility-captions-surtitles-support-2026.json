@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
+  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "generatedAt": "2026-07-20T23:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Ressources complémentaires"
+  },
+  "keyTakeaways": [
+    "Le programme SurtitleLive 2026 accorde à certaines productions Fringe indépendantes 14 jours d’accès gratuit à Pro pour diffuser des sous-titres ou surtitres préparés.",
+    "Cet accès logiciel n’est ni une subvention, ni une commande de traduction, ni un service de captioning pris en charge, ni une certification d’accessibilité ou une approbation du festival.",
+    "Les sous-titres d’accessibilité peuvent restituer les locuteurs et les sons utiles en plus des dialogues. Une simple traduction des répliques ne doit donc pas être présentée comme un dispositif complet d’accessibilité.",
+    "Les équipes doivent répéter la conduite, tester le dispositif dans la salle avec les personnes auxquelles il est destiné, décrire précisément l’expérience proposée et prévoir une solution de repli adaptée."
+  ],
+  "faq": [
+    {
+      "question": "Le programme SurtitleLive est-il affilié à l’Edinburgh Festival Fringe Society ?",
+      "answer": "Non. Il s’agit d’un programme indépendant géré par SurtitleLive. Les candidats doivent aussi vérifier les aides, échéances, mentions d’accessibilité et règles techniques en vigueur auprès de leur festival et de leur salle."
+    },
+    {
+      "question": "S’agit-il d’une subvention ou d’un service de captioning pris en charge ?",
+      "answer": "Non. Les productions sélectionnées obtiennent une période d’accès gratuit au logiciel, confirmée par écrit : ni financement, ni traduction, ni vélotypie ou sous-titrage en direct, ni équipe de production, ni certification d’accessibilité."
+    },
+    {
+      "question": "Peut-on associer projection et lecture sur les téléphones du public ?",
+      "answer": "Oui, si les droits du compte et la configuration de la salle le permettent. Il faut tester la visibilité, la connexion, les consignes d’accueil et l’expérience de lecture réelle. Le parcours QLab local ne rend pas la lecture mobile hors ligne ; la conduite manuelle depuis ASM reste la solution de repli."
+    },
+    {
+      "question": "Comment candidater, et la sélection est-elle garantie ?",
+      "answer": "L’équipe crée un compte gratuit, puis envoie par e-mail les informations demandées sur la production. Répondre aux critères ne garantit pas la sélection ; l’accès et ses dates ne sont acquis qu’après confirmation écrite."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Accès au programme",
+      "definition": "La période gratuite de 14 jours d’accès à SurtitleLive Pro, confirmée par écrit pour une production sélectionnée."
+    },
+    {
+      "term": "Surtitres",
+      "definition": "Traduction écrite d’un spectacle, souvent affichée au-dessus ou à proximité de la scène pour un public qui ne comprend pas la langue parlée."
+    },
+    {
+      "term": "Sous-titres d’accessibilité",
+      "definition": "Informations écrites destinées aux personnes sourdes et malentendantes, pouvant inclure les dialogues, les locuteurs, les sons pertinents, les voix hors scène et la musique."
+    },
+    {
+      "term": "Lecture sur les téléphones du public",
+      "definition": "Affichage dans le navigateur mobile des textes préparés ; il dépend de la connexion et d’un parcours d’usage testé dans la salle."
+    },
+    {
+      "term": "Parcours QLab activé par l’opérateur",
+      "definition": "Parcours live volontairement autorisé via le pont local et la console ASM connectée : Go Live, puis Allow QLab control, avec la conduite ASM manuelle comme solution de repli."
+    }
+  ]
+}

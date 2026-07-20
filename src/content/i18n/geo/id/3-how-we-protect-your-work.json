@@ -3,7 +3,7 @@
   "locale": "id",
   "slug": "3-how-we-protect-your-work",
   "sourceHash": "48c07bc69d2be2b0ad1de300b758d5d6b0ae46c7d042bd5a7f2f71adc4e34ead",
-  "generatedAt": "2026-05-22T14:05:08.402Z",
+  "generatedAt": "2026-07-20T18:04:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Poin Utama",
     "faq": "FAQ",
@@ -11,15 +11,15 @@
     "related": "Istilah Terkait"
   },
   "keyTakeaways": [
-    "SurtitleLive menggunakan pengiriman runtime sesuai permintaan sehingga penampil resmi menghindari pemuatan bundel skrip teks biasa lengkap di awal.",
+    "SurtitleLive mengirim data runtime sesuai kebutuhan sehingga Viewer Resmi tidak memuat seluruh naskah dalam bentuk teks biasa sejak awal.",
     "Konten subtitle runtime dikirim sebagai segmen terenkripsi dan didekripsi di memori peramban untuk ditampilkan.",
-    "Token bearer sementara, jendela kedaluwarsa, dan kontrol pencabutan sisi server membantu membatasi durasi akses penampil tetap berguna.",
-    "Kontrol ini mengurangi risiko penyalinan biasa dan akses yang tidak terkendali; ini bukan DRM atau janji perlindungan salinan absolut."
+    "Token bearer sementara, masa berlaku, dan pencabutan dari sisi server membantu membatasi berapa lama akses penonton dapat digunakan.",
+    "Kendali ini mengurangi risiko penyalinan tanpa izin dan akses di luar kendali; ini bukan DRM atau jaminan perlindungan mutlak."
   ],
   "faq": [
     {
-      "question": "Bagaimana SurtitleLive mengurangi penyalinan skrip biasa?",
-      "answer": "Penampil Resmi memuat segmen runtime terenkripsi sesuai permintaan di sekitar isyarat saat ini, alih-alih menyajikan seluruh skrip sebagai satu muatan peramban yang dapat dibaca pada saat masuk."
+      "question": "Bagaimana SurtitleLive mengurangi risiko penyalinan naskah tanpa izin?",
+      "answer": "Viewer Resmi mengambil segmen runtime terenkripsi di sekitar cue yang aktif sesuai kebutuhan, bukan menyajikan seluruh naskah sebagai satu data peramban yang dapat dibaca saat penonton masuk."
     },
     {
       "question": "Apakah SurtitleLive dapat menjamin bahwa skrip tidak akan pernah bisa disalin?",
@@ -27,7 +27,7 @@
     },
     {
       "question": "Apa yang terjadi jika tautan penampil perlu dibatasi?",
-      "answer": "Akses runtime dapat dibatasi melalui token bearer sementara, jendela kedaluwarsa yang dikonfigurasi, dan pencabutan sisi server untuk permintaan runtime baru atau yang diperbarui."
+      "answer": "Akses runtime dapat dibatasi melalui token bearer sementara, masa berlaku yang ditentukan, dan pencabutan dari sisi server untuk permintaan runtime yang baru atau diperbarui."
     },
     {
       "question": "Bagaimana data dilindungi saat transit?",
@@ -37,11 +37,11 @@
   "glossary": [
     {
       "term": "Segmen runtime",
-      "definition": "Unit subtitle terenkripsi kecil yang diminta di sekitar progres pertunjukan, bukan bundel skrip teks biasa penuh."
+      "definition": "Unit takarir terenkripsi berukuran kecil yang diminta mengikuti jalannya pertunjukan, bukan satu paket naskah lengkap dalam bentuk teks biasa."
     },
     {
       "term": "Akses penampil",
-      "definition": "Sesi peramban dengan cakupan tertentu yang digunakan oleh penampil audiens yang dituju."
+      "definition": "Sesi peramban dengan cakupan tertentu yang digunakan oleh penonton yang dituju."
     },
     {
       "term": "Pencabutan",

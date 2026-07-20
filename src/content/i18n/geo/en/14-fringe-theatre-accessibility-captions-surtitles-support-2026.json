@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
+  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "generatedAt": "2026-07-20T18:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Resources"
+  },
+  "keyTakeaways": [
+    "SurtitleLive's 2026 programme offers selected independent Fringe productions 14 days of complimentary Pro access for prepared captions or surtitles.",
+    "Software access is not a cash grant, translation commission, managed captioning service, accessibility certification, or festival endorsement.",
+    "Captions may include speakers and meaningful sounds as well as dialogue; translated dialogue alone should not be advertised as accessibility captioning.",
+    "Teams should rehearse the operator path, test the actual venue, describe the audience experience accurately, and retain an appropriate fallback."
+  ],
+  "faq": [
+    {
+      "question": "Is the SurtitleLive programme affiliated with the Edinburgh Festival Fringe Society?",
+      "answer": "No. It is an independent SurtitleLive programme. Applicants should also check their festival's and venue's current access support, deadlines, listings, and technical rules."
+    },
+    {
+      "question": "Is the programme a grant or a managed captioning service?",
+      "answer": "No. Selected productions receive a confirmed period of complimentary software access, not cash, a translator, a live captioner, production crew, or accessibility certification."
+    },
+    {
+      "question": "Can a production use projection and audience phones together?",
+      "answer": "Yes, where the plan entitlement and venue setup support both. The team must test sightlines, connectivity, front-of-house instructions, and the intended reading experience."
+    },
+    {
+      "question": "Is SurtitleLive suitable for improvised performance?",
+      "answer": "It is designed primarily for prepared text. Substantially improvised or unscripted work may require a live captioner, speech-to-text reporter, CART provider, or hybrid workflow."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitles",
+      "definition": "Translated performance text, often displayed above or near the stage for audiences who do not understand the spoken language."
+    },
+    {
+      "term": "Accessibility captions",
+      "definition": "Written performance information for D/deaf and hard-of-hearing audiences that may include dialogue, speakers, relevant sounds, off-stage voices, and music."
+    },
+    {
+      "term": "Programme access",
+      "definition": "The complimentary 14-day SurtitleLive Pro allocation confirmed in writing for a selected 2026 production."
+    },
+    {
+      "term": "Prepared-text cueing",
+      "definition": "A live operator advancing reviewed text in step with the performance rather than transcribing unscripted speech."
+    },
+    {
+      "term": "Access description",
+      "definition": "The public explanation of where text appears, which language it uses, what information it includes, and what audiences need to use it."
+    }
+  ]
+}

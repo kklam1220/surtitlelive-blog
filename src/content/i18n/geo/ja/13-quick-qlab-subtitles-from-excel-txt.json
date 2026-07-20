@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "ja",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
-  "generatedAt": "2026-07-10T04:12:44.703Z",
+  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "generatedAt": "2026-07-20T23:30:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "主要ポイント",
+    "keyTakeaways": "要点",
     "faq": "よくある質問",
     "glossary": "用語集",
     "related": "関連リソース"
   },
   "keyTakeaways": [
-    "QLabはTextキューで字幕を表示でき、他のショーコントロールと統合可能です。",
-    "Excel、CSV、TXTからスクリプト駆動でQLab Textキューを生成し、字幕作成を効率化できます。",
-    "構造化されたソースデータは、字幕の変更や再構築を容易にし、手動作業を減らします。",
-    "複雑な字幕制作には、専用ツール（SurtitleLive）がQLabへのインポート前に翻訳レビューやモバイル同期を支援します。"
+    "QLabはText cuesで字幕を投影できます。実際の投影にはVideo Licenseと、正しく設定したStageが必要です。",
+    "QLabにはXLSX字幕をワンクリックで取り込む標準機能はありませんが、AppleScriptなどのimporterで、構造化したExcel・CSV・TXTをcuesへ変換できます。",
+    "SurtitleLive Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。deploymentを作成せず、Viewerへ状態を配信することもありません。",
+    "完成済み公演でViewerを同期するときは、元cueごとに一つのローカルScript child、loopback bridge、そしてオペレーターが明示的に接続・有効化したASM consoleを使います。"
   ],
   "faq": [
     {
-      "question": "QLabは字幕を表示できますか？",
-      "answer": "はい、QLabはTextキューを使用して字幕を表示できます。Textキューはスタイル設定されたテキストをビデオ出力としてレンダリングし、プロジェクターやスクリーンに割り当てて、投影字幕やサータイトルとして利用できます。他のショーコントロールキューと統合も可能です。"
+      "question": "QLabで字幕を表示できますか？",
+      "answer": "はい。Text cuesはQLabのvideo systemでスタイル付き文字を描画し、設定済みの投影Stageへ割り当てられます。"
     },
     {
-      "question": "Excel字幕をQLabに直接インポートできますか？",
-      "answer": "QLabにはワンクリックの直接インポート機能はありませんが、AppleScriptやカスタムスクリプトを使用してExcelデータを読み込み、QLab Textキューを生成するワークフローを構築できます。Excelをソースデータとして活用し、自動化を通じて字幕キューを作成するのが一般的です。"
+      "question": "QLabはExcel字幕をそのままimportできますか？",
+      "answer": "ワンクリックのXLSX字幕import機能はありません。scriptやimporterで構造化した表計算、CSV、TXTを読み込み、QLab Text cuesを生成するのが実務的です。"
     },
     {
-      "question": "QLabは字幕を観客のスマートフォンに同期しますか？",
-      "answer": "QLabはTextキューをローカルに投影できますが、観客のスマートフォンへの直接同期機能はありません。スマートフォンへの字幕配信には、SurtitleLive QLab Syncのような専用のモバイルワークフローが必要です。これにより、QLabが公演タイムラインを制御しつつ、SurtitleLiveが観客のデバイスに字幕を同期させます。"
+      "question": "Editor版のQLab Projection PackはViewerも同期しますか？",
+      "answer": "いいえ。Editor版packは、オフラインでQLab投影へ引き渡すためのものです。Viewer同期には、完成済み公演向けの、オペレーターが明示的に有効化するASM経路が必要です。"
     },
     {
-      "question": "DIY QLab字幕スクリプトの使用をいつやめるべきですか？",
-      "answer": "翻訳レビュー、複数言語対応、モバイル視聴、リハーサル中のリカバリー、または頻繁な更新が必要な場合、DIYスクリプトのみに依存するのは避けるべきです。これらの複雑なニーズには、専用のサータイトルワークフローやソフトウェア（例：SurtitleLive）を使用し、QLabには最終的なキューをインポートする方が安全で効率的です。"
+      "question": "ローカルbridgeはSurtitleLive cloudへ直接接続しますか？",
+      "answer": "接続しません。bridgeは機密情報を含まない限定的なcue identityを、同じMac上で開いているASM consoleへ渡すだけです。Viewer stateは、ASMが既存のcontrol channelを通じて配信します。"
     }
   ],
   "glossary": [
     {
-      "term": "Textキュー",
-      "definition": "QLabでスタイル設定されたテキストをビデオ出力として表示するためのキュー。字幕、サータイトル、キャプションなどに使用されます。"
+      "term": "Text cue",
+      "definition": "スタイルを設定した文字をvideo outputとして描画するQLab cue。"
     },
     {
-      "term": "サータイトル",
-      "definition": "舞台上部のスクリーンなどに表示される字幕。通常、オペラや演劇の翻訳、または聴覚障害者向けに用いられます。"
+      "term": "QLab Projection Pack",
+      "definition": "固定importer、cue data、操作手順、補助ファイルをまとめた、SurtitleLiveからQLabへの書き出しpack。"
     },
     {
-      "term": "AppleScript",
-      "definition": "macOS上でアプリケーションを自動化するためのスクリプト言語。QLabのキュー生成や属性設定の自動化に利用されます。"
+      "term": "Stable cue key",
+      "definition": "修正版を再importしたとき、一致するcaption Groupを更新するための、機密情報を含まないSurtitleLiveの識別子。"
     },
     {
-      "term": "ビデオ出力ステージ",
-      "definition": "QLabでビデオキューやTextキューの出力先となる仮想的なステージ。プロジェクターやディスプレイに割り当てられます。"
+      "term": "Loopback bridge",
+      "definition": "127.0.0.1:37621で動作し、完成済み公演のQLab Script eventをASMへ中継するローカルservice。"
     },
     {
-      "term": "OSC (Open Sound Control)",
-      "definition": "ネットワーク経由で電子楽器、コンピュータ、その他のマルチメディアデバイスを制御するためのプロトコル。QLabのキューを外部からトリガーするのに使われます。"
+      "term": "ASM console",
+      "definition": "QLab controlを受け付ける前に、開く、unlockする、接続する、Viewer readyを待つ、オペレーターが許可する、という手順が必要な操作画面。"
     }
   ]
 }

@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "de",
   "slug": "2-beyond-the-led-screen-byod-opera",
-  "sourceHash": "5b0260f5a97b41eb3b6dfc56f552481488bb4ae2b4a1c85f179ec48a33a13985",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "ffda40004882fc38f20a252e6c2134095a607d12a5d7c2952f8c8ae9ac39653e",
+  "generatedAt": "2026-07-20T16:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Wichtigste Erkenntnisse",
-    "faq": "Häufig gestellte Fragen (FAQ)",
+    "keyTakeaways": "Das Wichtigste in Kürze",
+    "faq": "Häufige Fragen",
     "glossary": "Glossar",
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "BYOD-Übertitelung (Bring Your Own Device) bietet Flexibilität für Theateraufführungen an verschiedenen Orten, im Gegensatz zu fest installierten LED-Systemen.",
-    "BYOD eignet sich gut für Tourneen, historische Gebäude und mehrsprachige Aufführungen, bei denen herkömmliche LED-Lösungen möglicherweise unpraktisch sind.",
-    "BYOD-Übertitelung ermöglicht es dem Publikum, Untertitel auf ihren eigenen Geräten anzuzeigen, wodurch architektonische Einschränkungen und Sichtlinienprobleme umgangen werden.",
-    "Moderne BYOD-Plattformen wie SurtitleLive sind auf geringen Akkuverbrauch und Netzwerkstabilität optimiert, um ein nahtloses Benutzererlebnis zu gewährleisten."
+    "Gemeinsame Projektion, mobile Ansicht und hybride Ausgabe schaffen unterschiedliche Zugänge; keiner davon ist automatisch barrierefrei.",
+    "Mobile Übertitel können bei Tourneen, schwierigen Sichtachsen und mehreren Sprachfassungen helfen, setzen aber geeignete Geräte, Verbindung, klare Hinweise und persönliche Unterstützung voraus.",
+    "Eine gemeinsame Anzeige ermöglicht Zugang ohne eigenes Gerät; eine hybride Lösung kann Stärken verbinden, muss jedoch auf beiden Wegen vollständig geprobt werden.",
+    "Übersetzungsübertitel sind nicht dasselbe wie barrierefrei ausgerichtete Captions, die etwa Sprecherkennzeichnung und relevante Geräuschinformationen benötigen können."
   ],
   "faq": [
     {
-      "question": "Was ist BYOD-Übertitelung?",
-      "answer": "BYOD-Übertitelung ist eine webbasierte Lösung, die Untertitel direkt auf die Smartphones oder Tablets des Publikums überträgt. Dies ermöglicht die Barrierefreiheit an verschiedenen Veranstaltungsorten, insbesondere an solchen mit architektonischen Einschränkungen."
+      "question": "Sind mobile BYOD-Übertitel grundsätzlich barrierefreier als eine Projektion?",
+      "answer": "Nein. Sie können Sprachwahl und Sichtachsen verbessern, schaffen aber mögliche Barrieren durch Gerätebedarf, Akku, Netzwerk, Bedienung und Licht im Zuschauerraum. Entscheidend ist der konkrete Bedarf des Publikums."
     },
     {
-      "question": "Wann ist BYOD-Übertitelung die bessere Wahl als LED-Übertitelung?",
-      "answer": "BYOD-Übertitelung ist ideal für Tourneen, historische Gebäude, ortsspezifische Arbeiten und mehrsprachige Aufführungen. Es bietet Flexibilität und Skalierbarkeit, wo LED-Systeme unpraktisch oder ungeeignet sind."
+      "question": "Wann eignet sich eine gemeinsame Übertitelungsfläche?",
+      "answer": "Wenn die Sicht von den relevanten Plätzen frei ist, wenige Sprachfassungen genügen und ein gemeinsamer, gerätefreier Fokus gewünscht ist. Sie bleibt besonders wertvoll für Menschen, die kein eigenes Gerät nutzen können oder möchten."
     },
     {
-      "question": "Wie beeinflusst BYOD-Übertitelung die Theateratmosphäre?",
-      "answer": "BYOD-Übertitelung ermöglicht eine präzise Steuerung des Lichts durch Dunkelmodi und natürliche Abschirmung durch die Zuschauer. Dies minimiert die Lichtstreuung und respektiert die abgedunkelte Umgebung des Zuschauerraums."
+      "question": "Was muss eine Produktion für mobile Übertitel vorbereiten?",
+      "answer": "Sie sollte Verbindung und typische Geräte testen, Publikum und Mitwirkende vorab informieren, das Einlasspersonal schulen, Helligkeit und Smartphone-Etikette proben und eine brauchbare Alternative ohne eigenes Gerät anbieten."
     },
     {
-      "question": "Wie stabil ist die Netzwerkverbindung bei BYOD-Übertitelung?",
-      "answer": "Moderne BYOD-Plattformen verwenden Low-Bandwidth-Caching, um sicherzustellen, dass die Untertitel auch in anspruchsvollen WLAN-Umgebungen oder bei mobilen Datenverbindungen der Benutzer synchron bleiben. Dies gewährleistet eine zuverlässige Leistung."
+      "question": "Sind mehrsprachige Übertitel bereits eine vollständige Barrierefreiheitslösung?",
+      "answer": "Nicht automatisch. Gleichsprachige Captions für gehörlose und schwerhörige Menschen können zusätzlich Sprecherkennzeichnung, relevante Geräuschbeschreibungen und eine entsprechend entwickelte redaktionelle Praxis erfordern."
     }
   ],
   "glossary": [
     {
       "term": "BYOD",
-      "definition": "Bring Your Own Device; ein System, bei dem Zuschauer ihre eigenen Geräte (Smartphones, Tablets) verwenden, um Untertitel zu empfangen."
+      "definition": "„Bring Your Own Device“: Das Publikum nutzt ein eigenes Smartphone oder Tablet, um eine browserbasierte Textansicht zu öffnen."
     },
     {
-      "term": "Cue",
-      "definition": "Ein Signal im Theaterstück-Skript, das den Zeitpunkt für eine bestimmte Aktion oder einen technischen Übergang (z. B. das Anzeigen eines Übertitels) angibt."
+      "term": "Gemeinsame Anzeige",
+      "definition": "Eine projizierte oder fest installierte Fläche, auf der das Publikum den Text gemeinsam liest."
     },
     {
-      "term": "Skript",
-      "definition": "Der Text eines Theaterstücks, der die Dialoge und Bühnenanweisungen für die Schauspieler und die Produktion enthält."
+      "term": "Hybride Ausgabe",
+      "definition": "Die parallele Bereitstellung einer gemeinsamen Anzeige und einer optionalen persönlichen Ansicht."
     },
     {
-      "term": "LED-Übertitelung",
-      "definition": "Ein System, bei dem Untertitel auf einer physischen LED-Leinwand angezeigt werden, die über der Bühne oder an einem anderen gut sichtbaren Ort platziert ist."
+      "term": "Übersetzungsübertitel",
+      "definition": "Text, der gesprochenen oder gesungenen Inhalt für ein anderssprachiges Publikum überträgt."
     },
     {
-      "term": "Charakter",
-      "definition": "Eine dramatische Rolle in einem Theaterstück, die von einem Schauspieler verkörpert wird."
+      "term": "Barrierefrei ausgerichtete Captions",
+      "definition": "Gleichsprachiger Text, der je nach Publikum zusätzlich Sprecher und relevante Klangereignisse kenntlich macht."
     }
   ]
 }

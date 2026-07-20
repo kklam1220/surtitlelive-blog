@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "fr",
   "slug": "4-more-than-translation",
-  "sourceHash": "bd96f2ded5b5dfce86798fe20ac33a58a7bd36b99da55861ee97578928754163",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "e2f490b42515cc4be870bd50da00cfdcb934d926f9340ddab29d7ad92a160dc3",
+  "generatedAt": "2026-07-20T17:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Points clés à retenir",
-    "faq": "FAQ",
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
-    "related": "Sujets connexes"
+    "related": "Notions associées"
   },
   "keyTakeaways": [
-    "Le surtitrage transcende la simple traduction, favorisant l'inclusion culturelle et l'autonomie des artistes.",
-    "Les artistes peuvent jouer avec une émotion totale dans leur langue maternelle, en préservant l'identité et en partageant des histoires uniques.",
-    "SurtitleLive permet aux organismes artistiques d'immigrants de diffuser des surtitres de théâtre professionnels à partir d'un simple ordinateur portable.",
-    "La technologie de SurtitleLive crée des espaces inclusifs, respecte l'atmosphère et met en valeur la connexion humaine sur scène."
+    "Le surtitrage peut laisser la langue originale au cœur du geste artistique tout en proposant à un autre public un parcours de lecture parallèle.",
+    "Traduire relève à la fois de l'édition et de la dramaturgie : rythme, humour, références et registres sociaux imposent des choix.",
+    "L'accès linguistique ne garantit pas à lui seul l'inclusion ou l'accessibilité. Des surtitres traduits ne remplacent pas des sous-titres adaptés dans la langue du spectacle.",
+    "La technologie doit élargir les modes de diffusion d'une compagnie sans choisir sa langue artistique ni masquer le travail rémunéré de traduction, de répétition, de conduite et d'accueil."
   ],
   "faq": [
     {
-      "question": "Pourquoi est-il important de proposer du surtitrage dans la langue maternelle d'un artiste ?",
-      "answer": "Cela permet aux artistes d'exprimer pleinement leurs émotions, de préserver leur identité et de partager des histoires uniques sans que rien ne se perde dans la traduction. Cela favorise l'authenticité et l'expression culturelle."
+      "question": "Comment le surtitrage peut-il soutenir la liberté artistique ?",
+      "answer": "Il permet à une compagnie de jouer dans la langue de l'œuvre tout en proposant à d'autres spectateurs une traduction pensée pour la scène. La langue originale n'a pas à devenir secondaire pour que l'invitation soit possible."
     },
     {
-      "question": "Comment SurtitleLive rend-il le surtitrage accessible aux petits organismes artistiques ?",
-      "answer": "SurtitleLive est conçu pour être simple et abordable, permettant aux organismes artistiques d'immigrants de diffuser des surtitres de théâtre professionnels à partir d'un simple ordinateur portable, réduisant ainsi les barrières financières."
+      "question": "Que signifie traduire comme un geste d'hospitalité culturelle ?",
+      "answer": "Il s'agit de rendre l'entrée possible sans effacer la différence : garder la langue originale audible, adapter la traduction à la lecture en direct, donner le contexte nécessaire et laisser une place à ce qui demeure étranger."
     },
     {
-      "question": "Comment l'approche « Apportez votre propre appareil » (AVPA) de SurtitleLive améliore-t-elle l'accessibilité ?",
-      "answer": "L'approche AVPA permet d'installer des théâtres n'importe où, des centres communautaires aux scènes professionnelles, sans matériel coûteux, ce qui rend le théâtre plus accessible à un public plus large."
+      "question": "Des surtitres traduits rendent-ils une production entièrement accessible ?",
+      "answer": "Non. L'accès linguistique n'est qu'une dimension de l'inclusion. Les publics sourds et malentendants peuvent avoir besoin de sous-titres dans la langue du spectacle avec identification des locuteurs et indication des sons ; diffusion mobile et projection présentent aussi des obstacles différents."
     },
     {
-      "question": "Comment le « mode sombre » de SurtitleLive améliore-t-il l'expérience théâtrale ?",
-      "answer": "Le « mode sombre » garantit que la technologie ne distrait pas les autres spectateurs, en gardant l'attention sur la connexion humaine qui se produit sur scène, améliorant ainsi l'expérience théâtrale globale."
+      "question": "Quel rôle la technologie de surtitrage devrait-elle jouer ?",
+      "answer": "Elle devrait offrir des options praticables par projection, navigateur ou en formule hybride. La traduction reste façonnée par des personnes, la conduite du texte demeure humaine, et le lieu comme la compagnie restent responsables de l'expérience du public."
     }
   ],
   "glossary": [
     {
-      "term": "Surtitrage",
-      "definition": "Affichage de texte (traduction, sous-titres) au-dessus ou à côté d'une scène de théâtre, d'un écran de cinéma ou d'un autre type d'écran de présentation."
+      "term": "Liberté artistique",
+      "definition": "Capacité des artistes et des compagnies à décider réellement de la langue, de la forme et de la présentation de leur travail."
     },
     {
-      "term": "Pièce de théâtre",
-      "definition": "Une œuvre de littérature dramatique écrite pour être jouée sur scène par des acteurs."
+      "term": "Hospitalité culturelle",
+      "definition": "Démarche qui aide le public à entrer dans une œuvre sans demander à sa langue ni à son caractère culturel de se fondre dans le familier."
     },
     {
-      "term": "Réplique",
-      "definition": "Un segment de texte dans un script de théâtre qui correspond à un moment spécifique de l'action sur scène et qui doit être affiché comme un surtitre."
+      "term": "Surtitres",
+      "definition": "Texte adapté à la représentation et affiché sur un support collectif ou personnel, souvent pour traduire des dialogues en direct."
     },
     {
-      "term": "Personnage",
-      "definition": "Un rôle dramatique joué par un acteur dans une pièce de théâtre."
+      "term": "Sous-titres adaptés",
+      "definition": "Texte dans la langue du spectacle pouvant identifier les locuteurs et les sons significatifs pour les publics sourds et malentendants."
     },
     {
-      "term": "Mode sombre",
-      "definition": "Une fonctionnalité logicielle qui affiche du texte clair sur un fond sombre afin de réduire la fatigue oculaire et les distractions dans un environnement sombre."
+      "term": "Jugement dramaturgique",
+      "definition": "Choix éditoriaux portant sur le sens, le rythme, le contexte et la quantité de texte que le public peut lire tout en restant attentif à la scène."
     }
   ]
 }

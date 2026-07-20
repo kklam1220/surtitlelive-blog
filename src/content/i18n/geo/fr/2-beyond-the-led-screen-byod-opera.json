@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "fr",
   "slug": "2-beyond-the-led-screen-byod-opera",
-  "sourceHash": "5b0260f5a97b41eb3b6dfc56f552481488bb4ae2b4a1c85f179ec48a33a13985",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "ffda40004882fc38f20a252e6c2134095a607d12a5d7c2952f8c8ae9ac39653e",
+  "generatedAt": "2026-07-20T16:05:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Points clés à retenir",
-    "faq": "FAQ",
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
     "glossary": "Glossaire",
     "related": "Sujets connexes"
   },
   "keyTakeaways": [
-    "Le sous-titrage PAP (apportez votre propre appareil) offre une accessibilité flexible pour les lieux de spectacle non traditionnels.",
-    "Le PAP est idéal pour les tournées, les sites patrimoniaux et les productions multilingues à haute densité.",
-    "Le PAP respecte l'atmosphère théâtrale grâce au contrôle de précision et à la protection naturelle contre les fuites de lumière.",
-    "Les plateformes PAP modernes sont conçues pour la stabilité du réseau et l'efficacité énergétique lors des représentations en direct."
+    "Projection partagée, consultation mobile et dispositif hybride répondent à des besoins différents ; aucun mode n’est accessible par nature.",
+    "Le mobile peut améliorer les lignes de vue et le choix de langue, mais suppose des appareils adaptés, une connexion testée, des consignes claires et une assistance humaine.",
+    "Un affichage partagé offre un accès sans appareil personnel ; une solution hybride peut associer les avantages des deux voies si chacune est réellement répétée.",
+    "Des surtitres traduits ne remplacent pas automatiquement des sous-titres conçus pour les personnes sourdes ou malentendantes."
   ],
   "faq": [
     {
-      "question": "Qu'est-ce que le sous-titrage PAP (apportez votre propre appareil) ?",
-      "answer": "Le sous-titrage PAP est une solution Web qui diffuse les sous-titres directement sur les appareils personnels du public, comme les téléphones intelligents, offrant une accessibilité flexible pour les lieux non traditionnels."
+      "question": "Les surtitres mobiles sont-ils toujours plus accessibles qu’une projection ?",
+      "answer": "Non. Ils peuvent offrir davantage de langues et de meilleures lignes de vue, mais aussi créer des obstacles liés à l’appareil, à la batterie, au réseau, à l’usage ou à la lumière. Le choix dépend du public réel."
     },
     {
-      "question": "Quand le sous-titrage PAP est-il préférable aux écrans à DEL traditionnels ?",
-      "answer": "Le PAP est idéal pour les tournées, les bâtiments patrimoniaux avec des contraintes structurelles, les productions multilingues et les lieux avec des lignes de visée variables où un écran central n'est pas pratique."
+      "question": "Quand privilégier un affichage partagé ?",
+      "answer": "Lorsque les lignes de vue sont bonnes, que peu de versions linguistiques suffisent et qu’un repère commun sans appareil personnel est souhaitable."
     },
     {
-      "question": "Comment le sous-titrage PAP respecte-t-il l'atmosphère théâtrale ?",
-      "answer": "Le PAP utilise des modes sombres optimisés pour les écrans OLED, concentrant la lumière uniquement là où elle est nécessaire et permettant aux spectateurs de contrôler la lumière avec leurs appareils."
+      "question": "Que faut-il préparer pour une diffusion mobile ?",
+      "answer": "Il faut tester la connexion et plusieurs appareils, informer public et artistes, former l’accueil, répéter la luminosité et les règles d’usage, puis prévoir une alternative pour les personnes sans appareil adapté."
     },
     {
-      "question": "Quels sont les avantages techniques des plateformes PAP modernes ?",
-      "answer": "Les plateformes PAP modernes sont conçues pour l'efficacité énergétique, consommant un minimum d'énergie, et la stabilité du réseau, assurant la synchronisation des sous-titres même dans des environnements Wi-Fi difficiles."
+      "question": "Plusieurs traductions constituent-elles une stratégie complète d’accessibilité ?",
+      "answer": "Pas nécessairement. Des sous-titres adaptés peuvent aussi exiger l’identification des locuteurs, des informations sonores pertinentes et un travail éditorial mené avec les publics sourds ou malentendants."
     }
   ],
   "glossary": [
     {
-      "term": "Sous-titrage PAP",
-      "definition": "Sous-titrage diffusé sur les appareils personnels du public (téléphones, tablettes)."
+      "term": "BYOD",
+      "definition": "« Apportez votre propre appareil » : le public ouvre une consultation web sur son téléphone ou sa tablette."
     },
     {
-      "term": "Cue",
-      "definition": "Un point spécifique dans le script de théâtre qui déclenche l'affichage d'un sous-titre."
+      "term": "Affichage partagé",
+      "definition": "Surface projetée ou fixe sur laquelle le public lit collectivement le texte."
     },
     {
-      "term": "Script",
-      "definition": "Le texte complet d'une pièce de théâtre, y compris les dialogues et les indications scéniques."
+      "term": "Diffusion hybride",
+      "definition": "Association d’un affichage partagé et d’une consultation personnelle facultative."
     },
     {
-      "term": "Caractère",
-      "definition": "Un rôle dramatique représenté par un acteur dans une pièce de théâtre."
+      "term": "Surtitres traduits",
+      "definition": "Texte qui traduit des paroles dites ou chantées pour un public d’une autre langue."
     },
     {
-      "term": "Écran à DEL",
-      "definition": "Un écran d'affichage traditionnel utilisé pour afficher les sous-titres dans les théâtres, généralement monté au-dessus de la scène."
+      "term": "Sous-titres adaptés",
+      "definition": "Texte dans la langue du spectacle pouvant identifier les locuteurs et les sons pertinents pour les publics sourds ou malentendants."
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "12-export-translated-play-script-international-submission",
+  "sourceHash": "f38051fe6a8c9714db7e5a17dd90c6a40422fbef0fd578a6dfe2aa6852c6830c",
+  "generatedAt": "2026-07-20T19:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Begriffe"
+  },
+  "keyTakeaways": [
+    "Der Word-Export gibt jeweils eine ausgewählte Sprache im Doppelpunkt- oder zentrierten Rollenlayout aus; eine parallele zweisprachige Ausgabe entsteht nicht automatisch.",
+    "Regieanweisungen können ein- oder ausgeschlossen werden. Bei fehlenden Zielzeilen stehen Anhalten, Ausgangstext, Leerzeile oder sichtbare Markierung zur Wahl.",
+    "Der Export ist eine Übergabe, keine Zertifizierung von Übersetzungsqualität, Rechten, künstlerischer Freigabe oder Einhaltung der Einreichungsregeln.",
+    "Menschliche Prüfung, klare Versionierung und aktuelle Empfängervorgaben bleiben entscheidend; vollständiges Skript, Live-Übertitel und barrierefreie Untertitel sind verschiedene Ergebnisse."
+  ],
+  "faq": [
+    {
+      "question": "Exportiert SurtitleLive zwei Sprachen nebeneinander?",
+      "answer": "Nein. Der aktuelle Word-Export erzeugt eine ausgewählte Sprache. Für Paralleltext sind getrennte Exporte oder ein eigenes, geprüftes zweisprachiges Dokument nötig."
+    },
+    {
+      "question": "Welche Word-Layouts gibt es?",
+      "answer": "Zur Wahl stehen ein Doppelpunkt-Layout und ein Layout mit zentriertem Rollennamen. Erkannte Regieanweisungen lassen sich ein- oder ausschließen."
+    },
+    {
+      "question": "Wie werden fehlende Übersetzungen behandelt?",
+      "answer": "Der Export kann anhalten, Ausgangstext einsetzen, die Zeile leer lassen oder den fehlenden Text markieren. Für externe Einreichungen ist Anhalten meist der sicherste Ausgangspunkt."
+    },
+    {
+      "question": "Ist die exportierte Datei aufführungsbereit?",
+      "answer": "Nicht automatisch. Eine Lesefassung braucht weiterhin menschliche Freigabe und Empfängerprüfung; Live-Übertitel oder barrierefreie Untertitel erfordern eigene Segmentierung und Probe."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Einsprachiger Word-Export",
+      "definition": "Eine `.docx`-Ausgabe der für diesen Export ausgewählten verfügbaren Sprache."
+    },
+    {
+      "term": "Doppelpunkt-Layout",
+      "definition": "Darstellung mit Rollenname, Doppelpunkt und anschließendem Dialog."
+    },
+    {
+      "term": "Zentriertes Rollenlayout",
+      "definition": "Darstellung mit dem Rollennamen auf einer eigenen, zentrierten Zeile."
+    },
+    {
+      "term": "Fehlende-Übersetzung-Regel",
+      "definition": "Die bewusste Wahl zwischen Anhalten, Ausgangstext, Leerzeile und Markierung bei fehlendem Zieltext."
+    },
+    {
+      "term": "Übergabedokument",
+      "definition": "Eine lesbare Arbeits- oder Einreichungsdatei, die menschliche Freigabe, Rechteprüfung und Empfängervorgaben nicht ersetzt."
+    }
+  ]
+}

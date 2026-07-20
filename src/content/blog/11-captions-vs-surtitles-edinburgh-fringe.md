@@ -130,6 +130,8 @@ That is why mobile viewing can be practical. With a mobile viewer, audience memb
 
 But mobile viewing is still only a delivery method. It does not decide whether the text is translation, captioning, or both.
 
+It is not automatically the most accessible choice either. Some people may not have a suitable phone, may find a small screen tiring, or may prefer a shared display. The venue may restrict phone use or have unreliable connectivity. A mobile route should be explained before booking, tested in the room, and paired with a suitable fallback for the audience the production intends to serve.
+
 Before choosing projection, mobile viewer delivery, or both, decide:
 
 - what text content the audience needs
@@ -138,6 +140,7 @@ Before choosing projection, mobile viewer delivery, or both, decide:
 - whether the original language should remain visible for some audiences
 - whether the venue has a reliable shared-screen position
 - whether front-of-house staff can explain the audience access route
+- whether the intended users have tested the proposed reading experience
 
 For the product workflow, see [projection and mobile surtitles workflow](https://surtitlelive.com/features).
 
@@ -157,6 +160,7 @@ Before tech rehearsal, a producer or company manager should be able to answer th
 - If using projection, where will the screen or projector output sit?
 - If using mobile viewing, how will audiences receive the link or QR code?
 - If there are multiple languages, who decides which tracks are enabled?
+- Have the phone policy, network conditions, power, and a non-mobile fallback been checked?
 
 **Operation**
 
@@ -164,6 +168,7 @@ Before tech rehearsal, a producer or company manager should be able to answer th
 - Is there a blackout or hide-text procedure if the wrong text appears?
 - What happens if the show changes after the rehearsal?
 - Who confirms the final text before doors open?
+- Has the operator rehearsed jump recovery and the fallback display route?
 
 This checklist is deliberately practical. It keeps the terminology discussion from staying abstract.
 

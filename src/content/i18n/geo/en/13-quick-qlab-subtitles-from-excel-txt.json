@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "en",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
-  "generatedAt": "2026-07-10T04:12:07.371Z",
+  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Key Takeaways for QLab Subtitles",
-    "faq": "Frequently Asked Questions about QLab Subtitles",
-    "glossary": "QLab Subtitle Terminology",
-    "related": "Related Resources for QLab Subtitles"
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Resources"
   },
   "keyTakeaways": [
-    "QLab uses Text cues for displaying subtitles, integrating them into the show timeline.",
-    "Automate QLab subtitle creation from Excel, CSV, or TXT using script-driven workflows.",
-    "Structure source data with one subtitle per row for efficient QLab cue generation.",
-    "A QLab Video License is essential for Text cues to function and project correctly."
+    "QLab displays styled subtitle text with Text cues; a Video License and a correctly configured Stage are required.",
+    "QLab does not natively import XLSX subtitle sheets in one click, but AppleScript or another importer can turn structured Excel, CSV, or TXT data into cues.",
+    "A SurtitleLive Editor QLab Projection Pack is an offline projection handoff; it does not deploy a show or publish to Viewer.",
+    "Finalized-show Viewer sync uses one local Script child per source cue, a loopback bridge, and an explicitly connected and armed ASM console."
   ],
   "faq": [
     {
       "question": "Can QLab display subtitles?",
-      "answer": "Yes, QLab displays subtitles using Text cues, which render styled text as video output. These cues integrate into your show timeline, can be formatted, and assigned to a projector stage, triggered like any other QLab cue."
+      "answer": "Yes. Text cues render styled text through QLab's video system and can be assigned to a configured projection Stage."
     },
     {
-      "question": "What's the fastest way to create QLab subtitles from a spreadsheet?",
-      "answer": "The fastest method involves structuring your spreadsheet with one subtitle per row. Then, use an AppleScript to read each row and automatically generate corresponding QLab Text cues, setting properties like text, number, and alignment."
+      "question": "Does QLab natively import an Excel subtitle file?",
+      "answer": "Not as a one-click XLSX subtitle import. A script or importer can read structured spreadsheet, CSV, or TXT data and create QLab Text cues."
     },
     {
-      "question": "Does QLab natively import Excel files for subtitles?",
-      "answer": "QLab does not have a one-click native XLSX subtitle import. Instead, you create QLab Text cues from Excel, CSV, or TXT using script-driven workflows, often adapting patterns from the QLab Cookbook for automation."
+      "question": "Does an Editor QLab Projection Pack sync Viewer?",
+      "answer": "No. The Editor-origin pack is an offline QLab projection handoff. Viewer sync is available only through the finalized-show, operator-armed ASM path."
     },
     {
-      "question": "What QLab license is required to use Text cues for subtitles?",
-      "answer": "A QLab Video License or a Bundle License that includes Video is required to use Text cues. Without it, QLab will mark Text cues as broken, and they will not be able to project any subtitle content."
+      "question": "Does the local bridge call SurtitleLive's cloud?",
+      "answer": "No. It relays a bounded, non-secret cue identity locally to the open ASM console; ASM publishes Viewer state through the existing control channel."
     }
   ],
   "glossary": [
     {
       "term": "Text cue",
-      "definition": "A QLab cue type that displays styled text as video output, commonly used for subtitles or other projected text."
+      "definition": "A QLab cue that renders styled text as video output."
     },
     {
-      "term": "Surtitles",
-      "definition": "Projected text displayed above a stage, typically providing translations of dialogue or lyrics for an audience."
+      "term": "QLab Projection Pack",
+      "definition": "A SurtitleLive export containing a static importer, cue data, operator instructions, and supporting files for QLab."
     },
     {
-      "term": "QLab workspace",
-      "definition": "The primary document in QLab where all cues, settings, and show logic are organized and saved."
+      "term": "Stable cue key",
+      "definition": "A non-secret SurtitleLive identity used to update the matching caption Group across revised imports."
     },
     {
-      "term": "AppleScript",
-      "definition": "A scripting language for macOS that allows automation of applications, including QLab, to perform repetitive tasks like cue generation."
+      "term": "Loopback bridge",
+      "definition": "The local service on 127.0.0.1:37621 that relays finalized-show QLab Script events to ASM."
     },
     {
-      "term": "Stage",
-      "definition": "In QLab, a virtual representation of a physical video output device or screen, to which Text cues are assigned for projection."
+      "term": "ASM console",
+      "definition": "The operator surface that must be open, unlocked, connected, Viewer-ready, and armed before accepting QLab control."
     }
   ]
 }

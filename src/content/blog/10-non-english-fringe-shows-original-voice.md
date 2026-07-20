@@ -1,6 +1,6 @@
 ---
 title: 'Translation as Hospitality: Welcoming Fringe Audiences Without Losing the Original Voice'
-description: 'A reflection for non-English Fringe companies on English surtitles, mobile language choice, and translation as hospitality: helping audiences enter the work without flattening the original voice.'
+description: 'A reflection for non-English Fringe companies on translation as hospitality: preserving artistic voice while designing honest, usable routes into the work.'
 pubDate: '2026-05-23'
 heroImage: './blog-10-1.png'
 heroImageAlt: 'SurtitleLive being tested with projected surtitles in a black box theatre'
@@ -71,6 +71,10 @@ Hospitality does not ask the guest to become the host. It gives the guest a way 
 
 For theatre, that means the audience can understand enough to stay emotionally present while the original language remains alive on stage. They hear the actors' voices. They feel the rhythm of the language. They read the English as a bridge, not as a substitute for the performance.
 
+That bridge is made by people. A translator needs context, authority to question a line, time to see the work in rehearsal, and clear credit for the language the audience will read. “Human review” should not mean asking someone to approve an anonymous machine draft at the last minute. It should mean that a responsible language-maker can shape the text with the production.
+
+Hospitality also requires precision about the service. Translated surtitles can open a work to people who do not understand the spoken language. Accessibility captions may need speaker identification, sound effects, music, and off-stage sound as well. Calling every text track “accessible” can hide what an audience will actually receive.
+
 ## English surtitles are an invitation, not a replacement
 
 For many non-English Fringe companies, English surtitles are the first practical doorway. They help local audiences, reviewers, programmers, and visitors follow a work they might otherwise avoid because they are afraid of being lost.
@@ -81,13 +85,13 @@ Some audience members may need the original language visible because that is how
 
 If every version is forced onto one shared screen, the design quickly becomes crowded. Nobody gets the best reading experience. The English becomes shorter than it should be. The original language becomes tokenistic. Additional languages become almost impossible.
 
-This is where per-device language choice changes the meaning of surtitling.
+This is where per-device language choice can change the meaning of surtitling.
 
 Instead of making one public screen carry every language, each audience member can choose the language they need on their own device. English-speaking audiences read English. Original-language audiences can choose the original text if it is provided. Invited guests or partner venues can follow another prepared language when the company supports it.
 
 The work remains one live performance.
 
-The routes into it multiply.
+The routes into it can multiply—when the production has prepared, reviewed, and enabled those languages.
 
 ![SurtitleLive viewer language selector showing multiple prepared language choices](./blog-9-2.png)
 
@@ -110,6 +114,8 @@ SurtitleLive is designed around that idea: prepare the text before performance, 
 ![SurtitleLive being tested with projected surtitles in a black box theatre](./blog-10-1.png)
 
 A company can use projection when the room supports it, while also giving audience members a phone-based language option. The same performance can remain one shared event without forcing every audience member into the same reading route.
+
+But a phone is not a neutral answer for everyone. Some audience members may not have a suitable device, may find a small screen tiring, or may prefer not to divide their attention. A venue may have a phone policy or unreliable connectivity. Projection can provide a shared focal point; mobile viewing can provide individual language choice. Hospitality means choosing deliberately, explaining the route before booking, and preparing another way in when the primary route is unsuitable.
 
 The point is not to make theatre more technical.
 
@@ -145,9 +151,9 @@ But for non-English work, audience growth should not be framed as a trick.
 
 It is a result of care.
 
-When you make the language route clear, more people can feel able to choose your show. When you say in the listing that English surtitles are available, people who were unsure can buy with confidence. When you let different audience members choose the language they need, you stop treating multilingual audiences as a technical inconvenience.
+When you make the language route clear, more people can feel able to choose your show. When you say in the listing that English surtitles are available, people who were unsure can buy with confidence. When you let different audience members choose from the languages the production has genuinely prepared, you stop treating multilingual audiences as a technical inconvenience.
 
-This is not only accessibility, though accessibility is part of it.
+This can contribute to access, but translation alone is not a complete accessibility service.
 
 It is not only marketing, though marketing benefits from it.
 
@@ -165,3 +171,4 @@ For a step-by-step guide to the practical setup, read [How to Add English Surtit
 
 - [History of the Fringe, Edinburgh Festival Fringe](https://www.edfringe.com/about-us/history-of-the-fringe/)
 - [Getting started as an artist, Edinburgh Festival Fringe](https://www.edfringe.com/take-part/artists/organise-a-show/getting-started/)
+- [How to start making your show accessible, Edinburgh Festival Fringe](https://www.edfringe.com/take-part/artists/organise-a-show/make-your-show-accessible/how-to-start-making-your-show-accessible/)

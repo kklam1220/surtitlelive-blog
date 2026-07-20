@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "10-non-english-fringe-shows-original-voice",
-  "sourceHash": "5b89da87f17215e35e4398603ff99035b931ca355617847b017e8baee6623a26",
-  "generatedAt": "2026-05-21T00:00:00.000Z",
+  "sourceHash": "b27e60b0d5eb31df94e0ca335a4233e099e429085e4d1ff98a2f30b1b7aac6b4",
+  "generatedAt": "2026-07-20T16:59:28.518Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,66 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "SurtitleLive began from a playwright's cross-language problem, not from a software category: how can a performance keep its original language while another audience follows it?",
-    "English surtitles should work as an invitation into a non-English performance, not as a replacement for the voice, rhythm, and cultural memory of the original language.",
-    "Translation as hospitality means designing language routes so more people can meet the work without asking the work to become less itself.",
-    "Mobile language choice lets one live performance support English-speaking audiences, original-language readers, and additional prepared language tracks without crowding one shared screen.",
-    "Quiet technology supports the stage workflow: prepared text, reviewed language choices, live cueing, mobile viewers, Projection Mode, and recovery when the performance changes."
+    "Translation can welcome audiences into a performance without replacing the language, rhythm, and cultural memory that formed it.",
+    "A responsible translator needs context, rehearsal time, authority to question the text, and clear credit—not a last-minute approval task.",
+    "Per-device language choice can widen the routes into one performance, but phones are not a neutral or universal access answer.",
+    "Describe translated surtitles and accessibility captions precisely so audiences know what information and delivery route they will receive."
   ],
   "faq": [
     {
-      "question": "What does \"translation as hospitality\" mean for theatre?",
-      "answer": "Translation as hospitality means giving audiences a real way into a performance without asking the original language to disappear. English surtitles can help people follow the story while the spoken or sung language remains alive on stage."
+      "question": "What does translation as hospitality mean in theatre?",
+      "answer": "It means giving audiences a usable route into a work while allowing its original language and artistic voice to remain alive on stage."
     },
     {
-      "question": "Why should English surtitles not replace the original language?",
-      "answer": "The original language carries rhythm, register, timing, cultural memory, humour, silence, and social pressure. A translation can guide the audience, but the performance loses something if the source language is treated as packaging rather than part of the artwork."
+      "question": "Why should a translator be involved beyond final proofreading?",
+      "answer": "Performance translation needs context, artistic dialogue, rehearsal, authority, and accountability. Those conditions let the translator shape text that belongs to the production."
     },
     {
-      "question": "How can mobile language choice protect the original voice?",
-      "answer": "Mobile viewers let each audience member choose an enabled language on their own device. That means English-speaking audiences can read English, original-language readers can keep the source text visible, and invited guests or touring partners can follow another prepared language when the company supports it."
+      "question": "Does mobile language choice work for every audience?",
+      "answer": "No. It can offer individual language choice, but device access, screen size, attention, venue policy, connectivity, and audience preference must be considered."
     },
     {
-      "question": "Why does live cueing still matter if the surtitles are prepared?",
-      "answer": "Theatre is not playback. Actors pause, lines change, scenes jump, and timing breathes differently from rehearsal. A human operator can hold, advance, recover, or hide prepared surtitles so the language support follows the live event."
-    },
-    {
-      "question": "Is this an accessibility argument or a marketing argument?",
-      "answer": "It is both, but it starts from care. Clear language routes can help more people feel able to choose a non-English show, including local audiences, reviewers, programmers, source-language communities, and multilingual visitors."
-    },
-    {
-      "question": "Where can I find the practical setup guide for Fringe surtitles?",
-      "answer": "For the step-by-step workflow, read Blog 9: How to Add English Surtitles to a Non-English Show at the Edinburgh Fringe Festival. This article explains why the workflow matters artistically; Blog 9 explains how to prepare and run it."
+      "question": "Are translated surtitles a complete accessibility service?",
+      "answer": "Not automatically. Accessibility captions may also need speaker information, sound effects, music, and off-stage sound. The production should describe the service precisely."
     }
   ],
   "glossary": [
     {
       "term": "Translation as hospitality",
-      "definition": "A way of designing translation and surtitles so audiences can enter a work without forcing the original language or cultural voice to disappear."
+      "definition": "Designing translation as an invitation into a work, not as a replacement for its original language."
     },
     {
       "term": "Original voice",
-      "definition": "The rhythm, register, timing, humour, silence, social pressure, and cultural memory carried by the language in which a performance was made."
+      "definition": "The rhythm, register, timing, relationships, and cultural memory carried by the language in which a performance was made."
     },
     {
       "term": "Language route",
-      "definition": "A chosen path into a live performance, such as English surtitles, original-language text, or another prepared language track."
+      "definition": "A prepared way for an audience member to follow a performance, such as English surtitles or another reviewed language track."
     },
     {
-      "term": "English surtitles",
-      "definition": "Prepared English text shown during a live performance to help audiences follow work spoken or sung in another language."
-    },
-    {
-      "term": "Mobile viewer",
-      "definition": "A browser-based audience view opened by QR code or link, allowing each audience member to read an enabled surtitle language on their own device."
-    },
-    {
-      "term": "Projection Mode",
-      "definition": "A surtitle display mode intended for a theatre screen or projector, often used alongside mobile viewers when the venue supports projection."
+      "term": "Per-device language choice",
+      "definition": "A delivery model in which audience members select from enabled languages on their own browser-based viewer."
     },
     {
       "term": "Live cueing",
-      "definition": "The live process of advancing prepared surtitles in time with the performance, including holding, jumping, or hiding text when the show changes."
+      "definition": "A human operator's work of advancing, holding, hiding, or recovering prepared text in time with a live performance."
     }
   ]
 }

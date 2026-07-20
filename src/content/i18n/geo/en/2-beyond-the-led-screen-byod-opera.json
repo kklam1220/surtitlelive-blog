@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "2-beyond-the-led-screen-byod-opera",
-  "sourceHash": "5b0260f5a97b41eb3b6dfc56f552481488bb4ae2b4a1c85f179ec48a33a13985",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
+  "sourceHash": "ffda40004882fc38f20a252e6c2134095a607d12a5d7c2952f8c8ae9ac39653e",
+  "generatedAt": "2026-07-20T16:05:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -11,49 +11,49 @@
     "related": "Related Terms"
   },
   "keyTakeaways": [
-    "BYOD surtitling uses audience smartphones to display subtitles, offering flexibility for diverse performance spaces.",
-    "Fixed LED screens are best for permanent installations in large theatres; BYOD excels in touring and non-traditional venues.",
-    "BYOD surtitling supports multiple languages simultaneously, delivering private subtitle feeds to each audience member's device.",
-    "BYOD systems use dark modes and natural shielding to minimize light spill and respect the theatrical atmosphere."
+    "Shared projection, personal devices, and hybrid delivery create different audience experiences; none is automatically the most accessible choice.",
+    "Mobile surtitles can help with touring, difficult sightlines, and individual language choice, but require device, connectivity, communication, support, and fallback planning.",
+    "A shared display provides a valuable no-personal-device path, while hybrid delivery can broaden access only when both paths are properly rehearsed.",
+    "Multilingual translation and accessibility captions may overlap, but they are not interchangeable audience services."
   ],
   "faq": [
     {
-      "question": "What is BYOD surtitling?",
-      "answer": "BYOD (Bring Your Own Device) surtitling is a web-based system that delivers subtitles directly to the audience's smartphones or tablets. It's ideal for venues where traditional LED screens are impractical."
+      "question": "Are mobile surtitles more accessible than projected surtitles?",
+      "answer": "Not automatically. Mobile surtitles can improve language choice and serve seats without a clear view of a shared screen, but they may exclude patrons without a suitable device, battery, connection, or confidence using the interface. The right choice depends on the audience and venue."
     },
     {
-      "question": "When is BYOD surtitling the best choice?",
-      "answer": "BYOD is best for touring productions, site-specific performances, venues with variable sightlines, or when offering multiple language options. It provides accessibility without the logistical challenges of fixed hardware."
+      "question": "When are BYOD mobile surtitles useful?",
+      "answer": "They can be useful for touring productions, heritage or site-specific venues, variable sightlines, and events that need several language choices. Productions still need to test connectivity and devices, explain phone use, provide staff support, and plan a realistic alternative."
     },
     {
-      "question": "How does BYOD surtitling handle multilingual audiences?",
-      "answer": "BYOD allows for multiple simultaneous language streams. Each audience member selects their preferred language on their device, ensuring a personalized and uncluttered viewing experience."
+      "question": "What is hybrid surtitle delivery?",
+      "answer": "Hybrid delivery combines a shared projected or fixed display with an optional audience browser. It can preserve a common, device-free reading path while adding languages or alternative sightlines, provided both paths are prepared and rehearsed."
     },
     {
-      "question": "Is BYOD surtitling technically reliable?",
-      "answer": "Modern BYOD platforms are designed for live performance, with features like battery optimization and low-bandwidth caching to ensure subtitle synchronization even with limited Wi-Fi or data connectivity."
+      "question": "Do translated surtitles provide a complete accessibility service?",
+      "answer": "No. Translation surtitles help audiences understand dialogue in another language. Accessibility captions may also require speaker identification, meaningful sound information, and editorial decisions shaped by Deaf and hard-of-hearing audiences."
     }
   ],
   "glossary": [
     {
-      "term": "Surtitles",
-      "definition": "Text displayed above or beside a stage to translate dialogue or provide narrative information."
+      "term": "Shared display",
+      "definition": "A projected, LED, or venue-integrated text surface read collectively by the audience."
     },
     {
-      "term": "Cue",
-      "definition": "A specific point in the script or performance that triggers the display of a surtitle."
+      "term": "BYOD mobile surtitles",
+      "definition": "Prepared performance text opened by patrons on their own browser-enabled phone or tablet, usually through a QR code or link."
     },
     {
-      "term": "Script",
-      "definition": "The written text of a play, opera, or other performance, including dialogue and stage directions."
+      "term": "Hybrid delivery",
+      "definition": "A production design that offers both a shared display and a personal-device viewing path."
     },
     {
-      "term": "BYOD",
-      "definition": "Bring Your Own Device; in surtitling, refers to using audience members' personal devices (smartphones, tablets) to display subtitles."
+      "term": "Fallback",
+      "definition": "A tested alternative that preserves a usable audience experience when the preferred display, device, or network path is unavailable."
     },
     {
-      "term": "Character",
-      "definition": "A person or role represented in a dramatic performance."
+      "term": "Accessibility captions",
+      "definition": "Same-language text that may identify speakers and meaningful sounds as well as represent spoken dialogue for Deaf and hard-of-hearing audiences."
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "12-export-translated-play-script-international-submission",
+  "sourceHash": "f38051fe6a8c9714db7e5a17dd90c6a40422fbef0fd578a6dfe2aa6852c6830c",
+  "generatedAt": "2026-07-20T19:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Termes liés"
+  },
+  "keyTakeaways": [
+    "L'export Word produit une seule langue sélectionnée, en mise en page à deux-points ou à nom de personnage centré ; il ne crée pas automatiquement une édition bilingue parallèle.",
+    "Les didascalies peuvent être incluses ou exclues. Pour les lignes cibles manquantes, l'équipe choisit l'arrêt, le texte source, le blanc ou un repère visible.",
+    "L'export est un document de transmission, non une certification de qualité littéraire, de droits, d'approbation artistique ou de conformité au règlement.",
+    "Relecture humaine, version clairement identifiée et consignes actuelles du destinataire restent décisives ; texte intégral, surtitres et sous-titres d'accessibilité sont des livrables différents."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive exporte-t-il deux langues côte à côte ?",
+      "answer": "Non. L'export Word actuel produit une langue sélectionnée. Un texte parallèle exige deux exports ou un document bilingue distinct et relu."
+    },
+    {
+      "question": "Quelles mises en page Word sont proposées ?",
+      "answer": "L'équipe choisit une présentation à deux-points ou un nom de personnage centré. Elle peut aussi inclure ou omettre les didascalies reconnues."
+    },
+    {
+      "question": "Comment traiter les traductions manquantes ?",
+      "answer": "L'export peut s'arrêter, reprendre la source, laisser la ligne vide ou signaler le manque. Pour une soumission externe, l'arrêt est généralement le point de départ le plus sûr."
+    },
+    {
+      "question": "Le fichier exporté est-il prêt pour la représentation ?",
+      "answer": "Pas automatiquement. Une copie de lecture exige encore validation humaine et vérification des consignes ; le direct nécessite une segmentation et des répétitions propres."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Export Word unilingue",
+      "definition": "Fichier `.docx` contenant la langue disponible choisie pour cet export."
+    },
+    {
+      "term": "Mise en page à deux-points",
+      "definition": "Présentation où le nom du personnage est suivi de deux-points puis du dialogue."
+    },
+    {
+      "term": "Personnage centré",
+      "definition": "Présentation où le nom du personnage figure seul sur une ligne centrée."
+    },
+    {
+      "term": "Règle de traduction manquante",
+      "definition": "Choix conscient entre arrêt, reprise de la source, blanc ou marquage lorsqu'une ligne cible manque."
+    },
+    {
+      "term": "Document de transmission",
+      "definition": "Copie de travail ou de soumission lisible qui ne remplace ni validation humaine, ni vérification des droits, ni consignes du destinataire."
+    }
+  ]
+}

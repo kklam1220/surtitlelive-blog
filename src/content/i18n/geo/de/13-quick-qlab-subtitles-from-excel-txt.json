@@ -2,58 +2,58 @@
   "version": 1,
   "locale": "de",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "4676ada59631807a66bb86cbcf1349994a8ba0d2359d48ea436d554fbdd29357",
-  "generatedAt": "2026-07-10T04:12:18.383Z",
+  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "generatedAt": "2026-07-20T23:00:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Wichtige Erkenntnisse",
-    "faq": "Häufig gestellte Fragen",
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
     "glossary": "Glossar",
     "related": "Verwandte Themen"
   },
   "keyTakeaways": [
-    "QLab zeigt Untertitel als Text-Cues an, steuerbar wie andere Show-Elemente.",
-    "Automatisieren Sie die Erstellung von Untertiteln aus Excel, CSV oder TXT, um Zeit zu sparen.",
-    "Ein AppleScript-Workflow wandelt Tabellenzeilen effizient in QLab-Text-Cues um.",
-    "Richten Sie die QLab-Videoausgabebühne vor dem Import sorgfältig ein und testen Sie sie."
+    "QLab 5 kann Untertitel mit Text-Cues projizieren; Excel, CSV oder TXT dienen dabei als Quelldaten für einen AppleScript- oder Importer-Workflow, nicht als nativer Ein-Klick-XLSX-Import.",
+    "Vor dem Stapelimport müssen Video- oder Bundle-Lizenz, Stage, Output Route und Projektor mit einem manuellen Text-Cue geprüft werden. Automatisierung wiederholt auch eine falsche Ausgabezuordnung.",
+    "Ein QLab Projection Pack hält geprüfte Übersetzungen und stabile SurtitleLive-Cue-Schlüssel außerhalb des QLab-Showfiles und kann passende Gruppen bei einem erneuten Import gezielt aktualisieren, ohne fremde Show-Cues zu überschreiben.",
+    "Viewer-Sync ist ein ausdrücklich freigegebener Weg: QLab sendet eine nicht geheime Cue-Identität an die Loopback-Bridge auf 127.0.0.1:37621; die offene ASM-Konsole veröffentlicht erst nach Go Live und Allow QLab control über den bestehenden Control Channel."
   ],
   "faq": [
     {
-      "question": "Kann QLab Untertitel anzeigen?",
-      "answer": "Ja, QLab zeigt Untertitel als Text-Cues an. Diese können formatiert, einer Videoausgabebühne zugewiesen und wie andere Cues ausgelöst werden, was sie zu einem integralen Bestandteil der Show-Steuerung macht."
+      "question": "Kann QLab Untertitel aus Excel, CSV oder TXT erzeugen?",
+      "answer": "Ja, über einen tabellen- oder skriptgesteuerten Import. Die öffentliche QLab-Dokumentation zeigt Excel-Automatisierung mit AppleScript, aber keinen nativen Ein-Klick-Import für XLSX-Untertitel. Eine Datenzeile oder ein Textblock wird zur Quelle eines QLab-Text-Cues."
     },
     {
-      "question": "Wie erstelle ich schnell QLab-Untertitel aus Excel, CSV oder TXT?",
-      "answer": "Nutzen Sie einen skriptgesteuerten Workflow. Eine Tabellenzeile oder ein Textblock wird dabei in einen QLab-Text-Cue umgewandelt. AppleScript kann Excel-Daten lesen und entsprechende Cues im QLab-Arbeitsbereich generieren."
+      "question": "Was muss vor dem Import getestet werden?",
+      "answer": "Prüfen Sie eine aktive Video- oder Bundle-Lizenz und testen Sie einen manuellen Text-Cue über Stage, Region, Output Route und Projektor. Erst wenn der Text auf dem realen Projektor erscheint und lesbar ist, sollte die Stapelerzeugung beginnen."
     },
     {
-      "question": "Welche Struktur ist für Untertitel-Quelldaten am besten geeignet?",
-      "answer": "Eine einfache Struktur mit einem Untertitel pro Zeile ist ideal. Wesentliche Spalten sind `cue_number` und `subtitle_text`. Zusätzliche Spalten wie `operator_note` oder `language` können bei Bedarf hinzugefügt werden."
+      "question": "Was ist der Unterschied zwischen Editor-Pack und finalisiertem Show-Pack?",
+      "answer": "Das Editor-Paket ist eine Offline-Übergabe für lokale QLab-Projektion. Das Projection Pack einer finalisierten Show kann zusätzlich höchstens ein lokales Script-Kind pro Quell-Cue enthalten, damit eine ausdrücklich verbundene und freigegebene ASM-Konsole den bereits bereitgestellten Viewer folgen lässt."
     },
     {
-      "question": "Was ist vor dem Import von Untertiteln in QLab wichtig?",
-      "answer": "Konfigurieren und testen Sie die QLab-Videoausgabebühne sorgfältig. Stellen Sie sicher, dass Schriftart, Größe, Farbe und Position des Textes korrekt sind und vom Publikum gut lesbar sind, bevor Sie die Automatisierung starten."
+      "question": "Kommuniziert QLab direkt mit Zuschauertelefonen oder der Cloud?",
+      "answer": "Nein. Das Script-Kind sendet nur eine nicht geheime Cue-Identität an die Loopback-Bridge auf dem Show-Mac. Die Bridge meldet lokal an die offene ASM-Konsole; nur ASM veröffentlicht den vorhandenen cue.jump-Zustand über den bestehenden Control Channel."
     }
   ],
   "glossary": [
     {
-      "term": "Text-Cue",
-      "definition": "Ein QLab-Cue-Typ, der formatierten Text als Videoausgabe anzeigt. Er wird für Untertitel oder Übertitel verwendet und kann Schriftart, Größe, Farbe und Position steuern."
+      "term": "QLab Text-Cue",
+      "definition": "Ein QLab-Cue, der formatierten Text als Videoausgabe rendert und einer Video-Stage für Projektion zugewiesen werden kann."
     },
     {
-      "term": "Übertitel",
-      "definition": "Text, der während einer Theateraufführung über der Bühne projiziert wird, um Dialoge zu übersetzen oder für Hörgeschädigte zugänglich zu machen."
+      "term": "QLab Projection Pack",
+      "definition": "Ein SurtitleLive-Export mit START-HERE-Anleitung, statischem AppleScript-Importer und vorbereiteten Cue-Daten für lokale QLab-Projektion; finalisierte Show-Packs können optional den ASM-Sync-Weg enthalten."
     },
     {
-      "term": "AppleScript",
-      "definition": "Eine Skriptsprache für macOS, die zur Automatisierung von Anwendungen wie QLab verwendet wird, um wiederkehrende Aufgaben zu vereinfachen, z.B. das Generieren vieler Cues."
+      "term": "Stabiler Cue-Schlüssel",
+      "definition": "Eine nicht geheime SurtitleLive-Identität, mit der erneute Importe passende Caption-Gruppen aktualisieren können, ohne fremde QLab-Cues zu verändern."
     },
     {
-      "term": "Videoausgabebühne",
-      "definition": "Eine Konfiguration in QLab, die festlegt, auf welchem Projektor oder Bildschirm Videoinhalte, einschließlich Text-Cues, angezeigt werden sollen."
+      "term": "Loopback-Bridge",
+      "definition": "Lokaler Dienst auf 127.0.0.1:37621, der begrenzte Cue-Identitäten vom QLab-Script an die bereits offene ASM-Konsole weitergibt und keinen zweiten Cloud-Pfad bildet."
     },
     {
-      "term": "Cue-Nummer",
-      "definition": "Eine eindeutige alphanumerische Kennung, die jedem Cue in einer QLab-Cue-Liste zugewiesen wird, um ihn zu organisieren und auszulösen."
+      "term": "ASM-Freigabe",
+      "definition": "Bewusste Bedienfolge aus QLab enabled, Connect local bridge, ausdrücklichem Go Live und anschließend Allow QLab control."
     }
   ]
 }

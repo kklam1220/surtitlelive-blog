@@ -2,79 +2,58 @@
   "version": 1,
   "locale": "de",
   "slug": "11-captions-vs-surtitles-edinburgh-fringe",
-  "sourceHash": "fe2cd59ade90f80dcf4ab5151bc0be7486e7809efd2d799412d0b91e2085c6b2",
-  "generatedAt": "2026-06-01T01:17:14.459Z",
+  "sourceHash": "b20e55c738a80b3313ce78d79d01472672b6f347bcc2dd5ee808f8e6c2fcb489",
+  "generatedAt": "2026-07-20T21:15:00.000Z",
   "sectionTitles": {
-    "keyTakeaways": "Wichtige Erkenntnisse",
-    "faq": "Häufig gestellte Fragen",
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
     "glossary": "Glossar",
     "related": "Verwandte Begriffe"
   },
   "keyTakeaways": [
-    "Für Edinburgh Fringe Teams beschreiben barrierefreie Captions, Übertitel, Untertitel, der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum unterschiedliche Entscheidungen, nicht einen austauschbaren Workflow.",
-    "Eine nicht-englischsprachige Show, die hauptsächlich eine Übersetzung benötigt, sollte in der Regel vorbereitete englische Übertitel für die Live-Aufführung angeben, auch wenn der publikumswirksame Text „englische Untertitel“ lautet.",
-    "Barrierefreie Captions können Sprecheridentifikation, Musik, Soundeffekte, Off-Stage-Audio und andere Zugangsinformationen erfordern, nicht nur übersetzte Dialoge.",
-    "Der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum sind Ausspielungsoptionen für das Publikum; sie sollten gewählt werden, nachdem das Team definiert hat, ob der Text eine Übersetzung, eine barrierefreie Captionsung oder beides ist.",
-    "Vor der technischen Probe sollten Fringe-Teams den Textinhalt, die Ausspielungsmethode, die Sprachspuren, die Zugangsbedingungen und die Verantwortlichkeit für den Live-Textbetrieb bestätigen."
+    "Übertitel, barrierefreie Captions und der publikumsnahe Begriff „Untertitel“ können sich überschneiden, sind aber keine identische Produktionsvorgabe. Klären Sie zuerst, ob es um Übersetzung, Zugang zu Toninformationen, die Ausspielung oder mehrere dieser Aufgaben geht.",
+    "Übertitel übersetzen in der Regel gesprochene oder gesungene Inhalte. Barrierefreie Captions können zusätzlich Sprecherkennzeichnungen, Musik, Geräusche und Stimmen aus dem Off enthalten.",
+    "Projektion und mobile Ansicht sind Ausspielungswege, keine Inhaltsarten. Mobil ist nicht automatisch barriereärmer: Gerät, Bildschirmgröße, Handyrichtlinie des Spielorts, Verbindung, Strom und eine geeignete Alternative müssen geprüft werden.",
+    "Vor der technischen Probe sollten die vorgesehenen Nutzerinnen und Nutzer die Lesesituation testen. Die Bedienperson sollte außerdem Cue-Sprünge, das Ausblenden falscher Texte und den Wechsel auf den alternativen Anzeigeweg proben."
   ],
   "faq": [
     {
-      "question": "Braucht eine Edinburgh Fringe Show barrierefreie Captions oder Übertitel?",
-      "answer": "Das hängt vom Publikumsbedarf ab. Eine nicht-englischsprachige Show, die eine Übersetzung für englischsprachige Zuschauer benötigt, braucht in der Regel vorbereitete englische Übertitel. Eine Show mit Zugangsbedingungen für gehörlose oder schwerhörige Menschen benötigt möglicherweise barrierefreie Captions, die Sprecherkennzeichnungen, Musik, Soundeffekte und andere Audioinformationen enthalten."
+      "question": "Braucht unsere Edinburgh-Fringe-Produktion Übertitel oder barrierefreie Captions?",
+      "answer": "Wenn vor allem gesprochener oder gesungener Text aus einer anderen Sprache ins Englische übersetzt werden soll, sind meist englische Übertitel gemeint. Wenn taube oder schwerhörige Menschen auch relevante Toninformationen erhalten sollen, können Captions mit Sprecherkennzeichnungen, Musik, Geräuschen und Stimmen aus dem Off erforderlich sein. Manche Produktionen benötigen beides."
     },
     {
-      "question": "Können wir in unserer Fringe-Ankündigung „englische Untertitel“ angeben?",
-      "answer": "Ja. „Englische Untertitel“ ist oft eine klare, publikumswirksame Formulierung. Für die Produktionsplanung sind vorbereitete englische Übertitel in der Regel präziser, wenn der Text eine überprüfte Übersetzung ist, die während einer Live-Show eingespielt wird."
+      "question": "Dürfen wir in der Ankündigung „englische Untertitel“ schreiben?",
+      "answer": "Ja, wenn dieser Begriff für das Publikum am verständlichsten ist. Intern sollte die Produktionsvorgabe genauer sein, etwa: vorab übersetzte und geprüfte englische Übertitel, die während der Aufführung live eingespielt werden."
     },
     {
-      "question": "Was ist der Unterschied zwischen Übertiteln und barrierefreien Captions für Fringe-Produktionen?",
-      "answer": "Übertitel bedeuten in der Regel vorbereiteten Übersetzungstext für eine Live-Aufführung in einer anderen Sprache. Barrierefreie Captions unterstützen in der Regel den Zugang zu Sprach- und Toninformationen, einschließlich Dialogen, Sprecheridentifikation, Stimmen von außerhalb der Bühne, Musik oder Effekten."
+      "question": "Ist die mobile Ansicht barrierefreier als Projektion?",
+      "answer": "Nicht grundsätzlich. Mobil ermöglicht eine individuelle Sprachwahl, aber nicht alle Menschen haben ein geeignetes Gerät oder lesen gern auf einem kleinen Bildschirm. Prüfen Sie die Handyrichtlinie, Verbindung, Stromversorgung und Publikumsführung im Raum, testen Sie mit den vorgesehenen Nutzerinnen und Nutzern und planen Sie eine passende Alternative."
     },
     {
-      "question": "Sind der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum dasselbe wie barrierefreie Captions oder Übertitel?",
-      "answer": "Nein. Der Projektionsmodus und die Ausspielung über die mobile Ansicht für das Publikum beschreiben, wie das Publikum den Text erhält. Barrierefreie Captions und Übertitel beschreiben, welche Art von Text vorbereitet wird."
-    },
-    {
-      "question": "Was sollte ein Produzent vor der technischen Probe bestätigen?",
-      "answer": "Bestätigen Sie, ob die Show englische Übertitel, barrierefreie Captions oder beides benötigt; welche Sprachen aktiviert sind; ob Projektion, mobile Ansicht für das Publikum oder beides verwendet wird; wer den Text überprüft; und wer die Live-Ausspielung bedient oder überwacht."
-    },
-    {
-      "question": "Wann passt SurtitleLive zu einer Fringe Show?",
-      "answer": "SurtitleLive passt am besten, wenn das Team ein Skript oder einen größtenteils stabilen Aufführungstext hat, den Text vor der Premiere überprüfen kann und vorbereiteten Text benötigt, der während einer Live-Show über den Projektionsmodus, die mobile Ansicht für das Publikum oder beides bereitgestellt wird."
+      "question": "Was muss vor der technischen Probe feststehen?",
+      "answer": "Definieren Sie Textart und Sprachen, Projektion und mobile Ausspielung, Hinweise des Publikumsdienstes, Netzwerk und Strom, die Alternative bei Ausfall, die Person für die Schlussredaktion sowie die Bedienperson für die Live-Cues."
     }
   ],
   "glossary": [
     {
-      "term": "Englische Übertitel",
-      "definition": "Vorbereiteter englischer Übersetzungstext, der während einer nicht-englischsprachigen Live-Aufführung angezeigt oder bereitgestellt wird."
+      "term": "Übertitel",
+      "definition": "Vorbereiteter Text, der gesprochene oder gesungene Inhalte einer anderssprachigen Live-Aufführung übersetzt und passend zum Bühnengeschehen angezeigt wird."
     },
     {
       "term": "Barrierefreie Captions",
-      "definition": "Text, der Dialoge und relevante Toninformationen darstellt und oft zur Unterstützung von gehörlosen oder schwerhörigen Zuschauern verwendet wird."
+      "definition": "Textangebot, das neben Dialogen je nach Bedarf auch Sprecherinnen und Sprecher, Musik, Geräusche und Stimmen aus dem Off wiedergibt."
     },
     {
       "term": "Untertitel",
-      "definition": "Ein bekannter, publikumswirksamer Begriff für übersetzten oder transkribierten Text, der oft umgangssprachlich verwendet wird, auch wenn der Produktions-Workflow Live-Übertitelung ist."
+      "definition": "Ein breiter, publikumsnaher Begriff. Als interne Produktionsvorgabe muss er um Inhalt, Ausspielungsweg und Live-Betrieb präzisiert werden."
     },
     {
-      "term": "Projektionsmodus",
-      "definition": "Eine Anzeigeform für Theaterleinwände oder Projektoren, wenn der Spielort gemeinsam sichtbaren Text unterstützt."
+      "term": "Ausspielungsweg",
+      "definition": "Die Art, wie vorbereiteter Text das Publikum erreicht: über eine gemeinsame Projektion, eine mobile Browseransicht oder beide Wege."
     },
     {
-      "term": "Mobiler Viewer",
-      "definition": "Eine browserbasierte Zuschaueransicht, die per Link oder QR-Code geöffnet wird, damit Zuschauer aktivierte Texte auf ihren eigenen Telefonen lesen können."
-    },
-    {
-      "term": "Sprecheridentifikation",
-      "definition": "Informationen in barrierefreien Captions, die dem Publikum mitteilen, wer spricht, besonders wenn der Sprecher visuell nicht offensichtlich ist."
-    },
-    {
-      "term": "Toninformationen",
-      "definition": "Inhalt von barrierefreien Captions, der bedeutungsvolle Nicht-Dialog-Audios wie Musik, Geräusche von außerhalb der Bühne, Effekte oder Stille darstellt."
-    },
-    {
-      "term": "Technische Probe",
-      "definition": "Die Probenphase, in der die Produktion die Einrichtung des Veranstaltungsortes, die Ausspielungsmethode, das Text-Timing und den Live-Betrieb vor der Aufführung testet."
+      "term": "Alternativer Anzeigeweg",
+      "definition": "Eine vorab geprüfte und geprobte Ersatzlösung, wenn die primäre Projektion oder mobile Ausspielung für das vorgesehene Publikum nicht funktioniert."
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
+  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "generatedAt": "2026-07-21T00:15:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "よくある質問",
+    "glossary": "用語集",
+    "related": "関連リソース"
+  },
+  "keyTakeaways": [
+    "SurtitleLive Fringe Support Programme 2026は、選考された公演へProを14日間無償提供する独立プログラムです。助成金、翻訳委託、認証、運用代行ではありません。",
+    "アクセシビリティ字幕は台詞だけでなく、話者や重要な音の情報も扱います。翻訳字幕だけを用意しても、自動的にアクセシビリティ字幕になるわけではありません。",
+    "採択と利用期間はSurtitleLiveからの書面通知でのみ確定します。継続課金へ自動移行することはありません。",
+    "QLabのライブ同期は、同じMac上のloopback bridgeからASMを経由し、オペレーターがGo LiveとAllow QLab controlを明示的に選んだ後に動作します。手動ASM操作をフォールバックとして残します。"
+  ],
+  "faq": [
+    {
+      "question": "このプログラムはEdinburgh Festival Fringe Societyの公式支援ですか？",
+      "answer": "いいえ。SurtitleLiveが独立して運営するプログラムであり、Fringe Societyや記事内で名称を挙げたフェスティバルとの提携・推薦を意味しません。会場と各フェスティバルの最新要件も別途確認してください。"
+    },
+    {
+      "question": "観客のスマートフォンへ字幕を届けるのに専用アプリは必要ですか？",
+      "answer": "必要ありません。観客はQRコードから標準のモバイルブラウザでViewerを開きます。ただし通信環境が必要で、スマートフォン対応だけでアクセシブルな体験が保証されるわけではありません。"
+    },
+    {
+      "question": "14日間の無償利用後、自動的に有料契約へ切り替わりますか？",
+      "answer": "切り替わりません。これは選考された公演に書面で付与する期間限定の利用枠です。通常購入には公開中の料金案内が適用されます。"
+    },
+    {
+      "question": "インターネットが途切れてもQLabで投影を続けられますか？",
+      "answer": "別途準備して稽古したローカルQLab Projection Packなら、ローカル投影を続けられます。ただしモバイルViewerをオフラインにする機能ではなく、ライブ同期にはASMを介したオペレーター有効化経路が必要です。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "アクセシビリティ字幕",
+      "definition": "ろう者・難聴者にも公演情報を届けるため、台詞に加えて話者や重要な音の情報などを含める文字サービス。"
+    },
+    {
+      "term": "翻訳字幕（surtitle）",
+      "definition": "舞台で話される原語を、観客が読む別の言語へ翻訳して表示する文字。"
+    },
+    {
+      "term": "無償利用枠",
+      "definition": "選考された公演に書面で確認した14日間だけ付与されるSurtitleLive Pro利用権。継続課金契約ではありません。"
+    },
+    {
+      "term": "Loopback bridge",
+      "definition": "同じMac上でQLabの非機密cue identityをASM consoleへ渡すローカル中継機能。SurtitleLive backendへ直接送信しません。"
+    },
+    {
+      "term": "利用者検証",
+      "definition": "想定する観客とともに、読みやすさ、案内、表示位置、通信、音情報などを実際の利用条件で確かめること。"
+    }
+  ]
+}

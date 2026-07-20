@@ -1,426 +1,230 @@
 ---
-title: 'How to Prepare and Export a Formatted Translated Play Script for International Submission'
-description: 'Learn how to prepare, review, and export a formatted translated play script for festivals, overseas producers, co-productions, and international theatre collaboration.'
+title: 'How to Export a Translated Play Script for International Submission'
+description: 'A practical workflow for reviewing and exporting a translated theatre script as a Word document—without confusing a readable handoff with a finished literary translation.'
 pubDate: '2026-06-29'
 heroImage: './blog-12.png'
-heroImageAlt: 'A formatted translated play script prepared for international theatre submission'
+heroImageAlt: 'A reviewed translated play script prepared as a Word document for an international theatre reader'
 tags: ['Play Translation', 'Theatre Translation', 'Script Export', 'International Theatre', 'SurtitleLive']
 ---
 
-**Core Summary:**  
-A translated play script is only useful for international submission if it is readable, structured, and clearly formatted. Translation is the first step, but theatre teams also need to preserve character names, dialogue blocks, stage directions, scene structure, and version labels. SurtitleLive helps teams move from an original Word script to reviewed translations, then export a formatted translated script that can be shared with festivals, overseas producers, translators, dramaturgs, or co-production partners.
+**Short answer:** A translated play script is ready to export when the target-language lines have been reviewed in context, speakers and stage directions are correctly identified, missing translations are handled deliberately, and the resulting Word document matches the recipient’s requirements. SurtitleLive can export one selected language in a readable `.docx` layout. The export is a handoff document—not proof that the translation, rights, or submission package is complete.
 
-Many playwrights and theatre companies think the hardest part of sending a play overseas is translation.
+Sending a play across languages involves more than replacing one sentence with another.
 
-Translation is difficult, but it is only half the problem.
+The reader needs to know who is speaking, what is spoken, what is a stage direction, and which version they are reading. The translator needs enough context to preserve voice and dramatic action. The playwright or producing team needs a reliable way to review changes without losing lines between documents.
 
-After the words are translated, someone still has to rebuild the script. Character names must stay consistent. Dialogue must remain readable. Stage directions must not be mistaken for spoken lines. Scene breaks must survive. The final file must look like a play script, not a copied machine-translation output.
+Formatting matters because it reduces friction. It does not, by itself, make a translation artistically or administratively ready.
 
-That is the workflow problem SurtitleLive is designed to reduce.
+That distinction shapes a better workflow: keep the script structured, review the language inside that structure, export a readable copy, and then complete the recipient-specific title page, credits, rights information, and supporting materials outside the export where necessary.
 
-Instead of treating translation as a pile of disconnected text, SurtitleLive keeps the play as a structured theatre document. The team can review the translated lines, refine the language, and then export a formatted translated script for international readers.
+## A clean document is not the same as a finished translation
 
-For playwrights, producers, translators, and theatre companies preparing for overseas submissions, festivals, residencies, touring discussions, or co-productions, this can turn translation from a messy copy-paste process into a cleaner production workflow.
+A polished Word file can still contain the wrong voice, a missed joke, an inconsistent name, or a stage direction accidentally treated as dialogue.
 
-## Translation is only the first step
+Conversely, a strong translation can become difficult to assess if speaker labels drift, paragraphs are merged, or several undocumented drafts circulate at once.
 
-A translated play script is not finished just because the words have been converted into another language.
+International readers encounter the work through both layers:
 
-A theatre script has structure:
+- **The translation layer:** meaning, voice, rhythm, register, humour, cultural context, and performability
+- **The document layer:** speakers, dialogue order, stage directions, spacing, version identity, and readable navigation
 
-- character names
-- dialogue
-- stage directions
-- act and scene breaks
-- production notes
-- songs or poetic passages
-- repeated phrases
-- pauses, silence, and rhythm
-- formatting conventions that help the reader understand what is spoken and what is not
+Neither layer should be mistaken for the other. Software can help keep lines connected and produce a consistent document. Artistic approval still belongs to the people responsible for the work.
 
-When a script is copied into a generic translation tool, much of that structure can be lost.
+## Decide what the recipient actually needs
 
-The result may contain translated text, but not a usable translated script.
+“International submission” is not one universal format. A festival reader, literary department, translator, dramaturg, co-producer, and rehearsal room may all need different documents.
 
-For example, a machine translated output may give you a long block of text. It may translate character names inconsistently. It may merge stage directions into dialogue. It may remove line breaks that matter. It may produce something that helps you understand the meaning, but still leaves you with hours of manual formatting before the file can be sent to another theatre.
+Before exporting, ask the recipient:
 
-For international submission, presentation matters.
+- Which language should the reading copy use?
+- Do they want a complete script or an excerpt?
+- Do they require a particular file type, page style, or naming convention?
+- Should stage directions be included?
+- Do they need the original text as a separate reference file?
+- Which credits, rights statements, contact details, or declarations are required?
+- Is this a reading copy, a review draft, a rehearsal draft, or a performance adaptation?
 
-A festival reader, overseas producer, dramaturg, or co-production partner should not have to reconstruct your script before they can read it. They need a clean document that shows the play’s structure clearly.
+Follow the receiving organisation’s current instructions. A general blog post cannot replace a festival’s submission rules, a publisher’s house style, or advice about translation and performance rights.
 
-That is why the export stage matters.
+## What SurtitleLive’s Word export does
 
-## Why a formatted translated script matters for international theatre
+SurtitleLive’s Editor can export a saved script as a Word `.docx` document. For each export, the team selects one available language.
 
-When you send a play to another country or region, the translated script often becomes the first bridge between your work and a new artistic community.
+The Word export offers:
 
-The reader may not know your language, your theatre scene, your cultural context, or your original performance style. The translated script has to help them understand the work clearly enough to imagine it on stage.
+- a **colon layout**, with the speaker label followed by dialogue
+- a **centred-character layout**, with the speaker name on a separate centred line
+- the choice to include or omit recognised stage directions
+- a choice for handling missing target-language lines
 
-A formatted translated script can help with:
+The missing-translation choices matter. A team can stop the export when translated lines are missing, fall back to source text, leave those lines blank, or mark them for attention. For a submission copy, stopping on missing translations is usually the safest starting point because it makes incompleteness visible before the file leaves the team.
 
-| Use case | Why formatting matters |
-| --- | --- |
-| Festival submission | Readers can follow the story, characters, and scene flow without confusion |
-| Overseas producer review | Producers can assess whether the work fits their season, venue, or audience |
-| Co-production discussion | Partners can discuss the same scenes, lines, and characters more precisely |
-| Translation review | Translators and dramaturgs can compare source and target text more easily |
-| Residency or grant application | Panels can read the play as a coherent theatre document |
-| Rehearsal planning | Directors and actors can understand who speaks, when, and in what context |
-| Future surtitles or captions | Structured translated text can later be adapted into live cue text |
+The export uses the script lines and translations saved in the Editor. It creates a readable working document; it does not automatically create a festival title page, character list, rights notice, translator biography, contact sheet, or bilingual parallel edition.
 
-A formatted translated script is not just prettier than raw translation output. It is more useful.
+## A reliable workflow from source script to reading copy
 
-It tells the reader:
+### 1. Begin with the clearest source document available
 
-- who is speaking
-- what is stage direction
-- where the scene changes
-- how the dialogue flows
-- whether the translation is a draft, submission version, or reviewed version
-- how the translated text relates to the original script
+Use a clean Word `.docx` source where possible. Consistent speaker labels, paragraph breaks, and stage directions give the review team better evidence than an irregular document assembled from scans or copied pages.
 
-For international theatre work, that clarity can make the difference between a script being understood and a script being abandoned.
+Layout is evidence, not truth. A centred line may be a character name, a heading, or something else. Italics may indicate stage action in one script and emphasis in another. Always review the detected structure rather than assuming formatting alone has understood the play.
 
-## The copy-paste problem after translation
+### 2. Review speakers, dialogue, and stage directions
 
-Many teams still handle script translation through a manual process:
+Before translating the full work, check the structural decisions that will shape every later output:
 
-1. Copy a section of the original script.
-2. Paste it into a translation tool.
-3. Copy the translated output.
-4. Paste it into a new document.
-5. Rebuild the character names.
-6. Rebuild the line breaks.
-7. Fix stage directions.
-8. Repair formatting.
-9. Repeat until the full script is done.
+- Are speaker names consistent?
+- Is spoken text attached to the correct character?
+- Are stage directions separated from dialogue?
+- Have headings, notes, or front matter been mistaken for spoken lines?
+- Are deliberate silences, repetitions, and interruptions preserved?
 
-This works for a few pages.
+Correcting the structure early is less risky than repairing several translated exports later.
 
-It becomes painful for a full-length play.
+### 3. Draft the translation with dramatic context
 
-It also creates risk. The team may accidentally drop a line, duplicate a line, mislabel a speaker, lose a stage direction, or send an old version after the script changes.
+AI-assisted translation may help produce a first draft, but a play is not a list of isolated sentences. A line can depend on status, relationship, rhythm, physical action, a callback from an earlier scene, or a joke that only works in performance.
 
-The problem is not only translation quality. The problem is document control.
+Give the translator or reviewer access to the surrounding scene and the purpose of the document. A literal reference translation, a literary reading copy, and a speakable stage adaptation are related but distinct forms of work.
 
-If the source script, translated lines, review edits, and final export all live in separate files, the team has to manage consistency manually. That becomes harder when several people are involved: playwright, translator, director, dramaturg, producer, or overseas partner.
+### 4. Review line by line—and scene by scene
 
-SurtitleLive is built around a different idea:
+Line-level alignment helps teams find omissions and compare revisions. Scene-level reading reveals whether the target language actually carries the dramatic movement.
 
-> Keep the script structured from the beginning, review translations inside that structure, then export the translated version from the same workflow.
+Review at least:
 
-## The SurtitleLive workflow: from original script to formatted translated export
+- character voice and relationship
+- rhythm, interruption, and silence
+- idioms, humour, and cultural references
+- names, titles, pronouns, and recurring terminology
+- stage directions that affect interpretation
+- passages intended to be spoken aloud
 
-SurtitleLive supports a script-first workflow for theatre teams that need translated scripts for international use.
+Where possible, read difficult scenes aloud. A sentence that looks elegant on a page may still be awkward in an actor’s mouth.
 
-The process can look like this.
+### 5. Resolve missing translations deliberately
 
-### 1. Upload the original Word script
+Do not let missing text disappear quietly.
 
-Start with the original script, ideally as a clean Word `.docx` file.
+For an internal diagnostic copy, marked gaps or source-language fallback may be useful. For an external reading copy, a fail-closed export is usually clearer: the team resolves the gaps first, then produces the file.
 
-A Word script can preserve important theatre layout signals: paragraph breaks, indentation, speaker labels, italics, and other formatting that helps distinguish dialogue from stage directions.
+If source-language text must remain—for example, a song title, name, or deliberate code-switch—make that an editorial decision, not an accidental fallback.
 
-SurtitleLive uses the structure of the uploaded script as the foundation for the workflow.
+### 6. Export one selected language
 
-### 2. Review the detected script structure
+Choose the language and Word layout that best suits the reader. Include stage directions when they are necessary to understand action, tone, or scene logic.
 
-After upload, the team reviews the script structure.
+SurtitleLive’s Word export is a single-language output. If a partner asks for both source and target text, the team can provide separate exports or assemble a bilingual comparison document outside the current Word-export flow. Do not describe a translated-only export as a bilingual edition.
 
-This may include:
+### 7. Complete the submission package
 
-- speaker names
-- dialogue lines
-- stage directions
-- scene or act divisions
-- character roles
-- lines that need manual correction
+Open the exported `.docx` and add or verify any recipient-specific material that is not part of the automatic export:
 
-This step is important because translation is easier to manage when the system knows what each line is.
+- translated and original title, if requested
+- playwright and translator credits
+- translation status and version date
+- rights holder or representative
+- contact information
+- synopsis, character notes, or cultural notes
+- required declarations or supporting documents
 
-A character line, a stage direction, and a heading should not be treated the same way.
+Keep these facts accurate and proportionate. “AI-assisted draft reviewed by…” is more informative than a vague label such as “final translation” when the work has not received that level of approval.
 
-### 3. Generate or enter translated text
+## Choose the right missing-translation policy
 
-Once the source script is structured, the team can create translated text.
+The four export behaviours serve different purposes:
 
-Depending on the production’s needs, this may involve:
+| Option | What it does | Sensible use |
+| --- | --- | --- |
+| Stop on missing text | Prevents an incomplete translated export | External submission or approval copy |
+| Fall back to source | Uses source text where translation is missing | Internal comparison, with careful review |
+| Leave blank | Omits text for missing target lines | Controlled layout work where blanks are intentional |
+| Mark missing text | Keeps a visible marker beside source text | Translator or editor follow-up |
 
-- AI-assisted translation drafts
-- human translator input
-- edited bilingual drafts
-- existing translations pasted line by line
-- translator-reviewed versions
-- language-specific working drafts
+No setting can decide whether an untranslated line is artistically intentional. The team must make that call.
 
-The important point is that translations remain connected to the original script lines.
+## Translated-only, separate files, or bilingual?
 
-This makes review easier. It also makes export cleaner.
+A translated-only reading copy is often the easiest document for a reader who does not use the source language. It keeps the dramatic flow clear and avoids doubling the page length.
 
-### 4. Review the translation line by line
+Separate source and target files can be useful when a translator, dramaturg, or producer needs both versions but does not require line-by-line comparison.
 
-Before export, the translated text should be reviewed by a human.
+A bilingual parallel document is valuable for close review, but it requires deliberate layout, matching, and version control. SurtitleLive’s current Word export does not automatically build that parallel edition. If one is required, assemble it as a separate editorial deliverable and check that every source segment still matches the correct translation.
 
-This is especially important for theatre, where the right translation is not always the most literal one.
+The best choice depends on the recipient, not on which format looks most comprehensive.
 
-Reviewers can check:
+## Treat version labels as part of the translation
 
-- character voice
-- rhythm
-- subtext
-- cultural references
-- jokes and idioms
-- emotional pressure
-- line length
-- stage clarity
-- consistency of names and terms
+Version language shapes how a reader interprets the document. Useful labels might include:
 
-SurtitleLive helps keep this review inside the script workflow instead of forcing the team to compare disconnected documents.
+- literal reference translation
+- AI-assisted working draft
+- translator-reviewed reading copy
+- playwright-reviewed submission draft
+- rehearsal adaptation
+- performance script
 
-### 5. Choose the translated script export
+Avoid “final” unless the people with authority over the text have actually approved it for the stated purpose.
 
-After the translation has been reviewed, the team can export a formatted translated script.
+Use a date or version number in the document and filename. If the source script changes, record whether the translation has been reconciled with that revision. A beautifully formatted old draft is still the wrong draft.
 
-This is the key step for international submission.
+## A submission copy is not a surtitle file
 
-Instead of sending a raw translation table or a messy copied document, the team can create a readable script version that preserves theatre structure.
+A full translated script and a live surtitle or caption file serve different reading conditions.
 
-A formatted translated export can be used for:
+The script may preserve complete sentences, literary detail, and extended stage directions. Live audience text must be segmented into cues, timed to performance, readable at a distance or on a device, and rehearsed against the actual production.
 
-- festival submissions
-- overseas producer reading copies
-- co-production discussions
-- translator or dramaturg review
-- rehearsal planning
-- partner communication
-- early touring conversations
-- future surtitles or captions preparation
+Surtitles usually translate spoken or sung content for audiences who do not understand the performance language. Accessibility captions may also identify speakers and communicate relevant non-speech sound. A translated script can support both later workflows, but it should not be projected unchanged and called performance-ready.
 
-The export is not just a file. It is a handoff document.
+That separation protects both the writing and the audience experience.
 
-## What should a formatted translated play script include?
+## Final review checklist
 
-A useful translated play script should make the reading experience clear.
+Before sending the file, confirm:
 
-Depending on the submission or collaboration context, it may include:
-
-- translated title
-- original title, if useful
-- author name
-- translator or draft status
-- version label, such as “English submission draft”
-- character list
-- act and scene structure
-- speaker names
-- translated dialogue
-- translated stage directions
-- consistent line spacing
-- clear separation between dialogue and directions
-- optional notes for culturally specific terms
-- contact or rights information, where appropriate
-
-For international submission, version labels are especially important.
-
-A reader should know whether they are reading:
-
-- a machine-assisted first draft
-- a playwright-reviewed submission draft
-- a translator-reviewed script
-- a literal reference translation
-- a rehearsal draft
-- a performance adaptation
-- a surtitle or caption draft
-
-These are different kinds of documents. Clear labelling protects the work from being misunderstood.
-
-## Example: Cantonese original script to English submission draft
-
-Imagine a Hong Kong playwright wants to submit a Cantonese play to a theatre festival in Canada.
-
-The original script is written in Cantonese. The story is specific to Hong Kong family life. The humour depends on rhythm, relationship, and cultural detail. The festival reader, however, needs an English version before deciding whether the work fits the programme.
-
-A practical SurtitleLive workflow might look like this:
-
-1. The playwright uploads the original Cantonese Word script.
-2. SurtitleLive helps identify speakers, dialogue, and stage directions.
-3. The team reviews the script structure.
-4. An English translation draft is created.
-5. The playwright or translator edits the English line by line.
-6. Character names, cultural terms, and emotional lines are checked carefully.
-7. The team exports a formatted English submission draft.
-8. The file is sent to the festival with a clear note about the translation status.
-9. If the show moves forward, the same structured text can later support rehearsal translation, surtitles, captions, projection, or mobile audience viewing.
-
-This workflow does not pretend that software can replace artistic judgment.
-
-It solves a different problem: it helps the team move from original script to reviewed translated document without rebuilding the script manually after translation.
-
-## Example: Spanish play to German co-production draft
-
-Now imagine a Spanish theatre company preparing a co-production conversation with a German venue.
-
-The German partner does not need a final published literary translation yet. They need a readable working draft so they can understand the story, discuss production scale, and decide whether the project is worth developing.
-
-In this situation, the translated export does not have to be the final performance version.
-
-It needs to be:
-
-- readable
-- structured
-- clearly labelled
-- easy to discuss
-- close enough to the original for artistic conversation
-- editable for later translation review
-
-The company can prepare the Spanish source script, generate or enter German translations, review key scenes, then export a formatted German working draft for the partner.
-
-Later, if the project moves into rehearsal or production, the translated text can be refined further.
-
-The export helps the conversation start sooner.
-
-## Export does not replace human review
-
-A formatted translated script is powerful, but it is not a guarantee that the translation is artistically final.
-
-For serious theatre work, human review still matters.
-
-Before using the exported script for major submission, publication, licensing, or production, the team should consider review by:
-
-- the playwright
-- a professional translator
-- a dramaturg
-- a director
-- a native speaker of the target language
-- a rights holder or publisher, if required
-
-SurtitleLive helps with structure, translation workflow, review, and export. It reduces the mechanical burden of rebuilding the translated script. It does not remove responsibility for artistic, legal, or cultural judgment.
-
-That distinction matters.
-
-The goal is not to make theatre translation automatic.
-
-The goal is to make the workflow less fragile.
-
-## Bilingual script or translated-only script?
-
-For international collaboration, teams often ask whether they should send a bilingual script or a translated-only script.
-
-The answer depends on the reader.
-
-A festival reader may prefer a clean translated-only version, especially if they do not read the source language.
-
-A translator or dramaturg may prefer a bilingual version so they can compare source and target lines.
-
-A co-production partner may want both: a clean translated reading draft for general discussion and a bilingual working version for deeper review.
-
-When preparing your export, ask:
-
-- Who will read this file?
-- Do they understand the original language?
-- Are they evaluating the story or checking translation accuracy?
-- Is this for submission, rehearsal, negotiation, or production?
-- Should the document be easy to read, easy to compare, or both?
-
-The best export is the one that fits the next conversation.
-
-## Checklist before exporting a translated play script
-
-Before exporting and sending the translated script, review this checklist:
-
-- Is the source script version correct?
-- Are all translated lines complete?
-- Are character names consistent?
-- Are stage directions clearly separated from dialogue?
-- Are act and scene breaks preserved?
-- Has a human reviewed key emotional scenes?
-- Are cultural references handled intentionally?
-- Are jokes, idioms, songs, or poetic lines reviewed?
-- Is the export labelled with the correct version status?
-- Is the document for submission, collaboration, rehearsal, or performance?
-- Does the recipient need a bilingual version or translated-only version?
-- Are rights, authorship, and translation credit handled correctly?
-- Is the file readable by someone who has never seen the original play?
-
-A strong translated export should help the reader enter the play quickly.
-
-It should not make them solve the formatting first.
-
-## From translated script to live surtitles
-
-One advantage of keeping the script structured is that the translated text can support later production needs.
-
-If the play is accepted by a festival, selected for a reading, or developed for a tour, the same translated material may later become the foundation for:
-
-- live surtitles
-- accessibility captions
-- projected text
-- mobile audience subtitles
-- multilingual viewer options
-- rehearsal translation references
-- operator cue lists
-
-A full translated script is not the same as live surtitles. Surtitles usually need to be shorter, timed, and adapted for reading during performance.
-
-But a structured translated script is a better starting point than a loose translation document.
-
-It means the team does not have to begin again.
-
-## Translation as a bridge to international opportunity
-
-For many theatre-makers, translation is the first step toward international opportunity.
-
-A play cannot be considered by an overseas reader if the reader cannot understand it. A producer cannot discuss a co-production if the story is locked inside a language they do not read. A festival cannot programme a work if the team cannot share a readable version.
-
-But translation alone is not enough.
-
-The translated script must arrive in a form that respects the play.
-
-It should show the reader the characters, rhythm, structure, and world of the work. It should make the script easier to enter, not harder to decode.
-
-That is why formatted export matters.
-
-SurtitleLive helps theatre teams move beyond raw translation. It helps them prepare a reviewed, structured, formatted translated script that can travel across languages, regions, and artistic conversations.
+1. The correct language and script version were selected.
+2. Speakers, dialogue, and stage directions are structurally correct.
+3. Every missing translation is resolved or intentionally identified.
+4. Character names and recurring terms are consistent.
+5. The text has received the level of human review claimed in the version label.
+6. The Word layout is readable and opens correctly.
+7. Required credits, rights information, and contact details are present.
+8. The filename and document identify the version clearly.
+9. The package follows the recipient’s current instructions.
+10. No one is presenting a reading copy as a bilingual edition, legal clearance, or performance-ready surtitle file.
 
 ## FAQ
 
-### How do I export a translated play script?
+### Can SurtitleLive export a translated play as a Word document?
 
-To export a translated play script, first structure the original script, review or create translations for each line, check speaker names and stage directions, then generate a formatted translated version for reading, submission, or collaboration. SurtitleLive supports this script-first workflow so the exported document preserves theatre structure instead of becoming raw translation text.
+Yes. The Editor can export one selected source or translated language as a `.docx`, using either a colon layout or centred character names. The team can choose whether to include stage directions and how to handle missing target-language lines.
 
-### What format should a translated script use for international submission?
+### Does the Word export include two languages side by side?
 
-A translated script for international submission should be readable, clearly labelled, and formatted like a theatre script. It should include character names, dialogue, stage directions, act or scene breaks, and a version label such as “English submission draft” or “working translation.”
+No. The current Word export produces one selected language. Provide separate exports or create a separately reviewed bilingual document when parallel text is required.
 
-### Can AI translation keep play script formatting?
+### Does a successful export mean the translation is complete?
 
-Generic AI translation tools may not preserve play script formatting reliably. They can translate text, but they may lose speaker labels, stage directions, or line structure. A script-first workflow is safer because the translation stays connected to the original theatre structure.
+No. Export confirms that a document could be produced under the selected settings. It does not certify literary quality, rights clearance, recipient compliance, or artistic approval.
 
-### Why is a formatted translated script better than copied translation text?
+### Should stage directions be included?
 
-A formatted translated script is easier for festivals, producers, translators, dramaturgs, and collaborators to read. It shows who is speaking, where scenes change, and what is stage direction. Copied translation text often requires the reader or the theatre team to rebuild the document manually.
+Include them when the reader needs them to understand action, timing, tone, or scene changes. Follow the recipient’s instructions and check that the directions themselves are correctly identified and translated.
 
-### Can SurtitleLive export a translated script?
+### Can the exported script become live surtitles later?
 
-SurtitleLive helps teams keep source script lines and translated lines in a structured workflow, then export formatted materials for review, collaboration, and production preparation. This reduces the need to manually rebuild a translated script after translation.
+It can become a useful source, but live text needs a separate cueing and rehearsal process. Surtitles and accessibility captions also serve different audience needs, so decide what service the production is actually providing.
 
-### Should I send a bilingual script or a translated-only script?
+### What is the safest setting for missing translations?
 
-It depends on the reader. A festival reader may prefer a clean translated-only script. A translator, dramaturg, or co-production partner may prefer a bilingual version for comparison. If possible, prepare the version that best fits the next decision the recipient needs to make.
+For an external submission, stopping the export until missing target-language lines are resolved is generally the clearest default. Other modes can support internal review when their use is deliberate and visible.
 
-### Can the exported translated script later become live surtitles?
+## Export for the next reader, not for the software
 
-Yes. A formatted translated script can become the foundation for live surtitles or captions, but it usually needs additional editing for timing, line length, cueing, and readability during performance.
+The purpose of a translated script is not to demonstrate that a tool produced a file. It is to let another person encounter the play with as little avoidable friction as possible.
 
-### Does exporting a translated script mean the translation is final?
+Structure makes review traceable. Human judgment gives the language life. Clear versioning tells the truth about what the reader has received.
 
-No. Exporting creates a usable document, but the translation should still be reviewed according to its purpose. A submission draft, rehearsal draft, translator-reviewed version, and final performance translation may all require different levels of review.
+Used in that order, Word export becomes what it should be: a dependable handoff between artistic teams, not a substitute for translation, permission, or care.
 
-## Prepare your translated script for international readers
-
-If you are preparing a play for international submission, overseas producer review, festival programming, co-production discussion, or multilingual collaboration, the translation should not end as a messy text file.
-
-It should become a readable theatre script.
-
-SurtitleLive helps theatre teams upload original scripts, review translated lines, and export formatted translated scripts that are easier to share with international readers.
-
-[Start preparing your translated script with SurtitleLive](https://surtitlelive.com/auth/register)
+[Prepare and review your translated script in SurtitleLive](https://surtitlelive.com/auth/register)

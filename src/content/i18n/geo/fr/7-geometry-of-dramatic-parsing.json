@@ -2,58 +2,26 @@
   "version": 1,
   "locale": "fr",
   "slug": "7-geometry-of-dramatic-parsing",
-  "sourceHash": "f101a9a0cbcf0deb1c5730ef4a1a32c0bf1a6d1f05005aadeedefe1be43e1029",
-  "generatedAt": "2026-05-12T01:11:01.368Z",
-  "sectionTitles": {
-    "keyTakeaways": "Points clés",
-    "faq": "FAQ",
-    "glossary": "Glossaire",
-    "related": "Sujets connexes"
-  },
+  "sourceHash": "1b1b0fbc967615f487c184bd6ec9a9d36dd638b53d989a520c752c343aeb7338",
+  "generatedAt": "2026-07-20T18:00:00.000Z",
+  "sectionTitles": { "keyTakeaways": "À retenir", "faq": "Questions fréquentes", "glossary": "Glossaire", "related": "À lire aussi" },
   "keyTakeaways": [
-    "L'analyse de scripts de théâtre est plus une question d'espace que de langage.",
-    "Les scripts occidentaux s'appuient sur la mise en page (indentation, capitalisation) plutôt que sur la ponctuation.",
-    "La conversion en texte brut détruit les informations de mise en page essentielles à la détection des repères.",
-    "SurtitleLive utilise l'extraction OOXML pour analyser la mise en page et détecter avec précision les repères de sous-titres."
+    "Pour préparer une trame de repères, les mots d’un texte dramatique ne suffisent pas : retraits, styles et zones du document apportent du contexte.",
+    "La mise en page est un indice, non une vérité. Italique, capitales ou deux-points doivent être interprétés avec les paragraphes voisins et le reste du document.",
+    "L’analyse prend actuellement en charge le fichier Word .docx d’origine, car une copie en texte brut peut perdre une structure utile.",
+    "L’analyse produit un brouillon modifiable. Le contenu, la traduction, les limites de repères, l’affichage et le timing restent à valider puis à répéter par l’équipe."
   ],
   "faq": [
-    {
-      "question": "Qu'est-ce qu'un repère de sous-titre au théâtre ?",
-      "answer": "Un repère de sous-titre est le moment où une ligne de dialogue doit apparaître sur l'écran de sous-titrage. La détection des repères nécessite l'identification des blocs de dialogue et des transitions de personnage dans le script."
-    },
-    {
-      "question": "Comment le système gère-t-il le formatage incohérent ?",
-      "answer": "Notre système regroupe les mises en page similaires. Si un profil de document change, l'analyseur effectue une segmentation de la mise en page pour adapter sa stratégie en temps réel."
-    },
-    {
-      "question": "Pourquoi la mise en page est-elle importante lors de l'analyse des scripts pour les sous-titres ?",
-      "answer": "De nombreux scripts utilisent l'indentation et l'espacement au lieu de la ponctuation pour encoder la structure. Un analyseur axé sur la mise en page détecte les repères de manière plus fiable que les modèles sémantiques seuls."
-    },
-    {
-      "question": "Comment SurtitleLive détecte-t-il les indications scéniques ?",
-      "answer": "SurtitleLive identifie les indications scéniques en analysant les attributs typographiques tels que l'italique, en plus de l'indentation et de l'espacement, pour une détection précise même avec un formatage minimal."
-    }
+    { "question": "Pourquoi le formatage d’un texte de théâtre compte-t-il pour les surtitres ?", "answer": "Il peut indiquer qui parle, quels paragraphes se répondent et si une ligne ressemble à une didascalie, un titre ou une réplique. Ces indices facilitent la préparation, mais ne remplacent pas une vérification humaine." },
+    { "question": "L’italique signale-t-il toujours une didascalie ?", "answer": "Non. Il peut aussi marquer une insistance dans une réplique. Il faut le lire avec la structure du paragraphe, les styles, le contexte voisin et les habitudes propres au document." },
+    { "question": "Qu’est-ce qu’un twip ?", "answer": "C’est une unité de mise en page de Word, égale à un vingtième de point. Elle peut conserver des écarts fins de retrait ou d’espacement, sans déterminer à elle seule le rôle d’un paragraphe." },
+    { "question": "Une analyse attentive à la mise en page dispense-t-elle de relire ?", "answer": "Non. Elle accélère la création d’un brouillon modifiable. L’équipe doit toujours contrôler le texte, les attributions, les omissions, la lisibilité et le timing, puis répéter avec le spectacle." }
   ],
   "glossary": [
-    {
-      "term": "Script",
-      "definition": "Le texte complet d'une pièce de théâtre, incluant les dialogues et les indications scéniques."
-    },
-    {
-      "term": "Repère de sous-titre",
-      "definition": "Le point précis dans le script où un sous-titre doit être affiché pendant la représentation."
-    },
-    {
-      "term": "Personnage",
-      "definition": "Un rôle dramatique dans une pièce de théâtre, avec des lignes de dialogue spécifiques."
-    },
-    {
-      "term": "Indication scénique",
-      "definition": "Une instruction dans le script décrivant l'action, le décor ou l'expression d'un personnage."
-    },
-    {
-      "term": "OOXML",
-      "definition": "Format de fichier utilisé par Microsoft Word (.docx) qui permet d'extraire des informations de mise en page précises."
-    }
+    { "term": "Brouillon de repères", "definition": "Une séquence modifiable d’affichages possibles, à confronter au texte source avant les répétitions." },
+    { "term": "Zone documentaire", "definition": "Une partie telle que la page de titre, la distribution, le corps de la pièce ou les annexes, où une même forme peut avoir des sens différents." },
+    { "term": "OOXML", "definition": "Le format sous-jacent des fichiers Word .docx, qui peut conserver la mise en forme des paragraphes et des caractères." },
+    { "term": "Twip", "definition": "Une unité de mise en page Word équivalant à un vingtième de point, notamment pour les retraits et les espacements." },
+    { "term": "Sous-titrage intralinguistique", "definition": "Une aide textuelle dans la langue parlée ; elle ne se confond pas avec la traduction et peut nécessiter des informations non verbales pertinentes." }
   ]
 }
