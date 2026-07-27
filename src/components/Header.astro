@@ -221,7 +221,32 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 	.mobile-divider,
 	.mobile-section-title,
 	.btn-icon {
-		display: none;
+	display: none;
+	}
+
+	/* Keep the desktop links centered in the viewport, independent of the
+	 * different widths of the logo and account controls.  The intermediate
+	 * layout remains flex-based so links cannot collide on narrower screens. */
+	@media (min-width: 1024px) {
+		nav {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+		}
+		.nav-menu {
+			display: contents;
+		}
+		.logo-container {
+			grid-column: 1;
+			justify-self: start;
+		}
+		.internal-links {
+			grid-column: 2;
+			justify-self: center;
+		}
+		.auth-buttons {
+			grid-column: 3;
+			justify-self: end;
+		}
 	}
 
 	@media (max-width: 720px) {
