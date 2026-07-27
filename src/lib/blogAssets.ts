@@ -23,6 +23,7 @@ import scriptParsingTheatreSubtitles from "../content/blog/script-parsing-theatr
 import blog131 from "../content/blog/blog-13-1.png";
 import blog132 from "../content/blog/blog-13-2.png";
 import blog134 from "../content/blog/blog-13-4.gif";
+import blog15Hero from "../content/blog/blog-15.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-1-1.jpg": blog11,
@@ -46,6 +47,7 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-13-1.png": blog131,
   "blog-13-2.png": blog132,
   "blog-13-4.gif": blog134,
+  "blog-15.png": blog15Hero,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
 };
