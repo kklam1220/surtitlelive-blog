@@ -181,6 +181,20 @@ const fullSchema = [
 		<script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 		<script is:inline>
 		  document.addEventListener("DOMContentLoaded", () => {
+		    const emailElements = document.querySelectorAll("[data-stl-email-local][data-stl-email-domain-parts]");
+		    emailElements.forEach((element) => {
+		      const localPart = element.getAttribute("data-stl-email-local");
+		      const domainParts = element.getAttribute("data-stl-email-domain-parts")?.split(",").filter(Boolean);
+		      if (!localPart || !domainParts?.length) return;
+
+		      const address = `${localPart}@${domainParts.join(".")}`;
+		      const link = document.createElement("a");
+		      link.href = `mailto:${address}`;
+		      link.textContent = address;
+		      link.className = "stl-public-email-link";
+		      element.replaceWith(link);
+		    });
+
 		    const elements = document.querySelectorAll("pre code.language-mermaid, pre[data-language='mermaid']");
 		    elements.forEach((el) => {
 		      const target = el.closest("pre") || el;

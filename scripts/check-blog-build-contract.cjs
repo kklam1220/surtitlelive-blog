@@ -1,6 +1,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const assert = require('node:assert/strict');
 const { execFileSync } = require('node:child_process');
+const {
+  PUBLIC_EMAIL_OUTPUT_PATHS,
+  SAFE_PUBLIC_EMAIL_HTML,
+  rewritePublicEmailDocument,
+} = require('./rewrite-public-email-links.cjs');
 
 const distDir = path.resolve(__dirname, '..', 'dist');
 const blogRoot = path.resolve(__dirname, '..');
@@ -201,6 +207,61 @@ assertNoMatch(
   htmlFiles,
   /https:\/\/www\.surtitlelive\.com/,
   'Detected deprecated www.surtitlelive.com host in built blog HTML.',
+);
+
+assertNoMatch(
+  htmlFiles,
+  /info@surtitlelive\.com|mailto:info@surtitlelive\.com|\/cdn-cgi\/l\/email-protection|data-cfemail/i,
+  'Detected an email address that Cloudflare can rewrite into an internal /cdn-cgi 404.',
+);
+
+const publicEmailOutputFiles = new Set(
+  PUBLIC_EMAIL_OUTPUT_PATHS.map((relativePath) => path.join(distDir, relativePath)),
+);
+const reviewedEmailFixture = [
+  '<p><a href="mailto:info@surtitlelive.com">info@surtitlelive.com</a></p>',
+  '<p><a href="mailto:info@surtitlelive.com">info@surtitlelive.com</a></p>',
+].join('');
+for (const unsafeFixture of [
+  '<script type="application/ld+json">{"email":"info@surtitlelive.com"}</script>',
+  '<script>const email="info@surtitlelive.com"</script>',
+  '<meta content="info@surtitlelive.com">',
+  '<a href="mailto:info@surtitlelive.com?subject=Help">Email</a>',
+]) {
+  assert.throws(
+    () => rewritePublicEmailDocument(`${reviewedEmailFixture}${unsafeFixture}`, 'contract-fixture.html'),
+    /outside the reviewed article links/,
+  );
+}
+const publicEmailPlaceholderPattern = new RegExp(
+  SAFE_PUBLIC_EMAIL_HTML.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
+  'g',
+);
+
+for (const relativePath of PUBLIC_EMAIL_OUTPUT_PATHS) {
+  assertFileMatchCount(
+    relativePath,
+    publicEmailPlaceholderPattern,
+    2,
+    'Each Fringe Support article must contain two SSR-safe public email placeholders.',
+  );
+  assertFileMatchCount(
+    relativePath,
+    /info \[at\] surtitlelive \[dot\] com/g,
+    2,
+    'Each Fringe Support article must keep two readable no-JavaScript email fallbacks.',
+  );
+  assertFileHasMatch(
+    relativePath,
+    /link\.href = `mailto:\$\{address\}`;[\s\S]*link\.textContent = address;/,
+    'Fringe Support article is missing the client-side clickable email restoration.',
+  );
+}
+
+assertNoMatch(
+  htmlFiles.filter((file) => !publicEmailOutputFiles.has(file)),
+  /<span class="stl-public-email" data-stl-email-local="info" data-stl-email-domain-parts="surtitlelive,com">/,
+  'Detected the Fringe Support public email placeholder in an unrelated blog output.',
 );
 
 if (/https:\/\/blog\.surtitlelive\.com\/sitemap-index\.xml/.test(sitemapText)) {

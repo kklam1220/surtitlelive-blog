@@ -1,10 +1,10 @@
 {
   "name": "surtitlelive-blog",
   "type": "module",
-  "version": "v260726.01",
+  "version": "v260812.01",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/rewrite-public-email-links.cjs",
     "build:check": "node scripts/check-blog-build-contract.cjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -24,6 +24,7 @@
   },
   "overrides": {
     "esbuild": "0.28.1",
-    "fast-xml-builder": "1.2.0"
+    "fast-xml-builder": "1.2.0",
+    "postcss": "8.5.26"
   }
 }

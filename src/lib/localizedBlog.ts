@@ -9,6 +9,7 @@ type LocalizedFrontmatter = {
   updatedDate?: string;
   tags?: string[];
   heroImage?: string;
+  heroImageAlt?: string;
 };
 
 export type LocalizedBlogPayload = {
