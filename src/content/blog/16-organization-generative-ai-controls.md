@@ -106,7 +106,6 @@ Compared with Production v260726.01, this release also includes the following up
 
 ### Added
 
-- Added the Projector Companion preview for secure offline shows and multi-display projection.
 - Added an organization-level setting to disable generative AI while retaining standard machine translation.
 - Added new Admin tools for product activity, usage and billing.
 
