@@ -2,6 +2,7 @@
 title: 'New Organization-Level Generative AI Controls in SurtitleLive'
 description: 'Control generative AI across your SurtitleLive organization while keeping deterministic script tools and standard machine translation available.'
 pubDate: '2026-08-13'
+updatedDate: '2026-08-14'
 tags: ['Product Updates', 'Generative AI', 'Theatre Scripts', 'Translation', 'Privacy', 'SurtitleLive']
 heroImage: './blog-16.png'
 heroImageAlt: 'Weathered signs presenting the choice to disable or enable AI'
@@ -99,18 +100,30 @@ The policy controls whether new generative processing can run. Team members can 
 
 This separation helps an organization change its future processing policy without losing work it has already completed.
 
-## Other improvements and fixes
+## Additional release notes
 
-This release also includes broader reliability and workflow improvements across SurtitleLive:
+Compared with Production v260726.01, this release also includes the following updates.
 
-- More resilient saving and recovery in the script editor
-- Clearer progress and state handling for translation jobs
-- Better handling of scripts with limited formatting or structure
-- Improved usage and credit information in supported workflows
-- Stronger reconnection and synchronization behaviour during live operation
-- Additional release safeguards and automated regression coverage
+### Added
 
-Together, these changes make script preparation and live operation more predictable for small teams and one-operator productions.
+- Added the Projector Companion preview for secure offline shows and multi-display projection.
+- Added an organization-level setting to disable generative AI while retaining standard machine translation.
+- Added new Admin tools for product activity, usage and billing.
+
+### Changed
+
+- Redesigned projection setup with clearer controls, reusable presets, safer output handling and improved offline readiness.
+- Improved Editor saving, history, collaboration and structural editing reliability.
+- Expanded script analysis support for fragmented, cue-less and less structured documents.
+- Updated Pro Access Pass entitlements and credit handling.
+- Refreshed product pages, guides, language support and onboarding flows.
+
+### Fixed
+
+- Fixed cases where manual Editor changes could be lost or overwritten.
+- Fixed inaccurate fractional credit and charged-balance displays.
+- Fixed runtime reconnection, state synchronization and operator-control issues.
+- Fixed multiple staging deployment, rollback, security and release-validation issues.
 
 ## Frequently asked questions
 
