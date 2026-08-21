@@ -127,6 +127,10 @@ The same committed fragment was published in several languages:
 | Traditional Chinese | 點燃愚人的火焰，讓他們走上塵土飛揚的死亡之路。 |
 | French | J'ai éclairé les fous sur le chemin poussiéreux de la mort. |
 
+![Pockitle Live Console showing the Macbeth validation output in English, Japanese, Traditional Chinese and French](./blog-17.png)
+
+*The Pockitle Live Console during the Macbeth validation run, showing the committed source caption, audience translations and venue display preview together.*
+
 These outputs are useful evidence because Pockitle is doing what live captioning is designed to do: publish the text it can commit at that moment. The difficulty is that the committed source fragment is no longer Shakespeare's complete sentence.
 
 The full thought is:
