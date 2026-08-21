@@ -5,13 +5,13 @@
 The blog is managed in a **Dual-Repository Setup**:
 
 1.  **Development Location**: `SurtitleLive_v2/blog` (Local)
-    *   This is where you write content and edit code alongside the main application.
-    *   It is part of the main `SurtitleLive_v2` monorepo storage.
+    - This is where you write content and edit code alongside the main application.
+    - It is part of the main `SurtitleLive_v2` monorepo storage.
 
 2.  **Deployment Repository**: `kklam1220/surtitlelive-blog` (Remote)
-    *   This is a dedicated repository connected to **Cloudflare Pages**.
-    *   Pushing to this repository triggers the live site build.
-    *   Live URL: [https://blog.surtitlelive.com](https://blog.surtitlelive.com)
+    - This is a dedicated repository connected to **Cloudflare Pages**.
+    - Pushing to this repository triggers the live site build.
+    - Live URL: [https://blog.surtitlelive.com](https://blog.surtitlelive.com)
 
 ### Routing Contract
 
@@ -35,6 +35,8 @@ This only works because the deployment output must include [\_redirects](./publi
 The deployment output must also include [\_headers](./public/_headers), which adds `X-Robots-Tag: noindex, follow` to direct blog-origin HTML responses. Redirects remain the preferred consolidation signal for `/blog/*`, but the header prevents accidental indexing if a stale Pages deployment or CDN rule serves duplicate compatibility HTML instead of redirecting. The root-output direct origin (`https://blog.surtitlelive.com/:slug`) cannot be redirected by Pages because the apex Worker fetches that path to serve the canonical `https://surtitlelive.com/blog/:slug/` URL. The Worker must therefore remove `X-Robots-Tag` from proxied apex `/blog/*` responses while leaving the direct blog-origin response noindexed.
 
 If `_redirects` or `_headers` is missing or stale, the custom domain can start returning homepage HTML for article/image URLs, expose duplicate `/blog/*` HTML on the dedicated origin, or weaken crawler consolidation on the apex canonical.
+
+The static build also owns a real [`404.astro`](./src/pages/404.astro) document. Cloudflare Pages must serve that document with an HTTP `404` for unknown article paths; it must never rewrite an unknown path to the blog homepage with `200`, because that creates a soft-404 and weakens crawl signals.
 
 On the edge side, `scripts/cloudflare/surtitlelive-proxy.worker.js` is the primary apex `/blog/*` handoff layer. It must rewrite canonical `https://surtitlelive.com/blog/...` requests onto the dedicated Astro origin's real root-output paths and strip the direct-origin `X-Robots-Tag` before returning the apex response. `web/next.config.ts` `beforeFiles` rewrites remain as a secondary compatibility layer only and must also target root-output origin paths for HTML.
 
@@ -102,8 +104,8 @@ Before running the sync script, verify the "AEO-Readiness" of your markdown:
 To ensure images load correctly in production:
 
 1.  **Naming Convention**: **NO SPACES**. Use dashes.
-    *   ✅ Correct: `theatre-gallery-byod.jpg`
-    *   ❌ Incorrect: `theatre gallery byod.jpg` (Cloudflare Pages may fail to resolve this)
+    - ✅ Correct: `theatre-gallery-byod.jpg`
+    - ❌ Incorrect: `theatre gallery byod.jpg` (Cloudflare Pages may fail to resolve this)
 2.  **Format**: Use `.jpg`, `.png`, or `.webp`.
 3.  **Location**: Store images in `src/content/blog/` alongside the markdown file.
 4.  **Usage in Markdown**:
@@ -116,18 +118,18 @@ To ensure images load correctly in production:
     import { Image } from 'astro:assets';
     <Image src={heroImage} alt="SurtitleLive mobile subtitle interface featuring OLED dark mode..." />
     ```
-    *   **Alt Text**: Mandatory for SEO. Describe the image context richly for Google Image Search.
-    *   *Standard `<img>` tags will fail to resolve relative paths in production builds.*
+    - **Alt Text**: Mandatory for SEO. Describe the image context richly for Google Image Search.
+    - _Standard `<img>` tags will fail to resolve relative paths in production builds._
 
 ## 🛠️ Sync Script & Asset Tips
 
-*   **Drafts**: If you have unfinished posts, create a `drafts` folder inside `content/` and ensure your sync script excludes it, or use `draft: true` in frontmatter (if configured in content collection).
-*   **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
-*   **Base-Aware Fonts/Assets**: This Astro app is deployed with `base: '/blog/'`. Font preloads and `@font-face` rules are emitted from `src/components/BaseHead.astro` and must resolve to `/blog/fonts/...` exactly once in the built output. Never ship `/blog/blog/fonts/...`, bare `/fonts/...`, or unresolved template placeholders.
-*   **Canonical Logo**: Shared chrome should use the canonical main-site logo asset. `src/components/Header.astro` must point at `https://surtitlelive.com/logo/New_logo.png`, not `/blog/logo/New_logo.png`, so the visible header does not depend on the blog-origin compatibility rewrite layer.
-*   **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
-*   **Pages Rewrite Contract**: Do not remove `public/_redirects`. The blog build is static-root output, but the custom domain still has to honor `/blog/*` for compatibility and SEO handoff.
-*   **Pages Indexing Guard**: Do not remove `public/_headers`. It keeps direct blog-origin `/blog/*` compatibility responses out of the index if a redirect is bypassed, while leaving canonical apex `/blog/*` responses unaffected.
+- **Drafts**: If you have unfinished posts, create a `drafts` folder inside `content/` and ensure your sync script excludes it, or use `draft: true` in frontmatter (if configured in content collection).
+- **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
+- **Base-Aware Fonts/Assets**: This Astro app is deployed with `base: '/blog/'`. Font preloads and `@font-face` rules are emitted from `src/components/BaseHead.astro` and must resolve to `/blog/fonts/...` exactly once in the built output. Never ship `/blog/blog/fonts/...`, bare `/fonts/...`, or unresolved template placeholders.
+- **Canonical Logo**: Shared chrome should use the canonical main-site logo asset. `src/components/Header.astro` must point at `https://surtitlelive.com/logo/New_logo.png`, not `/blog/logo/New_logo.png`, so the visible header does not depend on the blog-origin compatibility rewrite layer.
+- **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
+- **Pages Rewrite Contract**: Do not remove `public/_redirects`. The blog build is static-root output, but the custom domain still has to honor `/blog/*` for compatibility and SEO handoff.
+- **Pages Indexing Guard**: Do not remove `public/_headers`. It keeps direct blog-origin `/blog/*` compatibility responses out of the index if a redirect is bypassed, while leaving canonical apex `/blog/*` responses unaffected.
 
 ---
 
@@ -148,6 +150,7 @@ To ensure images load correctly in production:
     - the built HTML still contains deprecated `https://www.surtitlelive.com` links
     - the built HTML still references `/logo/New_logo.png`
     - the built output is missing the required Cloudflare Pages `_redirects` contract
+    - the built output is missing the noindex blog `404.html` document
     - a hero-image article page still emits placeholder `og:image` / `twitter:image` metadata
 6.  If production still shows `Failed to decode downloaded font` after a deploy, probe the live asset directly:
     ```bash
@@ -185,3 +188,4 @@ To ensure images load correctly in production:
     - if `surtitlelive.com` returns `text/html` while `blog.surtitlelive.com` returns `image/*`, the apex edge has cached the wrong object
     - preferred fix: targeted Cloudflare purge for the exact apex asset URL
     - fallback when ops write-token access is unavailable: change the affected Astro image transform so the card emits a new asset URL, then do a blog-only Pages deploy
+10. Probe one deliberately unknown article path after deployment. Both the dedicated origin and canonical apex proxy must return HTTP `404` with the noindex Page Not Found document, never the blog homepage with `200`.

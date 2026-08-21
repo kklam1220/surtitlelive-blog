@@ -31,7 +31,9 @@ function hasInvalidBodyMarkup(localizedPayload) {
   return (
     /^\s*```(?:markdown|md)\s*\r?\n/i.test(body) ||
     /<script\s+type=["']application\/ld\+json["']/i.test(body) ||
-    /^\s*import\s+[A-Za-z_$][\w$]*\s+from\s+["']\.\/[^"']+\.(?:avif|gif|jpe?g|png|webp)["'];?/im.test(body) ||
+    /^\s*import\s+[A-Za-z_$][\w$]*\s+from\s+["']\.\/[^"']+\.(?:avif|gif|jpe?g|png|webp)["'];?/im.test(
+      body,
+    ) ||
     /src=\{[A-Za-z_$][\w$]*\.src\}/.test(body)
   );
 }
@@ -42,10 +44,7 @@ function hasInvalidQlabCompanionSemantics(post, localizedPayload) {
   }
 
   const body = localizedPayload.body || "";
-  const requiredLiteralCueNames = [
-    "CLEAR PREVIOUS",
-    "CLEAR LAST SUBTITLE",
-  ];
+  const requiredLiteralCueNames = ["CLEAR PREVIOUS", "CLEAR LAST SUBTITLE"];
   return (
     requiredLiteralCueNames.some((cueName) => !body.includes(cueName)) ||
     !/\bDISPLAY\s+[A-Za-z][A-Za-z-]*\b/.test(body)
@@ -60,7 +59,9 @@ function main() {
   const locales = pickLocales(config.locales, args.locales);
   const posts = pickPosts(listSourcePosts(sourceDir), args.slugs);
   const deferredSlugs = new Set(
-    Array.isArray(config.deferredLocalizedSlugs) ? config.deferredLocalizedSlugs : [],
+    Array.isArray(config.deferredLocalizedSlugs)
+      ? config.deferredLocalizedSlugs
+      : [],
   );
 
   let hasError = false;
@@ -76,16 +77,21 @@ function main() {
 
     for (const post of posts) {
       const localePath = path.join(localizedRoot, locale, `${post.slug}.json`);
+      const isDeferred = deferredSlugs.has(post.slug);
       let payload;
       try {
         payload = readJson(localePath);
       } catch {
+        if (isDeferred) {
+          deferred += 1;
+          continue;
+        }
         missing += 1;
         hasError = true;
         continue;
       }
 
-      if (deferredSlugs.has(post.slug) && payload.status !== "translated") {
+      if (isDeferred && payload.status !== "translated") {
         deferred += 1;
         continue;
       }
