@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Poin utama",
+    "faq": "Pertanyaan umum",
+    "glossary": "Glosarium",
+    "related": "Artikel terkait"
+  },
+  "keyTakeaways": [
+    "Takarir langsung membantu orang mengikuti kata-kata penting bersama-sama di pernikahan, konferensi, kelas, dan acara komunitas.",
+    "Audiens membuka Pockitle di peramban ponsel melalui tautan atau kode QR, tanpa aplikasi khusus.",
+    "Setiap sesi memakai satu bahasa sumber lisan yang tetap dan dapat menambahkan hingga tiga bahasa terjemahan tertulis.",
+    "Takarir buatan mesin mendukung partisipasi, tetapi tidak menggantikan CART profesional, penerjemahan simultan, atau catatan resmi."
+  ],
+  "faq": [
+    {
+      "question": "Bagaimana audiens membuka takarir langsung Pockitle?",
+      "answer": "Mereka membuka tautan acara atau memindai kode QR di peramban ponsel. Tidak perlu memasang aplikasi khusus audiens atau membuat akun."
+    },
+    {
+      "question": "Dapatkah Pockitle menampilkan beberapa bahasa?",
+      "answer": "Ya. Satu sesi memakai satu bahasa sumber lisan yang tetap, menyediakan takarir dalam bahasa itu, dan dapat menambahkan hingga tiga bahasa terjemahan tertulis."
+    },
+    {
+      "question": "Apakah takarir langsung berguna untuk pernikahan, konferensi, dan kelas?",
+      "answer": "Takarir dapat memberi jalur baca tambahan bagi orang yang mendengar secara berbeda, memproses aksen atau istilah teknis, atau lebih nyaman membaca bahasa lain."
+    },
+    {
+      "question": "Apakah Pockitle menggantikan CART atau penerjemah profesional?",
+      "answer": "Tidak. Takarir dan terjemahan dibuat mesin dan dapat terlambat, tidak lengkap, atau keliru. Ini bukan CART profesional, penerjemahan simultan, catatan resmi, atau jaminan kepatuhan."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Takarir langsung",
+      "definition": "Teks yang dibuat dari ucapan dan ditampilkan saat acara berlangsung."
+    },
+    {
+      "term": "Bahasa sumber",
+      "definition": "Satu bahasa lisan tetap yang dipilih untuk sebuah sesi Pockitle."
+    },
+    {
+      "term": "Terjemahan tertulis",
+      "definition": "Teks takarir terjemahan mesin yang ditawarkan bersama takarir sumber."
+    },
+    {
+      "term": "Tampilan audiens",
+      "definition": "Halaman peramban yang dibuka melalui tautan atau kode QR."
+    },
+    {
+      "term": "CART",
+      "definition": "Layanan takarir waktu nyata profesional yang tidak diklaim dapat digantikan Pockitle."
+    }
+  ]
+}

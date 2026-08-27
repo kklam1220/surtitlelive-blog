@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos principais",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Artigos relacionados"
+  },
+  "keyTakeaways": [
+    "Legendas ao vivo ajudam as pessoas a acompanhar palavras importantes em casamentos, conferências, aulas e eventos comunitários.",
+    "O público abre o Pockitle no navegador por link ou código QR, sem aplicação dedicada.",
+    "Cada sessão usa um idioma de origem falado fixo e pode acrescentar até três idiomas de tradução escrita.",
+    "Legendas automáticas apoiam a participação, mas não substituem CART, interpretação simultânea ou uma transcrição oficial."
+  ],
+  "faq": [
+    {
+      "question": "Como o público abre as legendas do Pockitle?",
+      "answer": "Abre o link do evento ou lê o código QR no navegador do telemóvel. Não precisa instalar uma aplicação dedicada nem criar uma conta de público."
+    },
+    {
+      "question": "O Pockitle pode mostrar vários idiomas?",
+      "answer": "Sim. Cada sessão usa um idioma de origem falado fixo, apresenta legendas nesse idioma e pode acrescentar até três idiomas de tradução escrita."
+    },
+    {
+      "question": "Legendas ao vivo ajudam em casamentos, conferências e aulas?",
+      "answer": "Podem oferecer outra via de leitura a quem ouve de forma diferente, processa sotaques ou termos técnicos, ou prefere ler noutro idioma."
+    },
+    {
+      "question": "O Pockitle substitui CART ou intérpretes profissionais?",
+      "answer": "Não. Legendas e traduções são automáticas e podem atrasar-se, ficar incompletas ou conter erros. Não são CART profissional, interpretação simultânea, transcrição oficial nem garantia de conformidade."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Legendas ao vivo",
+      "definition": "Texto gerado a partir da fala e mostrado durante o evento."
+    },
+    {
+      "term": "Idioma de origem",
+      "definition": "O único idioma falado fixo selecionado para uma sessão Pockitle."
+    },
+    {
+      "term": "Tradução escrita",
+      "definition": "Texto de legenda traduzido automaticamente além das legendas originais."
+    },
+    {
+      "term": "Visualização do público",
+      "definition": "Página do navegador aberta por link ou código QR."
+    },
+    {
+      "term": "CART",
+      "definition": "Serviço profissional de legendagem em tempo real que o Pockitle não pretende substituir."
+    }
+  ]
+}

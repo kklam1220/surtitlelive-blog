@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Najczęściej zadawane pytania",
+    "glossary": "Słownik",
+    "related": "Powiązane artykuły"
+  },
+  "keyTakeaways": [
+    "Napisy na żywo pomagają wspólnie śledzić ważne słowa podczas ślubów, konferencji, zajęć i spotkań społeczności.",
+    "Publiczność otwiera Pockitle w przeglądarce przez link lub kod QR, bez osobnej aplikacji.",
+    "Każda sesja używa jednego stałego języka mówionego i może dodać do trzech języków tłumaczenia tekstowego.",
+    "Napisy maszynowe wspierają udział, ale nie zastępują profesjonalnego CART, tłumaczenia symultanicznego ani oficjalnego zapisu."
+  ],
+  "faq": [
+    {
+      "question": "Jak publiczność otwiera napisy Pockitle?",
+      "answer": "Otwiera link wydarzenia lub skanuje kod QR w przeglądarce telefonu. Nie potrzebuje osobnej aplikacji ani konta odbiorcy."
+    },
+    {
+      "question": "Czy Pockitle może wyświetlać kilka języków?",
+      "answer": "Tak. Sesja używa jednego stałego języka mówionego, pokazuje napisy w tym języku i może dodać do trzech języków tłumaczenia tekstowego."
+    },
+    {
+      "question": "Czy napisy na żywo pomagają na ślubach, konferencjach i zajęciach?",
+      "answer": "Mogą zapewnić dodatkową drogę odbioru osobom inaczej słyszącym, przetwarzającym akcenty lub terminy specjalistyczne albo wolącym czytać w innym języku."
+    },
+    {
+      "question": "Czy Pockitle zastępuje CART lub zawodowych tłumaczy?",
+      "answer": "Nie. Napisy i tłumaczenia powstają maszynowo i mogą być opóźnione, niepełne lub błędne. Nie są profesjonalnym CART, tłumaczeniem symultanicznym, oficjalnym zapisem ani gwarancją zgodności."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Napisy na żywo",
+      "definition": "Tekst tworzony z mowy i wyświetlany podczas wydarzenia."
+    },
+    {
+      "term": "Język źródłowy",
+      "definition": "Jeden stały język mówiony wybrany dla sesji Pockitle."
+    },
+    {
+      "term": "Tłumaczenie tekstowe",
+      "definition": "Maszynowo przetłumaczony tekst napisów obok napisów źródłowych."
+    },
+    {
+      "term": "Widok publiczności",
+      "definition": "Strona w przeglądarce otwierana przez link lub kod QR."
+    },
+    {
+      "term": "CART",
+      "definition": "Profesjonalna usługa napisów w czasie rzeczywistym, której Pockitle nie zastępuje."
+    }
+  ]
+}

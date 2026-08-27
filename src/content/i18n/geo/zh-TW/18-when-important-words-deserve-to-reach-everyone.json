@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "重點整理",
+    "faq": "常見問題",
+    "glossary": "詞彙說明",
+    "related": "相關文章"
+  },
+  "keyTakeaways": [
+    "即時字幕可協助婚禮、研討會、課堂及社區活動中的參與者同步理解重要話語。",
+    "觀眾透過連結或 QR code 在手機瀏覽器開啟 Pockitle，毋須安裝專用觀眾 app。",
+    "每次執行採用一種固定口語來源語言，並可加入最多三種文字翻譯語言。",
+    "機器產生的字幕有助參與，但不取代專業 CART、同步口譯或正式逐字紀錄。"
+  ],
+  "faq": [
+    {
+      "question": "賓客如何開啟 Pockitle 即時字幕？",
+      "answer": "賓客可在手機瀏覽器開啟活動連結或掃描 QR code，毋須安裝專用觀眾 app，也毋須建立觀眾帳戶。"
+    },
+    {
+      "question": "Pockitle 可以同時顯示多種語言嗎？",
+      "answer": "可以。每次執行使用一種固定口語來源語言，提供該語言字幕，並可加入最多三種文字翻譯語言。"
+    },
+    {
+      "question": "即時字幕適合婚禮、研討會及課堂嗎？",
+      "answer": "它可為聽覺狀況不同、需要處理口音或專業術語，或偏好閱讀另一語言的賓客、與會者及學生提供額外閱讀途徑。"
+    },
+    {
+      "question": "Pockitle 字幕可以取代 CART 或專業口譯員嗎？",
+      "answer": "不可以。字幕及翻譯由機器產生，可能延遲、不完整或出錯；它不是專業 CART、同步口譯、正式逐字紀錄或合規保證。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "即時字幕",
+      "definition": "在活動進行期間由語音產生並顯示的文字。"
+    },
+    {
+      "term": "來源語言",
+      "definition": "一次 Pockitle 執行所選定的單一固定口語語言。"
+    },
+    {
+      "term": "文字翻譯",
+      "definition": "在原語字幕之外提供的機器翻譯字幕文字。"
+    },
+    {
+      "term": "觀眾端",
+      "definition": "觀眾透過連結或 QR code 開啟的瀏覽器頁面。"
+    },
+    {
+      "term": "CART",
+      "definition": "由專業人員提供的即時字幕服務；Pockitle 不宣稱可以取代它。"
+    }
+  ]
+}

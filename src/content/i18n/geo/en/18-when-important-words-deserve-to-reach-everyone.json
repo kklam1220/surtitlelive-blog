@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related Articles"
+  },
+  "keyTakeaways": [
+    "Live captions can help people follow important words together at weddings, conferences, classrooms and community events.",
+    "Audience members open Pockitle captions in a phone browser through a link or QR code; no dedicated audience app is required.",
+    "Each run uses one fixed spoken source language and can add up to three written translation languages.",
+    "Machine-generated captions support participation but do not replace professional CART, simultaneous interpreting or an official transcript."
+  ],
+  "faq": [
+    {
+      "question": "How do guests open Pockitle live captions?",
+      "answer": "They open an event link or scan its QR code in a phone browser. They do not need to install a dedicated audience app or create an audience account."
+    },
+    {
+      "question": "Can Pockitle show captions in more than one language?",
+      "answer": "Yes. One run uses one fixed spoken source language, provides captions in that language, and can add up to three written translation languages."
+    },
+    {
+      "question": "Can live captions help at weddings, conferences and in classrooms?",
+      "answer": "They can provide another reading route for guests, delegates and students who hear differently, process accents or technical terms, or prefer to read another language."
+    },
+    {
+      "question": "Do Pockitle captions replace CART or professional interpreters?",
+      "answer": "No. Captions and translations are machine-generated and may be delayed, incomplete or wrong. They are not professional CART, simultaneous interpreting, an official transcript or a compliance guarantee."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Live captions",
+      "definition": "Text generated from speech and displayed while an event is happening."
+    },
+    {
+      "term": "Source language",
+      "definition": "The single fixed spoken language selected for one Pockitle run."
+    },
+    {
+      "term": "Written translation",
+      "definition": "Automatically translated caption text offered in addition to the source-language captions."
+    },
+    {
+      "term": "Audience viewer",
+      "definition": "The browser page that an audience member opens by link or QR code."
+    },
+    {
+      "term": "CART",
+      "definition": "A professional real-time captioning service that Pockitle does not claim to replace."
+    }
+  ]
+}

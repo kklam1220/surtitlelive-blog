@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Artikel"
+  },
+  "keyTakeaways": [
+    "Live-Untertitel helfen Menschen, wichtigen Worten bei Hochzeiten, Tagungen, Lehrveranstaltungen und Gemeinschaftsevents gemeinsam zu folgen.",
+    "Das Publikum öffnet Pockitle per Link oder QR-Code im Smartphone-Browser; eine eigene Publikums-App ist nicht nötig.",
+    "Jeder Lauf verwendet eine feste gesprochene Ausgangssprache und kann bis zu drei schriftliche Übersetzungssprachen ergänzen.",
+    "Maschinell erzeugte Untertitel fördern Teilhabe, ersetzen aber weder professionelles CART noch Simultandolmetschen oder ein offizielles Transkript."
+  ],
+  "faq": [
+    {
+      "question": "Wie öffnet das Publikum Pockitle-Live-Untertitel?",
+      "answer": "Es öffnet den Veranstaltungslink oder scannt den QR-Code im Smartphone-Browser. Eine eigene Publikums-App oder ein Publikumskonto ist nicht erforderlich."
+    },
+    {
+      "question": "Kann Pockitle Untertitel in mehreren Sprachen zeigen?",
+      "answer": "Ja. Ein Lauf nutzt eine feste gesprochene Ausgangssprache, zeigt Untertitel in dieser Sprache und kann bis zu drei schriftliche Übersetzungssprachen ergänzen."
+    },
+    {
+      "question": "Eignen sich Live-Untertitel für Hochzeiten, Tagungen und Lehrveranstaltungen?",
+      "answer": "Sie bieten Gästen, Teilnehmenden und Studierenden einen zusätzlichen Leseweg, etwa bei unterschiedlichem Hörvermögen, Akzenten, Fachbegriffen oder dem Wunsch nach einer anderen Lesesprache."
+    },
+    {
+      "question": "Ersetzt Pockitle CART oder professionelle Dolmetschende?",
+      "answer": "Nein. Untertitel und Übersetzungen werden maschinell erzeugt und können verspätet, unvollständig oder falsch sein. Sie sind kein professionelles CART, Simultandolmetschen, offizielles Transkript oder Compliance-Nachweis."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Live-Untertitel",
+      "definition": "Text, der während einer Veranstaltung aus Sprache erzeugt und angezeigt wird."
+    },
+    {
+      "term": "Ausgangssprache",
+      "definition": "Die eine feste gesprochene Sprache, die für einen Pockitle-Lauf gewählt wird."
+    },
+    {
+      "term": "Schriftliche Übersetzung",
+      "definition": "Maschinell übersetzter Untertiteltext zusätzlich zu den Untertiteln der Ausgangssprache."
+    },
+    {
+      "term": "Publikumsansicht",
+      "definition": "Die Browserseite, die das Publikum per Link oder QR-Code öffnet."
+    },
+    {
+      "term": "CART",
+      "definition": "Ein professioneller Echtzeit-Untertitelungsdienst, den Pockitle nicht zu ersetzen beansprucht."
+    }
+  ]
+}

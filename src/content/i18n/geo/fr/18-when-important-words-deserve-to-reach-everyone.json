@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Articles connexes"
+  },
+  "keyTakeaways": [
+    "Les sous-titres en direct aident chacun à suivre les paroles importantes lors de mariages, colloques, cours et rencontres publiques.",
+    "Le public ouvre Pockitle dans le navigateur du téléphone par lien ou QR code, sans application dédiée.",
+    "Chaque session utilise une langue source parlée fixe et peut ajouter jusqu’à trois langues de traduction écrite.",
+    "Les sous-titres automatiques favorisent la participation sans remplacer le CART professionnel, l’interprétation simultanée ou un relevé officiel."
+  ],
+  "faq": [
+    {
+      "question": "Comment les invités ouvrent-ils les sous-titres Pockitle ?",
+      "answer": "Ils ouvrent le lien de l’événement ou scannent son QR code dans le navigateur du téléphone. Aucune application dédiée ni aucun compte spectateur n’est requis."
+    },
+    {
+      "question": "Pockitle peut-il afficher plusieurs langues ?",
+      "answer": "Oui. Une session utilise une langue source parlée fixe, affiche ses sous-titres et peut ajouter jusqu’à trois langues de traduction écrite."
+    },
+    {
+      "question": "Les sous-titres en direct conviennent-ils aux mariages, colloques et cours ?",
+      "answer": "Ils offrent une voie de lecture supplémentaire aux personnes qui entendent différemment, traitent un accent ou un terme technique, ou préfèrent lire dans une autre langue."
+    },
+    {
+      "question": "Pockitle remplace-t-il le CART ou les interprètes professionnels ?",
+      "answer": "Non. Les sous-titres et traductions sont automatiques et peuvent être retardés, incomplets ou erronés. Ils ne constituent ni CART professionnel, ni interprétation simultanée, ni relevé officiel, ni garantie de conformité."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sous-titres en direct",
+      "definition": "Texte produit à partir de la parole et affiché pendant l’événement."
+    },
+    {
+      "term": "Langue source",
+      "definition": "L’unique langue parlée fixe sélectionnée pour une session Pockitle."
+    },
+    {
+      "term": "Traduction écrite",
+      "definition": "Texte de sous-titres traduit automatiquement, proposé en plus de la langue source."
+    },
+    {
+      "term": "Vue spectateur",
+      "definition": "Page web ouverte par le public au moyen d’un lien ou d’un QR code."
+    },
+    {
+      "term": "CART",
+      "definition": "Service professionnel de sous-titrage en temps réel que Pockitle ne prétend pas remplacer."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Artículos relacionados"
+  },
+  "keyTakeaways": [
+    "Los subtítulos en directo ayudan a compartir palabras importantes en bodas, congresos, aulas y encuentros comunitarios.",
+    "El público abre Pockitle en el navegador mediante un enlace o código QR, sin una aplicación específica.",
+    "Cada sesión usa un idioma fuente hablado fijo y puede añadir hasta tres idiomas de traducción escrita.",
+    "Los subtítulos automáticos favorecen la participación, pero no sustituyen CART, interpretación simultánea ni una transcripción oficial."
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo abre el público los subtítulos de Pockitle?",
+      "answer": "Abre el enlace del evento o escanea su código QR en el navegador del teléfono. No necesita instalar una aplicación específica ni crear una cuenta de público."
+    },
+    {
+      "question": "¿Puede Pockitle mostrar varios idiomas?",
+      "answer": "Sí. Cada sesión utiliza un idioma fuente hablado fijo, ofrece subtítulos en ese idioma y puede añadir hasta tres idiomas de traducción escrita."
+    },
+    {
+      "question": "¿Sirven los subtítulos en directo para bodas, congresos y clases?",
+      "answer": "Pueden ofrecer otra vía de lectura a quienes oyen de forma diferente, procesan acentos o términos técnicos, o prefieren leer en otro idioma."
+    },
+    {
+      "question": "¿Sustituye Pockitle a CART o a intérpretes profesionales?",
+      "answer": "No. Los subtítulos y traducciones son automáticos y pueden retrasarse, quedar incompletos o contener errores. No son CART profesional, interpretación simultánea, transcripción oficial ni garantía de cumplimiento."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Subtítulos en directo",
+      "definition": "Texto generado a partir del habla y mostrado mientras sucede el evento."
+    },
+    {
+      "term": "Idioma fuente",
+      "definition": "El único idioma hablado fijo seleccionado para una sesión de Pockitle."
+    },
+    {
+      "term": "Traducción escrita",
+      "definition": "Texto de subtítulos traducido automáticamente además de los subtítulos originales."
+    },
+    {
+      "term": "Visor del público",
+      "definition": "Página del navegador que se abre mediante enlace o código QR."
+    },
+    {
+      "term": "CART",
+      "definition": "Servicio profesional de subtitulado en tiempo real que Pockitle no pretende sustituir."
+    }
+  ]
+}

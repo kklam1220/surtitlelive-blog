@@ -63,6 +63,7 @@ tags: ['Accessibility', 'BYOD', 'Tech']
 ```
 
 ### GitHub & Deployment
+*   **Editorial SEO/AEO ownership**: Before every publication, the responsible publishing assistant must personally prepare and review the article's metadata, answer-first structure, key takeaways, FAQ, glossary, internal links, and structured data for every published locale. Automated model output is not the default and must never be published without this review; use it only when the operator explicitly authorizes it for that article.
 *   **Push to Deploy**: Any push to the `main` branch triggers a Cloudflare Pages build.
 *   **Assets**: Place logic-related images in `src/assets/`. Reference them via relative paths (e.g., `../../assets/image.jpg`).
 *   **Verification**: Always check `blog.surtitlelive.com` ~2 minutes after pushing.

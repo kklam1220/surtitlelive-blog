@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Önemli noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Canlı altyazılar düğün, konferans, ders ve topluluk etkinliklerinde önemli sözlerin birlikte takip edilmesine yardımcı olur.",
+    "İzleyiciler Pockitle'ı bağlantı veya QR koduyla telefon tarayıcısında açar; özel bir uygulama gerekmez.",
+    "Her oturum tek bir sabit konuşma kaynak dili kullanır ve en fazla üç yazılı çeviri dili ekleyebilir.",
+    "Makine üretimi altyazılar katılımı destekler; profesyonel CART, simultane tercüme veya resmî kaydın yerini tutmaz."
+  ],
+  "faq": [
+    {
+      "question": "İzleyiciler Pockitle canlı altyazılarını nasıl açar?",
+      "answer": "Etkinlik bağlantısını açar veya QR kodunu telefon tarayıcısında tararlar. Özel bir izleyici uygulaması kurmaları ya da hesap oluşturmaları gerekmez."
+    },
+    {
+      "question": "Pockitle birden fazla dil gösterebilir mi?",
+      "answer": "Evet. Bir oturum tek bir sabit konuşma kaynak dili kullanır, bu dilde altyazı sunar ve en fazla üç yazılı çeviri dili ekleyebilir."
+    },
+    {
+      "question": "Canlı altyazılar düğün, konferans ve derslerde yararlı mı?",
+      "answer": "Farklı işiten, aksan veya teknik terimleri işlemek için zamana ihtiyaç duyan ya da başka bir dilde okumayı tercih eden kişilere ek bir okuma yolu sunabilir."
+    },
+    {
+      "question": "Pockitle CART veya profesyonel tercümanların yerini alır mı?",
+      "answer": "Hayır. Altyazı ve çeviriler makine üretimidir; gecikebilir, eksik veya yanlış olabilir. Profesyonel CART, simultane tercüme, resmî kayıt ya da uyumluluk garantisi değildir."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Canlı altyazı",
+      "definition": "Konuşmadan üretilip etkinlik sırasında gösterilen metin."
+    },
+    {
+      "term": "Kaynak dil",
+      "definition": "Bir Pockitle oturumu için seçilen tek sabit konuşma dili."
+    },
+    {
+      "term": "Yazılı çeviri",
+      "definition": "Kaynak altyazıya ek olarak sunulan makine çevirisi metni."
+    },
+    {
+      "term": "İzleyici görünümü",
+      "definition": "Bağlantı veya QR koduyla açılan tarayıcı sayfası."
+    },
+    {
+      "term": "CART",
+      "definition": "Pockitle'ın yerini aldığını iddia etmediği profesyonel gerçek zamanlı altyazı hizmeti."
+    }
+  ]
+}

@@ -92,12 +92,17 @@ If you prefer to work directly from the `blog` folder, ensure you exclude build 
 
 Before running the sync script, verify the "AEO-Readiness" of your markdown:
 
+The responsible publishing assistant owns this review before every Blog release. Do not treat `blog:i18n:geo` or any other model-generated output as publication-ready. Automated generation may be used only when the operator explicitly authorizes it for the article; every published locale must still receive a direct editorial and product-claim review before deployment.
+
 1.  **YAML Frontmatter**: Ensure `title` and `description` contain core keywords (e.g., Theatre Subtitles, BYOD).
 2.  **Internal Links**: Use absolute paths for main site links (e.g., `https://surtitlelive.com/cockpit`) to prevent broken links in RSS/Aggregation.
 3.  **Structure**: Check that H2 (`##`) and H3 (`###`) follow a logical hierarchy. This helps AI models extract structured summaries.
 4.  **Social Preview (OG Image)**: Check if `heroImage` is present. This is what appears on LinkedIn/Twitter.
 5.  **Slug Health**: Ensure the filename is URL-friendly (e.g., `beyond-the-led-screen.md`).
 6.  **Canonical Main-Site Links**: Use the apex host `https://surtitlelive.com/...` for all links back into the main product. Do not point blog CTAs or legal links at `https://www.surtitlelive.com/...`.
+7.  **Answer Format**: Confirm each published locale has concise key takeaways, four useful FAQs, and a five-term glossary in `src/content/i18n/geo/<locale>/<slug>.json`.
+8.  **Structured Data**: Build the site and confirm both `BlogPosting` and `FAQPage` JSON-LD are present, localized, and consistent with visible copy.
+9.  **Claim Review**: Recheck limits, pricing, availability, accessibility, accuracy, privacy, and workflow claims against the current product before publication.
 
 ## 🖼️ Image Handling Guidelines
 

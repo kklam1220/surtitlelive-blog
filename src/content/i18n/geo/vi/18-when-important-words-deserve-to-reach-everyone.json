@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "sourceHash": "a53c692226e8b690c7324271f5c861e33d48cb90484cd7719d648a65fd8dc8d2",
+  "generatedAt": "2026-08-27T05:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Phụ đề trực tiếp giúp mọi người cùng theo dõi lời nói quan trọng tại đám cưới, hội nghị, lớp học và sự kiện cộng đồng.",
+    "Khán giả mở Pockitle trong trình duyệt điện thoại qua liên kết hoặc mã QR, không cần ứng dụng riêng.",
+    "Mỗi phiên dùng một ngôn ngữ nguồn nói cố định và có thể thêm tối đa ba ngôn ngữ dịch bằng văn bản.",
+    "Phụ đề do máy tạo hỗ trợ sự tham gia nhưng không thay thế CART chuyên nghiệp, phiên dịch đồng thời hay biên bản chính thức."
+  ],
+  "faq": [
+    {
+      "question": "Khán giả mở phụ đề trực tiếp Pockitle như thế nào?",
+      "answer": "Họ mở liên kết sự kiện hoặc quét mã QR trong trình duyệt điện thoại. Không cần cài ứng dụng riêng cho khán giả hoặc tạo tài khoản."
+    },
+    {
+      "question": "Pockitle có thể hiển thị nhiều ngôn ngữ không?",
+      "answer": "Có. Một phiên dùng một ngôn ngữ nguồn nói cố định, cung cấp phụ đề ngôn ngữ đó và có thể thêm tối đa ba ngôn ngữ dịch bằng văn bản."
+    },
+    {
+      "question": "Phụ đề trực tiếp có hữu ích cho đám cưới, hội nghị và lớp học không?",
+      "answer": "Phụ đề có thể tạo thêm một cách đọc cho người nghe khác nhau, cần xử lý giọng hoặc thuật ngữ, hay muốn đọc bằng ngôn ngữ khác."
+    },
+    {
+      "question": "Pockitle có thay thế CART hoặc phiên dịch viên chuyên nghiệp không?",
+      "answer": "Không. Phụ đề và bản dịch do máy tạo nên có thể chậm, thiếu hoặc sai. Đây không phải CART chuyên nghiệp, phiên dịch đồng thời, biên bản chính thức hay bảo đảm tuân thủ."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phụ đề trực tiếp",
+      "definition": "Văn bản tạo từ lời nói và hiển thị khi sự kiện diễn ra."
+    },
+    {
+      "term": "Ngôn ngữ nguồn",
+      "definition": "Một ngôn ngữ nói cố định được chọn cho phiên Pockitle."
+    },
+    {
+      "term": "Bản dịch văn bản",
+      "definition": "Văn bản phụ đề dịch bằng máy bên cạnh phụ đề nguồn."
+    },
+    {
+      "term": "Màn hình khán giả",
+      "definition": "Trang trình duyệt được mở qua liên kết hoặc mã QR."
+    },
+    {
+      "term": "CART",
+      "definition": "Dịch vụ phụ đề thời gian thực chuyên nghiệp mà Pockitle không tuyên bố thay thế."
+    }
+  ]
+}
