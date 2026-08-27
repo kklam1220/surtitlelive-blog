@@ -1,7 +1,7 @@
 {
   "name": "surtitlelive-blog",
   "type": "module",
-  "version": "v260819.01",
+  "version": "v260826.02",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/rewrite-public-email-links.cjs",

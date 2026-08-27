@@ -326,33 +326,29 @@ if (
   throw new Error("Missing English blog article from sitemap.");
 }
 
-const retiredPockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
-const pockitleLaunchArticle = "17-surtitlelive-launches-pockitle-live-captioning";
+const pockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
 if (
-  !sitemapText.includes(`https://surtitlelive.com/blog/${pockitleLaunchArticle}/`)
+  !sitemapText.includes(`https://surtitlelive.com/blog/${pockitleDemoArticle}/`)
 ) {
   throw new Error(
-    "Missing the Pockitle launch article from the sitemap.",
+    "Missing the Pockitle demo evidence article from the sitemap.",
   );
 }
 assertFileHasMatch(
-  path.join(pockitleLaunchArticle, "index.html"),
-  /officially launched <strong>Pockitle<\/strong>/,
-  "The Pockitle launch article does not state the approved launch status.",
+  path.join(pockitleDemoArticle, "index.html"),
+  /Pockitle is available now/,
+  "The Pockitle demo article does not state the current availability status.",
 );
 assertFileHasMatch(
-  path.join(pockitleLaunchArticle, "index.html"),
-  /href="\/pockitle"/,
-  "The Pockitle launch article is missing its product path.",
+  path.join(pockitleDemoArticle, "index.html"),
+  /href="https:\/\/surtitlelive\.com\/auth\/register"/,
+  "The Pockitle demo article is missing its registration path.",
 );
 assertFileHasNoMatch(
-  path.join(pockitleLaunchArticle, "index.html"),
+  path.join(pockitleDemoArticle, "index.html"),
   /early access|coming soon|join (?:the )?waitlist/i,
-  "The Pockitle launch article still contains pre-launch wording.",
+  "The Pockitle demo article still contains pre-launch wording.",
 );
-if (sitemapText.includes(`https://surtitlelive.com/blog/${retiredPockitleDemoArticle}/`)) {
-  throw new Error("The retired Pockitle demo article remains in the sitemap.");
-}
 
 for (const locale of [
   "ar",
@@ -488,36 +484,6 @@ for (const requiredRule of [
 ]) {
   if (!redirectsContent.includes(requiredRule)) {
     throw new Error(`Missing required Pages redirect rule: ${requiredRule}`);
-  }
-}
-
-for (const localePrefix of [
-  "",
-  "ar/",
-  "de/",
-  "es/",
-  "fr/",
-  "id/",
-  "it/",
-  "ja/",
-  "ko/",
-  "pl/",
-  "pt/",
-  "ru/",
-  "th/",
-  "tr/",
-  "uk/",
-  "vi/",
-  "zh-CN/",
-  "zh-TW/",
-]) {
-  const source = `${localePrefix}17-how-pockitle-live-caption-demo-works/`;
-  const target = `https://surtitlelive.com/blog/${localePrefix}17-surtitlelive-launches-pockitle-live-captioning/ 301`;
-  for (const prefix of ["/", "/blog/"]) {
-    const requiredRule = `${prefix}${source} ${target}`;
-    if (!redirectsContent.includes(requiredRule)) {
-      throw new Error(`Missing Blog 17 replacement redirect: ${requiredRule}`);
-    }
   }
 }
 

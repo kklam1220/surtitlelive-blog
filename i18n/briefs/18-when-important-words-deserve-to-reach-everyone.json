@@ -1,0 +1,138 @@
+{
+  "slug": "18-when-important-words-deserve-to-reach-everyone",
+  "purpose": "Human-centred Pockitle article for weddings, conferences and classrooms. Preserve emotional intent and product truth, not English sentence structure.",
+  "localizationMode": "native-transcreation-with-claim-lock",
+  "sourceOfTruth": "English Markdown",
+  "approvedManualLocales": [
+    "zh-TW"
+  ],
+  "deferredLocales": [],
+  "globalRules": [
+    "Write as a native editorial article, not a literal translation.",
+    "Preserve the human arc: important moment -> risk of exclusion -> second reading route -> participation -> honest limits.",
+    "Adapt wedding, academic and classroom details to what feels natural in the target culture while keeping the same ethical point.",
+    "Localize illustrative language examples. Never carry an unrelated example language through mechanically.",
+    "When the article contrasts source and reading languages, use the target language as one of the reading-language examples where natural.",
+    "Do not invent product capabilities. Keep one fixed spoken source language, original captions plus up to three translations, browser/QR audience access, and current limits.",
+    "Do not claim professional CART, interpreting replacement, official transcript, certified accessibility or legal/educational compliance.",
+    "Do not promise singing, music-led captioning, sustained-overlap reliability or automatic source-language switching.",
+    "Preserve all URLs exactly.",
+    "Prefer culturally natural names, family relations, education terms and event vocabulary over literal English calques.",
+    "Do not translate English-language test references mechanically where they are culturally odd; replace them with a locally familiar second-language proficiency context or general wording.",
+    "Keep quoted vow wording natural for the locale; it may be rewritten rather than literally translated."
+  ],
+  "localeExamples": {
+    "ar": {
+      "weddingLanguageExample": "Use a natural Arabic-speaking family or guest context appropriate to the target readership.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Arabic.",
+      "style": "Use natural Modern Standard Arabic editorial prose; avoid literal English marketing syntax."
+    },
+    "de": {
+      "weddingLanguageExample": "Use a German-speaking relative or guest where natural.",
+      "conferenceReadingExample": "A delegate may listen to English while reading German.",
+      "classroomStyle": "Prefer natural Hochschul- and Vorlesungs wording rather than literal classroom calques."
+    },
+    "es": {
+      "weddingLanguageExample": "Use a Spanish-speaking family member or guest and culturally natural wedding language.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Spanish.",
+      "classroomStyle": "Use natural aula, clase and universidad terminology appropriate to the sentence."
+    },
+    "fr": {
+      "weddingLanguageExample": "Use a French-speaking relative or guest, or a naturally multilingual francophone family context.",
+      "conferenceReadingExample": "A delegate may listen to English while reading French.",
+      "classroomStyle": "Use natural French university terminology and distinguish sous-titrage en direct from transcription officielle."
+    },
+    "id": {
+      "weddingLanguageExample": "Use an Indonesian-speaking family or guest context that sounds natural locally.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Indonesian."
+    },
+    "it": {
+      "weddingLanguageExample": "Use an Italian-speaking relative or guest and natural ceremony vocabulary.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Italian."
+    },
+    "ja": {
+      "weddingLanguageExample": "Use a Japanese-speaking relative or guest and a plausible other spoken language; do not preserve a Chinese-language example from another locale.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Japanese.",
+      "classroomStyle": "Use natural Japanese higher-education vocabulary; avoid sounding like a disability-policy brochure unless the sentence is about accommodation."
+    },
+    "ko": {
+      "weddingLanguageExample": "Use a Korean-speaking relative or guest where natural.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Korean."
+    },
+    "pl": {
+      "weddingLanguageExample": "Use a Polish-speaking family or guest context where natural.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Polish."
+    },
+    "pt": {
+      "weddingLanguageExample": "Use a Portuguese-speaking family or guest context; choose wording natural to broad Portuguese readership rather than copying an English ceremony formula.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Portuguese."
+    },
+    "ru": {
+      "weddingLanguageExample": "Use a Russian-speaking relative or guest where natural.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Russian."
+    },
+    "th": {
+      "weddingLanguageExample": "Use a Thai-speaking family or guest context and natural Thai ceremony wording.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Thai."
+    },
+    "tr": {
+      "weddingLanguageExample": "Use a Turkish-speaking relative or guest and natural local wedding vocabulary.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Turkish."
+    },
+    "uk": {
+      "weddingLanguageExample": "Use a Ukrainian-speaking family or guest context where natural.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Ukrainian."
+    },
+    "vi": {
+      "weddingLanguageExample": "Use a Vietnamese-speaking family or guest context and natural Vietnamese family/ceremony terms.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Vietnamese."
+    },
+    "zh-CN": {
+      "weddingLanguageExample": "Use Simplified Chinese wording and a Mandarin-speaking relative or guest; do not reuse Traditional Chinese orthography.",
+      "conferenceReadingExample": "A delegate may listen to English while reading Simplified Chinese."
+    },
+    "zh-TW": {
+      "status": "Human-approved translation supplied. Do not regenerate unless explicitly requested.",
+      "weddingLanguageExample": "Approved copy uses a Chinese-speaking grandmother in an English-speaking ceremony.",
+      "conferenceReadingExample": "Approved copy uses Japanese, Traditional Chinese and English as reading examples."
+    }
+  },
+  "assistantTranscreatedLocales": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zh-CN"
+  ],
+  "completedLocales": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zh-CN",
+    "zh-TW"
+  ],
+  "completionNote": "All configured blog locales now have complete localized article payloads. zh-TW is the user-approved manual translation; the other 16 were individually transcreated for native editorial flow rather than generated as literal one-to-one translations."
+}
