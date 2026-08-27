@@ -326,29 +326,15 @@ if (
   throw new Error("Missing English blog article from sitemap.");
 }
 
-const pockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
+const archivedPockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
 if (
-  !sitemapText.includes(`https://surtitlelive.com/blog/${pockitleDemoArticle}/`)
+  sitemapText.includes(
+    `https://surtitlelive.com/blog/${archivedPockitleDemoArticle}/`,
+  ) ||
+  fs.existsSync(path.join(distDir, archivedPockitleDemoArticle, "index.html"))
 ) {
-  throw new Error(
-    "Missing the Pockitle demo evidence article from the sitemap.",
-  );
+  throw new Error("Archived Pockitle demo article must not be published.");
 }
-assertFileHasMatch(
-  path.join(pockitleDemoArticle, "index.html"),
-  /Pockitle is available now/,
-  "The Pockitle demo article does not state the current availability status.",
-);
-assertFileHasMatch(
-  path.join(pockitleDemoArticle, "index.html"),
-  /href="https:\/\/surtitlelive\.com\/auth\/register"/,
-  "The Pockitle demo article is missing its registration path.",
-);
-assertFileHasNoMatch(
-  path.join(pockitleDemoArticle, "index.html"),
-  /early access|coming soon|join (?:the )?waitlist/i,
-  "The Pockitle demo article still contains pre-launch wording.",
-);
 
 for (const locale of [
   "ar",
