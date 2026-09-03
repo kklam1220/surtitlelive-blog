@@ -238,6 +238,6 @@ The demonstration is prerecorded so visitors can inspect the product behaviour w
 
 After viewing the demo, test Pockitle with the actual voices, microphones, room and languages that will be used for the event.
 
-[Open Pockitle](/pockitle), [view the supported languages](/pockitle/languages), or read the [Pockitle Live Quick Start](/guides/pockitle-live-quick-start).
+[Open Pockitle](/pockitle), [view the supported languages](/pockitle/languages), read the [Pockitle Live Quick Start](/guides/pockitle-live-quick-start), or compare [Pockitle Live with prepared theatre captions](/planning/theatre-captioning-software-vs-live-caption-tools).
 
 **Prepare the words that can be prepared. Caption the words that cannot.**

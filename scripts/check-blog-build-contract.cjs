@@ -194,6 +194,7 @@ assertSameStringSet(
 
 const htmlFiles = collectFiles(distDir, (file) => file.endsWith(".html"));
 const cssFiles = collectFiles(distDir, (file) => file.endsWith(".css"));
+const jsFiles = collectFiles(distDir, (file) => file.endsWith(".js"));
 const xmlFiles = collectFiles(distDir, (file) => file.endsWith(".xml"));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
 const redirectsFile = path.join(distDir, "_redirects");
@@ -202,6 +203,41 @@ const sitemapText = xmlFiles
   .filter((file) => path.basename(file).startsWith("sitemap"))
   .map((file) => fs.readFileSync(file, "utf8"))
   .join("\n");
+
+for (const locale of [
+  "en",
+  "ar",
+  "de",
+  "es",
+  "fr",
+  "id",
+  "it",
+  "ja",
+  "ko",
+  "pl",
+  "pt",
+  "ru",
+  "th",
+  "tr",
+  "uk",
+  "vi",
+  "zh-CN",
+  "zh-TW",
+]) {
+  const indexPath = path.join(distDir, ...(locale === "en" ? [] : [locale]), "index.html");
+  const html = fs.readFileSync(indexPath, "utf8");
+  const description = html.match(/<meta name="description" content="([^"]+)"/)?.[1] ?? "";
+  const characterCount = Array.from(description.replace(/&[^;]+;/g, "x")).length;
+  const isCjk = ["ja", "ko", "zh-CN", "zh-TW"].includes(locale);
+  const minimum = isCjk ? 60 : 120;
+  const maximum = isCjk ? 100 : 160;
+
+  if (characterCount < minimum || characterCount > maximum) {
+    throw new Error(
+      `Blog ${locale} index description must stay within ${minimum}-${maximum} characters; found ${characterCount}.`,
+    );
+  }
+}
 
 for (const filePath of htmlFiles) {
   const content = fs.readFileSync(filePath, "utf8");
@@ -301,10 +337,16 @@ for (const relativePath of PUBLIC_EMAIL_OUTPUT_PATHS) {
   );
   assertFileHasMatch(
     relativePath,
-    /link\.href = `mailto:\$\{address\}`;[\s\S]*link\.textContent = address;/,
+    /<script type="module" src="\/blog\/_astro\/BlogPost[^" ]+\.js"><\/script>/,
     "Fringe Support article is missing the client-side clickable email restoration.",
   );
 }
+
+assertHasMatch(
+  jsFiles,
+  /\.href=`mailto:\$\{[^}]+\}`,[^;]{0,120}\.textContent=/,
+  "Built BlogPost client bundle is missing the reviewed clickable email restoration.",
+);
 
 assertNoMatch(
   htmlFiles.filter((file) => !publicEmailOutputFiles.has(file)),
@@ -326,14 +368,14 @@ if (
   throw new Error("Missing English blog article from sitemap.");
 }
 
-const archivedPockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
+const permanentlyRemovedPockitleDemoArticle = "17-how-pockitle-live-caption-demo-works";
 if (
   sitemapText.includes(
-    `https://surtitlelive.com/blog/${archivedPockitleDemoArticle}/`,
+    `https://surtitlelive.com/blog/${permanentlyRemovedPockitleDemoArticle}/`,
   ) ||
-  fs.existsSync(path.join(distDir, archivedPockitleDemoArticle, "index.html"))
+  fs.existsSync(path.join(distDir, permanentlyRemovedPockitleDemoArticle, "index.html"))
 ) {
-  throw new Error("Archived Pockitle demo article must not be published.");
+  throw new Error("Permanently removed Pockitle demo article must never be published.");
 }
 
 for (const locale of [
@@ -376,6 +418,12 @@ assertNoMatch(
   htmlFiles,
   /<pre><code class="language-(markdown|md)">|```markdown|&lt;script type=(?:&quot;|")application\/ld\+json|&lt;script\s+type=(?:&quot;|")application\/ld\+json/i,
   "Detected escaped markdown fence or JSON-LD script rendered as article body content.",
+);
+
+assertNoMatch(
+  htmlFiles,
+  /cdn\.jsdelivr\.net\/npm\/mermaid|unpkg\.com\/mermaid/i,
+  "Detected mutable third-party Mermaid runtime; diagrams must use the lockfile-pinned local bundle.",
 );
 
 assertNoMatch(
@@ -702,5 +750,26 @@ assertFileHasNoMatch(
   /Ils regardent vers la fenêtre\.\)<\/strong>\)/,
   "Detected leftover punctuation from replaced French dialogue examples.",
 );
+
+for (const [locale, pockitlePath, planningPath] of [
+  ["en", "/pockitle#software", "/planning/theatre-captioning-software-vs-live-caption-tools"],
+  ["zh-TW", "/zh-TW/pockitle#software", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
+]) {
+  const articlePath = path.join(
+    ...(locale === "en" ? [] : [locale]),
+    "17-surtitlelive-launches-pockitle-live-captioning",
+    "index.html",
+  );
+  assertFileHasMatch(
+    articlePath,
+    new RegExp(`https://surtitlelive\\.com${pockitlePath}`),
+    `Missing shared Pockitle SoftwareApplication entity on the ${locale} launch article.`,
+  );
+  assertFileHasMatch(
+    articlePath,
+    new RegExp(`href="${planningPath}"`),
+    `Missing Pockitle-versus-prepared-captions planning link on the ${locale} launch article.`,
+  );
+}
 
 console.log("Blog build contract check passed.");

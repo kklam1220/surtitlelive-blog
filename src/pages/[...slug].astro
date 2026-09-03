@@ -26,10 +26,34 @@ const localeMeta = resolveBlogLocaleMeta('en');
 const geoBlock = readGeoBlock("en", post.id);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body, geoBlock) ? null : geoBlock;
 const allPosts = await getCollection("blog");
+const postTags = new Set((post.data.tags ?? []).map((tag) => tag.toLocaleLowerCase("en")));
 const relatedPosts = allPosts
 	.filter((item) => item.id !== post.id)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.map((item) => ({
+		item,
+		score: (item.data.tags ?? []).reduce(
+			(total, tag) => total + (postTags.has(tag.toLocaleLowerCase("en")) ? 1 : 0),
+			0,
+		),
+	}))
+	.sort((a, b) => b.score - a.score || b.item.data.pubDate.valueOf() - a.item.data.pubDate.valueOf())
 	.slice(0, 3);
+const commercialNextSteps: Record<string, Array<{ href: string; label: string }>> = {
+	"1-why-powerpoint-fails-theatre": [{ href: "/theatre-subtitle-software", label: "Theatre subtitle software workflow" }],
+	"2-beyond-the-led-screen-byod-opera": [
+		{ href: "/opera-surtitles-software", label: "Opera surtitles software" },
+		{ href: "/projection-and-mobile-surtitles", label: "Projection and audience-phone delivery" },
+	],
+	"6-ai-prepares-artists-protect": [{ href: "/ai-script-to-theatre-subtitles", label: "Script to editable theatre subtitle cues" }],
+	"8-from-layout-to-archetype-detection": [{ href: "/ai-script-to-theatre-subtitles", label: "AI-assisted script preparation" }],
+	"9-english-surtitles-non-english-show-fringe": [{ href: "/theatre-subtitle-software", label: "Prepared theatre surtitles workflow" }],
+	"11-captions-vs-surtitles-edinburgh-fringe": [{ href: "/projection-and-mobile-surtitles", label: "Projection and audience-phone surtitles" }],
+	"13-quick-qlab-subtitles-from-excel-txt": [{ href: "/operator-cockpit", label: "SurtitleLive Operator Cockpit" }],
+	"15-qlab-surtitles-audience-phones": [{ href: "/projection-and-mobile-surtitles", label: "Projection and audience-phone surtitles" }],
+	"17-surtitlelive-launches-pockitle-live-captioning": [{ href: "/pockitle", label: "Pockitle live captioning" }],
+	"18-when-important-words-deserve-to-reach-everyone": [{ href: "/planning/live-captions-for-weddings-conferences-and-classrooms", label: "Plan live captions for events and classrooms" }],
+};
+const nextSteps = commercialNextSteps[post.id] ?? [];
 const hreflangs = [
 	{ lang: "en", path: canonicalPath },
 	...listIndexedLocalizedLocalesForSlug(post.id).map((locale: string) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/${post.id}/` })),
@@ -74,10 +98,18 @@ const localeLinks = [
 			</section>
 		)
 	}
-	<section>
+	{nextSteps.length > 0 && (
+		<section data-nosnippet>
+			<h2>Continue with the relevant workflow</h2>
+			<ul>
+				{nextSteps.map((item) => <li><a href={`https://surtitlelive.com${item.href}`}>{item.label}</a></li>)}
+			</ul>
+		</section>
+	)}
+	<section data-nosnippet>
 		<h2>{geoBlock?.sectionTitles?.related || localeMeta.relatedArticles}</h2>
 		<ul>
-			{relatedPosts.map((item) => (
+			{relatedPosts.map(({ item }) => (
 				<li><a href={`${normalizedBaseUrl}${item.id}/`}>{item.data.title}</a></li>
 			))}
 		</ul>

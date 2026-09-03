@@ -2,6 +2,8 @@
 
 Official blog for [SurtitleLive](https://surtitlelive.com) - Live subtitling platform for theatre and events.
 
+Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` is the canonical regression inventory for these browser execution boundaries and runs through `npm run build:check`.
+
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
 
 ## URL Model
@@ -110,7 +112,7 @@ Published localized routes:
 
 The blog now exposes a built-in language selector in `src/components/Header.astro`. It is intentionally Astro-native and independent from the main site's Next.js locale router, but it must stay aligned with the same 18 supported locales so users can switch language directly inside the blog without leaving the independent Pages deployment path.
 
-Indexing is intentionally narrower than reachability. The tier-1 indexed blog locales are English, German, Spanish, French, Japanese, Korean, and Traditional Chinese; other localized blog pages remain reachable but render `noindex,follow` and are excluded from the Astro sitemap unless a slug is explicitly allowlisted. Current all-locale indexed exception: `9-english-surtitles-non-english-show-fringe`.
+All 18 supported Blog locales are first-class indexable editions. A localized hub or article is included in sitemap and reciprocal hreflang output when its tracked payload is publishable (`translated`); deferred or unpublished payloads remain absent rather than creating thin indexed routes.
 
 ## 🎨 Adding Images
 

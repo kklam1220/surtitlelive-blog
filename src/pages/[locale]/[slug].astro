@@ -13,6 +13,16 @@ import {
 import { rewriteLocalizedBlogImageReferences } from "../../lib/blogAssets";
 import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
 import { isBlogArticleIndexable, resolveBlogLocaleMeta } from "../../i18n/locale-config";
+import { sanitizeLocalizedBlogHtml } from "../../lib/blogSecurity.mjs";
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 export async function getStaticPaths() {
   const paths = [];
@@ -49,20 +59,22 @@ const markedInstance = new Marked({
       try {
         const cleanLang = (lang || "").toLowerCase().trim();
         if (cleanLang === "mermaid") {
-          return `<pre class="mermaid">${text}</pre>`;
+          return `<pre class="mermaid">${escapeHtml(text)}</pre>`;
         }
         return shikiHighlighter.codeToHtml(text, {
           lang: cleanLang || "plaintext",
           theme: "github-dark"
         });
       } catch (e) {
-        return `<pre><code>${text}</code></pre>`;
+        return `<pre><code>${escapeHtml(text)}</code></pre>`;
       }
     }
   }
 });
 
-const html = markedInstance.parse(rewriteLocalizedBlogImageReferences(post.body || ""));
+const html = sanitizeLocalizedBlogHtml(
+  await markedInstance.parse(rewriteLocalizedBlogImageReferences(post.body || "")),
+);
 const geoBlock = readGeoBlock(locale, post.slug);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null : geoBlock;
 const baseUrl = import.meta.env.BASE_URL ?? "/";
