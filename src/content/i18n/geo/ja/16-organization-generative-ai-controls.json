@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:59.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "よくある質問",
+    "glossary": "用語集",
+    "related": "関連記事"
+  },
+  "keyTakeaways": [
+    "SurtitleLiveのアカウント所有者は、Organization Settingsから対応する生成AI処理をオフにできます。",
+    "台本編集、標準の機械翻訳、言語検出、ライブ字幕の運用は引き続き利用できる場合があります。",
+    "生成AIをオフにしても、SurtitleLiveに保存済みの台本、翻訳、その他の作業が削除されることはありません。",
+    "この設定は、すべての外部サービスやあらゆる機械学習が選択したコンテンツを処理することまで防ぐものではありません。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLiveですべてのAIをオフにできますか？",
+      "answer": "いいえ。この設定でオフになるのは、対応する生成AI処理です。標準の機械翻訳、言語検出、その他の非生成AIツールは引き続き利用できる場合があります。"
+    },
+    {
+      "question": "SurtitleLiveで生成AIをオフにできるのは誰ですか？",
+      "answer": "SurtitleLiveのアカウント所有者が、Organization Settingsで設定を変更できます。共同作業者を追加していない場合、この選択が影響するのはアカウント所有者自身の作業だけです。"
+    },
+    {
+      "question": "生成AIをオフにすると翻訳も無効になりますか？",
+      "answer": "対応する生成AI翻訳と生成AIを使うフォールバックは無効になります。標準のGoogle Cloud Translationは、対応するワークフローで引き続き利用できる場合があります。"
+    },
+    {
+      "question": "生成AIをオフにすると、既存の台本や翻訳は削除されますか？",
+      "answer": "いいえ。保存済みのコンテンツはそのまま利用できます。この設定が制御するのは新しい生成処理であり、過去の作業を削除するものではありません。"
+    },
+    {
+      "question": "共同作業者がSurtitleLiveのアカウントを使う場合はどうなりますか？",
+      "answer": "同じ生成AI設定が、共同作業者のSurtitleLiveでの作業にも適用されます。共同作業者は保存された選択を確認できますが、変更はできません。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "生成AI",
+      "definition": "SurtitleLiveが対応する台本・翻訳ワークフローで、コンテンツを生成または変換するAIモデル。"
+    },
+    {
+      "term": "SurtitleLiveのアカウント所有者",
+      "definition": "生成AI処理を許可するかどうかを含め、SurtitleLiveでアカウント全体の設定を管理する人。"
+    },
+    {
+      "term": "標準の機械翻訳",
+      "definition": "SurtitleLiveの対応ワークフローでGoogle Cloud Translationを通じて提供される、生成AIではない翻訳。"
+    },
+    {
+      "term": "アカウント全体に適用される設定",
+      "definition": "アカウント所有者の作業を制御し、アカウントに追加された共同作業者にも適用される選択。"
+    }
+  ]
+}

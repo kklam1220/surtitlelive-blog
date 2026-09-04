@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:45.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Artikel"
+  },
+  "keyTakeaways": [
+    "Der Kontoinhaber von SurtitleLive kann unterstützte generative KI-Verarbeitung in den Organization Settings deaktivieren.",
+    "Skriptbearbeitung, Standardübersetzung, Spracherkennung und der Live-Betrieb von Übertiteln können weiterhin verfügbar sein.",
+    "Das Deaktivieren generativer KI löscht keine Skripte, Übersetzungen oder andere bereits in SurtitleLive gespeicherte Arbeit.",
+    "Die Einstellung verhindert nicht, dass jeder externe Dienst oder jede Form maschinellen Lernens ausgewählte Inhalte verarbeitet."
+  ],
+  "faq": [
+    {
+      "question": "Kann ich in SurtitleLive sämtliche KI deaktivieren?",
+      "answer": "Nein. Diese Einstellung deaktiviert unterstützte generative KI-Verarbeitung. Standardübersetzung, Spracherkennung und andere nicht generative Werkzeuge können weiterhin verfügbar sein."
+    },
+    {
+      "question": "Wer kann generative KI in SurtitleLive deaktivieren?",
+      "answer": "Der Kontoinhaber von SurtitleLive kann die Einstellung in den Organization Settings ändern. Wenn keine Mitwirkenden hinzugefügt wurden, betrifft die Entscheidung nur die Arbeit des Kontoinhabers."
+    },
+    {
+      "question": "Wird durch das Deaktivieren generativer KI die Übersetzung abgeschaltet?",
+      "answer": "Unterstützte generative Übersetzung und generative Fallbacks werden deaktiviert. Google Cloud Translation Standard kann in unterstützten Arbeitsabläufen weiterhin verfügbar sein."
+    },
+    {
+      "question": "Werden vorhandene Skripte oder Übersetzungen gelöscht, wenn ich generative KI deaktiviere?",
+      "answer": "Nein. Gespeicherte Inhalte bleiben verfügbar. Die Einstellung steuert neue generative Verarbeitung, statt bereits geleistete Arbeit zu löschen."
+    },
+    {
+      "question": "Was passiert, wenn Mitwirkende das SurtitleLive-Konto nutzen?",
+      "answer": "Dieselbe Einstellung für generative KI gilt auch für ihre Arbeit in SurtitleLive. Mitwirkende können die gespeicherte Entscheidung sehen, aber nicht ändern."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Generative KI",
+      "definition": "KI-Modelle, die in unterstützten SurtitleLive-Arbeitsabläufen für Skripte und Übersetzungen Inhalte erzeugen oder verändern."
+    },
+    {
+      "term": "SurtitleLive-Kontoinhaber",
+      "definition": "Die Person, die kontoweite Einstellungen in SurtitleLive steuert, einschließlich der Freigabe oder Sperrung unterstützter generativer KI-Verarbeitung."
+    },
+    {
+      "term": "Standardübersetzung",
+      "definition": "Nicht generative Übersetzung über Google Cloud Translation in unterstützten SurtitleLive-Arbeitsabläufen."
+    },
+    {
+      "term": "Kontoweite Einstellung",
+      "definition": "Eine Entscheidung, die die Arbeit des Kontoinhabers steuert und auch für zum Konto hinzugefügte Mitwirkende gilt."
+    }
+  ]
+}

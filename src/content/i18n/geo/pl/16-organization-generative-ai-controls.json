@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:59.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Najczęściej zadawane pytania",
+    "glossary": "Słowniczek",
+    "related": "Powiązane artykuły"
+  },
+  "keyTakeaways": [
+    "Właściciel konta SurtitleLive może wyłączyć obsługiwane przetwarzanie generatywnej AI w Organization Settings.",
+    "Edycja scenariuszy, standardowe tłumaczenie maszynowe, wykrywanie języka i obsługa napisów na żywo mogą pozostać dostępne.",
+    "Wyłączenie generatywnej AI nie usuwa scenariuszy, tłumaczeń ani innych treści zapisanych wcześniej w SurtitleLive.",
+    "Ustawienie nie uniemożliwia każdej zewnętrznej usłudze ani każdej formie uczenia maszynowego przetwarzania wybranych treści."
+  ],
+  "faq": [
+    {
+      "question": "Czy mogę wyłączyć całą AI w SurtitleLive?",
+      "answer": "Nie. To ustawienie wyłącza obsługiwane przetwarzanie generatywnej AI. Standardowe tłumaczenie maszynowe, wykrywanie języka i inne narzędzia niegeneratywne mogą nadal pozostać dostępne."
+    },
+    {
+      "question": "Kto może wyłączyć generatywną AI w SurtitleLive?",
+      "answer": "Właściciel konta SurtitleLive może zmienić to ustawienie w Organization Settings. Jeśli do konta nie dodano współpracowników, wybór dotyczy tylko pracy właściciela konta."
+    },
+    {
+      "question": "Czy wyłączenie generatywnej AI wyłącza tłumaczenie?",
+      "answer": "Wyłącza obsługiwane tłumaczenie generatywne i generatywne mechanizmy awaryjne. Standardowe Google Cloud Translation może nadal pozostać dostępne w obsługiwanych procesach."
+    },
+    {
+      "question": "Czy wyłączenie generatywnej AI usunie istniejące scenariusze lub tłumaczenia?",
+      "answer": "Nie. Zapisane treści pozostają dostępne. Ustawienie kontroluje nowe przetwarzanie generatywne, a nie usuwa wcześniejszej pracy."
+    },
+    {
+      "question": "Co się stanie, jeśli współpracownicy korzystają z konta SurtitleLive?",
+      "answer": "To samo ustawienie generatywnej AI obejmuje również ich pracę w SurtitleLive. Współpracownicy mogą zobaczyć zapisany wybór, ale nie mogą go zmienić."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Generatywna AI",
+      "definition": "Modele AI, które generują lub przekształcają treści w obsługiwanych przez SurtitleLive procesach pracy ze scenariuszami i tłumaczeniami."
+    },
+    {
+      "term": "Właściciel konta SurtitleLive",
+      "definition": "Osoba zarządzająca ustawieniami całego konta w SurtitleLive, w tym decyzją o zezwoleniu na obsługiwane przetwarzanie generatywnej AI."
+    },
+    {
+      "term": "Standardowe tłumaczenie maszynowe",
+      "definition": "Niegeneratywne tłumaczenie udostępniane przez Google Cloud Translation w obsługiwanych procesach SurtitleLive."
+    },
+    {
+      "term": "Ustawienie obejmujące całe konto",
+      "definition": "Wybór, który kontroluje pracę właściciela konta i ma zastosowanie także do współpracowników dodanych do konta."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:59.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "In sintesi",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Articoli correlati"
+  },
+  "keyTakeaways": [
+    "Il titolare dell’account SurtitleLive può disattivare i processi supportati di IA generativa da Organization Settings.",
+    "La modifica dei copioni, la traduzione automatica standard, il rilevamento della lingua e la gestione dei sopratitoli dal vivo possono restare disponibili.",
+    "Disattivare l’IA generativa non elimina copioni, traduzioni o altro lavoro già salvato in SurtitleLive.",
+    "L’impostazione non impedisce a ogni servizio esterno o a ogni forma di apprendimento automatico di elaborare i contenuti selezionati."
+  ],
+  "faq": [
+    {
+      "question": "Posso disattivare tutta l’IA in SurtitleLive?",
+      "answer": "No. Questa impostazione disattiva i processi supportati di IA generativa. La traduzione automatica standard, il rilevamento della lingua e altri strumenti non generativi possono restare disponibili."
+    },
+    {
+      "question": "Chi può disattivare l’IA generativa in SurtitleLive?",
+      "answer": "Il titolare dell’account SurtitleLive può modificare l’impostazione in Organization Settings. Se non sono stati aggiunti collaboratori, la scelta riguarda solo il lavoro del titolare dell’account."
+    },
+    {
+      "question": "Disattivare l’IA generativa disabilita la traduzione?",
+      "answer": "Disabilita la traduzione generativa supportata e i fallback generativi. Google Cloud Translation standard può restare disponibile nei flussi supportati."
+    },
+    {
+      "question": "Disattivare l’IA generativa elimina i copioni o le traduzioni esistenti?",
+      "answer": "No. I contenuti salvati restano disponibili. L’impostazione controlla le nuove elaborazioni generative, non elimina il lavoro precedente."
+    },
+    {
+      "question": "Cosa succede se dei collaboratori usano l’account SurtitleLive?",
+      "answer": "La stessa impostazione sull’IA generativa si applica anche al loro lavoro in SurtitleLive. I collaboratori possono vedere la scelta salvata, ma non possono modificarla."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "IA generativa",
+      "definition": "Modelli di IA che generano o trasformano contenuti nei flussi supportati di lavoro con copioni e traduzioni di SurtitleLive."
+    },
+    {
+      "term": "Titolare dell’account SurtitleLive",
+      "definition": "La persona che controlla le impostazioni valide per l’intero account in SurtitleLive, compresa l’autorizzazione dei processi supportati di IA generativa."
+    },
+    {
+      "term": "Traduzione automatica standard",
+      "definition": "Traduzione non generativa fornita tramite Google Cloud Translation nei flussi supportati di SurtitleLive."
+    },
+    {
+      "term": "Impostazione valida per l’intero account",
+      "definition": "Una scelta che controlla il lavoro del titolare dell’account e si applica anche ai collaboratori aggiunti all’account."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "4f1286821fbc4697aeb7ee9032a58a1102cd88c33315fdc65363f2db7262e2cc",
+  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related Articles"
+  },
+  "keyTakeaways": [
+    "For scripted theatre, a rehearsed human operator is often the strongest final control for cue timing, recovery and dramatic reveals.",
+    "AI can reduce preparation work, while automatic script following works best when speech remains close to a stable prepared script.",
+    "Live captioning is a different workflow for improvisation, talks, Q&A and other speech that is not known in advance.",
+    "Rehearsals should test skips, repeats, long pauses, cue jumps, blanking and recovery—not only a perfect cue sequence."
+  ],
+  "faq": [
+    {
+      "question": "Who should operate surtitles in a theatre performance?",
+      "answer": "For a scripted performance, the best choice is usually someone who knows the show and is explicitly responsible for the live cue state. This may be a specialist surtitle operator, an ASM, another stage-management team member or a suitable technical operator, provided the responsibility does not conflict with another critical task."
+    },
+    {
+      "question": "Can AI run theatre surtitles automatically?",
+      "answer": "AI and script-following systems can reduce manual cueing when speech closely follows a stable script. They become less reliable when performers skip, repeat, overlap, hold long pauses or move away from the expected sequence. They may also lack the dramatic context needed to protect a reveal or punchline."
+    },
+    {
+      "question": "Why can automatic subtitles spoil a plot twist?",
+      "answer": "Subtitle accuracy includes timing, not only wording. If a line reveals a secret, identity, confession or joke and appears before the performer delivers it, the audience receives the information too early. A human operator can hold the cue until the actual performance reaches that moment."
+    },
+    {
+      "question": "Does a surtitle operator need to understand the performance language?",
+      "answer": "Not always, but it helps. An operator can work from a rehearsed cue sequence, yet understanding the spoken language makes it easier to recognise skips, repeats and unexpected changes quickly."
+    },
+    {
+      "question": "Is SurtitleLive difficult to learn for a new operator?",
+      "answer": "The core live controls are designed around straightforward theatre cueing and recovery. A full rehearsal gives someone who understands stage cues a practical way to learn the main operating logic. Advanced workflows can be learned when the production needs them."
+    },
+    {
+      "question": "What should we test in the first surtitle rehearsal?",
+      "answer": "Do not test only a perfect cue run. Practise skips, repeats, long pauses, cue jumps, blanking and recovery. If the production includes secrets, jokes or reversals, also rehearse the earliest safe moment for those subtitles to appear."
+    },
+    {
+      "question": "Should improvisation use manually cued surtitles?",
+      "answer": "Usually not if the main wording is genuinely unknown in advance. Improvisation, Q&A and post-show discussions are better suited to live captioning, where captions are generated from speech as it happens."
+    },
+    {
+      "question": "Do human operators and AI have to be an either-or choice?",
+      "answer": "No. AI can assist with script analysis, translation and preparation, while a human remains responsible for live timing and recovery. For many scripted productions, this division of labour is more useful than trying to automate every part of the workflow."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitle operator",
+      "definition": "The person responsible for advancing, holding, jumping, blanking and recovering prepared theatre subtitle cues during a performance."
+    },
+    {
+      "term": "Automatic script following",
+      "definition": "A system that attempts to match live speech to a prepared script and advance the corresponding subtitle cues."
+    },
+    {
+      "term": "Cue recovery",
+      "definition": "Returning the displayed surtitles to the correct place after a skip, repeat, mistake or other departure from the prepared sequence."
+    },
+    {
+      "term": "Prepared surtitles",
+      "definition": "Subtitle text translated, edited, approved and rehearsed before a scripted performance."
+    },
+    {
+      "term": "Live captioning",
+      "definition": "Captions generated while someone speaks, suited to words that are not known in advance."
+    }
+  ]
+}

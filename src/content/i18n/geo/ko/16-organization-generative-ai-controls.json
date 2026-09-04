@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "ko",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:59.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "핵심 내용",
+    "faq": "자주 묻는 질문",
+    "glossary": "용어집",
+    "related": "관련 글"
+  },
+  "keyTakeaways": [
+    "SurtitleLive 계정 소유자는 Organization Settings에서 지원되는 생성형 AI 처리를 끌 수 있습니다.",
+    "대본 편집, 표준 기계 번역, 언어 감지 및 라이브 공연 자막 운영은 계속 이용할 수 있습니다.",
+    "생성형 AI를 꺼도 SurtitleLive에 이미 저장된 대본, 번역 또는 기타 작업은 삭제되지 않습니다.",
+    "이 설정은 모든 외부 서비스나 모든 형태의 머신러닝이 선택한 콘텐츠를 처리하는 것까지 막지는 않습니다."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive에서 모든 AI를 끌 수 있나요?",
+      "answer": "아니요. 이 설정은 지원되는 생성형 AI 처리만 끕니다. 표준 기계 번역, 언어 감지 및 기타 비생성형 도구는 계속 이용할 수 있습니다."
+    },
+    {
+      "question": "SurtitleLive에서 생성형 AI를 끌 수 있는 사람은 누구인가요?",
+      "answer": "SurtitleLive 계정 소유자가 Organization Settings에서 설정을 변경할 수 있습니다. 협업자를 추가하지 않았다면 이 선택은 계정 소유자 자신의 작업에만 적용됩니다."
+    },
+    {
+      "question": "생성형 AI를 끄면 번역도 비활성화되나요?",
+      "answer": "지원되는 생성형 번역과 생성형 fallback은 비활성화됩니다. 표준 Google Cloud Translation은 지원되는 작업 흐름에서 계속 이용할 수 있습니다."
+    },
+    {
+      "question": "생성형 AI를 끄면 기존 대본이나 번역이 삭제되나요?",
+      "answer": "아니요. 저장된 콘텐츠는 계속 이용할 수 있습니다. 이 설정은 새로운 생성형 처리만 제어하며 이전 작업을 삭제하지 않습니다."
+    },
+    {
+      "question": "협업자가 SurtitleLive 계정을 사용하면 어떻게 되나요?",
+      "answer": "동일한 생성형 AI 설정이 협업자의 SurtitleLive 작업에도 적용됩니다. 협업자는 저장된 선택을 볼 수 있지만 변경할 수는 없습니다."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "생성형 AI",
+      "definition": "SurtitleLive가 지원하는 대본 및 번역 작업 흐름에서 콘텐츠를 생성하거나 변환하는 AI 모델입니다."
+    },
+    {
+      "term": "SurtitleLive 계정 소유자",
+      "definition": "지원되는 생성형 AI 처리를 허용할지 여부를 포함해 SurtitleLive의 계정 전체 설정을 관리하는 사람입니다."
+    },
+    {
+      "term": "표준 기계 번역",
+      "definition": "SurtitleLive의 지원되는 작업 흐름에서 Google Cloud Translation을 통해 제공되는 비생성형 번역입니다."
+    },
+    {
+      "term": "계정 전체 설정",
+      "definition": "계정 소유자의 작업을 제어하고 계정에 추가된 협업자에게도 적용되는 선택입니다."
+    }
+  ]
+}

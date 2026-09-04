@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:45.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Poin penting",
+    "faq": "Pertanyaan yang sering diajukan",
+    "glossary": "Glosarium",
+    "related": "Artikel terkait"
+  },
+  "keyTakeaways": [
+    "Pemilik akun SurtitleLive dapat menonaktifkan pemrosesan AI generatif yang didukung melalui Organization Settings.",
+    "Penyuntingan naskah, terjemahan mesin standar, deteksi bahasa, dan pengoperasian subtitle panggung secara langsung dapat tetap tersedia.",
+    "Menonaktifkan AI generatif tidak menghapus naskah, terjemahan, atau pekerjaan lain yang sudah tersimpan di SurtitleLive.",
+    "Pengaturan ini tidak mencegah setiap layanan eksternal atau setiap bentuk machine learning memproses konten yang dipilih."
+  ],
+  "faq": [
+    {
+      "question": "Bisakah saya menonaktifkan semua AI di SurtitleLive?",
+      "answer": "Tidak. Pengaturan ini menonaktifkan pemrosesan AI generatif yang didukung. Terjemahan mesin standar, deteksi bahasa, dan alat non-generatif lainnya mungkin tetap tersedia."
+    },
+    {
+      "question": "Siapa yang dapat menonaktifkan AI generatif di SurtitleLive?",
+      "answer": "Pemilik akun SurtitleLive dapat mengubah pengaturan di Organization Settings. Jika belum ada kolaborator yang ditambahkan, pilihan ini hanya memengaruhi pekerjaan pemilik akun."
+    },
+    {
+      "question": "Apakah menonaktifkan AI generatif juga menonaktifkan terjemahan?",
+      "answer": "Terjemahan generatif dan fallback generatif yang didukung akan dinonaktifkan. Google Cloud Translation standar tetap dapat tersedia dalam alur kerja yang didukung."
+    },
+    {
+      "question": "Apakah menonaktifkan AI generatif akan menghapus naskah atau terjemahan yang sudah ada?",
+      "answer": "Tidak. Konten yang tersimpan tetap tersedia. Pengaturan ini mengontrol pemrosesan generatif baru, bukan menghapus pekerjaan sebelumnya."
+    },
+    {
+      "question": "Apa yang terjadi jika kolaborator menggunakan akun SurtitleLive?",
+      "answer": "Pengaturan AI generatif yang sama berlaku untuk pekerjaan mereka di SurtitleLive. Kolaborator dapat melihat pilihan yang tersimpan, tetapi tidak dapat mengubahnya."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "AI generatif",
+      "definition": "Model AI yang menghasilkan atau mengubah konten dalam alur kerja naskah dan terjemahan SurtitleLive yang didukung."
+    },
+    {
+      "term": "Pemilik akun SurtitleLive",
+      "definition": "Orang yang mengendalikan pengaturan untuk seluruh akun di SurtitleLive, termasuk apakah pemrosesan AI generatif yang didukung diizinkan."
+    },
+    {
+      "term": "Terjemahan mesin standar",
+      "definition": "Terjemahan non-generatif yang disediakan melalui Google Cloud Translation dalam alur kerja SurtitleLive yang didukung."
+    },
+    {
+      "term": "Pengaturan untuk seluruh akun",
+      "definition": "Pilihan yang mengontrol pekerjaan pemilik akun dan juga berlaku bagi kolaborator yang ditambahkan ke akun tersebut."
+    }
+  ]
+}

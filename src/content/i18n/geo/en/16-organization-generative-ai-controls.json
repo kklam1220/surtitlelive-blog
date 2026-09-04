@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related Articles"
+  },
+  "keyTakeaways": [
+    "The SurtitleLive account holder can turn off supported generative AI processing from Organization Settings.",
+    "Script editing, standard machine translation, language detection and live surtitle operation can remain available.",
+    "Turning off generative AI does not delete scripts, translations or other work already saved in SurtitleLive.",
+    "The setting does not prevent every external service or every form of machine learning from processing selected content."
+  ],
+  "faq": [
+    {
+      "question": "Can I turn off all AI in SurtitleLive?",
+      "answer": "No. This setting turns off supported generative AI processing. Standard machine translation, language detection and other non-generative tools may remain available."
+    },
+    {
+      "question": "Who can turn off generative AI in SurtitleLive?",
+      "answer": "The SurtitleLive account holder can change the setting in Organization Settings. If no collaborators have been added, the choice affects only the account holder's own work."
+    },
+    {
+      "question": "Does turning off generative AI disable translation?",
+      "answer": "It disables supported generative translation and generative fallbacks. Standard Google Cloud Translation can remain available in supported workflows."
+    },
+    {
+      "question": "Will turning off generative AI delete existing scripts or translations?",
+      "answer": "No. Saved content remains available. The setting controls new generative processing rather than deleting previous work."
+    },
+    {
+      "question": "What happens if collaborators use the SurtitleLive account?",
+      "answer": "The same generative AI setting applies to their work in SurtitleLive. Collaborators can see the saved choice but cannot change it."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Generative AI",
+      "definition": "AI models that generate or transform content in supported SurtitleLive script and translation workflows."
+    },
+    {
+      "term": "SurtitleLive account holder",
+      "definition": "The person who controls account-wide settings in SurtitleLive, including whether supported generative AI processing is allowed."
+    },
+    {
+      "term": "Standard machine translation",
+      "definition": "Non-generative translation provided through Google Cloud Translation in supported SurtitleLive workflows."
+    },
+    {
+      "term": "Account-wide setting",
+      "definition": "A choice that controls the account holder's work and also applies to collaborators added to the account."
+    }
+  ]
+}

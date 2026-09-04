@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "16-organization-generative-ai-controls",
+  "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
+  "generatedAt": "2026-09-04T16:22:45.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Articles associés"
+  },
+  "keyTakeaways": [
+    "Le titulaire du compte SurtitleLive peut désactiver les traitements d’IA générative pris en charge dans Organization Settings.",
+    "La modification des scripts, la traduction automatique standard, la détection de la langue et l’exploitation des surtitres en direct peuvent rester disponibles.",
+    "Désactiver l’IA générative ne supprime ni les scripts, ni les traductions, ni aucun autre travail déjà enregistré dans SurtitleLive.",
+    "Ce réglage n’empêche pas tous les services externes ni toutes les formes d’apprentissage automatique de traiter le contenu sélectionné."
+  ],
+  "faq": [
+    {
+      "question": "Puis-je désactiver toute l’IA dans SurtitleLive ?",
+      "answer": "Non. Ce réglage désactive les traitements d’IA générative pris en charge. La traduction automatique standard, la détection de la langue et d’autres outils non génératifs peuvent rester disponibles."
+    },
+    {
+      "question": "Qui peut désactiver l’IA générative dans SurtitleLive ?",
+      "answer": "Le titulaire du compte SurtitleLive peut modifier le réglage dans Organization Settings. Si aucun collaborateur n’a été ajouté, ce choix ne concerne que le travail du titulaire du compte."
+    },
+    {
+      "question": "Désactiver l’IA générative désactive-t-il la traduction ?",
+      "answer": "La traduction générative et les solutions de repli génératives prises en charge sont désactivées. Google Cloud Translation standard peut rester disponible dans les flux compatibles."
+    },
+    {
+      "question": "Désactiver l’IA générative supprime-t-il les scripts ou traductions existants ?",
+      "answer": "Non. Les contenus enregistrés restent disponibles. Le réglage contrôle les nouveaux traitements génératifs ; il ne supprime pas le travail déjà réalisé."
+    },
+    {
+      "question": "Que se passe-t-il si des collaborateurs utilisent le compte SurtitleLive ?",
+      "answer": "Le même réglage d’IA générative s’applique à leur travail dans SurtitleLive. Les collaborateurs peuvent voir le choix enregistré, mais pas le modifier."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "IA générative",
+      "definition": "Modèles d’IA qui génèrent ou transforment du contenu dans les flux compatibles de scripts et de traduction de SurtitleLive."
+    },
+    {
+      "term": "Titulaire du compte SurtitleLive",
+      "definition": "La personne qui contrôle les réglages applicables à l’ensemble du compte dans SurtitleLive, notamment l’autorisation des traitements d’IA générative pris en charge."
+    },
+    {
+      "term": "Traduction automatique standard",
+      "definition": "Traduction non générative fournie par Google Cloud Translation dans les flux compatibles de SurtitleLive."
+    },
+    {
+      "term": "Réglage applicable à tout le compte",
+      "definition": "Choix qui contrôle le travail du titulaire du compte et s’applique également aux collaborateurs ajoutés au compte."
+    }
+  ]
+}
