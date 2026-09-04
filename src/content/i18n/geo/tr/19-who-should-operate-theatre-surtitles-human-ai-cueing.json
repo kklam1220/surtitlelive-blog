@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne Çıkanlar",
+    "faq": "Sık Sorulan Sorular",
+    "glossary": "Sözlük",
+    "related": "İlgili Yazılar"
+  },
+  "keyTakeaways": [
+    "Metinli tiyatroda prova yapmış bir insan operatör, cue zamanlaması, toparlanma ve dramatik açıklamalar için çoğu zaman en güçlü son kontrolü sağlar.",
+    "Yapay zekâ hazırlık işini azaltabilir; otomatik metin takibi, konuşma hazırlanan sabit metne yakın kaldığında en iyi sonucu verir.",
+    "Canlı altyazı; doğaçlama, konuşmalar, soru-cevap ve önceden bilinmeyen sözler için farklı bir iş akışıdır.",
+    "Provalar yalnızca kusursuz cue sırasını değil, atlamaları, tekrarları, uzun duraklamaları, cue sıçramalarını, ekranı temizlemeyi ve toparlanmayı da denemelidir."
+  ],
+  "faq": [
+    {
+      "question": "Bir tiyatro gösterisinde üst yazıları kim yönetmeli?",
+      "answer": "Metinli bir gösteride en iyi seçim genellikle gösteriyi bilen ve canlı cue durumundan açıkça sorumlu olan kişidir. Bu kişi uzman bir üst yazı operatörü, ASM, sahne yönetimi ekibinden başka bir üye veya uygun bir teknik operatör olabilir; yeter ki bu sorumluluk başka kritik bir görevle çakışmasın."
+    },
+    {
+      "question": "Yapay zekâ tiyatro üst yazılarını otomatik olarak yürütebilir mi?",
+      "answer": "Yapay zekâ ve metin takip sistemleri, konuşma sabit bir metni yakından izlediğinde manuel cue işini azaltabilir. Oyuncular atladığında, tekrarladığında, üst üste konuştuğunda, uzun sustuğunda veya beklenmedik sıraya geçtiğinde güvenilirlik düşer; sistem dramatik bir açıklamayı ya da espriyi koruyacak bağlamı da kaçırabilir."
+    },
+    {
+      "question": "Otomatik altyazılar neden bir hikâye sürprizini bozabilir?",
+      "answer": "Altyazı doğruluğu yalnızca sözcükleri değil, zamanlamayı da kapsar. Bir satır sırrı, kimliği, itirafı veya espriyi açığa çıkarıp oyuncudan önce görünürse seyirci bilgiyi çok erken alır. İnsan operatör cue'yu gerçek ana kadar bekletebilir."
+    },
+    {
+      "question": "Üst yazı operatörünün gösterinin dilini anlaması gerekir mi?",
+      "answer": "Her zaman değil, ancak yardımcı olur. Operatör prova edilmiş bir cue dizisinden çalışabilir; dili anlamak atlamaları, tekrarları ve beklenmedik değişiklikleri hızlı fark etmeyi kolaylaştırır."
+    },
+    {
+      "question": "Yeni bir operatörün SurtitleLive'ı öğrenmesi zor mudur?",
+      "answer": "Temel canlı kontroller doğrudan tiyatro cue'lama ve toparlanma etrafında tasarlanmıştır. Tam bir prova, sahne cue'larını bilen birinin ana işletim mantığını öğrenmesini sağlar; ileri iş akışları prodüksiyon ihtiyaç duyduğunda öğrenilebilir."
+    },
+    {
+      "question": "İlk üst yazı provasında neyi test etmeliyiz?",
+      "answer": "Yalnızca kusursuz geçişi test etmeyin. Atlamaları, tekrarları, uzun duraklamaları, cue sıçramalarını, ekranı temizlemeyi ve toparlanmayı çalışın. Prodüksiyonda sırlar, espriler veya ters köşeler varsa, bunların görünmesi için en erken güvenli anı da prova edin."
+    },
+    {
+      "question": "Elle cue'lanan üst yazılar doğaçlama için uygun mudur?",
+      "answer": "Ana sözler önceden gerçekten bilinmiyorsa genellikle değildir. Doğaçlama, soru-cevap ve gösteri sonrası konuşmalar, altyazının konuşma gerçekleşirken üretildiği canlı altyazıya daha uygundur."
+    },
+    {
+      "question": "İnsan operatör ile yapay zekâ arasında mutlaka seçim yapmak gerekir mi?",
+      "answer": "Hayır. Yapay zekâ senaryo analizi, çeviri ve hazırlığa yardım ederken insan canlı zamanlama ve toparlanmadan sorumlu kalabilir. Metinli birçok prodüksiyonda bu iş bölümü, her adımı otomatikleştirmeye çalışmaktan daha kullanışlıdır."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Üst yazı operatörü",
+      "definition": "Gösteri sırasında hazırlanmış tiyatro altyazı cue'larını ilerleten, bekleten, atlayan, temizleyen ve doğru yere geri getiren kişi."
+    },
+    {
+      "term": "Otomatik metin takibi",
+      "definition": "Canlı konuşmayı hazırlanmış metinle eşleştirmeye ve karşılık gelen altyazı cue'larını ilerletmeye çalışan sistem."
+    },
+    {
+      "term": "Cue toparlama",
+      "definition": "Atlama, tekrar, hata veya hazırlanan sıradan başka bir sapmanın ardından gösterilen üst yazıları doğru yere döndürme."
+    },
+    {
+      "term": "Hazırlanmış üst yazılar",
+      "definition": "Metinli gösteriden önce çevrilmiş, düzenlenmiş, onaylanmış ve prova edilmiş altyazı metni."
+    },
+    {
+      "term": "Canlı altyazı",
+      "definition": "Bir kişi konuşurken üretilen ve sözleri önceden bilinmeyen durumlara uygun altyazı."
+    }
+  ]
+}

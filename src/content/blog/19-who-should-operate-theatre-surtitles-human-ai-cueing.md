@@ -241,6 +241,11 @@ A theatre control position is not an office desk. It may be in a dark booth, bac
 
 SurtitleLive’s live-operation UI is intentionally built around clear cue state, high-contrast presentation, direct controls, keyboard-friendly operation and recovery-oriented workflows.
 
+![SurtitleLive ASM Operator showing the active cue list, multilingual audience previews and live performance controls](./blog-19-asm-cockpit.png)
+*The ASM Operator keeps the active cue and nearby lines visible beside simultaneous mobile previews in three audience languages. The same rehearsal view also puts previous/next navigation, blackout, projector settings and show status within direct reach.*
+
+The screenshot shows why rehearsal matters: the operator can learn where to confirm the active line, check what different audience screens are receiving, move through cues and practise recovery before the house opens. For a guided tour of the interface and its controls, see [Use the Cockpit: run surtitles during a performance](https://surtitlelive.com/guides/use-cockpit).
+
 The goal is not to require a theatre technician to become a SurtitleLive specialist before they can run a basic show.
 
 A practical onboarding session can be very simple:

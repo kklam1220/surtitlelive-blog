@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Najczęściej zadawane pytania",
+    "glossary": "Słowniczek",
+    "related": "Powiązane artykuły"
+  },
+  "keyTakeaways": [
+    "W teatrze ze scenariuszem człowiek, który zna spektakl i uczestniczył w próbach, często najlepiej sprawdza się jako ostateczna osoba odpowiedzialna za czas wyświetlania, odzyskiwanie pozycji i ujawnienia dramaturgiczne.",
+    "AI może ograniczyć pracę przygotowawczą, a automatyczne śledzenie scenariusza działa najlepiej, gdy mowa pozostaje blisko stabilnego, przygotowanego tekstu.",
+    "Napisy na żywo to osobny przepływ pracy przeznaczony do improwizacji, wykładów, Q&A i innych wypowiedzi, których nie znamy wcześniej.",
+    "Próby powinny obejmować pominięcia, powtórzenia, długie pauzy, skoki między cue, czyszczenie ekranu i odzyskiwanie pozycji, a nie tylko idealną sekwencję."
+  ],
+  "faq": [
+    {
+      "question": "Kto powinien obsługiwać napisy teatralne podczas spektaklu?",
+      "answer": "Zwykle osoba, która zna spektakl i ma jasno przypisaną odpowiedzialność za stan cue na żywo. Może to być operator napisów, ASM, członek kierownictwa sceny albo odpowiedni technik, o ile nie koliduje to z innym krytycznym zadaniem."
+    },
+    {
+      "question": "Czy AI może automatycznie prowadzić napisy teatralne?",
+      "answer": "AI i systemy automatycznego śledzenia scenariusza mogą ograniczyć ręczną obsługę cue, gdy mowa dokładnie trzyma się stabilnego tekstu. Są mniej niezawodne przy pominięciach, powtórzeniach, nakładaniu głosów, długich pauzach i zmianach kolejności; mogą też nie rozumieć kontekstu dramaturgicznego."
+    },
+    {
+      "question": "Dlaczego automatyczne napisy mogą zdradzić zwrot akcji?",
+      "answer": "Poprawność obejmuje również czas wyświetlania. Jeśli kwestia ujawniająca sekret, tożsamość, wyznanie lub puentę pojawi się przed wypowiedzeniem jej przez aktora, widz otrzyma informację za wcześnie. Człowiek może przytrzymać cue do właściwego momentu."
+    },
+    {
+      "question": "Czy operator napisów musi rozumieć język spektaklu?",
+      "answer": "Nie zawsze, ale jest to pomocne. Znajomość języka mówionego ułatwia szybkie rozpoznanie pominięć, powtórzeń i nieoczekiwanych zmian podczas pracy z przećwiczoną sekwencją."
+    },
+    {
+      "question": "Czy nowemu operatorowi trudno nauczyć się SurtitleLive?",
+      "answer": "Podstawowe sterowanie na żywo opiera się na prostych cue teatralnych i odzyskiwaniu pozycji. Osoba znająca cue sceniczne może poznać główną logikę podczas jednej pełnej próby, a bardziej zaawansowane przepływy pracy można dodać później."
+    },
+    {
+      "question": "Co należy sprawdzić podczas pierwszej próby napisów?",
+      "answer": "Nie tylko idealny przebieg. Ćwiczcie pominięcia, powtórzenia, długie pauzy, skoki między cue, czyszczenie ekranu i odzyskiwanie pozycji. Przy sekretach, żartach i zwrotach akcji sprawdźcie też najwcześniejszy bezpieczny moment wyświetlenia tekstu."
+    },
+    {
+      "question": "Czy improwizacja nadaje się do ręcznie obsługiwanych napisów?",
+      "answer": "Zwykle nie, jeśli główne brzmienie nie jest naprawdę znane wcześniej. Improwizacja, Q&A i rozmowy po spektaklu lepiej pasują do napisów na żywo, generowanych w chwili mówienia."
+    },
+    {
+      "question": "Czy trzeba wybierać między człowiekiem a AI?",
+      "answer": "Nie. AI może wspierać analizę, tłumaczenie i przygotowanie, a człowiek może odpowiadać za czas wyświetlania i odzyskiwanie pozycji podczas spektaklu. W wielu produkcjach ze scenariuszem taki podział jest praktyczniejszy niż pełna automatyzacja."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Operator napisów scenicznych",
+      "definition": "Osoba odpowiedzialna za uruchamianie, zatrzymywanie, przeskakiwanie, czyszczenie i przywracanie właściwej pozycji przygotowanych cue napisów podczas spektaklu."
+    },
+    {
+      "term": "Automatyczne śledzenie scenariusza",
+      "definition": "System próbujący dopasować mowę na żywo do przygotowanego scenariusza i uruchomić odpowiadające mu cue napisów."
+    },
+    {
+      "term": "Odzyskiwanie pozycji cue",
+      "definition": "Przywrócenie wyświetlanych napisów do właściwego miejsca po pominięciu, powtórzeniu, pomyłce lub innej zmianie względem przygotowanej sekwencji."
+    },
+    {
+      "term": "Przygotowane surtytuły",
+      "definition": "Tekst napisów przetłumaczony, zredagowany, zatwierdzony i przećwiczony przed spektaklem ze scenariuszem."
+    },
+    {
+      "term": "Napisy na żywo",
+      "definition": "Napisy generowane podczas mówienia, odpowiednie dla słów, których nie można znać z wyprzedzeniem."
+    }
+  ]
+}

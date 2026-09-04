@@ -53,7 +53,7 @@
     },
     {
       "term": "Parcours QLab activé par l’opérateur",
-      "definition": "Parcours live volontairement autorisé via le pont local et la console ASM connectée : Go Live, puis Allow QLab control, avec la conduite ASM manuelle comme solution de repli."
+      "definition": "Parcours live volontairement autorisé via le pont local et la console ASM connectée : Passer en direct, puis Allow QLab control, avec la conduite ASM manuelle comme solution de repli."
     }
   ]
 }

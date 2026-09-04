@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Với một vở diễn có kịch bản, người vận hành đã diễn tập thường là lớp kiểm soát cuối đáng tin cậy nhất cho thời điểm cue, việc khôi phục và những màn hé lộ quan trọng.",
+    "AI có thể giảm công việc chuẩn bị; chế độ tự động bám kịch bản hoạt động tốt nhất khi lời thoại vẫn gần với văn bản ổn định đã chuẩn bị trước.",
+    "Phụ đề trực tiếp là một quy trình khác, phù hợp với ứng tác, bài nói, phần hỏi đáp và những lời thoại chưa thể biết trước.",
+    "Buổi diễn tập cần kiểm tra cả bỏ sót, lặp lại, khoảng dừng dài, chuyển cue, xóa màn hình và khôi phục — không chỉ một lượt chạy hoàn hảo."
+  ],
+  "faq": [
+    {
+      "question": "Ai nên vận hành surtitles trong nhà hát?",
+      "answer": "Với vở diễn có kịch bản, lựa chọn phù hợp thường là người hiểu vở diễn và chịu trách nhiệm rõ ràng về trạng thái cue hiện tại. Có thể là chuyên viên surtitles, ASM, thành viên ê-kíp sân khấu hoặc một kỹ thuật viên phù hợp, miễn nhiệm vụ này không làm họ sao nhãng trách nhiệm quan trọng khác."
+    },
+    {
+      "question": "AI có thể tự động vận hành surtitles cho nhà hát không?",
+      "answer": "AI và hệ thống bám kịch bản có thể giảm thao tác thủ công khi lời thoại khớp sát với văn bản ổn định. Chúng kém đáng tin cậy hơn khi có bỏ sót, lặp lại, nhiều người nói chồng lên nhau, khoảng dừng dài hoặc lời thoại lệch khỏi trình tự dự kiến; chúng cũng có thể không hiểu ngữ cảnh của một cú hé lộ hay câu đùa."
+    },
+    {
+      "question": "Vì sao phụ đề tự động có thể làm lộ tình tiết bất ngờ?",
+      "answer": "Phụ đề chính xác không chỉ cần đúng từ mà còn phải đúng thời điểm. Nếu một dòng tiết lộ bí mật, danh tính, lời thú nhận hoặc câu đùa xuất hiện trước diễn viên, khán giả sẽ biết quá sớm. Người vận hành có thể giữ cue lại đến thời điểm phù hợp."
+    },
+    {
+      "question": "Người vận hành surtitles có cần hiểu ngôn ngữ của vở diễn không?",
+      "answer": "Không bắt buộc, nhưng rất hữu ích. Người vận hành có thể làm việc theo trình tự cue đã diễn tập; hiểu ngôn ngữ giúp họ nhận ra nhanh hơn các đoạn bị bỏ sót, lặp lại hoặc thay đổi bất ngờ."
+    },
+    {
+      "question": "Người mới có khó làm quen với SurtitleLive không?",
+      "answer": "Các điều khiển trực tiếp được thiết kế để việc vận hành cue sân khấu và khôi phục dễ hiểu. Một buổi diễn tập đầy đủ thường giúp người đã quen với cue sân khấu nắm được logic chính; các quy trình nâng cao có thể học thêm khi cần."
+    },
+    {
+      "question": "Buổi diễn tập surtitles đầu tiên nên kiểm tra gì?",
+      "answer": "Đừng chỉ kiểm tra một lượt chạy hoàn hảo: hãy thử bỏ sót, lặp lại, khoảng dừng dài, chuyển cue, xóa màn hình và khôi phục. Nếu vở diễn có bí mật, câu đùa hoặc bước ngoặt, hãy kiểm tra riêng thời điểm sớm nhất mà surtitles có thể xuất hiện một cách an toàn."
+    },
+    {
+      "question": "Vận hành surtitles thủ công có phù hợp với ứng tác không?",
+      "answer": "Thường không, nếu nội dung chính thực sự chưa biết trước. Với ứng tác, hỏi đáp và thảo luận sau buổi diễn, phụ đề trực tiếp phù hợp hơn vì phụ đề được tạo từ lời nói ngay khi lời nói diễn ra."
+    },
+    {
+      "question": "Con người và AI có phải là hai lựa chọn loại trừ nhau không?",
+      "answer": "Không. AI có thể hỗ trợ phân tích kịch bản, dịch và chuẩn bị, còn con người chịu trách nhiệm về thời điểm trực tiếp và khôi phục. Với nhiều vở diễn có kịch bản, cách phân chia này hữu ích hơn việc tự động hóa hoàn toàn."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Người vận hành surtitles",
+      "definition": "Người hiển thị, giữ, chuyển, xóa và khôi phục surtitles đã chuẩn bị trong khi vở diễn đang diễn ra."
+    },
+    {
+      "term": "Tự động bám kịch bản",
+      "definition": "Hệ thống cố gắng đối chiếu lời nói trực tiếp với kịch bản đã chuẩn bị để hiển thị cue surtitles tương ứng."
+    },
+    {
+      "term": "Khôi phục cue",
+      "definition": "Đưa surtitles đang hiển thị về đúng vị trí sau khi bị bỏ sót, lặp lại, thao tác sai hoặc lệch khỏi trình tự đã chuẩn bị."
+    },
+    {
+      "term": "Surtitles đã chuẩn bị",
+      "definition": "Văn bản surtitles đã được dịch, biên tập, duyệt và diễn tập trước một vở diễn có kịch bản."
+    },
+    {
+      "term": "Phụ đề trực tiếp",
+      "definition": "Tạo phụ đề trong lúc lời nói diễn ra; phù hợp với nội dung chưa thể biết trước."
+    }
+  ]
+}

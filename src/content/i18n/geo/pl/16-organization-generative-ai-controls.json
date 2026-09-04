@@ -11,7 +11,7 @@
     "related": "Powiązane artykuły"
   },
   "keyTakeaways": [
-    "Właściciel konta SurtitleLive może wyłączyć obsługiwane przetwarzanie generatywnej AI w Organization Settings.",
+    "Właściciel konta SurtitleLive może wyłączyć obsługiwane przetwarzanie generatywnej AI w Ustawienia przestrzeni roboczej.",
     "Edycja scenariuszy, standardowe tłumaczenie maszynowe, wykrywanie języka i obsługa napisów na żywo mogą pozostać dostępne.",
     "Wyłączenie generatywnej AI nie usuwa scenariuszy, tłumaczeń ani innych treści zapisanych wcześniej w SurtitleLive.",
     "Ustawienie nie uniemożliwia każdej zewnętrznej usłudze ani każdej formie uczenia maszynowego przetwarzania wybranych treści."
@@ -23,7 +23,7 @@
     },
     {
       "question": "Kto może wyłączyć generatywną AI w SurtitleLive?",
-      "answer": "Właściciel konta SurtitleLive może zmienić to ustawienie w Organization Settings. Jeśli do konta nie dodano współpracowników, wybór dotyczy tylko pracy właściciela konta."
+      "answer": "Właściciel konta SurtitleLive może zmienić to ustawienie w Ustawienia przestrzeni roboczej. Jeśli do konta nie dodano współpracowników, wybór dotyczy tylko pracy właściciela konta."
     },
     {
       "question": "Czy wyłączenie generatywnej AI wyłącza tłumaczenie?",

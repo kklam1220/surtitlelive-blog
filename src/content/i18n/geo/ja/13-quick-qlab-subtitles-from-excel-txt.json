@@ -13,8 +13,8 @@
   "keyTakeaways": [
     "QLabはText cuesで字幕を投影できます。実際の投影にはVideo Licenseと、正しく設定したStageが必要です。",
     "QLabにはXLSX字幕をワンクリックで取り込む標準機能はありませんが、AppleScriptなどのimporterで、構造化したExcel・CSV・TXTをcuesへ変換できます。",
-    "SurtitleLive Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。deploymentを作成せず、Viewerへ状態を配信することもありません。",
-    "完成済み公演でViewerを同期するときは、元cueごとに一つのローカルScript child、loopback bridge、そしてオペレーターが明示的に接続・有効化したASM consoleを使います。"
+    "SurtitleLive Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。公開を作成せず、Viewerへ状態を配信することもありません。",
+    "完成済み公演でViewerを同期するときは、元cueごとに一つのローカルScript child、loopback bridge、そしてオペレーターが明示的に接続・有効化したASMコンソールを使います。"
   ],
   "faq": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "question": "ローカルbridgeはSurtitleLive cloudへ直接接続しますか？",
-      "answer": "接続しません。bridgeは機密情報を含まない限定的なcue identityを、同じMac上で開いているASM consoleへ渡すだけです。Viewer stateは、ASMが既存のcontrol channelを通じて配信します。"
+      "answer": "接続しません。bridgeは機密情報を含まない限定的なcue identityを、同じMac上で開いているASMコンソールへ渡すだけです。Viewer stateは、ASMが既存のcontrol channelを通じて配信します。"
     }
   ],
   "glossary": [
@@ -52,7 +52,7 @@
       "definition": "127.0.0.1:37621で動作し、完成済み公演のQLab Script eventをASMへ中継するローカルservice。"
     },
     {
-      "term": "ASM console",
+      "term": "ASMコンソール",
       "definition": "QLab controlを受け付ける前に、開く、unlockする、接続する、Viewer readyを待つ、オペレーターが許可する、という手順が必要な操作画面。"
     }
   ]

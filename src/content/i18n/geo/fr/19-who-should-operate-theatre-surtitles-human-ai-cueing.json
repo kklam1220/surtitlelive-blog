@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Articles associés"
+  },
+  "keyTakeaways": [
+    "Pour un spectacle écrit, un opérateur humain qui a répété est souvent le meilleur contrôle final du timing, de la reprise et des révélations dramaturgiques.",
+    "L’IA peut réduire le travail de préparation ; le suivi automatique fonctionne surtout lorsque la parole reste proche d’un texte préparé et stable.",
+    "Le sous-titrage en direct répond à un autre besoin : improvisation, conférences, questions-réponses et paroles inconnues à l’avance.",
+    "Les répétitions doivent tester les omissions, répétitions, silences longs, sauts de cue, masquage et reprises, pas seulement une séquence parfaite."
+  ],
+  "faq": [
+    {
+      "question": "Qui doit piloter les surtitres pendant un spectacle ?",
+      "answer": "Pour un spectacle écrit, il est généralement préférable de confier cette tâche à une personne qui connaît la représentation et qui est explicitement responsable de l’état des cues en direct. Il peut s’agir d’un opérateur de surtitrage spécialisé, d’un assistant à la mise en scène, d’un autre membre de la régie ou d’un opérateur technique compétent, à condition que cette responsabilité ne nuise pas à une autre tâche critique."
+    },
+    {
+      "question": "L’IA peut-elle piloter automatiquement les surtitres de théâtre ?",
+      "answer": "L’IA et les systèmes de suivi du texte peuvent réduire le déclenchement manuel des tops lorsque la parole suit fidèlement un texte stable. Ils deviennent moins fiables en cas d’omission, de répétition, de chevauchement, de silence prolongé ou d’écart par rapport à la séquence attendue. Ils peuvent aussi manquer du contexte dramaturgique nécessaire pour protéger une révélation ou une chute."
+    },
+    {
+      "question": "Pourquoi des sous-titres automatiques peuvent-ils révéler un retournement trop tôt ?",
+      "answer": "La précision d’un sous-titre comprend son timing, pas seulement son libellé. Si une phrase révèle un secret, une identité, un aveu ou une plaisanterie avant que l’interprète ne la prononce, le public reçoit l’information trop tôt. Un opérateur humain peut retenir le cue jusqu’au moment réel du spectacle."
+    },
+    {
+      "question": "L’opérateur de surtitrage doit-il comprendre la langue du spectacle ?",
+      "answer": "Pas toujours, mais c’est utile. Il peut travailler à partir d’une séquence de cues répétée ; comprendre la langue parlée facilite toutefois la détection rapide des omissions, répétitions et changements inattendus."
+    },
+    {
+      "question": "SurtitleLive est-il difficile à apprendre pour un nouvel opérateur ?",
+      "answer": "Les commandes principales en direct sont conçues autour d’un déclenchement simple des tops de théâtre et d’une reprise claire. Une répétition complète permet à une personne qui connaît les cues de scène d’apprendre concrètement la logique essentielle. Les flux avancés peuvent être appris lorsque la production en a besoin."
+    },
+    {
+      "question": "Que faut-il tester lors de la première répétition de surtitrage ?",
+      "answer": "Ne testez pas uniquement un déroulé parfait. Entraînez-vous aux omissions, répétitions, silences longs, sauts de cue, masquage et reprises. Si le spectacle comporte des secrets, des plaisanteries ou des retournements, répétez aussi le premier moment où leur affichage devient sûr."
+    },
+    {
+      "question": "L’improvisation doit-elle utiliser des surtitres pilotés manuellement ?",
+      "answer": "Généralement non si le texte principal est réellement inconnu à l’avance. L’improvisation, les questions-réponses et les échanges après spectacle conviennent mieux au sous-titrage en direct, qui génère les sous-titres au fil de la parole."
+    },
+    {
+      "question": "Faut-il choisir entre opérateurs humains et IA ?",
+      "answer": "Non. L’IA peut aider à analyser le texte, traduire et préparer le spectacle, tandis qu’une personne reste responsable du timing et de la reprise en direct. Pour de nombreuses productions écrites, cette répartition est plus utile que l’automatisation de chaque étape."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Opérateur de surtitrage",
+      "definition": "Personne chargée d’avancer, de maintenir, de sauter, de masquer et de reprendre les cues de surtitres préparés pendant un spectacle."
+    },
+    {
+      "term": "Suivi automatique du texte",
+      "definition": "Système qui tente de faire correspondre la parole en direct à un texte préparé et d’afficher les cues de sous-titres correspondants."
+    },
+    {
+      "term": "Reprise de cue",
+      "definition": "Retour des surtitres affichés au bon endroit après une omission, une répétition, une erreur ou une autre sortie de la séquence préparée."
+    },
+    {
+      "term": "Surtitres préparés",
+      "definition": "Texte traduit, modifié, validé et répété avant un spectacle écrit."
+    },
+    {
+      "term": "Sous-titrage en direct",
+      "definition": "Sous-titres générés pendant qu’une personne parle, adaptés aux paroles qui ne sont pas connues à l’avance."
+    }
+  ]
+}

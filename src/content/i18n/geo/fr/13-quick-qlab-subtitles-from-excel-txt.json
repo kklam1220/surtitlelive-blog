@@ -14,7 +14,7 @@
     "QLab 5 projette des surtitres avec des tops de texte. Excel, CSV ou TXT servent de données à un script AppleScript ou à un importateur ; il ne s’agit pas d’un import XLSX natif en un clic.",
     "Avant toute génération en série, testez un top de texte manuel, la licence Video ou Bundle, le stage, la route de sortie et le projecteur. L’automatisation reproduit aussi très vite une mauvaise affectation.",
     "Un QLab Projection Pack conserve les traductions relues et des clés SurtitleLive stables hors du fichier de spectacle ; un nouvel import peut actualiser les groupes correspondants sans écraser les autres tops de régie.",
-    "La synchronisation Viewer doit être armée : QLab envoie une identité non secrète au pont loopback sur 127.0.0.1:37621 ; la console ASM ouverte ne publie qu’après Go Live et Allow QLab control par le canal de contrôle existant."
+    "La synchronisation Viewer doit être armée : QLab envoie une identité non secrète au pont loopback sur 127.0.0.1:37621 ; la console ASM ouverte ne publie qu’après Passer en direct et Allow QLab control par le canal de contrôle existant."
   ],
   "faq": [
     {
@@ -53,7 +53,7 @@
     },
     {
       "term": "Armement ASM",
-      "definition": "Séquence volontaire : QLab enabled, Connect local bridge, action explicite Go Live, puis Allow QLab control."
+      "definition": "Séquence volontaire : QLab enabled, Connecter le pont local, action explicite Passer en direct, puis Allow QLab control."
     }
   ]
 }

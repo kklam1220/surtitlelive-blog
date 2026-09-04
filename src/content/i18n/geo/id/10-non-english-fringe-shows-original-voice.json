@@ -15,7 +15,7 @@
     "Surtitle bahasa Inggris seharusnya bekerja sebagai undangan memasuki pertunjukan non-Inggris, bukan sebagai pengganti suara, ritme, dan memori kultural dari bahasa aslinya.",
     "Penerjemahan sebagai keramahtamahan berarti merancang rute bahasa agar lebih banyak orang bisa bersua dengan karya tanpa meminta karya itu menjadi kurang dirinya sendiri.",
     "Pilihan bahasa di perangkat memungkinkan satu pertunjukan langsung mendukung penonton berbahasa Inggris, pembaca bahasa asli, dan trek bahasa tambahan yang disiapkan tanpa memadati satu layar bersama.",
-    "Teknologi sunyi mendukung alur kerja panggung: teks yang disiapkan, pilihan bahasa yang ditinjau, pengoperasian cue langsung, penampil seluler, Projection Mode, dan pemulihan ketika pertunjukan berubah."
+    "Teknologi sunyi mendukung alur kerja panggung: teks yang disiapkan, pilihan bahasa yang ditinjau, pengoperasian cue langsung, penampil seluler, mode proyeksi, dan pemulihan ketika pertunjukan berubah."
   ],
   "faq": [
     {
@@ -65,7 +65,7 @@
       "definition": "Tampilan penonton berbasis peramban yang dibuka melalui kode QR atau tautan, memungkinkan setiap penonton membaca bahasa surtitle yang diaktifkan di perangkat mereka sendiri."
     },
     {
-      "term": "Projection Mode",
+      "term": "Mode Proyeksi",
       "definition": "Mode tampilan surtitle yang ditujukan untuk layar teater atau proyektor, sering digunakan bersama penampil seluler ketika venue mendukung proyeksi."
     },
     {

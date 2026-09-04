@@ -12,7 +12,7 @@
   },
   "keyTakeaways": [
     "PowerPoint oder Keynote können für kurze, feste Cue-Folgen mit einem Display und einer eingespielten Bedienperson eine sinnvolle Lösung sein.",
-    "Sobald eine Produktion direkte Cue-Auswahl, Blackout-Steuerung, rasche Wiederherstellung oder mehrere Ausspielwege braucht, reichen lineare Folien oft nicht mehr aus.",
+    "Sobald eine Produktion direkte Cue-Auswahl, Verdunkelungssteuerung, rasche Wiederherstellung oder mehrere Ausspielwege braucht, reichen lineare Folien oft nicht mehr aus.",
     "Übersetzung und Barrierefreiheit sind unterschiedliche Aufgaben: Gleichsprachige Captions können zusätzlich Sprecherkennzeichnung und relevante Klanginformationen erfordern.",
     "Skriptanalyse und KI-Unterstützung beschleunigen die Vorbereitung, ersetzen aber weder menschliche Prüfung noch Probenzeit oder die Verantwortung des Produktionsteams."
   ],
@@ -44,7 +44,7 @@
       "definition": "Eine gezielt auswählbare Position im vorbereiteten Material, die festlegt, welcher Text zum jeweiligen Moment der Aufführung gezeigt wird."
     },
     {
-      "term": "Blackout-Steuerung",
+      "term": "Verdunkelungssteuerung",
       "definition": "Eine Funktion, mit der die Publikumsausgabe bewusst schwarz oder unverändert gehalten werden kann, während die Bedienperson eine Wiederherstellung vorbereitet."
     },
     {

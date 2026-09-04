@@ -11,7 +11,7 @@
     "related": "Articles associés"
   },
   "keyTakeaways": [
-    "Le titulaire du compte SurtitleLive peut désactiver les traitements d’IA générative pris en charge dans Organization Settings.",
+    "Le titulaire du compte SurtitleLive peut désactiver les traitements d’IA générative pris en charge dans Paramètres de l'organisation.",
     "La modification des scripts, la traduction automatique standard, la détection de la langue et l’exploitation des surtitres en direct peuvent rester disponibles.",
     "Désactiver l’IA générative ne supprime ni les scripts, ni les traductions, ni aucun autre travail déjà enregistré dans SurtitleLive.",
     "Ce réglage n’empêche pas tous les services externes ni toutes les formes d’apprentissage automatique de traiter le contenu sélectionné."
@@ -23,7 +23,7 @@
     },
     {
       "question": "Qui peut désactiver l’IA générative dans SurtitleLive ?",
-      "answer": "Le titulaire du compte SurtitleLive peut modifier le réglage dans Organization Settings. Si aucun collaborateur n’a été ajouté, ce choix ne concerne que le travail du titulaire du compte."
+      "answer": "Le titulaire du compte SurtitleLive peut modifier le réglage dans Paramètres de l'organisation. Si aucun collaborateur n’a été ajouté, ce choix ne concerne que le travail du titulaire du compte."
     },
     {
       "question": "Désactiver l’IA générative désactive-t-il la traduction ?",

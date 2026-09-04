@@ -11,10 +11,10 @@
     "related": "Istilah Terkait"
   },
   "keyTakeaways": [
-    "Bagi tim Edinburgh Fringe, teks akses (captions), surtitles, subtitles, mode proyeksi, dan akses seluler untuk penonton (mobile viewer) menjelaskan keputusan yang berbeda, bukan satu alur kerja yang dapat dipertukarkan.",
+    "Bagi tim Edinburgh Fringe, teks akses (caption), surtitel, subtitle, mode proyeksi, dan akses seluler untuk penonton menjelaskan keputusan yang berbeda, bukan satu alur kerja yang dapat dipertukarkan.",
     "Pertunjukan non-Inggris yang utamanya membutuhkan terjemahan biasanya harus menentukan surtitles bahasa Inggris yang disiapkan untuk pertunjukan langsung, meskipun materi yang menghadap penonton mengatakan subtitle bahasa Inggris.",
     "Teks akses (captions) mungkin membutuhkan identifikasi pembicara, musik, efek suara, audio di luar panggung, dan informasi akses lainnya, bukan hanya dialog terjemahan.",
-    "mode proyeksi dan akses seluler untuk penonton (mobile viewer) adalah pilihan pengiriman kepada penonton; keduanya harus dipilih setelah tim mendefinisikan apakah teks tersebut adalah terjemahan, teks akses (captioning), atau keduanya.",
+    "mode proyeksi dan akses seluler untuk penonton adalah pilihan pengiriman kepada penonton; keduanya harus dipilih setelah tim mendefinisikan apakah teks tersebut adalah terjemahan, teks akses (captioning), atau keduanya.",
     "Sebelum gladi bersih teknis, tim Fringe harus mengonfirmasi konten teks, metode pengiriman, trek bahasa, persyaratan aksesibilitas, dan siapa yang bertanggung jawab atas operasi teks langsung."
   ],
   "faq": [
@@ -28,24 +28,24 @@
     },
     {
       "question": "Apa perbedaan antara surtitles dan teks akses (captions) untuk produksi Fringe?",
-      "answer": "Surtitles biasanya berarti teks terjemahan yang disiapkan untuk pertunjukan langsung dalam bahasa lain. Teks akses (captions) biasanya mendukung akses ke informasi ucapan dan suara, termasuk dialog, identifikasi pembicara, suara di luar panggung, musik, atau efek."
+      "answer": "Surtitel biasanya berarti teks terjemahan yang disiapkan untuk pertunjukan langsung dalam bahasa lain. Teks akses (caption) biasanya mendukung akses ke informasi ucapan dan suara, termasuk dialog, identifikasi pembicara, suara di luar panggung, musik, atau efek."
     },
     {
-      "question": "Apakah mode proyeksi dan akses seluler untuk penonton (mobile viewer) sama dengan teks akses (captions) atau surtitles?",
-      "answer": "Tidak. mode proyeksi dan akses seluler untuk penonton (mobile viewer) menjelaskan bagaimana penonton menerima teks. Teks akses (captions) dan surtitles menjelaskan jenis teks apa yang sedang disiapkan."
+      "question": "Apakah mode proyeksi dan akses seluler untuk penonton sama dengan teks akses (caption) atau surtitel?",
+      "answer": "Tidak. Mode proyeksi dan akses seluler untuk penonton menjelaskan bagaimana penonton menerima teks. Teks akses (caption) dan surtitel menjelaskan jenis teks apa yang sedang disiapkan."
     },
     {
       "question": "Apa yang harus dikonfirmasi oleh seorang produser sebelum gladi bersih teknis?",
-      "answer": "Konfirmasi apakah pertunjukan membutuhkan surtitles bahasa Inggris, teks akses (captions), atau keduanya; bahasa mana yang diaktifkan; apakah proyeksi, akses seluler untuk penonton (mobile viewer), atau keduanya akan digunakan; siapa yang meninjau teks; dan siapa yang mengoperasikan atau mengawasi pengiriman langsung."
+      "answer": "Konfirmasi apakah pertunjukan membutuhkan surtitel bahasa Inggris, teks akses (caption), atau keduanya; bahasa mana yang diaktifkan; apakah proyeksi, akses seluler untuk penonton, atau keduanya akan digunakan; siapa yang meninjau teks; dan siapa yang mengoperasikan atau mengawasi pengiriman langsung."
     },
     {
       "question": "Kapan SurtitleLive cocok untuk pertunjukan Fringe?",
-      "answer": "SurtitleLive paling cocok ketika tim memiliki naskah atau teks pertunjukan yang sebagian besar stabil, dapat meninjau teks sebelum pembukaan, dan membutuhkan teks yang disiapkan yang dikirimkan melalui mode proyeksi, tampilan seluler untuk penonton (mobile viewer), atau keduanya selama pertunjukan langsung."
+      "answer": "SurtitleLive paling cocok ketika tim memiliki naskah atau teks pertunjukan yang sebagian besar stabil, dapat meninjau teks sebelum pembukaan, dan membutuhkan teks yang disiapkan yang dikirimkan melalui mode proyeksi, tampilan seluler untuk penonton, atau keduanya selama pertunjukan langsung."
     }
   ],
   "glossary": [
     {
-      "term": "Surtitles Bahasa Inggris",
+      "term": "Surtitel Bahasa Inggris",
       "definition": "Teks terjemahan bahasa Inggris yang disiapkan dan ditampilkan atau dikirimkan selama pertunjukan langsung non-Inggris."
     },
     {
@@ -53,7 +53,7 @@
       "definition": "Teks yang mewakili dialog dan informasi suara yang relevan, sering digunakan untuk mendukung penonton penyandang tuli atau gangguan pendengaran."
     },
     {
-      "term": "Subtitles",
+      "term": "Subtitle",
       "definition": "Istilah yang familiar bagi penonton untuk teks terjemahan atau transkripsi, sering digunakan secara kasual bahkan ketika alur kerja produksi adalah surtitling langsung."
     },
     {
@@ -61,7 +61,7 @@
       "definition": "Mode tampilan untuk layar teater atau proyektor ketika tempat pertunjukan mendukung teks bersama yang terlihat."
     },
     {
-      "term": "Penampil Seluler (Mobile Viewer)",
+      "term": "Penampil Seluler",
       "definition": "Tampilan penonton berbasis browser yang dibuka melalui tautan atau kode QR sehingga anggota penonton dapat membaca teks yang diaktifkan di ponsel mereka sendiri."
     },
     {

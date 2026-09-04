@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "In sintesi",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Articoli correlati"
+  },
+  "keyTakeaways": [
+    "Nel teatro con copione, un operatore umano che ha provato lo spettacolo offre spesso il controllo finale più solido su tempistica, recupero e rivelazioni drammatiche.",
+    "L’IA può ridurre il lavoro di preparazione, mentre il seguimento automatico funziona meglio quando il parlato resta vicino a un copione stabile e preparato.",
+    "La sottotitolazione dal vivo è un flusso diverso, adatto a improvvisazione, conferenze, domande e risposte e ad altro parlato non noto in anticipo.",
+    "Le prove devono includere salti, ripetizioni, pause lunghe, spostamenti tra cue, oscuramento e recupero, non soltanto una sequenza perfetta."
+  ],
+  "faq": [
+    {
+      "question": "Chi dovrebbe gestire i sopratitoli durante uno spettacolo?",
+      "answer": "Di solito una persona che conosce lo spettacolo e ha la responsabilità esplicita dello stato dei cue dal vivo: uno specialista, un ASM, un membro della direzione di scena o un tecnico adatto, purché non abbia un altro compito critico in conflitto."
+    },
+    {
+      "question": "L’IA può gestire automaticamente i sopratitoli teatrali?",
+      "answer": "I sistemi di IA e di seguimento del copione possono ridurre la gestione manuale quando il parlato segue un testo stabile. Sono meno affidabili con salti, ripetizioni, sovrapposizioni, pause lunghe o cambi di sequenza e possono non cogliere il contesto drammaturgico."
+    },
+    {
+      "question": "Perché i sottotitoli automatici possono rovinare un colpo di scena?",
+      "answer": "La precisione comprende anche la tempistica. Se una battuta rivela un segreto, un’identità, una confessione o una battuta comica e appare prima che l’attore la pronunci, il pubblico riceve l’informazione troppo presto. Un operatore può aspettare il momento effettivo."
+    },
+    {
+      "question": "L’operatore deve capire la lingua dello spettacolo?",
+      "answer": "Non sempre, ma è utile. Capire la lingua parlata aiuta a riconoscere rapidamente salti, ripetizioni e variazioni inattese anche quando si lavora con una sequenza provata."
+    },
+    {
+      "question": "SurtitleLive è difficile da imparare per un nuovo operatore?",
+      "answer": "I controlli dal vivo sono organizzati intorno a cue teatrali e recupero semplici. Una prova completa offre a chi conosce i cue di scena un modo pratico per imparare la logica principale; le funzioni avanzate si possono aggiungere quando servono."
+    },
+    {
+      "question": "Cosa bisogna provare nella prima prova dei sopratitoli?",
+      "answer": "Non solo una sequenza perfetta: provate salti, ripetizioni, pause lunghe, spostamenti tra cue, oscuramento e recupero. Se ci sono segreti o battute comiche, provate anche il primo momento sicuro in cui il testo può comparire."
+    },
+    {
+      "question": "L’improvvisazione è adatta ai sopratitoli gestiti manualmente?",
+      "answer": "Di solito no, se il testo principale non è davvero noto in anticipo. Improvvisazione, domande e risposte e conversazioni dopo lo spettacolo sono più adatte alla sottotitolazione dal vivo, che genera il testo mentre si parla."
+    },
+    {
+      "question": "Bisogna scegliere tra operatori umani e IA?",
+      "answer": "No. L’IA può aiutare con analisi, traduzione e preparazione, mentre una persona resta responsabile della tempistica e del recupero durante lo spettacolo. Per molte produzioni con copione, questa divisione è più utile dell’automazione totale."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Operatore di sopratitoli",
+      "definition": "La persona responsabile di avanzare, trattenere, spostare, oscurare e recuperare i cue di sopratitoli preparati durante lo spettacolo."
+    },
+    {
+      "term": "Seguimento automatico del copione",
+      "definition": "Un sistema che tenta di abbinare il parlato dal vivo a un copione preparato e di avanzare i cue corrispondenti."
+    },
+    {
+      "term": "Recupero del cue",
+      "definition": "Il ritorno dei sopratitoli visualizzati al punto corretto dopo un salto, una ripetizione, un errore o un’altra deviazione dalla sequenza preparata."
+    },
+    {
+      "term": "Sopratitoli preparati",
+      "definition": "Testo tradotto, modificato, approvato e provato prima di uno spettacolo con copione."
+    },
+    {
+      "term": "Sottotitolazione dal vivo",
+      "definition": "Sottotitoli generati mentre una persona parla, adatti a parole che non sono note in anticipo."
+    }
+  ]
+}

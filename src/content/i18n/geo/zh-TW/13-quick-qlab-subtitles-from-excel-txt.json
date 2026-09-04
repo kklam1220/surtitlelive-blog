@@ -14,7 +14,7 @@
     "QLab 以 Text cues 顯示設定好樣式的字幕；正式投影需要 Video License 與設定正確的 Stage。",
     "QLab 沒有一鍵匯入 XLSX 字幕表的原生功能，但 AppleScript 或其他匯入器可把結構化 Excel、CSV 或 TXT 資料轉成 cues。",
     "從 SurtitleLive 編輯器下載的 QLab Projection Pack 是離線投影交接，不會建立部署或向 Viewer 發佈內容。",
-    "完成部署後的 Viewer 同步，使用每個來源 cue 一個本機 Script child、loopback bridge，以及由操作員明確連接並啟用的 ASM console。"
+    "完成部署後的 Viewer 同步，使用每個來源 cue 一個本機 Script child、loopback bridge，以及由操作員明確連接並啟用的 ASM 控制台。"
   ],
   "faq": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "question": "本機 bridge 會直接呼叫 SurtitleLive 雲端嗎？",
-      "answer": "不會。它只在本機把範圍受限、不含機密的 cue 身分交給已開啟的 ASM console，再由 ASM 透過既有 control channel 發佈 Viewer 狀態。"
+      "answer": "不會。它只在本機把範圍受限、不含機密的 cue 身分交給已開啟的 ASM 控制台，再由 ASM 透過既有 control channel 發佈 Viewer 狀態。"
     }
   ],
   "glossary": [
@@ -52,7 +52,7 @@
       "definition": "在 127.0.0.1:37621 執行、把完成部署後的 QLab Script 事件交給 ASM 的本機服務。"
     },
     {
-      "term": "ASM console",
+      "term": "ASM 控制台",
       "definition": "接受 QLab control 前，必須開啟、解鎖、連線、等待 Viewer 就緒並由操作員啟用的控制介面。"
     }
   ]

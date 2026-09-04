@@ -31,7 +31,7 @@
     },
     {
       "question": "Ist SurtitleLive eine Live-Sprachübersetzung?",
-      "answer": "Nein. SurtitleLive unterstützt die Erstellung und Bearbeitung von Übersetzungsentwürfen vor der Aufführung und bereitet freigegebenen Text für das Live-Cueing vor. Die inhaltliche und dramaturgische Prüfung bleibt bei der Produktion."
+      "answer": "Nein. SurtitleLive unterstützt die Erstellung und Bearbeitung von Übersetzungsentwürfen vor der Aufführung und bereitet freigegebenen Text für die Live-Cue-Steuerung vor. Die inhaltliche und dramaturgische Prüfung bleibt bei der Produktion."
     }
   ],
   "glossary": [
@@ -52,7 +52,7 @@
       "definition": "Gleichsprachiger Textzugang, der neben Sprache auch Sprecherkennzeichnung und relevante Geräuschinformationen enthalten kann."
     },
     {
-      "term": "Live-Cueing",
+      "term": "Live-Cue-Steuerung",
       "definition": "Das zeitlich abgestimmte Auslösen vorbereiteter und freigegebener Textzeilen während der tatsächlichen Aufführung."
     }
   ]

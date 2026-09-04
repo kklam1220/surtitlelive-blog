@@ -11,7 +11,7 @@
     "related": "Artikel terkait"
   },
   "keyTakeaways": [
-    "Pemilik akun SurtitleLive dapat menonaktifkan pemrosesan AI generatif yang didukung melalui Organization Settings.",
+    "Pemilik akun SurtitleLive dapat menonaktifkan pemrosesan AI generatif yang didukung melalui Pengaturan Organisasi.",
     "Penyuntingan naskah, terjemahan mesin standar, deteksi bahasa, dan pengoperasian subtitle panggung secara langsung dapat tetap tersedia.",
     "Menonaktifkan AI generatif tidak menghapus naskah, terjemahan, atau pekerjaan lain yang sudah tersimpan di SurtitleLive.",
     "Pengaturan ini tidak mencegah setiap layanan eksternal atau setiap bentuk machine learning memproses konten yang dipilih."
@@ -23,7 +23,7 @@
     },
     {
       "question": "Siapa yang dapat menonaktifkan AI generatif di SurtitleLive?",
-      "answer": "Pemilik akun SurtitleLive dapat mengubah pengaturan di Organization Settings. Jika belum ada kolaborator yang ditambahkan, pilihan ini hanya memengaruhi pekerjaan pemilik akun."
+      "answer": "Pemilik akun SurtitleLive dapat mengubah pengaturan di Pengaturan Organisasi. Jika belum ada kolaborator yang ditambahkan, pilihan ini hanya memengaruhi pekerjaan pemilik akun."
     },
     {
       "question": "Apakah menonaktifkan AI generatif juga menonaktifkan terjemahan?",

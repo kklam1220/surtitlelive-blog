@@ -14,7 +14,7 @@
     "Para um espetáculo não anglófono no Fringe, as legendas em inglês devem partir do texto, não de diapositivos em branco.",
     "Um fluxo de legendagem preparado permite à companhia rever a tradução para inglês antes da estreia e, ainda assim, lançá-la ao vivo durante o espetáculo.",
     "As legendas no telemóvel deixam o público anglófono, o da língua original e outros grupos linguísticos preparados escolher o texto de que precisam no próprio dispositivo.",
-    "As pequenas equipas em digressão devem escolher um software de legendagem que suporte o carregamento do texto, deixas editáveis, escolha de língua, lançamento por um operador, recuperação com salto e blackout.",
+    "As pequenas equipas em digressão devem escolher um software de legendagem que suporte o carregamento do texto, deixas editáveis, escolha de língua, lançamento por um operador, recuperação com salto e ocultação.",
     "O SurtitleLive encaixa sobretudo em espetáculos com texto ou bastante estáveis que precisam de legendas em inglês para o Fringe, a digressão, programadores, críticos ou público multilingue."
   ],
   "faq": [
@@ -32,7 +32,7 @@
     },
     {
       "question": "O que acontece se um intérprete saltar falas ou o espetáculo mudar?",
-      "answer": "As legendas preparadas continuam a precisar do controlo de um operador ao vivo. O operador segue o espetáculo, lança as deixas no momento certo e usa a recuperação com salto ou o blackout se o espetáculo se afastar da ordem prevista."
+      "answer": "As legendas preparadas continuam a precisar do controlo de um operador ao vivo. O operador segue o espetáculo, lança as deixas no momento certo e usa a recuperação com salto ou o ocultação se o espetáculo se afastar da ordem prevista."
     },
     {
       "question": "De quanto tempo precisamos para preparar as legendas em inglês antes do Fringe de Edimburgo?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "O que deve uma pequena equipa em digressão procurar num software de legendagem?",
-      "answer": "Procura preparação a partir do texto, deixas editáveis, várias faixas de língua, acesso do público por código QR, sem necessidade de instalar qualquer aplicação, lançamento ao vivo por um operador, recuperação com salto, blackout e a possibilidade de usar projeção ou os telemóveis do público consoante a sala."
+      "answer": "Procura preparação a partir do texto, deixas editáveis, várias faixas de língua, acesso do público por código QR, sem necessidade de instalar qualquer aplicação, lançamento ao vivo por um operador, recuperação com salto, ocultação e a possibilidade de usar projeção ou os telemóveis do público consoante a sala."
     }
   ],
   "glossary": [
@@ -65,7 +65,7 @@
       "definition": "Uma vista para o público no navegador que permite ler as legendas no próprio telemóvel depois de abrir um link ou ler um código QR."
     },
     {
-      "term": "Blackout",
+      "term": "Ocultação",
       "definition": "Um controlo ao vivo que oculta temporariamente as legendas, usado muitas vezes quando apareceria o texto errado ou quando o momento de cena não precisa de texto visível."
     }
   ]

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufig gestellte Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Artikel"
+  },
+  "keyTakeaways": [
+    "Bei geskriptetem Theater ist eine eingearbeitete Bedienperson oft die wichtigste letzte Kontrolle für Cue-Timing, Wiederaufnahme und dramaturgische Enthüllungen.",
+    "KI kann die Vorbereitung beschleunigen; automatisches Skript-Following funktioniert am besten, wenn die Sprache einem stabilen vorbereiteten Skript folgt.",
+    "Live-Untertitelung ist ein anderer Arbeitsablauf für Improvisation, Gespräche, Fragen und Antworten sowie Äußerungen, die nicht im Voraus feststehen.",
+    "In Proben sollten Auslassungen, Wiederholungen, lange Pausen, Cue-Sprünge, Ausblenden und Wiederaufnahme getestet werden – nicht nur ein perfekter Ablauf."
+  ],
+  "faq": [
+    {
+      "question": "Wer sollte die Übertitel während einer Theateraufführung steuern?",
+      "answer": "Bei einer geskripteten Aufführung ist meist eine Person am besten geeignet, die die Inszenierung kennt und ausdrücklich für den Live-Cue-Status verantwortlich ist. Das kann eine spezialisierte Übertitel-Bedienperson, ein ASM, ein anderes Mitglied der Bühnenleitung oder eine geeignete technische Bedienperson sein, sofern die Aufgabe keine andere kritische Tätigkeit beeinträchtigt."
+    },
+    {
+      "question": "Kann KI Theaterübertitel automatisch steuern?",
+      "answer": "KI und Systeme zur Skriptverfolgung können die manuelle Cue-Steuerung reduzieren, wenn die Sprache eng einem stabilen Skript folgt. Bei Auslassungen, Wiederholungen, Übersprechen, langen Pausen oder Abweichungen vom erwarteten Ablauf werden sie weniger zuverlässig. Außerdem fehlt ihnen möglicherweise der dramaturgische Kontext, um Enthüllungen oder Pointen zu schützen."
+    },
+    {
+      "question": "Warum können automatische Untertitel eine Wendung vorwegnehmen?",
+      "answer": "Zur Untertitelgenauigkeit gehört auch das Timing, nicht nur der Wortlaut. Wenn eine Zeile ein Geheimnis, eine Identität, ein Geständnis oder eine Pointe verrät und vor dem Auftritt der Figur erscheint, erhält das Publikum die Information zu früh. Eine menschliche Bedienperson kann den Cue bis zum tatsächlichen Moment zurückhalten."
+    },
+    {
+      "question": "Muss eine Übertitel-Bedienperson die Sprache der Aufführung verstehen?",
+      "answer": "Nicht unbedingt, aber es hilft. Eine Bedienperson kann mit einer geprobten Cue-Folge arbeiten; wer die gesprochene Sprache versteht, erkennt Auslassungen, Wiederholungen und unerwartete Änderungen jedoch schneller."
+    },
+    {
+      "question": "Ist SurtitleLive für eine neue Bedienperson schwer zu erlernen?",
+      "answer": "Die zentralen Live-Steuerungen sind auf eine einfache Theater-Cue-Steuerung und eine klare Wiederaufnahme ausgelegt. Eine vollständige Probe bietet Personen mit Erfahrung in Bühnen-Cues eine praktische Möglichkeit, die wichtigsten Bedienlogiken zu lernen. Fortgeschrittene Abläufe lassen sich bei Bedarf ergänzen."
+    },
+    {
+      "question": "Was sollte in der ersten Übertitelprobe getestet werden?",
+      "answer": "Testen Sie nicht nur einen perfekten Durchlauf. Üben Sie Auslassungen, Wiederholungen, lange Pausen, Cue-Sprünge, Ausblenden und Wiederaufnahme. Enthält die Inszenierung Geheimnisse, Pointen oder Wendungen, proben Sie auch den frühesten sicheren Zeitpunkt für die Anzeige dieser Untertitel."
+    },
+    {
+      "question": "Sollte Improvisation mit manuell gesteuerten Übertiteln arbeiten?",
+      "answer": "Meist nicht, wenn der wesentliche Wortlaut tatsächlich vorher unbekannt ist. Improvisation, Fragen und Antworten sowie Gespräche nach der Aufführung eignen sich besser für Live-Untertitelung, bei der die Untertitel während des Sprechens erzeugt werden."
+    },
+    {
+      "question": "Müssen sich menschliche Bedienpersonen und KI gegenseitig ausschließen?",
+      "answer": "Nein. KI kann bei Skriptanalyse, Übersetzung und Vorbereitung helfen, während ein Mensch für Live-Timing und Wiederaufnahme verantwortlich bleibt. Bei vielen geskripteten Produktionen ist diese Arbeitsteilung sinnvoller, als jeden Teil des Arbeitsablaufs automatisieren zu wollen."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Übertitel-Bedienperson",
+      "definition": "Die Person, die während einer Aufführung vorbereitete Theater-Cues vorwärts schaltet, hält, überspringt, ausblendet und nach Abweichungen wiederfindet."
+    },
+    {
+      "term": "Automatische Skriptverfolgung",
+      "definition": "Ein System, das Live-Sprache einem vorbereiteten Skript zuordnet und die passenden Untertitel-Cues weitergibt."
+    },
+    {
+      "term": "Cue-Wiederaufnahme",
+      "definition": "Die Rückkehr der angezeigten Übertitel zur richtigen Stelle nach einer Auslassung, Wiederholung, einem Fehler oder einer anderen Abweichung vom vorbereiteten Ablauf."
+    },
+    {
+      "term": "Vorbereitete Übertitel",
+      "definition": "Untertiteltext, der vor einer geskripteten Aufführung übersetzt, bearbeitet, freigegeben und geprobt wurde."
+    },
+    {
+      "term": "Live-Untertitelung",
+      "definition": "Untertitel, die während des Sprechens erzeugt werden und sich für Äußerungen eignen, die nicht im Voraus bekannt sind."
+    }
+  ]
+}

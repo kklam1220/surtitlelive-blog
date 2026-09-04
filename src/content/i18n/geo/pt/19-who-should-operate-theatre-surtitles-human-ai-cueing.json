@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos principais",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Artigos relacionados"
+  },
+  "keyTakeaways": [
+    "No teatro com guião, um operador humano que conheça o espetáculo e tenha ensaiado é muitas vezes a melhor pessoa para assumir o controlo final da temporização, da recuperação e das revelações dramáticas.",
+    "A IA pode reduzir o trabalho de preparação, enquanto o acompanhamento automático funciona melhor quando a fala permanece próxima de um guião estável e preparado.",
+    "As legendas em direto constituem um fluxo de trabalho diferente, adequado a improvisação, palestras, Q&A e outras falas que não são conhecidas antecipadamente.",
+    "Os ensaios devem testar saltos, repetições, pausas longas, saltos entre cues, ocultação e recuperação, não apenas uma sequência perfeita."
+  ],
+  "faq": [
+    {
+      "question": "Quem deve operar os sobretítulos durante um espetáculo?",
+      "answer": "Normalmente, uma pessoa que conheça o espetáculo e tenha responsabilidade explícita pelo estado dos cues em direto. Pode ser um operador especializado, um ASM, um membro da direção de palco ou um técnico adequado, desde que isso não entre em conflito com outra tarefa crítica."
+    },
+    {
+      "question": "A IA pode operar automaticamente os sobretítulos teatrais?",
+      "answer": "A IA e os sistemas de acompanhamento do guião podem reduzir a operação manual quando a fala segue de perto um texto estável. Tornam-se menos fiáveis com saltos, repetições, sobreposição de vozes, pausas longas ou mudanças de ordem, e podem não compreender o contexto dramatúrgico."
+    },
+    {
+      "question": "Porque podem as legendas automáticas estragar uma reviravolta?",
+      "answer": "A precisão inclui também a temporização. Se uma fala revelar um segredo, uma identidade, uma confissão ou o ponto de uma piada antes de o ator a dizer, o público recebe a informação demasiado cedo. Um operador humano pode aguardar o momento real."
+    },
+    {
+      "question": "O operador de sobretítulos precisa de compreender a língua do espetáculo?",
+      "answer": "Nem sempre, mas ajuda. Compreender a língua falada facilita reconhecer rapidamente saltos, repetições e alterações inesperadas ao trabalhar com uma sequência ensaiada."
+    },
+    {
+      "question": "É difícil para um novo operador aprender a usar o SurtitleLive?",
+      "answer": "Os controlos em direto foram concebidos em torno de cues teatrais e recuperação simples. Uma passagem completa no ensaio dá a quem conhece os cues de palco uma forma prática de aprender a lógica principal; os fluxos avançados podem ser aprendidos quando forem necessários."
+    },
+    {
+      "question": "O que deve ser testado no primeiro ensaio de sobretítulos?",
+      "answer": "Não apenas uma sequência perfeita. Pratique saltos, repetições, pausas longas, saltos entre cues, ocultação e recuperação. Se houver segredos ou piadas, ensaie também o primeiro momento seguro em que as legendas podem aparecer."
+    },
+    {
+      "question": "A improvisação é adequada para sobretítulos operados manualmente?",
+      "answer": "Normalmente não, se o texto principal for realmente desconhecido antes do espetáculo. A improvisação, o Q&A e as conversas pós-espetáculo são mais adequados a legendas em direto, geradas à medida que se fala."
+    },
+    {
+      "question": "É preciso escolher entre operadores humanos e IA?",
+      "answer": "Não. A IA pode ajudar na análise, tradução e preparação, enquanto uma pessoa mantém a responsabilidade pela temporização e recuperação durante o espetáculo. Em muitas produções com guião, esta divisão é mais útil do que automatizar tudo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Operador de sobretítulos",
+      "definition": "A pessoa responsável por avançar, manter, saltar, ocultar e recuperar os cues de sobretítulos preparados durante um espetáculo."
+    },
+    {
+      "term": "Acompanhamento automático do guião",
+      "definition": "Um sistema que tenta associar a fala em direto a um guião preparado e avançar os cues de legendas correspondentes."
+    },
+    {
+      "term": "Recuperação de cues",
+      "definition": "Fazer regressar os sobretítulos apresentados ao ponto correto depois de um salto, repetição, erro ou outra mudança em relação à sequência preparada."
+    },
+    {
+      "term": "Sobretítulos preparados",
+      "definition": "Texto de legendas traduzido, editado, aprovado e ensaiado antes de um espetáculo com guião."
+    },
+    {
+      "term": "Legendas em direto",
+      "definition": "Legendas geradas enquanto alguém fala, adequadas a palavras que não são conhecidas antecipadamente."
+    }
+  ]
+}

@@ -11,7 +11,7 @@
     "related": "Verwandte Artikel"
   },
   "keyTakeaways": [
-    "Der Kontoinhaber von SurtitleLive kann unterstützte generative KI-Verarbeitung in den Organization Settings deaktivieren.",
+    "Der Kontoinhaber von SurtitleLive kann unterstützte generative KI-Verarbeitung in den Organisationseinstellungen deaktivieren.",
     "Skriptbearbeitung, Standardübersetzung, Spracherkennung und der Live-Betrieb von Übertiteln können weiterhin verfügbar sein.",
     "Das Deaktivieren generativer KI löscht keine Skripte, Übersetzungen oder andere bereits in SurtitleLive gespeicherte Arbeit.",
     "Die Einstellung verhindert nicht, dass jeder externe Dienst oder jede Form maschinellen Lernens ausgewählte Inhalte verarbeitet."
@@ -23,7 +23,7 @@
     },
     {
       "question": "Wer kann generative KI in SurtitleLive deaktivieren?",
-      "answer": "Der Kontoinhaber von SurtitleLive kann die Einstellung in den Organization Settings ändern. Wenn keine Mitwirkenden hinzugefügt wurden, betrifft die Entscheidung nur die Arbeit des Kontoinhabers."
+      "answer": "Der Kontoinhaber von SurtitleLive kann die Einstellung in den Organisationseinstellungen ändern. Wenn keine Mitwirkenden hinzugefügt wurden, betrifft die Entscheidung nur die Arbeit des Kontoinhabers."
     },
     {
       "question": "Wird durch das Deaktivieren generativer KI die Übersetzung abgeschaltet?",

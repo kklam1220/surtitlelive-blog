@@ -4,24 +4,56 @@
   "slug": "16-organization-generative-ai-controls",
   "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
   "generatedAt": "2026-09-04T16:15:58.000Z",
-  "sectionTitles": {"keyTakeaways": "要点", "faq": "常见问题", "glossary": "术语表", "related": "相关文章"},
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "常见问题",
+    "glossary": "术语表",
+    "related": "相关文章"
+  },
   "keyTakeaways": [
-    "SurtitleLive 账户持有人可以在 Organization Settings 中关闭受支持的生成式 AI 处理。",
+    "SurtitleLive 账户持有人可以在 组织设置 中关闭受支持的生成式 AI 处理。",
     "剧本编辑、标准机器翻译、语言检测和现场舞台字幕操作仍然可以使用。",
     "关闭生成式 AI 不会删除 SurtitleLive 中已经保存的剧本、翻译或其他工作。",
     "这项设置无法阻止所有外部服务或所有机器学习形式处理所选内容。"
   ],
   "faq": [
-    {"question": "可以在 SurtitleLive 中关闭所有 AI 吗？", "answer": "不可以。这项设置只会关闭受支持的生成式 AI 处理。标准机器翻译、语言检测以及其他非生成式工具仍可能可用。"},
-    {"question": "谁可以在 SurtitleLive 中关闭生成式 AI？", "answer": "SurtitleLive 账户持有人可以在 Organization Settings 中修改设置。如果没有加入协作者，这项选择只会影响账户持有人的工作。"},
-    {"question": "关闭生成式 AI 会停用翻译吗？", "answer": "它会停用受支持的生成式翻译和生成式后备处理。在支持的工作流程中，标准 Google Cloud Translation 仍可能可用。"},
-    {"question": "关闭生成式 AI 会删除现有剧本或翻译吗？", "answer": "不会。已保存的内容仍然可用。这项设置控制新的生成式处理，而不是删除之前的工作。"},
-    {"question": "如果协作者使用 SurtitleLive 账户，会发生什么？", "answer": "同一项生成式 AI 设置也会应用于他们在 SurtitleLive 中的工作。协作者可以查看已保存的选择，但不能修改。"}
+    {
+      "question": "可以在 SurtitleLive 中关闭所有 AI 吗？",
+      "answer": "不可以。这项设置只会关闭受支持的生成式 AI 处理。标准机器翻译、语言检测以及其他非生成式工具仍可能可用。"
+    },
+    {
+      "question": "谁可以在 SurtitleLive 中关闭生成式 AI？",
+      "answer": "SurtitleLive 账户持有人可以在 组织设置 中修改设置。如果没有加入协作者，这项选择只会影响账户持有人的工作。"
+    },
+    {
+      "question": "关闭生成式 AI 会停用翻译吗？",
+      "answer": "它会停用受支持的生成式翻译和生成式后备处理。在支持的工作流程中，标准 Google Cloud Translation 仍可能可用。"
+    },
+    {
+      "question": "关闭生成式 AI 会删除现有剧本或翻译吗？",
+      "answer": "不会。已保存的内容仍然可用。这项设置控制新的生成式处理，而不是删除之前的工作。"
+    },
+    {
+      "question": "如果协作者使用 SurtitleLive 账户，会发生什么？",
+      "answer": "同一项生成式 AI 设置也会应用于他们在 SurtitleLive 中的工作。协作者可以查看已保存的选择，但不能修改。"
+    }
   ],
   "glossary": [
-    {"term": "生成式 AI", "definition": "在 SurtitleLive 支持的剧本和翻译工作流程中生成或转换内容的 AI 模型。"},
-    {"term": "SurtitleLive 账户持有人", "definition": "负责管理 SurtitleLive 账户级设置的人，包括是否允许受支持的生成式 AI 处理。"},
-    {"term": "标准机器翻译", "definition": "在 SurtitleLive 支持的工作流程中通过 Google Cloud Translation 提供的非生成式翻译。"},
-    {"term": "账户级设置", "definition": "控制账户持有人工作，并同时应用于加入该账户的协作者的选择。"}
+    {
+      "term": "生成式 AI",
+      "definition": "在 SurtitleLive 支持的剧本和翻译工作流程中生成或转换内容的 AI 模型。"
+    },
+    {
+      "term": "SurtitleLive 账户持有人",
+      "definition": "负责管理 SurtitleLive 账户级设置的人，包括是否允许受支持的生成式 AI 处理。"
+    },
+    {
+      "term": "标准机器翻译",
+      "definition": "在 SurtitleLive 支持的工作流程中通过 Google Cloud Translation 提供的非生成式翻译。"
+    },
+    {
+      "term": "账户级设置",
+      "definition": "控制账户持有人工作，并同时应用于加入该账户的协作者的选择。"
+    }
   ]
 }

@@ -4,24 +4,56 @@
   "slug": "16-organization-generative-ai-controls",
   "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
   "generatedAt": "2026-09-04T16:15:58.000Z",
-  "sectionTitles": {"keyTakeaways": "Öne Çıkanlar", "faq": "Sık Sorulan Sorular", "glossary": "Sözlük", "related": "İlgili Yazılar"},
+  "sectionTitles": {
+    "keyTakeaways": "Öne Çıkanlar",
+    "faq": "Sık Sorulan Sorular",
+    "glossary": "Sözlük",
+    "related": "İlgili Yazılar"
+  },
   "keyTakeaways": [
-    "SurtitleLive hesap sahibi, desteklenen üretken yapay zekâ işlemlerini Organization Settings üzerinden kapatabilir.",
+    "SurtitleLive hesap sahibi, desteklenen üretken yapay zekâ işlemlerini Kuruluş Ayarları üzerinden kapatabilir.",
     "Senaryo düzenleme, standart makine çevirisi, dil algılama ve canlı sahne üst yazısı işletimi kullanılmaya devam edebilir.",
     "Üretken yapay zekâyı kapatmak SurtitleLive'da daha önce kaydedilmiş senaryoları, çevirileri veya diğer çalışmaları silmez.",
     "Bu ayar, seçilen içeriğin her harici hizmet veya her makine öğrenimi biçimi tarafından işlenmesini engellemez."
   ],
   "faq": [
-    {"question": "SurtitleLive'da tüm yapay zekâyı kapatabilir miyim?", "answer": "Hayır. Bu ayar desteklenen üretken yapay zekâ işlemlerini kapatır. Standart makine çevirisi, dil algılama ve üretken olmayan diğer araçlar kullanılabilir durumda kalabilir."},
-    {"question": "SurtitleLive'da üretken yapay zekâyı kim kapatabilir?", "answer": "SurtitleLive hesap sahibi, ayarı Organization Settings bölümünden değiştirebilir. Hesaba işbirlikçi eklenmemişse bu seçim yalnızca hesap sahibinin kendi çalışmalarını etkiler."},
-    {"question": "Üretken yapay zekâyı kapatmak çeviriyi devre dışı bırakır mı?", "answer": "Desteklenen üretken çeviriyi ve üretken yedek çevirileri devre dışı bırakır. Standart Google Cloud Translation, desteklenen iş akışlarında kullanılabilir durumda kalabilir."},
-    {"question": "Üretken yapay zekâyı kapatmak mevcut senaryoları veya çevirileri siler mi?", "answer": "Hayır. Kaydedilmiş içerik erişilebilir kalır. Ayar, önceki çalışmaları silmek yerine yeni üretken işlemleri kontrol eder."},
-    {"question": "İşbirlikçiler SurtitleLive hesabını kullanırsa ne olur?", "answer": "Aynı üretken yapay zekâ ayarı onların SurtitleLive çalışmalarına da uygulanır. İşbirlikçiler kaydedilen seçimi görebilir, ancak değiştiremez."}
+    {
+      "question": "SurtitleLive'da tüm yapay zekâyı kapatabilir miyim?",
+      "answer": "Hayır. Bu ayar desteklenen üretken yapay zekâ işlemlerini kapatır. Standart makine çevirisi, dil algılama ve üretken olmayan diğer araçlar kullanılabilir durumda kalabilir."
+    },
+    {
+      "question": "SurtitleLive'da üretken yapay zekâyı kim kapatabilir?",
+      "answer": "SurtitleLive hesap sahibi, ayarı Kuruluş Ayarları bölümünden değiştirebilir. Hesaba işbirlikçi eklenmemişse bu seçim yalnızca hesap sahibinin kendi çalışmalarını etkiler."
+    },
+    {
+      "question": "Üretken yapay zekâyı kapatmak çeviriyi devre dışı bırakır mı?",
+      "answer": "Desteklenen üretken çeviriyi ve üretken yedek çevirileri devre dışı bırakır. Standart Google Cloud Translation, desteklenen iş akışlarında kullanılabilir durumda kalabilir."
+    },
+    {
+      "question": "Üretken yapay zekâyı kapatmak mevcut senaryoları veya çevirileri siler mi?",
+      "answer": "Hayır. Kaydedilmiş içerik erişilebilir kalır. Ayar, önceki çalışmaları silmek yerine yeni üretken işlemleri kontrol eder."
+    },
+    {
+      "question": "İşbirlikçiler SurtitleLive hesabını kullanırsa ne olur?",
+      "answer": "Aynı üretken yapay zekâ ayarı onların SurtitleLive çalışmalarına da uygulanır. İşbirlikçiler kaydedilen seçimi görebilir, ancak değiştiremez."
+    }
   ],
   "glossary": [
-    {"term": "Üretken yapay zekâ", "definition": "Desteklenen SurtitleLive senaryo ve çeviri iş akışlarında içerik oluşturan veya dönüştüren yapay zekâ modelleri."},
-    {"term": "SurtitleLive hesap sahibi", "definition": "Üretken yapay zekâ işlemlerine izin verilip verilmeyeceği dâhil, SurtitleLive'daki hesap genelindeki ayarları yöneten kişi."},
-    {"term": "Standart makine çevirisi", "definition": "Desteklenen SurtitleLive iş akışlarında Google Cloud Translation aracılığıyla sunulan üretken olmayan çeviri."},
-    {"term": "Hesap genelindeki ayar", "definition": "Hesap sahibinin çalışmalarını kontrol eden ve hesaba eklenen işbirlikçilerin çalışmalarına da uygulanan seçim."}
+    {
+      "term": "Üretken yapay zekâ",
+      "definition": "Desteklenen SurtitleLive senaryo ve çeviri iş akışlarında içerik oluşturan veya dönüştüren yapay zekâ modelleri."
+    },
+    {
+      "term": "SurtitleLive hesap sahibi",
+      "definition": "Üretken yapay zekâ işlemlerine izin verilip verilmeyeceği dâhil, SurtitleLive'daki hesap genelindeki ayarları yöneten kişi."
+    },
+    {
+      "term": "Standart makine çevirisi",
+      "definition": "Desteklenen SurtitleLive iş akışlarında Google Cloud Translation aracılığıyla sunulan üretken olmayan çeviri."
+    },
+    {
+      "term": "Hesap genelindeki ayar",
+      "definition": "Hesap sahibinin çalışmalarını kontrol eden ve hesaba eklenen işbirlikçilerin çalışmalarına da uygulanan seçim."
+    }
   ]
 }

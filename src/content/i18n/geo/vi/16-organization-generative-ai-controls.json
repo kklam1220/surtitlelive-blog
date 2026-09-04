@@ -4,24 +4,56 @@
   "slug": "16-organization-generative-ai-controls",
   "sourceHash": "4d1d7313d61ee6b697d4cf9405f59161fb3b1cd7d374f090bd8c396ed87d72d8",
   "generatedAt": "2026-09-04T16:15:58.000Z",
-  "sectionTitles": {"keyTakeaways": "Điểm chính", "faq": "Câu hỏi thường gặp", "glossary": "Thuật ngữ", "related": "Bài viết liên quan"},
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
   "keyTakeaways": [
-    "Chủ tài khoản SurtitleLive có thể tắt hoạt động xử lý AI tạo sinh được hỗ trợ trong Organization Settings.",
+    "Chủ tài khoản SurtitleLive có thể tắt hoạt động xử lý AI tạo sinh được hỗ trợ trong Cài đặt tổ chức.",
     "Bạn vẫn có thể chỉnh sửa kịch bản, dùng dịch máy tiêu chuẩn, nhận diện ngôn ngữ và vận hành phụ đề sân khấu trực tiếp.",
     "Tắt AI tạo sinh không xóa kịch bản, bản dịch hoặc công việc khác đã lưu trong SurtitleLive.",
     "Thiết lập này không ngăn mọi dịch vụ bên ngoài hoặc mọi hình thức học máy xử lý nội dung được chọn."
   ],
   "faq": [
-    {"question": "Tôi có thể tắt toàn bộ AI trong SurtitleLive không?", "answer": "Không. Thiết lập này tắt hoạt động xử lý AI tạo sinh được hỗ trợ. Dịch máy tiêu chuẩn, nhận diện ngôn ngữ và các công cụ không tạo sinh khác vẫn có thể dùng được."},
-    {"question": "Ai có thể tắt AI tạo sinh trong SurtitleLive?", "answer": "Chủ tài khoản SurtitleLive có thể thay đổi thiết lập trong Organization Settings. Nếu chưa thêm cộng tác viên, lựa chọn này chỉ ảnh hưởng đến công việc của chủ tài khoản."},
-    {"question": "Tắt AI tạo sinh có vô hiệu hóa tính năng dịch không?", "answer": "Tính năng dịch tạo sinh và các phương án dự phòng tạo sinh được hỗ trợ sẽ bị tắt. Google Cloud Translation tiêu chuẩn vẫn có thể dùng trong các quy trình được hỗ trợ."},
-    {"question": "Tắt AI tạo sinh có xóa kịch bản hoặc bản dịch hiện có không?", "answer": "Không. Nội dung đã lưu vẫn còn. Thiết lập kiểm soát hoạt động xử lý tạo sinh mới, chứ không xóa công việc trước đó."},
-    {"question": "Điều gì xảy ra nếu cộng tác viên sử dụng tài khoản SurtitleLive?", "answer": "Cùng một thiết lập AI tạo sinh sẽ áp dụng cho công việc của họ trong SurtitleLive. Cộng tác viên có thể xem lựa chọn đã lưu nhưng không thể thay đổi lựa chọn đó."}
+    {
+      "question": "Tôi có thể tắt toàn bộ AI trong SurtitleLive không?",
+      "answer": "Không. Thiết lập này tắt hoạt động xử lý AI tạo sinh được hỗ trợ. Dịch máy tiêu chuẩn, nhận diện ngôn ngữ và các công cụ không tạo sinh khác vẫn có thể dùng được."
+    },
+    {
+      "question": "Ai có thể tắt AI tạo sinh trong SurtitleLive?",
+      "answer": "Chủ tài khoản SurtitleLive có thể thay đổi thiết lập trong Cài đặt tổ chức. Nếu chưa thêm cộng tác viên, lựa chọn này chỉ ảnh hưởng đến công việc của chủ tài khoản."
+    },
+    {
+      "question": "Tắt AI tạo sinh có vô hiệu hóa tính năng dịch không?",
+      "answer": "Tính năng dịch tạo sinh và các phương án dự phòng tạo sinh được hỗ trợ sẽ bị tắt. Google Cloud Translation tiêu chuẩn vẫn có thể dùng trong các quy trình được hỗ trợ."
+    },
+    {
+      "question": "Tắt AI tạo sinh có xóa kịch bản hoặc bản dịch hiện có không?",
+      "answer": "Không. Nội dung đã lưu vẫn còn. Thiết lập kiểm soát hoạt động xử lý tạo sinh mới, chứ không xóa công việc trước đó."
+    },
+    {
+      "question": "Điều gì xảy ra nếu cộng tác viên sử dụng tài khoản SurtitleLive?",
+      "answer": "Cùng một thiết lập AI tạo sinh sẽ áp dụng cho công việc của họ trong SurtitleLive. Cộng tác viên có thể xem lựa chọn đã lưu nhưng không thể thay đổi lựa chọn đó."
+    }
   ],
   "glossary": [
-    {"term": "AI tạo sinh", "definition": "Các mô hình AI tạo ra hoặc biến đổi nội dung trong những quy trình kịch bản và bản dịch được SurtitleLive hỗ trợ."},
-    {"term": "Chủ tài khoản SurtitleLive", "definition": "Người kiểm soát các thiết lập áp dụng cho toàn tài khoản trong SurtitleLive, bao gồm việc có cho phép xử lý AI tạo sinh được hỗ trợ hay không."},
-    {"term": "Dịch máy tiêu chuẩn", "definition": "Hoạt động dịch không tạo sinh được cung cấp qua Google Cloud Translation trong các quy trình SurtitleLive được hỗ trợ."},
-    {"term": "Thiết lập áp dụng cho toàn tài khoản", "definition": "Lựa chọn kiểm soát công việc của chủ tài khoản và cũng áp dụng cho cộng tác viên được thêm vào tài khoản."}
+    {
+      "term": "AI tạo sinh",
+      "definition": "Các mô hình AI tạo ra hoặc biến đổi nội dung trong những quy trình kịch bản và bản dịch được SurtitleLive hỗ trợ."
+    },
+    {
+      "term": "Chủ tài khoản SurtitleLive",
+      "definition": "Người kiểm soát các thiết lập áp dụng cho toàn tài khoản trong SurtitleLive, bao gồm việc có cho phép xử lý AI tạo sinh được hỗ trợ hay không."
+    },
+    {
+      "term": "Dịch máy tiêu chuẩn",
+      "definition": "Hoạt động dịch không tạo sinh được cung cấp qua Google Cloud Translation trong các quy trình SurtitleLive được hỗ trợ."
+    },
+    {
+      "term": "Thiết lập áp dụng cho toàn tài khoản",
+      "definition": "Lựa chọn kiểm soát công việc của chủ tài khoản và cũng áp dụng cho cộng tác viên được thêm vào tài khoản."
+    }
   ]
 }

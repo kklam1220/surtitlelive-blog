@@ -14,7 +14,7 @@
     "SurtitleLive Fringe Support Programme 2026は、選考された公演へProを14日間無償提供する独立プログラムです。助成金、翻訳委託、認証、運用代行ではありません。",
     "アクセシビリティ字幕は台詞だけでなく、話者や重要な音の情報も扱います。翻訳字幕だけを用意しても、自動的にアクセシビリティ字幕になるわけではありません。",
     "採択と利用期間はSurtitleLiveからの書面通知でのみ確定します。継続課金へ自動移行することはありません。",
-    "QLabのライブ同期は、同じMac上のloopback bridgeからASMを経由し、オペレーターがGo LiveとAllow QLab controlを明示的に選んだ後に動作します。手動ASM操作をフォールバックとして残します。"
+    "QLabのライブ同期は、同じMac上のloopback bridgeからASMを経由し、オペレーターが本番開始とAllow QLab controlを明示的に選んだ後に動作します。手動ASM操作をフォールバックとして残します。"
   ],
   "faq": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "term": "Loopback bridge",
-      "definition": "同じMac上でQLabの非機密cue identityをASM consoleへ渡すローカル中継機能。SurtitleLive backendへ直接送信しません。"
+      "definition": "同じMac上でQLabの非機密cue identityをASMコンソールへ渡すローカル中継機能。SurtitleLive backendへ直接送信しません。"
     },
     {
       "term": "利用者検証",

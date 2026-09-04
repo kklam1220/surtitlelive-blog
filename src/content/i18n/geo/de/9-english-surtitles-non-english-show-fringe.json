@@ -14,7 +14,7 @@
     "Englische Übertitel für eine nicht englische Fringe-Aufführung sollten bei der aktuellen Textfassung beginnen und als geprüfte, bearbeitbare Cue-Liste in die Probe gehen.",
     "Übersetzte Übertitel erleichtern den sprachlichen Zugang, sind aber nicht automatisch barrierefreie Captions; die Ankündigung sollte Inhalt und Ausspielweg präzise benennen.",
     "Projektion, mobile Anzeige oder eine Kombination daraus sollten nach Sichtachsen, Sprachbedarf, Handynutzung, Netzwerk, Vorderhaus und Rückfallweg gewählt werden.",
-    "Vorbereitete Übertitel brauchen im Live-Betrieb einen eingearbeiteten Operator; bei stark improvisierten Arbeiten kann ein Speech-to-Text-Reporter oder ein hybrides Modell geeigneter sein."
+    "Vorbereitete Übertitel brauchen im Live-Betrieb einen eingearbeiteten Operator; bei stark improvisierten Arbeiten kann ein Reporter für Sprachtranskription oder ein hybrides Modell geeigneter sein."
   ],
   "faq": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "question": "Was ist bei improvisierten Fringe-Aufführungen zu beachten?",
-      "answer": "Eine vorbereitete Cue-Liste ist bei häufig wechselndem oder weitgehend improvisiertem Material möglicherweise nicht der richtige Hauptweg. Die Fringe Society empfiehlt, für solche Arbeiten einen Speech-to-Text-Reporter zu erwägen; auch ein hybrides Modell kann passen."
+      "answer": "Eine vorbereitete Cue-Liste ist bei häufig wechselndem oder weitgehend improvisiertem Material möglicherweise nicht der richtige Hauptweg. Die Fringe Society empfiehlt, für solche Arbeiten einen Reporter für Sprachtranskription zu erwägen; auch ein hybrides Modell kann passen."
     }
   ],
   "glossary": [

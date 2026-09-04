@@ -27,7 +27,7 @@
     },
     {
       "question": "Können Projektion und Zuschauer-Smartphones gemeinsam genutzt werden?",
-      "answer": "Ja, sofern Kontoberechtigung und Spielort-Setup beides unterstützen. Sichtlinien, Verbindung, Einlasshinweise und das tatsächliche Leseerlebnis müssen vorab geprüft werden. Der lokale QLab-Workflow macht die mobile Ansicht nicht offline-fähig; manuelles ASM-Cueing bleibt der Fallback."
+      "answer": "Ja, sofern Kontoberechtigung und Spielort-Setup beides unterstützen. Sichtlinien, Verbindung, Einlasshinweise und das tatsächliche Leseerlebnis müssen vorab geprüft werden. Der lokale QLab-Workflow macht die mobile Ansicht nicht offline-fähig; die manuelle ASM-Cue-Steuerung bleibt der Fallback."
     },
     {
       "question": "Wie läuft die Bewerbung ab, und ist die Auswahl garantiert?",
@@ -53,7 +53,7 @@
     },
     {
       "term": "Freigegebener QLab-Ablauf",
-      "definition": "Der bewusst aktivierte Live-Weg über lokale Bridge und verbundene ASM-Konsole: erst Go Live, dann Allow QLab control, mit manuellem ASM-Cueing als Rückfallebene."
+      "definition": "Der bewusst aktivierte Live-Weg über lokale Bridge und verbundene ASM-Konsole: erst Live gehen, dann Allow QLab control, mit manueller ASM-Cue-Steuerung als Rückfallebene."
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Poin penting",
+    "faq": "Pertanyaan yang sering diajukan",
+    "glossary": "Glosarium",
+    "related": "Artikel terkait"
+  },
+  "keyTakeaways": [
+    "Untuk teater bernaskah, operator manusia yang berlatih biasanya menjadi kendali akhir paling kuat untuk waktu cue, pemulihan, dan pengungkapan dramatis.",
+    "AI dapat mengurangi pekerjaan persiapan, sementara pelacakan naskah otomatis paling baik ketika ucapan tetap dekat dengan naskah yang stabil dan telah disiapkan.",
+    "Takarir langsung adalah alur kerja yang berbeda untuk improvisasi, ceramah, tanya jawab, dan ucapan yang belum diketahui sebelumnya.",
+    "Latihan perlu menguji lompatan, pengulangan, jeda panjang, perpindahan cue, pengosongan layar, dan pemulihan—bukan hanya urutan cue yang sempurna."
+  ],
+  "faq": [
+    {
+      "question": "Siapa yang sebaiknya mengoperasikan surtitel dalam pertunjukan teater?",
+      "answer": "Untuk pertunjukan bernaskah, biasanya pilih orang yang memahami pertunjukan dan secara jelas bertanggung jawab atas status cue langsung. Orang itu dapat berupa operator surtitel khusus, ASM, anggota lain dari tim manajemen panggung, atau operator teknis yang sesuai, selama tanggung jawab tersebut tidak mengganggu tugas penting lainnya."
+    },
+    {
+      "question": "Bisakah AI menjalankan surtitel teater secara otomatis?",
+      "answer": "AI dan sistem pelacakan naskah dapat mengurangi pengoperasian cue secara manual ketika ucapan sangat mengikuti naskah yang stabil. Keandalannya menurun saat pemain melewati, mengulang, bertumpang tindih, menahan jeda panjang, atau keluar dari urutan yang diperkirakan. Sistem juga mungkin tidak memahami konteks dramatis untuk melindungi pengungkapan atau punchline."
+    },
+    {
+      "question": "Mengapa takarir otomatis dapat membocorkan kejutan cerita terlalu cepat?",
+      "answer": "Ketepatan takarir mencakup waktu tampil, bukan hanya kata-katanya. Jika sebuah baris mengungkap rahasia, identitas, pengakuan, atau lelucon sebelum pemain menyampaikannya, penonton menerima informasi terlalu dini. Operator manusia dapat menahan cue sampai pertunjukan benar-benar mencapai momen tersebut."
+    },
+    {
+      "question": "Apakah operator surtitel perlu memahami bahasa pertunjukan?",
+      "answer": "Tidak selalu, tetapi itu membantu. Operator dapat bekerja dari urutan cue yang sudah dilatih; pemahaman atas bahasa lisan memudahkan pengenalan lompatan, pengulangan, dan perubahan tak terduga dengan cepat."
+    },
+    {
+      "question": "Apakah SurtitleLive sulit dipelajari oleh operator baru?",
+      "answer": "Kendali langsung inti dirancang berdasarkan pengoperasian cue teater dan pemulihan yang sederhana. Satu latihan penuh memberi orang yang memahami cue panggung cara praktis untuk mempelajari logika utama. Alur lanjutan dapat dipelajari ketika dibutuhkan produksi."
+    },
+    {
+      "question": "Apa yang harus diuji dalam latihan surtitel pertama?",
+      "answer": "Jangan hanya menguji jalannya cue yang sempurna. Latih lompatan, pengulangan, jeda panjang, perpindahan cue, pengosongan layar, dan pemulihan. Jika produksi memiliki rahasia, lelucon, atau kejutan, latih juga momen paling awal yang aman untuk menampilkan takarir tersebut."
+    },
+    {
+      "question": "Haruskah improvisasi memakai surtitel yang dioperasikan secara manual?",
+      "answer": "Biasanya tidak jika kata-kata utamanya memang belum diketahui sebelumnya. Improvisasi, tanya jawab, dan diskusi setelah pertunjukan lebih cocok menggunakan takarir langsung, yang menghasilkan takarir dari ucapan saat berlangsung."
+    },
+    {
+      "question": "Apakah operator manusia dan AI harus menjadi pilihan yang saling meniadakan?",
+      "answer": "Tidak. AI dapat membantu analisis naskah, penerjemahan, dan persiapan, sementara manusia tetap bertanggung jawab atas waktu langsung dan pemulihan. Untuk banyak produksi bernaskah, pembagian kerja ini lebih berguna daripada mencoba mengotomatiskan seluruh alur kerja."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Operator surtitel",
+      "definition": "Orang yang bertanggung jawab memajukan, menahan, melompati, mengosongkan, dan memulihkan cue surtitel teater yang telah disiapkan selama pertunjukan."
+    },
+    {
+      "term": "Pelacakan naskah otomatis",
+      "definition": "Sistem yang mencoba mencocokkan ucapan langsung dengan naskah yang telah disiapkan dan memajukan cue takarir yang sesuai."
+    },
+    {
+      "term": "Pemulihan cue",
+      "definition": "Mengembalikan surtitel yang tampil ke posisi yang benar setelah lompatan, pengulangan, kesalahan, atau penyimpangan lain dari urutan yang telah disiapkan."
+    },
+    {
+      "term": "Surtitel yang telah disiapkan",
+      "definition": "Teks takarir yang diterjemahkan, disunting, disetujui, dan dilatih sebelum pertunjukan bernaskah."
+    },
+    {
+      "term": "Takarir langsung",
+      "definition": "Takarir yang dibuat ketika seseorang berbicara, cocok untuk kata-kata yang belum diketahui sebelumnya."
+    }
+  ]
+}

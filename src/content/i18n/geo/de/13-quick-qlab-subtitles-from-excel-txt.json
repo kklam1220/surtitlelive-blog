@@ -14,7 +14,7 @@
     "QLab 5 kann Untertitel mit Text-Cues projizieren; Excel, CSV oder TXT dienen dabei als Quelldaten für einen AppleScript- oder Importer-Workflow, nicht als nativer Ein-Klick-XLSX-Import.",
     "Vor dem Stapelimport müssen Video- oder Bundle-Lizenz, Stage, Output Route und Projektor mit einem manuellen Text-Cue geprüft werden. Automatisierung wiederholt auch eine falsche Ausgabezuordnung.",
     "Ein QLab Projection Pack hält geprüfte Übersetzungen und stabile SurtitleLive-Cue-Schlüssel außerhalb des QLab-Showfiles und kann passende Gruppen bei einem erneuten Import gezielt aktualisieren, ohne fremde Show-Cues zu überschreiben.",
-    "Viewer-Sync ist ein ausdrücklich freigegebener Weg: QLab sendet eine nicht geheime Cue-Identität an die Loopback-Bridge auf 127.0.0.1:37621; die offene ASM-Konsole veröffentlicht erst nach Go Live und Allow QLab control über den bestehenden Control Channel."
+    "Viewer-Sync ist ein ausdrücklich freigegebener Weg: QLab sendet eine nicht geheime Cue-Identität an die Loopback-Bridge auf 127.0.0.1:37621; die offene ASM-Konsole veröffentlicht erst nach Live gehen und Allow QLab control über den bestehenden Control Channel."
   ],
   "faq": [
     {
@@ -53,7 +53,7 @@
     },
     {
       "term": "ASM-Freigabe",
-      "definition": "Bewusste Bedienfolge aus QLab enabled, Connect local bridge, ausdrücklichem Go Live und anschließend Allow QLab control."
+      "definition": "Bewusste Bedienfolge aus QLab enabled, Lokale Bridge verbinden, ausdrücklichem Live gehen und anschließend Allow QLab control."
     }
   ]
 }

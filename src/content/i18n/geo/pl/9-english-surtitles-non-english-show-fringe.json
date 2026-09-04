@@ -12,19 +12,19 @@
   },
   "keyTakeaways": [
     "W nieanglojęzycznym spektaklu na Fringe angielskie surtytuły powinny powstawać w oparciu o gotowy skrypt, a nie od pustego pliku.",
-    "Przygotowany workflow z cue’ami pozwala zespołowi przejrzeć angielskie tłumaczenie przed premierą, jednocześnie zachowując możliwość sterowania surtytułami na żywo podczas spektaklu.",
+    "Przygotowany przepływ pracy z cue’ami pozwala zespołowi przejrzeć angielskie tłumaczenie przed premierą, jednocześnie zachowując możliwość sterowania surtytułami na żywo podczas spektaklu.",
     "Surtytuły na urządzenia mobilne umożliwiają anglojęzycznej widowni, widowni oryginalnojęzycznej oraz dodatkowym grupom językowym wybór odpowiedniego tekstu na własnych telefonach.",
-    "Niewielkie zespoły koncertujące powinny wybierać oprogramowanie do surtytułów oferujące: wgrywanie skryptu, edytowalne cue’y, wybór języka, sterowanie na żywo, przeskakiwanie do wybranego fragmentu oraz funkcję blackout.",
+    "Niewielkie zespoły koncertujące powinny wybierać oprogramowanie do surtytułów oferujące: wgrywanie skryptu, edytowalne cue’y, wybór języka, sterowanie na żywo, przeskakiwanie do wybranego fragmentu oraz funkcję czyszczenie ekranu.",
     "SurtitleLive najlepiej sprawdza się w spektaklach opartych na scenariuszu lub w dużej mierze stabilnych, które potrzebują angielskich surtytułów na Fringe, podczas tras, dla programerów, recenzentów lub wielojęzycznej publiczności."
   ],
   "faq": [
     {
       "question": "Jak dodać angielskie surtytuły do spektaklu w języku polskim lub innym języku niż angielski?",
-      "answer": "Zacznij od skryptu, przygotuj lub zweryfikuj angielskie tłumaczenie, podziel tekst na czytelne jednostki – cue’y, zgraj czasowanie cue’ów podczas prób, a następnie prowadź spektakl z operatorem, który wywołuje każdy surtytuł na żywo. SurtitleLive wspiera ten proces, przekształcając skrypt w edytowalny workflow cue’ów i dostarczając gotowe surtytuły za pomocą projekcji lub przeglądarki mobilnej."
+      "answer": "Zacznij od skryptu, przygotuj lub zweryfikuj angielskie tłumaczenie, podziel tekst na czytelne jednostki – cue’y, zgraj czasowanie cue’ów podczas prób, a następnie prowadź spektakl z operatorem, który wywołuje każdy surtytuł na żywo. SurtitleLive wspiera ten proces, przekształcając skrypt w edytowalny przepływ pracy cue’ów i dostarczając gotowe surtytuły za pomocą projekcji lub przeglądarki mobilnej."
     },
     {
       "question": "Czy anglojęzyczna i oryginalnojęzyczna publiczność mogą jednocześnie widzieć różne surtytuły?",
-      "answer": "Tak, jeśli workflow obsługuje wiele przygotowanych ścieżek językowych. W SurtitleLive każdy widz może otworzyć link lub zeskanować kod QR i wybrać włączony język, na przykład angielski, język oryginalny bądź inny przygotowany język."
+      "answer": "Tak, jeśli przepływ pracy obsługuje wiele przygotowanych ścieżek językowych. W SurtitleLive każdy widz może otworzyć link lub zeskanować kod QR i wybrać włączony język, na przykład angielski, język oryginalny bądź inny przygotowany język."
     },
     {
       "question": "Czy musimy przebudować spektakl pod kątem stałego ekranu?",
@@ -32,7 +32,7 @@
     },
     {
       "question": "Co się stanie, jeśli aktor pominie kwestię albo spektakl ulegnie zmianie?",
-      "answer": "Przygotowane surtytuły nadal wymagają kontroli operatora na żywo. Operator śledzi przebieg spektaklu, wywołuje cue’y we właściwym momencie i korzysta z przeskoku do wybranego fragmentu lub funkcji blackout, gdy akcja odbiega od zakładanej kolejności."
+      "answer": "Przygotowane surtytuły nadal wymagają kontroli operatora na żywo. Operator śledzi przebieg spektaklu, wywołuje cue’y we właściwym momencie i korzysta z przeskoku do wybranego fragmentu lub funkcji czyszczenie ekranu, gdy akcja odbiega od zakładanej kolejności."
     },
     {
       "question": "Ile czasu potrzeba na przygotowanie angielskich surtytułów przed Edinburgh Fringe?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Na co mały zespół koncertujący powinien zwrócić uwagę przy wyborze oprogramowania do surtytułów?",
-      "answer": "Szukaj narzędzia umożliwiającego pracę na bazie skryptu, edytowalne cue’y, wiele ścieżek językowych, dostęp przez kod QR bez konieczności instalowania aplikacji przez widza, sterowanie cue’ami na żywo, możliwość przeskakiwania między fragmentami, funkcję blackout oraz opcję korzystania z projekcji lub telefonów widzów – w zależności od warunków technicznych miejsca."
+      "answer": "Szukaj narzędzia umożliwiającego pracę na bazie skryptu, edytowalne cue’y, wiele ścieżek językowych, dostęp przez kod QR bez konieczności instalowania aplikacji przez widza, sterowanie cue’ami na żywo, możliwość przeskakiwania między fragmentami, funkcję czyszczenie ekranu oraz opcję korzystania z projekcji lub telefonów widzów – w zależności od warunków technicznych miejsca."
     }
   ],
   "glossary": [
@@ -65,7 +65,7 @@
       "definition": "Działający w przeglądarce widok dla publiczności, pozwalający odczytywać surtytuły na własnym telefonie po otwarciu linku lub zeskanowaniu kodu QR."
     },
     {
-      "term": "Blackout",
+      "term": "Czyszczenie ekranu",
       "definition": "Funkcja sterowania na żywo, która tymczasowo ukrywa surtytuły – stosowana, gdy wyświetliłby się niewłaściwy tekst lub gdy dany moment sceniczny nie wymaga widocznego tekstu."
     }
   ]

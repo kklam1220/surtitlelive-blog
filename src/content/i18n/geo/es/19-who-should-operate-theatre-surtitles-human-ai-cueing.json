@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "19-who-should-operate-theatre-surtitles-human-ai-cueing",
+  "sourceHash": "45d47871f0f99c24479ad907199747214dff48237beb7c2b8aa478bebc722835",
+  "generatedAt": "2026-09-04T16:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Artículos relacionados"
+  },
+  "keyTakeaways": [
+    "En teatro con guion, un operador humano que haya ensayado suele ser el mejor control final del tiempo de los cues, la recuperación y las revelaciones dramáticas.",
+    "La IA puede reducir el trabajo de preparación, mientras que el seguimiento automático funciona mejor cuando la voz se mantiene cerca de un guion estable y preparado.",
+    "El subtitulado en directo es otro flujo de trabajo para la improvisación, las charlas, las preguntas y respuestas y el habla que no se conoce de antemano.",
+    "Los ensayos deben probar omisiones, repeticiones, pausas largas, saltos de cue, ocultación y recuperación; no solo una secuencia perfecta."
+  ],
+  "faq": [
+    {
+      "question": "¿Quién debería operar los sobretítulos durante una función de teatro?",
+      "answer": "En una función con guion, normalmente conviene que lo haga alguien que conozca el espectáculo y tenga asignada explícitamente la responsabilidad del estado de los cues en directo. Puede ser un operador especializado, un ASM, otra persona del equipo de dirección de escena o un operador técnico adecuado, siempre que la tarea no interfiera con otra función crítica."
+    },
+    {
+      "question": "¿Puede la IA operar automáticamente los sobretítulos teatrales?",
+      "answer": "La IA y los sistemas de seguimiento del guion pueden reducir el disparo manual de cues cuando la voz sigue de cerca un guion estable. Son menos fiables cuando los intérpretes omiten, repiten, se solapan, mantienen pausas largas o se apartan de la secuencia prevista. También pueden carecer del contexto dramático necesario para proteger una revelación o un remate."
+    },
+    {
+      "question": "¿Por qué los subtítulos automáticos pueden revelar un giro antes de tiempo?",
+      "answer": "La precisión de los subtítulos incluye el momento de aparición, no solo las palabras. Si una línea revela un secreto, una identidad, una confesión o un chiste antes de que la interprete la diga, el público recibe la información demasiado pronto. Un operador humano puede retener el cue hasta que llegue el momento real."
+    },
+    {
+      "question": "¿El operador de sobretítulos debe entender el idioma de la función?",
+      "answer": "No siempre, aunque ayuda. Puede trabajar a partir de una secuencia de cues ensayada, pero entender el idioma hablado facilita reconocer rápidamente omisiones, repeticiones y cambios inesperados."
+    },
+    {
+      "question": "¿Es difícil aprender a usar SurtitleLive para un operador nuevo?",
+      "answer": "Los controles principales en directo están pensados para un disparo sencillo de cues teatrales y una recuperación clara. Un ensayo completo ofrece a quien entiende los cues escénicos una forma práctica de aprender la lógica de operación principal. Los flujos avanzados se pueden aprender cuando la producción los necesita."
+    },
+    {
+      "question": "¿Qué se debería probar en el primer ensayo de sobretítulos?",
+      "answer": "No prueben únicamente una pasada perfecta. Practiquen omisiones, repeticiones, pausas largas, saltos de cue, ocultar la pantalla y recuperar la posición. Si la producción contiene secretos, chistes o giros, ensayen también el momento más temprano en que sea seguro mostrar esos subtítulos."
+    },
+    {
+      "question": "¿Debería la improvisación utilizar sobretítulos operados manualmente?",
+      "answer": "Por lo general, no si el texto principal se desconoce realmente de antemano. La improvisación, las preguntas y respuestas y las conversaciones posteriores funcionan mejor con subtitulado en directo, que genera los subtítulos a partir del habla mientras ocurre."
+    },
+    {
+      "question": "¿La elección debe ser entre operadores humanos e IA?",
+      "answer": "No. La IA puede ayudar con el análisis del guion, la traducción y la preparación, mientras una persona mantiene la responsabilidad del tiempo en directo y la recuperación. En muchas producciones con guion, esta división del trabajo es más útil que intentar automatizar todo el flujo."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Operador de sobretítulos",
+      "definition": "La persona responsable de avanzar, mantener, saltar, ocultar y recuperar los cues de sobretítulos teatrales preparados durante una función."
+    },
+    {
+      "term": "Seguimiento automático del guion",
+      "definition": "Sistema que intenta hacer coincidir el habla en directo con un guion preparado y avanzar los cues de subtítulos correspondientes."
+    },
+    {
+      "term": "Recuperación de cues",
+      "definition": "Volver a colocar los sobretítulos mostrados en el punto correcto después de una omisión, repetición, error u otra desviación de la secuencia preparada."
+    },
+    {
+      "term": "Sobretítulos preparados",
+      "definition": "Texto de subtítulos traducido, editado, aprobado y ensayado antes de una función con guion."
+    },
+    {
+      "term": "Subtitulado en directo",
+      "definition": "Subtítulos generados mientras alguien habla, adecuados para palabras que no se conocen de antemano."
+    }
+  ]
+}
