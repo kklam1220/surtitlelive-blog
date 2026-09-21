@@ -94,7 +94,7 @@ const localeLinks = [
 
 			.img-container {
 				width: 100%;
-				aspect-ratio: 16 / 9;
+				aspect-ratio: 2 / 1;
 				background-color: rgb(var(--gray-light));
 				overflow: hidden;
 			}
@@ -180,7 +180,6 @@ const localeLinks = [
                                                     width={1020} 
                                                     height={510} 
                                                     alt={post.data.title} 
-                                                    style="max-width: 100%; height: auto; object-fit: cover;"
                                                     loading="lazy"
                                                 />
                                             ) : (
@@ -189,7 +188,6 @@ const localeLinks = [
                                                     height={360} 
                                                     src="/blog-placeholder-1.jpg"
                                                     alt={post.data.title} 
-                                                    style="max-width: 100%; height: auto; object-fit: cover;"
                                                     loading="lazy" 
                                                 />
                                             )}
