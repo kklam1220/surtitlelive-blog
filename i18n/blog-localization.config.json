@@ -80,5 +80,22 @@
     "surtitling workflow",
     "surtitles operator",
     "User Guides"
-  ]
+  ],
+  "blogTermResidueRules": {
+    "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment": [
+      "captioning",
+      "live-captioning",
+      "professional captioning",
+      "privacy filter",
+      "Privacy-Filter",
+      "privacy-фильтр",
+      "anti-spy screen protector",
+      "privacy or anti-spy screen protector",
+      "front of house",
+      "Bring-your-own-device",
+      "Caption-Autoren",
+      "Viewer access",
+      "runtime"
+    ]
+  }
 }

@@ -248,6 +248,10 @@ function main() {
   )
     ? config.forbiddenEnglishProseTerms
     : [];
+  const blogTermResidueRules =
+    config.blogTermResidueRules && typeof config.blogTermResidueRules === "object"
+      ? config.blogTermResidueRules
+      : {};
 
   let hasError = false;
 
@@ -262,6 +266,7 @@ function main() {
     let markdownImageParity = 0;
     let englishProseResidue = 0;
     let geoEnglishProseResidue = 0;
+    let blogTermResidue = 0;
     let deferred = 0;
 
     for (const post of posts) {
@@ -346,9 +351,27 @@ function main() {
         );
       }
 
+      const blogTerms = Array.isArray(blogTermResidueRules[post.slug])
+        ? blogTermResidueRules[post.slug]
+        : [];
+      const blogResidue = findEnglishProseResidue(payload, blogTerms);
+      if (blogResidue.length > 0) {
+        blogTermResidue += blogResidue.length;
+        hasError = true;
+        console.error(
+          `[blog:i18n:check] [${locale}] ${post.slug}: locale-specific terminology residue: ${blogResidue.join(", ")}`,
+        );
+      }
+
       const geoPath = path.join(localizedGeoRoot, locale, `${post.slug}.json`);
       try {
         const geoPayload = readJson(geoPath);
+        if (geoPayload.slug !== post.slug) {
+          hasError = true;
+          console.error(
+            `[blog:i18n:check] [${locale}] ${post.slug} GEO: slug must match the canonical post slug`,
+          );
+        }
         const geoResidue = findEnglishProseResidue(
           { body: collectStringValues(geoPayload).join("\n") },
           forbiddenEnglishProseTerms,
@@ -360,6 +383,17 @@ function main() {
             `[blog:i18n:check] [${locale}] ${post.slug} GEO: untranslated prose terms: ${geoResidue.join(", ")}`,
           );
         }
+        const geoBlogResidue = findEnglishProseResidue(
+          { body: collectStringValues(geoPayload).join("\n") },
+          blogTerms,
+        );
+        if (geoBlogResidue.length > 0) {
+          blogTermResidue += geoBlogResidue.length;
+          hasError = true;
+          console.error(
+            `[blog:i18n:check] [${locale}] ${post.slug} GEO: locale-specific terminology residue: ${geoBlogResidue.join(", ")}`,
+          );
+        }
       } catch (error) {
         if (error?.code !== "ENOENT") {
           throw error;
@@ -368,7 +402,7 @@ function main() {
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} markdownLinkParity=${markdownLinkParity} markdownImageParity=${markdownImageParity} deferred=${deferred}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} blogTermResidue=${blogTermResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} markdownLinkParity=${markdownLinkParity} markdownImageParity=${markdownImageParity} deferred=${deferred}`,
     );
   }
 
