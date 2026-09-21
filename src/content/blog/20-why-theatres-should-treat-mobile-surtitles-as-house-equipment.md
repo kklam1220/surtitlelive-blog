@@ -1,5 +1,5 @@
 ---
-title: "Why Theatres Should Treat Mobile Surtitles as House Equipment"
+title: "Make Mobile Surtitles Part of Theatre Accessibility"
 description: "A theatre can make mobile surtitles a repeatable house service by owning a small pool of managed phones, preparing front-of-house staff and using SurtitleLive as the delivery layer."
 pubDate: "2026-09-21"
 tags: ["SurtitleLive", "Theatre Accessibility", "Mobile Surtitles", "Front of House", "Venue Operations", "Audience Experience"]
@@ -93,7 +93,7 @@ The venue supplies the infrastructure and audience service. The production suppl
 
 A theatre may still use projected surtitles, professional captioning, sign-language interpretation, hearing-assistance systems or other access services where they are more appropriate. Personal screens are another option, not a replacement for everything else.
 
-![Theatre foyer sign announcing that surtitles are available for the performance](./blog-20-2.png)
+![Bilingual theatre foyer sign announcing that caption devices are available](./blog-20-2.png)
 
 ## The more useful question
 
