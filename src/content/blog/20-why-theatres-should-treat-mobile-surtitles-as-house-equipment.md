@@ -55,6 +55,10 @@ A dark case, controlled brightness and a privacy filter may be enough to make a 
 
 This is worth testing from adjacent seats before the service is advertised.
 
+![Standalone subtitle phone stand beside a theatre seat with a privacy screen protector](./blog-20-3.jpg)
+
+*An optional floor stand can keep a venue-owned phone stable at a comfortable reading height. The stand, phone and privacy filter are venue equipment, not supplied by SurtitleLive.*
+
 ## Front of house matters more than the QR code
 
 The audience experience will usually be decided in the foyer, not in the software.
