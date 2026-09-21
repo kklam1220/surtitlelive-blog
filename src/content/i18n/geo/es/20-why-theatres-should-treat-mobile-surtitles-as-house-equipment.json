@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Puntos clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Artículos relacionados"
+  },
+  "keyTakeaways": [
+    "Un teatro puede convertir los sobretítulos móviles en un servicio habitual si conserva un pequeño lote de móviles de préstamo gestionados.",
+    "El equipo de atención al público puede entregar la página del Viewer ya preparada y explicar brevemente la selección de idioma.",
+    "La carga, la red, el brillo, la privacidad, los móviles de repuesto y una prueba en la sala importan tanto como el software.",
+    "SurtitleLive conecta el texto preparado con el navegador del público; no proporciona móviles, red, traducción ni certificación de cumplimiento."
+  ],
+  "faq": [
+    {
+      "question": "¿Puede un teatro prestar móviles para los sobretítulos?",
+      "answer": "Sí. El teatro puede mantener varios móviles cargados y numerados, abrir la página correcta del Viewer antes de abrir las puertas y entregarlos mediante su equipo de atención al público. También puede ofrecer un código QR o un enlace corto a quienes prefieran utilizar su propio móvil."
+    },
+    {
+      "question": "¿El público tiene que instalar una aplicación?",
+      "answer": "No. SurtitleLive Viewer funciona en el navegador. La persona puede abrir un enlace o escanear un código QR, elegir un idioma disponible y leer los sobretítulos preparados sin instalar una aplicación específica."
+    },
+    {
+      "question": "¿Qué debe preparar el teatro antes de ofrecer móviles de préstamo?",
+      "answer": "Debe cargar y numerar los móviles, comprobar la red y la página de la función, confirmar los idiomas disponibles y preparar algunos repuestos. También conviene probar el brillo, los reflejos y el ángulo de lectura en la sala, y ensayar una explicación breve para la entrega."
+    },
+    {
+      "question": "¿Los sobretítulos móviles resuelven por sí solos la accesibilidad?",
+      "answer": "No. Son una opción de distribución. Según la producción, también pueden ser necesarios sobretítulos proyectados, subtitulado profesional en directo, interpretación en lengua de signos, sistemas de apoyo auditivo u otros servicios. SurtitleLive no certifica la accesibilidad ni el cumplimiento legal de una configuración concreta."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Móvil de préstamo gestionado",
+      "definition": "Un móvil del teatro que se carga, configura, revisa y entrega a una persona espectadora durante una función."
+    },
+    {
+      "term": "Atención al público",
+      "definition": "El equipo del teatro que prepara, entrega y recoge los dispositivos y explica cómo utilizar el servicio."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "La vista para el público, basada en navegador, donde se pueden leer los sobretítulos preparados en un móvil."
+    },
+    {
+      "term": "Sobretítulos móviles",
+      "definition": "Sobretítulos teatrales preparados que se muestran en el móvil de la persona espectadora o en un dispositivo prestado por el teatro."
+    },
+    {
+      "term": "Uso del propio dispositivo",
+      "definition": "Una modalidad en la que el público utiliza su propio móvil mediante un código QR o un enlace corto."
+    }
+  ]
+}

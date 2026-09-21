@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkan noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler sözlüğü",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Bir tiyatro, yönetilen küçük bir ödünç telefon havuzu tutarak mobil üst yazıyı düzenli bir salon hizmetine dönüştürebilir.",
+    "Seyirci hizmetleri ekibi Viewer sayfası önceden açılmış bir telefonu teslim edip dil seçimini kısaca anlatabilir.",
+    "Şarj, ağ, parlaklık, mahremiyet, yedek cihazlar ve salonda yapılacak testler yazılım kadar önemlidir.",
+    "SurtitleLive hazırlanmış metni seyircinin tarayıcısına bağlar; telefon, ağ, çevirmen veya uygunluk sertifikası sağlamaz."
+  ],
+  "faq": [
+    {
+      "question": "Tiyatro, üst yazı için seyirciye telefon ödünç verebilir mi?",
+      "answer": "Evet. Tiyatro birkaç telefonu şarj edip numaralandırabilir, kapılar açılmadan doğru Viewer sayfasını açabilir ve cihazları seyirci hizmetleri ekibiyle teslim edebilir. Kendi telefonunu kullanmak isteyenler için QR kodu veya kısa bağlantı da sunulabilir."
+    },
+    {
+      "question": "Seyircinin uygulama yüklemesi gerekir mi?",
+      "answer": "Hayır. SurtitleLive Viewer tarayıcıda çalışır. Seyirci bir bağlantıyı açabilir veya QR kodunu tarayabilir, mevcut dili seçebilir ve özel bir seyirci uygulaması kurmadan hazırlanmış üst yazıyı okuyabilir."
+    },
+    {
+      "question": "Ödünç telefonları sunmadan önce tiyatro ne hazırlamalı?",
+      "answer": "Telefonları şarj edip numaralandırın, ağı ve doğru gösteri sayfasını test edin, sunulan dilleri doğrulayın ve birkaç yedek cihaz ayırın. Salonda parlaklık, yansımalar ve okuma açısı da sınanmalı; teslim sırasında kullanılacak kısa açıklama prova edilmelidir."
+    },
+    {
+      "question": "Mobil üst yazı tek başına eksiksiz bir erişilebilirlik çözümü müdür?",
+      "answer": "Hayır. Bu, metni ulaştırmanın yollarından biridir. Gösteriye göre yansıtılmış üst yazı, profesyonel canlı altyazı, işaret dili çevirisi, işitme destek sistemleri veya başka hizmetler de gerekebilir. SurtitleLive belirli bir düzenlemenin tüm erişilebilirlik ya da yasal şartları karşıladığını belgelemez."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Yönetilen ödünç telefon",
+      "definition": "Tiyatronun sahip olduğu, şarj edilip ayarlanan ve kontrol edildikten sonra gösteri süresince seyirciye verilen telefon."
+    },
+    {
+      "term": "Seyirci hizmetleri",
+      "definition": "Cihazları hazırlayan, teslim edip geri alan ve hizmeti seyirciye açıklayan ekip."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Hazırlanmış üst yazının telefonda okunabildiği tarayıcı tabanlı seyirci görünümü."
+    },
+    {
+      "term": "Mobil üst yazı",
+      "definition": "Seyircinin kendi telefonunda veya tiyatronun ödünç verdiği cihazda gösterilen hazırlanmış tiyatro üst yazısı."
+    },
+    {
+      "term": "Kendi cihazını kullanma",
+      "definition": "Seyircinin ödünç cihaz yerine QR kodu veya kısa bağlantıyla kendi telefonunu kullanması."
+    }
+  ]
+}

@@ -11,11 +11,11 @@
     "related": "Termos Relacionados"
   },
   "keyTakeaways": [
-    "Para as equipas do Edinburgh Fringe, legendas, sobretítulos, legendas genéricas, modo de projeção e acesso móvel para o público descrevem decisões diferentes, não um fluxo de trabalho intermutável.",
+    "Para as equipes do Edinburgh Fringe, legendas, sobretítulos, legendas genéricas, modo de projeção e acesso móvel para o público descrevem decisões diferentes, não um fluxo de trabalho intermutável.",
     "Um espetáculo não-inglês que precisa principalmente de tradução deve geralmente especificar sobretítulos em inglês preparados para performance ao vivo, mesmo que a comunicação para o público diga legendas em inglês.",
     "As legendas podem precisar de identificação do orador, música, efeitos sonoros, áudio fora de palco e outras informações de acessibilidade, não apenas diálogo traduzido.",
-    "O modo de projeção e o acesso móvel para o público são escolhas de apresentação para o público; devem ser escolhidos depois de a equipa definir se o texto é tradução, legendagem ou ambos.",
-    "Antes do ensaio técnico, as equipas do Fringe devem confirmar o conteúdo do texto, o método de apresentação, as faixas de idioma, os requisitos de acessibilidade e quem é responsável pela operação do texto ao vivo."
+    "O modo de projeção e o acesso móvel para o público são escolhas de apresentação para o público; devem ser escolhidos depois de a equipe definir se o texto é tradução, legendagem ou ambos.",
+    "Antes do ensaio técnico, as equipes do Fringe devem confirmar o conteúdo do texto, o método de apresentação, as faixas de idioma, os requisitos de acessibilidade e quem é responsável pela operação do texto ao vivo."
   ],
   "faq": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "question": "Podemos dizer legendas em inglês na nossa listagem do Fringe?",
-      "answer": "Sim. 'Legendas em inglês' é frequentemente uma linguagem clara para o público. Para o planeamento da produção, 'sobretítulos em inglês preparados' é geralmente mais preciso quando o texto é uma tradução revista e marcada durante um espetáculo ao vivo."
+      "answer": "Sim. 'Legendas em inglês' é frequentemente uma linguagem clara para o público. Para o planejamento da produção, 'sobretítulos em inglês preparados' é geralmente mais preciso quando o texto é uma tradução revista e marcada durante um espetáculo ao vivo."
     },
     {
       "question": "Qual é a diferença entre sobretítulos e legendas para produções do Fringe?",
@@ -32,15 +32,15 @@
     },
     {
       "question": "O modo de projeção e o acesso móvel para o público são o mesmo que legendas ou sobretítulos?",
-      "answer": "Não. O modo de projeção e o acesso móvel para o público descrevem como o público recebe o texto. Legendas e sobretítulos descrevem que tipo de texto está a ser preparado."
+      "answer": "Não. O modo de projeção e o acesso móvel para o público descrevem como o público recebe o texto. Legendas e sobretítulos descrevem que tipo de texto está sendo preparado."
     },
     {
       "question": "O que deve um produtor confirmar antes do ensaio técnico?",
-      "answer": "Confirmar se o espetáculo precisa de sobretítulos em inglês, legendas, ou ambos; quais idiomas estão ativados; se será usada projeção, acesso móvel para o público, ou ambos; quem revê o texto; e quem opera ou supervisiona a entrega ao vivo."
+      "answer": "Confirmar se o espetáculo precisa de sobretítulos em inglês, legendas, ou ambos; quais idiomas estão ativados; se será usada projeção, acesso móvel para o público, ou ambos; quem revisa o texto; e quem opera ou supervisiona a entrega ao vivo."
     },
     {
       "question": "Quando é que o SurtitleLive é adequado para um espetáculo do Fringe?",
-      "answer": "O SurtitleLive é mais adequado quando a equipa tem um guião ou texto de performance maioritariamente estável, pode rever o texto antes da estreia, e precisa de texto preparado entregue via modo de projeção, acesso móvel para o público, ou ambos durante um espetáculo ao vivo."
+      "answer": "O SurtitleLive é mais adequado quando a equipe tem um roteiro ou texto de performance maioritariamente estável, pode revisar o texto antes da estreia, e precisa de texto preparado entregue via modo de projeção, acesso móvel para o público, ou ambos durante um espetáculo ao vivo."
     }
   ],
   "glossary": [
@@ -58,7 +58,7 @@
     },
     {
       "term": "modo de projeção",
-      "definition": "Um modo de apresentação para ecrãs de teatro ou projetores quando o local suporta texto visível partilhado."
+      "definition": "Um modo de apresentação para telas de teatro ou projetores quando o local suporta texto visível compartilhado."
     },
     {
       "term": "Visualizador móvel",
@@ -66,7 +66,7 @@
     },
     {
       "term": "Identificação do orador",
-      "definition": "Informação de legenda que indica ao público quem está a falar, especialmente quando o orador pode não ser visualmente óbvio."
+      "definition": "Informação de legenda que indica ao público quem está falando, especialmente quando o orador pode não ser visualmente óbvio."
     },
     {
       "term": "Informação sonora",

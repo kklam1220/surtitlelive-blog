@@ -14,7 +14,7 @@
     "O SurtitleLive não nasceu de uma categoria de software, mas do problema translinguístico de um dramaturgo: como pode um espetáculo manter a sua língua original enquanto outro público o segue?",
     "As legendas em inglês deviam ser um convite a entrar num espetáculo não anglófono, não uma substituição da voz, do ritmo e da memória cultural da língua original.",
     "A tradução como hospitalidade é desenhar percursos de língua para que mais pessoas encontrem a obra sem lhe pedir que seja menos ela própria.",
-    "A escolha de língua no telemóvel permite que uma única representação ao vivo sirva o público anglófono, os leitores da língua original e outras faixas de língua preparadas, sem sobrecarregar um ecrã partilhado.",
+    "A escolha de língua no celular permite que uma única representação ao vivo sirva o público anglófono, os leitores da língua original e outras faixas de língua preparadas, sem sobrecarregar uma tela compartilhada.",
     "Uma tecnologia discreta sustenta o fluxo de trabalho em palco: texto preparado, escolhas de língua revistas, lançamento ao vivo, visualizadores móveis, Modo de Projeção e recuperação quando o espetáculo muda."
   ],
   "faq": [
@@ -24,11 +24,11 @@
     },
     {
       "question": "Porque é que as legendas em inglês não deviam substituir a língua original?",
-      "answer": "A língua original carrega ritmo, registo, tempo, memória cultural, humor, silêncio e pressão social. Uma tradução pode guiar o público, mas o espetáculo perde algo se a língua de partida for tratada como embalagem em vez de parte da obra."
+      "answer": "A língua original carrega ritmo, registro, tempo, memória cultural, humor, silêncio e pressão social. Uma tradução pode guiar o público, mas o espetáculo perde algo se a língua de partida for tratada como embalagem em vez de parte da obra."
     },
     {
-      "question": "Como protege a escolha de língua no telemóvel a voz original?",
-      "answer": "Os visualizadores móveis deixam cada espectador escolher uma língua ativada no próprio dispositivo. Assim, o público anglófono pode ler inglês, os leitores da língua original podem manter visível o texto de partida, e os convidados ou parceiros de digressão podem seguir outra língua preparada quando a companhia a suporta."
+      "question": "Como protege a escolha de língua no celular a voz original?",
+      "answer": "Os visualizadores móveis deixam cada espectador escolher uma língua ativada no próprio dispositivo. Assim, o público anglófono pode ler inglês, os leitores da língua original podem manter visível o texto de partida, e os convidados ou parceiros de turnê podem seguir outra língua preparada quando a companhia a suporta."
     },
     {
       "question": "Porque é que o lançamento ao vivo continua a importar se as legendas estão preparadas?",
@@ -50,7 +50,7 @@
     },
     {
       "term": "Voz original",
-      "definition": "O ritmo, o registo, o tempo, o humor, o silêncio, a pressão social e a memória cultural transportados pela língua em que um espetáculo foi criado."
+      "definition": "O ritmo, o registro, o tempo, o humor, o silêncio, a pressão social e a memória cultural transportados pela língua em que um espetáculo foi criado."
     },
     {
       "term": "Percurso de língua",
@@ -66,7 +66,7 @@
     },
     {
       "term": "Modo de Projeção",
-      "definition": "Um modo de exibição de legendas pensado para um ecrã de sala ou um projetor, muitas vezes usado em paralelo com visualizadores móveis quando a sala permite projeção."
+      "definition": "Um modo de exibição de legendas pensado para uma tela de sala ou um projetor, muitas vezes usado em paralelo com visualizadores móveis quando a sala permite projeção."
     },
     {
       "term": "Lançamento ao vivo",

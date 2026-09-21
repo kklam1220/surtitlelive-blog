@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Punti chiave",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Articoli correlati"
+  },
+  "keyTakeaways": [
+    "Un teatro può rendere i sopratitoli su smartphone un servizio abituale mantenendo un piccolo parco di telefoni gestiti da prestare.",
+    "Il personale di accoglienza può consegnare la pagina Viewer già pronta e spiegare in modo semplice la scelta della lingua.",
+    "Ricarica, rete, luminosità, privacy, telefoni di riserva e prova in sala contano quanto il software.",
+    "SurtitleLive collega il testo preparato al browser del pubblico; non fornisce telefoni, rete, traduttori né certificazioni di conformità."
+  ],
+  "faq": [
+    {
+      "question": "Un teatro può prestare telefoni per i sopratitoli?",
+      "answer": "Sì. Il teatro può tenere alcuni telefoni carichi e numerati, aprire la pagina Viewer corretta prima dell’ingresso del pubblico e consegnarli tramite il personale di accoglienza. Può anche offrire un codice QR o un link breve a chi preferisce usare il proprio telefono."
+    },
+    {
+      "question": "Gli spettatori devono installare un’app?",
+      "answer": "No. SurtitleLive Viewer funziona nel browser. Lo spettatore può aprire un link o scansionare un codice QR, scegliere una lingua disponibile e leggere i sopratitoli preparati senza installare un’app dedicata."
+    },
+    {
+      "question": "Che cosa deve preparare un teatro prima di offrire telefoni in prestito?",
+      "answer": "Caricare e numerare i telefoni, verificare la rete e la pagina dello spettacolo, confermare le lingue disponibili e preparare alcuni ricambi. È inoltre importante provare luminosità, riflessi e angolo di lettura in sala e provare una breve spiegazione per la consegna."
+    },
+    {
+      "question": "I sopratitoli su smartphone sono una soluzione completa per l’accessibilità?",
+      "answer": "No. Sono una modalità di distribuzione. A seconda dello spettacolo possono servire anche sopratitoli proiettati, sottotitolazione professionale dal vivo, interpretazione nella lingua dei segni, sistemi di assistenza all’ascolto o altri servizi. SurtitleLive non certifica l’accessibilità o la conformità legale di una configurazione specifica."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Telefono in prestito gestito",
+      "definition": "Un telefono del teatro che viene caricato, configurato, controllato e consegnato a uno spettatore durante lo spettacolo."
+    },
+    {
+      "term": "Accoglienza del pubblico",
+      "definition": "Il personale che prepara, consegna e ritira i dispositivi e spiega come usare il servizio."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "La vista per il pubblico, accessibile dal browser, in cui leggere i sopratitoli preparati su un telefono."
+    },
+    {
+      "term": "Sopratitoli su smartphone",
+      "definition": "Sopratitoli preparati mostrati sul telefono dello spettatore o su un dispositivo prestato dal teatro."
+    },
+    {
+      "term": "Dispositivo personale",
+      "definition": "Una modalità in cui lo spettatore usa il proprio telefono tramite codice QR o link breve."
+    }
+  ]
+}

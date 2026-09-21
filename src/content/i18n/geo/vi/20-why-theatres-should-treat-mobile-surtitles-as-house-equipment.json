@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Nhà hát có thể biến phụ đề trên điện thoại thành một dịch vụ thường xuyên bằng cách quản lý một nhóm nhỏ điện thoại cho mượn.",
+    "Nhân viên đón tiếp khán giả có thể giao thiết bị đã mở sẵn trang Viewer và hướng dẫn chọn ngôn ngữ thật ngắn gọn.",
+    "Sạc pin, mạng, độ sáng, riêng tư, thiết bị dự phòng và thử nghiệm trong khán phòng quan trọng không kém phần mềm.",
+    "SurtitleLive kết nối văn bản đã chuẩn bị với trình duyệt của khán giả; SurtitleLive không cung cấp điện thoại, mạng, người dịch hay chứng nhận tuân thủ."
+  ],
+  "faq": [
+    {
+      "question": "Nhà hát có thể cho khán giả mượn điện thoại để xem phụ đề không?",
+      "answer": "Có. Nhà hát có thể chuẩn bị một số điện thoại đã sạc và đánh số, mở đúng trang Viewer trước khi mở cửa rồi giao thiết bị qua đội ngũ đón tiếp khán giả. Nhà hát cũng có thể đặt mã QR hoặc liên kết ngắn cho người muốn dùng điện thoại của mình."
+    },
+    {
+      "question": "Khán giả có cần cài ứng dụng không?",
+      "answer": "Không. SurtitleLive Viewer hoạt động trên trình duyệt. Khán giả có thể mở liên kết hoặc quét mã QR, chọn ngôn ngữ có sẵn và đọc phụ đề đã chuẩn bị mà không cần cài ứng dụng riêng."
+    },
+    {
+      "question": "Nhà hát cần chuẩn bị gì trước khi cho mượn điện thoại?",
+      "answer": "Hãy sạc và đánh số điện thoại, kiểm tra mạng và trang của buổi diễn, xác nhận các ngôn ngữ có sẵn và chuẩn bị vài thiết bị dự phòng. Cũng nên thử độ sáng, phản chiếu và góc đọc trong khán phòng, rồi tập một lời hướng dẫn ngắn khi giao máy."
+    },
+    {
+      "question": "Phụ đề trên điện thoại có phải là toàn bộ giải pháp tiếp cận không?",
+      "answer": "Không. Đây là một cách cung cấp văn bản. Tùy buổi diễn, nhà hát có thể vẫn cần phụ đề chiếu, phụ đề trực tiếp chuyên nghiệp, phiên dịch ngôn ngữ ký hiệu, hệ thống hỗ trợ nghe hoặc dịch vụ khác. SurtitleLive không chứng nhận một cấu hình cụ thể đáp ứng mọi yêu cầu pháp lý hay tiếp cận."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Điện thoại cho mượn được quản lý",
+      "definition": "Điện thoại thuộc nhà hát, được sạc, cài đặt, kiểm tra rồi giao cho khán giả trong một buổi diễn."
+    },
+    {
+      "term": "Đội ngũ đón tiếp khán giả",
+      "definition": "Nhóm chuẩn bị, giao và thu hồi thiết bị, đồng thời giải thích cách sử dụng dịch vụ."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Màn hình dành cho khán giả trên trình duyệt để đọc văn bản phụ đề đã chuẩn bị bằng điện thoại."
+    },
+    {
+      "term": "Phụ đề trên điện thoại",
+      "definition": "Phụ đề sân khấu đã chuẩn bị, hiển thị trên điện thoại của khán giả hoặc thiết bị nhà hát cho mượn."
+    },
+    {
+      "term": "Dùng thiết bị cá nhân",
+      "definition": "Cách sử dụng trong đó khán giả dùng điện thoại của mình qua mã QR hoặc liên kết ngắn."
+    }
+  ]
+}

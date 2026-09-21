@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Częste pytania",
+    "glossary": "Słownik pojęć",
+    "related": "Powiązane artykuły"
+  },
+  "keyTakeaways": [
+    "Teatr może zamienić napisy na telefonach w stałą usługę, utrzymując niewielką pulę zarządzanych telefonów do wypożyczenia.",
+    "Obsługa widowni może przekazać urządzenie z otwartą stroną Viewer i krótko wyjaśnić wybór języka.",
+    "Ładowanie, sieć, jasność, prywatność, urządzenia zapasowe i próba na widowni są równie ważne jak oprogramowanie.",
+    "SurtitleLive łączy przygotowany tekst z przeglądarką widza, ale nie dostarcza telefonów, sieci, tłumaczy ani certyfikacji zgodności."
+  ],
+  "faq": [
+    {
+      "question": "Czy teatr może wypożyczać telefony do wyświetlania napisów?",
+      "answer": "Tak. Teatr może przygotować kilka naładowanych i ponumerowanych telefonów, przed otwarciem widowni uruchomić właściwą stronę Viewer i wydawać urządzenia przez obsługę widowni. Może też udostępnić kod QR lub krótki link osobom, które wolą użyć własnego telefonu."
+    },
+    {
+      "question": "Czy widzowie muszą instalować aplikację?",
+      "answer": "Nie. SurtitleLive Viewer działa w przeglądarce. Widz może otworzyć link albo zeskanować kod QR, wybrać dostępny język i czytać przygotowane napisy bez instalowania osobnej aplikacji dla publiczności."
+    },
+    {
+      "question": "Co teatr powinien przygotować przed udostępnieniem telefonów?",
+      "answer": "Telefony trzeba naładować i ponumerować, sprawdzić sieć i właściwą stronę spektaklu, potwierdzić dostępne języki oraz przygotować kilka urządzeń zapasowych. Warto też sprawdzić jasność, odbicia i kąt czytania na widowni oraz przećwiczyć krótką instrukcję przekazania."
+    },
+    {
+      "question": "Czy napisy na telefonach są pełnym rozwiązaniem dostępności?",
+      "answer": "Nie. To jeden ze sposobów udostępniania tekstu. W zależności od spektaklu potrzebne mogą być również napisy projektowane, profesjonalne napisy na żywo, tłumaczenie migowe, systemy wspomagania słuchu lub inne usługi. SurtitleLive nie certyfikuje dostępności ani zgodności prawnej konkretnej konfiguracji."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Zarządzany telefon do wypożyczenia",
+      "definition": "Telefon należący do teatru, który jest ładowany, konfigurowany, sprawdzany i wydawany widzowi na czas spektaklu."
+    },
+    {
+      "term": "Obsługa widowni",
+      "definition": "Zespół kontaktujący się z publicznością, który przygotowuje, przekazuje i odbiera urządzenia oraz wyjaśnia usługę."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Widok publiczności działający w przeglądarce, w którym można czytać przygotowane napisy na telefonie."
+    },
+    {
+      "term": "Napisy na telefonach",
+      "definition": "Przygotowane napisy teatralne wyświetlane na telefonie widza albo na urządzeniu wypożyczonym przez teatr."
+    },
+    {
+      "term": "Własne urządzenie widza",
+      "definition": "Sposób korzystania, w którym widz używa swojego telefonu po zeskanowaniu kodu QR lub otwarciu krótkiego linku."
+    }
+  ]
+}

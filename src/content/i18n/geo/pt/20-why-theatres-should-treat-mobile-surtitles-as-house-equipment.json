@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos principais",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Artigos relacionados"
+  },
+  "keyTakeaways": [
+    "Um teatro pode transformar os sobretítulos no celular em um serviço regular mantendo uma pequena reserva de celulares de empréstimo gerenciados.",
+    "A equipe de atendimento ao público pode entregar a página do Viewer já aberta e explicar rapidamente a escolha do idioma.",
+    "Carga, rede, brilho, privacidade, celulares reserva e testes no auditório são tão importantes quanto o software.",
+    "O SurtitleLive conecta o texto preparado ao navegador do público; não fornece celulares, rede, tradutores nem certificação de conformidade."
+  ],
+  "faq": [
+    {
+      "question": "Um teatro pode emprestar celulares para os sobretítulos?",
+      "answer": "Sim. O teatro pode manter alguns celulares carregados e numerados, abrir a página correta do Viewer antes da abertura das portas e entregá-los pela equipe de atendimento ao público. Também pode oferecer um código QR ou um link curto para quem preferir usar o próprio celular."
+    },
+    {
+      "question": "O público precisa instalar um aplicativo?",
+      "answer": "Não. O SurtitleLive Viewer funciona no navegador. A pessoa pode abrir um link ou escanear um código QR, escolher um idioma disponível e ler os sobretítulos preparados sem instalar um aplicativo específico para o público."
+    },
+    {
+      "question": "O que o teatro deve preparar antes de oferecer celulares de empréstimo?",
+      "answer": "É preciso carregar e numerar os celulares, testar a rede e a página da apresentação, confirmar os idiomas disponíveis e separar alguns aparelhos de reserva. Também é importante testar brilho, reflexos e ângulo de leitura no auditório e ensaiar uma explicação curta para a entrega."
+    },
+    {
+      "question": "Os sobretítulos no celular resolvem toda a acessibilidade?",
+      "answer": "Não. Eles são uma forma de distribuição. Dependendo do espetáculo, também podem ser necessários sobretítulos projetados, legendagem profissional ao vivo, interpretação em língua de sinais, sistemas de assistência auditiva ou outros serviços. O SurtitleLive não certifica a acessibilidade nem a conformidade legal de uma configuração específica."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Celular de empréstimo gerenciado",
+      "definition": "Celular do teatro que é carregado, configurado, verificado e entregue a uma pessoa durante o espetáculo."
+    },
+    {
+      "term": "Atendimento ao público",
+      "definition": "Equipe que prepara, entrega e recolhe os celulares e explica o funcionamento do serviço."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Visualização para o público, acessível pelo navegador, onde os sobretítulos preparados são lidos no celular."
+    },
+    {
+      "term": "Sobretítulos no celular",
+      "definition": "Sobretítulos preparados exibidos no celular da pessoa espectadora ou em um aparelho emprestado pelo teatro."
+    },
+    {
+      "term": "Uso do próprio dispositivo",
+      "definition": "Forma de participação em que a pessoa usa o próprio celular por meio de um código QR ou link curto."
+    }
+  ]
+}

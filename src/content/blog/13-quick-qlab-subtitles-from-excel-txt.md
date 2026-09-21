@@ -238,7 +238,7 @@ Only run the Excel importer after this manual Text cue works.
 - Enter a stage name only when you intentionally created that stage and the spelling matches QLab exactly.
 - If the spreadsheet contains a stage name that QLab cannot find, the companion script keeps the default stage and records the fallback in the cue notes.
 
-![QLab Text cue inspector showing video stage assignment in the I/O tab](./blog-13-4.gif)
+<img src="/blog/_astro/blog-13-4.gif" alt="QLab Text cue inspector showing video stage assignment in the I/O tab" width="1830" height="898" loading="lazy" decoding="async" />
 
 ### If the importer runs but the subtitles do not project
 

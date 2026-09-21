@@ -11,6 +11,143 @@ const {
   listSourcePosts,
 } = require("./blog-i18n-utils.cjs");
 
+const MARKDOWN_LINK_PARITY_SLUGS = new Set([
+  "7-geometry-of-dramatic-parsing",
+  "8-from-layout-to-archetype-detection",
+  "9-english-surtitles-non-english-show-fringe",
+  "10-non-english-fringe-shows-original-voice",
+  "11-captions-vs-surtitles-edinburgh-fringe",
+  "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
+  "13-quick-qlab-subtitles-from-excel-txt",
+  "17-surtitlelive-launches-pockitle-live-captioning",
+  "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+]);
+
+const MARKDOWN_LINK_PARITY_PREFIX_COUNTS = new Map([
+  ["13-quick-qlab-subtitles-from-excel-txt", 3],
+  ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 1],
+]);
+
+const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
+  "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+]);
+
+const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
+  ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],
+]);
+
+function extractMarkdownDestinations(markdown) {
+  const destinations = [];
+  const linkPattern = /(?<!!)(?:\[[^\]]*\])\(([^)\n]+)\)/g;
+  let match;
+  while ((match = linkPattern.exec(markdown || ""))) {
+    destinations.push(
+      match[1]
+        .trim()
+        .replace(/\s+["'][^"']*["']\s*$/, "")
+        .trim(),
+    );
+  }
+  return destinations;
+}
+
+function extractMarkdownImageDestinations(markdown) {
+  const destinations = [];
+  const imagePattern = /!\[[^\]]*\]\(([^)\n]+)\)/g;
+  let match;
+  while ((match = imagePattern.exec(markdown || ""))) {
+    destinations.push(match[1].trim());
+  }
+  return destinations;
+}
+
+function normalizeMarkdownDestination(destination, locales) {
+  for (const locale of ["en", ...locales]) {
+    const relativePrefix = `/${locale}/`;
+    const malformedRelativeBlogPrefix = `/${locale}/blog/`;
+    const canonicalRelativeBlogPrefix = `/blog/${locale}/`;
+    const malformedAbsoluteBlogPrefix = `https://surtitlelive.com${malformedRelativeBlogPrefix}`;
+    const canonicalAbsoluteBlogPrefix = `https://surtitlelive.com${canonicalRelativeBlogPrefix}`;
+
+    if (
+      destination.startsWith(malformedRelativeBlogPrefix) ||
+      destination.startsWith(malformedAbsoluteBlogPrefix)
+    ) {
+      return destination;
+    }
+    if (destination.startsWith(canonicalRelativeBlogPrefix)) {
+      return `/blog/${destination.slice(canonicalRelativeBlogPrefix.length)}`;
+    }
+    if (destination.startsWith(canonicalAbsoluteBlogPrefix)) {
+      return `https://surtitlelive.com/blog/${destination.slice(canonicalAbsoluteBlogPrefix.length)}`;
+    }
+
+    if (destination.startsWith(relativePrefix)) {
+      return `/${destination.slice(relativePrefix.length)}`;
+    }
+
+    const absolutePrefix = `https://surtitlelive.com${relativePrefix}`;
+    if (destination.startsWith(absolutePrefix)) {
+      return `https://surtitlelive.com/${destination.slice(absolutePrefix.length)}`;
+    }
+  }
+  return destination;
+}
+
+function findMarkdownDestinationParityIssues(sourcePost, localizedPayload, locales) {
+  if (!MARKDOWN_LINK_PARITY_SLUGS.has(sourcePost.slug)) {
+    return [];
+  }
+
+  const expected = extractMarkdownDestinations(sourcePost.body).map((destination) =>
+    normalizeMarkdownDestination(destination, locales),
+  );
+  const actual = extractMarkdownDestinations(localizedPayload.body).map((destination) =>
+    normalizeMarkdownDestination(destination, locales),
+  );
+  const issues = [];
+  const count =
+    MARKDOWN_LINK_PARITY_PREFIX_COUNTS.get(sourcePost.slug) ??
+    Math.max(expected.length, actual.length);
+
+  for (let index = 0; index < count; index += 1) {
+    if (expected[index] !== actual[index]) {
+      issues.push({
+        index,
+        expected: expected[index] || "<missing>",
+        actual: actual[index] || "<missing>",
+      });
+    }
+  }
+
+  return issues;
+}
+
+function findMarkdownImageParityIssues(sourcePost, localizedPayload) {
+  if (!MARKDOWN_IMAGE_PARITY_SLUGS.has(sourcePost.slug)) {
+    return [];
+  }
+
+  const expected = extractMarkdownImageDestinations(sourcePost.body);
+  const actual = extractMarkdownImageDestinations(localizedPayload.body);
+  const count =
+    MARKDOWN_IMAGE_PARITY_COUNTS.get(sourcePost.slug) ??
+    Math.max(expected.length, actual.length);
+  const issues = [];
+
+  for (let index = 0; index < count; index += 1) {
+    if (expected[index] !== actual[index]) {
+      issues.push({
+        index,
+        expected: expected[index] || "<missing>",
+        actual: actual[index] || "<missing>",
+      });
+    }
+  }
+
+  return issues;
+}
+
 function isMostlyEnglishCopy(sourcePost, localizedPayload) {
   const sourceTitle = sourcePost.frontmatter?.title || "";
   const sourceDescription = sourcePost.frontmatter?.description || "";
@@ -121,6 +258,8 @@ function main() {
     let invalid = 0;
     let invalidBodyMarkup = 0;
     let invalidQlabSemantics = 0;
+    let markdownLinkParity = 0;
+    let markdownImageParity = 0;
     let englishProseResidue = 0;
     let geoEnglishProseResidue = 0;
     let deferred = 0;
@@ -165,6 +304,36 @@ function main() {
         invalidQlabSemantics += 1;
         hasError = true;
       }
+      const linkIssues = findMarkdownDestinationParityIssues(
+        post,
+        payload,
+        config.locales,
+      );
+      if (linkIssues.length > 0) {
+        markdownLinkParity += linkIssues.length;
+        hasError = true;
+        console.error(
+          `[blog:i18n:check] [${locale}] ${post.slug}: markdown destination parity: ${linkIssues
+            .map(
+              ({ index, expected, actual }) =>
+                `#${index} expected ${expected} but found ${actual}`,
+            )
+            .join(", ")}`,
+        );
+      }
+      const imageIssues = findMarkdownImageParityIssues(post, payload);
+      if (imageIssues.length > 0) {
+        markdownImageParity += imageIssues.length;
+        hasError = true;
+        console.error(
+          `[blog:i18n:check] [${locale}] ${post.slug}: markdown image parity: ${imageIssues
+            .map(
+              ({ index, expected, actual }) =>
+                `#${index} expected ${expected} but found ${actual}`,
+            )
+            .join(", ")}`,
+        );
+      }
       const residue = findEnglishProseResidue(
         payload,
         forbiddenEnglishProseTerms,
@@ -199,7 +368,7 @@ function main() {
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} deferred=${deferred}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} markdownLinkParity=${markdownLinkParity} markdownImageParity=${markdownImageParity} deferred=${deferred}`,
     );
   }
 
@@ -212,4 +381,15 @@ function main() {
   console.log("[blog:i18n:check] Passed.");
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  MARKDOWN_LINK_PARITY_SLUGS,
+  extractMarkdownDestinations,
+  extractMarkdownImageDestinations,
+  findMarkdownDestinationParityIssues,
+  findMarkdownImageParityIssues,
+  normalizeMarkdownDestination,
+};

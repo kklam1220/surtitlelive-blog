@@ -11,36 +11,36 @@
     "related": "Termos relacionados"
   },
   "keyTakeaways": [
-    "Para um espetáculo não anglófono no Fringe, as legendas em inglês devem partir do texto, não de diapositivos em branco.",
-    "Um fluxo de legendagem preparado permite à companhia rever a tradução para inglês antes da estreia e, ainda assim, lançá-la ao vivo durante o espetáculo.",
-    "As legendas no telemóvel deixam o público anglófono, o da língua original e outros grupos linguísticos preparados escolher o texto de que precisam no próprio dispositivo.",
-    "As pequenas equipas em digressão devem escolher um software de legendagem que suporte o carregamento do texto, deixas editáveis, escolha de língua, lançamento por um operador, recuperação com salto e ocultação.",
+    "Para um espetáculo não anglófono no Fringe, as legendas em inglês devem partir do texto, não de slides em branco.",
+    "Um fluxo de legendagem preparado permite à companhia revisar a tradução para inglês antes da estreia e, ainda assim, lançá-la ao vivo durante o espetáculo.",
+    "As legendas no celular deixam o público anglófono, o da língua original e outros grupos linguísticos preparados escolher o texto de que precisam no próprio dispositivo.",
+    "As pequenas equipes em turnê devem escolher um software de legendagem que suporte o carregamento do texto, deixas editáveis, escolha de língua, lançamento por um operador, recuperação com salto e ocultação.",
     "O SurtitleLive encaixa sobretudo em espetáculos com texto ou bastante estáveis que precisam de legendas em inglês para o Fringe, a digressão, programadores, críticos ou público multilingue."
   ],
   "faq": [
     {
       "question": "Como adiciono sobretítulos em inglês a um espetáculo em português ou noutra língua que não o inglês?",
-      "answer": "Parte do texto, prepara ou revê a tradução para inglês, divide o texto em deixas legíveis, ensaia o ritmo das deixas e apresenta o espetáculo com um operador que lança cada legenda ao vivo. O SurtitleLive facilita isto transformando um texto num fluxo de deixas editáveis e difundindo as legendas preparadas por projeção ou visualizador no telemóvel."
+      "answer": "Parte do texto, prepara ou revisa a tradução para inglês, divide o texto em deixas legíveis, ensaia o ritmo das deixas e apresenta o espetáculo com um operador que lança cada legenda ao vivo. O SurtitleLive facilita isto transformando um texto num fluxo de deixas editáveis e difundindo as legendas preparadas por projeção ou visualizador no celular."
     },
     {
       "question": "O público anglófono e o da língua original podem ver legendas diferentes ao mesmo tempo?",
       "answer": "Sim, se o fluxo de trabalho suportar várias faixas de língua preparadas. Com o SurtitleLive, cada espectador pode abrir o link de visualização ou ler o código QR e escolher uma língua ativada: inglês, a língua original ou outra língua além do inglês já preparada."
     },
     {
-      "question": "Temos de reconstruir todo o espetáculo à volta de um ecrã fixo?",
-      "answer": "Não. Um ecrã de projeção fixo pode funcionar quando a sala tem boas linhas de visão e tempo de montagem suficiente, mas não deve ser a única opção. As legendas no telemóvel deixam o público ler no próprio telemóvel, o que é muitas vezes mais prático em salas pequenas do Fringe e em digressão."
+      "question": "Temos de reconstruir todo o espetáculo à volta de uma tela fixa?",
+      "answer": "Não. Uma tela de projeção fixo pode funcionar quando a sala tem boas linhas de visão e tempo de montagem suficiente, mas não deve ser a única opção. As legendas no celular deixam o público ler no próprio celular, o que é muitas vezes mais prático em salas pequenas do Fringe e em turnê."
     },
     {
       "question": "O que acontece se um intérprete saltar falas ou o espetáculo mudar?",
-      "answer": "As legendas preparadas continuam a precisar do controlo de um operador ao vivo. O operador segue o espetáculo, lança as deixas no momento certo e usa a recuperação com salto ou o ocultação se o espetáculo se afastar da ordem prevista."
+      "answer": "As legendas preparadas continuam a precisar do controle de um operador ao vivo. O operador segue o espetáculo, lança as deixas no momento certo e usa a recuperação com salto ou o ocultação se o espetáculo se afastar da ordem prevista."
     },
     {
       "question": "De quanto tempo precisamos para preparar as legendas em inglês antes do Fringe de Edimburgo?",
       "answer": "Um objetivo realista: três a quatro semanas antes da estreia para a tradução, a preparação das deixas e a revisão, e depois uma a duas semanas para o ritmo nos ensaios e os testes do visualizador. É possível ir mais depressa, mas a companhia deve reservar tempo para uma revisão humana, porque as legendas determinam como o público anglófono percebe o espetáculo."
     },
     {
-      "question": "O que deve uma pequena equipa em digressão procurar num software de legendagem?",
-      "answer": "Procura preparação a partir do texto, deixas editáveis, várias faixas de língua, acesso do público por código QR, sem necessidade de instalar qualquer aplicação, lançamento ao vivo por um operador, recuperação com salto, ocultação e a possibilidade de usar projeção ou os telemóveis do público consoante a sala."
+      "question": "O que deve uma pequena equipe em turnê procurar num software de legendagem?",
+      "answer": "Procura preparação a partir do texto, deixas editáveis, várias faixas de língua, acesso do público por código QR, sem necessidade de instalar qualquer aplicativo, lançamento ao vivo por um operador, recuperação com salto, ocultação e a possibilidade de usar projeção ou os celulares do público consoante a sala."
     }
   ],
   "glossary": [
@@ -61,12 +61,12 @@
       "definition": "A pessoa que segue o espetáculo ao vivo e lança, oculta ou salta entre as legendas preparadas."
     },
     {
-      "term": "Visualizador no telemóvel",
-      "definition": "Uma vista para o público no navegador que permite ler as legendas no próprio telemóvel depois de abrir um link ou ler um código QR."
+      "term": "Visualizador no celular",
+      "definition": "Uma vista para o público no navegador que permite ler as legendas no próprio celular depois de abrir um link ou ler um código QR."
     },
     {
       "term": "Ocultação",
-      "definition": "Um controlo ao vivo que oculta temporariamente as legendas, usado muitas vezes quando apareceria o texto errado ou quando o momento de cena não precisa de texto visível."
+      "definition": "Um controle ao vivo que oculta temporariamente as legendas, usado muitas vezes quando apareceria o texto errado ou quando o momento de cena não precisa de texto visível."
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Official blog for [SurtitleLive](https://surtitlelive.com) - Live subtitling platform for theatre and events.
 
-Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` is the canonical regression inventory for these browser execution boundaries and runs through `npm run build:check`.
+Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` owns these boundaries and canonical Markdown destination regressions, including translated slugs and incorrect locale-before-blog routes; it runs through `npm run build:check`. Localization checks preserve reviewed links and use `/blog/{locale}/.../` for localized articles.
 
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
 
@@ -271,6 +271,7 @@ npm run build:check
 - the built HTML still contains `/logo/New_logo.png`
 - the built output is missing the required Cloudflare Pages `_redirects` rules
 - a hero-image article page still emits placeholder `og:image` / `twitter:image` metadata instead of the article image
+- a built GIF/WebP has mismatched format bytes, or the animated QLab demo loses its explicit GIF output
 
 ## 📄 License
 

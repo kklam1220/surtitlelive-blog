@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related Articles"
+  },
+  "keyTakeaways": [
+    "A theatre can make mobile surtitles repeatable by keeping a small pool of managed loan phones.",
+    "Front-of-house staff can hand over a ready Viewer page and give simple language instructions.",
+    "Charging, network access, brightness, privacy, spares and an auditorium test matter as much as the software.",
+    "SurtitleLive connects prepared subtitle material to a browser; it does not provide phones, networks, translators or compliance certification."
+  ],
+  "faq": [
+    {
+      "question": "Can a theatre provide phones for audience surtitles?",
+      "answer": "Yes. A venue can keep a small pool of charged, numbered loan phones, open the correct Viewer page before doors open and hand them out through its audience-service team. It can also offer a QR code or short link for people who prefer to use their own phone."
+    },
+    {
+      "question": "Do audience members need to install an app?",
+      "answer": "No. SurtitleLive Viewer works in a browser. An audience member can open a link or scan a QR code, choose an available language and read the prepared surtitles without installing a dedicated audience app."
+    },
+    {
+      "question": "What should a theatre prepare before offering loan phones?",
+      "answer": "Charge and number the phones, test the network and the correct show page, confirm the available languages, prepare a few spares, and test brightness, reflections and reading angles in the auditorium. Staff should also rehearse a short handover explanation."
+    },
+    {
+      "question": "Are mobile surtitles a complete accessibility service?",
+      "answer": "No. They are one delivery option. A theatre may also need projected surtitles, professional captioning, sign-language interpretation, hearing-assistance systems or other services. SurtitleLive does not certify that a particular arrangement meets every accessibility or legal requirement."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Managed loan phone",
+      "definition": "A venue-owned phone that is charged, configured, checked and issued to an audience member for a performance."
+    },
+    {
+      "term": "Front of house",
+      "definition": "The audience-facing theatre team that prepares, hands over and collects devices and explains the service."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "The browser-based audience view where prepared subtitle material can be read on a phone."
+    },
+    {
+      "term": "Mobile surtitles",
+      "definition": "Prepared theatre surtitles delivered to a spectator's own phone or to a phone supplied by the venue."
+    },
+    {
+      "term": "Bring your own device",
+      "definition": "An arrangement in which spectators use their own phones through a QR code or short link instead of a loan device."
+    }
+  ]
+}

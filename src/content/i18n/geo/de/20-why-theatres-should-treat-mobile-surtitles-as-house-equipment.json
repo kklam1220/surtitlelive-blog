@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Wichtige Punkte",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Verwandte Artikel"
+  },
+  "keyTakeaways": [
+    "Ein Theater kann mobile Übertitel als wiederverwendbaren Hausservice mit einem kleinen Bestand verwalteter Leihhandys anbieten.",
+    "Der Publikumsdienst kann ein vorbereitetes Viewer-Fenster übergeben und die Sprachauswahl kurz erklären.",
+    "Laden, Netzwerk, Helligkeit, Blickschutz, Ersatzgeräte und ein Test im Zuschauerraum sind ebenso wichtig wie die Software.",
+    "SurtitleLive verbindet vorbereiteten Übertiteltext mit dem Browser des Publikums, stellt aber weder Handys noch Netzwerk, Übersetzungen oder Konformitätsnachweise bereit."
+  ],
+  "faq": [
+    {
+      "question": "Kann ein Theater eigene Handys für mobile Übertitel bereitstellen?",
+      "answer": "Ja. Der Veranstaltungsort kann einige geladene und nummerierte Leihhandys bereithalten, vor dem Einlass die richtige Viewer-Seite öffnen und die Geräte über den Publikumsdienst ausgeben. Zusätzlich kann ein QR-Code oder ein Kurzlink für Personen angeboten werden, die ihr eigenes Handy nutzen möchten."
+    },
+    {
+      "question": "Müssen Zuschauer eine App installieren?",
+      "answer": "Nein. Der SurtitleLive Viewer läuft im Browser. Das Publikum kann einen Link öffnen oder einen QR-Code scannen, eine verfügbare Sprache wählen und die vorbereiteten Übertitel ohne eigene Zuschauer-App lesen."
+    },
+    {
+      "question": "Was muss ein Theater vor dem Einsatz von Leihhandys vorbereiten?",
+      "answer": "Die Geräte sollten geladen und nummeriert sein. Das Netzwerk, die richtige Aufführungsseite und die verfügbaren Sprachen müssen geprüft werden; außerdem braucht es Ersatzgeräte sowie Tests für Helligkeit, Reflexionen und Lesewinkel im Zuschauerraum. Das Team sollte die kurze Übergabeansage üben."
+    },
+    {
+      "question": "Sind mobile Übertitel eine vollständige Lösung für Barrierefreiheit?",
+      "answer": "Nein. Sie sind eine Möglichkeit der Ausgabe. Je nach Produktion können auch projizierte Übertitel, professionelle Live-Untertitel, Gebärdensprachdolmetschen, Hörunterstützung oder andere Angebote erforderlich sein. SurtitleLive bestätigt weder Barrierefreiheit noch rechtliche Konformität einer konkreten Lösung."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Verwaltetes Leihhandy",
+      "definition": "Ein dem Veranstaltungsort gehörendes Handy, das geladen, eingerichtet, geprüft und für eine Aufführung ausgegeben wird."
+    },
+    {
+      "term": "Publikumsdienst",
+      "definition": "Das publikumsnahe Team, das Geräte vorbereitet, übergibt, zurücknimmt und die Nutzung erklärt."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Die browserbasierte Ansicht, in der das Publikum vorbereitete Übertitel auf einem Handy lesen kann."
+    },
+    {
+      "term": "Mobile Übertitel",
+      "definition": "Vorbereitete Übertitel, die auf dem eigenen Handy des Publikums oder auf einem Leihgerät des Theaters erscheinen."
+    },
+    {
+      "term": "Eigenes Gerät nutzen",
+      "definition": "Eine Nutzung, bei der Zuschauer über QR-Code oder Kurzlink ihr eigenes Handy statt eines Leihgeräts verwenden."
+    }
+  ]
+}

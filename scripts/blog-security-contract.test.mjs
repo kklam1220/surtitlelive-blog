@@ -1,9 +1,27 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import test from "node:test";
+import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import {
   sanitizeLocalizedBlogHtml,
   serializeJsonLd,
 } from "../src/lib/blogSecurity.mjs";
+
+const require = createRequire(import.meta.url);
+const {
+  MARKDOWN_LINK_PARITY_SLUGS,
+  findMarkdownDestinationParityIssues,
+  normalizeMarkdownDestination,
+} = require("./check-blog-localization.cjs");
+const scriptsDirectory = path.dirname(fileURLToPath(import.meta.url));
+const blogRoot = path.resolve(scriptsDirectory, "..");
+const localizedRoot = path.join(blogRoot, "src", "content", "i18n", "blog");
+const locales = fs
+  .readdirSync(localizedRoot, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name);
 
 test("provider HTML is inert while reviewed article structure is preserved", () => {
   const sanitized = sanitizeLocalizedBlogHtml([
@@ -32,4 +50,68 @@ test("JSON-LD cannot terminate its script element", () => {
   assert.doesNotMatch(serialized, /<|>|&|\u2028|\u2029/u);
   assert.match(serialized, /\\u003c\/script\\u003e/);
   assert.match(serialized, /\\u2028\\u2029/);
+});
+
+test("reviewed localized article links preserve canonical markdown destinations", () => {
+  for (const slug of MARKDOWN_LINK_PARITY_SLUGS) {
+    const sourcePath = path.join(blogRoot, "src", "content", "blog", `${slug}.md`);
+    const source = fs.readFileSync(sourcePath, "utf8").replace(/^---[\s\S]*?---\n?/, "");
+    for (const locale of locales) {
+      const localizedPath = path.join(localizedRoot, locale, `${slug}.json`);
+      const localized = JSON.parse(fs.readFileSync(localizedPath, "utf8"));
+      const issues = findMarkdownDestinationParityIssues(
+        { slug, body: source },
+        localized,
+        locales,
+      );
+      assert.deepEqual(issues, [], `${locale}/${slug} changed a canonical link destination`);
+    }
+  }
+});
+
+test("canonical-link parity permits a supported locale route prefix", () => {
+  assert.equal(
+    normalizeMarkdownDestination("/es/mobile-theatre-subtitles", locales),
+    "/mobile-theatre-subtitles",
+  );
+  assert.equal(
+    normalizeMarkdownDestination(
+      "https://surtitlelive.com/zh-TW/planning/theatre-captions-vs-surtitles",
+      locales,
+    ),
+    "https://surtitlelive.com/planning/theatre-captions-vs-surtitles",
+  );
+});
+
+test("canonical-link parity rejects locale-before-blog redirect chains", () => {
+  const issues = findMarkdownDestinationParityIssues(
+    {
+      slug: "7-geometry-of-dramatic-parsing",
+      body: "[Article](/blog/8-from-layout-to-archetype-detection/)",
+    },
+    { body: "[Article](/id/blog/8-from-layout-to-archetype-detection/)" },
+    locales,
+  );
+
+  assert.equal(issues.length, 1);
+  assert.equal(issues[0].actual, "/id/blog/8-from-layout-to-archetype-detection/");
+});
+
+test("canonical-link parity rejects translated route slugs", () => {
+  const issues = findMarkdownDestinationParityIssues(
+    {
+      slug: "8-from-layout-to-archetype-detection",
+      body: "[Article](https://surtitlelive.com/ai-script-to-theatre-subtitles)",
+    },
+    {
+      body: "[Article](https://surtitlelive.com/ai-script-to-theatre-legendas)",
+    },
+    locales,
+  );
+
+  assert.equal(issues.length, 1);
+  assert.equal(
+    issues[0].actual,
+    "https://surtitlelive.com/ai-script-to-theatre-legendas",
+  );
 });

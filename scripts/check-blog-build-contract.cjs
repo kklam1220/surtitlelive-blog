@@ -57,6 +57,37 @@ function collectFiles(dir, predicate, acc = []) {
   return acc;
 }
 
+function readImageMagic(fullPath) {
+  const file = fs.openSync(fullPath, "r");
+  const bytes = Buffer.alloc(12);
+  try {
+    fs.readSync(file, bytes, 0, bytes.length, 0);
+    return bytes;
+  } finally {
+    fs.closeSync(file);
+  }
+}
+
+function isGifMagic(bytes) {
+  return bytes.subarray(0, 6).equals(Buffer.from("GIF89a")) ||
+    bytes.subarray(0, 6).equals(Buffer.from("GIF87a"));
+}
+
+function isWebpMagic(bytes) {
+  return bytes.subarray(0, 4).equals(Buffer.from("RIFF")) &&
+    bytes.subarray(8, 12).equals(Buffer.from("WEBP"));
+}
+
+function assertImageMagic(relativePath, predicate, message) {
+  const fullPath = path.join(distDir, relativePath);
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`Missing expected built image: ${relativePath}`);
+  }
+  if (!predicate(readImageMagic(fullPath))) {
+    throw new Error(`${message}\nChecked file: ${relativePath}`);
+  }
+}
+
 function assertNoMatch(files, pattern, message) {
   for (const file of files) {
     const content = fs.readFileSync(file, "utf8");
@@ -197,6 +228,10 @@ const cssFiles = collectFiles(distDir, (file) => file.endsWith(".css"));
 const jsFiles = collectFiles(distDir, (file) => file.endsWith(".js"));
 const xmlFiles = collectFiles(distDir, (file) => file.endsWith(".xml"));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
+const assetDir = path.join(distDir, '_astro');
+const imageFiles = fs.existsSync(assetDir)
+  ? collectFiles(assetDir, (file) => /\.(?:gif|webp)$/i.test(file))
+  : [];
 const redirectsFile = path.join(distDir, "_redirects");
 const headersFile = path.join(distDir, "_headers");
 const sitemapText = xmlFiles
@@ -255,6 +290,29 @@ assertNoMatch(
   textFiles,
   /\/blog\/blog\/fonts\/atkinson-(regular|bold)\.woff/,
   "Detected double-prefixed blog font URL.",
+);
+
+for (const filePath of imageFiles) {
+  const relativePath = path.relative(distDir, filePath);
+  const bytes = readImageMagic(filePath);
+  if (/\.gif$/i.test(filePath)) {
+    if (!isGifMagic(bytes)) {
+      throw new Error(`Built GIF has non-GIF magic bytes: ${relativePath}`);
+    }
+  } else if (!isWebpMagic(bytes)) {
+    throw new Error(`Built WebP has non-WebP magic bytes: ${relativePath}`);
+  }
+}
+
+assertImageMagic(
+  path.join('_astro', 'blog-13-4.gif'),
+  isGifMagic,
+  'The animated QLab demo must remain a real GIF asset.',
+);
+assertFileHasMatch(
+  path.join('13-quick-qlab-subtitles-from-excel-txt', 'index.html'),
+  /src="\/blog\/_astro\/blog-13-4\.gif"/,
+  'The English QLab article must retain the GIF URL instead of a misleading WebP URL.',
 );
 
 assertNoMatch(

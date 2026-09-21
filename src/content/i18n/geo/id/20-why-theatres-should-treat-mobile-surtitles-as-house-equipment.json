@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Inti penting",
+    "faq": "Pertanyaan umum",
+    "glossary": "Glosarium",
+    "related": "Artikel terkait"
+  },
+  "keyTakeaways": [
+    "Teater dapat menjadikan takarir seluler sebagai layanan rutin dengan menyediakan sejumlah kecil ponsel pinjaman yang dikelola.",
+    "Tim layanan penonton dapat menyerahkan halaman Viewer yang sudah siap dan menjelaskan pilihan bahasa dengan singkat.",
+    "Pengisian daya, jaringan, kecerahan, privasi, perangkat cadangan, dan uji di auditorium sama pentingnya dengan perangkat lunak.",
+    "SurtitleLive menghubungkan teks yang sudah disiapkan ke peramban penonton; SurtitleLive tidak menyediakan ponsel, jaringan, penerjemah, atau sertifikasi kepatuhan."
+  ],
+  "faq": [
+    {
+      "question": "Apakah teater dapat menyediakan ponsel untuk takarir?",
+      "answer": "Ya. Teater dapat menyiapkan beberapa ponsel pinjaman yang sudah diisi daya dan diberi nomor, membuka halaman Viewer yang tepat sebelum pintu dibuka, lalu menyerahkannya melalui tim layanan penonton. Teater juga dapat menyediakan kode QR atau tautan singkat bagi penonton yang ingin memakai ponsel sendiri."
+    },
+    {
+      "question": "Apakah penonton harus memasang aplikasi?",
+      "answer": "Tidak. SurtitleLive Viewer berjalan di peramban. Penonton dapat membuka tautan atau memindai kode QR, memilih bahasa yang tersedia, dan membaca takarir yang sudah disiapkan tanpa memasang aplikasi khusus."
+    },
+    {
+      "question": "Apa yang perlu disiapkan sebelum menyediakan ponsel pinjaman?",
+      "answer": "Isi daya dan beri nomor pada ponsel, uji jaringan serta halaman pertunjukan yang benar, pastikan bahasa yang tersedia, dan siapkan beberapa perangkat cadangan. Uji juga kecerahan, pantulan, dan sudut baca di auditorium, lalu latih penjelasan singkat saat serah terima."
+    },
+    {
+      "question": "Apakah takarir seluler sudah menjadi seluruh solusi aksesibilitas?",
+      "answer": "Belum tentu. Takarir seluler adalah salah satu cara penyampaian. Produksi tertentu mungkin tetap memerlukan takarir proyeksi, captioning profesional, penerjemah bahasa isyarat, sistem bantuan pendengaran, atau layanan lain. SurtitleLive tidak menyatakan bahwa konfigurasi tertentu memenuhi semua persyaratan aksesibilitas atau hukum."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Ponsel pinjaman yang dikelola",
+      "definition": "Ponsel milik teater yang diisi daya, dikonfigurasi, diperiksa, lalu dipinjamkan kepada penonton untuk satu pertunjukan."
+    },
+    {
+      "term": "Layanan penonton",
+      "definition": "Tim yang berhubungan dengan penonton dan menyiapkan, menyerahkan, mengambil kembali, serta menjelaskan penggunaan perangkat."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Tampilan penonton berbasis peramban untuk membaca teks takarir yang sudah disiapkan di ponsel."
+    },
+    {
+      "term": "Takarir seluler",
+      "definition": "Takarir pertunjukan yang sudah disiapkan dan ditampilkan di ponsel penonton atau ponsel pinjaman teater."
+    },
+    {
+      "term": "Perangkat pribadi",
+      "definition": "Pengaturan ketika penonton memakai ponselnya sendiri melalui kode QR atau tautan singkat."
+    }
+  ]
+}

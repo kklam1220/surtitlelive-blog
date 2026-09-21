@@ -29,6 +29,9 @@ import blog17Hero from "../content/blog/blog-17.png";
 import blog18Hero from "../content/blog/blog-18.jpeg";
 import blog19Hero from "../content/blog/blog-19.png";
 import blog19AsmCockpit from "../content/blog/blog-19-asm-cockpit.png";
+import blog20Hero from "../content/blog/blog-20.png";
+import blog201 from "../content/blog/blog-20-1.png";
+import blog202 from "../content/blog/blog-20-2.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-1-1.jpg": blog11,
@@ -58,6 +61,9 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-18.jpeg": blog18Hero,
   "blog-19.png": blog19Hero,
   "blog-19-asm-cockpit.png": blog19AsmCockpit,
+  "blog-20.png": blog20Hero,
+  "blog-20-1.png": blog201,
+  "blog-20-2.png": blog202,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
 };

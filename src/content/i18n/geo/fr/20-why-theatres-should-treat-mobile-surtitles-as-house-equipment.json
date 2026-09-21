@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "sourceHash": "837a667d97338a00bbacd8c6f2b65fb75ef683235036974b9f1892d6ccb88d74",
+  "generatedAt": "2026-09-21T20:30:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Glossaire",
+    "related": "Articles connexes"
+  },
+  "keyTakeaways": [
+    "Un théâtre peut faire des surtitres sur mobile un service régulier en conservant un petit parc de téléphones de prêt gérés.",
+    "L’équipe d’accueil peut remettre une page Viewer déjà ouverte et expliquer simplement le choix de langue.",
+    "La charge, le réseau, la luminosité, la confidentialité, les appareils de secours et un test en salle comptent autant que le logiciel.",
+    "SurtitleLive relie le texte préparé au navigateur du public ; il ne fournit ni téléphones, ni réseau, ni traduction, ni certification de conformité."
+  ],
+  "faq": [
+    {
+      "question": "Un théâtre peut-il prêter des téléphones pour les surtitres ?",
+      "answer": "Oui. Le lieu peut conserver quelques téléphones chargés et numérotés, ouvrir la bonne page Viewer avant l’ouverture des portes et les remettre par l’intermédiaire de l’équipe d’accueil. Il peut aussi proposer un code QR ou un lien court aux personnes qui préfèrent utiliser leur propre téléphone."
+    },
+    {
+      "question": "Les spectateurs doivent-ils installer une application ?",
+      "answer": "Non. SurtitleLive Viewer fonctionne dans un navigateur. Le public peut ouvrir un lien ou scanner un code QR, choisir une langue disponible et lire les surtitres préparés sans installer d’application dédiée."
+    },
+    {
+      "question": "Que faut-il préparer avant de proposer des téléphones de prêt ?",
+      "answer": "Il faut charger et numéroter les appareils, vérifier le réseau et la page de la représentation, confirmer les langues disponibles et prévoir quelques appareils de secours. Testez aussi la luminosité, les reflets et l’angle de lecture dans la salle, puis répétez une consigne de remise très courte."
+    },
+    {
+      "question": "Les surtitres sur mobile suffisent-ils à assurer l’accessibilité ?",
+      "answer": "Non. Ils constituent une modalité de diffusion parmi d’autres. Selon le spectacle, il peut aussi falloir une projection, du sous-titrage professionnel en direct, une interprétation en langue des signes, une aide auditive ou d’autres services. SurtitleLive ne certifie ni l’accessibilité ni la conformité juridique d’une configuration donnée."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Téléphone de prêt géré",
+      "definition": "Téléphone appartenant au lieu, chargé, configuré, vérifié et remis à une personne pour une représentation."
+    },
+    {
+      "term": "Accueil du public",
+      "definition": "Équipe en contact avec les spectateurs, chargée de préparer, remettre et récupérer les appareils et d’expliquer le service."
+    },
+    {
+      "term": "SurtitleLive Viewer",
+      "definition": "Vue destinée au public, accessible dans un navigateur, où les surtitres préparés peuvent être lus sur un téléphone."
+    },
+    {
+      "term": "Surtitres sur mobile",
+      "definition": "Surtitres préparés affichés sur le téléphone du spectateur ou sur un appareil prêté par le théâtre."
+    },
+    {
+      "term": "Appareil personnel",
+      "definition": "Configuration dans laquelle le spectateur utilise son propre téléphone grâce à un code QR ou à un lien court."
+    }
+  ]
+}
