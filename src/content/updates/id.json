@@ -1,21 +1,17 @@
 {
   "locale": "id",
   "title": "Pembaruan Produk SurtitleLive",
-  "description": "Pembaruan produksi SurtitleLive mingguan, dikelompokkan berdasarkan versi, dengan catatan ringkas tentang fitur baru, peningkatan, dan perbaikan yang terlihat oleh pengguna.",
-  "intro": "Catatan ringkas tentang perubahan yang terlihat oleh pengguna dan telah tersedia di produksi. Fitur utama tetap memiliki artikel dan panduan tersendiri; pekerjaan deployment internal tidak dicantumkan di sini.",
+  "description": "Pembaruan produk SurtitleLive mingguan, dikelompokkan berdasarkan versi, dengan catatan singkat tentang fitur baru, peningkatan, dan perbaikan yang terlihat oleh pengguna.",
   "labels": {
     "articles": "Artikel",
     "productUpdates": "Pembaruan Produk",
     "weekOf": "Minggu tanggal",
     "released": "Dirilis",
-    "availability": "Ketersediaan",
-    "production": "Produksi",
     "product": "Produk",
     "new": "Baru",
     "improved": "Ditingkatkan",
     "fixed": "Diperbaiki",
-    "noPublicRelease": "Tidak ada pembaruan produksi yang dikonfirmasi dan terlihat oleh pengguna minggu ini.",
-    "noActionRequired": "Tidak diperlukan tindakan. Rilis aplikasi native menggunakan versi dan catatan publikasi terpisah."
+    "noPublicRelease": "Tidak ada pembaruan yang tercantum minggu ini."
   },
   "weeks": [
     {

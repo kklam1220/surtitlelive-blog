@@ -1,21 +1,17 @@
 {
   "locale": "tr",
   "title": "SurtitleLive Ürün Güncellemeleri",
-  "description": "Yeni özellikler, iyileştirmeler ve kullanıcıların görebildiği düzeltmeler hakkında kısa notlar içeren, sürüm bazında gruplanmış haftalık SurtitleLive üretim güncellemeleri.",
-  "intro": "Üretime ulaşan ve kullanıcıların görebildiği değişikliklerin kısa bir kaydı. Önemli özellikler kendi makalelerinde ve kılavuzlarında yer almaya devam eder; dahili dağıtım çalışmaları burada listelenmez.",
+  "description": "Sürüm bazında gruplandırılmış haftalık SurtitleLive ürün güncellemeleri; yeni özellikler, iyileştirmeler ve kullanıcıların görebileceği düzeltmeler hakkında kısa notlarla.",
   "labels": {
     "articles": "Makaleler",
     "productUpdates": "Ürün Güncellemeleri",
     "weekOf": "Hafta",
     "released": "Yayınlandı",
-    "availability": "Kullanılabilirlik",
-    "production": "Üretim",
     "product": "Ürün",
     "new": "Yeni",
     "improved": "İyileştirildi",
     "fixed": "Düzeltildi",
-    "noPublicRelease": "Bu hafta kullanıcıların görebileceği, doğrulanmış bir üretim güncellemesi yok.",
-    "noActionRequired": "Herhangi bir işlem yapmanız gerekmez. Yerel uygulama sürümleri ayrı sürüm ve yayımlama kayıtları kullanır."
+    "noPublicRelease": "Bu hafta listelenen güncelleme yok."
   },
   "weeks": [
     {
@@ -27,8 +23,12 @@
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm, yerelleştirilmiş Pockitle giriş noktalarını geri getirdi ve öne çıkarılan herkese açık dil deneyimini genişletti.",
-          "new": ["Yerelleştirilmiş Pockitle deneyimine Brezilya Portekizcesi herkese açık sayfaları ve planlama içeriği eklendi."],
-          "improved": ["Pockitle Live sayfalarındaki dile özgü Başla işlemi geri getirildi ve yerelleştirilmiş herkese açık gezinme düzeltildi."],
+          "new": [
+            "Yerelleştirilmiş Pockitle deneyimine Brezilya Portekizcesi herkese açık sayfaları ve planlama içeriği eklendi."
+          ],
+          "improved": [
+            "Pockitle Live sayfalarındaki dile özgü Başla işlemi geri getirildi ve yerelleştirilmiş herkese açık gezinme düzeltildi."
+          ],
           "fixed": []
         },
         {
@@ -36,7 +36,9 @@
           "releaseDate": "2026-09-20",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm hesap denetimlerini genişletti ve canlı oturum öncesindeki hazırlığı iyileştirdi.",
-          "new": ["Hesap ayarlarına kimlik bilgileri, parola sıfırlamaya erişim, yasal onayların incelenmesi, tüm cihazlardan çıkış denetimleri ve hesap silme durumu veya iptali eklendi."],
+          "new": [
+            "Hesap ayarlarına kimlik bilgileri, parola sıfırlamaya erişim, yasal onayların incelenmesi, tüm cihazlardan çıkış denetimleri ve hesap silme durumu veya iptali eklendi."
+          ],
           "improved": [
             "Sahne girdisi kontrolleri, mikrofon kurulum yönergeleri ve yayına geçmeden önce izleyicinin hazır olma durumu iyileştirildi.",
             "Hesap silme ve bağlantılı oturumların temizlenmesi iyileştirildi."
@@ -66,7 +68,9 @@
           "releaseDate": "2026-09-16",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm Pockitle için özel, yerelleştirilmiş bir herkese açık ana sayfa ve Live girişi sundu.",
-          "new": ["Eşleşen gezinme, iletişim ve yasal sayfalar, kurulabilir web meta verileri ve görsel kimlikle birlikte yerelleştirilmiş herkese açık Pockitle ana sayfası ve Live deneyimi eklendi."],
+          "new": [
+            "Eşleşen gezinme, iletişim ve yasal sayfalar, kurulabilir web meta verileri ve görsel kimlikle birlikte yerelleştirilmiş herkese açık Pockitle ana sayfası ve Live deneyimi eklendi."
+          ],
           "improved": [],
           "fixed": []
         },
@@ -80,7 +84,9 @@
             "Operatör kilidini açma ve parola kurtarma mesajları bir sonraki adımı artık daha net açıklıyor.",
             "Senaryo analizi, içe aktarılan belgelerde tür bilgisi verilmiş cue yapısını daha iyi koruyor."
           ],
-          "fixed": ["Süresi dolmuş izleyici anlık görüntüleri ve kullanımdan kaldırılmış izleyici oturumları artık eski canlı içeriği göstermiyor."]
+          "fixed": [
+            "Süresi dolmuş izleyici anlık görüntüleri ve kullanımdan kaldırılmış izleyici oturumları artık eski canlı içeriği göstermiyor."
+          ]
         }
       ]
     },
@@ -110,14 +116,18 @@
             "Uzun süren canlı oturumlar daha güvenilir biçimde kurtarılıyor.",
             "Senaryo içe aktarmaları oyuncu kadrosu ve cue bağlamını daha iyi koruyor."
           ],
-          "fixed": ["İzleyici geri bildirimi taslakları yeniden başlatma sonrasında korunuyor ve performans bittikten sonra da geri bildirim gönderilebiliyor."]
+          "fixed": [
+            "İzleyici geri bildirimi taslakları yeniden başlatma sonrasında korunuyor ve performans bittikten sonra da geri bildirim gönderilebiliyor."
+          ]
         },
         {
           "version": "v260908.01",
           "releaseDate": "2026-09-08",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm isteğe bağlı bir gösteri sonrası izleyici geri bildirim akışı ekledi ve rapor sürekliliğini iyileştirdi.",
-          "new": ["Açık onay ve gösteri sonu rapor akışı içeren isteğe bağlı bir gösteri sonrası izleyici anketi eklendi."],
+          "new": [
+            "Açık onay ve gösteri sonu rapor akışı içeren isteğe bağlı bir gösteri sonrası izleyici anketi eklendi."
+          ],
           "improved": [
             "Live Console ve izleyici ekranları performans boyunca kullanılabilir durumda tutuldu.",
             "Yeniden başlatmalar ve önceki oturumlar arasındaki geri bildirim taslakları ve rapor geçmişi iyileştirildi."
@@ -136,7 +146,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm kaydı ve performans sonundaki çeşitli kurtarma durumlarını düzeltti.",
           "new": [],
-          "improved": ["Tamamlanma ve kurtarma mesajları artık yerelleştirildi."],
+          "improved": [
+            "Tamamlanma ve kurtarma mesajları artık yerelleştirildi."
+          ],
           "fixed": [
             "Kayıt artık panoyu açmadan önce hesap kurulumunu tamamlıyor.",
             "Gösteri gezinmesi ve performans sonu denetimleri daha güvenilir biçimde kurtarılıyor.",
@@ -154,7 +166,9 @@
             "Simülasyon başlatma artık etkin proje bağlamını bekliyor ve yükleme sırasında aktarım hatalarını önlüyor.",
             "Yerelleştirilmiş ürün metinleri ve iş akışı yönergeleri, desteklenen diller genelinde daha tutarlı hale geldi."
           ],
-          "fixed": ["Çalışma zamanı bağlantıları ve içerik olmayan yanıtlar artık takılmak veya hatalı görüntülenmek yerine temiz biçimde tamamlanıyor."]
+          "fixed": [
+            "Çalışma zamanı bağlantıları ve içerik olmayan yanıtlar artık takılmak veya hatalı görüntülenmek yerine temiz biçimde tamamlanıyor."
+          ]
         }
       ]
     },
@@ -167,9 +181,15 @@
           "releaseDate": "2026-08-27",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm etkinlik planlama yönergelerini genişletti ve tabletlerde herkese açık gezinmeyi iyileştirdi.",
-          "new": ["Konferanslar, sınıflar, paneller ve diğer sözlü etkinliklerde canlı altyazılar için planlama yönergeleri eklendi."],
-          "improved": ["Desteklenen diller genelinde çevrilmiş iş akışı örnekleri ve planlama kılavuzları genişletildi."],
-          "fixed": ["Tablet boyutundaki düzenlerde eksiksiz herkese açık gezinme geri getirildi."]
+          "new": [
+            "Konferanslar, sınıflar, paneller ve diğer sözlü etkinliklerde canlı altyazılar için planlama yönergeleri eklendi."
+          ],
+          "improved": [
+            "Desteklenen diller genelinde çevrilmiş iş akışı örnekleri ve planlama kılavuzları genişletildi."
+          ],
+          "fixed": [
+            "Tablet boyutundaki düzenlerde eksiksiz herkese açık gezinme geri getirildi."
+          ]
         },
         {
           "version": "v260826.02",
@@ -177,8 +197,12 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm canlı oturum başlatmayı daha anlaşılır ve dayanıklı hale getirdi.",
           "new": [],
-          "improved": ["Mikrofon izni hataları artık daha net bir kurtarma yolu sunuyor."],
-          "fixed": ["Tekrarlanan gösteri başlatma istekleri artık yinelenen oturum durumu oluşturmak yerine mevcut başlatma denemesini sürdürüyor."]
+          "improved": [
+            "Mikrofon izni hataları artık daha net bir kurtarma yolu sunuyor."
+          ],
+          "fixed": [
+            "Tekrarlanan gösteri başlatma istekleri artık yinelenen oturum durumu oluşturmak yerine mevcut başlatma denemesini sürdürüyor."
+          ]
         },
         {
           "version": "v260826.01",
@@ -186,7 +210,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm izleyici ve projeksiyon görünümlerindeki altyazı tipografisini iyileştirdi.",
           "new": [],
-          "improved": ["İzleyici ve projeksiyon altyazıları artık dile uygun, tutarlı yazı tipleri kullanıyor ve metni fark ettirmeden küçültmeden seçilen yazı tipi boyutuna uyuyor."],
+          "improved": [
+            "İzleyici ve projeksiyon altyazıları artık dile uygun, tutarlı yazı tipleri kullanıyor ve metni fark ettirmeden küçültmeden seçilen yazı tipi boyutuna uyuyor."
+          ],
           "fixed": []
         },
         {
@@ -212,7 +238,9 @@
           "releaseDate": "2026-08-22",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm yerelleştirilmiş Pockitle deneyimini genişletti ve projeksiyon geçmişini geliştirdi.",
-          "new": ["Yerelleştirilmiş herkese açık Pockitle sayfaları ve desteklenen diller kataloğu eklendi."],
+          "new": [
+            "Yerelleştirilmiş herkese açık Pockitle sayfaları ve desteklenen diller kataloğu eklendi."
+          ],
           "improved": [
             "Herkese açık gezinme ve dil menüleri tabletlerde ve dar ekranlarda kullanılabilir kalıyor.",
             "Projeksiyon önizlemesi, mevcut altyazıyı net tutarken sınırlı sayıda önceki altyazıyı gösterebiliyor."
@@ -225,16 +253,24 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm tekrarlanan performanslara hazırlığı, projeksiyon denetimlerini ve DOCX içe aktarmalarını iyileştirdi.",
           "new": [],
-          "improved": ["Tekrarlanan performanslara hazırlık iyileştirildi ve projeksiyon denetimleri geliştirildi."],
-          "fixed": ["DOCX içe aktarmaları artık sahne başlıklarını koruyor ve fazla büyük veya bozuk yüklemeleri net bir sonuçla reddediyor."]
+          "improved": [
+            "Tekrarlanan performanslara hazırlık iyileştirildi ve projeksiyon denetimleri geliştirildi."
+          ],
+          "fixed": [
+            "DOCX içe aktarmaları artık sahne başlıklarını koruyor ve fazla büyük veya bozuk yüklemeleri net bir sonuçla reddediyor."
+          ]
         },
         {
           "version": "v260817.01",
           "releaseDate": "2026-08-17",
           "product": "SurtitleLive Cloud",
           "summary": "Bu sürüm yerelleştirilmiş keşfi genişletti ve izleyicinin yeniden bağlanmasını daha tutarlı hale getirdi.",
-          "new": ["Yerelleştirilmiş herkese açık keşif ile etkinlik ve canlı altyazı yönergeleri genişletildi."],
-          "improved": ["İzleyici ve canlı oturum durumu işleme artık yeniden bağlantıları ve kabul edilen altyazıları daha tutarlı tutuyor."],
+          "new": [
+            "Yerelleştirilmiş herkese açık keşif ile etkinlik ve canlı altyazı yönergeleri genişletildi."
+          ],
+          "improved": [
+            "İzleyici ve canlı oturum durumu işleme artık yeniden bağlantıları ve kabul edilen altyazıları daha tutarlı tutuyor."
+          ],
           "fixed": []
         },
         {

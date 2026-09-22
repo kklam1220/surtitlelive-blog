@@ -59,6 +59,22 @@ function formatLabel(locale: BlogSupportedLocale): string {
 	) : null
 }
 
+<script>
+	const closeLanguageMenus = (except?: EventTarget | null) => {
+		document.querySelectorAll<HTMLDetailsElement>('.language-selector[open]').forEach((menu) => {
+			if (!(except instanceof Node) || !menu.contains(except)) menu.open = false;
+		});
+	};
+
+	document.addEventListener('pointerdown', (event) => closeLanguageMenus(event.target));
+	document.addEventListener('keydown', (event) => {
+		if (event.key !== 'Escape') return;
+		const openMenu = document.querySelector<HTMLDetailsElement>('.language-selector[open]');
+		closeLanguageMenus();
+		openMenu?.querySelector('summary')?.focus();
+	});
+</script>
+
 <style>
 	.language-selector {
 		position: relative;

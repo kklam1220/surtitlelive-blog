@@ -1,21 +1,17 @@
 {
   "locale": "vi",
   "title": "Cập nhật sản phẩm SurtitleLive",
-  "description": "Các bản cập nhật SurtitleLive hằng tuần trên production, được nhóm theo phiên bản với ghi chú ngắn gọn về tính năng mới, cải tiến và lỗi người dùng có thể thấy.",
-  "intro": "Bản ghi ngắn gọn về những thay đổi hướng đến người dùng đã được đưa lên production. Các tính năng lớn vẫn được trình bày trong bài viết và hướng dẫn riêng; công việc triển khai nội bộ không được liệt kê ở đây.",
+  "description": "Thông tin cập nhật sản phẩm SurtitleLive hằng tuần, được nhóm theo phiên bản, với ghi chú ngắn về tính năng mới, cải tiến và bản sửa lỗi mà người dùng có thể thấy.",
   "labels": {
     "articles": "Bài viết",
     "productUpdates": "Cập nhật sản phẩm",
     "weekOf": "Tuần bắt đầu",
     "released": "Đã phát hành",
-    "availability": "Khả dụng",
-    "production": "Production",
     "product": "Sản phẩm",
     "new": "Mới",
     "improved": "Cải tiến",
     "fixed": "Đã sửa",
-    "noPublicRelease": "Tuần này không có bản cập nhật production hướng đến người dùng nào được xác nhận.",
-    "noActionRequired": "Bạn không cần thực hiện thao tác nào. Các bản phát hành ứng dụng native sử dụng phiên bản và bản ghi phát hành riêng."
+    "noPublicRelease": "Tuần này không có bản cập nhật nào được liệt kê."
   },
   "weeks": [
     {
@@ -27,8 +23,12 @@
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này khôi phục các điểm truy cập Pockitle được bản địa hóa và mở rộng trải nghiệm ngôn ngữ công khai được giới thiệu.",
-          "new": ["Bổ sung các trang công khai và nội dung lập kế hoạch bằng tiếng Bồ Đào Nha Brazil cho trải nghiệm Pockitle được bản địa hóa."],
-          "improved": ["Khôi phục thao tác Bắt đầu theo locale trên các trang Pockitle Live và sửa điều hướng công khai được bản địa hóa."],
+          "new": [
+            "Bổ sung các trang công khai và nội dung lập kế hoạch bằng tiếng Bồ Đào Nha Brazil cho trải nghiệm Pockitle được bản địa hóa."
+          ],
+          "improved": [
+            "Khôi phục thao tác Bắt đầu theo locale trên các trang Pockitle Live và sửa điều hướng công khai được bản địa hóa."
+          ],
           "fixed": []
         },
         {
@@ -36,7 +36,9 @@
           "releaseDate": "2026-09-20",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này mở rộng các tùy chọn tài khoản và cải thiện khâu chuẩn bị trước một phiên trực tiếp.",
-          "new": ["Mở rộng Cài đặt tài khoản với thông tin nhận dạng, quyền truy cập đặt lại mật khẩu, xem xét chấp thuận pháp lý, tùy chọn đăng xuất khỏi mọi thiết bị và trạng thái hoặc hủy xóa tài khoản."],
+          "new": [
+            "Mở rộng Cài đặt tài khoản với thông tin nhận dạng, quyền truy cập đặt lại mật khẩu, xem xét chấp thuận pháp lý, tùy chọn đăng xuất khỏi mọi thiết bị và trạng thái hoặc hủy xóa tài khoản."
+          ],
           "improved": [
             "Cải thiện kiểm tra đầu vào sân khấu, hướng dẫn thiết lập micrô và mức độ sẵn sàng của khán giả trước khi phát trực tiếp.",
             "Cải thiện việc xóa tài khoản và dọn dẹp các phiên liên kết."
@@ -66,7 +68,9 @@
           "releaseDate": "2026-09-16",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này giới thiệu trang chủ công khai và lối vào Live riêng, được bản địa hóa cho Pockitle.",
-          "new": ["Bổ sung trang chủ công khai Pockitle và trải nghiệm Live được bản địa hóa, cùng điều hướng, trang liên hệ và pháp lý tương ứng, metadata web có thể cài đặt và nhận diện hình ảnh."],
+          "new": [
+            "Bổ sung trang chủ công khai Pockitle và trải nghiệm Live được bản địa hóa, cùng điều hướng, trang liên hệ và pháp lý tương ứng, metadata web có thể cài đặt và nhận diện hình ảnh."
+          ],
           "improved": [],
           "fixed": []
         },
@@ -80,7 +84,9 @@
             "Thông báo mở khóa người vận hành và khôi phục mật khẩu nay giải thích bước tiếp theo rõ ràng hơn.",
             "Phân tích kịch bản giữ tốt hơn cấu trúc cue đã nhập trong tài liệu."
           ],
-          "fixed": ["Ảnh chụp khán giả đã hết hạn và các phiên Viewer đã ngừng hoạt động không còn hiển thị nội dung trực tiếp cũ."]
+          "fixed": [
+            "Ảnh chụp khán giả đã hết hạn và các phiên Viewer đã ngừng hoạt động không còn hiển thị nội dung trực tiếp cũ."
+          ]
         }
       ]
     },
@@ -110,14 +116,18 @@
             "Các phiên trực tiếp kéo dài khôi phục đáng tin cậy hơn.",
             "Nhập kịch bản giữ tốt hơn ngữ cảnh dàn diễn viên và cue."
           ],
-          "fixed": ["Bản nháp phản hồi của khán giả được giữ lại sau khi khởi động lại, và người dùng vẫn có thể gửi phản hồi sau khi buổi diễn kết thúc."]
+          "fixed": [
+            "Bản nháp phản hồi của khán giả được giữ lại sau khi khởi động lại, và người dùng vẫn có thể gửi phản hồi sau khi buổi diễn kết thúc."
+          ]
         },
         {
           "version": "v260908.01",
           "releaseDate": "2026-09-08",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này thêm quy trình phản hồi khán giả sau buổi diễn theo tùy chọn và cải thiện tính liên tục của báo cáo.",
-          "new": ["Bổ sung khảo sát khán giả sau buổi diễn theo tùy chọn, với sự đồng ý rõ ràng và quy trình dẫn đến báo cáo cuối buổi."],
+          "new": [
+            "Bổ sung khảo sát khán giả sau buổi diễn theo tùy chọn, với sự đồng ý rõ ràng và quy trình dẫn đến báo cáo cuối buổi."
+          ],
           "improved": [
             "Giữ Live Console và màn hình khán giả khả dụng trong suốt buổi diễn.",
             "Cải thiện bản nháp phản hồi và lịch sử báo cáo qua các lần khởi động lại và những phiên trước."
@@ -136,7 +146,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này sửa quy trình đăng ký và một số trường hợp khôi phục sau khi buổi diễn kết thúc.",
           "new": [],
-          "improved": ["Thông báo hoàn tất và khôi phục nay đã được bản địa hóa."],
+          "improved": [
+            "Thông báo hoàn tất và khôi phục nay đã được bản địa hóa."
+          ],
           "fixed": [
             "Đăng ký nay hoàn tất thiết lập tài khoản trước khi mở dashboard.",
             "Điều hướng chương trình và các tùy chọn kết thúc buổi diễn khôi phục đáng tin cậy hơn.",
@@ -154,7 +166,9 @@
             "Khởi chạy mô phỏng nay chờ ngữ cảnh dự án đang hoạt động, tránh lỗi bàn giao trong lúc tải.",
             "Cải thiện tính nhất quán của nội dung sản phẩm và hướng dẫn quy trình được bản địa hóa trên các ngôn ngữ được hỗ trợ."
           ],
-          "fixed": ["Liên kết runtime và phản hồi không có nội dung nay hoàn tất đúng cách thay vì bị treo hoặc hiển thị sai."]
+          "fixed": [
+            "Liên kết runtime và phản hồi không có nội dung nay hoàn tất đúng cách thay vì bị treo hoặc hiển thị sai."
+          ]
         }
       ]
     },
@@ -167,9 +181,15 @@
           "releaseDate": "2026-08-27",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này mở rộng hướng dẫn lập kế hoạch sự kiện và cải thiện điều hướng công khai trên máy tính bảng.",
-          "new": ["Bổ sung hướng dẫn lập kế hoạch phụ đề trực tiếp cho hội nghị, lớp học, tọa đàm và các sự kiện có lời nói khác."],
-          "improved": ["Mở rộng các ví dụ quy trình và hướng dẫn lập kế hoạch đã dịch trên những locale được hỗ trợ."],
-          "fixed": ["Khôi phục điều hướng công khai đầy đủ trên bố cục kích thước máy tính bảng."]
+          "new": [
+            "Bổ sung hướng dẫn lập kế hoạch phụ đề trực tiếp cho hội nghị, lớp học, tọa đàm và các sự kiện có lời nói khác."
+          ],
+          "improved": [
+            "Mở rộng các ví dụ quy trình và hướng dẫn lập kế hoạch đã dịch trên những locale được hỗ trợ."
+          ],
+          "fixed": [
+            "Khôi phục điều hướng công khai đầy đủ trên bố cục kích thước máy tính bảng."
+          ]
         },
         {
           "version": "v260826.02",
@@ -177,8 +197,12 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này giúp khởi động phiên trực tiếp rõ ràng và bền bỉ hơn.",
           "new": [],
-          "improved": ["Lỗi quyền micro nay cung cấp hướng dẫn khôi phục rõ ràng hơn."],
-          "fixed": ["Các yêu cầu bắt đầu chương trình lặp lại nay tiếp tục lần khởi động hiện có thay vì tạo trạng thái phiên trùng lặp."]
+          "improved": [
+            "Lỗi quyền micro nay cung cấp hướng dẫn khôi phục rõ ràng hơn."
+          ],
+          "fixed": [
+            "Các yêu cầu bắt đầu chương trình lặp lại nay tiếp tục lần khởi động hiện có thay vì tạo trạng thái phiên trùng lặp."
+          ]
         },
         {
           "version": "v260826.01",
@@ -186,7 +210,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này cải thiện kiểu chữ phụ đề trên các chế độ xem khán giả và trình chiếu.",
           "new": [],
-          "improved": ["Phụ đề khán giả và trình chiếu nay dùng phông chữ nhất quán theo ngôn ngữ và tôn trọng cỡ chữ đã chọn mà không tự ý thu nhỏ văn bản."],
+          "improved": [
+            "Phụ đề khán giả và trình chiếu nay dùng phông chữ nhất quán theo ngôn ngữ và tôn trọng cỡ chữ đã chọn mà không tự ý thu nhỏ văn bản."
+          ],
           "fixed": []
         },
         {
@@ -212,7 +238,9 @@
           "releaseDate": "2026-08-22",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này mở rộng trải nghiệm Pockitle bản địa hóa và tinh chỉnh lịch sử trình chiếu.",
-          "new": ["Bổ sung các trang công khai Pockitle bản địa hóa và danh mục ngôn ngữ được hỗ trợ."],
+          "new": [
+            "Bổ sung các trang công khai Pockitle bản địa hóa và danh mục ngôn ngữ được hỗ trợ."
+          ],
           "improved": [
             "Điều hướng công khai và menu ngôn ngữ vẫn dễ sử dụng trên máy tính bảng và màn hình hẹp.",
             "Bản xem trước trình chiếu có thể hiển thị một số phụ đề trước đó trong giới hạn, đồng thời giữ phụ đề hiện tại rõ ràng."
@@ -225,16 +253,24 @@
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này cải thiện việc chuẩn bị cho các buổi diễn lặp lại, điều khiển trình chiếu và nhập DOCX.",
           "new": [],
-          "improved": ["Cải thiện việc chuẩn bị cho các buổi diễn lặp lại và tinh chỉnh điều khiển trình chiếu."],
-          "fixed": ["Nhập DOCX nay giữ lại tiêu đề cảnh và từ chối tệp tải lên quá lớn hoặc không đúng định dạng với kết quả rõ ràng."]
+          "improved": [
+            "Cải thiện việc chuẩn bị cho các buổi diễn lặp lại và tinh chỉnh điều khiển trình chiếu."
+          ],
+          "fixed": [
+            "Nhập DOCX nay giữ lại tiêu đề cảnh và từ chối tệp tải lên quá lớn hoặc không đúng định dạng với kết quả rõ ràng."
+          ]
         },
         {
           "version": "v260817.01",
           "releaseDate": "2026-08-17",
           "product": "SurtitleLive Cloud",
           "summary": "Bản phát hành này mở rộng khả năng khám phá nội dung bản địa hóa và giúp việc kết nối lại của khán giả nhất quán hơn.",
-          "new": ["Mở rộng nội dung công khai bản địa hóa và hướng dẫn về sự kiện hoặc phụ đề trực tiếp."],
-          "improved": ["Cải thiện việc xử lý trạng thái khán giả và phiên trực tiếp để các lần kết nối lại và phụ đề được chấp nhận nhất quán hơn."],
+          "new": [
+            "Mở rộng nội dung công khai bản địa hóa và hướng dẫn về sự kiện hoặc phụ đề trực tiếp."
+          ],
+          "improved": [
+            "Cải thiện việc xử lý trạng thái khán giả và phiên trực tiếp để các lần kết nối lại và phụ đề được chấp nhận nhất quán hơn."
+          ],
           "fixed": []
         },
         {

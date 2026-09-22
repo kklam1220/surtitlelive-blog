@@ -17,7 +17,8 @@ interface Props {
 }
 
 const { entry, canonicalPath, articlesHref, updatesHref, hreflangs, localeLinks } = Astro.props;
-const { locale, title, description, intro, labels, weeks } = entry.data;
+const { locale, title, description, labels, weeks } = entry.data;
+const isEnglish = locale === 'en';
 const localeMeta = resolveBlogLocaleMeta(locale);
 const dateFormatter = new Intl.DateTimeFormat(locale, {
 	day: 'numeric',
@@ -37,6 +38,7 @@ const monthFormatter = new Intl.DateTimeFormat(locale, {
 	timeZone: 'UTC',
 });
 const versionId = (version: string) => version.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const weekId = (startDate: Date) => `week-${startDate.toISOString().slice(0, 10)}`;
 const canonicalURL = new URL(canonicalPath, Astro.site);
 const releaseItems = weeks.flatMap((week) => week.versions);
 const months = Array.from(
@@ -54,6 +56,7 @@ const months = Array.from(
 	key,
 	label: monthFormatter.format(monthWeeks[0].startDate),
 	weeks: monthWeeks,
+	versions: monthWeeks.flatMap((week) => week.versions),
 }));
 const schema = serializeJsonLd({
 	'@context': 'https://schema.org',
@@ -83,8 +86,9 @@ const schema = serializeJsonLd({
 	</head>
 	<body>
 		<Header currentLocale={locale} localeLinks={localeLinks.filter((item) => item.lang !== 'x-default')} />
-		<main>
+		<main class={isEnglish ? 'english-updates' : undefined}>
 			<header class="updates-header">
+				<h1 class={isEnglish ? 'section-title' : undefined}>{title}</h1>
 				<ContentSectionNav
 					articlesLabel={labels.articles}
 					updatesLabel={labels.productUpdates}
@@ -92,43 +96,51 @@ const schema = serializeJsonLd({
 					{updatesHref}
 					current="updates"
 				/>
-				<p class="eyebrow">{labels.productUpdates}</p>
-				<h1>{title}</h1>
-				<p class="intro">{intro}</p>
 			</header>
 
-			<div class="months">
-				{months.map((month) => (
-					<section class="month" aria-labelledby={`month-${month.key}`}>
-						<h2 id={`month-${month.key}`}>{month.label}</h2>
-						<div class="weeks">
-							{month.weeks.map((week) => (
-								<section class="week">
-									<h3>{labels.weekOf} {weekFormatter.formatRange(week.startDate, week.endDate)}</h3>
-									{week.versions.length === 0 && <p class="no-release">{labels.noPublicRelease}</p>}
-									{week.versions.map((release) => (
-							<article class="release" id={versionId(release.version)}>
-								<div class="release-heading">
-									<h4><a href={`#${versionId(release.version)}`}>{release.version}</a></h4>
-									<span>{labels.production}</span>
-								</div>
-								<dl>
-									<div><dt>{labels.released}</dt><dd>{dateFormatter.format(release.releaseDate)}</dd></div>
-									<div><dt>{labels.product}</dt><dd>{release.product}</dd></div>
-									<div><dt>{labels.availability}</dt><dd>{labels.production}</dd></div>
-								</dl>
-								<p class="summary">{release.summary}</p>
-								{release.new.length > 0 && <section><h5>{labels.new}</h5><ul>{release.new.map((item) => <li>{item}</li>)}</ul></section>}
-								{release.improved.length > 0 && <section><h5>{labels.improved}</h5><ul>{release.improved.map((item) => <li>{item}</li>)}</ul></section>}
-								{release.fixed.length > 0 && <section><h5>{labels.fixed}</h5><ul>{release.fixed.map((item) => <li>{item}</li>)}</ul></section>}
-								<p class="action-note">{labels.noActionRequired}</p>
-							</article>
-									))}
-								</section>
-							))}
-						</div>
-					</section>
-				))}
+			<div class="updates-layout">
+				<aside class="updates-sidebar">
+					<nav aria-label={labels.productUpdates} tabindex="0">
+						{months.map((month) => (
+							<section class="sidebar-month">
+								<h2><a href={`#month-${month.key}`}>{month.label}</a></h2>
+								<ul>
+									{month.versions.map((release) => <li><a href={`#${versionId(release.version)}`}>{release.version}</a></li>)}
+								</ul>
+							</section>
+						))}
+					</nav>
+				</aside>
+
+				<div class="updates-content" role="region" aria-label={title} tabindex="0">
+					{months.map((month) => (
+						<section class="month" id={`month-${month.key}`} aria-labelledby={`month-heading-${month.key}`}>
+							<h2 id={`month-heading-${month.key}`}>{month.label}</h2>
+							<div class="weeks">
+								{month.weeks.map((week) => (
+									<section class="week" id={weekId(week.startDate)}>
+										<h3>{labels.weekOf} {weekFormatter.formatRange(week.startDate, week.endDate)}</h3>
+										{week.versions.length === 0 && <p class="no-release">{labels.noPublicRelease}</p>}
+										{week.versions.map((release) => (
+											<article class="release" id={versionId(release.version)}>
+												<div class="release-heading">
+													<h4><a href={`#${versionId(release.version)}`}>{release.version}</a></h4>
+													<p class="release-date">{labels.released}: {dateFormatter.format(release.releaseDate)}</p>
+												</div>
+												<p class="summary">{release.summary}</p>
+												<div class="changes">
+													{release.new.map((item) => <p class="change-item is-new"><strong>{labels.new}:</strong> {item}</p>)}
+													{release.improved.map((item) => <p class="change-item is-improved"><strong>{labels.improved}:</strong> {item}</p>)}
+													{release.fixed.map((item) => <p class="change-item is-fixed"><strong>{labels.fixed}:</strong> {item}</p>)}
+												</div>
+											</article>
+										))}
+									</section>
+								))}
+							</div>
+						</section>
+					))}
+				</div>
 			</div>
 		</main>
 		<Footer />
@@ -136,27 +148,50 @@ const schema = serializeJsonLd({
 </html>
 
 <style>
-	main { width: 980px; max-width: calc(100% - 2rem); margin: 0 auto; padding: 3rem 0 5rem; }
-	.updates-header { margin-bottom: 3rem; }
-	.eyebrow { color: #8a5a00; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.08em; margin: 0 0 0.65rem; text-transform: uppercase; }
-	h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0; }
-	.intro { color: #4b5563; font-size: 1.15rem; line-height: 1.7; max-width: 760px; }
-	.months { display: grid; gap: 3.5rem; }
-	.month > h2 { font-size: 1.75rem; margin: 0 0 1.5rem; }
+	main { width: 1200px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2.5rem 1rem 5rem; }
+	main.english-updates { width: 1400px; padding-top: 3rem; }
+	.updates-header { background: transparent; backdrop-filter: none; box-shadow: none; margin: 0; padding: 0; position: static; top: auto; z-index: auto; }
+	h1.section-title { color: #0f1219; font-size: 2.5rem; font-weight: 800; margin: 0 0 2rem; }
+	.updates-layout { --updates-column-gap: clamp(2rem, 5vw, 4.5rem); align-items: start; display: grid; gap: 0; grid-template-columns: minmax(220px, 250px) minmax(0, 1fr); }
+	.updates-sidebar { border-inline-end: 1px solid #e5e7eb; }
+	.updates-sidebar nav { block-size: clamp(18rem, calc(100vh - 24rem), 48rem); block-size: clamp(18rem, calc(100dvh - 24rem), 48rem); display: block; overscroll-behavior-y: contain; overflow-y: auto; padding-inline-end: 1.25rem; scrollbar-gutter: stable; scroll-behavior: smooth; }
+	.updates-content { block-size: clamp(18rem, calc(100vh - 24rem), 48rem); block-size: clamp(18rem, calc(100dvh - 24rem), 48rem); min-width: 0; overscroll-behavior-y: contain; overflow-y: auto; padding-inline-start: var(--updates-column-gap); scrollbar-gutter: stable; scroll-behavior: smooth; scroll-padding-block: 1rem; }
+	.sidebar-month + .sidebar-month { margin-top: 1.5rem; }
+	.sidebar-month h2 { font-size: 0.98rem; margin: 0 0 0.55rem; }
+	.sidebar-month h2 a { color: #111827; text-decoration: none; }
+	.sidebar-month ul { border-inline-start: 2px solid #e5e7eb; list-style: none; margin: 0; padding: 0 0 0 0.85rem; }
+	.sidebar-month li + li { margin-top: 0.45rem; }
+	.sidebar-month li a { color: #4b5563; display: block; font-size: 0.86rem; line-height: 1.4; text-decoration: none; }
+	.sidebar-month li a:hover, .sidebar-month li a:focus-visible, .sidebar-month h2 a:hover, .sidebar-month h2 a:focus-visible { color: #8a5a00; text-decoration: underline; }
+	.month + .month { margin-top: 3.5rem; }
+	.month > h2 { border-bottom: 1px solid #d1d5db; font-size: 1.8rem; margin: 0 0 1.5rem; padding-bottom: 0.65rem; }
 	.weeks { display: grid; gap: 3rem; }
-	.week > h3 { border-bottom: 2px solid #111827; font-size: 1.35rem; padding-bottom: 0.75rem; }
-	.release { border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 6px 22px rgba(17, 24, 39, 0.06); margin-top: 1.25rem; padding: clamp(1.25rem, 4vw, 2rem); scroll-margin-top: 1rem; }
-	.release-heading { align-items: center; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: space-between; }
+	.week { scroll-margin-top: 1rem; }
+	.week > h3 { border-bottom: 2px solid #111827; font-size: 1.25rem; margin: 0; padding-bottom: 0.75rem; }
+	.release { border: 1px solid #e5e7eb; border-radius: 4px; margin-top: 1.25rem; padding: clamp(1.25rem, 4vw, 2rem); scroll-margin-top: 1rem; }
+	.release-heading { align-items: baseline; border-bottom: 1px solid #e5e7eb; display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; justify-content: space-between; padding-bottom: 0.8rem; }
 	.release-heading h4 { font-size: 1.35rem; margin: 0; }
 	.release-heading h4 a { color: #111827; text-decoration: none; }
-	.release-heading span { background: #ecfdf5; border-radius: 999px; color: #065f46; font-size: 0.78rem; font-weight: 800; padding: 0.35rem 0.7rem; }
-	dl { display: flex; flex-wrap: wrap; gap: 0.65rem 1.5rem; margin: 1rem 0; }
-	dl div { display: flex; gap: 0.35rem; }
-	dt { color: #6b7280; font-weight: 700; }
-	dd { margin: 0; }
+	.release-heading h4 a:hover, .release-heading h4 a:focus-visible { color: #8a5a00; text-decoration: underline; }
+	.release-date { color: #6b7280; font-size: 0.9rem; margin: 0; }
 	.summary { font-size: 1.05rem; line-height: 1.65; }
-	h5 { font-size: 1rem; margin: 1.4rem 0 0.5rem; }
+	.changes { margin-top: 1.35rem; }
+	.change-item { border-inline-start: 3px solid #d1d5db; line-height: 1.65; margin: 0.85rem 0 0; padding-inline-start: 1rem; }
+	.change-item strong { font-size: 0.84rem; letter-spacing: 0.04em; text-transform: uppercase; }
+	.change-item.is-new { border-color: #4d86c5; }
+	.change-item.is-new strong { color: #3973b5; }
+	.change-item.is-improved { border-color: #b27a1c; }
+	.change-item.is-improved strong { color: #956317; }
+	.change-item.is-fixed { border-color: #57954a; }
+	.change-item.is-fixed strong { color: #438238; }
 	ul { line-height: 1.65; margin-top: 0.4rem; padding-inline-start: 1.35rem; }
-	.action-note { background: #f9fafb; border-inline-start: 3px solid #d19a2a; color: #4b5563; margin: 1.5rem 0 0; padding: 0.8rem 1rem; }
 	.no-release { color: #6b7280; font-style: italic; margin: 1rem 0 0; }
+	@media (max-width: 760px) {
+		.updates-layout { display: block; }
+		.updates-sidebar { border: 1px solid #e5e7eb; margin-bottom: 2.5rem; padding: 1rem; }
+		.updates-sidebar nav { block-size: auto; overflow: visible; padding: 0; scrollbar-gutter: auto; }
+		.updates-content { block-size: auto; overflow: visible; padding-inline-start: 0; scrollbar-gutter: auto; }
+		.sidebar-month + .sidebar-month { margin-top: 1.15rem; }
+		.month + .month { margin-top: 2.75rem; }
+	}
 </style>

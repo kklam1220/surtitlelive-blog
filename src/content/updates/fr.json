@@ -1,21 +1,17 @@
 {
   "locale": "fr",
   "title": "Mises à jour du produit SurtitleLive",
-  "description": "Mises à jour hebdomadaires de SurtitleLive en production, classées par version, avec des notes concises sur les nouveautés, améliorations et corrections visibles par les utilisateurs.",
-  "intro": "Ce registre résume les changements visibles par les utilisateurs qui ont atteint la production. Les fonctions majeures conservent leurs propres articles et guides ; les opérations internes de déploiement ne sont pas incluses.",
+  "description": "Mises à jour hebdomadaires du produit SurtitleLive, regroupées par version, avec de brèves notes sur les nouveautés, les améliorations et les corrections visibles pour les utilisateurs.",
   "labels": {
     "articles": "Articles",
     "productUpdates": "Mises à jour du produit",
     "weekOf": "Semaine du",
     "released": "Publié",
-    "availability": "Disponibilité",
-    "production": "Production",
     "product": "Produit",
     "new": "Nouveautés",
     "improved": "Améliorations",
     "fixed": "Corrections",
-    "noPublicRelease": "Aucune mise à jour de production confirmée et visible par les utilisateurs cette semaine.",
-    "noActionRequired": "Aucune action n’est requise. Les applications natives utilisent des versions et des publications distinctes."
+    "noPublicRelease": "Aucune mise à jour n’est répertoriée cette semaine."
   },
   "weeks": [
     {

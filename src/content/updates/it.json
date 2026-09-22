@@ -1,21 +1,17 @@
 {
   "locale": "it",
   "title": "Aggiornamenti del prodotto SurtitleLive",
-  "description": "Aggiornamenti settimanali di SurtitleLive in produzione, raggruppati per versione, con note concise su novità, miglioramenti e correzioni visibili agli utenti.",
-  "intro": "Registro conciso dei cambiamenti visibili agli utenti arrivati in produzione. Le funzioni principali mantengono articoli e guide dedicati; il lavoro interno di distribuzione non è incluso.",
+  "description": "Aggiornamenti settimanali del prodotto SurtitleLive, raggruppati per versione, con note concise su nuove funzioni, miglioramenti e correzioni visibili agli utenti.",
   "labels": {
     "articles": "Articoli",
     "productUpdates": "Aggiornamenti del prodotto",
     "weekOf": "Settimana del",
     "released": "Pubblicato",
-    "availability": "Disponibilità",
-    "production": "Produzione",
     "product": "Prodotto",
     "new": "Novità",
     "improved": "Miglioramenti",
     "fixed": "Correzioni",
-    "noPublicRelease": "Questa settimana non è stato confermato alcun aggiornamento di produzione visibile agli utenti.",
-    "noActionRequired": "Non è richiesta alcuna azione. Le app native utilizzano versioni e registri di pubblicazione separati."
+    "noPublicRelease": "Nessun aggiornamento elencato questa settimana."
   },
   "weeks": [
     {

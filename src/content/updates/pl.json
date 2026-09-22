@@ -1,21 +1,17 @@
 {
   "locale": "pl",
   "title": "Aktualizacje produktu SurtitleLive",
-  "description": "Cotygodniowe aktualizacje produkcyjne SurtitleLive, uporządkowane według wersji wydania, z krótkimi informacjami o nowych funkcjach, ulepszeniach i poprawkach widocznych dla użytkowników.",
-  "intro": "Zwięzły zapis zmian widocznych dla użytkowników, które trafiły do produkcji. Najważniejsze funkcje mają własne artykuły i przewodniki; wewnętrzne prace wdrożeniowe nie są tu wymieniane.",
+  "description": "Cotygodniowe aktualizacje produktu SurtitleLive pogrupowane według wersji, z krótkimi informacjami o nowych funkcjach, ulepszeniach i poprawkach widocznych dla użytkowników.",
   "labels": {
     "articles": "Artykuły",
     "productUpdates": "Aktualizacje produktu",
     "weekOf": "Tydzień rozpoczynający się",
     "released": "Wydano",
-    "availability": "Dostępność",
-    "production": "Produkcja",
     "product": "Produkt",
     "new": "Nowości",
     "improved": "Ulepszenia",
     "fixed": "Poprawki",
-    "noPublicRelease": "Brak potwierdzonej, widocznej dla użytkowników aktualizacji produkcyjnej w tym tygodniu.",
-    "noActionRequired": "Nie musisz nic robić. Wydania aplikacji natywnych korzystają z oddzielnych wersji i rejestrów publikacji."
+    "noPublicRelease": "W tym tygodniu nie ma wymienionych aktualizacji."
   },
   "weeks": [
     {
@@ -27,8 +23,12 @@
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie przywróciło zlokalizowane punkty wejścia Pockitle i rozszerzyło promowane publiczne treści w poszczególnych językach.",
-          "new": ["Dodano publiczne strony i treści dotyczące planowania w brazylijskim portugalskim do zlokalizowanej wersji Pockitle."],
-          "improved": ["Przywrócono zależną od języka akcję Rozpocznij na stronach Pockitle Live i poprawiono zlokalizowaną nawigację publiczną."],
+          "new": [
+            "Dodano publiczne strony i treści dotyczące planowania w brazylijskim portugalskim do zlokalizowanej wersji Pockitle."
+          ],
+          "improved": [
+            "Przywrócono zależną od języka akcję Rozpocznij na stronach Pockitle Live i poprawiono zlokalizowaną nawigację publiczną."
+          ],
           "fixed": []
         },
         {
@@ -36,7 +36,9 @@
           "releaseDate": "2026-09-20",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie rozszerzyło ustawienia konta i usprawniło przygotowanie przed sesją na żywo.",
-          "new": ["Rozszerzono ustawienia konta o dane tożsamości, dostęp do resetowania hasła, przegląd zgód prawnych, możliwość wylogowania ze wszystkich urządzeń oraz status lub anulowanie usunięcia konta."],
+          "new": [
+            "Rozszerzono ustawienia konta o dane tożsamości, dostęp do resetowania hasła, przegląd zgód prawnych, możliwość wylogowania ze wszystkich urządzeń oraz status lub anulowanie usunięcia konta."
+          ],
           "improved": [
             "Ulepszono sprawdzanie wejścia scenicznego, wskazówki dotyczące konfiguracji mikrofonu i przygotowanie publiczności przed rozpoczęciem transmisji.",
             "Ulepszono usuwanie konta i czyszczenie powiązanych sesji."
@@ -66,7 +68,9 @@
           "releaseDate": "2026-09-16",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie wprowadziło osobną zlokalizowaną publiczną stronę główną i wejście Live dla Pockitle.",
-          "new": ["Dodano zlokalizowaną publiczną stronę główną Pockitle i środowisko Live wraz ze spójną nawigacją, stronami kontaktu i informacjami prawnymi, metadanymi instalowalnej aplikacji internetowej oraz identyfikacją wizualną."],
+          "new": [
+            "Dodano zlokalizowaną publiczną stronę główną Pockitle i środowisko Live wraz ze spójną nawigacją, stronami kontaktu i informacjami prawnymi, metadanymi instalowalnej aplikacji internetowej oraz identyfikacją wizualną."
+          ],
           "improved": [],
           "fixed": []
         },
@@ -80,7 +84,9 @@
             "Komunikaty dotyczące odblokowania operatora i odzyskiwania hasła wyjaśniają teraz wyraźniej kolejny krok.",
             "Analiza scenariusza lepiej zachowuje typowaną strukturę cue w importowanych dokumentach."
           ],
-          "fixed": ["Wygasłe migawki publiczności i wycofane sesje widza nie wyświetlają już nieaktualnych treści na żywo."]
+          "fixed": [
+            "Wygasłe migawki publiczności i wycofane sesje widza nie wyświetlają już nieaktualnych treści na żywo."
+          ]
         }
       ]
     },
@@ -110,14 +116,18 @@
             "Długotrwałe sesje na żywo odzyskują działanie bardziej niezawodnie.",
             "Import scenariuszy lepiej zachowuje kontekst obsady i cue."
           ],
-          "fixed": ["Wersje robocze opinii publiczności są zachowywane po ponownym uruchomieniu, a opinię można nadal przesłać po zakończeniu występu."]
+          "fixed": [
+            "Wersje robocze opinii publiczności są zachowywane po ponownym uruchomieniu, a opinię można nadal przesłać po zakończeniu występu."
+          ]
         },
         {
           "version": "v260908.01",
           "releaseDate": "2026-09-08",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie dodało opcjonalny proces zbierania opinii publiczności po występie i ulepszyło ciągłość raportów.",
-          "new": ["Dodano opcjonalną ankietę publiczności po występie z jasną zgodą oraz proces przejścia do raportu końcowego."],
+          "new": [
+            "Dodano opcjonalną ankietę publiczności po występie z jasną zgodą oraz proces przejścia do raportu końcowego."
+          ],
           "improved": [
             "Zapewniono dostępność konsoli Live i ekranów publiczności przez cały występ.",
             "Ulepszono wersje robocze opinii i historię raportów po ponownym uruchomieniu oraz dla wcześniejszych sesji."
@@ -136,7 +146,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie poprawiło rejestrację i kilka przypadków odzyskiwania po zakończeniu występu.",
           "new": [],
-          "improved": ["Komunikaty o zakończeniu i odzyskiwaniu są teraz zlokalizowane."],
+          "improved": [
+            "Komunikaty o zakończeniu i odzyskiwaniu są teraz zlokalizowane."
+          ],
           "fixed": [
             "Rejestracja kończy teraz konfigurację konta przed otwarciem pulpitu.",
             "Nawigacja podczas występu i elementy sterowania jego zakończeniem odzyskują działanie bardziej niezawodnie.",
@@ -154,7 +166,9 @@
             "Uruchomienie symulacji czeka teraz na aktywny kontekst projektu, co zapobiega błędom przekazania podczas ładowania.",
             "Zlokalizowane teksty produktu i wskazówki dotyczące pracy są spójniejsze we wszystkich obsługiwanych językach."
           ],
-          "fixed": ["Odnośniki sesji i odpowiedzi bez treści kończą się teraz poprawnie, zamiast zawieszać się lub wyświetlać nieprawidłowo."]
+          "fixed": [
+            "Odnośniki sesji i odpowiedzi bez treści kończą się teraz poprawnie, zamiast zawieszać się lub wyświetlać nieprawidłowo."
+          ]
         }
       ]
     },
@@ -167,9 +181,15 @@
           "releaseDate": "2026-08-27",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie rozszerzyło wskazówki dotyczące planowania wydarzeń i ulepszyło publiczną nawigację na tabletach.",
-          "new": ["Dodano wskazówki dotyczące napisów na żywo podczas konferencji, zajęć, paneli i innych wydarzeń opartych na wypowiedziach."],
-          "improved": ["Rozszerzono przetłumaczone przykłady pracy i przewodniki dotyczące planowania we wszystkich obsługiwanych językach."],
-          "fixed": ["Przywrócono pełną publiczną nawigację w układach tabletowych."]
+          "new": [
+            "Dodano wskazówki dotyczące napisów na żywo podczas konferencji, zajęć, paneli i innych wydarzeń opartych na wypowiedziach."
+          ],
+          "improved": [
+            "Rozszerzono przetłumaczone przykłady pracy i przewodniki dotyczące planowania we wszystkich obsługiwanych językach."
+          ],
+          "fixed": [
+            "Przywrócono pełną publiczną nawigację w układach tabletowych."
+          ]
         },
         {
           "version": "v260826.02",
@@ -177,8 +197,12 @@
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie uczyniło uruchamianie sesji na żywo jaśniejszym i bardziej odpornym na problemy.",
           "new": [],
-          "improved": ["Błędy uprawnień mikrofonu zawierają teraz wyraźniejszą ścieżkę odzyskiwania."],
-          "fixed": ["Powtarzane żądania rozpoczęcia występu kontynuują teraz istniejącą próbę uruchomienia zamiast tworzyć zduplikowany stan sesji."]
+          "improved": [
+            "Błędy uprawnień mikrofonu zawierają teraz wyraźniejszą ścieżkę odzyskiwania."
+          ],
+          "fixed": [
+            "Powtarzane żądania rozpoczęcia występu kontynuują teraz istniejącą próbę uruchomienia zamiast tworzyć zduplikowany stan sesji."
+          ]
         },
         {
           "version": "v260826.01",
@@ -186,7 +210,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie ulepszyło typografię napisów w widokach publiczności i projekcji.",
           "new": [],
-          "improved": ["Napisy publiczności i projekcji używają teraz spójnych czcionek uwzględniających język i respektują wybrany rozmiar czcionki bez niejawnego pomniejszania tekstu."],
+          "improved": [
+            "Napisy publiczności i projekcji używają teraz spójnych czcionek uwzględniających język i respektują wybrany rozmiar czcionki bez niejawnego pomniejszania tekstu."
+          ],
           "fixed": []
         },
         {
@@ -212,7 +238,9 @@
           "releaseDate": "2026-08-22",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie rozszerzyło zlokalizowane środowisko Pockitle i dopracowało historię projekcji.",
-          "new": ["Dodano zlokalizowane publiczne strony Pockitle i katalog obsługiwanych języków."],
+          "new": [
+            "Dodano zlokalizowane publiczne strony Pockitle i katalog obsługiwanych języków."
+          ],
           "improved": [
             "Publiczna nawigacja i menu języków pozostają użyteczne na tabletach i w wąskich ekranach.",
             "Podgląd projekcji może wyświetlać ograniczoną liczbę poprzednich napisów, zachowując czytelność bieżącego napisu."
@@ -225,16 +253,24 @@
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie ulepszyło przygotowanie do powtarzanych występów, sterowanie projekcją i importy DOCX.",
           "new": [],
-          "improved": ["Ulepszono przygotowanie do powtarzanych występów i dopracowano sterowanie projekcją."],
-          "fixed": ["Importy DOCX zachowują teraz nagłówki scen i odrzucają zbyt duże lub uszkodzone pliki z jasnym komunikatem."]
+          "improved": [
+            "Ulepszono przygotowanie do powtarzanych występów i dopracowano sterowanie projekcją."
+          ],
+          "fixed": [
+            "Importy DOCX zachowują teraz nagłówki scen i odrzucają zbyt duże lub uszkodzone pliki z jasnym komunikatem."
+          ]
         },
         {
           "version": "v260817.01",
           "releaseDate": "2026-08-17",
           "product": "SurtitleLive Cloud",
           "summary": "To wydanie rozszerzyło zlokalizowane odkrywanie produktu i ujednoliciło ponowne łączenie publiczności.",
-          "new": ["Rozszerzono zlokalizowane publiczne treści oraz wskazówki dotyczące wydarzeń i napisów na żywo."],
-          "improved": ["Obsługa stanu publiczności i sesji na żywo zapewnia teraz spójniejsze ponowne połączenia i akceptowane napisy."],
+          "new": [
+            "Rozszerzono zlokalizowane publiczne treści oraz wskazówki dotyczące wydarzeń i napisów na żywo."
+          ],
+          "improved": [
+            "Obsługa stanu publiczności i sesji na żywo zapewnia teraz spójniejsze ponowne połączenia i akceptowane napisy."
+          ],
           "fixed": []
         },
         {

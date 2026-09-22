@@ -1,21 +1,17 @@
 {
   "locale": "pt",
   "title": "Atualizações do produto SurtitleLive",
-  "description": "Atualizações semanais do SurtitleLive em produção, agrupadas por versão de lançamento, com notas breves sobre novos recursos, melhorias e correções visíveis aos usuários.",
-  "intro": "Um registro conciso das mudanças visíveis aos usuários que chegaram à produção. Os recursos importantes continuam tendo seus próprios artigos e guias; o trabalho interno de implantação não aparece aqui.",
+  "description": "Atualizações semanais do produto SurtitleLive, agrupadas por versão, com notas concisas sobre novos recursos, melhorias e correções visíveis para os usuários.",
   "labels": {
     "articles": "Artigos",
     "productUpdates": "Atualizações do produto",
     "weekOf": "Semana de",
     "released": "Lançado",
-    "availability": "Disponibilidade",
-    "production": "Produção",
     "product": "Produto",
     "new": "Novidades",
     "improved": "Melhorias",
     "fixed": "Correções",
-    "noPublicRelease": "Não houve nenhuma atualização de produção confirmada e visível aos usuários nesta semana.",
-    "noActionRequired": "Nenhuma ação é necessária. Os lançamentos de aplicativos nativos usam versões e registros de publicação separados."
+    "noPublicRelease": "Nenhuma atualização está listada nesta semana."
   },
   "weeks": [
     {
@@ -27,8 +23,12 @@
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão restaurou os pontos de entrada localizados do Pockitle e ampliou a experiência pública promovida em vários idiomas.",
-          "new": ["Adicionadas páginas públicas e conteúdo de planejamento em português do Brasil à experiência localizada do Pockitle."],
-          "improved": ["Restaurada a ação Começar específica de cada idioma nas páginas do Pockitle Live e corrigida a navegação pública localizada."],
+          "new": [
+            "Adicionadas páginas públicas e conteúdo de planejamento em português do Brasil à experiência localizada do Pockitle."
+          ],
+          "improved": [
+            "Restaurada a ação Começar específica de cada idioma nas páginas do Pockitle Live e corrigida a navegação pública localizada."
+          ],
           "fixed": []
         },
         {
@@ -36,7 +36,9 @@
           "releaseDate": "2026-09-20",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão ampliou os controles da conta e melhorou a preparação antes de uma sessão ao vivo.",
-          "new": ["As configurações da conta agora incluem detalhes de identidade, acesso à redefinição de senha, revisão de consentimentos legais, controles para sair de todos os dispositivos e status ou cancelamento da exclusão da conta."],
+          "new": [
+            "As configurações da conta agora incluem detalhes de identidade, acesso à redefinição de senha, revisão de consentimentos legais, controles para sair de todos os dispositivos e status ou cancelamento da exclusão da conta."
+          ],
           "improved": [
             "Melhoradas as verificações da entrada de palco, as orientações de configuração do microfone e a preparação do público antes de entrar ao vivo.",
             "Melhoradas a exclusão da conta e a limpeza das sessões vinculadas."
@@ -66,7 +68,9 @@
           "releaseDate": "2026-09-16",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão introduziu uma página inicial pública localizada e uma entrada Live dedicadas ao Pockitle.",
-          "new": ["Adicionadas a página inicial pública localizada do Pockitle e a experiência Live, com navegação, páginas de contato e legais correspondentes, metadados para instalação na web e identidade visual."],
+          "new": [
+            "Adicionadas a página inicial pública localizada do Pockitle e a experiência Live, com navegação, páginas de contato e legais correspondentes, metadados para instalação na web e identidade visual."
+          ],
           "improved": [],
           "fixed": []
         },
@@ -80,7 +84,9 @@
             "As mensagens de desbloqueio do operador e recuperação de senha agora explicam com mais clareza a próxima etapa.",
             "A análise de roteiros preserva melhor a estrutura tipada de cues nos documentos importados."
           ],
-          "fixed": ["Instantâneos expirados do público e sessões de espectadores retiradas não exibem mais conteúdo ao vivo desatualizado."]
+          "fixed": [
+            "Instantâneos expirados do público e sessões de espectadores retiradas não exibem mais conteúdo ao vivo desatualizado."
+          ]
         }
       ]
     },
@@ -110,14 +116,18 @@
             "As sessões ao vivo de longa duração se recuperam com mais confiabilidade.",
             "As importações de roteiros preservam melhor o contexto do elenco e dos cues."
           ],
-          "fixed": ["Os rascunhos de feedback do público são preservados após uma reinicialização, e o feedback ainda pode ser enviado depois do fim da apresentação."]
+          "fixed": [
+            "Os rascunhos de feedback do público são preservados após uma reinicialização, e o feedback ainda pode ser enviado depois do fim da apresentação."
+          ]
         },
         {
           "version": "v260908.01",
           "releaseDate": "2026-09-08",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão adicionou um fluxo opcional de feedback do público após a apresentação e melhorou a continuidade dos relatórios.",
-          "new": ["Adicionada uma pesquisa opcional do público após a apresentação, com consentimento claro e fluxo para o relatório final."],
+          "new": [
+            "Adicionada uma pesquisa opcional do público após a apresentação, com consentimento claro e fluxo para o relatório final."
+          ],
           "improved": [
             "A Console Live e as telas do público permanecem disponíveis durante toda a apresentação.",
             "Melhorados os rascunhos de feedback e o histórico de relatórios entre reinicializações e sessões anteriores."
@@ -136,7 +146,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão corrigiu o cadastro e vários casos de recuperação no fim da apresentação.",
           "new": [],
-          "improved": ["As mensagens de conclusão e recuperação agora estão localizadas."],
+          "improved": [
+            "As mensagens de conclusão e recuperação agora estão localizadas."
+          ],
           "fixed": [
             "O cadastro agora conclui a configuração da conta antes de abrir o painel.",
             "A navegação da apresentação e os controles de encerramento se recuperam com mais confiabilidade.",
@@ -154,7 +166,9 @@
             "O lançamento da simulação agora aguarda o contexto do projeto ativo, evitando falhas de transferência durante o carregamento.",
             "Os textos do produto e as orientações do fluxo de trabalho localizado estão mais consistentes nos idiomas compatíveis."
           ],
-          "fixed": ["Links de sessão e respostas sem conteúdo agora são concluídos corretamente, em vez de travar ou renderizar de forma incorreta."]
+          "fixed": [
+            "Links de sessão e respostas sem conteúdo agora são concluídos corretamente, em vez de travar ou renderizar de forma incorreta."
+          ]
         }
       ]
     },
@@ -167,9 +181,15 @@
           "releaseDate": "2026-08-27",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão ampliou as orientações de planejamento de eventos e melhorou a navegação pública em tablets.",
-          "new": ["Adicionadas orientações para legendas ao vivo em conferências, salas de aula, painéis e outros eventos falados."],
-          "improved": ["Ampliados os exemplos traduzidos de fluxos de trabalho e os guias de planejamento nos idiomas compatíveis."],
-          "fixed": ["Restaurada a navegação pública completa em layouts do tamanho de tablets."]
+          "new": [
+            "Adicionadas orientações para legendas ao vivo em conferências, salas de aula, painéis e outros eventos falados."
+          ],
+          "improved": [
+            "Ampliados os exemplos traduzidos de fluxos de trabalho e os guias de planejamento nos idiomas compatíveis."
+          ],
+          "fixed": [
+            "Restaurada a navegação pública completa em layouts do tamanho de tablets."
+          ]
         },
         {
           "version": "v260826.02",
@@ -177,8 +197,12 @@
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão tornou o início de sessões ao vivo mais claro e resiliente.",
           "new": [],
-          "improved": ["Erros de permissão do microfone agora oferecem um caminho de recuperação mais claro."],
-          "fixed": ["Solicitações repetidas para iniciar a apresentação agora continuam a tentativa de inicialização existente, em vez de criar um estado de sessão duplicado."]
+          "improved": [
+            "Erros de permissão do microfone agora oferecem um caminho de recuperação mais claro."
+          ],
+          "fixed": [
+            "Solicitações repetidas para iniciar a apresentação agora continuam a tentativa de inicialização existente, em vez de criar um estado de sessão duplicado."
+          ]
         },
         {
           "version": "v260826.01",
@@ -186,7 +210,9 @@
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão melhorou a tipografia das legendas nas visualizações do público e da projeção.",
           "new": [],
-          "improved": ["As legendas do público e da projeção agora usam fontes consistentes e adequadas ao idioma e respeitam o tamanho escolhido sem reduzir o texto silenciosamente."],
+          "improved": [
+            "As legendas do público e da projeção agora usam fontes consistentes e adequadas ao idioma e respeitam o tamanho escolhido sem reduzir o texto silenciosamente."
+          ],
           "fixed": []
         },
         {
@@ -212,7 +238,9 @@
           "releaseDate": "2026-08-22",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão ampliou a experiência localizada do Pockitle e refinou o histórico de projeção.",
-          "new": ["Adicionadas páginas públicas localizadas do Pockitle e um catálogo de idiomas compatíveis."],
+          "new": [
+            "Adicionadas páginas públicas localizadas do Pockitle e um catálogo de idiomas compatíveis."
+          ],
           "improved": [
             "A navegação pública e os menus de idioma continuam utilizáveis em tablets e telas estreitas.",
             "A prévia da projeção pode exibir um número limitado de legendas anteriores, mantendo a legenda atual clara."
@@ -225,16 +253,24 @@
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão melhorou a preparação para apresentações repetidas, os controles de projeção e as importações de DOCX.",
           "new": [],
-          "improved": ["Melhorada a preparação para apresentações repetidas e refinados os controles de projeção."],
-          "fixed": ["As importações de DOCX agora preservam títulos de cena e rejeitam arquivos grandes demais ou malformados com um resultado claro."]
+          "improved": [
+            "Melhorada a preparação para apresentações repetidas e refinados os controles de projeção."
+          ],
+          "fixed": [
+            "As importações de DOCX agora preservam títulos de cena e rejeitam arquivos grandes demais ou malformados com um resultado claro."
+          ]
         },
         {
           "version": "v260817.01",
           "releaseDate": "2026-08-17",
           "product": "SurtitleLive Cloud",
           "summary": "Esta versão ampliou a descoberta localizada e tornou mais consistente a reconexão do público.",
-          "new": ["Ampliadas a descoberta pública localizada e as orientações sobre eventos e legendas ao vivo."],
-          "improved": ["O tratamento do estado do público e da sessão ao vivo agora mantém reconexões e legendas aceitas mais consistentes."],
+          "new": [
+            "Ampliadas a descoberta pública localizada e as orientações sobre eventos e legendas ao vivo."
+          ],
+          "improved": [
+            "O tratamento do estado do público e da sessão ao vivo agora mantém reconexões e legendas aceitas mais consistentes."
+          ],
           "fixed": []
         },
         {

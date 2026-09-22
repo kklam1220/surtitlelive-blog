@@ -323,7 +323,7 @@ function validateProductUpdates(config) {
     if (JSON.stringify(releaseShape(payload)) !== expectedShape) {
       errors.push(`${locale}: week/version/date structure drifted from English`);
     }
-    if (locale !== "en" && (payload.title === english.title || payload.intro === english.intro)) {
+    if (locale !== "en" && payload.title === english.title) {
       errors.push(`${locale}: visible Product Updates copy still matches English`);
     }
     const prose = collectStringValues(payload).join("\n").toLocaleLowerCase("en");
