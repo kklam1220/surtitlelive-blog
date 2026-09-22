@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "Una actualización importante de los subtítulos en directo, los controles de organización, la configuración de proyección, la edición y la preparación de guiones.",
-          "new": [
-            "Se presentó Pockitle Live Web Beta para subtítulos y traducción en tiempo real sin un guion preparado.",
-            "Se añadieron enlaces de Pockitle Audience, salas de salida multilingües, proyección desde el navegador y controles manuales de subtítulos.",
-            "Se añadió un ajuste de organización para desactivar la IA generativa y conservar la traducción automática estándar."
-          ],
+          "summary": "Esta versión perfeccionó el control de las sesiones en directo, la configuración de proyección y la colaboración en Editor.",
+          "new": [],
           "improved": [
-            "Se rediseñó la configuración de proyección con controles más claros, ajustes preestablecidos reutilizables, gestión más segura de las salidas y mejor preparación para trabajar sin conexión.",
-            "Se mejoraron la función de guardado, el historial, la colaboración y la fiabilidad de la edición estructural en Editor.",
+            "Se perfeccionó la configuración de proyección con controles más claros, ajustes preestablecidos reutilizables y una gestión más segura de las salidas.",
+            "Se mejoraron el guardado, el historial, la colaboración y la fiabilidad de la edición estructural en Editor.",
             "Se amplió el análisis de guiones para documentos fragmentados, sin cues y menos estructurados.",
-            "Se actualizaron las páginas públicas del producto, las guías, la compatibilidad lingüística y los flujos de incorporación.",
-            "Una Live Console recién abierta permanece en solo lectura mientras otra consola está activa o iniciándose, con una acción explícita de Tomar el control."
+            "Una Live Console recién abierta permanece en modo de solo lectura cuando otra consola está activa o iniciándose, con una acción explícita para Tomar el control."
           ],
           "fixed": [
-            "Se corrigieron casos en los que los cambios manuales de Editor podían perderse o sobrescribirse.",
             "Se corrigieron problemas de reconexión, sincronización del estado y control del operador durante las sesiones en directo."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añadió controles de IA generativa a nivel de organización y mejoró la preparación para las sesiones en directo.",
+          "new": [
+            "Se añadió un control de organización para desactivar la IA generativa y mantener disponible la traducción automática estándar."
+          ],
+          "improved": [
+            "Se añadió una comprobación de preparación del público antes de iniciar una actuación en directo."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión amplió la experiencia localizada de Pockitle.",
+          "new": [
+            "Se añadieron páginas de producto localizadas de Pockitle, información sobre idiomas y guías de flujos de trabajo."
+          ],
+          "improved": [
+            "Se mejoraron los diseños de las páginas de Pockitle en pantallas estrechas."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión presentó Pockitle Live Web Beta y amplió los flujos de trabajo de guiones y Editor.",
+          "new": [
+            "Se presentó Pockitle Live Web Beta para ofrecer subtítulos y traducción en directo sin un guion preparado, con enlaces de Audience, salas de salida multilingües, proyección desde el navegador y controles manuales de subtítulos.",
+            "Se añadieron acciones en bloque para editar varias líneas del guion."
+          ],
+          "improved": [
+            "El análisis de guiones ahora admite documentos menos estructurados, con pocas indicaciones explícitas o sin ellas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión hizo más fiables los cambios manuales en Editor.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Se corrigió un problema que podía hacer que los cambios manuales en Editor se perdieran o sobrescribieran."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró la importación de guiones y la recuperación de Editor.",
+          "new": [],
+          "improved": [
+            "La importación de guiones gestiona con mayor fiabilidad los documentos de Word fragmentados y los que contienen menos indicaciones explícitas.",
+            "Se mejoró la recuperación de Editor tras agotarse el tiempo de espera de una traducción, conservando el historial de edición y las líneas temporales."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró la sincronización de las sesiones en directo y la recuperación de Editor.",
+          "new": [],
+          "improved": [
+            "Las consolas de operación y las vistas del público se sincronizan con mayor fiabilidad tras reconectarse o unirse a una sesión en directo."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró las opciones de salida de QLab y la recuperación de cues en directo.",
+          "new": [],
+          "improved": [
+            "Los paquetes de QLab ahora admiten descargas y reimportaciones más seguras.",
+            "El estado de los cues en directo se recupera con mayor fiabilidad cuando una consola de operación se reconecta o recibe una actualización."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión hizo que los paquetes de espectáculos de QLab fueran más flexibles y reutilizables.",
+          "new": [],
+          "improved": [
+            "Se añadieron opciones para dirigir las salidas de QLab a la misma pantalla o a pantallas separadas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró la gestión de los paquetes de QLab.",
+          "new": [],
+          "improved": [
+            "Se añadieron opciones de idioma por salida para los paquetes de QLab."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión llevó los subtítulos basados en QLab a la web.",
+          "new": [
+            "Se presentó la sincronización beta de cues de QLab para subtítulos proyectados y para el público, junto con guías para preparar un espectáculo."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión amplió la preparación de espectáculos con QLab y la recuperación de las vistas del público.",
+          "new": [
+            "Se añadieron paquetes de proyección de QLab configurables y exportaciones de hojas de cálculo sin conexión para preparar espectáculos."
+          ],
+          "improved": [
+            "Las pantallas del público se reconectan con mayor fiabilidad tras interrupciones breves."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró el análisis de guiones y las indicaciones localizadas.",
+          "new": [],
+          "improved": [
+            "El análisis de guiones gestiona mejor los diálogos sin etiquetas de hablante o con los nombres separados del diálogo.",
+            "Las indicaciones para revisar guiones son más claras en los idiomas disponibles."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró la continuidad de los subtítulos y la recuperación de los comentarios del público.",
+          "new": [],
+          "improved": [
+            "Los comentarios del público se pueden volver a enviar tras un problema temporal de conexión."
+          ],
+          "fixed": [
+            "Las actualizaciones en directo vacías ya no sustituyen el subtítulo actual."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejoró la recuperación de las sesiones en directo.",
+          "new": [],
+          "improved": [
+            "Los controles en directo y las vistas del público se recuperan con mayor fiabilidad tras breves interrupciones de conexión."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añadió un pase de duración limitada y mejoró los flujos de trabajo de guiones y público.",
+          "new": [
+            "Se añadió el Show Week Pass, con acceso por tiempo limitado durante una semana de producción."
+          ],
+          "improved": [
+            "Ahora es más fácil que el público vuelva al idioma original mientras ve los subtítulos."
+          ],
+          "fixed": [
+            "El análisis de guiones ahora conserva el diálogo que aparece después de la información del reparto."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añadió herramientas de exportación de QLab para preparar espectáculos.",
+          "new": [
+            "Se añadieron mapas de cues de QLab descargables y exportaciones para preparar espectáculos."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión aclaró las indicaciones para las sesiones en directo y mejoró las guías localizadas.",
+          "new": [],
+          "improved": [
+            "Se aclararon las indicaciones para iniciar una sesión en directo y se restauraron los medios y sus subtítulos en las guías de producto localizadas."
+          ],
+          "fixed": [
+            "Se corrigió la visualización de las tarjetas de planes destacadas."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añadió controles para revisar guiones y reforzó la colaboración.",
+          "new": [
+            "Se añadió un paso para revisar y editar el reparto antes de analizar el guion."
+          ],
+          "improved": [
+            "Se mejoró el análisis de guiones con listas de reparto, diálogos fragmentados e indicaciones de hablante poco claras."
+          ],
+          "fixed": [
+            "Se restauró la posibilidad de que los colaboradores eliminen sus propias versiones guardadas."
+          ]
+        }
+      ]
     }
   ]
 }

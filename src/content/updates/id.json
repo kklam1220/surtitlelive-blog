@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "Pembaruan besar untuk teks layar langsung, kontrol organisasi, penyiapan proyeksi, pengeditan, dan persiapan skrip.",
-          "new": [
-            "Memperkenalkan Pockitle Live Web Beta untuk teks layar dan terjemahan waktu nyata tanpa skrip yang disiapkan.",
-            "Menambahkan tautan Pockitle Audience, ruang keluaran multibahasa, proyeksi browser, dan kontrol teks layar manual.",
-            "Menambahkan pengaturan organisasi untuk menonaktifkan AI generatif sambil mempertahankan terjemahan mesin standar."
-          ],
+          "summary": "Rilis ini menyempurnakan kontrol sesi live, penyiapan proyeksi, dan kolaborasi Editor.",
+          "new": [],
           "improved": [
-            "Mendesain ulang penyiapan proyeksi dengan kontrol yang lebih jelas, preset yang dapat digunakan kembali, penanganan keluaran yang lebih aman, dan kesiapan offline yang lebih baik.",
-            "Meningkatkan penyimpanan, riwayat, kolaborasi, dan keandalan pengeditan struktural Editor.",
+            "Menyempurnakan penyiapan proyeksi dengan kontrol yang lebih jelas, preset yang dapat digunakan kembali, dan penanganan keluaran yang lebih aman.",
+            "Meningkatkan penyimpanan, riwayat, kolaborasi, dan keandalan pengeditan struktural di Editor.",
             "Memperluas analisis skrip untuk dokumen yang terfragmentasi, tanpa cue, dan kurang terstruktur.",
-            "Memperbarui halaman produk publik, panduan, dukungan bahasa, dan alur onboarding.",
             "Live Console yang baru dibuka tetap hanya-baca saat konsol lain aktif atau sedang dimulai, dengan tindakan Ambil Alih yang jelas."
           ],
           "fixed": [
-            "Memperbaiki kasus ketika perubahan manual Editor dapat hilang atau tertimpa.",
             "Memperbaiki masalah penyambungan kembali, sinkronisasi status, dan kontrol operator selama sesi live."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan kontrol AI generatif tingkat organisasi dan meningkatkan kesiapan sesi live.",
+          "new": [
+            "Menambahkan kontrol tingkat organisasi untuk menonaktifkan AI generatif sambil tetap menyediakan terjemahan mesin standar."
+          ],
+          "improved": [
+            "Menambahkan pemeriksaan kesiapan penonton sebelum pertunjukan live dimulai."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas pengalaman Pockitle yang dilokalkan.",
+          "new": [
+            "Menambahkan halaman produk Pockitle yang dilokalkan, informasi bahasa, dan panduan alur kerja."
+          ],
+          "improved": [
+            "Meningkatkan tata letak halaman Pockitle pada layar sempit."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperkenalkan Pockitle Live Web Beta dan memperluas alur kerja skrip serta Editor.",
+          "new": [
+            "Memperkenalkan Pockitle Live Web Beta untuk teks layar dan terjemahan live tanpa skrip yang disiapkan, dengan tautan Audience, ruang keluaran multibahasa, proyeksi browser, dan kontrol teks layar manual.",
+            "Menambahkan tindakan massal untuk mengedit beberapa baris skrip sekaligus."
+          ],
+          "improved": [
+            "Analisis skrip kini mendukung dokumen yang kurang terstruktur dengan sedikit atau tanpa cue eksplisit."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini membuat perubahan manual di Editor lebih andal.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Memperbaiki masalah yang dapat menyebabkan perubahan manual di Editor hilang atau tertimpa."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan impor skrip dan pemulihan Editor.",
+          "new": [],
+          "improved": [
+            "Impor skrip menangani dokumen Word yang terfragmentasi dan dokumen dengan lebih sedikit cue eksplisit secara lebih andal.",
+            "Meningkatkan pemulihan Editor setelah waktu terjemahan habis, sambil mempertahankan riwayat edit dan baris sementara."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan sinkronisasi sesi live dan pemulihan Editor.",
+          "new": [],
+          "improved": [
+            "Konsol operator dan tampilan penonton kini tersinkron dengan lebih andal setelah tersambung kembali atau bergabung ke sesi live."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan opsi keluaran QLab dan pemulihan cue live.",
+          "new": [],
+          "improved": [
+            "Paket QLab kini mendukung pengunduhan dan impor ulang yang lebih aman.",
+            "Status cue live pulih dengan lebih andal saat konsol operator tersambung kembali atau menerima pembaruan."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini membuat paket pertunjukan QLab lebih fleksibel dan dapat digunakan kembali.",
+          "new": [],
+          "improved": [
+            "Menambahkan opsi untuk merutekan keluaran QLab ke layar yang sama atau ke layar terpisah."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan penanganan paket QLab.",
+          "new": [],
+          "improved": [
+            "Menambahkan opsi bahasa untuk setiap keluaran paket QLab."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menghadirkan teks layar berbasis QLab ke web.",
+          "new": [
+            "Memperkenalkan beta sinkronisasi cue QLab untuk teks layar proyeksi dan penonton, disertai panduan persiapan pertunjukan."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas persiapan pertunjukan melalui QLab dan pemulihan tampilan penonton.",
+          "new": [
+            "Menambahkan Paket Proyeksi QLab yang dapat dikonfigurasi dan ekspor spreadsheet offline untuk persiapan pertunjukan."
+          ],
+          "improved": [
+            "Tampilan penonton tersambung kembali dengan lebih andal setelah gangguan singkat."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan analisis skrip dan panduan yang dilokalkan.",
+          "new": [],
+          "improved": [
+            "Analisis skrip kini lebih baik menangani dialog tanpa label pembicara atau dengan nama yang terpisah dari dialog.",
+            "Panduan pemeriksaan skrip kini lebih jelas dalam bahasa yang didukung."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan kesinambungan teks layar dan pemulihan masukan penonton.",
+          "new": [],
+          "improved": [
+            "Masukan penonton dapat dikirim ulang setelah masalah koneksi sementara."
+          ],
+          "fixed": [
+            "Pembaruan live yang kosong tidak lagi menggantikan teks layar saat ini."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan pemulihan sesi live.",
+          "new": [],
+          "improved": [
+            "Kontrol live dan tampilan penonton pulih dengan lebih andal setelah gangguan koneksi singkat."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan pass berbatas waktu dan meningkatkan alur kerja skrip serta penonton.",
+          "new": [
+            "Menambahkan Show Week Pass untuk akses berbatas waktu selama satu pekan produksi."
+          ],
+          "improved": [
+            "Penonton kini lebih mudah kembali ke bahasa asli saat melihat teks layar."
+          ],
+          "fixed": [
+            "Analisis skrip kini mempertahankan dialog yang muncul setelah informasi daftar pemeran."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan alat ekspor QLab untuk persiapan pertunjukan.",
+          "new": [
+            "Menambahkan peta cue QLab yang dapat diunduh dan ekspor untuk persiapan pertunjukan."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperjelas panduan sesi live dan menyempurnakan panduan produk yang dilokalkan.",
+          "new": [],
+          "improved": [
+            "Panduan untuk memulai sesi live kini lebih jelas, dan media serta keterangannya dipulihkan di panduan produk yang dilokalkan."
+          ],
+          "fixed": [
+            "Memperbaiki tampilan kartu paket harga yang disorot."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan kontrol peninjauan skrip dan memperkuat kolaborasi.",
+          "new": [
+            "Menambahkan langkah untuk meninjau dan mengedit daftar pemeran sebelum analisis skrip."
+          ],
+          "improved": [
+            "Meningkatkan analisis skrip dengan daftar pemeran, dialog terfragmentasi, dan petunjuk pembicara yang kurang jelas."
+          ],
+          "fixed": [
+            "Memulihkan kemampuan kolaborator untuk menghapus versi tersimpan milik mereka sendiri."
+          ]
+        }
+      ]
     }
   ]
 }

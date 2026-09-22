@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "Canlı altyazılar, kuruluş denetimleri, projeksiyon kurulumu, düzenleme ve senaryo hazırlığı için büyük bir güncelleme.",
-          "new": [
-            "Hazırlanmış bir senaryo olmadan gerçek zamanlı altyazı ve çeviri için Pockitle Live Web Beta sunuldu.",
-            "Pockitle Audience bağlantıları, çok dilli çıktı odaları, tarayıcı projeksiyonu ve manuel altyazı denetimleri eklendi.",
-            "Standart makine çevirisini korurken üretken yapay zekâyı devre dışı bırakmak için bir kuruluş ayarı eklendi."
-          ],
+          "summary": "Bu sürüm canlı oturum denetimlerini, projeksiyon kurulumunu ve Düzenleyici iş birliğini iyileştirdi.",
+          "new": [],
           "improved": [
-            "Projeksiyon kurulumu daha net denetimler, yeniden kullanılabilir ön ayarlar, daha güvenli çıktı işleme ve geliştirilmiş çevrimdışı hazırlıkla yeniden tasarlandı.",
+            "Daha net denetimler, yeniden kullanılabilir ön ayarlar ve daha güvenli çıktı işleme ile projeksiyon kurulumu iyileştirildi.",
             "Düzenleyicide kaydetme, geçmiş, iş birliği ve yapısal düzenleme güvenilirliği iyileştirildi.",
             "Parçalı, cue içermeyen ve daha az yapılandırılmış belgeler için senaryo analizi genişletildi.",
-            "Herkese açık ürün sayfaları, kılavuzlar, dil desteği ve başlangıç akışları güncellendi.",
-            "Yeni açılan Live Console, başka bir konsol etkinken veya başlatılırken salt okunur kalıyor ve açık bir Devral işlemi sunuyor."
+            "Yeni açılan Live Console, başka bir konsol etkinken veya başlatılırken salt okunur kalır ve açık bir Devral eylemi sunar."
           ],
           "fixed": [
-            "Düzenleyicideki manuel değişikliklerin kaybolabildiği veya üzerine yazılabildiği durumlar düzeltildi.",
             "Canlı oturumlar sırasında yeniden bağlantı, durum senkronizasyonu ve operatör denetimi sorunları düzeltildi."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm, kuruluş düzeyinde üretken yapay zekâ denetimleri ekledi ve canlı oturum hazırlığını daha anlaşılır hale getirdi.",
+          "new": [
+            "Standart makine çevirisini kullanılabilir tutarken üretken yapay zekâyı kuruluş genelinde yönetmek için bir denetim eklendi."
+          ],
+          "improved": [
+            "Canlı performans başlamadan önce izleyici hazırlık kontrolü eklendi."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm, yerelleştirilmiş Pockitle deneyimini genişletti.",
+          "new": [
+            "Yerelleştirilmiş Pockitle ürün sayfaları, dil bilgileri ve iş akışı kılavuzları eklendi."
+          ],
+          "improved": [
+            "Dar ekranlarda Pockitle sayfa düzenleri iyileştirildi."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm Pockitle Live Beta'yı kullanıma sundu ve senaryo ile Düzenleyici iş akışlarını genişletti.",
+          "new": [
+            "Pockitle Live Web Beta; önceden hazırlanmış bir senaryo olmadan canlı altyazı ve çeviri, Audience bağlantıları, çok dilli çıktı odaları, tarayıcı projeksiyonu ve manuel altyazı denetimleriyle sunuldu.",
+            "Birden çok senaryo satırını düzenlemek için toplu işlemler eklendi."
+          ],
+          "improved": [
+            "Senaryo analizi artık daha az yapılandırılmış, açık cue'ları az olan veya hiç olmayan belgeleri destekliyor."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm, Düzenleyicide yapılan manuel değişikliklerin güvenilirliğini artırdı.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Düzenleyicide yapılan manuel değişikliklerin kaybolmasına veya üzerine yazılmasına yol açabilen bir sorun düzeltildi."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm senaryo içe aktarma ve Düzenleyici kurtarmasını iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Senaryo içe aktarma, parçalı Word belgelerini ve açık cue'ların daha az olduğu belgeleri artık daha güvenilir şekilde işliyor.",
+            "Çeviri zaman aşımından sonra Düzenleyici kurtarma işlevi, düzenleme geçmişini ve geçici satırları koruyor."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm canlı oturum eşzamanlamasını ve Düzenleyici kurtarmasını iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Operatör konsolları ve izleyici pencereleri, yeniden bağlandıktan veya canlı oturuma katıldıktan sonra daha güvenilir şekilde eşzamanlanıyor."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm QLab çıktı seçeneklerini genişletti ve canlı cue kurtarmasını iyileştirdi.",
+          "new": [],
+          "improved": [
+            "QLab paketleri artık daha güvenli indirme ve yeniden içe aktarma seçeneklerini destekliyor.",
+            "Operatör konsolu yeniden bağlandığında veya güncelleme aldığında canlı cue durumu daha güvenilir şekilde kurtarılıyor."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm QLab gösteri paketlerini daha esnek ve yeniden kullanılabilir hale getirdi.",
+          "new": [],
+          "improved": [
+            "QLab çıktılarını aynı ekrana veya ayrı ekranlara yönlendirmek için seçenekler eklendi."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm QLab paketlerinin işlenmesini iyileştirdi.",
+          "new": [],
+          "improved": [
+            "QLab paketlerinde her çıktı için dil seçeneği eklendi."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm QLab tabanlı üst yazıları web'e taşıdı.",
+          "new": [
+            "Yansıtılan üst yazılar ve izleyici altyazıları için beta QLab cue eşzamanlaması ve gösteri hazırlama kılavuzları sunuldu."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm QLab gösteri hazırlığını ve izleyici kurtarmasını genişletti.",
+          "new": [
+            "Gösteri hazırlığı için yapılandırılabilir QLab Projection Pack'ler ve çevrimdışı elektronik tablo dışa aktarımları eklendi."
+          ],
+          "improved": [
+            "Kısa kesintilerden sonra izleyici ekranları daha güvenilir şekilde yeniden bağlanıyor."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm senaryo analizini ve yerelleştirilmiş kılavuzları iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Senaryo analizi, konuşmacı etiketi olmayan diyalogları veya adların diyalogdan ayrı verildiği durumları daha iyi işliyor.",
+            "Desteklenen dillerdeki yerelleştirilmiş senaryo kontrolü kılavuzları daha anlaşılır hale getirildi."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm altyazı sürekliliğini ve izleyici geri bildiriminden kurtarmayı iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Geçici bir bağlantı sorunu yaşandıktan sonra izleyici geri bildirimi yeniden gönderilebiliyor."
+          ],
+          "fixed": [
+            "Boş canlı güncellemeler artık mevcut altyazının yerini almıyor."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm canlı oturum kurtarmasını iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Canlı denetimler ve izleyici görünümleri kısa bağlantı kesintilerinden sonra daha güvenilir şekilde kurtarılıyor."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm süreli bir geçiş hakkı ekledi ve senaryo ile izleyici iş akışlarını iyileştirdi.",
+          "new": [
+            "Prodüksiyon haftası boyunca süreli erişim sağlayan Show Week Pass eklendi."
+          ],
+          "improved": [
+            "İzleyiciler altyazıları görüntülerken özgün dile daha kolay dönebiliyor."
+          ],
+          "fixed": [
+            "Senaryo analizi artık oyuncu listesi içeriğinden sonra gelen diyalogları koruyor."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm gösteri hazırlığı için QLab dışa aktarma araçları ekledi.",
+          "new": [
+            "İndirilebilir QLab cue haritaları ve gösteri hazırlama dışa aktarımları eklendi."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm canlı oturum kılavuzlarını netleştirdi ve yerelleştirilmiş kılavuzları iyileştirdi.",
+          "new": [],
+          "improved": [
+            "Go Live yönergeleri netleştirildi; yerelleştirilmiş ürün kılavuzlarındaki medya ve altyazılar geri yüklendi."
+          ],
+          "fixed": [
+            "Öne çıkarılan fiyat planı kartlarının görüntülenme sorunu düzeltildi."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm senaryo inceleme denetimleri ekledi ve iş birliğini güçlendirdi.",
+          "new": [
+            "Senaryo analizinden önce düzenlenebilir bir oyuncu listesi inceleme adımı eklendi."
+          ],
+          "improved": [
+            "Oyuncu listeleri, parçalı diyaloglar ve belirsiz konuşmacı ipuçları için senaryo analizi iyileştirildi."
+          ],
+          "fixed": [
+            "İş birliği yapan kullanıcıların kendi kaydedilmiş sürümlerini silme olanağı geri yüklendi."
+          ]
+        }
+      ]
     }
   ]
 }

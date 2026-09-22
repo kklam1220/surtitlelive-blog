@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "라이브 자막, 조직 제어, 프로젝션 설정, 편집, 스크립트 준비를 대폭 업데이트했습니다.",
-          "new": [
-            "준비된 스크립트 없이 실시간 자막과 번역을 제공하는 Pockitle Live Web Beta를 도입했습니다.",
-            "Pockitle Audience 링크, 다국어 출력 룸, 브라우저 프로젝션, 수동 자막 제어를 추가했습니다.",
-            "표준 기계 번역은 유지하면서 생성형 AI를 비활성화할 수 있는 조직 설정을 추가했습니다."
-          ],
+          "summary": "이번 릴리스에서는 라이브 세션 제어, 프로젝션 설정, Editor 협업을 개선했습니다.",
+          "new": [],
           "improved": [
-            "프로젝션 설정을 다시 설계해 더 명확한 제어, 재사용 가능한 프리셋, 안전한 출력 처리, 향상된 오프라인 준비를 제공합니다.",
-            "Editor 저장, 기록, 협업, 구조 편집의 안정성을 개선했습니다.",
-            "단편적이거나 큐가 없거나 구조가 부족한 문서에 대한 스크립트 분석을 확장했습니다.",
-            "공개 제품 페이지, 가이드, 언어 지원, 온보딩 흐름을 업데이트했습니다.",
-            "다른 콘솔이 활성 상태이거나 시작 중일 때 새로 연 Live Console은 명시적인 인계 동작을 수행하기 전까지 읽기 전용으로 유지됩니다."
+            "프로젝션 설정을 정비해 제어를 더 명확하게 하고, 프리셋을 재사용할 수 있게 하며, 출력을 더 안전하게 처리하도록 했습니다.",
+            "Editor의 저장, 기록, 협업, 구조 편집 안정성을 개선했습니다.",
+            "단편적이거나 큐가 없거나 구조가 불분명한 문서까지 스크립트 분석을 확장했습니다.",
+            "다른 콘솔이 활성 상태이거나 시작 중일 때 새로 연 Live Console은 읽기 전용으로 유지되며, 명시적인 제어권 인계 동작을 제공합니다."
           ],
           "fixed": [
-            "Editor에서 수동으로 변경한 내용이 손실되거나 덮어써질 수 있는 사례를 수정했습니다.",
             "라이브 세션 중 재연결, 상태 동기화, 오퍼레이터 제어 문제를 수정했습니다."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 조직 단위 생성형 AI 제어 기능을 추가하고 라이브 시작 전 준비를 더 명확히 했습니다.",
+          "new": [
+            "표준 기계 번역은 계속 사용할 수 있도록 하면서 조직 전체에서 생성형 AI를 끌 수 있는 설정을 추가했습니다."
+          ],
+          "improved": [
+            "라이브 공연 시작 전에 관객 준비 상태를 확인할 수 있도록 개선했습니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 현지화된 Pockitle 경험을 확장했습니다.",
+          "new": [
+            "현지화된 Pockitle 제품 페이지, 언어 정보, 워크플로 가이드를 추가했습니다."
+          ],
+          "improved": [
+            "좁은 화면에서 Pockitle 페이지 레이아웃을 개선했습니다."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 Pockitle Live Beta를 선보이고 스크립트 및 Editor 워크플로를 확장했습니다.",
+          "new": [
+            "준비된 스크립트 없이 실시간 자막과 번역을 제공하는 Pockitle Live Web Beta를 선보였습니다. Audience 링크, 다국어 출력 룸, 브라우저 프로젝션, 수동 자막 제어를 지원합니다.",
+            "여러 스크립트 줄을 한 번에 편집하는 일괄 작업을 추가했습니다."
+          ],
+          "improved": [
+            "명시적인 큐가 적거나 없는 비정형 문서도 스크립트 분석에서 지원합니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 Editor의 수동 변경 사항을 더 안정적으로 보존합니다.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Editor에서 수동으로 변경한 내용이 사라지거나 덮어써질 수 있는 문제를 수정했습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 스크립트 가져오기와 Editor 복구 기능을 개선했습니다.",
+          "new": [],
+          "improved": [
+            "조각난 Word 문서와 큐가 명확히 표시되지 않은 문서를 더 안정적으로 가져옵니다.",
+            "번역 시간 초과 후 Editor 복구를 개선해 편집 기록과 임시 줄을 보존합니다."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 라이브 세션 동기화와 Editor 복구 기능을 개선했습니다.",
+          "new": [],
+          "improved": [
+            "운영자 콘솔과 관객 뷰가 라이브 세션에 다시 연결하거나 참여한 뒤에도 더 안정적으로 동기화됩니다."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 QLab 출력 옵션과 라이브 큐 복구 기능을 개선했습니다.",
+          "new": [],
+          "improved": [
+            "QLab 팩을 더 안전하게 다운로드하고 다시 가져올 수 있습니다.",
+            "운영자 콘솔이 다시 연결되거나 업데이트를 받을 때 라이브 큐 상태를 더 안정적으로 복구합니다."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 QLab 쇼 팩을 더 유연하고 재사용하기 쉽게 만들었습니다.",
+          "new": [],
+          "improved": [
+            "QLab 출력을 같은 화면 또는 별도 화면으로 라우팅하는 옵션을 추가했습니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 QLab 팩 처리를 개선했습니다.",
+          "new": [],
+          "improved": [
+            "QLab 팩에서 출력별 언어 옵션을 추가했습니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 QLab 기반 자막 투사를 웹으로 가져왔습니다.",
+          "new": [
+            "투사 자막과 관객 캡션을 위한 QLab 큐 동기화 베타 및 공연 준비 가이드를 선보였습니다."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 QLab 공연 준비와 관객 복구 기능을 확장했습니다.",
+          "new": [
+            "공연 준비를 위해 구성 가능한 QLab Projection Pack과 오프라인 스프레드시트 내보내기를 추가했습니다."
+          ],
+          "improved": [
+            "짧은 연결 중단 후 관객 화면이 더 안정적으로 다시 연결됩니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 스크립트 분석과 현지화된 안내를 개선했습니다.",
+          "new": [],
+          "improved": [
+            "화자 이름표가 없는 대사나 화자 이름과 대사가 분리된 경우에도 스크립트 분석이 더 잘 처리합니다.",
+            "지원 언어 전반에서 스크립트 검사 안내를 더 명확하게 했습니다."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 자막 연속성과 관객 피드백 복구 기능을 개선했습니다.",
+          "new": [],
+          "improved": [
+            "일시적인 연결 문제 후에도 관객 피드백을 다시 제출할 수 있습니다."
+          ],
+          "fixed": [
+            "내용이 없는 라이브 업데이트가 현재 자막을 대체하지 않도록 수정했습니다."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 라이브 세션 복구 기능을 개선했습니다.",
+          "new": [],
+          "improved": [
+            "짧은 연결 중단 후 라이브 제어와 관객 화면이 더 안정적으로 복구됩니다."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 기간 한정 패스를 추가하고 스크립트와 관객 워크플로를 개선했습니다.",
+          "new": [
+            "공연 주간에 기간 한정으로 이용할 수 있는 Show Week Pass를 추가했습니다."
+          ],
+          "improved": [
+            "캡션을 보는 관객이 원래 언어로 더 쉽게 돌아갈 수 있습니다."
+          ],
+          "fixed": [
+            "출연진 목록 다음에 나오는 대사가 스크립트 분석에서 보존되도록 수정했습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 공연 준비를 위한 QLab 내보내기 도구를 추가했습니다.",
+          "new": [
+            "다운로드 가능한 QLab 큐 맵과 공연 준비용 내보내기 기능을 추가했습니다."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 라이브 시작 안내와 현지화된 가이드를 다듬었습니다.",
+          "new": [],
+          "improved": [
+            "Go Live 안내를 명확히 하고 현지화된 제품 가이드에서 미디어와 캡션이 다시 표시되도록 했습니다."
+          ],
+          "fixed": [
+            "강조 표시된 요금제 카드의 표시 문제를 수정했습니다."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "이번 릴리스에서는 스크립트 검토 제어 기능을 추가하고 협업을 강화했습니다.",
+          "new": [
+            "스크립트 분석 전에 편집 가능한 출연진 검토 단계를 추가했습니다."
+          ],
+          "improved": [
+            "출연진 목록, 분절된 대사, 불분명한 화자 큐에 대한 스크립트 분석을 개선했습니다."
+          ],
+          "fixed": [
+            "협업자가 자신이 저장한 버전을 삭제할 수 있도록 복구했습니다."
+          ]
+        }
+      ]
     }
   ]
 }

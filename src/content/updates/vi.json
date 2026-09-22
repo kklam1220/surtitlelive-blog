@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "Bản cập nhật lớn cho phụ đề trực tiếp, tùy chọn tổ chức, thiết lập trình chiếu, chỉnh sửa và chuẩn bị kịch bản.",
-          "new": [
-            "Giới thiệu Pockitle Live Web Beta cho phụ đề và dịch theo thời gian thực mà không cần kịch bản chuẩn bị trước.",
-            "Bổ sung liên kết Pockitle Audience, phòng đầu ra đa ngôn ngữ, trình chiếu qua trình duyệt và tùy chọn điều khiển phụ đề thủ công.",
-            "Bổ sung thiết lập tổ chức để tắt generative AI trong khi vẫn giữ bản dịch máy tiêu chuẩn."
-          ],
+          "summary": "Bản phát hành này cải thiện khả năng kiểm soát phiên trực tiếp, thiết lập trình chiếu và cộng tác trong Editor.",
+          "new": [],
           "improved": [
-            "Thiết kế lại thiết lập trình chiếu với điều khiển rõ ràng hơn, preset có thể tái sử dụng, xử lý đầu ra an toàn hơn và khả năng sẵn sàng ngoại tuyến tốt hơn.",
+            "Cải thiện thiết lập trình chiếu với điều khiển rõ ràng hơn, preset có thể tái sử dụng và xử lý đầu ra an toàn hơn.",
             "Cải thiện độ tin cậy của việc lưu, lịch sử, cộng tác và chỉnh sửa cấu trúc trong Editor.",
             "Mở rộng phân tích kịch bản cho tài liệu rời rạc, không có cue và ít cấu trúc.",
-            "Cập nhật trang sản phẩm công khai, hướng dẫn, hỗ trợ ngôn ngữ và quy trình bắt đầu sử dụng.",
-            "Live Console mới mở sẽ chỉ ở chế độ đọc khi một console khác đang hoạt động hoặc khởi động, với thao tác Take Over rõ ràng."
+            "Live Console mới mở vẫn ở chế độ chỉ đọc khi một console khác đang hoạt động hoặc khởi động, đồng thời có thao tác Take Over rõ ràng."
           ],
           "fixed": [
-            "Sửa các trường hợp thay đổi thủ công trong Editor có thể bị mất hoặc ghi đè.",
             "Sửa các vấn đề kết nối lại, đồng bộ trạng thái và điều khiển của người vận hành trong phiên trực tiếp."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này bổ sung tùy chọn kiểm soát AI tạo sinh ở cấp tổ chức và giúp việc chuẩn bị phiên trực tiếp rõ ràng hơn.",
+          "new": [
+            "Bổ sung tùy chọn kiểm soát AI tạo sinh trên toàn tổ chức, đồng thời vẫn cung cấp tính năng dịch máy tiêu chuẩn."
+          ],
+          "improved": [
+            "Bổ sung bước kiểm tra mức độ sẵn sàng của khán giả trước khi buổi diễn trực tiếp bắt đầu."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này mở rộng trải nghiệm Pockitle được bản địa hóa.",
+          "new": [
+            "Bổ sung các trang sản phẩm Pockitle được bản địa hóa, thông tin ngôn ngữ và hướng dẫn quy trình làm việc."
+          ],
+          "improved": [
+            "Cải thiện bố cục các trang Pockitle trên màn hình hẹp."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này giới thiệu Pockitle Live Beta và mở rộng quy trình làm việc với kịch bản và Editor.",
+          "new": [
+            "Giới thiệu Pockitle Live Web Beta để tạo phụ đề và dịch trực tiếp mà không cần kịch bản chuẩn bị trước, cùng với liên kết Audience, phòng đầu ra đa ngôn ngữ, trình chiếu qua trình duyệt và tùy chọn điều khiển phụ đề thủ công.",
+            "Bổ sung thao tác hàng loạt để chỉnh sửa nhiều dòng kịch bản."
+          ],
+          "improved": [
+            "Phân tích kịch bản hiện hỗ trợ tài liệu ít cấu trúc hơn, có ít hoặc không có cue tường minh."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này giúp các thay đổi thủ công trong Editor đáng tin cậy hơn.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Sửa lỗi có thể làm mất hoặc ghi đè các thay đổi thủ công trong Editor."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện việc nhập kịch bản và khả năng khôi phục của Editor.",
+          "new": [],
+          "improved": [
+            "Tính năng nhập kịch bản xử lý đáng tin cậy hơn các tài liệu Word rời rạc và tài liệu có ít dấu cue tường minh.",
+            "Sau khi dịch quá thời gian chờ, Editor có thể khôi phục mà vẫn giữ lịch sử chỉnh sửa và các dòng tạm thời."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện đồng bộ phiên trực tiếp và khả năng khôi phục của Editor.",
+          "new": [],
+          "improved": [
+            "Bảng điều khiển của người vận hành và màn hình khán giả đồng bộ ổn định hơn sau khi kết nối lại hoặc tham gia phiên trực tiếp."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành mở rộng tùy chọn đầu ra QLab và cải thiện khả năng khôi phục cue trực tiếp.",
+          "new": [],
+          "improved": [
+            "Các gói QLab hiện hỗ trợ tải xuống và nhập lại an toàn hơn.",
+            "Trạng thái cue trực tiếp được khôi phục ổn định hơn khi bảng điều khiển của người vận hành kết nối lại hoặc nhận bản cập nhật."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành giúp các gói chương trình QLab linh hoạt và dễ tái sử dụng hơn.",
+          "new": [],
+          "improved": [
+            "Bổ sung tùy chọn định tuyến đầu ra QLab đến cùng một màn hình hoặc các màn hình riêng biệt."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện khả năng xử lý gói QLab.",
+          "new": [],
+          "improved": [
+            "Bổ sung tùy chọn ngôn ngữ riêng cho từng đầu ra trong gói QLab."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành đưa phụ đề sân khấu dựa trên QLab lên web.",
+          "new": [
+            "Giới thiệu tính năng đồng bộ cue QLab beta cho phụ đề trình chiếu và phụ đề khán giả, kèm hướng dẫn chuẩn bị buổi diễn."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành mở rộng công cụ chuẩn bị chương trình QLab và khả năng khôi phục cho khán giả.",
+          "new": [
+            "Bổ sung QLab Projection Pack có thể cấu hình và tính năng xuất bảng tính ngoại tuyến để chuẩn bị buổi diễn."
+          ],
+          "improved": [
+            "Màn hình khán giả kết nối lại đáng tin cậy hơn sau những gián đoạn ngắn."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện phân tích kịch bản và hướng dẫn được bản địa hóa.",
+          "new": [],
+          "improved": [
+            "Phân tích kịch bản xử lý tốt hơn lời thoại không có nhãn người nói hoặc có tên được tách khỏi lời thoại.",
+            "Hướng dẫn kiểm tra kịch bản được bản địa hóa rõ ràng hơn ở các ngôn ngữ được hỗ trợ."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện tính liên tục của phụ đề và khả năng khôi phục phản hồi từ khán giả.",
+          "new": [],
+          "improved": [
+            "Có thể gửi lại phản hồi từ khán giả sau sự cố kết nối tạm thời."
+          ],
+          "fixed": [
+            "Các bản cập nhật trực tiếp trống không còn thay thế phụ đề hiện tại."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành cải thiện khả năng khôi phục phiên trực tiếp.",
+          "new": [],
+          "improved": [
+            "Điều khiển trực tiếp và chế độ xem của khán giả khôi phục ổn định hơn sau các gián đoạn kết nối ngắn."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành bổ sung vé có thời hạn và cải thiện quy trình làm việc với kịch bản và khán giả.",
+          "new": [
+            "Bổ sung Show Week Pass để sử dụng trong thời hạn giới hạn của tuần diễn."
+          ],
+          "improved": [
+            "Khán giả có thể quay lại ngôn ngữ gốc dễ dàng hơn khi xem phụ đề."
+          ],
+          "fixed": [
+            "Phân tích kịch bản hiện giữ lại lời thoại xuất hiện sau phần danh sách diễn viên."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành bổ sung công cụ xuất QLab để chuẩn bị buổi diễn.",
+          "new": [
+            "Bổ sung bản đồ cue QLab có thể tải xuống và các tệp xuất để chuẩn bị chương trình."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành làm rõ hướng dẫn phiên trực tiếp và hoàn thiện các hướng dẫn được bản địa hóa.",
+          "new": [],
+          "improved": [
+            "Làm rõ hướng dẫn Go Live và khôi phục hình ảnh, phụ đề trong các hướng dẫn sản phẩm được bản địa hóa."
+          ],
+          "fixed": [
+            "Sửa lỗi hiển thị các thẻ gói giá được làm nổi bật."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành bổ sung các bước kiểm soát rà soát kịch bản và củng cố khả năng cộng tác.",
+          "new": [
+            "Bổ sung bước rà soát danh sách diễn viên có thể chỉnh sửa trước khi phân tích kịch bản."
+          ],
+          "improved": [
+            "Cải thiện phân tích kịch bản đối với danh sách diễn viên, lời thoại rời rạc và dấu hiệu người nói không rõ ràng."
+          ],
+          "fixed": [
+            "Khôi phục khả năng xóa các phiên bản đã lưu của chính mình cho người cộng tác."
+          ]
+        }
+      ]
     }
   ]
 }

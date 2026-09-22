@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "Un aggiornamento importante per sottotitoli dal vivo, controlli dell’organizzazione, configurazione della proiezione, modifica e preparazione degli script.",
-          "new": [
-            "Introdotta la Pockitle Live Web Beta per sottotitoli e traduzione in tempo reale senza uno script preparato.",
-            "Aggiunti link Pockitle Audience, sale di output multilingue, proiezione dal browser e controlli manuali dei sottotitoli.",
-            "Aggiunta un’impostazione dell’organizzazione per disabilitare l’IA generativa mantenendo la traduzione automatica standard."
-          ],
+          "summary": "Questa versione ha perfezionato il controllo delle sessioni dal vivo, la configurazione della proiezione e la collaborazione in Editor.",
+          "new": [],
           "improved": [
-            "Ripensata la configurazione della proiezione con controlli più chiari, preset riutilizzabili, gestione più sicura dell’output e migliore preparazione offline.",
-            "Migliorati salvataggio, cronologia, collaborazione e affidabilità della modifica strutturale in Editor.",
+            "È stata perfezionata la configurazione della proiezione con controlli più chiari, preset riutilizzabili e una gestione più sicura delle uscite.",
+            "Migliorati il salvataggio, la cronologia, la collaborazione e l’affidabilità della modifica strutturale in Editor.",
             "Ampliata l’analisi degli script per documenti frammentati, privi di cue e meno strutturati.",
-            "Aggiornate le pagine pubbliche del prodotto, le guide, il supporto linguistico e i flussi di onboarding.",
-            "Una Live Console appena aperta resta in sola lettura mentre un’altra console è attiva o in avvio, con un’azione esplicita «Rileva controllo»."
+            "Una Live Console appena aperta resta in sola lettura quando un’altra console è attiva o in avvio, con un’azione esplicita per assumerne il controllo."
           ],
           "fixed": [
-            "Corretti i casi in cui le modifiche manuali di Editor potevano andare perse o essere sovrascritte.",
             "Corretti i problemi di riconnessione, sincronizzazione dello stato e controllo dell’operatore durante le sessioni dal vivo."
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha aggiunto controlli organizzativi per l’IA generativa e migliorato la preparazione delle sessioni dal vivo.",
+          "new": [
+            "Aggiunto un controllo a livello di organizzazione per disattivare l’IA generativa mantenendo disponibile la traduzione automatica standard."
+          ],
+          "improved": [
+            "Aggiunto un controllo di preparazione del pubblico prima dell’inizio di uno spettacolo dal vivo."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha ampliato l’esperienza Pockitle localizzata.",
+          "new": [
+            "Aggiunte pagine prodotto Pockitle localizzate, informazioni sulle lingue e guide ai flussi di lavoro."
+          ],
+          "improved": [
+            "Migliorati i layout delle pagine Pockitle sugli schermi stretti."
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha introdotto Pockitle Live Web Beta e ampliato i flussi di lavoro per script ed Editor.",
+          "new": [
+            "Introdotta Pockitle Live Web Beta per sottotitoli e traduzione dal vivo senza uno script preparato, con link Audience, sale di output multilingue, proiezione dal browser e controlli manuali dei sottotitoli.",
+            "Aggiunte azioni in blocco per modificare più righe dello script."
+          ],
+          "improved": [
+            "L’analisi degli script supporta ora documenti meno strutturati, con pochi o nessun cue esplicito."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha reso più affidabili le modifiche manuali in Editor.",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "Corretto un problema che poteva causare la perdita o la sovrascrittura delle modifiche manuali in Editor."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato l’importazione degli script e il ripristino di Editor.",
+          "new": [],
+          "improved": [
+            "L’importazione degli script gestisce con maggiore affidabilità i documenti Word frammentati e quelli con meno cue espliciti.",
+            "Migliorato il ripristino di Editor dopo il timeout di una traduzione, mantenendo la cronologia delle modifiche e le righe temporanee."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato la sincronizzazione delle sessioni dal vivo e il ripristino di Editor.",
+          "new": [],
+          "improved": [
+            "Le console degli operatori e le viste del pubblico si sincronizzano in modo più affidabile dopo una riconnessione o l’accesso a una sessione dal vivo."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato le opzioni di output QLab e il ripristino dei cue dal vivo.",
+          "new": [],
+          "improved": [
+            "I pacchetti QLab supportano ora download e reimportazioni più sicuri.",
+            "Lo stato dei cue dal vivo viene ripristinato in modo più affidabile quando una console operatore si riconnette o riceve un aggiornamento."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha reso i pacchetti QLab per gli spettacoli più flessibili e riutilizzabili.",
+          "new": [],
+          "improved": [
+            "Aggiunte opzioni per instradare le uscite QLab sullo stesso schermo o su schermi separati."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato la gestione dei pacchetti QLab.",
+          "new": [],
+          "improved": [
+            "Aggiunte opzioni linguistiche per ogni uscita dei pacchetti QLab."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha portato sul web i sopratitoli basati su QLab.",
+          "new": [
+            "Introdotta la sincronizzazione beta dei cue QLab per i sopratitoli proiettati e per il pubblico, con guide per la preparazione dello spettacolo."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha ampliato la preparazione degli spettacoli con QLab e il ripristino delle viste del pubblico.",
+          "new": [
+            "Aggiunti pacchetti di proiezione QLab configurabili ed esportazioni di fogli di calcolo offline per preparare gli spettacoli."
+          ],
+          "improved": [
+            "Gli schermi del pubblico si riconnettono in modo più affidabile dopo brevi interruzioni."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato l’analisi degli script e le indicazioni localizzate.",
+          "new": [],
+          "improved": [
+            "L’analisi degli script gestisce meglio i dialoghi senza etichette del parlante o con i nomi separati dal dialogo.",
+            "Le indicazioni per il controllo degli script sono più chiare nelle lingue supportate."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato la continuità dei sottotitoli e il recupero dei feedback del pubblico.",
+          "new": [],
+          "improved": [
+            "È possibile inviare di nuovo i feedback del pubblico dopo un problema temporaneo di connessione."
+          ],
+          "fixed": [
+            "Gli aggiornamenti dal vivo vuoti non sostituiscono più il sottotitolo corrente."
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha migliorato il ripristino delle sessioni dal vivo.",
+          "new": [],
+          "improved": [
+            "I controlli dal vivo e le viste del pubblico si ripristinano in modo più affidabile dopo brevi interruzioni della connessione."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha aggiunto un pass a tempo limitato e migliorato i flussi di lavoro per gli script e il pubblico.",
+          "new": [
+            "Aggiunto Show Week Pass per l’accesso a tempo limitato durante una settimana di produzione."
+          ],
+          "improved": [
+            "Ora il pubblico può tornare più facilmente alla lingua originale mentre visualizza i sottotitoli."
+          ],
+          "fixed": [
+            "L’analisi degli script conserva ora i dialoghi che seguono le informazioni sul cast."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha aggiunto strumenti di esportazione QLab per la preparazione degli spettacoli.",
+          "new": [
+            "Aggiunte mappe dei cue QLab scaricabili ed esportazioni per preparare gli spettacoli."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha chiarito le indicazioni per le sessioni dal vivo e perfezionato le guide localizzate.",
+          "new": [],
+          "improved": [
+            "Le indicazioni per avviare una sessione dal vivo sono più chiare e i contenuti multimediali con le relative didascalie sono stati ripristinati nelle guide prodotto localizzate."
+          ],
+          "fixed": [
+            "Corretta la visualizzazione delle schede dei piani tariffari in evidenza."
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione ha aggiunto controlli di revisione degli script e rafforzato la collaborazione.",
+          "new": [
+            "Aggiunto un passaggio per rivedere e modificare l’elenco del cast prima dell’analisi dello script."
+          ],
+          "improved": [
+            "Migliorata l’analisi degli script con elenchi del cast, dialoghi frammentati e indicazioni del parlante poco chiare."
+          ],
+          "fixed": [
+            "Ripristinata la possibilità per i collaboratori di eliminare le proprie versioni salvate."
+          ]
+        }
+      ]
     }
   ]
 }

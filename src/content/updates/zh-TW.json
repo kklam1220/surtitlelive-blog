@@ -277,21 +277,15 @@
           "version": "v260815.01",
           "releaseDate": "2026-08-16",
           "product": "SurtitleLive Cloud",
-          "summary": "即時字幕、組織控制、投影設定、編輯及劇本準備的重大更新。",
-          "new": [
-            "推出 Pockitle Live Web Beta，在沒有預先準備劇本的情況下提供即時字幕及翻譯。",
-            "加入 Pockitle Audience 連結、多語言輸出房間、瀏覽器投影及手動字幕控制。",
-            "加入組織設定，可在保留標準機器翻譯的同時停用生成式人工智慧。"
-          ],
+          "summary": "此版本改善了即時工作階段控制、投影設定及編輯器協作。",
+          "new": [],
           "improved": [
-            "重新設計投影設定，提供更清楚的控制項、可重用的預設設定、更安全的輸出處理及更完善的離線準備。",
+            "改善投影設定，提供更清楚的控制項、可重用的預設設定及更安全的輸出處理。",
             "改善編輯器的儲存、歷程、協作及結構化編輯可靠性。",
             "擴展劇本分析，支援片段化、無 cue 及結構較少的文件。",
-            "更新公開產品頁面、指南、語言支援及入門流程。",
             "當另一個 Live Console 正在使用或啟動時，新開啟的 Live Console 會保持唯讀，並提供明確的「接管」操作。"
           ],
           "fixed": [
-            "修正編輯器手動變更可能遺失或被覆寫的情況。",
             "修正即時工作階段中的重新連線、狀態同步及操作員控制問題。"
           ]
         }
@@ -300,12 +294,289 @@
     {
       "startDate": "2026-08-09",
       "endDate": "2026-08-15",
-      "versions": []
+      "versions": [
+        {
+          "version": "v260812.01",
+          "releaseDate": "2026-08-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增組織層級的生成式 AI 控制，並讓即時工作階段準備狀態更清晰。",
+          "new": [
+            "新增組織全域的生成式 AI 控制，同時保留標準機器翻譯功能。"
+          ],
+          "improved": [
+            "新增即時演出開始前的觀眾準備狀態檢查。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260810.01",
+          "releaseDate": "2026-08-10",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本擴展了本地化的 Pockitle 體驗。",
+          "new": [
+            "新增本地化的 Pockitle 產品頁面、語言資訊及工作流程指南。"
+          ],
+          "improved": [
+            "改善 Pockitle 頁面在窄螢幕上的版面配置。"
+          ],
+          "fixed": []
+        }
+      ]
     },
     {
       "startDate": "2026-08-02",
       "endDate": "2026-08-08",
+      "versions": [
+        {
+          "version": "v260807.01",
+          "releaseDate": "2026-08-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本推出 Pockitle Live Beta，並擴展劇本及編輯器工作流程。",
+          "new": [
+            "推出 Pockitle Live Web Beta，無需預先準備劇本即可提供即時字幕與翻譯，並包含 Audience 連結、多語言輸出房間、瀏覽器投影及手動字幕控制。",
+            "新增可一次編輯多行劇本的批次操作。"
+          ],
+          "improved": [
+            "劇本分析現在支援結構較鬆散、明確提示較少或沒有明確 cue 的文件。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260805.01",
+          "releaseDate": "2026-08-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本提升了編輯器手動變更的可靠性。",
+          "new": [],
+          "improved": [],
+          "fixed": [
+            "修正編輯器中的手動變更可能遺失或遭覆寫的問題。"
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "versions": [
+        {
+          "version": "v260726.01",
+          "releaseDate": "2026-07-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了劇本匯入及編輯器復原能力。",
+          "new": [],
+          "improved": [
+            "劇本匯入現在能更可靠地處理內容片段化的 Word 文件，以及明確提示較少的文件。",
+            "翻譯逾時後，編輯器復原功能會保留編輯歷程及暫存行。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-25",
+      "versions": [
+        {
+          "version": "v260722.01",
+          "releaseDate": "2026-07-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了即時工作階段同步及編輯器復原能力。",
+          "new": [],
+          "improved": [
+            "操作員控制台與觀眾畫面在重新連線或加入即時工作階段後能更可靠地同步。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-18",
+      "versions": [
+        {
+          "version": "v260712.01",
+          "releaseDate": "2026-07-12",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本擴展 QLab 輸出選項，並改善即時提示復原。",
+          "new": [],
+          "improved": [
+            "QLab 套件現在支援更安全的下載及重新匯入。",
+            "操作員控制台重新連線或收到更新時，即時提示狀態能更可靠地復原。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-07-05",
+      "endDate": "2026-07-11",
+      "versions": [
+        {
+          "version": "v260708.01",
+          "releaseDate": "2026-07-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本讓 QLab 演出套件更加靈活且可重複使用。",
+          "new": [],
+          "improved": [
+            "新增 QLab 輸出路由選項，可將輸出安排在同一個或不同的螢幕。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260706.02",
+          "releaseDate": "2026-07-06",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了 QLab 套件處理方式。",
+          "new": [],
+          "improved": [
+            "新增 QLab 套件的個別輸出語言選項。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260705.02",
+          "releaseDate": "2026-07-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本將 QLab 字幕提示同步功能帶到網頁版。",
+          "new": [
+            "推出 QLab 提示同步測試版，可用於投影字幕及觀眾字幕，並提供演出準備指南。"
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-28",
+      "endDate": "2026-07-04",
       "versions": []
+    },
+    {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-27",
+      "versions": [
+        {
+          "version": "v260624.01",
+          "releaseDate": "2026-06-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本擴展 QLab 演出準備功能及觀眾復原能力。",
+          "new": [
+            "新增可設定的 QLab Projection Pack，以及供演出準備使用的離線試算表匯出功能。"
+          ],
+          "improved": [
+            "觀眾畫面在短暫中斷後能更可靠地重新連線。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260621.01",
+          "releaseDate": "2026-06-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了劇本分析及本地化指南。",
+          "new": [],
+          "improved": [
+            "劇本分析更能處理沒有講者標籤的對白，或講者姓名與對白分開的情況。",
+            "各支援語言的本地化劇本檢查指南更加清晰。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-20",
+      "versions": [
+        {
+          "version": "v260616.01",
+          "releaseDate": "2026-06-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了字幕連續性及觀眾意見回復機制。",
+          "new": [],
+          "improved": [
+            "發生暫時性連線問題後，可以重新提交觀眾意見。"
+          ],
+          "fixed": [
+            "空白的即時更新不會再取代目前字幕。"
+          ]
+        },
+        {
+          "version": "v260615.01",
+          "releaseDate": "2026-06-15",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了即時工作階段復原能力。",
+          "new": [],
+          "improved": [
+            "即時控制項及觀眾畫面在短暫中斷後能更可靠地復原。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260614.01",
+          "releaseDate": "2026-06-14",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增限時通行證，並改善劇本及觀眾工作流程。",
+          "new": [
+            "新增 Show Week Pass，讓使用者在製作週期間取得限時使用權。"
+          ],
+          "improved": [
+            "觀眾查看字幕時，更容易切換回原文。"
+          ],
+          "fixed": [
+            "劇本分析現在會保留演員名單內容後方的對白。"
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "versions": [
+        {
+          "version": "v260607.01",
+          "releaseDate": "2026-06-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增 QLab 演出準備匯出工具。",
+          "new": [
+            "新增可下載的 QLab 提示對照表及演出準備匯出檔。"
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-31",
+      "endDate": "2026-06-06",
+      "versions": [
+        {
+          "version": "v260604.01",
+          "releaseDate": "2026-06-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本讓即時工作階段指南更清晰，並完善本地化指南。",
+          "new": [],
+          "improved": [
+            "釐清 Go Live 指南，並在各語言的產品指南中還原媒體及字幕。"
+          ],
+          "fixed": [
+            "修正醒目顯示的方案卡片問題。"
+          ]
+        },
+        {
+          "version": "v260601.01",
+          "releaseDate": "2026-06-02",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增劇本檢閱控制項，並強化協作功能。",
+          "new": [
+            "新增可編輯的演員名單檢閱步驟，可在劇本分析前使用。"
+          ],
+          "improved": [
+            "改善對演員名單、片段化對白及不明確講者提示的劇本分析。"
+          ],
+          "fixed": [
+            "恢復協作者刪除自己已儲存版本的功能。"
+          ]
+        }
+      ]
     }
   ]
 }
