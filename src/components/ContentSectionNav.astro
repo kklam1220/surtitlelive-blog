@@ -1,0 +1,41 @@
+---
+interface Props {
+	articlesLabel: string;
+	updatesLabel: string;
+	articlesHref: string;
+	updatesHref: string;
+	current: 'articles' | 'updates';
+}
+
+const { articlesLabel, updatesLabel, articlesHref, updatesHref, current } = Astro.props;
+---
+
+<nav class="content-section-nav" aria-label={`${articlesLabel} / ${updatesLabel}`}>
+	<a href={articlesHref} aria-current={current === 'articles' ? 'page' : undefined}>{articlesLabel}</a>
+	<a href={updatesHref} aria-current={current === 'updates' ? 'page' : undefined}>{updatesLabel}</a>
+</nav>
+
+<style>
+	.content-section-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 0 0 2rem;
+	}
+
+	.content-section-nav a {
+		border: 1px solid #d1d5db;
+		border-radius: 999px;
+		color: #374151;
+		font-weight: 700;
+		padding: 0.55rem 1rem;
+		text-decoration: none;
+	}
+
+	.content-section-nav a:hover,
+	.content-section-nav a[aria-current='page'] {
+		background: #111827;
+		border-color: #111827;
+		color: #fff;
+	}
+</style>

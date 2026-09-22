@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import ProductUpdatesPage from '../../components/ProductUpdatesPage.astro';
+import { listIndexedLocalizedLocales, listLocalizedLocales } from '../../lib/localizedBlog';
+
+const entry = (await getCollection('updates')).find((item) => item.data.locale === 'en');
+if (!entry) throw new Error('Missing English Product Updates content.');
+const baseUrl = import.meta.env.BASE_URL ?? '/';
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const canonicalPath = `${normalizedBaseUrl}updates/`;
+const hreflangs = [
+	{ lang: 'en', path: canonicalPath },
+	...listIndexedLocalizedLocales().map((locale) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/updates/` })),
+	{ lang: 'x-default', path: canonicalPath },
+];
+const localeLinks = [
+	{ lang: 'en', path: canonicalPath },
+	...listLocalizedLocales().map((locale) => ({ lang: locale, path: `${normalizedBaseUrl}${locale}/updates/` })),
+	{ lang: 'x-default', path: canonicalPath },
+];
+---
+
+<ProductUpdatesPage
+	{entry}
+	{canonicalPath}
+	articlesHref={normalizedBaseUrl}
+	updatesHref={canonicalPath}
+	{hreflangs}
+	{localeLinks}
+/>

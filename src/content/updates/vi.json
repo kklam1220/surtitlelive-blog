@@ -1,0 +1,275 @@
+{
+  "locale": "vi",
+  "title": "Cập nhật sản phẩm SurtitleLive",
+  "description": "Các bản cập nhật SurtitleLive hằng tuần trên production, được nhóm theo phiên bản với ghi chú ngắn gọn về tính năng mới, cải tiến và lỗi người dùng có thể thấy.",
+  "intro": "Bản ghi ngắn gọn về những thay đổi hướng đến người dùng đã được đưa lên production. Các tính năng lớn vẫn được trình bày trong bài viết và hướng dẫn riêng; công việc triển khai nội bộ không được liệt kê ở đây.",
+  "labels": {
+    "articles": "Bài viết",
+    "productUpdates": "Cập nhật sản phẩm",
+    "weekOf": "Tuần bắt đầu",
+    "released": "Đã phát hành",
+    "availability": "Khả dụng",
+    "production": "Production",
+    "product": "Sản phẩm",
+    "new": "Mới",
+    "improved": "Cải tiến",
+    "fixed": "Đã sửa",
+    "noPublicRelease": "Tuần này không có bản cập nhật production hướng đến người dùng nào được xác nhận.",
+    "noActionRequired": "Bạn không cần thực hiện thao tác nào. Các bản phát hành ứng dụng native sử dụng phiên bản và bản ghi phát hành riêng."
+  },
+  "weeks": [
+    {
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-26",
+      "versions": [
+        {
+          "version": "v260921.01",
+          "releaseDate": "2026-09-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này khôi phục các điểm truy cập Pockitle được bản địa hóa và mở rộng trải nghiệm ngôn ngữ công khai được giới thiệu.",
+          "new": ["Bổ sung các trang công khai và nội dung lập kế hoạch bằng tiếng Bồ Đào Nha Brazil cho trải nghiệm Pockitle được bản địa hóa."],
+          "improved": ["Khôi phục thao tác Bắt đầu theo locale trên các trang Pockitle Live và sửa điều hướng công khai được bản địa hóa."],
+          "fixed": []
+        },
+        {
+          "version": "v260920.01",
+          "releaseDate": "2026-09-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này mở rộng các tùy chọn tài khoản và cải thiện khâu chuẩn bị trước một phiên trực tiếp.",
+          "new": ["Mở rộng Cài đặt tài khoản với thông tin nhận dạng, quyền truy cập đặt lại mật khẩu, xem xét chấp thuận pháp lý, tùy chọn đăng xuất khỏi mọi thiết bị và trạng thái hoặc hủy xóa tài khoản."],
+          "improved": [
+            "Cải thiện kiểm tra đầu vào sân khấu, hướng dẫn thiết lập micrô và mức độ sẵn sàng của khán giả trước khi phát trực tiếp.",
+            "Cải thiện việc xóa tài khoản và dọn dẹp các phiên liên kết."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-19",
+      "versions": [
+        {
+          "version": "v260918.01",
+          "releaseDate": "2026-09-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này giúp việc khôi phục dự án và giữ cấu trúc kịch bản đã nhập đáng tin cậy hơn.",
+          "new": [],
+          "improved": [
+            "Lỗi tra cứu kịch bản tạm thời không còn khiến dự án hiển thị như không có kịch bản; dự án có thể thử lại trong khi dữ liệu hiện có vẫn sẵn sàng.",
+            "Nhập kịch bản nay giữ tốt hơn lời thoại in nghiêng và chỉ dẫn sân khấu rõ ràng đứng sau lời thoại."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260915.01",
+          "releaseDate": "2026-09-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này giới thiệu trang chủ công khai và lối vào Live riêng, được bản địa hóa cho Pockitle.",
+          "new": ["Bổ sung trang chủ công khai Pockitle và trải nghiệm Live được bản địa hóa, cùng điều hướng, trang liên hệ và pháp lý tương ứng, metadata web có thể cài đặt và nhận diện hình ảnh."],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260913.01",
+          "releaseDate": "2026-09-13",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện hướng dẫn khôi phục, xử lý phiên hết hạn và cấu trúc cue đã nhập.",
+          "new": [],
+          "improved": [
+            "Thông báo mở khóa người vận hành và khôi phục mật khẩu nay giải thích bước tiếp theo rõ ràng hơn.",
+            "Phân tích kịch bản giữ tốt hơn cấu trúc cue đã nhập trong tài liệu."
+          ],
+          "fixed": ["Ảnh chụp khán giả đã hết hạn và các phiên Viewer đã ngừng hoạt động không còn hiển thị nội dung trực tiếp cũ."]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-06",
+      "endDate": "2026-09-12",
+      "versions": [
+        {
+          "version": "v260911.01",
+          "releaseDate": "2026-09-11",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện khả năng khôi phục trên dự án, đăng ký và các phiên trực tiếp được tiếp tục.",
+          "new": [],
+          "improved": [
+            "Màn hình dự án và đăng ký khôi phục tốt hơn sau gián đoạn tạm thời khi tải dữ liệu hoặc tài sản.",
+            "Người vận hành có thể lấy lại quyền điều khiển trực tiếp đáng tin cậy hơn sau khi tiếp tục phiên, còn các báo cáo được lưu mở lại ổn định hơn."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260909.01",
+          "releaseDate": "2026-09-09",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện các phiên kéo dài, phản hồi của khán giả và nhập kịch bản.",
+          "new": [],
+          "improved": [
+            "Các phiên trực tiếp kéo dài khôi phục đáng tin cậy hơn.",
+            "Nhập kịch bản giữ tốt hơn ngữ cảnh dàn diễn viên và cue."
+          ],
+          "fixed": ["Bản nháp phản hồi của khán giả được giữ lại sau khi khởi động lại, và người dùng vẫn có thể gửi phản hồi sau khi buổi diễn kết thúc."]
+        },
+        {
+          "version": "v260908.01",
+          "releaseDate": "2026-09-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này thêm quy trình phản hồi khán giả sau buổi diễn theo tùy chọn và cải thiện tính liên tục của báo cáo.",
+          "new": ["Bổ sung khảo sát khán giả sau buổi diễn theo tùy chọn, với sự đồng ý rõ ràng và quy trình dẫn đến báo cáo cuối buổi."],
+          "improved": [
+            "Giữ Live Console và màn hình khán giả khả dụng trong suốt buổi diễn.",
+            "Cải thiện bản nháp phản hồi và lịch sử báo cáo qua các lần khởi động lại và những phiên trước."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-30",
+      "endDate": "2026-09-05",
+      "versions": [
+        {
+          "version": "v260904.03",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này sửa quy trình đăng ký và một số trường hợp khôi phục sau khi buổi diễn kết thúc.",
+          "new": [],
+          "improved": ["Thông báo hoàn tất và khôi phục nay đã được bản địa hóa."],
+          "fixed": [
+            "Đăng ký nay hoàn tất thiết lập tài khoản trước khi mở dashboard.",
+            "Điều hướng chương trình và các tùy chọn kết thúc buổi diễn khôi phục đáng tin cậy hơn.",
+            "Tạm dừng buổi diễn nay giữ lại dòng phụ đề cuối cùng."
+          ]
+        },
+        {
+          "version": "v260904.02",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện thiết lập lần đầu, khởi chạy mô phỏng và hướng dẫn quy trình bản địa hóa.",
+          "new": [],
+          "improved": [
+            "Thiết lập lần đầu không còn hiển thị lỗi dashboard giả trong khi thiết lập tài khoản vẫn đang hoàn tất.",
+            "Khởi chạy mô phỏng nay chờ ngữ cảnh dự án đang hoạt động, tránh lỗi bàn giao trong lúc tải.",
+            "Cải thiện tính nhất quán của nội dung sản phẩm và hướng dẫn quy trình được bản địa hóa trên các ngôn ngữ được hỗ trợ."
+          ],
+          "fixed": ["Liên kết runtime và phản hồi không có nội dung nay hoàn tất đúng cách thay vì bị treo hoặc hiển thị sai."]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-29",
+      "versions": [
+        {
+          "version": "v260827.01",
+          "releaseDate": "2026-08-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này mở rộng hướng dẫn lập kế hoạch sự kiện và cải thiện điều hướng công khai trên máy tính bảng.",
+          "new": ["Bổ sung hướng dẫn lập kế hoạch phụ đề trực tiếp cho hội nghị, lớp học, tọa đàm và các sự kiện có lời nói khác."],
+          "improved": ["Mở rộng các ví dụ quy trình và hướng dẫn lập kế hoạch đã dịch trên những locale được hỗ trợ."],
+          "fixed": ["Khôi phục điều hướng công khai đầy đủ trên bố cục kích thước máy tính bảng."]
+        },
+        {
+          "version": "v260826.02",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này giúp khởi động phiên trực tiếp rõ ràng và bền bỉ hơn.",
+          "new": [],
+          "improved": ["Lỗi quyền micro nay cung cấp hướng dẫn khôi phục rõ ràng hơn."],
+          "fixed": ["Các yêu cầu bắt đầu chương trình lặp lại nay tiếp tục lần khởi động hiện có thay vì tạo trạng thái phiên trùng lặp."]
+        },
+        {
+          "version": "v260826.01",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện kiểu chữ phụ đề trên các chế độ xem khán giả và trình chiếu.",
+          "new": [],
+          "improved": ["Phụ đề khán giả và trình chiếu nay dùng phông chữ nhất quán theo ngôn ngữ và tôn trọng cỡ chữ đã chọn mà không tự ý thu nhỏ văn bản."],
+          "fixed": []
+        },
+        {
+          "version": "v260824.01",
+          "releaseDate": "2026-08-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện màn hình theo dõi khán giả trên di động cho các bố cục điện thoại.",
+          "new": [],
+          "improved": [
+            "Phụ đề hiện tại, lựa chọn ngôn ngữ, trạng thái trực tiếp và số người xem vẫn dễ đọc trên các bố cục điện thoại được hỗ trợ.",
+            "Cải thiện tính liên tục của đầu ra ngôn ngữ khi một đầu ra tạm thời không khả dụng."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-22",
+      "versions": [
+        {
+          "version": "v260822.01",
+          "releaseDate": "2026-08-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này mở rộng trải nghiệm Pockitle bản địa hóa và tinh chỉnh lịch sử trình chiếu.",
+          "new": ["Bổ sung các trang công khai Pockitle bản địa hóa và danh mục ngôn ngữ được hỗ trợ."],
+          "improved": [
+            "Điều hướng công khai và menu ngôn ngữ vẫn dễ sử dụng trên máy tính bảng và màn hình hẹp.",
+            "Bản xem trước trình chiếu có thể hiển thị một số phụ đề trước đó trong giới hạn, đồng thời giữ phụ đề hiện tại rõ ràng."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260818.01",
+          "releaseDate": "2026-08-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện việc chuẩn bị cho các buổi diễn lặp lại, điều khiển trình chiếu và nhập DOCX.",
+          "new": [],
+          "improved": ["Cải thiện việc chuẩn bị cho các buổi diễn lặp lại và tinh chỉnh điều khiển trình chiếu."],
+          "fixed": ["Nhập DOCX nay giữ lại tiêu đề cảnh và từ chối tệp tải lên quá lớn hoặc không đúng định dạng với kết quả rõ ràng."]
+        },
+        {
+          "version": "v260817.01",
+          "releaseDate": "2026-08-17",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này mở rộng khả năng khám phá nội dung bản địa hóa và giúp việc kết nối lại của khán giả nhất quán hơn.",
+          "new": ["Mở rộng nội dung công khai bản địa hóa và hướng dẫn về sự kiện hoặc phụ đề trực tiếp."],
+          "improved": ["Cải thiện việc xử lý trạng thái khán giả và phiên trực tiếp để các lần kết nối lại và phụ đề được chấp nhận nhất quán hơn."],
+          "fixed": []
+        },
+        {
+          "version": "v260815.01",
+          "releaseDate": "2026-08-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản cập nhật lớn cho phụ đề trực tiếp, tùy chọn tổ chức, thiết lập trình chiếu, chỉnh sửa và chuẩn bị kịch bản.",
+          "new": [
+            "Giới thiệu Pockitle Live Web Beta cho phụ đề và dịch theo thời gian thực mà không cần kịch bản chuẩn bị trước.",
+            "Bổ sung liên kết Pockitle Audience, phòng đầu ra đa ngôn ngữ, trình chiếu qua trình duyệt và tùy chọn điều khiển phụ đề thủ công.",
+            "Bổ sung thiết lập tổ chức để tắt generative AI trong khi vẫn giữ bản dịch máy tiêu chuẩn."
+          ],
+          "improved": [
+            "Thiết kế lại thiết lập trình chiếu với điều khiển rõ ràng hơn, preset có thể tái sử dụng, xử lý đầu ra an toàn hơn và khả năng sẵn sàng ngoại tuyến tốt hơn.",
+            "Cải thiện độ tin cậy của việc lưu, lịch sử, cộng tác và chỉnh sửa cấu trúc trong Editor.",
+            "Mở rộng phân tích kịch bản cho tài liệu rời rạc, không có cue và ít cấu trúc.",
+            "Cập nhật trang sản phẩm công khai, hướng dẫn, hỗ trợ ngôn ngữ và quy trình bắt đầu sử dụng.",
+            "Live Console mới mở sẽ chỉ ở chế độ đọc khi một console khác đang hoạt động hoặc khởi động, với thao tác Take Over rõ ràng."
+          ],
+          "fixed": [
+            "Sửa các trường hợp thay đổi thủ công trong Editor có thể bị mất hoặc ghi đè.",
+            "Sửa các vấn đề kết nối lại, đồng bộ trạng thái và điều khiển của người vận hành trong phiên trực tiếp."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-15",
+      "versions": []
+    },
+    {
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-08",
+      "versions": []
+    }
+  ]
+}

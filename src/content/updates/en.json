@@ -1,0 +1,275 @@
+{
+  "locale": "en",
+  "title": "SurtitleLive Product Updates",
+  "description": "Weekly SurtitleLive production updates, grouped by release version, with concise notes on new features, improvements and user-visible fixes.",
+  "intro": "A concise record of user-facing changes that have reached production. Major features remain in their own articles and guides; internal deployment work is not listed here.",
+  "labels": {
+    "articles": "Articles",
+    "productUpdates": "Product Updates",
+    "weekOf": "Week of",
+    "released": "Released",
+    "availability": "Availability",
+    "production": "Production",
+    "product": "Product",
+    "new": "New",
+    "improved": "Improved",
+    "fixed": "Fixed",
+    "noPublicRelease": "No confirmed user-facing production update this week.",
+    "noActionRequired": "No action is required. Native app releases use separate versions and publication records."
+  },
+  "weeks": [
+    {
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-26",
+      "versions": [
+        {
+          "version": "v260921.01",
+          "releaseDate": "2026-09-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release restored localized Pockitle entry points and expanded the promoted public-language experience.",
+          "new": ["Added Brazilian Portuguese public pages and planning content to the localized Pockitle experience."],
+          "improved": ["Restored the locale-specific Get started action on Pockitle Live pages and corrected localized public navigation."],
+          "fixed": []
+        },
+        {
+          "version": "v260920.01",
+          "releaseDate": "2026-09-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release expanded account controls and improved preparation before a live session.",
+          "new": ["Expanded Account settings with identity details, password-reset access, legal-consent review, sign-out-all-devices controls, and account-deletion status or cancellation."],
+          "improved": [
+            "Improved stage-input checks, microphone setup guidance, and audience readiness before going live.",
+            "Improved account deletion and linked-session cleanup."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-19",
+      "versions": [
+        {
+          "version": "v260918.01",
+          "releaseDate": "2026-09-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release made project recovery and imported script structure more dependable.",
+          "new": [],
+          "improved": [
+            "A temporary script lookup failure no longer makes a project appear to have no script; the project can retry while existing data remains available.",
+            "Script imports better preserve italic dialogue and explicit stage directions that follow dialogue."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260915.01",
+          "releaseDate": "2026-09-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release introduced a dedicated localized public home and Live entry for Pockitle.",
+          "new": ["Added the localized public Pockitle home and Live experience, with matching navigation, contact and legal pages, installable web metadata, and visual identity."],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260913.01",
+          "releaseDate": "2026-09-13",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved recovery guidance, expired-session handling, and imported cue structure.",
+          "new": [],
+          "improved": [
+            "Operator unlock and password-recovery messages now explain the next step more clearly.",
+            "Script analysis better retains typed cue structure in imported documents."
+          ],
+          "fixed": ["Expired audience snapshots and retired viewer sessions no longer present stale live content."]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-06",
+      "endDate": "2026-09-12",
+      "versions": [
+        {
+          "version": "v260911.01",
+          "releaseDate": "2026-09-11",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved recovery across projects, registration, and resumed live sessions.",
+          "new": [],
+          "improved": [
+            "Project and registration screens recover more gracefully from temporary data or asset-loading interruptions.",
+            "Operators can recover live control more reliably after resuming a session, and retained reports reopen more dependably."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260909.01",
+          "releaseDate": "2026-09-09",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved long-running sessions, audience feedback, and script imports.",
+          "new": [],
+          "improved": [
+            "Long-running live sessions recover more reliably.",
+            "Script imports better retain cast and cue context."
+          ],
+          "fixed": ["Audience feedback drafts are preserved after a restart, and feedback can still be submitted after a performance ends."]
+        },
+        {
+          "version": "v260908.01",
+          "releaseDate": "2026-09-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release added an optional post-show audience feedback journey and improved report continuity.",
+          "new": ["Added an optional post-show audience survey with clear consent and an end-of-show report journey."],
+          "improved": [
+            "Kept Live Console and audience screens available throughout a performance.",
+            "Improved feedback drafts and report history across restarts and earlier sessions."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-30",
+      "endDate": "2026-09-05",
+      "versions": [
+        {
+          "version": "v260904.03",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release corrected signup and several end-of-performance recovery cases.",
+          "new": [],
+          "improved": ["Completion and recovery messages are now localized."],
+          "fixed": [
+            "Signup now completes account setup before opening the dashboard.",
+            "Shows navigation and performance-end controls recover more reliably.",
+            "Pausing a performance now preserves the final caption line."
+          ]
+        },
+        {
+          "version": "v260904.02",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved first-time setup, simulation launch, and localized workflow guidance.",
+          "new": [],
+          "improved": [
+            "First-time setup no longer shows a false dashboard failure while account setup is still completing.",
+            "Simulation launch now waits for the active project context, avoiding handoff failures during loading.",
+            "Localized product copy and workflow guidance are more consistent across supported languages."
+          ],
+          "fixed": ["Runtime links and no-content responses now complete cleanly instead of stalling or rendering incorrectly."]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-29",
+      "versions": [
+        {
+          "version": "v260827.01",
+          "releaseDate": "2026-08-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release expanded event-planning guidance and improved public navigation on tablets.",
+          "new": ["Added planning guidance for live captions at conferences, classrooms, panels, and other spoken events."],
+          "improved": ["Expanded translated workflow examples and planning guides across supported locales."],
+          "fixed": ["Restored complete public navigation on tablet-sized layouts."]
+        },
+        {
+          "version": "v260826.02",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release made live-session startup clearer and more resilient.",
+          "new": [],
+          "improved": ["Microphone-permission errors now provide a clearer recovery path."],
+          "fixed": ["Repeated show-start requests now continue the existing startup attempt instead of creating duplicate session state."]
+        },
+        {
+          "version": "v260826.01",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved caption typography across audience and projection views.",
+          "new": [],
+          "improved": ["Audience and projection captions now use consistent language-aware fonts and honor the selected font size without silently shrinking text."],
+          "fixed": []
+        },
+        {
+          "version": "v260824.01",
+          "releaseDate": "2026-08-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved the mobile audience monitor across phone layouts.",
+          "new": [],
+          "improved": [
+            "Current captions, language selection, live status, and viewer count remain readable across supported phone layouts.",
+            "Improved language-output continuity when one output is temporarily unavailable."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-22",
+      "versions": [
+        {
+          "version": "v260822.01",
+          "releaseDate": "2026-08-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release expanded the localized Pockitle experience and refined projection history.",
+          "new": ["Added localized public Pockitle pages and a supported-language catalog."],
+          "improved": [
+            "Public navigation and language menus remain usable on tablets and narrow screens.",
+            "Projection preview can show a bounded number of previous captions while keeping the current caption clear."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260818.01",
+          "releaseDate": "2026-08-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improved repeat-performance preparation, projection controls, and DOCX imports.",
+          "new": [],
+          "improved": ["Improved preparation for repeat performances and refined projection controls."],
+          "fixed": ["DOCX imports now preserve scene headings and reject oversized or malformed uploads with a clear result."]
+        },
+        {
+          "version": "v260817.01",
+          "releaseDate": "2026-08-17",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release expanded localized discovery and made audience reconnection more consistent.",
+          "new": ["Expanded localized public discovery and event or live-caption guidance."],
+          "improved": ["Audience and live-session state handling now keeps reconnects and accepted captions more consistent."],
+          "fixed": []
+        },
+        {
+          "version": "v260815.01",
+          "releaseDate": "2026-08-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "A major update to live captioning, organization controls, projection setup, editing, and script preparation.",
+          "new": [
+            "Introduced the Pockitle Live Web Beta for real-time captions and translation without a prepared script.",
+            "Added Pockitle Audience links, multilingual output rooms, browser projection, and manual caption controls.",
+            "Added an organization setting to disable generative AI while retaining standard machine translation."
+          ],
+          "improved": [
+            "Redesigned projection setup with clearer controls, reusable presets, safer output handling, and improved offline readiness.",
+            "Improved Editor saving, history, collaboration, and structural editing reliability.",
+            "Expanded script analysis for fragmented, cue-less, and less-structured documents.",
+            "Updated public product pages, guides, language support, and onboarding flows.",
+            "A newly opened Live Console remains read-only while another console is active or starting, with an explicit Take Over action."
+          ],
+          "fixed": [
+            "Fixed cases where manual Editor changes could be lost or overwritten.",
+            "Fixed reconnection, state-synchronization, and operator-control issues during live sessions."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-15",
+      "versions": []
+    },
+    {
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-08",
+      "versions": []
+    }
+  ]
+}

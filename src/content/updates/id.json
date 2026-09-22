@@ -1,0 +1,315 @@
+{
+  "locale": "id",
+  "title": "Pembaruan Produk SurtitleLive",
+  "description": "Pembaruan produksi SurtitleLive mingguan, dikelompokkan berdasarkan versi, dengan catatan ringkas tentang fitur baru, peningkatan, dan perbaikan yang terlihat oleh pengguna.",
+  "intro": "Catatan ringkas tentang perubahan yang terlihat oleh pengguna dan telah tersedia di produksi. Fitur utama tetap memiliki artikel dan panduan tersendiri; pekerjaan deployment internal tidak dicantumkan di sini.",
+  "labels": {
+    "articles": "Artikel",
+    "productUpdates": "Pembaruan Produk",
+    "weekOf": "Minggu tanggal",
+    "released": "Dirilis",
+    "availability": "Ketersediaan",
+    "production": "Produksi",
+    "product": "Produk",
+    "new": "Baru",
+    "improved": "Ditingkatkan",
+    "fixed": "Diperbaiki",
+    "noPublicRelease": "Tidak ada pembaruan produksi yang dikonfirmasi dan terlihat oleh pengguna minggu ini.",
+    "noActionRequired": "Tidak diperlukan tindakan. Rilis aplikasi native menggunakan versi dan catatan publikasi terpisah."
+  },
+  "weeks": [
+    {
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-26",
+      "versions": [
+        {
+          "version": "v260921.01",
+          "releaseDate": "2026-09-21",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memulihkan titik masuk Pockitle yang dilokalkan dan memperluas pengalaman bahasa publik yang dipromosikan.",
+          "new": [
+            "Menambahkan halaman publik dan konten perencanaan berbahasa Portugis Brasil ke pengalaman Pockitle yang dilokalkan."
+          ],
+          "improved": [
+            "Memulihkan tindakan Mulai khusus bahasa pada halaman Pockitle Live dan memperbaiki navigasi publik yang dilokalkan."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260920.01",
+          "releaseDate": "2026-09-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas kontrol akun dan meningkatkan persiapan sebelum sesi live.",
+          "new": [
+            "Memperluas Pengaturan akun dengan detail identitas, akses reset kata sandi, peninjauan persetujuan hukum, kontrol keluar dari semua perangkat, serta status atau pembatalan penghapusan akun."
+          ],
+          "improved": [
+            "Meningkatkan pemeriksaan input panggung, panduan penyiapan mikrofon, dan kesiapan penonton sebelum siaran langsung.",
+            "Meningkatkan penghapusan akun dan pembersihan sesi tertaut."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-19",
+      "versions": [
+        {
+          "version": "v260918.01",
+          "releaseDate": "2026-09-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini membuat pemulihan proyek dan struktur skrip yang diimpor lebih andal.",
+          "new": [],
+          "improved": [
+            "Kegagalan sementara saat mencari skrip tidak lagi membuat proyek tampak tidak memiliki skrip; proyek dapat mencoba lagi sementara data yang ada tetap tersedia.",
+            "Impor skrip kini lebih baik mempertahankan dialog miring dan petunjuk panggung eksplisit yang mengikuti dialog."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260915.01",
+          "releaseDate": "2026-09-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperkenalkan beranda publik lokal dan entri Live khusus untuk Pockitle.",
+          "new": [
+            "Menambahkan beranda publik Pockitle dan pengalaman Live yang dilokalkan, dengan navigasi, halaman kontak dan hukum yang selaras, metadata web yang dapat dipasang, serta identitas visual."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260913.01",
+          "releaseDate": "2026-09-13",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan panduan pemulihan, penanganan sesi kedaluwarsa, dan struktur cue yang diimpor.",
+          "new": [],
+          "improved": [
+            "Pesan pembukaan kunci operator dan pemulihan kata sandi kini menjelaskan langkah berikutnya dengan lebih jelas.",
+            "Analisis skrip kini lebih baik mempertahankan struktur cue bertipe dalam dokumen yang diimpor."
+          ],
+          "fixed": [
+            "Snapshot penonton yang kedaluwarsa dan sesi Viewer yang dihentikan tidak lagi menampilkan konten live yang sudah usang."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-09-06",
+      "endDate": "2026-09-12",
+      "versions": [
+        {
+          "version": "v260911.01",
+          "releaseDate": "2026-09-11",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan pemulihan di seluruh proyek, pendaftaran, dan sesi live yang dilanjutkan.",
+          "new": [],
+          "improved": [
+            "Layar proyek dan pendaftaran pulih dengan lebih baik dari gangguan sementara saat memuat data atau aset.",
+            "Operator dapat memulihkan kontrol live dengan lebih andal setelah melanjutkan sesi, dan laporan tersimpan dapat dibuka kembali dengan lebih baik."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260909.01",
+          "releaseDate": "2026-09-09",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan sesi yang berjalan lama, masukan penonton, dan impor skrip.",
+          "new": [],
+          "improved": [
+            "Sesi live yang berjalan lama pulih dengan lebih andal.",
+            "Impor skrip kini lebih baik mempertahankan konteks pemeran dan cue."
+          ],
+          "fixed": [
+            "Draf masukan penonton dipertahankan setelah dimulai ulang, dan masukan tetap dapat dikirim setelah pertunjukan berakhir."
+          ]
+        },
+        {
+          "version": "v260908.01",
+          "releaseDate": "2026-09-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan alur masukan penonton pascapertunjukan yang opsional dan meningkatkan kesinambungan laporan.",
+          "new": [
+            "Menambahkan survei penonton opsional setelah pertunjukan, dengan persetujuan yang jelas dan alur laporan akhir pertunjukan."
+          ],
+          "improved": [
+            "Live Console dan layar penonton tetap tersedia sepanjang pertunjukan.",
+            "Meningkatkan draf masukan dan riwayat laporan di seluruh mulai ulang dan sesi sebelumnya."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-30",
+      "endDate": "2026-09-05",
+      "versions": [
+        {
+          "version": "v260904.03",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperbaiki pendaftaran dan beberapa kasus pemulihan setelah pertunjukan berakhir.",
+          "new": [],
+          "improved": [
+            "Pesan penyelesaian dan pemulihan kini dilokalkan."
+          ],
+          "fixed": [
+            "Pendaftaran kini menyelesaikan penyiapan akun sebelum membuka dasbor.",
+            "Navigasi pertunjukan dan kontrol akhir pertunjukan pulih dengan lebih andal.",
+            "Menjeda pertunjukan kini mempertahankan baris teks layar terakhir."
+          ]
+        },
+        {
+          "version": "v260904.02",
+          "releaseDate": "2026-09-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan penyiapan pertama kali, peluncuran simulasi, dan panduan alur kerja yang dilokalkan.",
+          "new": [],
+          "improved": [
+            "Penyiapan pertama kali tidak lagi menampilkan kegagalan dasbor palsu saat penyiapan akun masih berlangsung.",
+            "Peluncuran simulasi kini menunggu konteks proyek aktif, sehingga menghindari kegagalan serah-terima saat memuat.",
+            "Salinan produk dan panduan alur kerja yang dilokalkan lebih konsisten di seluruh bahasa yang didukung."
+          ],
+          "fixed": [
+            "Tautan runtime dan respons tanpa konten kini selesai dengan bersih, bukan macet atau dirender secara keliru."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-29",
+      "versions": [
+        {
+          "version": "v260827.01",
+          "releaseDate": "2026-08-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas panduan perencanaan acara dan meningkatkan navigasi publik di tablet.",
+          "new": [
+            "Menambahkan panduan perencanaan teks layar langsung untuk konferensi, ruang kelas, panel, dan acara lisan lainnya."
+          ],
+          "improved": [
+            "Memperluas contoh alur kerja dan panduan perencanaan yang diterjemahkan di seluruh bahasa yang didukung."
+          ],
+          "fixed": [
+            "Memulihkan navigasi publik lengkap pada tata letak berukuran tablet."
+          ]
+        },
+        {
+          "version": "v260826.02",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini membuat startup sesi live lebih jelas dan tangguh.",
+          "new": [],
+          "improved": [
+            "Kesalahan izin mikrofon kini memberikan jalur pemulihan yang lebih jelas."
+          ],
+          "fixed": [
+            "Permintaan mulai pertunjukan berulang kini melanjutkan upaya startup yang ada, bukan membuat status sesi duplikat."
+          ]
+        },
+        {
+          "version": "v260826.01",
+          "releaseDate": "2026-08-26",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan tipografi teks layar di tampilan penonton dan proyeksi.",
+          "new": [],
+          "improved": [
+            "Teks layar penonton dan proyeksi kini menggunakan font konsisten yang peka bahasa dan menghormati ukuran font yang dipilih tanpa mengecilkan teks secara diam-diam."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260824.01",
+          "releaseDate": "2026-08-24",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan monitor penonton seluler di berbagai tata letak ponsel.",
+          "new": [],
+          "improved": [
+            "Teks layar saat ini, pemilihan bahasa, status live, dan jumlah penonton tetap terbaca di tata letak ponsel yang didukung.",
+            "Meningkatkan kesinambungan keluaran bahasa saat salah satu keluaran tidak tersedia sementara."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-22",
+      "versions": [
+        {
+          "version": "v260822.01",
+          "releaseDate": "2026-08-22",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas pengalaman Pockitle yang dilokalkan dan menyempurnakan riwayat proyeksi.",
+          "new": [
+            "Menambahkan halaman publik Pockitle yang dilokalkan dan katalog bahasa yang didukung."
+          ],
+          "improved": [
+            "Navigasi publik dan menu bahasa tetap dapat digunakan di tablet dan layar sempit.",
+            "Pratinjau proyeksi dapat menampilkan sejumlah teks layar sebelumnya yang dibatasi sambil menjaga teks saat ini tetap jelas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260818.01",
+          "releaseDate": "2026-08-19",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan persiapan pertunjukan berulang, kontrol proyeksi, dan impor DOCX.",
+          "new": [],
+          "improved": [
+            "Meningkatkan persiapan pertunjukan berulang dan menyempurnakan kontrol proyeksi."
+          ],
+          "fixed": [
+            "Impor DOCX kini mempertahankan judul adegan dan menolak unggahan yang terlalu besar atau rusak dengan hasil yang jelas."
+          ]
+        },
+        {
+          "version": "v260817.01",
+          "releaseDate": "2026-08-17",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperluas penemuan lokal dan membuat penyambungan kembali penonton lebih konsisten.",
+          "new": [
+            "Memperluas penemuan publik yang dilokalkan dan panduan acara atau teks layar langsung."
+          ],
+          "improved": [
+            "Penanganan status penonton dan sesi live kini menjaga penyambungan kembali dan teks layar yang diterima tetap lebih konsisten."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260815.01",
+          "releaseDate": "2026-08-16",
+          "product": "SurtitleLive Cloud",
+          "summary": "Pembaruan besar untuk teks layar langsung, kontrol organisasi, penyiapan proyeksi, pengeditan, dan persiapan skrip.",
+          "new": [
+            "Memperkenalkan Pockitle Live Web Beta untuk teks layar dan terjemahan waktu nyata tanpa skrip yang disiapkan.",
+            "Menambahkan tautan Pockitle Audience, ruang keluaran multibahasa, proyeksi browser, dan kontrol teks layar manual.",
+            "Menambahkan pengaturan organisasi untuk menonaktifkan AI generatif sambil mempertahankan terjemahan mesin standar."
+          ],
+          "improved": [
+            "Mendesain ulang penyiapan proyeksi dengan kontrol yang lebih jelas, preset yang dapat digunakan kembali, penanganan keluaran yang lebih aman, dan kesiapan offline yang lebih baik.",
+            "Meningkatkan penyimpanan, riwayat, kolaborasi, dan keandalan pengeditan struktural Editor.",
+            "Memperluas analisis skrip untuk dokumen yang terfragmentasi, tanpa cue, dan kurang terstruktur.",
+            "Memperbarui halaman produk publik, panduan, dukungan bahasa, dan alur onboarding.",
+            "Live Console yang baru dibuka tetap hanya-baca saat konsol lain aktif atau sedang dimulai, dengan tindakan Ambil Alih yang jelas."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika perubahan manual Editor dapat hilang atau tertimpa.",
+            "Memperbaiki masalah penyambungan kembali, sinkronisasi status, dan kontrol operator selama sesi live."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-15",
+      "versions": []
+    },
+    {
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-08",
+      "versions": []
+    }
+  ]
+}

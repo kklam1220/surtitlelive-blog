@@ -1,0 +1,162 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from './BaseHead.astro';
+import ContentSectionNav from './ContentSectionNav.astro';
+import Footer from './Footer.astro';
+import Header from './Header.astro';
+import { resolveBlogLocaleMeta } from '../i18n/locale-config';
+import { serializeJsonLd } from '../lib/blogSecurity.mjs';
+
+interface Props {
+	entry: CollectionEntry<'updates'>;
+	canonicalPath: string;
+	articlesHref: string;
+	updatesHref: string;
+	hreflangs: Array<{ lang: string; path: string }>;
+	localeLinks: Array<{ lang: string; path: string }>;
+}
+
+const { entry, canonicalPath, articlesHref, updatesHref, hreflangs, localeLinks } = Astro.props;
+const { locale, title, description, intro, labels, weeks } = entry.data;
+const localeMeta = resolveBlogLocaleMeta(locale);
+const dateFormatter = new Intl.DateTimeFormat(locale, {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+const weekFormatter = new Intl.DateTimeFormat(locale, {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+const monthFormatter = new Intl.DateTimeFormat(locale, {
+	month: 'long',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+const versionId = (version: string) => version.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const canonicalURL = new URL(canonicalPath, Astro.site);
+const releaseItems = weeks.flatMap((week) => week.versions);
+const months = Array.from(
+	weeks.reduce((groups, week) => {
+		const key = week.startDate.toISOString().slice(0, 7);
+		const existing = groups.get(key);
+		if (existing) {
+			existing.push(week);
+		} else {
+			groups.set(key, [week]);
+		}
+		return groups;
+	}, new Map<string, typeof weeks>()),
+).map(([key, monthWeeks]) => ({
+	key,
+	label: monthFormatter.format(monthWeeks[0].startDate),
+	weeks: monthWeeks,
+}));
+const schema = serializeJsonLd({
+	'@context': 'https://schema.org',
+	'@type': 'CollectionPage',
+	'@id': canonicalURL.href,
+	name: title,
+	description,
+	inLanguage: locale,
+	dateModified: releaseItems[0]?.releaseDate.toISOString(),
+	mainEntity: {
+		'@type': 'ItemList',
+		itemListElement: releaseItems.map((release, index) => ({
+			'@type': 'ListItem',
+			position: index + 1,
+			name: release.version,
+			url: `${canonicalURL.href}#${versionId(release.version)}`,
+		})),
+	},
+});
+---
+
+<!doctype html>
+<html lang={locale} dir={localeMeta.dir}>
+	<head>
+		<BaseHead {title} {description} {canonicalPath} {hreflangs} />
+		<script type="application/ld+json" set:html={schema} />
+	</head>
+	<body>
+		<Header currentLocale={locale} localeLinks={localeLinks.filter((item) => item.lang !== 'x-default')} />
+		<main>
+			<header class="updates-header">
+				<ContentSectionNav
+					articlesLabel={labels.articles}
+					updatesLabel={labels.productUpdates}
+					{articlesHref}
+					{updatesHref}
+					current="updates"
+				/>
+				<p class="eyebrow">{labels.productUpdates}</p>
+				<h1>{title}</h1>
+				<p class="intro">{intro}</p>
+			</header>
+
+			<div class="months">
+				{months.map((month) => (
+					<section class="month" aria-labelledby={`month-${month.key}`}>
+						<h2 id={`month-${month.key}`}>{month.label}</h2>
+						<div class="weeks">
+							{month.weeks.map((week) => (
+								<section class="week">
+									<h3>{labels.weekOf} {weekFormatter.formatRange(week.startDate, week.endDate)}</h3>
+									{week.versions.length === 0 && <p class="no-release">{labels.noPublicRelease}</p>}
+									{week.versions.map((release) => (
+							<article class="release" id={versionId(release.version)}>
+								<div class="release-heading">
+									<h4><a href={`#${versionId(release.version)}`}>{release.version}</a></h4>
+									<span>{labels.production}</span>
+								</div>
+								<dl>
+									<div><dt>{labels.released}</dt><dd>{dateFormatter.format(release.releaseDate)}</dd></div>
+									<div><dt>{labels.product}</dt><dd>{release.product}</dd></div>
+									<div><dt>{labels.availability}</dt><dd>{labels.production}</dd></div>
+								</dl>
+								<p class="summary">{release.summary}</p>
+								{release.new.length > 0 && <section><h5>{labels.new}</h5><ul>{release.new.map((item) => <li>{item}</li>)}</ul></section>}
+								{release.improved.length > 0 && <section><h5>{labels.improved}</h5><ul>{release.improved.map((item) => <li>{item}</li>)}</ul></section>}
+								{release.fixed.length > 0 && <section><h5>{labels.fixed}</h5><ul>{release.fixed.map((item) => <li>{item}</li>)}</ul></section>}
+								<p class="action-note">{labels.noActionRequired}</p>
+							</article>
+									))}
+								</section>
+							))}
+						</div>
+					</section>
+				))}
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main { width: 980px; max-width: calc(100% - 2rem); margin: 0 auto; padding: 3rem 0 5rem; }
+	.updates-header { margin-bottom: 3rem; }
+	.eyebrow { color: #8a5a00; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.08em; margin: 0 0 0.65rem; text-transform: uppercase; }
+	h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0; }
+	.intro { color: #4b5563; font-size: 1.15rem; line-height: 1.7; max-width: 760px; }
+	.months { display: grid; gap: 3.5rem; }
+	.month > h2 { font-size: 1.75rem; margin: 0 0 1.5rem; }
+	.weeks { display: grid; gap: 3rem; }
+	.week > h3 { border-bottom: 2px solid #111827; font-size: 1.35rem; padding-bottom: 0.75rem; }
+	.release { border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 6px 22px rgba(17, 24, 39, 0.06); margin-top: 1.25rem; padding: clamp(1.25rem, 4vw, 2rem); scroll-margin-top: 1rem; }
+	.release-heading { align-items: center; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: space-between; }
+	.release-heading h4 { font-size: 1.35rem; margin: 0; }
+	.release-heading h4 a { color: #111827; text-decoration: none; }
+	.release-heading span { background: #ecfdf5; border-radius: 999px; color: #065f46; font-size: 0.78rem; font-weight: 800; padding: 0.35rem 0.7rem; }
+	dl { display: flex; flex-wrap: wrap; gap: 0.65rem 1.5rem; margin: 1rem 0; }
+	dl div { display: flex; gap: 0.35rem; }
+	dt { color: #6b7280; font-weight: 700; }
+	dd { margin: 0; }
+	.summary { font-size: 1.05rem; line-height: 1.65; }
+	h5 { font-size: 1rem; margin: 1.4rem 0 0.5rem; }
+	ul { line-height: 1.65; margin-top: 0.4rem; padding-inline-start: 1.35rem; }
+	.action-note { background: #f9fafb; border-inline-start: 3px solid #d19a2a; color: #4b5563; margin: 1.5rem 0 0; padding: 0.8rem 1rem; }
+	.no-release { color: #6b7280; font-style: italic; margin: 1rem 0 0; }
+</style>

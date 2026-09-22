@@ -227,6 +227,124 @@ function collectStringValues(value, strings = [], key = "") {
   return strings;
 }
 
+function validateProductUpdates(config) {
+  const updatesRoot = path.join(ROOT, "src", "content", "updates");
+  const expectedLocales = ["en", ...config.locales].sort();
+  const actualLocales = require("node:fs")
+    .readdirSync(updatesRoot)
+    .filter((name) => name.endsWith(".json"))
+    .map((name) => path.basename(name, ".json"))
+    .sort();
+  const errors = [];
+  const forbiddenProviderTerms = [
+    "anthropic",
+    "assemblyai",
+    "azure ai",
+    "deepseek",
+    "gemini",
+    "google ai",
+    "openai",
+    "soniox",
+    "whisper",
+  ];
+  const forbiddenInternalAudienceTerms = [
+    "admin console",
+    "admin tools",
+    "billing reconciliation",
+    "credit allocation",
+    "credit entitlement",
+    "credit quantity",
+    "internal security",
+    "pro access pass",
+    "pro+ access pass",
+    "release-validation",
+    "rollback",
+    "security hardening",
+    "staging deployment",
+    "super admin",
+    "usage settlement",
+  ];
+
+  if (actualLocales.join(",") !== expectedLocales.join(",")) {
+    errors.push(`locale files expected ${expectedLocales.join(",")} but found ${actualLocales.join(",")}`);
+  }
+
+  const english = readJson(path.join(updatesRoot, "en.json"));
+  const releaseShape = (payload) => payload.weeks.map((week) => ({
+    startDate: week.startDate,
+    endDate: week.endDate,
+    versions: week.versions.map((release) => ({
+      version: release.version,
+      releaseDate: release.releaseDate,
+    })),
+  }));
+  const expectedShape = JSON.stringify(releaseShape(english));
+  const seenVersions = new Set();
+  let previousStartDate = null;
+
+  for (const week of english.weeks) {
+    const startDate = new Date(`${week.startDate}T00:00:00Z`);
+    const endDate = new Date(`${week.endDate}T00:00:00Z`);
+    const expectedEndDate = new Date(startDate);
+    expectedEndDate.setUTCDate(expectedEndDate.getUTCDate() + 6);
+    if (startDate.getUTCDay() !== 0) {
+      errors.push(`en: week ${week.startDate} must start on Sunday`);
+    }
+    if (endDate.getUTCDay() !== 6 || endDate.getTime() !== expectedEndDate.getTime()) {
+      errors.push(`en: week ${week.startDate} must end on the following Saturday`);
+    }
+    if (previousStartDate && startDate >= previousStartDate) {
+      errors.push(`en: weeks must be ordered newest first`);
+    }
+    previousStartDate = startDate;
+    for (const release of week.versions) {
+      const releaseDate = new Date(`${release.releaseDate}T00:00:00Z`);
+      if (releaseDate < startDate || releaseDate > endDate) {
+        errors.push(`en: ${release.version} releaseDate is outside its week`);
+      }
+      if (!/^v\d{6}\.\d{2}$/.test(release.version)) {
+        errors.push(`en: invalid Cloud release version ${release.version}`);
+      }
+      if (seenVersions.has(release.version)) {
+        errors.push(`en: duplicate Cloud release version ${release.version}`);
+      }
+      seenVersions.add(release.version);
+      if ([release.new, release.improved, release.fixed].every((items) => items.length === 0)) {
+        errors.push(`en: ${release.version} has no public release notes`);
+      }
+    }
+  }
+
+  for (const locale of actualLocales) {
+    const payload = readJson(path.join(updatesRoot, `${locale}.json`));
+    if (payload.locale !== locale) {
+      errors.push(`${locale}: payload locale is ${payload.locale || "<missing>"}`);
+    }
+    if (JSON.stringify(releaseShape(payload)) !== expectedShape) {
+      errors.push(`${locale}: week/version/date structure drifted from English`);
+    }
+    if (locale !== "en" && (payload.title === english.title || payload.intro === english.intro)) {
+      errors.push(`${locale}: visible Product Updates copy still matches English`);
+    }
+    const prose = collectStringValues(payload).join("\n").toLocaleLowerCase("en");
+    const matchedProviders = forbiddenProviderTerms.filter((term) => prose.includes(term));
+    if (matchedProviders.length > 0) {
+      errors.push(`${locale}: forbidden provider/model names: ${matchedProviders.join(", ")}`);
+    }
+    const matchedInternalAudienceTerms = forbiddenInternalAudienceTerms.filter((term) => prose.includes(term));
+    if (matchedInternalAudienceTerms.length > 0) {
+      errors.push(`${locale}: forbidden internal-admin copy: ${matchedInternalAudienceTerms.join(", ")}`);
+    }
+  }
+
+  if (errors.length > 0) {
+    errors.forEach((error) => console.error(`[blog:i18n:check] [updates] ${error}`));
+    return false;
+  }
+  console.log(`[blog:i18n:check] [updates] locales=${actualLocales.length} structure=aligned providerNames=0`);
+  return true;
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const config = loadConfig();
@@ -254,6 +372,10 @@ function main() {
       : {};
 
   let hasError = false;
+
+  if (!validateProductUpdates(config)) {
+    hasError = true;
+  }
 
   for (const locale of locales) {
     let missing = 0;

@@ -51,7 +51,9 @@ Since the local `blog` folder is part of the main repo but deployment happens fr
 Use the repository script from the project root:
 
 ```powershell
-pwsh -File .\scripts\deploy\deploy-blog.ps1
+$allowedPaths = "DEPLOYMENT.md,scripts/check-blog-build-contract.cjs,scripts/check-blog-localization.cjs,src/components/ContentSectionNav.astro,src/components/Footer.astro,src/components/ProductUpdatesPage.astro,src/content.config.ts,src/content/config.ts,src/content/updates/*,src/pages/index.astro,src/pages/*/index.astro,src/pages/updates/*,src/pages/*/updates/*"
+pwsh -File .\scripts\deploy\deploy-blog.ps1 -AllowedChangedPath $allowedPaths -PlanOnly
+pwsh -File .\scripts\deploy\deploy-blog.ps1 -AllowedChangedPath $allowedPaths
 ```
 
 The script now runs the local preflight first:
@@ -60,31 +62,19 @@ The script now runs the local preflight first:
 - `npm --prefix blog run build`
 - `npm --prefix blog run build:check`
 
-and aborts before syncing if localization readiness or the Pages route contract is broken.
+and aborts before syncing if localization readiness or the Pages route contract is broken. It then compares the complete local candidate with the current deployment repository. `AllowedChangedPath` must declare every intended repository path or narrow wildcard; any undeclared article, locale, asset, route, or configuration change aborts before commit and push. Always run `-PlanOnly` first to review the exact file list without publishing.
 
-If you need to do the same steps manually, the equivalent flow is:
+Preparation ZIP files and browser-capture artifacts (`*.htm`, `*.html`, and `*_files/`) under `src/content/blog/` are excluded from deployment. Intentional downloads under `public/` remain deployable. There is no second manual copy-and-push path; improve this guarded script if a legitimate release cannot be represented safely.
 
-```powershell
-# 1. Clone the deployment repo to a temporary folder
-git clone https://github.com/kklam1220/surtitlelive-blog.git temp_blog_deploy
+### Product Updates publication boundary
 
-# 2. Copy all content from your local blog folder to the temp folder
-Copy-Item -Path ".\blog\*" -Destination ".\temp_blog_deploy" -Recurse -Force
-
-# 3. Commit and Push
-cd temp_blog_deploy
-git add .
-git commit -m "Deploy: Sync content from main repo"
-git push origin main
-
-# 4. Cleanup
-cd ..
-Remove-Item -Path ".\temp_blog_deploy" -Recurse -Force
-```
-
-### Option B: Manual Git Remote Setup (Advanced)
-
-If you prefer to work directly from the `blog` folder, ensure you exclude build artifacts and sensitive configs manually. We strongly recommend Option A.
+- Product Updates live at `/blog/updates/` and localized `/blog/{locale}/updates/` routes in the existing Astro app.
+- The page groups production releases by Sunday-to-Saturday week. A week that crosses a month belongs to the month in which that Sunday falls; for example, August 30 to September 5 belongs to August.
+- A covered week with no confirmed user-facing production release stays visible and is labelled accordingly; do not fill it with candidate or internal work.
+- Individual Cloud versions use stable anchors such as `#v260918-01` within the weekly group.
+- Product Updates are a separate content collection and never appear as Blog articles, Blog cards, or related-article entries.
+- Major features retain their own evergreen article or guide. The update page may summarize and link to them, but must not duplicate a development diary inside the article.
+- Publish only user-visible changes with successful production deployment evidence. Exclude candidates, staging/rollback/release-validation work, Super Admin and internal-operations features, internal security hardening, Pro/Pro+ credit or entitlement adjustments, unreleased native/Companion work, and all AI or speech-recognition provider/model names.
 
 ---
 

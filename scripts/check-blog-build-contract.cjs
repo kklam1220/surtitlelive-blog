@@ -12,6 +12,10 @@ const distDir = path.resolve(__dirname, "..", "dist");
 const blogRoot = path.resolve(__dirname, "..");
 const astroConfigPath = path.join(blogRoot, "astro.config.mjs");
 const localeConfigPath = path.join(blogRoot, "src", "i18n", "locale-config.ts");
+const englishUpdatesPath = path.join(blogRoot, "src", "content", "updates", "en.json");
+const expectedUpdateVersions = JSON.parse(
+  fs.readFileSync(englishUpdatesPath, "utf8"),
+).weeks.flatMap((week) => week.versions.map((release) => release.version));
 const qlabDemoScriptPath = path.join(
   blogRoot,
   "qlab-subtitles-demo-assets",
@@ -272,6 +276,37 @@ for (const locale of [
       `Blog ${locale} index description must stay within ${minimum}-${maximum} characters; found ${characterCount}.`,
     );
   }
+}
+
+for (const locale of [
+  "en", "ar", "de", "es", "fr", "id", "it", "ja", "ko", "pl", "pt", "ru", "th", "tr", "uk", "vi", "zh-CN", "zh-TW",
+]) {
+  const localePrefix = locale === "en" ? [] : [locale];
+  const updatesPath = path.join(...localePrefix, "updates", "index.html");
+  assertFileHasMatch(
+    updatesPath,
+    /"@type":"CollectionPage"/,
+    `Missing CollectionPage structured data on the ${locale} Product Updates page.`,
+  );
+  for (const version of expectedUpdateVersions) {
+    assertFileHasMatch(
+      updatesPath,
+      new RegExp(`id="${version.replace(".", "-").toLowerCase()}"`),
+      `Missing ${version} anchor on the ${locale} Product Updates page.`,
+    );
+    assertFileHasNoMatch(
+      path.join(...localePrefix, "index.html"),
+      new RegExp(version.replace(".", "\\.")),
+      `Product Update ${version} leaked into the ${locale} article index.`,
+    );
+  }
+}
+
+if (!/https:\/\/surtitlelive\.com\/blog\/updates\//.test(sitemapText)) {
+  throw new Error("English Product Updates URL is missing from the sitemap.");
+}
+if (!/https:\/\/surtitlelive\.com\/blog\/zh-TW\/updates\//.test(sitemapText)) {
+  throw new Error("Localized Product Updates URLs are missing from the sitemap.");
 }
 
 for (const filePath of htmlFiles) {
