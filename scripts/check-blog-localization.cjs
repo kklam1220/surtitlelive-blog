@@ -276,6 +276,7 @@ function validateProductUpdates(config) {
     versions: week.versions.map((release) => ({
       version: release.version,
       releaseDate: release.releaseDate,
+      image: release.image || null,
     })),
   }));
   const expectedShape = JSON.stringify(releaseShape(english));
@@ -322,6 +323,18 @@ function validateProductUpdates(config) {
     }
     if (JSON.stringify(releaseShape(payload)) !== expectedShape) {
       errors.push(`${locale}: week/version/date structure drifted from English`);
+    }
+    if (locale !== "en") {
+      const englishImages = new Map(
+        english.weeks.flatMap((week) => week.versions)
+          .filter((release) => release.image)
+          .map((release) => [release.version, release.imageAlt]),
+      );
+      for (const release of payload.weeks.flatMap((week) => week.versions)) {
+        if (release.image && release.imageAlt === englishImages.get(release.version)) {
+          errors.push(`${locale}: ${release.version} image alternative text is not localized`);
+        }
+      }
     }
     if (locale !== "en" && payload.title === english.title) {
       errors.push(`${locale}: visible Product Updates copy still matches English`);

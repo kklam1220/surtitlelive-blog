@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Diese Version ergänzt manuelle Barrierefreiheitsbeschriftungen und verbessert Live-Updates, Transkript-Downloads und Kontofunktionen.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menü für Zeilentypen im Editor mit ausgewählter Accessibility caption und dem Beispiel [Doorbell rings in background].",
+          "new": [
+            "Manuelle Barrierefreiheitsbeschriftungen im Editor hinzugefügt. Sie erscheinen in Simulationen, Projektionen und Publikumsansichten als Hinweise in eckigen Klammern."
+          ],
+          "improved": [
+            "Live-Untertitel werden zuverlässiger an verbundene Bildschirme übertragen und können nach Unterbrechungen besser wiederhergestellt werden.",
+            "Die Publikumsansicht erholt sich nach erneuter Verbindung und Sitzungswechseln zuverlässiger.",
+            "Downloads von Live-Transkripten verwenden jetzt ein übersichtlicheres CSV mit Zeit-, Originaltext- und Übersetzungsspalten; einzelne Korrekturen bleiben erhalten.",
+            "Es wird jetzt klarer darauf hingewiesen, dass in der Pockitle-App gekaufte Access Passes dort verlängert werden müssen.",
+            "Der Ablauf bei einer ausstehenden Kontolöschung wurde verbessert: Nutzer können den Antrag nach dem Abmelden einsehen oder abbrechen."
+          ],
+          "fixed": [
+            "Zusätzliche Klammern um Live-Bühnenanweisungen wurden entfernt."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

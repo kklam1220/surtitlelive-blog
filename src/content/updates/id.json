@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan teks aksesibilitas manual serta menyempurnakan pembaruan langsung, unduhan transkrip, dan kontrol akun.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menu jenis baris Editor dengan Accessibility caption dipilih dan contoh [Doorbell rings in background].",
+          "new": [
+            "Menambahkan baris teks aksesibilitas manual di Editor. Baris ini tampil sebagai petunjuk dalam tanda kurung siku pada simulasi, proyeksi, dan tampilan audiens."
+          ],
+          "improved": [
+            "Pembaruan subtitle langsung lebih andal di layar yang terhubung dan lebih mudah pulih saat pengiriman terputus.",
+            "Tampilan audiens pulih lebih baik setelah tersambung kembali atau berganti sesi.",
+            "Unduhan transkrip sesi langsung kini menggunakan CSV yang lebih sederhana dengan kolom waktu, teks asli, dan terjemahan, sambil tetap menyimpan koreksi yang berbeda.",
+            "Diperjelas bahwa Access Pass yang dibeli di aplikasi Pockitle harus diperpanjang melalui aplikasi tersebut.",
+            "Alur tindak lanjut penghapusan akun yang tertunda ditingkatkan agar pengguna dapat meninjau atau membatalkan permintaan setelah keluar."
+          ],
+          "fixed": [
+            "Memperbaiki tanda kurung tambahan yang membungkus arahan panggung langsung."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

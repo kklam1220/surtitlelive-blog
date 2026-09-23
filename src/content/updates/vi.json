@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này bổ sung phụ đề hỗ trợ tiếp cận thủ công và cải thiện cập nhật trực tiếp, tải bản chép lời cùng các thao tác tài khoản.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menu loại dòng trong Editor có chọn Accessibility caption và hiển thị ví dụ [Doorbell rings in background].",
+          "new": [
+            "Bổ sung các dòng phụ đề hỗ trợ tiếp cận thủ công trong Editor. Chúng hiển thị dưới dạng chỉ dẫn trong ngoặc vuông ở mô phỏng, màn chiếu và chế độ xem của khán giả."
+          ],
+          "improved": [
+            "Cập nhật phụ đề trực tiếp trên các màn hình được kết nối đáng tin cậy hơn và phục hồi tốt hơn khi quá trình truyền bị gián đoạn.",
+            "Chế độ xem của khán giả phục hồi tốt hơn sau khi kết nối lại hoặc chuyển phiên.",
+            "Bản chép lời của phiên trực tiếp hiện được tải xuống dưới dạng CSV đơn giản hơn, có các cột thời gian, văn bản gốc và bản dịch, đồng thời giữ lại các nội dung chỉnh sửa khác nhau.",
+            "Đã làm rõ rằng Access Pass mua trong ứng dụng Pockitle phải được gia hạn ngay trong ứng dụng đó.",
+            "Cải thiện quy trình xử lý yêu cầu xóa tài khoản đang chờ để người dùng có thể xem lại hoặc hủy yêu cầu sau khi đăng xuất."
+          ],
+          "fixed": [
+            "Khắc phục lỗi thêm dấu ngoặc thừa quanh chỉ dẫn sân khấu trực tiếp."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

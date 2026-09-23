@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增手動無障礙字幕，並改善即時更新、字幕記錄下載及帳戶管理。",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Editor 行類型選單已選取 Accessibility caption，並顯示範例 [Doorbell rings in background]。",
+          "new": [
+            "在 Editor 中新增手動無障礙字幕行，並在模擬、投影及觀眾畫面中以方括號提示顯示。"
+          ],
+          "improved": [
+            "連線畫面上的即時字幕更新更加可靠，並能更妥善地從傳送中斷恢復。",
+            "觀眾畫面在重新連線或切換場次後能更可靠地恢復。",
+            "即時場次記錄現在可下載為更精簡的 CSV，包含時間、原文及翻譯欄位，同時保留不同的修訂內容。",
+            "明確說明：在 Pockitle App 購買的 Access Pass 需要在該 App 內延長。",
+            "改善待處理帳戶刪除要求的後續流程，使用者登出後仍可查看或取消要求。"
+          ],
+          "fixed": [
+            "修正即時舞台指示被多加一層圓括號的問題。"
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

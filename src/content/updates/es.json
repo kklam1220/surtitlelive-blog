@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añade subtítulos manuales de accesibilidad y mejora las actualizaciones en directo, las descargas de transcripciones y los controles de cuenta.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menú de tipo de línea del Editor con Accessibility caption seleccionado y el ejemplo [Doorbell rings in background].",
+          "new": [
+            "Se añadieron líneas manuales de subtítulos de accesibilidad en el Editor. Se muestran como indicaciones entre corchetes en simulaciones, proyecciones y vistas del público."
+          ],
+          "improved": [
+            "Las actualizaciones de subtítulos en directo son más fiables en las pantallas conectadas y se recuperan mejor si se interrumpe la entrega.",
+            "La vista del público se recupera mejor tras reconectarse o cambiar de sesión.",
+            "Las descargas de transcripciones de sesiones en directo ahora usan un CSV más sencillo, con columnas de hora, texto original y traducciones, y conservan las correcciones distintas.",
+            "Se aclara que los Access Passes comprados en la app de Pockitle deben ampliarse desde esa app.",
+            "Se mejoró el seguimiento de la eliminación de cuentas para que los usuarios puedan revisar o cancelar una solicitud pendiente después de cerrar sesión."
+          ],
+          "fixed": [
+            "Se corrigió el uso de paréntesis adicionales alrededor de las indicaciones escénicas en directo."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

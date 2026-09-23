@@ -33,6 +33,7 @@ import blog20Hero from "../content/blog/blog-20.png";
 import blog201 from "../content/blog/blog-20-1.png";
 import blog202 from "../content/blog/blog-20-2.png";
 import blog203 from "../content/blog/blog-20-3.jpg";
+import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-1-1.jpg": blog11,
@@ -68,6 +69,7 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-20-3.jpg": blog203,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
+  "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,
 };
 
 function normalizeBlogImageSource(src?: string | null): string | null {

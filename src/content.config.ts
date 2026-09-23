@@ -43,9 +43,13 @@ const updates = defineCollection({
 				releaseDate: z.coerce.date(),
 				product: z.string(),
 				summary: z.string(),
+				image: z.string().optional(),
+				imageAlt: z.string().optional(),
 				new: z.array(z.string()),
 				improved: z.array(z.string()),
 				fixed: z.array(z.string()),
+			}).refine((release) => !release.image || Boolean(release.imageAlt), {
+				message: 'Product Update images must include localized alternative text.',
 			})),
 		})),
 	}),

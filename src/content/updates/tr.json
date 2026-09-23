@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm, elle girilen erişilebilirlik altyazıları ekler; canlı güncellemeleri, döküm indirmelerini ve hesap kontrollerini iyileştirir.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Editor satır türü menüsünde Accessibility caption seçili ve [Doorbell rings in background] örneği gösteriliyor.",
+          "new": [
+            "Editor'a elle girilen erişilebilirlik altyazısı satırları eklendi. Bu satırlar simülasyonlarda, projeksiyonlarda ve izleyici görünümlerinde köşeli parantezli ipuçları olarak gösterilir."
+          ],
+          "improved": [
+            "Canlı altyazı güncellemeleri bağlı ekranlara daha güvenilir biçimde iletiliyor ve aktarım kesintilerinden sonra daha iyi kurtarılıyor.",
+            "İzleyici görünümü yeniden bağlantı ve oturum değişikliklerinden sonra daha iyi kurtarılıyor.",
+            "Canlı oturum dökümleri artık saat, kaynak metin ve çeviri sütunları içeren daha sade bir CSV olarak indiriliyor; farklı düzeltmeler korunuyor.",
+            "Pockitle uygulamasından satın alınan Access Pass'lerin yine bu uygulamadan uzatılması gerektiği açıklandı.",
+            "Bekleyen hesap silme isteği akışı iyileştirildi; kullanıcılar oturumu kapattıktan sonra isteği inceleyebilir veya iptal edebilir."
+          ],
+          "fixed": [
+            "Canlı sahne yönergelerinin çevresine fazladan parantez eklenmesi düzeltildi."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

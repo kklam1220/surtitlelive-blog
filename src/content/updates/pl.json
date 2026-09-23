@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "To wydanie dodaje ręczne napisy dostępności oraz usprawnia aktualizacje na żywo, pobieranie transkrypcji i obsługę konta.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menu typu wiersza w Edytorze z wybraną opcją Accessibility caption i przykładem [Doorbell rings in background].",
+          "new": [
+            "Dodano w Edytorze ręczne wiersze napisów dostępności. W symulacjach, projekcjach i widokach publiczności są wyświetlane jako wskazówki w nawiasach kwadratowych."
+          ],
+          "improved": [
+            "Aktualizacje napisów na żywo są niezawodniej dostarczane na połączone ekrany i łatwiej odzyskują działanie po przerwie.",
+            "Widok publiczności lepiej odzyskuje działanie po ponownym połączeniu i zmianie sesji.",
+            "Pobierane transkrypcje sesji na żywo mają teraz prostszy format CSV z kolumnami czasu, tekstu oryginalnego i tłumaczeń, a różne korekty są zachowywane.",
+            "Wyraźniej zaznaczono, że Access Pass kupiony w aplikacji Pockitle należy przedłużać w tej aplikacji.",
+            "Usprawniono obsługę oczekującego usunięcia konta, aby po wylogowaniu można było sprawdzić lub anulować wniosek."
+          ],
+          "fixed": [
+            "Naprawiono dodawanie dodatkowych nawiasów wokół wskazówek scenicznych na żywo."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",

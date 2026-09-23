@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from './BaseHead.astro';
 import ContentSectionNav from './ContentSectionNav.astro';
 import Footer from './Footer.astro';
 import Header from './Header.astro';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
+import { resolveBlogImage } from '../lib/blogAssets';
 import { serializeJsonLd } from '../lib/blogSecurity.mjs';
 
 interface Props {
@@ -121,20 +123,34 @@ const schema = serializeJsonLd({
 									<section class="week" id={weekId(week.startDate)}>
 										<h3>{labels.weekOf} {weekFormatter.formatRange(week.startDate, week.endDate)}</h3>
 										{week.versions.length === 0 && <p class="no-release">{labels.noPublicRelease}</p>}
-										{week.versions.map((release) => (
+										{week.versions.map((release) => {
+											const releaseImage = resolveBlogImage(release.image);
+											return (
 											<article class="release" id={versionId(release.version)}>
 												<div class="release-heading">
 													<h4><a href={`#${versionId(release.version)}`}>{release.version}</a></h4>
 													<p class="release-date">{labels.released}: {dateFormatter.format(release.releaseDate)}</p>
 												</div>
 												<p class="summary">{release.summary}</p>
+												{releaseImage && (
+													<figure class="release-image">
+														<Image
+															src={releaseImage}
+															alt={release.imageAlt ?? ''}
+															class="release-image__img"
+															loading="lazy"
+															decoding="async"
+														/>
+													</figure>
+												)}
 												<div class="changes">
 													{release.new.map((item) => <p class="change-item is-new"><strong>{labels.new}:</strong> {item}</p>)}
 													{release.improved.map((item) => <p class="change-item is-improved"><strong>{labels.improved}:</strong> {item}</p>)}
 													{release.fixed.map((item) => <p class="change-item is-fixed"><strong>{labels.fixed}:</strong> {item}</p>)}
 												</div>
-											</article>
-										))}
+												</article>
+											);
+										})}
 									</section>
 								))}
 							</div>
@@ -175,6 +191,8 @@ const schema = serializeJsonLd({
 	.release-heading h4 a:hover, .release-heading h4 a:focus-visible { color: #8a5a00; text-decoration: underline; }
 	.release-date { color: #6b7280; font-size: 0.9rem; margin: 0; }
 	.summary { font-size: 1.05rem; line-height: 1.65; }
+	.release-image { margin: 1.25rem 0 1.5rem; }
+	.release-image__img { display: block; width: 100%; height: auto; border: 1px solid #e5e7eb; border-radius: 0.5rem; }
 	.changes { margin-top: 1.35rem; }
 	.change-item { border-inline-start: 3px solid #d1d5db; line-height: 1.65; margin: 0.85rem 0 0; padding-inline-start: 1rem; }
 	.change-item strong { font-size: 0.84rem; letter-spacing: 0.04em; text-transform: uppercase; }

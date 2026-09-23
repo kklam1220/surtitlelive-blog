@@ -19,6 +19,27 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.01",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione aggiunge didascalie manuali per l’accessibilità e migliora gli aggiornamenti in diretta, il download delle trascrizioni e la gestione dell’account.",
+          "image": "v260923-01-accessibility-caption-editor.png",
+          "imageAlt": "Menu del tipo di riga nell’Editor con Accessibility caption selezionato e l’esempio [Doorbell rings in background].",
+          "new": [
+            "Aggiunte nell’Editor righe manuali di didascalie per l’accessibilità. Nelle simulazioni, proiezioni e viste del pubblico appaiono come indicazioni tra parentesi quadre."
+          ],
+          "improved": [
+            "Gli aggiornamenti dei sottotitoli in diretta sono più affidabili sugli schermi collegati e si riprendono meglio dopo un’interruzione della trasmissione.",
+            "La vista del pubblico si riprende meglio dopo riconnessioni e cambi di sessione.",
+            "Il download delle trascrizioni delle sessioni in diretta ora usa un CSV più semplice, con colonne per orario, testo originale e traduzioni, mantenendo le correzioni distinte.",
+            "È più chiaro che gli Access Pass acquistati nell’app Pockitle devono essere estesi dall’app.",
+            "È stato migliorato il seguito delle richieste di eliminazione dell’account, così gli utenti possono consultare o annullare una richiesta in sospeso dopo la disconnessione."
+          ],
+          "fixed": [
+            "Risolta l’aggiunta di parentesi extra attorno alle indicazioni di scena in diretta."
+          ]
+        },
+        {
           "version": "v260921.01",
           "releaseDate": "2026-09-21",
           "product": "SurtitleLive Cloud",
