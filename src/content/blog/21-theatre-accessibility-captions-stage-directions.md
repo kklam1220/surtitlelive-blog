@@ -4,7 +4,7 @@ description: "Learn how theatre accessibility captions make important sounds rea
 pubDate: "2026-09-23"
 tags: ["SurtitleLive", "Accessibility Captions", "Theatre Accessibility", "Stage Directions", "Theatre Captions", "Deaf and Hard of Hearing", "Editor"]
 heroImage: './blog-21.png'
-heroImageAlt: 'SurtitleLive Editor showing an Accessibility Caption as a separate line from dialogue and stage directions'
+heroImageAlt: 'SurtitleLive ASM showing the [Knocking at the door] caption on audience screens'
 ---
 
 In Act 2, Scene 2 of *Macbeth*, Duncan has just been murdered. Lady Macbeth leaves with the daggers. In the excerpt shown here, the stage direction reads *Knock within.* Macbeth immediately asks, **“Whence is that knocking?”** and then, **“How is ’t with me when every noise appalls me?”** The direction identifies a sound; Macbeth’s words show his response to it. Both matter to the moment, but only one is spoken dialogue.
@@ -147,7 +147,7 @@ SurtitleLive’s three line types are a product data model, not a taxonomy requi
 
 The separate **Hide Character Names** option controls whether character names appear; it does not determine whether an Accessibility Caption is kept.
 
-![Screen recording of the SurtitleLive Editor showing an Accessibility Caption as a separate line alongside a Macbeth stage direction](./blog-21-accessibility-caption-editor.webp)
+![Screen recording of the SurtitleLive Editor showing cue rows for the Macbeth knocking scene](./blog-21-accessibility-caption-editor.gif)
 
 The editor recording includes a production-specific sample description. It demonstrates the separate line type; it is not a recommended caption for *Knock within.* A caption should match the sound in the actual production.
 

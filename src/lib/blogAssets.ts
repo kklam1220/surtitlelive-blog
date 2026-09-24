@@ -35,7 +35,7 @@ import blog202 from "../content/blog/blog-20-2.png";
 import blog203 from "../content/blog/blog-20-3.jpg";
 import blog21Hero from "../content/blog/blog-21.png";
 import blog21MacbethSourceExcerpt from "../content/blog/blog-21-macbeth-source-excerpt.png";
-import blog21CaptionEditor from "../content/blog/blog-21-accessibility-caption-editor.webp";
+import blog21CaptionEditor from "../content/blog/blog-21-accessibility-caption-editor.gif";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -72,7 +72,7 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-20-3.jpg": blog203,
   "blog-21.png": blog21Hero,
   "blog-21-macbeth-source-excerpt.png": blog21MacbethSourceExcerpt,
-  "blog-21-accessibility-caption-editor.webp": blog21CaptionEditor,
+  "blog-21-accessibility-caption-editor.gif": blog21CaptionEditor,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,
