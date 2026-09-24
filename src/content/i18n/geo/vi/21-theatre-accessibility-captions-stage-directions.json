@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Phụ đề hỗ trợ tiếp cận giúp khán giả đọc được những thông tin âm thanh quan trọng không được nói thành lời.",
+    "Chỉ dẫn sân khấu hướng dẫn quá trình dựng vở; câu chữ dành cho khán giả có thể cần mô tả âm thanh thực tế.",
+    "Loại dòng phụ đề hỗ trợ tiếp cận trong SurtitleLive do người dùng chọn và vẫn hiển thị khi bỏ qua chỉ dẫn sân khấu.",
+    "SurtitleLive thêm một cặp ngoặc vuông khi hiển thị; ê-kíp quyết định âm thanh nào quan trọng với khán giả."
+  ],
+  "faq": [
+    {
+      "question": "Phụ đề hỗ trợ tiếp cận trong sân khấu là gì?",
+      "answer": "Đó là cách chuyển những thông tin âm thanh quan trọng thành văn bản có thể đọc: hiệu ứng, cảnh báo, thay đổi âm nhạc, sự kiện ngoài sân khấu và các âm thanh có ý nghĩa khác."
+    },
+    {
+      "question": "Khác gì với phụ đề lời thoại?",
+      "answer": "Phụ đề lời thoại chủ yếu thể hiện những gì nhân vật nói. Phụ đề hỗ trợ tiếp cận còn có thể mô tả những âm thanh quan trọng mà không ai phát ngôn."
+    },
+    {
+      "question": "Vì sao không hiển thị luôn chỉ dẫn sân khấu?",
+      "answer": "Vì chúng được viết chủ yếu để làm nên buổi diễn. Nhiều chỉ dẫn không cần cho khán giả; một số khác cần được viết lại để mô tả rõ âm thanh thực tế của bản dựng."
+    },
+    {
+      "question": "Phụ đề hỗ trợ tiếp cận có biến mất khi bỏ qua chỉ dẫn sân khấu không?",
+      "answer": "Không. Đó chính là lý do loại dòng riêng được thêm vào."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phụ đề hỗ trợ tiếp cận",
+      "definition": "Văn bản truyền đạt thông tin âm thanh quan trọng cho khán giả, kể cả âm thanh không có lời nói."
+    },
+    {
+      "term": "Chỉ dẫn sân khấu",
+      "definition": "Hướng dẫn trong kịch bản, chủ yếu phục vụ việc dàn dựng buổi diễn."
+    },
+    {
+      "term": "Thông tin dành cho khán giả",
+      "definition": "Văn bản truyền đạt điều mà khán giả có thể không nghe được."
+    },
+    {
+      "term": "Âm thanh phi ngôn ngữ",
+      "definition": "Thông tin nghe được như tiếng gõ, chuông báo, nhạc thay đổi hoặc âm thanh ngoài sân khấu."
+    },
+    {
+      "term": "Loại dòng chọn thủ công",
+      "definition": "Phân loại do ê-kíp sản xuất chọn, thay vì để phần mềm tự suy đoán."
+    }
+  ]
+}

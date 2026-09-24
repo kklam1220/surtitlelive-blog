@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "FAQ",
+    "glossary": "Glossary",
+    "related": "Related Articles"
+  },
+  "keyTakeaways": [
+    "Accessibility captions make important non-speech sound information readable for the audience.",
+    "Stage directions guide the production; audience captions may need wording that describes the sound in the actual staging.",
+    "SurtitleLive’s Accessibility Caption is a manual line type and remains visible when stage directions are skipped.",
+    "SurtitleLive adds one pair of brackets for display; the production team decides which sounds matter to the audience."
+  ],
+  "faq": [
+    {
+      "question": "What are accessibility captions in theatre?",
+      "answer": "Accessibility captions turn important auditory information into readable text for the audience. They can describe significant sound effects, music changes, alarms, offstage activity and other audio events that help people understand the performance."
+    },
+    {
+      "question": "How are accessibility captions different from dialogue subtitles?",
+      "answer": "Dialogue subtitles primarily represent what characters say. Accessibility captions can represent meaningful audio that nobody speaks, such as knocking, breaking glass, a warning siren, a crowd approaching or music stopping."
+    },
+    {
+      "question": "Why not use stage directions directly?",
+      "answer": "Stage directions are written primarily for making the performance. Accessibility captions are written for the audience. A stage direction may need to be rewritten to describe the sound as it is actually heard, and many stage directions should not be shown to the audience at all."
+    },
+    {
+      "question": "Will Accessibility Captions disappear when Skip Stage Directions is enabled?",
+      "answer": "No. Accessibility Captions are audience-facing cues and remain visible when stage directions are skipped."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Accessibility caption",
+      "definition": "Audience text that communicates meaningful sound information, including sounds nobody speaks."
+    },
+    {
+      "term": "Stage direction",
+      "definition": "A script instruction written primarily to guide the making of a performance."
+    },
+    {
+      "term": "Audience-facing information",
+      "definition": "Text prepared to give spectators information they may not receive through sound."
+    },
+    {
+      "term": "Non-speech sound",
+      "definition": "Audible information such as a knock, alarm, music change or offstage activity."
+    },
+    {
+      "term": "Manual line type",
+      "definition": "A category the production team selects for a line instead of having the software infer it."
+    }
+  ]
+}

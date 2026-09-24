@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Najczęstsze pytania",
+    "glossary": "Słowniczek",
+    "related": "Powiązane artykuły"
+  },
+  "keyTakeaways": [
+    "Napisy dostępnościowe przekazują widowni w czytelnej formie ważne informacje dźwiękowe, których nikt nie wypowiada.",
+    "Didaskalia pomagają przygotować spektakl; tekst dla widowni może wymagać redakcji opisującej rzeczywiście słyszany dźwięk.",
+    "Typ wiersza „napis dostępnościowy” w SurtitleLive wybiera się ręcznie i pozostaje widoczny po pominięciu didaskaliów.",
+    "SurtitleLive dodaje nawiasy kwadratowe przy wyświetlaniu; zespół produkcyjny decyduje, które dźwięki są istotne."
+  ],
+  "faq": [
+    {
+      "question": "Czym są napisy dostępnościowe w teatrze?",
+      "answer": "Przekładają ważne informacje dźwiękowe na tekst: efekty, alarmy, zmiany muzyki, zdarzenia poza sceną i inne sygnały potrzebne do zrozumienia przedstawienia."
+    },
+    {
+      "question": "Czym różnią się od napisów dialogowych?",
+      "answer": "Napisy dialogowe przedstawiają przede wszystkim słowa postaci. Napisy dostępnościowe mogą opisywać znaczące dźwięki, których nikt nie wypowiada."
+    },
+    {
+      "question": "Dlaczego nie wyświetlać po prostu didaskaliów?",
+      "answer": "Ponieważ są pisane głównie z myślą o realizacji spektaklu. Nie wszystkie są potrzebne publiczności, a część wymaga przeredagowania tak, by jasno opisywała faktycznie słyszany dźwięk."
+    },
+    {
+      "question": "Czy napisy dostępnościowe znikną po włączeniu pomijania didaskaliów?",
+      "answer": "Nie. Właśnie temu służy osobny typ wiersza."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Napis dostępnościowy",
+      "definition": "Tekst dla widowni przekazujący istotne informacje dźwiękowe, także te niewypowiedziane."
+    },
+    {
+      "term": "Didaskalium",
+      "definition": "Wskazówka w scenariuszu, która służy przede wszystkim przygotowaniu przedstawienia."
+    },
+    {
+      "term": "Informacja dla widowni",
+      "definition": "Tekst przekazujący widzom informacje, których mogą nie usłyszeć."
+    },
+    {
+      "term": "Dźwięk niewerbalny",
+      "definition": "Słyszalna informacja, taka jak pukanie, alarm, zmiana muzyki lub odgłos zza sceny."
+    },
+    {
+      "term": "Ręczny typ wiersza",
+      "definition": "Kategoria wybierana przez zespół produkcyjny, a nie automatycznie wywnioskowana przez program."
+    }
+  ]
+}

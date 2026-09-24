@@ -21,19 +21,27 @@ const MARKDOWN_LINK_PARITY_SLUGS = new Set([
   "13-quick-qlab-subtitles-from-excel-txt",
   "17-surtitlelive-launches-pockitle-live-captioning",
   "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "21-theatre-accessibility-captions-stage-directions",
 ]);
 
 const MARKDOWN_LINK_PARITY_PREFIX_COUNTS = new Map([
   ["13-quick-qlab-subtitles-from-excel-txt", 3],
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 1],
+  ["21-theatre-accessibility-captions-stage-directions", 5],
+]);
+
+const UNORDERED_MARKDOWN_LINK_PARITY_SLUGS = new Set([
+  "21-theatre-accessibility-captions-stage-directions",
 ]);
 
 const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
   "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
+  "21-theatre-accessibility-captions-stage-directions",
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],
+  ["21-theatre-accessibility-captions-stage-directions", 2],
 ]);
 
 function extractMarkdownDestinations(markdown) {
@@ -105,6 +113,22 @@ function findMarkdownDestinationParityIssues(sourcePost, localizedPayload, local
   const actual = extractMarkdownDestinations(localizedPayload.body).map((destination) =>
     normalizeMarkdownDestination(destination, locales),
   );
+  if (UNORDERED_MARKDOWN_LINK_PARITY_SLUGS.has(sourcePost.slug)) {
+    const expectedSet = new Set(expected);
+    const actualSet = new Set(actual);
+    return [
+      ...[...expectedSet].filter((destination) => !actualSet.has(destination)).map((destination) => ({
+        index: -1,
+        expected: destination,
+        actual: "<missing>",
+      })),
+      ...[...actualSet].filter((destination) => !expectedSet.has(destination)).map((destination) => ({
+        index: -1,
+        expected: "<unexpected>",
+        actual: destination,
+      })),
+    ];
+  }
   const issues = [];
   const count =
     MARKDOWN_LINK_PARITY_PREFIX_COUNTS.get(sourcePost.slug) ??

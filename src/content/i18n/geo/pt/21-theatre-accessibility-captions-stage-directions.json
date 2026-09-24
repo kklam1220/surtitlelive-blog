@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Pontos principais",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Artigos relacionados"
+  },
+  "keyTakeaways": [
+    "As legendas de acessibilidade tornam legíveis para o público informações sonoras importantes que não são faladas.",
+    "As indicações cênicas orientam a produção; o texto para o público pode precisar descrever o som ouvido na montagem.",
+    "No SurtitleLive, a linha de legenda de acessibilidade é escolhida manualmente e continua visível quando as indicações cênicas são ignoradas.",
+    "O SurtitleLive acrescenta um par de colchetes na exibição; a equipe decide quais sons são importantes para o público."
+  ],
+  "faq": [
+    {
+      "question": "O que são legendas acessíveis no teatro?",
+      "answer": "Elas transformam em texto informações sonoras importantes para compreender a apresentação: efeitos, alarmes, mudanças musicais, acontecimentos fora de cena e outros eventos auditivos significativos."
+    },
+    {
+      "question": "Qual é a diferença em relação às legendas de diálogo?",
+      "answer": "Legendas de diálogo representam principalmente o que os personagens dizem. Legendas acessíveis também podem descrever sons importantes que ninguém pronuncia."
+    },
+    {
+      "question": "Por que não mostrar diretamente as indicações de cena?",
+      "answer": "Porque elas são escritas principalmente para produzir o espetáculo. Nem todas interessam ao público, e algumas precisam ser reformuladas para comunicar com clareza o que de fato se ouve."
+    },
+    {
+      "question": "As legendas acessíveis somem quando as indicações de cena são puladas?",
+      "answer": "Não. Esse é justamente o motivo de haver agora um tipo de linha separado."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Legenda de acessibilidade",
+      "definition": "Texto para o público que comunica informações sonoras relevantes, inclusive sons sem fala."
+    },
+    {
+      "term": "Indicação cênica",
+      "definition": "Instrução do roteiro escrita principalmente para orientar a produção do espetáculo."
+    },
+    {
+      "term": "Informação para o público",
+      "definition": "Texto que comunica informações que talvez não cheguem aos espectadores pelo som."
+    },
+    {
+      "term": "Som não verbal",
+      "definition": "Informação audível como batidas, alarmes, mudanças na música ou sons fora de cena."
+    },
+    {
+      "term": "Tipo de linha manual",
+      "definition": "Categoria escolhida pela equipe de produção para uma linha, em vez de inferida pelo software."
+    }
+  ]
+}

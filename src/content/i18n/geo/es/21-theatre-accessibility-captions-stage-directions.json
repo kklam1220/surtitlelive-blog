@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ideas clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Artículos relacionados"
+  },
+  "keyTakeaways": [
+    "Los subtítulos accesibles convierten en texto para el público información sonora importante que no se expresa con palabras.",
+    "Las acotaciones guían la producción; el texto para el público puede necesitar una redacción que describa el sonido real.",
+    "La línea «subtítulo accesible» de SurtitleLive se asigna manualmente y sigue visible al omitir las acotaciones.",
+    "SurtitleLive añade un par de corchetes al mostrarla; el equipo decide qué sonidos son relevantes para el público."
+  ],
+  "faq": [
+    {
+      "question": "¿Qué son los subtítulos accesibles en teatro?",
+      "answer": "Convierten en texto la información sonora importante para comprender la función: efectos, alarmas, cambios musicales, actividad fuera de escena y otros acontecimientos auditivos significativos."
+    },
+    {
+      "question": "¿En qué se diferencian de los subtítulos de diálogo?",
+      "answer": "Los de diálogo representan principalmente lo que dicen los personajes. Los accesibles también pueden describir sonidos con significado dramático que nadie pronuncia."
+    },
+    {
+      "question": "¿Por qué no mostrar directamente las acotaciones?",
+      "answer": "Porque se escriben principalmente para producir el espectáculo. No todas son útiles para el público y algunas deben reformularse para describir con claridad lo que realmente se oye."
+    },
+    {
+      "question": "¿Desaparecen los subtítulos accesibles al omitir las acotaciones?",
+      "answer": "No. Precisamente por eso ahora tienen su propia categoría."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Subtítulo accesible",
+      "definition": "Texto para el público que comunica información sonora significativa, incluidos sonidos que nadie pronuncia."
+    },
+    {
+      "term": "Acotación",
+      "definition": "Indicación del guion destinada principalmente a orientar la producción."
+    },
+    {
+      "term": "Información para el público",
+      "definition": "Texto que comunica datos que el público quizá no reciba por el oído."
+    },
+    {
+      "term": "Sonido no verbal",
+      "definition": "Información audible como golpes, alarmas, cambios musicales o actividad fuera de escena."
+    },
+    {
+      "term": "Tipo de línea manual",
+      "definition": "Categoría que el equipo asigna a una línea, en lugar de dejar que el software la deduzca."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Inti Sari",
+    "faq": "Pertanyaan Umum",
+    "glossary": "Glosarium",
+    "related": "Artikel Terkait"
+  },
+  "keyTakeaways": [
+    "Teks aksesibilitas membuat informasi suara penting yang tidak diucapkan dapat dibaca oleh penonton.",
+    "Arahan panggung memandu produksi; teks untuk penonton mungkin perlu ditulis ulang agar menggambarkan suara yang benar-benar terdengar.",
+    "Jenis baris Teks Aksesibilitas di SurtitleLive dipilih secara manual dan tetap tampil saat arahan panggung dilewati.",
+    "SurtitleLive menambahkan sepasang tanda kurung siku saat ditampilkan; tim produksi menentukan suara yang penting."
+  ],
+  "faq": [
+    {
+      "question": "Apa itu teks aksesibilitas di teater?",
+      "answer": "Teks aksesibilitas mengubah informasi suara yang penting bagi pemahaman pertunjukan menjadi teks yang dapat dibaca: efek suara, alarm, perubahan musik, aktivitas di luar panggung, dan peristiwa audio penting lainnya."
+    },
+    {
+      "question": "Apa bedanya dengan takarir dialog?",
+      "answer": "Takarir dialog terutama menunjukkan apa yang diucapkan tokoh. Teks aksesibilitas juga dapat menjelaskan suara penting yang tidak diucapkan siapa pun."
+    },
+    {
+      "question": "Mengapa tidak menampilkan arahan panggung langsung saja?",
+      "answer": "Karena arahan panggung ditulis terutama untuk membuat pertunjukan. Tidak semuanya perlu dilihat penonton, dan sebagian perlu ditulis ulang agar menggambarkan suara aktual dengan jelas."
+    },
+    {
+      "question": "Apakah teks aksesibilitas hilang saat arahan panggung dilewati?",
+      "answer": "Tidak. Itulah alasan adanya jenis baris tersendiri."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Teks aksesibilitas",
+      "definition": "Teks untuk penonton yang menyampaikan informasi suara bermakna, termasuk suara yang tidak diucapkan."
+    },
+    {
+      "term": "Arahan panggung",
+      "definition": "Instruksi dalam naskah yang terutama memandu pembuatan pertunjukan."
+    },
+    {
+      "term": "Informasi untuk penonton",
+      "definition": "Teks yang menyampaikan informasi yang mungkin tidak diterima penonton melalui suara."
+    },
+    {
+      "term": "Suara nonverbal",
+      "definition": "Informasi audio seperti ketukan, alarm, perubahan musik, atau aktivitas di luar panggung."
+    },
+    {
+      "term": "Jenis baris manual",
+      "definition": "Kategori yang dipilih tim produksi untuk suatu baris, bukan disimpulkan otomatis oleh perangkat lunak."
+    }
+  ]
+}

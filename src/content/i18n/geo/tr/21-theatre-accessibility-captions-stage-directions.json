@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkanlar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Sözlük",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Erişilebilirlik altyazıları, konuşulmayan önemli ses bilgilerini seyircinin okuyabileceği metne dönüştürür.",
+    "Sahne yönergeleri yapımı yönlendirir; seyirciye sunulan metin, gerçek sahnede duyulan sesi anlatacak şekilde yeniden yazılabilir.",
+    "SurtitleLive’daki erişilebilirlik altyazısı satır türü elle seçilir ve sahne yönergeleri atlandığında da görünür kalır.",
+    "SurtitleLive gösterimde bir çift köşeli parantez ekler; hangi seslerin önemli olduğuna yapım ekibi karar verir."
+  ],
+  "faq": [
+    {
+      "question": "Tiyatroda erişilebilirlik altyazısı nedir?",
+      "answer": "Gösteriyi anlamak için önemli işitsel bilgileri okunabilir metne dönüştürür. Efektler, alarmlar, müzik değişimleri, sahne dışı olaylar ve diğer anlamlı sesler buna dahil olabilir."
+    },
+    {
+      "question": "Diyalog altyazısından farkı nedir?",
+      "answer": "Diyalog altyazısı esas olarak karakterlerin söylediklerini gösterir. Erişilebilirlik altyazısı kimsenin söylemediği ama dramatik olarak önemli sesleri de anlatabilir."
+    },
+    {
+      "question": "Neden sahne yönergelerini doğrudan göstermiyoruz?",
+      "answer": "Çünkü onlar öncelikle gösteriyi üretmek için yazılır. Seyirci için gereksiz olanları vardır; gerekli olanlar da gerçek sahne sesini doğal biçimde anlatacak şekilde yeniden yazılabilir."
+    },
+    {
+      "question": "Sahne yönergeleri atlanınca erişilebilirlik altyazısı kaybolur mu?",
+      "answer": "Hayır. Ayrı satır türünün temel amacı budur."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Erişilebilirlik altyazısı",
+      "definition": "Konuşulmayan anlamlı sesler dâhil önemli ses bilgilerini seyirciye aktaran metin."
+    },
+    {
+      "term": "Sahne yönergesi",
+      "definition": "Öncelikle bir oyunun sahnelenmesine rehberlik etmek için yazılan talimat."
+    },
+    {
+      "term": "Seyirciye yönelik bilgi",
+      "definition": "Seyircinin yalnızca işiterek alamayabileceği bilgiyi ileten metin."
+    },
+    {
+      "term": "Konuşma dışı ses",
+      "definition": "Kapı sesi, alarm, müzik değişimi veya sahne dışı hareket gibi işitsel bilgi."
+    },
+    {
+      "term": "Manuel satır türü",
+      "definition": "Yazılımın çıkarsaması yerine yapım ekibinin seçtiği satır kategorisi."
+    }
+  ]
+}

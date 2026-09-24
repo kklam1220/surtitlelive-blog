@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste",
+    "faq": "Häufige Fragen",
+    "glossary": "Glossar",
+    "related": "Weiterführende Artikel"
+  },
+  "keyTakeaways": [
+    "Barrierefreie Untertitel machen wichtige nichtsprachliche Geräusche für das Publikum lesbar.",
+    "Regieanweisungen leiten die Inszenierung; Publikumstexte müssen den tatsächlich hörbaren Klang oft anders formulieren.",
+    "Der barrierefreie Untertitel ist in SurtitleLive ein manueller Zeilentyp und bleibt beim Überspringen von Regieanweisungen sichtbar.",
+    "SurtitleLive setzt bei der Anzeige ein Klammerpaar; welche Geräusche wichtig sind, entscheidet das Produktionsteam."
+  ],
+  "faq": [
+    {
+      "question": "Was sind barrierefreie Untertitel im Theater?",
+      "answer": "Sie übertragen wichtige Hörinformationen in lesbaren Text: etwa Geräusche, Musikwechsel, Alarme oder Vorgänge außerhalb der Bühne. Besonders für gehörlose und schwerhörige Menschen können sie Informationen zugänglich machen, die sonst ausschließlich akustisch vermittelt würden."
+    },
+    {
+      "question": "Worin unterscheiden sie sich von Dialoguntertiteln?",
+      "answer": "Dialoguntertitel geben vor allem Gesprochenes wieder. Barrierefreie Untertitel können bedeutsame Geräusche beschreiben, die von keiner Figur gesprochen werden."
+    },
+    {
+      "question": "Warum nicht einfach Regieanweisungen anzeigen?",
+      "answer": "Weil Regieanweisungen für die Herstellung der Aufführung geschrieben sind, nicht zwangsläufig für das Publikum. „Knocking within“ kann in einer bestimmten Inszenierung als [heftiges Klopfen von draußen] besser verständlich sein; viele andere Regieanweisungen gehören überhaupt nicht in die Publikumsanzeige."
+    },
+    {
+      "question": "Verschwinden barrierefreie Untertitel, wenn Regieanweisungen übersprungen werden?",
+      "answer": "Nein. Genau dafür gibt es nun einen eigenen Zeilentyp."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Barrierefreie Untertitel",
+      "definition": "Publikumstext, der wichtige Geräusche vermittelt, auch wenn sie von niemandem gesprochen werden."
+    },
+    {
+      "term": "Regieanweisung",
+      "definition": "Eine Textanweisung, die in erster Linie der Umsetzung einer Aufführung dient."
+    },
+    {
+      "term": "Publikumsinformation",
+      "definition": "Text, der dem Publikum Informationen zugänglich macht, die es akustisch möglicherweise nicht erhält."
+    },
+    {
+      "term": "Nichtsprachliches Geräusch",
+      "definition": "Hörbare Information wie Klopfen, ein Alarm, ein Musikwechsel oder Vorgänge außerhalb der Bühne."
+    },
+    {
+      "term": "Manueller Zeilentyp",
+      "definition": "Eine vom Produktionsteam gewählte Zeilenkategorie, die nicht automatisch vom Programm abgeleitet wird."
+    }
+  ]
+}

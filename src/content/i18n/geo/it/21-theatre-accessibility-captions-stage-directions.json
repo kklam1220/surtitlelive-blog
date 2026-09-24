@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "21-theatre-accessibility-captions-stage-directions",
+  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
+  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sectionTitles": {
+    "keyTakeaways": "Punti chiave",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Articoli correlati"
+  },
+  "keyTakeaways": [
+    "I sottotitoli accessibili rendono leggibili al pubblico informazioni sonore importanti che non vengono pronunciate.",
+    "Le indicazioni di scena guidano la produzione; il testo per il pubblico può richiedere una formulazione che descriva il suono reale.",
+    "In SurtitleLive il tipo di riga «sottotitolo accessibile» è manuale e resta visibile quando si saltano le indicazioni di scena.",
+    "SurtitleLive aggiunge una coppia di parentesi quadre in visualizzazione; è la produzione a decidere quali suoni contano."
+  ],
+  "faq": [
+    {
+      "question": "Che cosa sono i sottotitoli accessibili a teatro?",
+      "answer": "Rendono leggibili informazioni sonore importanti per comprendere lo spettacolo: effetti, allarmi, cambiamenti musicali, attività fuori scena e altri eventi acustici significativi."
+    },
+    {
+      "question": "In che cosa differiscono dai sottotitoli di dialogo?",
+      "answer": "I sottotitoli di dialogo riportano soprattutto ciò che i personaggi dicono. Quelli accessibili possono descrivere suoni importanti che nessuno pronuncia."
+    },
+    {
+      "question": "Perché non mostrare direttamente le indicazioni di scena?",
+      "answer": "Perché sono scritte soprattutto per realizzare lo spettacolo. Non tutte servono al pubblico e alcune devono essere riformulate per descrivere con chiarezza ciò che si sente realmente."
+    },
+    {
+      "question": "I sottotitoli accessibili spariscono se si saltano le indicazioni di scena?",
+      "answer": "No. È proprio la ragione per cui ora esiste un tipo di riga indipendente."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sottotitolo accessibile",
+      "definition": "Testo per il pubblico che comunica informazioni sonore significative, anche quando nessuno parla."
+    },
+    {
+      "term": "Indicazione di scena",
+      "definition": "Istruzione del copione pensata soprattutto per guidare la realizzazione dello spettacolo."
+    },
+    {
+      "term": "Informazione per il pubblico",
+      "definition": "Testo che comunica agli spettatori informazioni che potrebbero non percepire attraverso l’audio."
+    },
+    {
+      "term": "Suono non verbale",
+      "definition": "Informazione udibile come un bussare, un allarme, un cambio musicale o un rumore fuori scena."
+    },
+    {
+      "term": "Tipo di riga manuale",
+      "definition": "Categoria assegnata dal team di produzione a una riga, senza deduzione automatica del software."
+    }
+  ]
+}
