@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "pt",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Pontos principais",
     "faq": "Perguntas frequentes",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "As legendas de acessibilidade tornam legíveis para o público informações sonoras importantes que não são faladas.",
     "As indicações cênicas orientam a produção; o texto para o público pode precisar descrever o som ouvido na montagem.",
-    "No SurtitleLive, a linha de legenda de acessibilidade é escolhida manualmente e continua visível quando as indicações cênicas são ignoradas.",
+    "Na navegação normal do console, as indicações cênicas são puladas e as legendas de acessibilidade continuam na sequência.",
     "O SurtitleLive acrescenta um par de colchetes na exibição; a equipe decide quais sons são importantes para o público."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Porque elas são escritas principalmente para produzir o espetáculo. Nem todas interessam ao público, e algumas precisam ser reformuladas para comunicar com clareza o que de fato se ouve."
     },
     {
-      "question": "As legendas acessíveis somem quando as indicações de cena são puladas?",
-      "answer": "Não. Esse é justamente o motivo de haver agora um tipo de linha separado."
+      "question": "As legendas de acessibilidade também são puladas quando as indicações cênicas são puladas?",
+      "answer": "Não. Na navegação normal para a próxima linha ou para a anterior, as indicações cênicas são puladas, mas as legendas de acessibilidade permanecem na sequência e podem ser enviadas ao público. Ir diretamente a uma linha específica é uma ação separada."
     }
   ],
   "glossary": [

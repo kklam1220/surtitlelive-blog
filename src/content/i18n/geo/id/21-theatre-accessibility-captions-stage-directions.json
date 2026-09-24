@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "id",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Inti Sari",
     "faq": "Pertanyaan Umum",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Teks aksesibilitas membuat informasi suara penting yang tidak diucapkan dapat dibaca oleh penonton.",
     "Arahan panggung memandu produksi; teks untuk penonton mungkin perlu ditulis ulang agar menggambarkan suara yang benar-benar terdengar.",
-    "Jenis baris Teks Aksesibilitas di SurtitleLive dipilih secara manual dan tetap tampil saat arahan panggung dilewati.",
+    "Dalam navigasi normal di konsol operator, arahan panggung dilewati sementara teks aksesibilitas tetap berada dalam urutan cue.",
     "SurtitleLive menambahkan sepasang tanda kurung siku saat ditampilkan; tim produksi menentukan suara yang penting."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Karena arahan panggung ditulis terutama untuk membuat pertunjukan. Tidak semuanya perlu dilihat penonton, dan sebagian perlu ditulis ulang agar menggambarkan suara aktual dengan jelas."
     },
     {
-      "question": "Apakah teks aksesibilitas hilang saat arahan panggung dilewati?",
-      "answer": "Tidak. Itulah alasan adanya jenis baris tersendiri."
+      "question": "Apakah teks aksesibilitas ikut dilewati saat arahan panggung dilewati?",
+      "answer": "Tidak. Dalam navigasi normal ke cue berikutnya atau sebelumnya, arahan panggung dilewati, sedangkan teks aksesibilitas tetap dalam urutan dan dapat dikirim kepada penonton. Lompat langsung ke cue tertentu merupakan tindakan terpisah."
     }
   ],
   "glossary": [

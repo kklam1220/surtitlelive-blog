@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "en",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
     "faq": "FAQ",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Accessibility captions make important non-speech sound information readable for the audience.",
     "Stage directions guide the production; audience captions may need wording that describes the sound in the actual staging.",
-    "SurtitleLive’s Accessibility Caption is a manual line type and remains visible when stage directions are skipped.",
+    "In normal Next/Previous navigation, the operator console skips stage-direction cues while Accessibility Captions remain in the cue sequence.",
     "SurtitleLive adds one pair of brackets for display; the production team decides which sounds matter to the audience."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Stage directions are written primarily for making the performance. Accessibility captions are written for the audience. A stage direction may need to be rewritten to describe the sound as it is actually heard, and many stage directions should not be shown to the audience at all."
     },
     {
-      "question": "Will Accessibility Captions disappear when Skip Stage Directions is enabled?",
-      "answer": "No. Accessibility Captions are audience-facing cues and remain visible when stage directions are skipped."
+      "question": "Are Accessibility Captions skipped when Skip Stage Directions is on?",
+      "answer": "No. During normal Next/Previous navigation, stage-direction cues are skipped while Accessibility Captions remain in sequence and can be sent to the audience. Directly jumping to a cue is a separate action."
     }
   ],
   "glossary": [

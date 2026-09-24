@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "vi",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Điểm chính",
     "faq": "Câu hỏi thường gặp",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Phụ đề hỗ trợ tiếp cận giúp khán giả đọc được những thông tin âm thanh quan trọng không được nói thành lời.",
     "Chỉ dẫn sân khấu hướng dẫn quá trình dựng vở; câu chữ dành cho khán giả có thể cần mô tả âm thanh thực tế.",
-    "Loại dòng phụ đề hỗ trợ tiếp cận trong SurtitleLive do người dùng chọn và vẫn hiển thị khi bỏ qua chỉ dẫn sân khấu.",
+    "Khi chuyển cue thông thường trong bảng điều khiển, chỉ dẫn sân khấu được bỏ qua còn phụ đề hỗ trợ tiếp cận vẫn nằm trong thứ tự cue.",
     "SurtitleLive thêm một cặp ngoặc vuông khi hiển thị; ê-kíp quyết định âm thanh nào quan trọng với khán giả."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Vì chúng được viết chủ yếu để làm nên buổi diễn. Nhiều chỉ dẫn không cần cho khán giả; một số khác cần được viết lại để mô tả rõ âm thanh thực tế của bản dựng."
     },
     {
-      "question": "Phụ đề hỗ trợ tiếp cận có biến mất khi bỏ qua chỉ dẫn sân khấu không?",
-      "answer": "Không. Đó chính là lý do loại dòng riêng được thêm vào."
+      "question": "Phụ đề hỗ trợ tiếp cận có bị bỏ qua cùng chỉ dẫn sân khấu không?",
+      "answer": "Không. Khi chuyển đến cue kế tiếp hoặc cue trước đó theo cách thông thường, chỉ dẫn sân khấu được bỏ qua còn phụ đề hỗ trợ tiếp cận vẫn nằm trong thứ tự và có thể được gửi đến khán giả. Nhảy thẳng đến một cue cụ thể là thao tác riêng."
     }
   ],
   "glossary": [

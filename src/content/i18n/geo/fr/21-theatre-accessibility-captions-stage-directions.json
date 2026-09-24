@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "fr",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "À retenir",
     "faq": "Questions fréquentes",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Le sous-titrage d’accessibilité rend lisibles les informations sonores importantes qui ne sont pas prononcées.",
     "Les didascalies guident la production ; le texte destiné au public doit parfois décrire autrement le son réellement mis en scène.",
-    "Dans SurtitleLive, la ligne « sous-titre d’accessibilité » est attribuée manuellement et reste visible si les didascalies sont ignorées.",
+    "Dans la navigation normale de la console, les didascalies sont ignorées tandis que les sous-titres d’accessibilité restent dans la séquence des repères.",
     "SurtitleLive ajoute une paire de crochets à l’affichage ; l’équipe de production choisit les sons qui comptent pour le public."
   ],
   "faq": [
@@ -27,11 +27,11 @@
     },
     {
       "question": "Pourquoi ne pas simplement afficher les didascalies ?",
-      "answer": "Parce qu’elles sont écrites avant tout pour produire le spectacle. Le public n’a pas besoin de toutes les lire, et une formulation comme « Knocking within » peut devoir être réécrite pour devenir une information claire à l’écran."
+      "answer": "Parce qu’elles sont écrites avant tout pour produire le spectacle. Le public n’a pas besoin de toutes les lire, et une formulation comme « Knock within. » peut devoir être réécrite pour devenir une information claire à l’écran."
     },
     {
-      "question": "Les sous-titres d’accessibilité disparaissent-ils si les didascalies sont ignorées ?",
-      "answer": "Non. C’est précisément l’intérêt du nouveau type de ligne."
+      "question": "Les sous-titres d’accessibilité sont-ils ignorés avec les didascalies ?",
+      "answer": "Non. Lors de la navigation normale vers le repère suivant ou précédent, les didascalies sont ignorées, mais les sous-titres d’accessibilité restent dans la séquence et peuvent être envoyés au public. L’accès direct à un repère précis est une action distincte."
     }
   ],
   "glossary": [

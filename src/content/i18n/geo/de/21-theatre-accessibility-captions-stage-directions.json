@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "de",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Das Wichtigste",
     "faq": "Häufige Fragen",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Barrierefreie Untertitel machen wichtige nichtsprachliche Geräusche für das Publikum lesbar.",
     "Regieanweisungen leiten die Inszenierung; Publikumstexte müssen den tatsächlich hörbaren Klang oft anders formulieren.",
-    "Der barrierefreie Untertitel ist in SurtitleLive ein manueller Zeilentyp und bleibt beim Überspringen von Regieanweisungen sichtbar.",
+    "Bei der normalen Vor- und Zurücknavigation werden Regieanweisungen übersprungen; Zeilen für barrierefreie Untertitel bleiben in der Cue-Abfolge.",
     "SurtitleLive setzt bei der Anzeige ein Klammerpaar; welche Geräusche wichtig sind, entscheidet das Produktionsteam."
   ],
   "faq": [
@@ -27,11 +27,11 @@
     },
     {
       "question": "Warum nicht einfach Regieanweisungen anzeigen?",
-      "answer": "Weil Regieanweisungen für die Herstellung der Aufführung geschrieben sind, nicht zwangsläufig für das Publikum. „Knocking within“ kann in einer bestimmten Inszenierung als [heftiges Klopfen von draußen] besser verständlich sein; viele andere Regieanweisungen gehören überhaupt nicht in die Publikumsanzeige."
+      "answer": "Regieanweisungen richten sich in erster Linie an das Produktionsteam. „Knock within.“ weist auf Klopfen außerhalb der Bühne hin, legt aber weder Tempo noch Dringlichkeit oder einen Ort außerhalb des Gebäudes fest. Ein für das Publikum bestimmter Untertitel sollte deshalb den tatsächlich hörbaren Klang beschreiben. Viele Regieanweisungen gehören außerdem nicht auf die Publikumsanzeige."
     },
     {
-      "question": "Verschwinden barrierefreie Untertitel, wenn Regieanweisungen übersprungen werden?",
-      "answer": "Nein. Genau dafür gibt es nun einen eigenen Zeilentyp."
+      "question": "Werden barrierefreie Untertitel beim Überspringen von Regieanweisungen ebenfalls übersprungen?",
+      "answer": "Nein. Bei der normalen Navigation zum nächsten oder vorherigen Cue werden Regieanweisungen übersprungen, Zeilen für barrierefreie Untertitel bleiben jedoch in der Abfolge und können ans Publikum ausgegeben werden. Der direkte Sprung zu einer bestimmten Zeile ist eine separate Aktion."
     }
   ],
   "glossary": [

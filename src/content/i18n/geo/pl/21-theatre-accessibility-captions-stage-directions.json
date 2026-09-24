@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "pl",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Najważniejsze informacje",
     "faq": "Najczęstsze pytania",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Napisy dostępnościowe przekazują widowni w czytelnej formie ważne informacje dźwiękowe, których nikt nie wypowiada.",
     "Didaskalia pomagają przygotować spektakl; tekst dla widowni może wymagać redakcji opisującej rzeczywiście słyszany dźwięk.",
-    "Typ wiersza „napis dostępnościowy” w SurtitleLive wybiera się ręcznie i pozostaje widoczny po pominięciu didaskaliów.",
+    "Podczas zwykłej nawigacji w konsoli didaskalia są pomijane, a napisy dostępnościowe pozostają w kolejności cue’ów.",
     "SurtitleLive dodaje nawiasy kwadratowe przy wyświetlaniu; zespół produkcyjny decyduje, które dźwięki są istotne."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Ponieważ są pisane głównie z myślą o realizacji spektaklu. Nie wszystkie są potrzebne publiczności, a część wymaga przeredagowania tak, by jasno opisywała faktycznie słyszany dźwięk."
     },
     {
-      "question": "Czy napisy dostępnościowe znikną po włączeniu pomijania didaskaliów?",
-      "answer": "Nie. Właśnie temu służy osobny typ wiersza."
+      "question": "Czy napisy dostępnościowe są pomijane razem z didaskaliami?",
+      "answer": "Nie. Podczas zwykłego przechodzenia do następnego lub poprzedniego cue didaskalia są pomijane, a napisy dostępnościowe pozostają w kolejności i mogą zostać wysłane do widowni. Bezpośrednie przejście do wybranego cue jest osobną czynnością."
     }
   ],
   "glossary": [

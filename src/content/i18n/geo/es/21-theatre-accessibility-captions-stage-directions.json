@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "es",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Ideas clave",
     "faq": "Preguntas frecuentes",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Los subtítulos accesibles convierten en texto para el público información sonora importante que no se expresa con palabras.",
     "Las acotaciones guían la producción; el texto para el público puede necesitar una redacción que describa el sonido real.",
-    "La línea «subtítulo accesible» de SurtitleLive se asigna manualmente y sigue visible al omitir las acotaciones.",
+    "En la navegación normal de la consola, se omiten las acotaciones y los subtítulos accesibles permanecen en la secuencia de señales.",
     "SurtitleLive añade un par de corchetes al mostrarla; el equipo decide qué sonidos son relevantes para el público."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Porque se escriben principalmente para producir el espectáculo. No todas son útiles para el público y algunas deben reformularse para describir con claridad lo que realmente se oye."
     },
     {
-      "question": "¿Desaparecen los subtítulos accesibles al omitir las acotaciones?",
-      "answer": "No. Precisamente por eso ahora tienen su propia categoría."
+      "question": "¿Se omiten los subtítulos accesibles al omitir las acotaciones?",
+      "answer": "No. En la navegación normal hacia la señal siguiente o anterior se omiten las acotaciones, mientras que los subtítulos accesibles permanecen en la secuencia y pueden enviarse al público. Ir directamente a una señal concreta es una acción distinta."
     }
   ],
   "glossary": [

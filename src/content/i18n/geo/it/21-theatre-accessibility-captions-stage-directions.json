@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "it",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Punti chiave",
     "faq": "Domande frequenti",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "I sottotitoli accessibili rendono leggibili al pubblico informazioni sonore importanti che non vengono pronunciate.",
     "Le indicazioni di scena guidano la produzione; il testo per il pubblico può richiedere una formulazione che descriva il suono reale.",
-    "In SurtitleLive il tipo di riga «sottotitolo accessibile» è manuale e resta visibile quando si saltano le indicazioni di scena.",
+    "Nella normale navigazione della console, le indicazioni di scena vengono saltate mentre i sottotitoli accessibili restano nella sequenza dei cue.",
     "SurtitleLive aggiunge una coppia di parentesi quadre in visualizzazione; è la produzione a decidere quali suoni contano."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Perché sono scritte soprattutto per realizzare lo spettacolo. Non tutte servono al pubblico e alcune devono essere riformulate per descrivere con chiarezza ciò che si sente realmente."
     },
     {
-      "question": "I sottotitoli accessibili spariscono se si saltano le indicazioni di scena?",
-      "answer": "No. È proprio la ragione per cui ora esiste un tipo di riga indipendente."
+      "question": "I sottotitoli accessibili vengono saltati insieme alle indicazioni di scena?",
+      "answer": "No. Nella normale navigazione al cue successivo o precedente si saltano le indicazioni di scena, mentre i sottotitoli accessibili restano nella sequenza e possono essere inviati al pubblico. Il salto diretto a un cue specifico è un’azione separata."
     }
   ],
   "glossary": [

@@ -2,8 +2,8 @@
   "version": 1,
   "locale": "tr",
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceHash": "c47d23347f63aae75dac282298307bb38fc49d953e541fa0e6518589c02b5607",
-  "generatedAt": "2026-09-24T02:25:29.123Z",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "generatedAt": "2026-09-24T04:35:29.448Z",
   "sectionTitles": {
     "keyTakeaways": "Öne çıkanlar",
     "faq": "Sık sorulan sorular",
@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "Erişilebilirlik altyazıları, konuşulmayan önemli ses bilgilerini seyircinin okuyabileceği metne dönüştürür.",
     "Sahne yönergeleri yapımı yönlendirir; seyirciye sunulan metin, gerçek sahnede duyulan sesi anlatacak şekilde yeniden yazılabilir.",
-    "SurtitleLive’daki erişilebilirlik altyazısı satır türü elle seçilir ve sahne yönergeleri atlandığında da görünür kalır.",
+    "Operatör konsolunda normal gezinme sahne yönergelerini atlar; erişilebilirlik altyazıları cue sıralamasında kalır.",
     "SurtitleLive gösterimde bir çift köşeli parantez ekler; hangi seslerin önemli olduğuna yapım ekibi karar verir."
   ],
   "faq": [
@@ -30,8 +30,8 @@
       "answer": "Çünkü onlar öncelikle gösteriyi üretmek için yazılır. Seyirci için gereksiz olanları vardır; gerekli olanlar da gerçek sahne sesini doğal biçimde anlatacak şekilde yeniden yazılabilir."
     },
     {
-      "question": "Sahne yönergeleri atlanınca erişilebilirlik altyazısı kaybolur mu?",
-      "answer": "Hayır. Ayrı satır türünün temel amacı budur."
+      "question": "Sahne yönergeleri atlanırken erişilebilirlik altyazıları da atlanır mı?",
+      "answer": "Hayır. Normal Sonraki/Önceki gezinmesinde sahne yönergeleri atlanır, erişilebilirlik altyazıları ise sıralamada kalır ve izleyiciye gönderilebilir. Belirli bir cue’ya doğrudan atlamak ayrı bir işlemdir."
     }
   ],
   "glossary": [
