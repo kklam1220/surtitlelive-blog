@@ -19,6 +19,21 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.02",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善了观众链接在演出重启后的可用性及各屏幕的预览语言，并修复 Editor 审阅标记和登录问题。",
+          "new": [],
+          "improved": [
+            "演出重启后，观众链接仍可打开。",
+            "每个投影预览现在都会保留该屏幕所选的语言。"
+          ],
+          "fixed": [
+            "修复重新打开剧本后，已审阅的 Editor 行再次被标记的问题。",
+            "修复浏览器会话被替换后无法重新登录的问题。"
+          ]
+        },
+        {
           "version": "v260923.01",
           "releaseDate": "2026-09-23",
           "product": "SurtitleLive Cloud",

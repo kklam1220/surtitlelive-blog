@@ -19,6 +19,21 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.02",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện tính liên tục của liên kết khán giả và bản xem trước theo từng màn hình, đồng thời khắc phục vấn đề về trạng thái duyệt trong Editor và đăng nhập.",
+          "new": [],
+          "improved": [
+            "Liên kết dành cho khán giả vẫn mở được sau khi buổi diễn được khởi động lại.",
+            "Mỗi bản xem trước trình chiếu giờ giữ ngôn ngữ đã chọn cho màn hình tương ứng."
+          ],
+          "fixed": [
+            "Đã sửa lỗi các dòng Editor đã duyệt bị đánh dấu lại khi mở lại kịch bản.",
+            "Đã sửa lỗi không thể đăng nhập mới sau khi phiên trình duyệt được thay thế."
+          ]
+        },
+        {
           "version": "v260923.01",
           "releaseDate": "2026-09-23",
           "product": "SurtitleLive Cloud",

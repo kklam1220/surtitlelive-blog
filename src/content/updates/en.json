@@ -19,6 +19,21 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.02",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improves audience-link continuity and per-screen previews, and fixes Editor review and sign-in issues.",
+          "new": [],
+          "improved": [
+            "Audience Show links remain accessible after a performance restart.",
+            "Each projection preview now keeps its own selected language."
+          ],
+          "fixed": [
+            "Fixed reviewed Editor lines being flagged again after a script is reopened.",
+            "Fixed fresh sign-in being blocked after a browser session is replaced."
+          ]
+        },
+        {
           "version": "v260923.01",
           "releaseDate": "2026-09-23",
           "product": "SurtitleLive Cloud",

@@ -19,6 +19,21 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.02",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Cette version améliore la continuité des liens destinés au public et des aperçus par écran, et corrige des problèmes de révision dans l’Éditeur et de connexion.",
+          "new": [],
+          "improved": [
+            "Les liens destinés au public restent accessibles après le redémarrage d’une représentation.",
+            "Chaque aperçu de projection conserve désormais la langue sélectionnée pour son écran."
+          ],
+          "fixed": [
+            "Correction d’un problème qui réactivait les marqueurs des lignes déjà vérifiées dans l’Éditeur après la réouverture d’un script.",
+            "Correction d’un blocage de la nouvelle connexion après le remplacement d’une session du navigateur."
+          ]
+        },
+        {
           "version": "v260923.01",
           "releaseDate": "2026-09-23",
           "product": "SurtitleLive Cloud",

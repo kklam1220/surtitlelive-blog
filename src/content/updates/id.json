@@ -19,6 +19,21 @@
       "endDate": "2026-09-26",
       "versions": [
         {
+          "version": "v260923.02",
+          "releaseDate": "2026-09-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan kesinambungan tautan audiens dan pratinjau per layar, serta memperbaiki masalah peninjauan Editor dan proses masuk.",
+          "new": [],
+          "improved": [
+            "Tautan audiens tetap dapat dibuka setelah pertunjukan dimulai ulang.",
+            "Setiap pratinjau proyeksi kini mempertahankan bahasa yang dipilih untuk layarnya."
+          ],
+          "fixed": [
+            "Memperbaiki baris Editor yang sudah ditinjau agar tidak kembali ditandai setelah skrip dibuka ulang.",
+            "Memperbaiki proses masuk baru yang terhambat setelah sesi browser diganti."
+          ]
+        },
+        {
           "version": "v260923.01",
           "releaseDate": "2026-09-23",
           "product": "SurtitleLive Cloud",
