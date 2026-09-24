@@ -1,25 +1,49 @@
 {
+  "version": 1,
   "slug": "21-theatre-accessibility-captions-stage-directions",
-  "sourceOfTruth": "English Markdown",
-  "localizationMode": "native transcreation with product-claim lock",
-  "approvedPreservedLocale": "zh-TW",
-  "principles": [
-    "Treat every locale as an original editorial article, not a sentence-by-sentence translation.",
-    "Preserve the dramatic argument built around Macbeth Act 2 Scene 2 and Hamlet Act 4 Scene 5, using standard local play titles and character names.",
-    "Use each locale’s established theatre terminology for stage directions, dialogue, captions and Deaf/hard-of-hearing audiences.",
-    "Translate generic captions, captioning, subtitles and stage-directions terminology into natural local-language equivalents; keep English only for quoted Shakespeare wording, established product names and official organization names.",
-    "Keep product behavior exact: Accessibility Caption is a manual Editor line type with no speaker; in the operator console it remains in the normal Next/Previous cue sequence when Skip Stage Directions is enabled; direct jumps are a separate action. Simulations, projections and audience views render one bracket pair; already-bracketed text is not double-wrapped; script analysis does not infer this type.",
-    "In the English source, use the official UI label Hide Character Names, never Skip Character Names. Localized articles should use the official label from that locale’s UI.",
-    "Use the supplied Macbeth text excerpt and the supplied editor recording as inline images; use the latest supplied black Cockpit screenshot as the hero image.",
-    "Do not imply that every stage direction should become a caption. The editorial question is whether missing the sound removes information needed to understand the moment.",
-    "Do not turn sound captioning into visual description; visible movement is a different access need.",
-    "Keep English source phrases such as Knocking within, Knock within and A noise within only where discussing Shakespeare’s source text; localize surrounding explanation, including link labels for resource titles where a descriptive translation is clearer.",
-    "Traditional Chinese is an approved preserved translation and must not be regenerated from the English source without explicit instruction."
+  "sourceLocale": "en",
+  "sourcePath": "src/content/blog/21-theatre-accessibility-captions-stage-directions.md",
+  "sourceHash": "c0baac7e687aea5e42d51af810764a7b9be4808bb079e85870c5acd6e1a9b217",
+  "localizationMode": "transcreation-with-claim-lock",
+  "completedLocales": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zh-CN",
+    "zh-TW"
   ],
-  "sourceReferences": [
-    "https://www.folger.edu/explore/shakespeares-works/macbeth/read/2/2/",
-    "https://www.folger.edu/explore/shakespeares-works/hamlet/read/4/5/",
-    "https://www.w3.org/WAI/media/av/captions/",
-    "https://dcmp.org/learn/captioningkey/602"
-  ]
+  "rules": [
+    "Treat the English Markdown source as canonical for factual claims, section logic, product behavior, examples, images, and references.",
+    "Write each locale as native editorial prose, not line-by-line translation. Headings and sentence structure may change when local usage benefits.",
+    "Keep the Macbeth and Hamlet examples, but use natural local spellings/transliterations and theatre terminology.",
+    "Preserve the distinction that a stage direction and an accessibility caption may refer to the same theatrical event but are different kinds of information.",
+    "Preserve the caveat that Accessibility Caption is SurtitleLive's product-specific manual line type; captioning standards do not require every tool to use this taxonomy.",
+    "Sound descriptions must be fact-based and grounded in the actual production. Do not present urgency, exact location, emotion, symbolism, or interpretation unless the production establishes it.",
+    "The phrase equivalent to '[urgent knocking from outside]' appears only as an example of over-specific wording that the source stage direction alone does not justify; do not turn it into the recommended caption.",
+    "Preserve that SurtitleLive does not automatically infer or convert stage directions into Accessibility Captions. The line type is manual.",
+    "Preserve the exact product behavior: Skip Stage Directions skips stage-direction cues during normal Previous/Next navigation, while Accessibility Captions remain. A direct jump to a cue is a separate operator action.",
+    "Preserve that brackets are presentation formatting; SurtitleLive can store unbracketed content and renders one bracket pair, without doubling existing brackets.",
+    "Use established local theatre/accessibility terminology where it exists. Product UI labels should remain consistent with SurtitleLive's existing localization.",
+    "Keep URLs and local image paths unchanged."
+  ],
+  "localeNotes": {
+    "fr": "Use natural French theatre vocabulary such as didascalie and surtitrage adapté in the broader editorial discussion; use Sous-titre d’accessibilité when referring to the SurtitleLive product line type.",
+    "ja": "Use ト書き for stage directions and バリアフリー字幕 as the natural broader theatre-accessibility term; use アクセシビリティ字幕 for the SurtitleLive UI line type.",
+    "id": "Use takarir naturally in editorial prose; retain Teks aksesibilitas when referring to the SurtitleLive UI line type.",
+    "pt": "Treat locale pt as Brazilian Portuguese for this repository.",
+    "zh-TW": "Use Taiwan-neutral Traditional Chinese terminology; do not silently relabel the locale as Hong Kong. 無障礙字幕 remains the product/blog term for zh-TW.",
+    "zh-CN": "Use natural Simplified Chinese theatre terminology and keep 无障碍字幕 as the product term."
+  }
 }

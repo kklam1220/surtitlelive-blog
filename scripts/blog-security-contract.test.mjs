@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
+import { Marked } from "marked";
 import {
   sanitizeLocalizedBlogHtml,
   serializeJsonLd,
@@ -18,6 +19,7 @@ const {
 const scriptsDirectory = path.dirname(fileURLToPath(import.meta.url));
 const blogRoot = path.resolve(scriptsDirectory, "..");
 const localizedRoot = path.join(blogRoot, "src", "content", "i18n", "blog");
+const marked = new Marked();
 const locales = fs
   .readdirSync(localizedRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
@@ -66,6 +68,19 @@ test("reviewed localized article links preserve canonical markdown destinations"
       );
       assert.deepEqual(issues, [], `${locale}/${slug} changed a canonical link destination`);
     }
+  }
+});
+
+test("Macbeth accessibility-caption translations render emphasis without raw markdown markers", () => {
+  const slug = "21-theatre-accessibility-captions-stage-directions";
+
+  for (const locale of locales) {
+    const localizedPath = path.join(localizedRoot, locale, `${slug}.json`);
+    const localized = JSON.parse(fs.readFileSync(localizedPath, "utf8"));
+    const rendered = sanitizeLocalizedBlogHtml(marked.parse(localized.body));
+
+    assert.match(rendered, /<strong>/, `${locale}/${slug} lost article emphasis`);
+    assert.doesNotMatch(rendered, /\*\*/, `${locale}/${slug} exposes raw markdown emphasis`);
   }
 });
 
