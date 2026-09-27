@@ -37,11 +37,13 @@ const UNORDERED_MARKDOWN_LINK_PARITY_SLUGS = new Set([
 const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
   "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
   "21-theatre-accessibility-captions-stage-directions",
+  "22-one-night-different-stories-scripts-under-the-stars-calgary",
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],
   ["21-theatre-accessibility-captions-stage-directions", 2],
+  ["22-one-night-different-stories-scripts-under-the-stars-calgary", 5],
 ]);
 
 function extractMarkdownDestinations(markdown) {

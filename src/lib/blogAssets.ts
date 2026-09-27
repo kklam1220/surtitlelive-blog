@@ -36,6 +36,12 @@ import blog203 from "../content/blog/blog-20-3.jpg";
 import blog21Hero from "../content/blog/blog-21.png";
 import blog21MacbethSourceExcerpt from "../content/blog/blog-21-macbeth-source-excerpt.png";
 import blog21CaptionEditor from "../content/blog/blog-21-accessibility-caption-editor.gif";
+import blog22Pavilion from "../content/blog/blog-22-pavilion.jpg";
+import blog22PavilionAudience from "../content/blog/blog-22-pavilion-audience.jpg";
+import blog22TelescopeGathering from "../content/blog/blog-22-telescope-gathering.jpg";
+import blog22Speaker from "../content/blog/blog-22-speaker.jpg";
+import blog22LiveCaptions from "../content/blog/blog-22-live-captions.jpg";
+import blog22Conversation from "../content/blog/blog-22-conversation.jpg";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -73,6 +79,12 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-21.png": blog21Hero,
   "blog-21-macbeth-source-excerpt.png": blog21MacbethSourceExcerpt,
   "blog-21-accessibility-caption-editor.gif": blog21CaptionEditor,
+  "blog-22-pavilion.jpg": blog22Pavilion,
+  "blog-22-pavilion-audience.jpg": blog22PavilionAudience,
+  "blog-22-telescope-gathering.jpg": blog22TelescopeGathering,
+  "blog-22-speaker.jpg": blog22Speaker,
+  "blog-22-live-captions.jpg": blog22LiveCaptions,
+  "blog-22-conversation.jpg": blog22Conversation,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,
