@@ -71,16 +71,21 @@ test("reviewed localized article links preserve canonical markdown destinations"
   }
 });
 
-test("Macbeth accessibility-caption translations render emphasis without raw markdown markers", () => {
-  const slug = "21-theatre-accessibility-captions-stage-directions";
+test("localized Blog21 and Blog22 emphasis renders without raw markdown markers", () => {
+  const slugs = [
+    "21-theatre-accessibility-captions-stage-directions",
+    "22-one-night-different-stories-scripts-under-the-stars-calgary",
+  ];
 
-  for (const locale of locales) {
-    const localizedPath = path.join(localizedRoot, locale, `${slug}.json`);
-    const localized = JSON.parse(fs.readFileSync(localizedPath, "utf8"));
-    const rendered = sanitizeLocalizedBlogHtml(marked.parse(localized.body));
+  for (const slug of slugs) {
+    for (const locale of locales) {
+      const localizedPath = path.join(localizedRoot, locale, `${slug}.json`);
+      const localized = JSON.parse(fs.readFileSync(localizedPath, "utf8"));
+      const rendered = sanitizeLocalizedBlogHtml(marked.parse(localized.body));
 
-    assert.match(rendered, /<strong>/, `${locale}/${slug} lost article emphasis`);
-    assert.doesNotMatch(rendered, /\*\*/, `${locale}/${slug} exposes raw markdown emphasis`);
+      assert.match(rendered, /<strong>/, `${locale}/${slug} lost article emphasis`);
+      assert.doesNotMatch(rendered, /\*\*/, `${locale}/${slug} exposes raw markdown emphasis`);
+    }
   }
 });
 
