@@ -1,18 +1,18 @@
 ---
 title: 'Why Theatre Subtitle Software Should Parse Scripts Before Using AI'
-description: 'How SurtitleLive uses deterministic theatre script parsing, layout signals, archetype detection, and selective AI review to prepare editable subtitle and surtitle cue drafts.'
+description: 'How Pockitle Cue uses deterministic theatre script parsing, layout signals, archetype detection, and selective AI review to prepare editable subtitle and surtitle cue drafts.'
 pubDate: '2026-05-05'
 heroImage: './blog-8.png'
 heroImageAlt: 'theatre script front matter separated from the script body before generating a cue draft'
-tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'Deterministic Parsing', 'SurtitleLive']
+tags: ['Theatre Technology', 'Subtitle Systems', 'Script Parsing', 'Deterministic Parsing', 'Pockitle Cue']
 ---
 When a theatre subtitle system misreads a cast list as dialogue, the problem does not stay inside the parser. It becomes a bad cue in rehearsal, a confused operator, and possibly the wrong line on screen during a live show.
 
 That is why theatre subtitle software should not treat a script as plain text before asking AI to classify it. A script is a structured document. Indentation, spacing, capitalization, punctuation, and formatting often carry more structural meaning than the words themselves.
 
-In March 2026, we published a technical post explaining [why theatre script parsing is a geometry problem](/blog/7-geometry-of-dramatic-parsing/). This article continues that thread with the current direction of SurtitleLive's script-to-subtitles pipeline.
+In March 2026, we published a technical post explaining [why theatre script parsing is a geometry problem](/blog/7-geometry-of-dramatic-parsing/). This article continues that thread with the current direction of Pockitle Cue's script-to-subtitles pipeline.
 
-Since then, SurtitleLive's parser has continued to move in a more deterministic direction.
+Since then, Pockitle Cue's parser has continued to move in a more deterministic direction.
 
 That matters because theatre subtitles and surtitles are not generated for a static document. They become live cues. If a script parser mistakes a cast list for dialogue, or a stage direction for a spoken line, that mistake can reach rehearsal review and eventually the operator workflow.
 
@@ -67,7 +67,7 @@ The parser now works as a staged pipeline rather than a single AI classification
 
 ### 1. Extract document structure
 
-For `.docx` files, SurtitleLive reads structured document data rather than relying only on plain text. This preserves information such as indentation, paragraph alignment, spacing, inherited Word styles, and run-level formatting such as italic or bold text.
+For `.docx` files, Pockitle Cue reads structured document data rather than relying only on plain text. This preserves information such as indentation, paragraph alignment, spacing, inherited Word styles, and run-level formatting such as italic or bold text.
 
 That information is important because many theatre scripts use typography as grammar. A centered all-caps line may be a speaker. An indented line may be dialogue. An italic line may be a stage direction. Plain-text conversion can destroy those cues.
 
@@ -87,7 +87,7 @@ This step is based on layout and structure, not literary interpretation.
 
 Scripts do not all use the same layout. Some use `Speaker: Dialogue`. Some put the speaker on one line and the dialogue below. Some use period or dash separators. Some mix conventions within the same file.
 
-SurtitleLive therefore looks for layout archetypes before applying parsing rules. Examples include:
+Pockitle Cue therefore looks for layout archetypes before applying parsing rules. Examples include:
 
 | Archetype | Common pattern |
 | :--- | :--- |
@@ -103,7 +103,7 @@ This lets the parser avoid forcing one rule set across a whole document when the
 
 Many scripts begin with title pages, cast lists, notes, or production information. Those pages can look structurally similar to dialogue even though they are not part of the performance text.
 
-SurtitleLive uses body-first zoning to reduce that risk. The parser tries to identify where the performable script body begins, so that front matter does not distort dialogue detection.
+Pockitle Cue uses body-first zoning to reduce that risk. The parser tries to identify where the performable script body begins, so that front matter does not distort dialogue detection.
 
 ### 6. Use AI for ambiguous regions
 
@@ -115,7 +115,7 @@ The design goal is not to remove AI from the workflow. The goal is to avoid aski
 
 Some parser errors only become obvious when looking at the sequence of blocks. For example, a heading followed by another heading may be plausible in front matter but unlikely inside a dialogue-heavy scene. A speaker name that appears once may need different treatment from a repeated character label.
 
-SurtitleLive uses sequence-level review to improve these decisions. Internally, this includes decoder and smoothing logic that considers neighboring blocks, document regions, and speaker evidence together rather than treating every paragraph in isolation.
+Pockitle Cue uses sequence-level review to improve these decisions. Internally, this includes decoder and smoothing logic that considers neighboring blocks, document regions, and speaker evidence together rather than treating every paragraph in isolation.
 
 This is an important difference from simple line-by-line parsing. Theatre scripts are sequential documents. The surrounding structure often tells the parser whether a line is dialogue, a speaker cue, a heading, or something that should be reviewed.
 
@@ -137,7 +137,7 @@ This is not a claim that every theatre script can be parsed perfectly. Scripts v
 
 For production teams, deterministic-first parsing is meant to make script preparation more predictable. This is especially relevant for AI theatre subtitles, opera surtitles, and multilingual cue drafts where a wrong structural decision can create review work later.
 
-It helps SurtitleLive:
+It helps Pockitle Cue:
 
 - preserve layout evidence from Word scripts
 - detect common theatre dialogue formats
@@ -165,7 +165,7 @@ It does not mean every language, layout, or rehearsal draft has the same parser 
 
 It does not replace human review before a show.
 
-It also does not freeze the system in its current form. Script parsing is one of the parts of SurtitleLive we will continue to monitor closely. As more real scripts, layouts, and language conventions are tested, we expect to keep adjusting the rules, review thresholds, regression cases, and AI handoff behavior where needed.
+It also does not freeze the system in its current form. Script parsing is one of the parts of Pockitle Cue we will continue to monitor closely. As more real scripts, layouts, and language conventions are tested, we expect to keep adjusting the rules, review thresholds, regression cases, and AI handoff behavior where needed.
 
 ## The Direction: AI as Review Support, Not the Whole Parser
 
@@ -181,9 +181,9 @@ The architectural direction can be summarized like this:
 
 This direction is deliberately conservative. In live theatre, a subtitle system should not depend on AI confidence alone when the document structure already provides stronger evidence.
 
-AI is useful, but it is not the whole parser. For SurtitleLive, the stronger path is to combine deterministic script structure, targeted AI review, human preparation, and continued monitoring of parser behavior over time.
+AI is useful, but it is not the whole parser. For Pockitle Cue, the stronger path is to combine deterministic script structure, targeted AI review, human preparation, and continued monitoring of parser behavior over time.
 
-If your team is still converting scripts manually into slide decks, or rebuilding theatre surtitles line by line before rehearsal, SurtitleLive can help turn structured scripts into editable cue drafts for review and live delivery. You can learn more on the [SurtitleLive features page](https://surtitlelive.com/features) or the [AI script to theatre subtitles page](https://surtitlelive.com/ai-script-to-theatre-subtitles).
+If your team is still converting scripts manually into slide decks, or rebuilding theatre surtitles line by line before rehearsal, Pockitle Cue can help turn structured scripts into editable cue drafts for review and live delivery. You can learn more on the [Pockitle Cue features page](https://surtitlelive.com/features) or the [AI script to theatre subtitles page](https://surtitlelive.com/ai-script-to-theatre-subtitles).
 
 ---
 
@@ -199,11 +199,11 @@ If your team is still converting scripts manually into slide decks, or rebuildin
 
 **Q: Can AI create theatre subtitles automatically?**
 
-**A:** AI can help prepare a draft, but a production team should still review cue structure, translation choices, timing, and audience delivery before performance. SurtitleLive treats AI as part of the preparation workflow, not as a replacement for show review.
+**A:** AI can help prepare a draft, but a production team should still review cue structure, translation choices, timing, and audience delivery before performance. Pockitle Cue treats AI as part of the preparation workflow, not as a replacement for show review.
 
-**Q: How does SurtitleLive convert scripts into subtitle cues?**
+**Q: How does Pockitle Cue convert scripts into subtitle cues?**
 
-**A:** SurtitleLive reads document structure, identifies script blocks, detects likely layout patterns, separates front matter from the performable body, and creates an editable cue draft for review. Ambiguous regions can receive selective AI support.
+**A:** Pockitle Cue reads document structure, identifies script blocks, detects likely layout patterns, separates front matter from the performable body, and creates an editable cue draft for review. Ambiguous regions can receive selective AI support.
 
 **Q: Why is DOCX formatting important for theatre surtitles?**
 
@@ -215,8 +215,8 @@ If your team is still converting scripts manually into slide decks, or rebuildin
 
 **Q: Does this remove the need for human review?**
 
-**A:** No. SurtitleLive aims to produce a clearer review draft, not a fully automatic final show file. Teams should still review cues, translations, timing, and audience delivery before performance.
+**A:** No. Pockitle Cue aims to produce a clearer review draft, not a fully automatic final show file. Teams should still review cues, translations, timing, and audience delivery before performance.
 
-**Q: How will SurtitleLive improve this system over time?**
+**Q: How will Pockitle Cue improve this system over time?**
 
 **A:** We will continue monitoring parser behavior through regression cases, real script formats, and production feedback. When the system shows repeated uncertainty or avoidable errors, we can adjust parsing rules, review thresholds, and AI handoff behavior.

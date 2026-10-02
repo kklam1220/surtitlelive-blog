@@ -1,7 +1,7 @@
 {
   "locale": "es",
-  "title": "Actualizaciones de producto de SurtitleLive",
-  "description": "Actualizaciones semanales del producto SurtitleLive, agrupadas por versión, con notas concisas sobre funciones nuevas, mejoras y correcciones visibles para los usuarios.",
+  "title": "Actualizaciones de productos de Pockitle",
+  "description": "Actualizaciones semanales de los productos de Pockitle, agrupadas por versión, con notas concisas sobre funciones nuevas, mejoras y correcciones visibles para los usuarios.",
   "labels": {
     "articles": "Artículos",
     "productUpdates": "Actualizaciones del producto",
@@ -14,6 +14,32 @@
     "noPublicRelease": "No hay actualizaciones enumeradas esta semana."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive ahora se llama Pockitle Cue. Esta versión también mejora notablemente la recuperación de subtítulos en directo y el acceso del público.",
+          "new": [
+            "Se presentó Pockitle Cue como el nuevo nombre de SurtitleLive en la experiencia pública del producto, con páginas localizadas y una navegación más clara desde la información del producto hasta el flujo de trabajo del guion al escenario."
+          ],
+          "improved": [
+            "Se mejoraron la entrega y la recuperación de subtítulos en directo durante las actualizaciones en vivo, las reconexiones y los reinicios de una función.",
+            "Se amplió la recuperación de los enlaces Audience Show para que las páginas válidas sigan disponibles incluso cuando finaliza el servicio en directo."
+          ],
+          "fixed": [
+            "Se corrigió el cierre inesperado de las sesiones de Pockitle Live que estaban en pausa.",
+            "Se corrigió la pérdida del estado de pantalla en negro para el público cuando el operador se vuelve a conectar.",
+            "Se corrigió que Viewer mostrara otra línea cuando no podía identificar una señal; ahora conserva el subtítulo actual.",
+            "Se corrigió la pérdida de las últimas actualizaciones de subtítulos al detener una sesión en directo.",
+            "Se corrigió que las páginas públicas dejaran de responder cuando la traducción del navegador modificaba su contenido."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

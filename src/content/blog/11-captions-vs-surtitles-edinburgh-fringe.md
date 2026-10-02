@@ -3,8 +3,8 @@ title: 'Does Your Edinburgh Fringe Show Need Captions or Surtitles?'
 description: 'A decision guide for non-English Edinburgh Fringe teams choosing between English surtitles, accessibility captions, projection mode, and mobile viewer delivery before tech rehearsal.'
 pubDate: '2026-05-31'
 heroImage: './blog-11.png'
-heroImageAlt: 'SurtitleLive setup showing captions and surtitles delivery choices for an Edinburgh Fringe production'
-tags: ['Edinburgh Fringe', 'English surtitles', 'Captions', 'Non-English theatre', 'SurtitleLive']
+heroImageAlt: 'Pockitle Cue setup showing captions and surtitles delivery choices for an Edinburgh Fringe production'
+tags: ['Edinburgh Fringe', 'English surtitles', 'Captions', 'Non-English theatre', 'Pockitle Cue']
 ---
 
 If your non-English show is going to the Edinburgh Fringe Festival, the access and translation question often starts as one simple sentence:
@@ -172,9 +172,9 @@ Before tech rehearsal, a producer or company manager should be able to answer th
 
 This checklist is deliberately practical. It keeps the terminology discussion from staying abstract.
 
-## When SurtitleLive fits
+## When Pockitle Cue fits
 
-SurtitleLive is designed around prepared live text, not around one fixed screen format.
+Pockitle Cue is designed around prepared live text, not around one fixed screen format.
 
 Once the team knows whether it is preparing translation surtitles, access captions, or both, the setup becomes easier to configure:
 
@@ -185,7 +185,7 @@ Once the team knows whether it is preparing translation surtitles, access captio
 - blackout or hide-text behavior
 - multi-language audience access
 
-SurtitleLive is a strong fit when the team has a script or mostly stable performance text, can review the text before opening, and needs live delivery rather than a fixed video subtitle file.
+Pockitle Cue is a strong fit when the team has a script or mostly stable performance text, can review the text before opening, and needs live delivery rather than a fixed video subtitle file.
 
 If the show is mostly improvised, changes heavily every night, or depends on long audience interaction, the team may need a live captioner, speech-to-text reporter, or hybrid setup.
 
@@ -193,7 +193,7 @@ The point is not to make every Fringe show more technical.
 
 The point is to stop technical decisions from being made by accident.
 
-[See how SurtitleLive supports mobile and projected surtitles](https://surtitlelive.com/features)
+[See how Pockitle Cue supports mobile and projected surtitles](https://surtitlelive.com/features)
 
 ## A clearer production request
 
@@ -232,5 +232,5 @@ The workflow does.
 ## Sources
 
 - Edinburgh Festival Fringe, [Captioning your show](https://www.edfringe.com/take-part/artists/organise-a-show/make-your-show-accessible/captioning/)
-- SurtitleLive, [How to Add English Surtitles to a Non-English Show at the Edinburgh Fringe Festival](/blog/9-english-surtitles-non-english-show-fringe/)
-- SurtitleLive, [Theatre Subtitle Software for Script Prep and Live Delivery](/features)
+- Pockitle Cue, [How to Add English Surtitles to a Non-English Show at the Edinburgh Fringe Festival](/blog/9-english-surtitles-non-english-show-fringe/)
+- Pockitle Cue, [Theatre Subtitle Software for Script Prep and Live Delivery](/features)

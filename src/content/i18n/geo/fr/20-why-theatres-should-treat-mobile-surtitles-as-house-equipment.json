@@ -14,7 +14,7 @@
     "Un théâtre peut faire des surtitres sur mobile un service régulier en conservant un petit parc de téléphones de prêt gérés.",
     "L’équipe d’accueil peut remettre une page Viewer déjà ouverte et expliquer simplement le choix de langue.",
     "La charge, le réseau, la luminosité, la confidentialité, les appareils de secours et un test en salle comptent autant que le logiciel.",
-    "SurtitleLive relie le texte préparé au navigateur du public ; il ne fournit ni téléphones, ni réseau, ni traduction, ni certification de conformité."
+    "Pockitle Cue relie le texte préparé au navigateur du public ; il ne fournit ni téléphones, ni réseau, ni traduction, ni certification de conformité."
   ],
   "faq": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "question": "Les spectateurs doivent-ils installer une application ?",
-      "answer": "Non. SurtitleLive Viewer fonctionne dans un navigateur. Le public peut ouvrir un lien ou scanner un code QR, choisir une langue disponible et lire les surtitres préparés sans installer d’application dédiée."
+      "answer": "Non. Pockitle Cue Viewer fonctionne dans un navigateur. Le public peut ouvrir un lien ou scanner un code QR, choisir une langue disponible et lire les surtitres préparés sans installer d’application dédiée."
     },
     {
       "question": "Que faut-il préparer avant de proposer des téléphones de prêt ?",
@@ -31,7 +31,7 @@
     },
     {
       "question": "Les surtitres sur mobile suffisent-ils à assurer l’accessibilité ?",
-      "answer": "Non. Ils constituent une modalité de diffusion parmi d’autres. Selon le spectacle, il peut aussi falloir une projection, du sous-titrage professionnel en direct, une interprétation en langue des signes, une aide auditive ou d’autres services. SurtitleLive ne certifie ni l’accessibilité ni la conformité juridique d’une configuration donnée."
+      "answer": "Non. Ils constituent une modalité de diffusion parmi d’autres. Selon le spectacle, il peut aussi falloir une projection, du sous-titrage professionnel en direct, une interprétation en langue des signes, une aide auditive ou d’autres services. Pockitle Cue ne certifie ni l’accessibilité ni la conformité juridique d’une configuration donnée."
     }
   ],
   "glossary": [
@@ -44,7 +44,7 @@
       "definition": "Équipe en contact avec les spectateurs, chargée de préparer, remettre et récupérer les appareils et d’expliquer le service."
     },
     {
-      "term": "SurtitleLive Viewer",
+      "term": "Pockitle Cue Viewer",
       "definition": "Vue destinée au public, accessible dans un navigateur, où les surtitres préparés peuvent être lus sur un téléphone."
     },
     {

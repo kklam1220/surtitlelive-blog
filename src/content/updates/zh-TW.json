@@ -1,7 +1,7 @@
 {
   "locale": "zh-TW",
-  "title": "SurtitleLive 產品更新",
-  "description": "SurtitleLive 每週產品更新，按版本整理，簡要說明新功能、改進與使用者可見的修正。",
+  "title": "Pockitle 產品更新",
+  "description": "Pockitle 各產品每週更新，按版本整理，簡要說明新功能、改進與使用者可見的修正。",
   "labels": {
     "articles": "文章",
     "productUpdates": "產品更新",
@@ -14,6 +14,32 @@
     "noPublicRelease": "本週沒有列出的更新。"
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive 現已更名為 Pockitle Cue。本次更新亦大幅改善即時字幕的恢復能力及觀眾存取體驗。",
+          "new": [
+            "在公開產品體驗中以 Pockitle Cue 取代 SurtitleLive，並推出本地化頁面及更清晰的導覽，讓使用者能從產品資訊前往從劇本到舞台的工作流程。"
+          ],
+          "improved": [
+            "改善即時更新、重新連線及重新啟動演出期間的即時字幕傳送與恢復能力。",
+            "擴展 Audience Show 連結的恢復能力，即使即時執行階段已結束，仍可開啟有效頁面。"
+          ],
+          "fixed": [
+            "修正暫停中的 Pockitle Live 工作階段意外結束的問題。",
+            "修正操作員重新連線時，觀眾黑屏狀態遺失的問題。",
+            "修正 Viewer 無法比對 cue 時顯示其他行的問題；現在會保留目前字幕。",
+            "修正停止即時工作階段時，最後字幕更新遺失的問題。",
+            "修正瀏覽器翻譯變更頁面內容後，公開頁面無回應的問題。"
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

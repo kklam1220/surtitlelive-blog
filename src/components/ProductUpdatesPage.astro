@@ -91,6 +91,7 @@ const schema = serializeJsonLd({
 		<main class={isEnglish ? 'english-updates' : undefined}>
 			<header class="updates-header">
 				<h1 class={isEnglish ? 'section-title' : undefined}>{title}</h1>
+				<p class="rename-notice">SurtitleLive is now Pockitle Cue. Earlier release entries keep the name used when they were published.</p>
 				<ContentSectionNav
 					articlesLabel={labels.articles}
 					updatesLabel={labels.productUpdates}
@@ -167,6 +168,7 @@ const schema = serializeJsonLd({
 	main { width: 1200px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2.5rem 1rem 5rem; }
 	main.english-updates { width: 1400px; padding-top: 3rem; }
 	.updates-header { background: transparent; backdrop-filter: none; box-shadow: none; margin: 0; padding: 0; position: static; top: auto; z-index: auto; }
+	.rename-notice { margin: 0 0 1.5rem; padding: 0.85rem 1rem; border-left: 3px solid #d5a118; background: #fff9e7; line-height: 1.5; }
 	h1.section-title { color: #0f1219; font-size: 2.5rem; font-weight: 800; margin: 0 0 2rem; }
 	.updates-layout { --updates-column-gap: clamp(2rem, 5vw, 4.5rem); align-items: start; display: grid; gap: 0; grid-template-columns: minmax(220px, 250px) minmax(0, 1fr); }
 	.updates-sidebar { border-inline-end: 1px solid #e5e7eb; }

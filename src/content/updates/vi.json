@@ -1,7 +1,7 @@
 {
   "locale": "vi",
-  "title": "Cập nhật sản phẩm SurtitleLive",
-  "description": "Thông tin cập nhật sản phẩm SurtitleLive hằng tuần, được nhóm theo phiên bản, với ghi chú ngắn về tính năng mới, cải tiến và bản sửa lỗi mà người dùng có thể thấy.",
+  "title": "Cập nhật các sản phẩm Pockitle",
+  "description": "Thông tin cập nhật hằng tuần cho các sản phẩm Pockitle, được nhóm theo phiên bản, với ghi chú ngắn về tính năng mới, cải tiến và bản sửa lỗi mà người dùng có thể thấy.",
   "labels": {
     "articles": "Bài viết",
     "productUpdates": "Cập nhật sản phẩm",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Tuần này không có bản cập nhật nào được liệt kê."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive nay có tên là Pockitle Cue. Bản phát hành này cũng cải thiện đáng kể khả năng khôi phục phụ đề trực tiếp và quyền truy cập của khán giả.",
+          "new": [
+            "Giới thiệu Pockitle Cue là tên mới của SurtitleLive trong trải nghiệm sản phẩm công khai, với các trang được bản địa hóa và cách điều hướng rõ ràng hơn từ thông tin sản phẩm đến quy trình từ kịch bản lên sân khấu."
+          ],
+          "improved": [
+            "Cải thiện việc phân phối và khôi phục phụ đề trực tiếp khi cập nhật, kết nối lại và khởi động lại buổi diễn.",
+            "Mở rộng khả năng khôi phục liên kết Audience Show để các trang còn hiệu lực vẫn truy cập được ngay cả sau khi dịch vụ trực tiếp kết thúc."
+          ],
+          "fixed": [
+            "Khắc phục tình trạng phiên Pockitle Live đang tạm dừng kết thúc ngoài dự kiến.",
+            "Khắc phục việc trạng thái màn hình tối dành cho khán giả bị mất khi người vận hành kết nối lại.",
+            "Khắc phục lỗi Viewer hiển thị dòng khác khi không khớp được cue; giờ đây phụ đề hiện tại được giữ nguyên.",
+            "Khắc phục việc mất các cập nhật phụ đề cuối cùng khi dừng phiên trực tiếp.",
+            "Khắc phục tình trạng trang công khai không phản hồi sau khi tính năng dịch của trình duyệt thay đổi nội dung trang."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

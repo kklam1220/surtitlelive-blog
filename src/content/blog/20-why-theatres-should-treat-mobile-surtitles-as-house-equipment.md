@@ -1,8 +1,8 @@
 ---
 title: "Make Mobile Surtitles Part of Theatre Accessibility"
-description: "A theatre can make mobile surtitles a repeatable house service by owning a small pool of managed phones, preparing front-of-house staff and using SurtitleLive as the delivery layer."
+description: "A theatre can make mobile surtitles a repeatable house service by owning a small pool of managed phones, preparing front-of-house staff and using Pockitle Cue as the delivery layer."
 pubDate: "2026-09-21"
-tags: ["SurtitleLive", "Theatre Accessibility", "Mobile Surtitles", "Front of House", "Venue Operations", "Audience Experience"]
+tags: ["Pockitle Cue", "Theatre Accessibility", "Mobile Surtitles", "Front of House", "Venue Operations", "Audience Experience"]
 heroImage: './blog-20.png'
 heroImageAlt: 'Audience members reading mobile surtitles on managed phones during a theatre performance'
 ---
@@ -13,13 +13,13 @@ That makes a difference when planning access.
 
 A company may arrive with translated text, an operator and a clear surtitling plan. Another may have only some of those things. If the audience-facing part of the service has to be rebuilt for every production, the result will vary from show to show.
 
-A venue can remove some of that uncertainty. It can own a small pool of caption phones, configure them in advance, train front-of-house staff and establish a standard handover procedure. SurtitleLive can then provide the link between the prepared subtitle material and the audience.
+A venue can remove some of that uncertainty. It can own a small pool of caption phones, configure them in advance, train front-of-house staff and establish a standard handover procedure. Pockitle Cue can then provide the link between the prepared subtitle material and the audience.
 
 The useful idea is not that every patron should use a phone. It is that **a theatre can make personal subtitle delivery part of its own equipment and operating practice**.
 
 ## The theatre can provide the device
 
-SurtitleLive Viewer works in a browser. An audience member can open a link or scan a QR code without installing a dedicated app.
+Pockitle Cue Viewer works in a browser. An audience member can open a link or scan a QR code without installing a dedicated app.
 
 For many people, using their own phone will be the easiest option. But a venue does not have to make personal ownership of a smartphone a condition of access.
 
@@ -43,7 +43,7 @@ A theatre using organisation-owned iPhones could enrol them through Apple Busine
 
 The technical objective is straightforward: the patron should receive a device that is already on the right network and needs very little explanation.
 
-For SurtitleLive, the simplest procedure may be to open the correct Viewer page on every loan phone before doors open. The patron then receives the device at the language-selection or subtitle screen rather than at a browser Home page.
+For Pockitle Cue, the simplest procedure may be to open the correct Viewer page on every loan phone before doors open. The patron then receives the device at the language-selection or subtitle screen rather than at a browser Home page.
 
 ## Deal with the light, not just the software
 
@@ -57,7 +57,7 @@ This is worth testing from adjacent seats before the service is advertised.
 
 ![Standalone subtitle phone stand beside a theatre seat with a privacy screen protector](./blog-20-3.jpg)
 
-*An optional floor stand can keep a venue-owned phone stable at a comfortable reading height. The stand, phone and privacy filter are venue equipment, not supplied by SurtitleLive.*
+*An optional floor stand can keep a venue-owned phone stable at a comfortable reading height. The stand, phone and privacy filter are venue equipment, not supplied by Pockitle Cue.*
 
 ## Front of house matters more than the QR code
 
@@ -81,19 +81,19 @@ That makes training valuable.
 
 Front-of-house staff only need to learn the audience side: where the devices are kept, how to check that the correct page is open, how language selection works and how to replace a failed handset.
 
-A smaller number of technical or access staff can learn the SurtitleLive workflow in more detail: deploying a prepared show, checking Viewer access, understanding how mobile viewing and projection relate to the same subtitle material, and rehearsing operator cueing.
+A smaller number of technical or access staff can learn the Pockitle Cue workflow in more detail: deploying a prepared show, checking Viewer access, understanding how mobile viewing and projection relate to the same subtitle material, and rehearsing operator cueing.
 
-SurtitleLive's operation is deliberately straightforward, but the real advantage is consistency. Once a theatre has a written procedure, each new production starts with an existing house workflow rather than another improvised solution.
+Pockitle Cue's operation is deliberately straightforward, but the real advantage is consistency. Once a theatre has a written procedure, each new production starts with an existing house workflow rather than another improvised solution.
 
-## SurtitleLive is one part of the service
+## Pockitle Cue is one part of the service
 
-SurtitleLive can handle prepared subtitle text, multiple language tracks, live human-controlled cueing, projection and browser-based audience delivery.
+Pockitle Cue can handle prepared subtitle text, multiple language tracks, live human-controlled cueing, projection and browser-based audience delivery.
 
 It does not provide the theatre's phones, network, translators, caption writers or access staff. Nor does it certify that a particular arrangement meets every accessibility or legal requirement.
 
 That is not a weakness. It is a useful boundary.
 
-The venue supplies the infrastructure and audience service. The production supplies the text, translation and artistic decisions. SurtitleLive connects those pieces during the performance.
+The venue supplies the infrastructure and audience service. The production supplies the text, translation and artistic decisions. Pockitle Cue connects those pieces during the performance.
 
 A theatre may still use projected surtitles, professional captioning, sign-language interpretation, hearing-assistance systems or other access services where they are more appropriate. Personal screens are another option, not a replacement for everything else.
 
@@ -109,8 +109,8 @@ It is also:
 
 **"Can our venue support a captioned performance when a production needs it?"**
 
-A small fleet of managed phones, a tested network, trained front-of-house staff and a familiar SurtitleLive workflow can make the answer much easier.
+A small fleet of managed phones, a tested network, trained front-of-house staff and a familiar Pockitle Cue workflow can make the answer much easier.
 
-That is where SurtitleLive becomes more interesting to a venue. Not as a piece of software bought for one show, but as part of a house system that can be used again across a season.
+That is where Pockitle Cue becomes more interesting to a venue. Not as a piece of software bought for one show, but as part of a house system that can be used again across a season.
 
-[Explore SurtitleLive](https://surtitlelive.com) and consider whether a small managed caption-device pool could fit your venue's existing access provision.
+[Explore Pockitle Cue](https://surtitlelive.com) and consider whether a small managed caption-device pool could fit your venue's existing access provision.

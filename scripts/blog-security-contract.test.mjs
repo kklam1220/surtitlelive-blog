@@ -71,10 +71,11 @@ test("reviewed localized article links preserve canonical markdown destinations"
   }
 });
 
-test("localized Blog21 and Blog22 emphasis renders without raw markdown markers", () => {
+test("localized Blog21, Blog22, and Blog23 emphasis renders without raw markdown markers", () => {
   const slugs = [
     "21-theatre-accessibility-captions-stage-directions",
     "22-one-night-different-stories-scripts-under-the-stars-calgary",
+    "23-surtitlelive-becomes-pockitle-cue",
   ];
 
   for (const slug of slugs) {

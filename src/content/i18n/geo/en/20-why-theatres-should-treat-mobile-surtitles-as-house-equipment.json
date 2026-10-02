@@ -14,7 +14,7 @@
     "A theatre can make mobile surtitles repeatable by keeping a small pool of managed loan phones.",
     "Front-of-house staff can hand over a ready Viewer page and give simple language instructions.",
     "Charging, network access, brightness, privacy, spares and an auditorium test matter as much as the software.",
-    "SurtitleLive connects prepared subtitle material to a browser; it does not provide phones, networks, translators or compliance certification."
+    "Pockitle Cue connects prepared subtitle material to a browser; it does not provide phones, networks, translators or compliance certification."
   ],
   "faq": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "question": "Do audience members need to install an app?",
-      "answer": "No. SurtitleLive Viewer works in a browser. An audience member can open a link or scan a QR code, choose an available language and read the prepared surtitles without installing a dedicated audience app."
+      "answer": "No. Pockitle Cue Viewer works in a browser. An audience member can open a link or scan a QR code, choose an available language and read the prepared surtitles without installing a dedicated audience app."
     },
     {
       "question": "What should a theatre prepare before offering loan phones?",
@@ -31,7 +31,7 @@
     },
     {
       "question": "Are mobile surtitles a complete accessibility service?",
-      "answer": "No. They are one delivery option. A theatre may also need projected surtitles, professional captioning, sign-language interpretation, hearing-assistance systems or other services. SurtitleLive does not certify that a particular arrangement meets every accessibility or legal requirement."
+      "answer": "No. They are one delivery option. A theatre may also need projected surtitles, professional captioning, sign-language interpretation, hearing-assistance systems or other services. Pockitle Cue does not certify that a particular arrangement meets every accessibility or legal requirement."
     }
   ],
   "glossary": [
@@ -44,7 +44,7 @@
       "definition": "The audience-facing theatre team that prepares, hands over and collects devices and explains the service."
     },
     {
-      "term": "SurtitleLive Viewer",
+      "term": "Pockitle Cue Viewer",
       "definition": "The browser-based audience view where prepared subtitle material can be read on a phone."
     },
     {

@@ -2,7 +2,7 @@
 title: 'How to Make QLab Subtitles Fast from Excel, CSV, or TXT'
 description: 'A practical QLab 5 workflow for creating subtitle and surtitle Text cues from spreadsheets or plain text, plus the boundary between DIY automation, a QLab Projection Pack, and operator-armed Viewer sync.'
 pubDate: '2026-07-09'
-tags: ['QLab', 'Surtitles', 'Subtitles', 'AppleScript', 'Theatre Tech', 'SurtitleLive']
+tags: ['QLab', 'Surtitles', 'Subtitles', 'AppleScript', 'Theatre Tech', 'Pockitle Cue']
 heroImage: './blog-13-1.png'
 heroImageAlt: 'QLab cue list showing batch generated subtitle group cues'
 ---
@@ -42,7 +42,7 @@ Before building a workflow, it is worth separating official QLab behavior from p
 | Generate many cues | The QLab AppleScript dictionary supports `make type "text"` and exposes cue properties such as `text`, `text alignment`, `fixed width`, `stage name`, `translation x`, and `translation y`. | Use a spreadsheet row or text block as the source for each Text cue. |
 | Use spreadsheets | The QLab Cookbook includes a spreadsheet-driven example that reads Excel rows, creates groups, creates Text cues, sets text and formatting, and moves cues into groups. | Adapt the same pattern for subtitles and surtitles rather than flashcards. |
 | Import XLSX natively as subtitles | QLab's public documentation demonstrates Excel automation, not a one-click native XLSX subtitle import feature. | Use Excel/CSV/TXT as source data, then use a script or importer to generate QLab cues. |
-| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | A finalized-show SurtitleLive QLab Projection Pack can add one local Script child per source cue; the operator must explicitly connect and arm the normal ASM console before it can publish Viewer state. |
+| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | A finalized-show Pockitle Cue QLab Projection Pack can add one local Script child per source cue; the operator must explicitly connect and arm the normal ASM console before it can publish Viewer state. |
 
 This distinction matters for SEO and for production accuracy. The safe phrase is not "QLab imports Excel subtitles natively." The safer, more accurate phrase is:
 
@@ -277,13 +277,13 @@ Common failure points include:
 
 That is the boundary between "quick QLab automation" and a real surtitle production workflow.
 
-## When SurtitleLive is the better workflow
+## When Pockitle Cue is the better workflow
 
 If you only need local projection, a QLab Text cue workflow may be enough.
 
-If you need translation review, stable cue keys, mobile viewing, or projection plus audience phones, SurtitleLive gives the subtitle work a dedicated home before it reaches QLab.
+If you need translation review, stable cue keys, mobile viewing, or projection plus audience phones, Pockitle Cue gives the subtitle work a dedicated home before it reaches QLab.
 
-The SurtitleLive QLab workflow has two levels.
+The Pockitle Cue QLab workflow has two levels.
 
 ### QLab Projection Pack
 
@@ -291,21 +291,21 @@ Use this when you want local projection from QLab.
 
 The workflow is:
 
-**SurtitleLive Editor → QLab Projection Pack → QLab Text cues → projector**
+**Pockitle Cue Editor → QLab Projection Pack → QLab Text cues → projector**
 
-You prepare the script and subtitle segments in SurtitleLive, review translations and cue order, then export QLab-ready cues. QLab remains the playback environment for the venue.
+You prepare the script and subtitle segments in Pockitle Cue, review translations and cue order, then export QLab-ready cues. QLab remains the playback environment for the venue.
 
 This is useful when QLab is already the technical operator's centre of gravity, but the subtitle preparation should not happen inside QLab one cue at a time.
 
 The downloaded pack keeps data and executable instructions separate. Its `1 - START HERE.txt` explains the operator path, `2a - Import into QLab.applescript` is the static importer, and `2b - QLab Cue Data.json` contains the prepared cue data. The Editor-origin pack is an offline projection handoff: it does not create a deployment, open ASM, or publish to Viewer.
 
-Each source subtitle keeps a stable SurtitleLive cue key. A revised import can therefore update matching SurtitleLive caption Groups in place, insert newly added source cues, and mark captions removed from SurtitleLive for operator review. It does not silently delete those old Groups or overwrite unrelated sound, light, video, standby, or stage-management cues.
+Each source subtitle keeps a stable Pockitle Cue cue key. A revised import can therefore update matching Pockitle Cue caption Groups in place, insert newly added source cues, and mark captions removed from Pockitle Cue for operator review. It does not silently delete those old Groups or overwrite unrelated sound, light, video, standby, or stage-management cues.
 
 The export options also define the intended projection outputs. One source cue can contain several Text children for different languages or screens while remaining one operator cue moment. Languages sharing a screen need different caption positions; outputs sent to separate projectors need distinct QLab stage names. Test the resulting stage assignments in the actual venue.
 
 ### Finalized-show QLab and Viewer sync
 
-Use this when QLab should keep running the show timeline, but the already-deployed SurtitleLive Viewer should follow the same source cue.
+Use this when QLab should keep running the show timeline, but the already-deployed Pockitle Cue Viewer should follow the same source cue.
 
 The workflow is:
 
@@ -315,9 +315,9 @@ and, at the same cue point:
 
 **QLab Script child → loopback bridge → open ASM console → existing control channel → Viewer**
 
-For a finalized show, the Deployment Cockpit QLab Projection Pack can import each source subtitle as one timeline Group. A Group may contain one or more Text children for the selected languages or projector outputs, but it has at most one local Script child. All of those children remain under the same stable SurtitleLive cue key.
+For a finalized show, the Deployment Cockpit QLab Projection Pack can import each source subtitle as one timeline Group. A Group may contain one or more Text children for the selected languages or projector outputs, but it has at most one local Script child. All of those children remain under the same stable Pockitle Cue cue key.
 
-The Script child sends a non-secret JSON cue identity to a bridge bound to `127.0.0.1:37621`. The bridge does **not** call SurtitleLive's backend or carry an ASM password, Viewer link, runtime token, or cloud credential. It relays the local cue event to the already-open ASM console; ASM remains responsible for publishing the existing `cue.jump` state through the control channel.
+The Script child sends a non-secret JSON cue identity to a bridge bound to `127.0.0.1:37621`. The bridge does **not** call Pockitle Cue's backend or carry an ASM password, Viewer link, runtime token, or cloud credential. It relays the local cue event to the already-open ASM console; ASM remains responsible for publishing the existing `cue.jump` state through the control channel.
 
 This path is intentionally operator-armed:
 
@@ -346,7 +346,7 @@ graph TD
     end
 
     subgraph CloudSpace ["Cloud Service"]
-        Cloud["SurtitleLive Cloud Platform<br>(Real-time Sync)"]:::cloud
+        Cloud["Pockitle Cue Cloud Platform<br>(Real-time Sync)"]:::cloud
     end
 
     subgraph Viewers ["Audience Devices"]
@@ -373,7 +373,7 @@ graph TD
     style Viewers fill:#f2fff5,stroke:#c2f0cc,stroke-width:1px;
 ```
 
-This matters because audience devices should not talk directly to QLab, and the loopback bridge should not become a second cloud-control path. QLab runs the local timeline, the bridge carries a bounded cue identity on the show Mac, ASM applies the operator's armed control state, and the existing SurtitleLive control channel updates Viewer.
+This matters because audience devices should not talk directly to QLab, and the loopback bridge should not become a second cloud-control path. QLab runs the local timeline, the bridge carries a bounded cue identity on the show Mac, ASM applies the operator's armed control state, and the existing Pockitle Cue control channel updates Viewer.
 
 ## Best practical recommendation
 
@@ -387,7 +387,7 @@ For a translated theatre show:
 
 For a multi-language or mobile-viewer show:
 
-**Use a SurtitleLive QLab Projection Pack. Add the finalized-show ASM sync path only when Viewer must follow QLab, and arm it deliberately before the performance.**
+**Use a Pockitle Cue QLab Projection Pack. Add the finalized-show ASM sync path only when Viewer must follow QLab, and arm it deliberately before the performance.**
 
 The goal is not to replace QLab. The goal is to let QLab do what QLab is excellent at: live show control.
 
@@ -417,7 +417,7 @@ For editable live text, use Text cues. Video cues are better when the subtitle i
 
 ### Does QLab sync subtitles to audience phones?
 
-QLab can project Text cues locally, but audience phone delivery needs a browser/mobile workflow. A finalized-show SurtitleLive QLab Projection Pack can include local Script children that identify the same source cues to an explicitly connected and armed ASM console. The bridge stays on the show Mac; ASM, not QLab or the bridge, publishes Viewer state through the existing control channel.
+QLab can project Text cues locally, but audience phone delivery needs a browser/mobile workflow. A finalized-show Pockitle Cue QLab Projection Pack can include local Script children that identify the same source cues to an explicitly connected and armed ASM console. The bridge stays on the show Mac; ASM, not QLab or the bridge, publishes Viewer state through the existing control channel.
 
 ### When should I stop using DIY QLab subtitle scripts?
 
@@ -428,6 +428,6 @@ Stop relying only on DIY scripts when the subtitle workflow needs translation re
 - QLab 5 Text Cues: https://qlab.app/docs/v5/video/text-cues/
 - QLab 5 AppleScript Dictionary: https://qlab.app/docs/v5/scripting/applescript-dictionary-v5/
 - QLab Cookbook — Grid: https://qlab.app/cookbook/grid/
-- SurtitleLive QLab workflow: https://surtitlelive.com/qlab
-- SurtitleLive Exporting a QLab Import Pack: https://surtitlelive.com/guides/export-qlab-import-pack
-- SurtitleLive QLab control for ASM and Viewer sync User guides: https://surtitlelive.com/guides/qlab-asm-viewer-sync-beta
+- Pockitle Cue QLab workflow: https://surtitlelive.com/qlab
+- Pockitle Cue Exporting a QLab Import Pack: https://surtitlelive.com/guides/export-qlab-import-pack
+- Pockitle Cue QLab control for ASM and Viewer sync User guides: https://surtitlelive.com/guides/qlab-asm-viewer-sync-beta

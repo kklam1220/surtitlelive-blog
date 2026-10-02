@@ -22,16 +22,16 @@
       "answer": "Deterministic parsing provides a repeatable baseline: the same input and parser version should yield the same structural decisions for the team to review."
     },
     {
-      "question": "How does SurtitleLive use document structure before AI?",
-      "answer": "SurtitleLive analyses original Word .docx files and preserves indentation, spacing, and formatting as evidence for speaker labels, stage directions, and other elements before selective AI review."
+      "question": "How does Pockitle Cue use document structure before AI?",
+      "answer": "Pockitle Cue analyses original Word .docx files and preserves indentation, spacing, and formatting as evidence for speaker labels, stage directions, and other elements before selective AI review."
     },
     {
-      "question": "What role does AI play in SurtitleLive's parsing process?",
+      "question": "What role does AI play in Pockitle Cue's parsing process?",
       "answer": "AI is used for ambiguous regions where deterministic evidence is weak or conflicting. It helps resolve uncertainties in script interpretation, focusing on areas where structural analysis alone is insufficient."
     },
     {
-      "question": "How does SurtitleLive handle different script layouts?",
-      "answer": "SurtitleLive detects script layout archetypes (e.g., 'Speaker: Dialogue', speaker on its own line) to apply appropriate parsing rules. This allows the system to adapt to various formatting conventions within a single script."
+      "question": "How does Pockitle Cue handle different script layouts?",
+      "answer": "Pockitle Cue detects script layout archetypes (e.g., 'Speaker: Dialogue', speaker on its own line) to apply appropriate parsing rules. This allows the system to adapt to various formatting conventions within a single script."
     }
   ],
   "glossary": [

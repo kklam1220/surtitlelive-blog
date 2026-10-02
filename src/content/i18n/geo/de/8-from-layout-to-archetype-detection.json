@@ -22,7 +22,7 @@
       "answer": "Es sorgt für reproduzierbare Ergebnisse: Derselbe Stücktext sollte mit derselben Parser-Version gleich gegliedert werden. Das schafft eine verlässliche Grundlage für die weitere menschliche Bearbeitung."
     },
     {
-      "question": "Wie trennt SurtitleLive den Vorspann vom Hauptteil des Stücktexts?",
+      "question": "Wie trennt Pockitle Cue den Vorspann vom Hauptteil des Stücktexts?",
       "answer": "Der Parser sucht zunächst den Beginn des aufführbaren Texts. Titelseiten, Rollenlisten und Produktionsnotizen lassen sich dadurch von den Bereichen trennen, in denen tatsächlich Dialog zu erwarten ist."
     },
     {

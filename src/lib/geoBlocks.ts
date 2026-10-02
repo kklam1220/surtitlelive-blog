@@ -11,6 +11,11 @@ export type GeoGlossaryItem = {
   definition: string;
 };
 
+export type GeoRelatedLink = {
+  label: string;
+  href: string;
+};
+
 export type GeoBlockPayload = {
   version: number;
   locale: string;
@@ -26,6 +31,7 @@ export type GeoBlockPayload = {
   keyTakeaways: string[];
   faq: GeoFaqItem[];
   glossary: GeoGlossaryItem[];
+  relatedLinks?: GeoRelatedLink[];
 };
 
 const GEO_ROOT = path.join(process.cwd(), "src", "content", "i18n", "geo");

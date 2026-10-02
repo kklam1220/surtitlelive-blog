@@ -14,7 +14,7 @@
     "Um teatro pode transformar os sobretítulos no celular em um serviço regular mantendo uma pequena reserva de celulares de empréstimo gerenciados.",
     "A equipe de atendimento ao público pode entregar a página do Viewer já aberta e explicar rapidamente a escolha do idioma.",
     "Carga, rede, brilho, privacidade, celulares reserva e testes no auditório são tão importantes quanto o programa.",
-    "O SurtitleLive conecta o texto preparado ao navegador do público; não fornece celulares, rede, tradutores nem certificação de conformidade."
+    "O Pockitle Cue conecta o texto preparado ao navegador do público; não fornece celulares, rede, tradutores nem certificação de conformidade."
   ],
   "faq": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "question": "O público precisa instalar um aplicativo?",
-      "answer": "Não. O SurtitleLive Viewer funciona no navegador. A pessoa pode abrir um link ou escanear um código QR, escolher um idioma disponível e ler os sobretítulos preparados sem instalar um aplicativo específico para o público."
+      "answer": "Não. O Pockitle Cue Viewer funciona no navegador. A pessoa pode abrir um link ou escanear um código QR, escolher um idioma disponível e ler os sobretítulos preparados sem instalar um aplicativo específico para o público."
     },
     {
       "question": "O que o teatro deve preparar antes de oferecer celulares de empréstimo?",
@@ -31,7 +31,7 @@
     },
     {
       "question": "Os sobretítulos no celular resolvem toda a acessibilidade?",
-      "answer": "Não. Eles são uma forma de distribuição. Dependendo do espetáculo, também podem ser necessários sobretítulos projetados, legendagem profissional ao vivo, interpretação em língua de sinais, sistemas de assistência auditiva ou outros serviços. O SurtitleLive não certifica a acessibilidade nem a conformidade legal de uma configuração específica."
+      "answer": "Não. Eles são uma forma de distribuição. Dependendo do espetáculo, também podem ser necessários sobretítulos projetados, legendagem profissional ao vivo, interpretação em língua de sinais, sistemas de assistência auditiva ou outros serviços. O Pockitle Cue não certifica a acessibilidade nem a conformidade legal de uma configuração específica."
     }
   ],
   "glossary": [
@@ -44,7 +44,7 @@
       "definition": "Equipe que prepara, entrega e recolhe os celulares e explica o funcionamento do serviço."
     },
     {
-      "term": "SurtitleLive Viewer",
+      "term": "Pockitle Cue Viewer",
       "definition": "Visualização para o público, acessível pelo navegador, onde os sobretítulos preparados são lidos no celular."
     },
     {

@@ -48,11 +48,11 @@ const commercialNextSteps: Record<string, Array<{ href: string; label: string }>
 	"8-from-layout-to-archetype-detection": [{ href: "/ai-script-to-theatre-subtitles", label: "AI-assisted script preparation" }],
 	"9-english-surtitles-non-english-show-fringe": [{ href: "/theatre-subtitle-software", label: "Prepared theatre surtitles workflow" }],
 	"11-captions-vs-surtitles-edinburgh-fringe": [{ href: "/projection-and-mobile-surtitles", label: "Projection and audience-phone surtitles" }],
-	"13-quick-qlab-subtitles-from-excel-txt": [{ href: "/operator-cockpit", label: "SurtitleLive Operator Cockpit" }],
+	"13-quick-qlab-subtitles-from-excel-txt": [{ href: "/operator-cockpit", label: "Pockitle Cue Operator Cockpit" }],
 	"15-qlab-surtitles-audience-phones": [{ href: "/projection-and-mobile-surtitles", label: "Projection and audience-phone surtitles" }],
 	"17-surtitlelive-launches-pockitle-live-captioning": [{ href: "/pockitle", label: "Pockitle live captioning" }],
 	"18-when-important-words-deserve-to-reach-everyone": [{ href: "/planning/live-captions-for-weddings-conferences-and-classrooms", label: "Plan live captions for events and classrooms" }],
-	"19-who-should-operate-theatre-surtitles-human-ai-cueing": [{ href: "/operator-cockpit", label: "SurtitleLive Operator Cockpit" }],
+	"19-who-should-operate-theatre-surtitles-human-ai-cueing": [{ href: "/operator-cockpit", label: "Pockitle Cue Operator Cockpit" }],
 };
 const nextSteps = commercialNextSteps[post.id] ?? [];
 const hreflangs = [
@@ -110,9 +110,13 @@ const localeLinks = [
 	<section data-nosnippet>
 		<h2>{geoBlock?.sectionTitles?.related || localeMeta.relatedArticles}</h2>
 		<ul>
-			{relatedPosts.map(({ item }) => (
-				<li><a href={`${normalizedBaseUrl}${item.id}/`}>{item.data.title}</a></li>
-			))}
+			{geoBlock?.relatedLinks?.length ? (
+				geoBlock.relatedLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)
+			) : (
+				relatedPosts.map(({ item }) => (
+					<li><a href={`${normalizedBaseUrl}${item.id}/`}>{item.data.title}</a></li>
+				))
+			)}
 		</ul>
 	</section>
 </BlogPost>

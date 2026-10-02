@@ -2,7 +2,7 @@
 title: 'Already Using QLab for Surtitles? Send the Same Cues to Audience Phones'
 description: 'Keep QLab as your main show-control workspace while sending the same prepared surtitles to connected audience phones—without adding a second operator or a second live cue sequence.'
 pubDate: '2026-07-26'
-tags: ['QLab', 'Theatre Surtitles', 'Audience Phones', 'Projection', 'Show Control', 'SurtitleLive']
+tags: ['QLab', 'Theatre Surtitles', 'Audience Phones', 'Projection', 'Show Control', 'Pockitle Cue']
 heroImage: './blog-15.png'
 heroImageAlt: 'QLab sending prepared surtitles to an audience member’s mobile phone'
 ---
@@ -15,9 +15,9 @@ But one projected screen may not serve every audience member equally.
 
 Some seats may have a poor sightline. Some audience members may need another language. Others may simply prefer to read the performance on their own phone.
 
-SurtitleLive lets a QLab-based production add that option without replacing QLab or creating a second live cue sequence.
+Pockitle Cue lets a QLab-based production add that option without replacing QLab or creating a second live cue sequence.
 
-A prepared subtitle cue can remain inside the QLab show file. When the operator presses GO, QLab runs the local projection cue, while SurtitleLive can send the matching subtitle moment to connected audience phones.
+A prepared subtitle cue can remain inside the QLab show file. When the operator presses GO, QLab runs the local projection cue, while Pockitle Cue can send the matching subtitle moment to connected audience phones.
 
 **One operator. One rehearsed GO workflow. Two ways for the audience to read the performance.**
 
@@ -39,9 +39,9 @@ The person running that workspace may already be watching the stage, listening f
 
 Asking that operator to open another subtitle controller and manually match a second cue list is rarely a good solution.
 
-SurtitleLive is designed to extend the QLab workflow the team already knows.
+Pockitle Cue is designed to extend the QLab workflow the team already knows.
 
-The sound, lighting, video and projected surtitles remain in QLab. The operator continues to use the same cue list and the same GO button. SurtitleLive adds a separate audience-delivery option behind the prepared subtitle cue.
+The sound, lighting, video and projected surtitles remain in QLab. The operator continues to use the same cue list and the same GO button. Pockitle Cue adds a separate audience-delivery option behind the prepared subtitle cue.
 
 The production does not need to rebuild the show around a new control system.
 
@@ -80,7 +80,7 @@ QLab GO
 
 The operator presses the same GO button used during rehearsal.
 
-QLab displays the prepared local subtitle on the projector. At the same time, SurtitleLive receives the identity of that subtitle moment and sends the matching prepared text to connected audience phones.
+QLab displays the prepared local subtitle on the projector. At the same time, Pockitle Cue receives the identity of that subtitle moment and sends the matching prepared text to connected audience phones.
 
 The audience opens the subtitles in a mobile browser, normally through a QR Code. No dedicated viewing app is required.
 
@@ -108,7 +108,7 @@ Without an integrated workflow, the company might need:
 - Additional rehearsal time
 - Constant coordination between two people
 
-With a prepared QLab and SurtitleLive workflow, the operator can remain in QLab.
+With a prepared QLab and Pockitle Cue workflow, the operator can remain in QLab.
 
 When the next subtitle cue runs:
 
@@ -185,7 +185,7 @@ Confirm that one representative GO produces both expected results:
 
 Technology should reduce pressure, not remove production responsibility.
 
-Keep manual SurtitleLive controls available in case the phone-sync path needs to be disconnected. The local QLab projection should remain understandable and operable on its own.
+Keep manual Pockitle Cue controls available in case the phone-sync path needs to be disconnected. The local QLab projection should remain understandable and operable on its own.
 
 ## What happens if the venue internet fails?
 
@@ -221,7 +221,7 @@ Written subtitles are also only one part of accessibility planning. Audio descri
 
 Not necessarily. The workflow is designed for productions where the existing QLab operator may also be running sound, lighting, video and projected surtitles. Once the show has been prepared and rehearsed, the same QLab subtitle cue can also request the matching mobile subtitle.
 
-A manual SurtitleLive control option should remain available as a fallback.
+A manual Pockitle Cue control option should remain available as a fallback.
 
 ### Do audience members need to install an app?
 
@@ -239,7 +239,7 @@ The operator still triggers one show cue. Audience members choose from the langu
 
 No. QLab remains the local show-control and projection environment.
 
-SurtitleLive adds script preparation, multilingual audience delivery and browser-based phone viewing around the existing QLab workflow.
+Pockitle Cue adds script preparation, multilingual audience delivery and browser-based phone viewing around the existing QLab workflow.
 
 ### Can the projected subtitles continue without internet?
 
@@ -257,7 +257,7 @@ For a small crew, the strongest feature is not another control screen.
 
 It is the ability to keep operating the show from QLab.
 
-Sound, lighting, video, waits and projected surtitles can remain inside the show file the operator has already rehearsed. SurtitleLive adds a controlled path from the same prepared subtitle moment to connected audience phones.
+Sound, lighting, video, waits and projected surtitles can remain inside the show file the operator has already rehearsed. Pockitle Cue adds a controlled path from the same prepared subtitle moment to connected audience phones.
 
 No second live cue list.
 
@@ -267,6 +267,6 @@ No need to move the rest of the production out of QLab.
 
 **One operator. One GO workflow. Projection and audience phones working from the same prepared subtitle sequence.**
 
-Explore the SurtitleLive QLab workflow, prepare a free test project and rehearse it with your real production equipment before using it for an audience.
+Explore the Pockitle Cue QLab workflow, prepare a free test project and rehearse it with your real production equipment before using it for an audience.
 
 QLab control for audience-phone synchronisation is currently a beta feature. Productions should test the complete setup before opening and retain manual operation as a fallback.

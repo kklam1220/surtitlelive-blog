@@ -1,7 +1,7 @@
 {
   "locale": "pt",
-  "title": "Atualizações do produto SurtitleLive",
-  "description": "Atualizações semanais do produto SurtitleLive, agrupadas por versão, com notas concisas sobre novos recursos, melhorias e correções visíveis para os usuários.",
+  "title": "Atualizações dos produtos Pockitle",
+  "description": "Atualizações semanais dos produtos Pockitle, agrupadas por versão, com notas concisas sobre novos recursos, melhorias e correções visíveis para os usuários.",
   "labels": {
     "articles": "Artigos",
     "productUpdates": "Atualizações do produto",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Nenhuma atualização está listada nesta semana."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive agora se chama Pockitle Cue. Esta versão também melhora significativamente a recuperação de legendas ao vivo e o acesso do público.",
+          "new": [
+            "Pockitle Cue foi apresentado como o novo nome de SurtitleLive na experiência pública do produto, com páginas localizadas e navegação mais clara das informações do produto ao fluxo de trabalho do roteiro ao palco."
+          ],
+          "improved": [
+            "Melhoramos a entrega e a recuperação de legendas ao vivo durante atualizações em tempo real, reconexões e reinícios de apresentações.",
+            "Ampliamos a recuperação dos links Audience Show para que páginas válidas continuem acessíveis mesmo após o fim do serviço ao vivo."
+          ],
+          "fixed": [
+            "Corrigimos o encerramento inesperado de sessões pausadas do Pockitle Live.",
+            "Corrigimos a perda do estado de tela preta para o público quando o operador se reconecta.",
+            "Corrigimos o Viewer exibindo outra linha quando não consegue identificar uma deixa; agora ele mantém a legenda atual.",
+            "Corrigimos a perda das últimas atualizações de legenda quando uma sessão ao vivo é interrompida.",
+            "Corrigimos páginas públicas que deixavam de responder quando a tradução do navegador alterava seu conteúdo."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "要点",
+    "faq": "常见问题",
+    "glossary": "术语表",
+    "related": "探索相关 Pockitle 产品"
+  },
+  "keyTakeaways": [
+    "SurtitleLive 将更名为 Pockitle Cue；现有账户、项目和浏览器端的预制字幕工作流程都会保留。",
+    "Pockitle Cue 面向演出前准备好的文本；Pockitle Live 为现场发生的讲话生成字幕。",
+    "Pockitle Cue for Mac 和 Pockitle Live for iOS 仍在开发中，文中描述的能力尚未作为正式功能发布。",
+    "在 iPhone 和 iPad 上，Pockitle Live Web 只能使用 iOS 在浏览器中列出的外接音频输入；没有合适输入时，内置麦克风是备用方案。"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive 更名为 Pockitle Cue 后有什么变化？",
+      "answer": "SurtitleLive 将使用新名称 Pockitle Cue。账户、项目，以及在浏览器中准备、审核、排练和发送舞台字幕的核心流程都会保留。"
+    },
+    {
+      "question": "Pockitle Cue 和 Pockitle Live 有什么区别？",
+      "answer": "Pockitle Cue 用于演出前可以准备、审核和排练的文本。Pockitle Live 为正在发生的讲话生成字幕。"
+    },
+    {
+      "question": "Pockitle Cue for Mac 和 Pockitle Live for iOS 现在可以使用了吗？",
+      "answer": "还不可以。文章说明这两款原生应用仍在开发中，计划中的投影和音频输入功能尚未发布。"
+    },
+    {
+      "question": "Pockitle Live Web 能在 iPhone 或 iPad 上使用外接麦克风吗？",
+      "answer": "只有当 iOS 将其显示在浏览器音频输入列表中时才可以。列表中没有的麦克风或调音台信号无法在网页中选择；内置麦克风是可靠的备用方案。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "原名 SurtitleLive、用于预先准备舞台字幕的浏览器产品。"
+    },
+    {
+      "term": "预制舞台字幕",
+      "definition": "在演出现场发送前准备、审核并排练好的文本。"
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "用于为无法完全提前准备的现场讲话生成字幕的浏览器工具。"
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "正在开发的 Mac 应用，目标是同步后的本机投影及更直接的 QLab 工作流程。"
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "正在开发的 iPhone 和 iPad 应用，旨在更直接地使用受支持的外接音频输入。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/zh-CN/live"
+    }
+  ]
+}

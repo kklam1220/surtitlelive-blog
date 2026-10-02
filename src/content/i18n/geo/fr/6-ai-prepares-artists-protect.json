@@ -18,11 +18,11 @@
   ],
   "faq": [
     {
-      "question": "SurtitleLive transforme-t-il automatiquement un `.docx` en surtitres prêts pour la scène ?",
+      "question": "Pockitle Cue transforme-t-il automatiquement un `.docx` en surtitres prêts pour la scène ?",
       "answer": "Non. L’import prépare un brouillon de cues modifiable. L’équipe contrôle l’analyse, les personnages, les dialogues, les didascalies, les limites des cues ainsi que les éléments manquants ou atypiques."
     },
     {
-      "question": "SurtitleLive traduit-il la parole en direct ?",
+      "question": "Pockitle Cue traduit-il la parole en direct ?",
       "answer": "Non. La traduction assistée par IA est une étape de travail dans l’éditeur. Les brouillons restent modifiables et doivent être comparés à la source par une personne compétente."
     },
     {

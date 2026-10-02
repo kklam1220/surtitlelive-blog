@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "QLab 5 kann Untertitel mit Text-Cues projizieren; Excel, CSV oder TXT dienen dabei als Quelldaten für einen AppleScript- oder Importer-Workflow, nicht als nativer Ein-Klick-XLSX-Import.",
     "Vor dem Stapelimport müssen Video- oder Bundle-Lizenz, Stage, Output Route und Projektor mit einem manuellen Text-Cue geprüft werden. Automatisierung wiederholt auch eine falsche Ausgabezuordnung.",
-    "Ein QLab Projection Pack hält geprüfte Übersetzungen und stabile SurtitleLive-Cue-Schlüssel außerhalb des QLab-Showfiles und kann passende Gruppen bei einem erneuten Import gezielt aktualisieren, ohne fremde Show-Cues zu überschreiben.",
+    "Ein QLab Projection Pack hält geprüfte Übersetzungen und stabile Pockitle Cue-Cue-Schlüssel außerhalb des QLab-Showfiles und kann passende Gruppen bei einem erneuten Import gezielt aktualisieren, ohne fremde Show-Cues zu überschreiben.",
     "Viewer-Sync ist ein ausdrücklich freigegebener Weg: QLab sendet eine nicht geheime Cue-Identität an die Loopback-Bridge auf 127.0.0.1:37621; die offene ASM-Konsole veröffentlicht erst nach Live gehen und Allow QLab control über den bestehenden Control Channel."
   ],
   "faq": [
@@ -41,11 +41,11 @@
     },
     {
       "term": "QLab Projection Pack",
-      "definition": "Ein SurtitleLive-Export mit START-HERE-Anleitung, statischem AppleScript-Importer und vorbereiteten Cue-Daten für lokale QLab-Projektion; finalisierte Show-Packs können optional den ASM-Sync-Weg enthalten."
+      "definition": "Ein Pockitle Cue-Export mit START-HERE-Anleitung, statischem AppleScript-Importer und vorbereiteten Cue-Daten für lokale QLab-Projektion; finalisierte Show-Packs können optional den ASM-Sync-Weg enthalten."
     },
     {
       "term": "Stabiler Cue-Schlüssel",
-      "definition": "Eine nicht geheime SurtitleLive-Identität, mit der erneute Importe passende Caption-Gruppen aktualisieren können, ohne fremde QLab-Cues zu verändern."
+      "definition": "Eine nicht geheime Pockitle Cue-Identität, mit der erneute Importe passende Caption-Gruppen aktualisieren können, ohne fremde QLab-Cues zu verändern."
     },
     {
       "term": "Loopback-Bridge",

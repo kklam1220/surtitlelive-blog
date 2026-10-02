@@ -145,9 +145,13 @@ const hreflangs = [
   <section>
     <h2>{geoBlock?.sectionTitles?.related || localeMeta.relatedArticles}</h2>
     <ul>
-      {relatedPosts.map((item) => (
-        <li><a href={`${normalizedBaseUrl}${locale}/${item.slug}/`}>{item.frontmatter?.title || item.slug}</a></li>
-      ))}
+      {geoBlock?.relatedLinks?.length ? (
+        geoBlock.relatedLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)
+      ) : (
+        relatedPosts.map((item) => (
+          <li><a href={`${normalizedBaseUrl}${locale}/${item.slug}/`}>{item.frontmatter?.title || item.slug}</a></li>
+        ))
+      )}
     </ul>
   </section>
 </BlogPost>

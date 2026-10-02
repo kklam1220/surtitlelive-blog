@@ -15,16 +15,16 @@
     "Quy trình chuẩn bị cue cho phép đoàn kịch xem lại bản dịch tiếng Anh trước khi khai mạc nhưng vẫn có thể chạy cue trực tiếp trong buổi diễn.",
     "Phụ đề trên thiết bị di động cho phép khán giả nói tiếng Anh, khán giả bản ngữ và các nhóm ngôn ngữ khác đã chuẩn bị trước có thể chọn ngôn ngữ mình cần trên thiết bị riêng.",
     "Các đội diễn lưu động nhỏ nên chọn phần mềm phụ đề hỗ trợ tải lên kịch bản, chỉnh sửa cue, chọn ngôn ngữ, vận hành cue trực tiếp, khả năng nhảy cue và tắt màn hình khẩn cấp.",
-    "SurtitleLive phù hợp nhất với các buổi diễn có kịch bản cố định hoặc phần lớn ổn định, cần phụ đề tiếng Anh cho Fringe, lưu diễn, nhà tuyển chọn, nhà phê bình hoặc khán giả đa ngôn ngữ."
+    "Pockitle Cue phù hợp nhất với các buổi diễn có kịch bản cố định hoặc phần lớn ổn định, cần phụ đề tiếng Anh cho Fringe, lưu diễn, nhà tuyển chọn, nhà phê bình hoặc khán giả đa ngôn ngữ."
   ],
   "faq": [
     {
       "question": "Làm thế nào để thêm phụ đề tiếng Anh cho một vở diễn tiếng Việt hoặc một ngôn ngữ không phải tiếng Anh khác?",
-      "answer": "Bắt đầu với kịch bản, chuẩn bị hoặc xem lại bản dịch tiếng Anh, chia văn bản thành các cue dễ đọc, tập luyện căn thời gian cue, sau đó chạy buổi diễn với một người vận hành sẽ chiếu từng dòng phụ đề trực tiếp. SurtitleLive hỗ trợ quy trình này bằng cách biến kịch bản thành quy trình cue có thể chỉnh sửa và cung cấp phụ đề đã chuẩn bị qua máy chiếu hoặc trình xem trên thiết bị di động."
+      "answer": "Bắt đầu với kịch bản, chuẩn bị hoặc xem lại bản dịch tiếng Anh, chia văn bản thành các cue dễ đọc, tập luyện căn thời gian cue, sau đó chạy buổi diễn với một người vận hành sẽ chiếu từng dòng phụ đề trực tiếp. Pockitle Cue hỗ trợ quy trình này bằng cách biến kịch bản thành quy trình cue có thể chỉnh sửa và cung cấp phụ đề đã chuẩn bị qua máy chiếu hoặc trình xem trên thiết bị di động."
     },
     {
       "question": "Khán giả nói tiếng Anh và khán giả bản ngữ có thể xem các phụ đề khác nhau cùng lúc không?",
-      "answer": "Có, nếu quy trình hỗ trợ nhiều bản ngôn ngữ đã chuẩn bị trước. Với SurtitleLive, mỗi khán giả có thể mở liên kết hoặc quét mã QR và chọn ngôn ngữ được kích hoạt, chẳng hạn như tiếng Anh, ngôn ngữ gốc hoặc một ngôn ngữ khác đã được chuẩn bị."
+      "answer": "Có, nếu quy trình hỗ trợ nhiều bản ngôn ngữ đã chuẩn bị trước. Với Pockitle Cue, mỗi khán giả có thể mở liên kết hoặc quét mã QR và chọn ngôn ngữ được kích hoạt, chẳng hạn như tiếng Anh, ngôn ngữ gốc hoặc một ngôn ngữ khác đã được chuẩn bị."
     },
     {
       "question": "Chúng tôi có cần phải dàn dựng lại toàn bộ vở diễn chỉ vì một màn hình cố định không?",

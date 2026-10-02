@@ -1,7 +1,7 @@
 {
   "locale": "pl",
-  "title": "Aktualizacje produktu SurtitleLive",
-  "description": "Cotygodniowe aktualizacje produktu SurtitleLive pogrupowane według wersji, z krótkimi informacjami o nowych funkcjach, ulepszeniach i poprawkach widocznych dla użytkowników.",
+  "title": "Aktualizacje produktów Pockitle",
+  "description": "Cotygodniowe aktualizacje produktów Pockitle pogrupowane według wersji, z krótkimi informacjami o nowych funkcjach, ulepszeniach i poprawkach widocznych dla użytkowników.",
   "labels": {
     "articles": "Artykuły",
     "productUpdates": "Aktualizacje produktu",
@@ -14,6 +14,32 @@
     "noPublicRelease": "W tym tygodniu nie ma wymienionych aktualizacji."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive działa teraz pod nazwą Pockitle Cue. To wydanie znacząco poprawia też przywracanie napisów na żywo i dostęp widzów.",
+          "new": [
+            "W publicznej ofercie produktu wprowadzono Pockitle Cue jako nową nazwę SurtitleLive, dodając zlokalizowane strony i czytelniejszą nawigację od informacji o produkcie do procesu od scenariusza do sceny."
+          ],
+          "improved": [
+            "Ulepszono dostarczanie i przywracanie napisów na żywo podczas aktualizacji, ponownego łączenia i restartów spektaklu.",
+            "Rozszerzono przywracanie linków Audience Show, aby prawidłowe strony pozostawały dostępne także po zakończeniu transmisji na żywo."
+          ],
+          "fixed": [
+            "Naprawiono nieoczekiwane kończenie wstrzymanych sesji Pockitle Live.",
+            "Naprawiono utratę wygaszenia obrazu dla widzów po ponownym połączeniu operatora.",
+            "Naprawiono wyświetlanie innej linii przez Viewer, gdy nie można dopasować cue; teraz pozostaje bieżący napis.",
+            "Naprawiono utratę ostatnich aktualizacji napisów przy zatrzymywaniu sesji na żywo.",
+            "Naprawiono brak reakcji stron publicznych po zmianie ich treści przez tłumaczenie w przeglądarce."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

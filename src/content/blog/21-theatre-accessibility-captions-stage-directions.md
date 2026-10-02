@@ -1,10 +1,10 @@
 ---
 title: "The Knock in Macbeth: Why Theatre Needs Accessible Captions"
-description: "Learn how theatre accessibility captions make important sounds readable, why wording should reflect the actual production, and how SurtitleLive separates them from dialogue and stage directions."
+description: "Learn how theatre accessibility captions make important sounds readable, why wording should reflect the actual production, and how Pockitle Cue separates them from dialogue and stage directions."
 pubDate: "2026-09-23"
-tags: ["SurtitleLive", "Accessibility Captions", "Theatre Accessibility", "Stage Directions", "Theatre Captions", "Deaf and Hard of Hearing", "Editor"]
+tags: ["Pockitle Cue", "Accessibility Captions", "Theatre Accessibility", "Stage Directions", "Theatre Captions", "Deaf and Hard of Hearing", "Editor"]
 heroImage: './blog-21.png'
-heroImageAlt: 'SurtitleLive ASM showing the [Knocking at the door] caption on audience screens'
+heroImageAlt: 'Pockitle Cue ASM showing the [Knocking at the door] caption on audience screens'
 ---
 
 In Act 2, Scene 2 of *Macbeth*, Duncan has just been murdered. Lady Macbeth leaves with the daggers. In the excerpt shown here, the stage direction reads *Knock within.* Macbeth immediately asks, **“Whence is that knocking?”** and then, **“How is ’t with me when every noise appalls me?”** The direction identifies a sound; Macbeth’s words show his response to it. Both matter to the moment, but only one is spoken dialogue.
@@ -15,7 +15,7 @@ The excerpt shows a production instruction and Macbeth’s spoken response to th
 
 That is the kind of information an **accessibility caption** is meant to make available.
 
-SurtitleLive Editor now includes a dedicated manual line type for Accessibility Captions. A production can identify an important auditory event as audience-facing information rather than forcing it into dialogue or stage directions. During the show, it behaves like a caption cue and is displayed in brackets, for example:
+Pockitle Cue Editor now includes a dedicated manual line type for Accessibility Captions. A production can identify an important auditory event as audience-facing information rather than forcing it into dialogue or stage directions. During the show, it behaves like a caption cue and is displayed in brackets, for example:
 
 **[knocking at the door]**
 
@@ -31,7 +31,7 @@ Theatre captioning practice makes the distinction concrete. Stagetext says its t
 
 A stage direction and an accessibility caption can refer to the same theatrical event, but they are not the same kind of information. The direction tells the production what to stage; the caption tells the audience what meaningful sound they may otherwise miss. The script can be the starting point, but the caption must be checked against the sound and staging of the actual production.
 
-W3C, DCMP and Stagetext describe caption content and practice; they do not require all software to use a particular internal label or data model. **Accessibility Caption** is SurtitleLive’s product-specific name for a manual line type. Another tool could represent the same distinction with a tag, style, cue class or other metadata. The value of SurtitleLive’s `character / stage_direction / accessibility_caption` model is that those meanings can drive different output behavior; it is a product architecture choice, not a universal industry taxonomy.
+W3C, DCMP and Stagetext describe caption content and practice; they do not require all software to use a particular internal label or data model. **Accessibility Caption** is Pockitle Cue’s product-specific name for a manual line type. Another tool could represent the same distinction with a tag, style, cue class or other metadata. The value of Pockitle Cue’s `character / stage_direction / accessibility_caption` model is that those meanings can drive different output behavior; it is a product architecture choice, not a universal industry taxonomy.
 
 In theatre, that can include a knock at the door, an alarm, breaking glass, an offstage crowd, a telephone, a gunshot, or a change in music whose meaning affects the scene.
 
@@ -103,7 +103,7 @@ and later:
 
 Neither caption needs to be a literal translation of **“A noise within.”** The caption should describe the significant sound that the audience is actually experiencing in that production.
 
-## Why this was awkward in SurtitleLive before
+## Why this was awkward in Pockitle Cue before
 
 Before this update, the Editor did not have a separate Accessibility Caption line type.
 
@@ -119,7 +119,7 @@ For the operator, that is one skipped cue. For an audience member relying on the
 
 ## Three kinds of information can now remain distinct
 
-SurtitleLive Editor now separates these roles explicitly:
+Pockitle Cue Editor now separates these roles explicitly:
 
 | Line type | What it represents | Audience-facing? | During normal Next/Previous navigation |
 | --- | --- | --- | --- |
@@ -143,11 +143,11 @@ A *Macbeth* sequence can therefore be structured cleanly:
 
 These lines refer to the same dramatic moment, but they are different kinds of information. Lady Macbeth’s exit is a production direction. The knock is an auditory event that may need an audience-facing caption after the production is reviewed. Macbeth’s words are dialogue. One event can therefore be represented differently for the production team and the audience.
 
-SurtitleLive’s three line types are a product data model, not a taxonomy required by captioning standards. Their value is practical: the meanings can drive distinct behavior, so an ASM operator can skip stage-direction cues during normal navigation without skipping an Accessibility Caption. Other software can make the same distinction with tags, metadata, styles or cue classes.
+Pockitle Cue’s three line types are a product data model, not a taxonomy required by captioning standards. Their value is practical: the meanings can drive distinct behavior, so an ASM operator can skip stage-direction cues during normal navigation without skipping an Accessibility Caption. Other software can make the same distinction with tags, metadata, styles or cue classes.
 
 The separate **Hide Character Names** option controls whether character names appear; it does not determine whether an Accessibility Caption is kept.
 
-![Screen recording of the SurtitleLive Editor showing cue rows for the Macbeth knocking scene](./blog-21-accessibility-caption-editor.gif)
+![Screen recording of the Pockitle Cue Editor showing cue rows for the Macbeth knocking scene](./blog-21-accessibility-caption-editor.gif)
 
 The editor recording includes a production-specific sample description. It demonstrates the separate line type; it is not a recommended caption for *Knock within.* A caption should match the sound in the actual production.
 
@@ -173,9 +173,9 @@ Accessibility Captions are displayed in brackets:
 
 Brackets are a common captioning convention for sound information, not a universal software requirement. The Described and Captioned Media Program’s Captioning Key recommends bracketed descriptions for sound effects that are necessary to understand or enjoy the material. [See the DCMP guidance on sound effects](https://dcmp.org/learn/captioningkey/602).
 
-SurtitleLive now handles that presentation consistently. The Editor can store the wording itself — for example, `knocking` — and render one pair of brackets when the cue is shown in simulations, projections and audience views.
+Pockitle Cue now handles that presentation consistently. The Editor can store the wording itself — for example, `knocking` — and render one pair of brackets when the cue is shown in simulations, projections and audience views.
 
-If the text already contains brackets, SurtitleLive does not add another pair.
+If the text already contains brackets, Pockitle Cue does not add another pair.
 
 That keeps the content separate from its display convention and prevents authors from having to manage punctuation merely to obtain the correct on-screen appearance.
 
@@ -193,11 +193,11 @@ A better question is:
 
 That principle is consistent with established captioning practice. The DCMP Captioning Key recommends captioning sound effects when they are necessary for understanding or enjoyment, rather than transcribing every audible event. [See the DCMP guidance on sound effects](https://dcmp.org/learn/captioningkey/602).
 
-## SurtitleLive does not make the editorial decision for you
+## Pockitle Cue does not make the editorial decision for you
 
 Accessibility Caption is a **manual** Editor line type.
 
-SurtitleLive does not see the direction *Knock within.* and automatically decide that it must become a caption. That is deliberate. The line is a prompt for the caption editor to review the production’s sound, not a command to translate the stage direction into a predetermined caption.
+Pockitle Cue does not see the direction *Knock within.* and automatically decide that it must become a caption. That is deliberate. The line is a prompt for the caption editor to review the production’s sound, not a command to translate the stage direction into a predetermined caption.
 
 The same direction can mean different things in different productions. **“A noise within”** might become a few people arguing backstage, a crowd breaking through the doors, or something else entirely. Music might be incidental in one staging and a crucial story cue in another.
 
@@ -205,7 +205,7 @@ The software does not know what the director and sound designer have finally mad
 
 The production team does.
 
-SurtitleLive’s job is therefore not to guess accessibility. It is to give the team a correct place to record the accessibility decision once they have made it.
+Pockitle Cue’s job is therefore not to guess accessibility. It is to give the team a correct place to record the accessibility decision once they have made it.
 
 A row can now mean, unambiguously:
 
@@ -241,7 +241,7 @@ What accessibility work adds is not a direct translation from:
 
 to a fixed caption. It is the editorial step of reviewing the production and, when the sound carries information the audience needs, writing a caption that describes that sound. Depending on what the audience hears and what the production establishes, an editor might choose **[knocking at the door]**. If the knock is rapid, **[rapid knocking at the door]** may be accurate; if the production establishes no more than an offstage knock, **[knocking offstage]** may be safer. The wording is grounded in the actual production, not inferred from the stage direction alone.
 
-SurtitleLive Editor now has a dedicated place to preserve that decision.
+Pockitle Cue Editor now has a dedicated place to preserve that decision.
 
 
 ---

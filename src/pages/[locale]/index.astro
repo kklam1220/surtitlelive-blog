@@ -80,6 +80,10 @@ const hreflangs = [
         object-fit: cover;
         border-bottom: 1px solid #e5e7eb;
       }
+      .card-image.hero-frame-preserved {
+        background-color: #000;
+        object-fit: contain;
+      }
       .card h2 {
         font-size: 1.1rem;
         margin: 0.5rem 0;
@@ -108,16 +112,19 @@ const hreflangs = [
         {
           posts.map((post) => {
             const heroImage = resolveBlogImage(post.frontmatter.heroImage);
+            const preserveHeroFrame = post.slug === '23-surtitlelive-becomes-pockitle-cue';
             return (
               <article class="card">
                 <a href={`${normalizedBaseUrl}${locale}/${post.slug}/`}>
                   {heroImage && (
                     <Image
-                      class="card-image"
+                      class={preserveHeroFrame ? 'card-image hero-frame-preserved' : 'card-image'}
                       src={heroImage}
                       alt={post.frontmatter.heroImageAlt || post.frontmatter.title}
                       width={720}
                       height={360}
+                      fit={preserveHeroFrame ? 'contain' : undefined}
+                      background={preserveHeroFrame ? '#000' : undefined}
                     />
                   )}
                   <div class="card-body">

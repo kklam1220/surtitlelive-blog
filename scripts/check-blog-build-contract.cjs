@@ -539,27 +539,38 @@ assertNoMatch(
 
 assertNoMatch(
   htmlFiles,
-  /src="\/blog\/logo\/New_logo\.png/,
+  /src="\/blog\/logo\/pockitle-cue-logo-header-480w\.png/,
   "Detected blog-origin logo URL. Use the canonical main-site logo URL instead.",
 );
 
 assertHasMatch(
   htmlFiles,
-  /src="https:\/\/surtitlelive\.com\/logo\/New_logo\.png"/,
+  /src="https:\/\/surtitlelive\.com\/logo\/pockitle-cue-logo-header-480w\.png"/,
   "Missing canonical main-site logo URL in built blog HTML.",
 );
 
 assertNoMatch(
   htmlFiles,
   /https:\/\/surtitlelive\.com\/logo\.png/,
-  "Detected obsolete root logo URL. Use https://surtitlelive.com/logo/New_logo.png.",
+  "Detected obsolete root logo URL. Use the canonical Pockitle Cue logo on surtitlelive.com.",
 );
 
 assertHasMatch(
   htmlFiles,
-  /"logo":\{"@type":"ImageObject","url":"https:\/\/surtitlelive\.com\/logo\/New_logo\.png"\}/,
+  /"logo":\{"@type":"ImageObject","url":"https:\/\/surtitlelive\.com\/logo\/pockitle-logo-full-transparent\.png"\}/,
   "Missing canonical publisher logo URL in BlogPosting JSON-LD.",
 );
+
+for (const articlePath of [
+  "14-fringe-theatre-accessibility-captions-surtitles-support-2026/index.html",
+  "zh-TW/14-fringe-theatre-accessibility-captions-surtitles-support-2026/index.html",
+]) {
+  assertFileHasMatch(
+    articlePath,
+    /SurtitleLive is now Pockitle Cue\./,
+    "Missing shared rename notice on a historical blog article.",
+  );
+}
 
 if (!fs.existsSync(redirectsFile)) {
   throw new Error(
@@ -696,7 +707,7 @@ assertFileHasNoMatch(
 
 assertFileHasMatch(
   path.join("ko", "index.html"),
-  /SurtitleLive 블로그|추천 글/,
+  /Pockitle Cue \(formerly SurtitleLive\) 블로그|추천 글/,
   "Missing formal Korean blog hub metadata or heading.",
 );
 
@@ -715,11 +726,23 @@ assertFileHasNoMatch(
 for (const [locale, expectedCopy] of [
   [
     "ko",
-    { features: "기능", guides: "가이드", blog: "블로그", signUp: "회원가입" },
+    {
+      features: "기능",
+      workflow: "공연 제작 과정",
+      guides: "가이드",
+      blog: "블로그",
+      signUp: "회원가입",
+    },
   ],
   [
     "zh-TW",
-    { features: "功能", guides: "指南", blog: "部落格", signUp: "註冊" },
+    {
+      features: "功能",
+      workflow: "工作流程",
+      guides: "指南",
+      blog: "部落格",
+      signUp: "註冊",
+    },
   ],
 ]) {
   const indexPath = path.join(locale, "index.html");
@@ -727,9 +750,16 @@ for (const [locale, expectedCopy] of [
   assertFileHasMatch(
     indexPath,
     new RegExp(
-      `href="https://surtitlelive\\.com/${locale}/features"[^>]*>\\s*${expectedCopy.features}\\s*<`,
+      `<summary[^>]*>\\s*${expectedCopy.features}\\s*<\\/summary>`,
     ),
-    `Missing localized main-site Features href on the ${locale} blog header.`,
+    `Missing localized main-site Features menu on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(
+      `href="https://surtitlelive\\.com/${locale}/features"[^>]*>\\s*${expectedCopy.workflow}\\s*<`,
+    ),
+    `Missing localized main-site Pockitle Cue workflow link on the ${locale} blog header.`,
   );
   assertFileHasMatch(
     indexPath,
@@ -844,9 +874,9 @@ assertFileHasNoMatch(
   "Detected leftover punctuation from replaced French dialogue examples.",
 );
 
-for (const [locale, pockitlePath, planningPath] of [
-  ["en", "/pockitle#software", "/planning/theatre-captioning-software-vs-live-caption-tools"],
-  ["zh-TW", "/zh-TW/pockitle#software", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
+for (const [locale, planningPath] of [
+  ["en", "/planning/theatre-captioning-software-vs-live-caption-tools"],
+  ["zh-TW", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
 ]) {
   const articlePath = path.join(
     ...(locale === "en" ? [] : [locale]),
@@ -855,7 +885,7 @@ for (const [locale, pockitlePath, planningPath] of [
   );
   assertFileHasMatch(
     articlePath,
-    new RegExp(`https://surtitlelive\\.com${pockitlePath}`),
+    /https:\/\/surtitlelive\.com\/pockitle#software/,
     `Missing shared Pockitle SoftwareApplication entity on the ${locale} launch article.`,
   );
   assertFileHasMatch(

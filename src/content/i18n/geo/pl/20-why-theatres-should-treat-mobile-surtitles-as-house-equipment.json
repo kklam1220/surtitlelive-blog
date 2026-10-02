@@ -14,7 +14,7 @@
     "Teatr może zamienić napisy na telefonach w stałą usługę, utrzymując niewielką pulę zarządzanych telefonów do wypożyczenia.",
     "Obsługa widowni może przekazać urządzenie z otwartą stroną Viewer i krótko wyjaśnić wybór języka.",
     "Ładowanie, sieć, jasność, prywatność, urządzenia zapasowe i próba na widowni są równie ważne jak oprogramowanie.",
-    "SurtitleLive łączy przygotowany tekst z przeglądarką widza, ale nie dostarcza telefonów, sieci, tłumaczy ani certyfikacji zgodności."
+    "Pockitle Cue łączy przygotowany tekst z przeglądarką widza, ale nie dostarcza telefonów, sieci, tłumaczy ani certyfikacji zgodności."
   ],
   "faq": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "question": "Czy widzowie muszą instalować aplikację?",
-      "answer": "Nie. SurtitleLive Viewer działa w przeglądarce. Widz może otworzyć link albo zeskanować kod QR, wybrać dostępny język i czytać przygotowane napisy bez instalowania osobnej aplikacji dla publiczności."
+      "answer": "Nie. Pockitle Cue Viewer działa w przeglądarce. Widz może otworzyć link albo zeskanować kod QR, wybrać dostępny język i czytać przygotowane napisy bez instalowania osobnej aplikacji dla publiczności."
     },
     {
       "question": "Co teatr powinien przygotować przed udostępnieniem telefonów?",
@@ -31,7 +31,7 @@
     },
     {
       "question": "Czy napisy na telefonach są pełnym rozwiązaniem dostępności?",
-      "answer": "Nie. To jeden ze sposobów udostępniania tekstu. W zależności od spektaklu potrzebne mogą być również napisy projektowane, profesjonalne napisy na żywo, tłumaczenie migowe, systemy wspomagania słuchu lub inne usługi. SurtitleLive nie certyfikuje dostępności ani zgodności prawnej konkretnej konfiguracji."
+      "answer": "Nie. To jeden ze sposobów udostępniania tekstu. W zależności od spektaklu potrzebne mogą być również napisy projektowane, profesjonalne napisy na żywo, tłumaczenie migowe, systemy wspomagania słuchu lub inne usługi. Pockitle Cue nie certyfikuje dostępności ani zgodności prawnej konkretnej konfiguracji."
     }
   ],
   "glossary": [
@@ -44,7 +44,7 @@
       "definition": "Zespół kontaktujący się z publicznością, który przygotowuje, przekazuje i odbiera urządzenia oraz wyjaśnia usługę."
     },
     {
-      "term": "SurtitleLive Viewer",
+      "term": "Pockitle Cue Viewer",
       "definition": "Widok publiczności działający w przeglądarce, w którym można czytać przygotowane napisy na telefonie."
     },
     {

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Thuật ngữ",
+    "related": "Khám phá các sản phẩm Pockitle liên quan"
+  },
+  "keyTakeaways": [
+    "SurtitleLive đổi tên thành Pockitle Cue; tài khoản, dự án và quy trình chuẩn bị phụ đề sân khấu trên trình duyệt vẫn được giữ nguyên.",
+    "Pockitle Cue dành cho văn bản được chuẩn bị trước buổi diễn; Pockitle Live tạo phụ đề cho lời nói diễn ra ngay lúc đó.",
+    "Pockitle Cue for Mac và Pockitle Live for iOS vẫn đang được phát triển, nên các tính năng mô tả chưa được phát hành.",
+    "Trên iPhone và iPad, Pockitle Live Web chỉ dùng được đầu vào âm thanh ngoài mà iOS hiển thị trong trình duyệt; nếu không có đầu vào phù hợp, micrô tích hợp là phương án dự phòng."
+  ],
+  "faq": [
+    {
+      "question": "Điều gì thay đổi khi SurtitleLive trở thành Pockitle Cue?",
+      "answer": "SurtitleLive đổi tên thành Pockitle Cue. Tài khoản, dự án và quy trình chính trên trình duyệt để chuẩn bị, rà soát, tập dượt và hiển thị phụ đề vẫn được duy trì."
+    },
+    {
+      "question": "Pockitle Cue khác Pockitle Live như thế nào?",
+      "answer": "Pockitle Cue dành cho văn bản có thể được chuẩn bị, rà soát và tập dượt trước buổi diễn. Pockitle Live tạo phụ đề cho lời nói đang diễn ra."
+    },
+    {
+      "question": "Pockitle Cue for Mac và Pockitle Live for iOS đã dùng được chưa?",
+      "answer": "Chưa. Bài viết cho biết cả hai ứng dụng gốc vẫn đang được phát triển. Các tính năng chiếu và nhận âm thanh dự kiến chưa phải tính năng đã phát hành."
+    },
+    {
+      "question": "Pockitle Live Web có dùng được micrô ngoài trên iPhone hoặc iPad không?",
+      "answer": "Chỉ khi iOS hiển thị micrô đó trong danh sách đầu vào âm thanh của trình duyệt. Micrô hoặc tín hiệu từ bàn trộn không có trong danh sách sẽ không thể chọn trên trang; micrô tích hợp là phương án dự phòng đáng tin cậy."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "Sản phẩm phụ đề sân khấu đã chuẩn bị trên trình duyệt, trước đây có tên SurtitleLive."
+    },
+    {
+      "term": "Phụ đề đã chuẩn bị",
+      "definition": "Văn bản được chuẩn bị, rà soát và tập dượt trước khi hiển thị trong buổi diễn."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "Công cụ trên trình duyệt để tạo phụ đề cho lời nói không thể chuẩn bị đầy đủ từ trước."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "Ứng dụng Mac đang phát triển để chiếu cục bộ sau khi đồng bộ và phối hợp trực tiếp hơn với QLab."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "Ứng dụng iPhone và iPad đang phát triển để truy cập trực tiếp hơn các đầu vào âm thanh ngoài được hỗ trợ."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/vi/live"
+    }
+  ]
+}

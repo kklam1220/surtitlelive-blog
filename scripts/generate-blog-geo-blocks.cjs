@@ -211,15 +211,22 @@ async function main() {
         continue;
       }
       const outPath = path.join(ROOT, "src", "content", "i18n", "geo", locale, `${post.slug}.json`);
+      let previousPayload = null;
       if (!args.force && fs.existsSync(outPath)) {
         try {
-          const current = JSON.parse(fs.readFileSync(outPath, "utf8"));
-          if (current && current.sourceHash === localeContent.sourceHash) {
+          previousPayload = readJson(outPath);
+          if (previousPayload && previousPayload.sourceHash === localeContent.sourceHash) {
             skipped += 1;
             continue;
           }
         } catch {
           // regenerate
+        }
+      } else if (fs.existsSync(outPath)) {
+        try {
+          previousPayload = readJson(outPath);
+        } catch {
+          // regenerate without preserving a malformed prior payload
         }
       }
 
@@ -246,7 +253,12 @@ async function main() {
         generatedAt: new Date().toISOString(),
         sectionTitles:
           parsed.sectionTitles && typeof parsed.sectionTitles === "object"
-            ? parsed.sectionTitles
+            ? {
+                ...parsed.sectionTitles,
+                ...(Array.isArray(previousPayload?.relatedLinks) && previousPayload?.sectionTitles?.related
+                  ? { related: previousPayload.sectionTitles.related }
+                  : {}),
+              }
             : {
                 keyTakeaways: "Key Takeaways",
                 faq: "FAQ",
@@ -266,6 +278,9 @@ async function main() {
               definition: String(item?.definition || ""),
             }))
           : [],
+        ...(Array.isArray(previousPayload?.relatedLinks)
+          ? { relatedLinks: previousPayload.relatedLinks }
+          : {}),
       };
       ensureDir(path.dirname(outPath));
       if (!args.dryRun) {

@@ -14,7 +14,7 @@
     "Ein Theater kann mobile Übertitel als wiederverwendbaren Hausservice mit einem kleinen Bestand verwalteter Leihhandys anbieten.",
     "Der Publikumsdienst kann ein vorbereitetes Viewer-Fenster übergeben und die Sprachauswahl kurz erklären.",
     "Laden, Netzwerk, Helligkeit, Blickschutz, Ersatzgeräte und ein Test im Zuschauerraum sind ebenso wichtig wie die Software.",
-    "SurtitleLive verbindet vorbereiteten Übertiteltext mit dem Browser des Publikums, stellt aber weder Handys noch Netzwerk, Übersetzungen oder Konformitätsnachweise bereit."
+    "Pockitle Cue verbindet vorbereiteten Übertiteltext mit dem Browser des Publikums, stellt aber weder Handys noch Netzwerk, Übersetzungen oder Konformitätsnachweise bereit."
   ],
   "faq": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "question": "Müssen Zuschauer eine App installieren?",
-      "answer": "Nein. Der SurtitleLive Viewer läuft im Browser. Das Publikum kann einen Link öffnen oder einen QR-Code scannen, eine verfügbare Sprache wählen und die vorbereiteten Übertitel ohne eigene Zuschauer-App lesen."
+      "answer": "Nein. Der Pockitle Cue Viewer läuft im Browser. Das Publikum kann einen Link öffnen oder einen QR-Code scannen, eine verfügbare Sprache wählen und die vorbereiteten Übertitel ohne eigene Zuschauer-App lesen."
     },
     {
       "question": "Was muss ein Theater vor dem Einsatz von Leihhandys vorbereiten?",
@@ -31,7 +31,7 @@
     },
     {
       "question": "Sind mobile Übertitel eine vollständige Lösung für Barrierefreiheit?",
-      "answer": "Nein. Sie sind eine Möglichkeit der Ausgabe. Je nach Produktion können auch projizierte Übertitel, professionelle Live-Untertitel, Gebärdensprachdolmetschen, Hörunterstützung oder andere Angebote erforderlich sein. SurtitleLive bestätigt weder Barrierefreiheit noch rechtliche Konformität einer konkreten Lösung."
+      "answer": "Nein. Sie sind eine Möglichkeit der Ausgabe. Je nach Produktion können auch projizierte Übertitel, professionelle Live-Untertitel, Gebärdensprachdolmetschen, Hörunterstützung oder andere Angebote erforderlich sein. Pockitle Cue bestätigt weder Barrierefreiheit noch rechtliche Konformität einer konkreten Lösung."
     }
   ],
   "glossary": [
@@ -44,7 +44,7 @@
       "definition": "Das publikumsnahe Team, das Geräte vorbereitet, übergibt, zurücknimmt und die Nutzung erklärt."
     },
     {
-      "term": "SurtitleLive Viewer",
+      "term": "Pockitle Cue Viewer",
       "definition": "Die browserbasierte Ansicht, in der das Publikum vorbereitete Übertitel auf einem Handy lesen kann."
     },
     {

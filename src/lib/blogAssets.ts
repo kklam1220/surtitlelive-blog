@@ -42,6 +42,10 @@ import blog22TelescopeGathering from "../content/blog/blog-22-telescope-gatherin
 import blog22Speaker from "../content/blog/blog-22-speaker.jpg";
 import blog22LiveCaptions from "../content/blog/blog-22-live-captions.jpg";
 import blog22Conversation from "../content/blog/blog-22-conversation.jpg";
+import blog23Hero from "../content/blog/blog-23.png";
+import blog23MacSettings from "../content/blog/blog-23-cue-for-mac-settings.png";
+import blog23ProductFamily from "../content/blog/blog-23-product-family.png";
+import blog23IosInput from "../content/blog/blog-23-live-ios-input.jpg";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -85,6 +89,10 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-22-speaker.jpg": blog22Speaker,
   "blog-22-live-captions.jpg": blog22LiveCaptions,
   "blog-22-conversation.jpg": blog22Conversation,
+  "blog-23.png": blog23Hero,
+  "blog-23-cue-for-mac-settings.png": blog23MacSettings,
+  "blog-23-product-family.png": blog23ProductFamily,
+  "blog-23-live-ios-input.jpg": blog23IosInput,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,

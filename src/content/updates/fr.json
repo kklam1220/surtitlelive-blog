@@ -1,7 +1,7 @@
 {
   "locale": "fr",
-  "title": "Mises à jour du produit SurtitleLive",
-  "description": "Mises à jour hebdomadaires du produit SurtitleLive, regroupées par version, avec de brèves notes sur les nouveautés, les améliorations et les corrections visibles pour les utilisateurs.",
+  "title": "Mises à jour des produits Pockitle",
+  "description": "Mises à jour hebdomadaires des produits Pockitle, regroupées par version, avec de brèves notes sur les nouveautés, les améliorations et les corrections visibles pour les utilisateurs.",
   "labels": {
     "articles": "Articles",
     "productUpdates": "Mises à jour du produit",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Aucune mise à jour n’est répertoriée cette semaine."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive devient Pockitle Cue. Cette version améliore aussi nettement la reprise des sous-titres en direct et l’accès du public.",
+          "new": [
+            "Pockitle Cue devient le nouveau nom de SurtitleLive dans l’expérience publique du produit, avec des pages localisées et une navigation plus claire entre la présentation du produit et le parcours du script à la scène."
+          ],
+          "improved": [
+            "Amélioration de la diffusion et de la reprise des sous-titres en direct lors des mises à jour, des reconnexions et des redémarrages de représentation.",
+            "La reprise des liens Audience Show a été étendue afin que les pages valides restent accessibles même après l’arrêt du service en direct."
+          ],
+          "fixed": [
+            "Correction de l’arrêt inattendu des sessions Pockitle Live en pause.",
+            "Correction de la perte de l’écran noir destiné au public lorsque l’opérateur se reconnecte.",
+            "Correction de l’affichage d’une autre ligne par Viewer lorsqu’un cue ne peut pas être identifié ; le sous-titre actuel est désormais conservé.",
+            "Correction de la perte des dernières mises à jour de sous-titres à l’arrêt d’une session en direct.",
+            "Correction du blocage des pages publiques lorsque la traduction du navigateur en modifiait le contenu."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

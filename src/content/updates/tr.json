@@ -1,7 +1,7 @@
 {
   "locale": "tr",
-  "title": "SurtitleLive Ürün Güncellemeleri",
-  "description": "Sürüm bazında gruplandırılmış haftalık SurtitleLive ürün güncellemeleri; yeni özellikler, iyileştirmeler ve kullanıcıların görebileceği düzeltmeler hakkında kısa notlarla.",
+  "title": "Pockitle Ürün Güncellemeleri",
+  "description": "Sürüm bazında gruplandırılmış haftalık Pockitle ürün güncellemeleri; yeni özellikler, iyileştirmeler ve kullanıcıların görebileceği düzeltmeler hakkında kısa notlarla.",
   "labels": {
     "articles": "Makaleler",
     "productUpdates": "Ürün Güncellemeleri",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Bu hafta listelenen güncelleme yok."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive artık Pockitle Cue adıyla sunuluyor. Bu sürüm, canlı altyazıların kurtarılmasını ve izleyici erişimini de önemli ölçüde iyileştiriyor.",
+          "new": [
+            "Herkese açık ürün deneyiminde SurtitleLive'ın yeni adı olarak Pockitle Cue tanıtıldı; yerelleştirilmiş sayfalar ve ürün bilgilerinden senaryodan sahneye iş akışına uzanan daha anlaşılır bir gezinme eklendi."
+          ],
+          "improved": [
+            "Canlı güncellemeler, yeniden bağlantılar ve performans yeniden başlatmaları sırasında canlı altyazıların iletimi ve kurtarılması iyileştirildi.",
+            "Audience Show bağlantılarının kurtarma kapsamı genişletildi; geçerli sayfalara canlı çalışma sona erdikten sonra da erişilebilir."
+          ],
+          "fixed": [
+            "Duraklatılmış Pockitle Live oturumlarının beklenmedik şekilde sona ermesi düzeltildi.",
+            "Operatör yeniden bağlandığında izleyici karartma durumunun kaybolması düzeltildi.",
+            "Bir cue eşleştirilemediğinde Viewer'ın farklı bir satır göstermesi düzeltildi; artık geçerli altyazı korunuyor.",
+            "Canlı oturum durdurulduğunda son altyazı güncellemelerinin kaybolması düzeltildi.",
+            "Tarayıcı çevirisi içeriği değiştirdikten sonra herkese açık sayfaların yanıt vermemesi düzeltildi."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

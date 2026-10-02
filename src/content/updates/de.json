@@ -1,7 +1,7 @@
 {
   "locale": "de",
-  "title": "SurtitleLive-Produktupdates",
-  "description": "Wöchentliche Produktupdates von SurtitleLive, nach Version geordnet, mit kurzen Hinweisen zu neuen Funktionen, Verbesserungen und für Nutzer sichtbaren Fehlerbehebungen.",
+  "title": "Produktupdates von Pockitle",
+  "description": "Wöchentliche Updates für alle Pockitle-Produkte, nach Version geordnet, mit kurzen Hinweisen zu neuen Funktionen, Verbesserungen und für Nutzer sichtbaren Fehlerbehebungen.",
   "labels": {
     "articles": "Artikel",
     "productUpdates": "Produktupdates",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Für diese Woche sind keine Updates aufgeführt."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive heißt jetzt Pockitle Cue. Außerdem verbessert dieses Release die Wiederherstellung von Live-Untertiteln und den Zugriff für das Publikum deutlich.",
+          "new": [
+            "Pockitle Cue wurde als neuer Name für SurtitleLive im öffentlichen Produktauftritt eingeführt – mit lokalisierten Seiten und einer klareren Navigation von den Produktinformationen zum Ablauf vom Skript bis zur Bühne."
+          ],
+          "improved": [
+            "Die Zustellung und Wiederherstellung von Live-Untertiteln bei Live-Updates, erneuten Verbindungen und Neustarts von Aufführungen wurde verbessert.",
+            "Die Wiederherstellung von Audience-Show-Links wurde erweitert, damit gültige Seiten auch nach Ende des Live-Betriebs erreichbar bleiben."
+          ],
+          "fixed": [
+            "Unerwartetes Ende pausierter Pockitle-Live-Sitzungen behoben.",
+            "Behoben: Der Blackout für das Publikum ging verloren, wenn sich die Bedienperson erneut verband.",
+            "Behoben: Viewers wechselten zu einer anderen Zeile, wenn ein Cue nicht zugeordnet werden konnte; jetzt bleibt die aktuelle Einblendung erhalten.",
+            "Behoben: Beim Beenden einer Live-Sitzung gingen letzte Untertitelaktualisierungen verloren.",
+            "Behoben: Öffentliche Seiten reagierten nicht mehr, nachdem die Browserübersetzung ihren Inhalt geändert hatte."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

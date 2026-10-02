@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "QLabはText cuesで字幕を投影できます。実際の投影にはVideo Licenseと、正しく設定したStageが必要です。",
     "QLabにはXLSX字幕をワンクリックで取り込む標準機能はありませんが、AppleScriptなどのimporterで、構造化したExcel・CSV・TXTをcuesへ変換できます。",
-    "SurtitleLive Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。公開を作成せず、Viewerへ状態を配信することもありません。",
+    "Pockitle Cue Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。公開を作成せず、Viewerへ状態を配信することもありません。",
     "完成済み公演でViewerを同期するときは、元cueごとに一つのローカルScript child、loopback bridge、そしてオペレーターが明示的に接続・有効化したASMコンソールを使います。"
   ],
   "faq": [
@@ -30,7 +30,7 @@
       "answer": "いいえ。Editor版packは、オフラインでQLab投影へ引き渡すためのものです。Viewer同期には、完成済み公演向けの、オペレーターが明示的に有効化するASM経路が必要です。"
     },
     {
-      "question": "ローカルbridgeはSurtitleLive cloudへ直接接続しますか？",
+      "question": "ローカルbridgeはPockitle Cue cloudへ直接接続しますか？",
       "answer": "接続しません。bridgeは機密情報を含まない限定的なcue identityを、同じMac上で開いているASMコンソールへ渡すだけです。Viewer stateは、ASMが既存のcontrol channelを通じて配信します。"
     }
   ],
@@ -41,11 +41,11 @@
     },
     {
       "term": "QLab Projection Pack",
-      "definition": "固定importer、cue data、操作手順、補助ファイルをまとめた、SurtitleLiveからQLabへの書き出しpack。"
+      "definition": "固定importer、cue data、操作手順、補助ファイルをまとめた、Pockitle CueからQLabへの書き出しpack。"
     },
     {
       "term": "Stable cue key",
-      "definition": "修正版を再importしたとき、一致するcaption Groupを更新するための、機密情報を含まないSurtitleLiveの識別子。"
+      "definition": "修正版を再importしたとき、一致するcaption Groupを更新するための、機密情報を含まないPockitle Cueの識別子。"
     },
     {
       "term": "Loopback bridge",

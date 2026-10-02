@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "ar",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "أهم النقاط",
+    "faq": "الأسئلة الشائعة",
+    "glossary": "مسرد المصطلحات",
+    "related": "استكشف منتجات Pockitle ذات الصلة"
+  },
+  "keyTakeaways": [
+    "يتحول SurtitleLive إلى Pockitle Cue، مع استمرار الحسابات والمشروعات وسير العمل عبر المتصفح لإعداد النصوص المسرحية.",
+    "يُستخدم Pockitle Cue للنصوص المعدّة قبل العرض، بينما يضع Pockitle Live نصًا للكلام الذي يحدث في اللحظة نفسها.",
+    "لا يزال كل من Pockitle Cue for Mac وPockitle Live for iOS قيد التطوير؛ لذا فالإمكانات المذكورة لهما لم تُطرح بعد.",
+    "على iPhone وiPad، لا يستطيع Pockitle Live Web استخدام مدخل صوت خارجي إلا إذا أدرجه iOS في قائمة المتصفح؛ وإلا فالميكروفون المدمج هو البديل."
+  ],
+  "faq": [
+    {
+      "question": "ما الذي يتغير عند الانتقال من SurtitleLive إلى Pockitle Cue؟",
+      "answer": "يتخذ SurtitleLive اسم Pockitle Cue. وتستمر الحسابات والمشروعات وسير العمل الأساسي في المتصفح لإعداد النصوص ومراجعتها والتدرب عليها وإظهارها أثناء العرض."
+    },
+    {
+      "question": "ما الفرق بين Pockitle Cue وPockitle Live؟",
+      "answer": "يخدم Pockitle Cue النصوص التي يمكن إعدادها ومراجعتها والتدرب عليها قبل العرض. أما Pockitle Live فينشئ النصوص للكلام الجاري في اللحظة نفسها."
+    },
+    {
+      "question": "هل أصبح Pockitle Cue for Mac وPockitle Live for iOS متاحين؟",
+      "answer": "لا. يوضح المقال أن التطبيقين الأصليين لا يزالان قيد التطوير. ولا ينبغي اعتبار إمكانات العرض والصوت المخطط لها ميزات مطروحة الآن."
+    },
+    {
+      "question": "هل يمكن لـ Pockitle Live Web استخدام ميكروفون خارجي على iPhone أو iPad؟",
+      "answer": "فقط إذا أتاحه iOS كمدخل صوت للمتصفح. ولا يمكن اختيار ميكروفون أو مسار خلاط متصل لا يظهر في القائمة؛ ويظل الميكروفون المدمج الخيار الاحتياطي الموثوق."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "منتج إعداد النصوص المسرحية في المتصفح، وكان يُعرف سابقًا باسم SurtitleLive."
+    },
+    {
+      "term": "النصوص المسرحية المُعدّة",
+      "definition": "نصوص تُجهَّز وتُراجع ويُتدرّب عليها قبل عرضها أثناء الأداء."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "أداة عبر المتصفح لإظهار نص للكلام الذي لا يمكن إعداده كاملًا مسبقًا."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "تطبيق Mac قيد التطوير للعرض المحلي بعد المزامنة والتكامل الأقرب مع QLab."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "تطبيق iPhone وiPad قيد التطوير للوصول المباشر إلى مداخل الصوت الخارجية المدعومة."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/ar/live"
+    }
+  ]
+}

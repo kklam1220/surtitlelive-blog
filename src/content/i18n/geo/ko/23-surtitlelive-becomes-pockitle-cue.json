@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "ko",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "핵심 요약",
+    "faq": "자주 묻는 질문",
+    "glossary": "용어집",
+    "related": "관련 Pockitle 제품 살펴보기"
+  },
+  "keyTakeaways": [
+    "SurtitleLive는 Pockitle Cue로 이름이 바뀌며 기존 계정, 프로젝트, 브라우저 기반 자막 준비 과정은 그대로 유지됩니다.",
+    "Pockitle Cue는 공연 전에 준비한 텍스트를 위한 제품이고, Pockitle Live는 현장에서 발생하는 발화를 자막으로 만듭니다.",
+    "Pockitle Cue for Mac과 Pockitle Live for iOS는 개발 중이며, 설명된 기능은 아직 출시되지 않았습니다.",
+    "iPhone과 iPad의 Pockitle Live Web은 iOS가 브라우저 입력 목록에 표시하는 외부 오디오만 사용할 수 있습니다. 적절한 입력이 없으면 내장 마이크가 대안입니다."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive에서 Pockitle Cue로 바뀌면 무엇이 달라지나요?",
+      "answer": "SurtitleLive의 이름이 Pockitle Cue로 바뀝니다. 계정, 프로젝트, 브라우저에서 자막을 준비하고 검토하고 리허설한 뒤 송출하는 핵심 흐름은 계속 사용할 수 있습니다."
+    },
+    {
+      "question": "Pockitle Cue와 Pockitle Live는 어떻게 다른가요?",
+      "answer": "Pockitle Cue는 공연 전에 준비하고 검토하고 연습할 수 있는 텍스트를 위한 제품입니다. Pockitle Live는 지금 말하고 있는 내용을 자막으로 만듭니다."
+    },
+    {
+      "question": "Pockitle Cue for Mac과 Pockitle Live for iOS는 지금 사용할 수 있나요?",
+      "answer": "아닙니다. 두 네이티브 앱은 아직 개발 중입니다. 계획된 프로젝션 및 오디오 입력 기능은 출시된 기능으로 간주하면 안 됩니다."
+    },
+    {
+      "question": "iPhone이나 iPad에서 Pockitle Live Web으로 외부 마이크를 사용할 수 있나요?",
+      "answer": "iOS가 브라우저 오디오 입력 목록에 표시한 경우에만 사용할 수 있습니다. 목록에 없는 마이크나 믹서 신호는 페이지에서 선택할 수 없으며, 내장 마이크가 신뢰할 수 있는 대안입니다."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "이전 이름이 SurtitleLive였던 브라우저 기반 사전 준비 자막 제품."
+    },
+    {
+      "term": "사전 준비 자막",
+      "definition": "공연 중 송출하기 전에 준비하고 검토하고 리허설하는 텍스트."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "미리 완전히 준비할 수 없는 발화를 자막으로 만드는 브라우저 도구."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "동기화한 공연의 로컬 프로젝션과 QLab 연동을 위해 개발 중인 Mac 앱."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "지원되는 외부 오디오 입력에 더 직접 접근하도록 개발 중인 iPhone 및 iPad 앱."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/ko/live"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "th",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "ประเด็นสำคัญ",
+    "faq": "คำถามที่พบบ่อย",
+    "glossary": "อภิธานศัพท์",
+    "related": "ดูผลิตภัณฑ์ Pockitle ที่เกี่ยวข้อง"
+  },
+  "keyTakeaways": [
+    "SurtitleLive เปลี่ยนชื่อเป็น Pockitle Cue โดยบัญชี โปรเจกต์ และขั้นตอนเตรียมซับไตเติลบนเบราว์เซอร์ยังคงเดิม",
+    "Pockitle Cue ใช้กับข้อความที่เตรียมไว้ก่อนการแสดง ส่วน Pockitle Live ใช้ทำคำบรรยายจากคำพูดที่เกิดขึ้นขณะนั้น",
+    "Pockitle Cue for Mac และ Pockitle Live for iOS ยังอยู่ระหว่างพัฒนา ความสามารถที่กล่าวถึงจึงยังไม่ใช่ฟีเจอร์ที่เปิดให้ใช้งาน",
+    "บน iPhone และ iPad Pockitle Live Web ใช้อินพุตเสียงภายนอกได้เฉพาะที่ iOS แสดงในเบราว์เซอร์ หากไม่มีอินพุตที่เหมาะสม ไมโครโฟนในตัวเป็นทางเลือกสำรอง"
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive เปลี่ยนเป็น Pockitle Cue แล้วมีอะไรเปลี่ยนบ้าง?",
+      "answer": "SurtitleLive เปลี่ยนชื่อเป็น Pockitle Cue บัญชี โปรเจกต์ และขั้นตอนหลักบนเบราว์เซอร์สำหรับเตรียม ตรวจทาน ซ้อม และส่งซับไตเติลยังคงอยู่"
+    },
+    {
+      "question": "Pockitle Cue ต่างจาก Pockitle Live อย่างไร?",
+      "answer": "Pockitle Cue ใช้กับข้อความที่เตรียม ตรวจทาน และซ้อมได้ก่อนการแสดง ส่วน Pockitle Live สร้างคำบรรยายจากคำพูดที่กำลังเกิดขึ้น"
+    },
+    {
+      "question": "Pockitle Cue for Mac และ Pockitle Live for iOS ใช้งานได้แล้วหรือยัง?",
+      "answer": "ยังไม่ได้ บทความระบุว่าแอปทั้งสองยังอยู่ระหว่างพัฒนา ความสามารถด้านภาพฉายและอินพุตเสียงที่วางแผนไว้ยังไม่ใช่ฟีเจอร์ที่เปิดตัวแล้ว"
+    },
+    {
+      "question": "Pockitle Live Web ใช้ไมโครโฟนภายนอกบน iPhone หรือ iPad ได้ไหม?",
+      "answer": "ได้เฉพาะเมื่อ iOS แสดงไมโครโฟนนั้นในรายการอินพุตเสียงของเบราว์เซอร์ หากไมโครโฟนหรือสัญญาณจากมิกเซอร์ไม่ปรากฏในรายการ ก็เลือกจากหน้าเว็บไม่ได้ โดยใช้ไมโครโฟนในตัวเป็นทางเลือกที่เชื่อถือได้"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "ผลิตภัณฑ์บนเบราว์เซอร์สำหรับซับไตเติลที่เตรียมไว้ ซึ่งเดิมใช้ชื่อ SurtitleLive"
+    },
+    {
+      "term": "ซับไตเติลที่เตรียมไว้",
+      "definition": "ข้อความที่เตรียม ตรวจทาน และซ้อมก่อนส่งขึ้นจอระหว่างการแสดง"
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "เครื่องมือบนเบราว์เซอร์สำหรับทำคำบรรยายจากคำพูดที่เตรียมล่วงหน้าได้ไม่ครบ"
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "แอป Mac ที่กำลังพัฒนาเพื่อฉายภาพจากข้อมูลที่ซิงก์ไว้ในเครื่องและทำงานกับ QLab ได้ใกล้ชิดขึ้น"
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "แอป iPhone และ iPad ที่กำลังพัฒนาเพื่อเข้าถึงอินพุตเสียงภายนอกที่รองรับได้โดยตรงขึ้น"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/th/live"
+    }
+  ]
+}

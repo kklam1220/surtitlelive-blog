@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ringkasan Utama",
+    "faq": "Pertanyaan Umum",
+    "glossary": "Glosarium",
+    "related": "Jelajahi produk Pockitle terkait"
+  },
+  "keyTakeaways": [
+    "SurtitleLive berganti nama menjadi Pockitle Cue; akun, proyek, dan alur kerja penyiapan surtitel di browser tetap tersedia.",
+    "Pockitle Cue digunakan untuk teks yang disiapkan sebelum pertunjukan; Pockitle Live memberi teks pada ucapan yang terjadi saat itu.",
+    "Pockitle Cue for Mac dan Pockitle Live for iOS masih dalam pengembangan, sehingga fitur yang dijelaskan belum dirilis.",
+    "Di iPhone dan iPad, Pockitle Live Web hanya dapat memakai input audio eksternal yang ditampilkan iOS di browser; jika tidak ada yang sesuai, mikrofon bawaan menjadi pilihan cadangan."
+  ],
+  "faq": [
+    {
+      "question": "Apa yang berubah dari SurtitleLive menjadi Pockitle Cue?",
+      "answer": "SurtitleLive menggunakan nama baru, Pockitle Cue. Akun, proyek, serta alur utama di browser untuk menyiapkan, meninjau, melatih, dan menayangkan surtitel tetap ada."
+    },
+    {
+      "question": "Apa perbedaan Pockitle Cue dan Pockitle Live?",
+      "answer": "Pockitle Cue untuk teks yang dapat disiapkan, ditinjau, dan dilatih sebelum pertunjukan. Pockitle Live membuat teks dari ucapan yang sedang berlangsung."
+    },
+    {
+      "question": "Apakah Pockitle Cue for Mac dan Pockitle Live for iOS sudah tersedia?",
+      "answer": "Belum. Artikel menyebutkan kedua aplikasi asli tersebut masih dikembangkan. Kemampuan proyeksi dan input audio yang direncanakan belum menjadi fitur yang dirilis."
+    },
+    {
+      "question": "Bisakah Pockitle Live Web memakai mikrofon eksternal di iPhone atau iPad?",
+      "answer": "Hanya jika iOS menampilkannya sebagai input audio browser yang tersedia. Mikrofon atau jalur mixer yang tidak muncul dalam daftar tidak dapat dipilih dari halaman; mikrofon bawaan adalah pilihan cadangan yang dapat diandalkan."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "Produk surtitel siap pakai berbasis browser yang sebelumnya bernama SurtitleLive."
+    },
+    {
+      "term": "Surtitel yang disiapkan",
+      "definition": "Teks yang disiapkan, ditinjau, dan dilatih sebelum diberi isyarat saat pertunjukan."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "Alat berbasis browser untuk memberi teks pada ucapan yang tidak dapat disiapkan sepenuhnya sebelumnya."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "Aplikasi Mac yang sedang dikembangkan untuk proyeksi lokal setelah sinkronisasi dan alur kerja QLab yang lebih langsung."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "Aplikasi iPhone dan iPad yang sedang dikembangkan untuk akses lebih langsung ke input audio eksternal yang didukung."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/id/live"
+    }
+  ]
+}

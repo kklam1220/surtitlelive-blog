@@ -26,12 +26,12 @@
       "answer": "L’analyseur repère d’abord le début du texte destiné à être joué. Les pages de titre, distributions et notes de production risquent ainsi moins d’être prises pour du dialogue."
     },
     {
-      "question": "Quel rôle l'IA joue-t-elle dans le workflow d'analyse des scripts de SurtitleLive ?",
+      "question": "Quel rôle l'IA joue-t-elle dans le workflow d'analyse des scripts de Pockitle Cue ?",
       "answer": "L’IA intervient uniquement lorsque les indices structurels sont faibles ou contradictoires. Les blocs dont la fonction est claire restent traités par des règles déterministes."
     },
     {
-      "question": "Comment SurtitleLive vérifie-t-il les modifications apportées à son analyseur de scripts ?",
-      "answer": "SurtitleLive confronte chaque modification à des textes de référence et à des cas de régression. Une amélioration pour une mise en page ne doit pas en dégrader une autre, et la vérification humaine reste obligatoire avant la représentation."
+      "question": "Comment Pockitle Cue vérifie-t-il les modifications apportées à son analyseur de scripts ?",
+      "answer": "Pockitle Cue confronte chaque modification à des textes de référence et à des cas de régression. Une amélioration pour une mise en page ne doit pas en dégrader une autre, et la vérification humaine reste obligatoire avant la représentation."
     }
   ],
   "glossary": [

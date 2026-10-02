@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "QLab displays styled subtitle text with Text cues; a Video License and a correctly configured Stage are required.",
     "QLab does not natively import XLSX subtitle sheets in one click, but AppleScript or another importer can turn structured Excel, CSV, or TXT data into cues.",
-    "A SurtitleLive Editor QLab Projection Pack is an offline projection handoff; it does not deploy a show or publish to Viewer.",
+    "A Pockitle Cue Editor QLab Projection Pack is an offline projection handoff; it does not deploy a show or publish to Viewer.",
     "Finalized-show Viewer sync uses one local Script child per source cue, a loopback bridge, and an explicitly connected and armed ASM console."
   ],
   "faq": [
@@ -30,7 +30,7 @@
       "answer": "No. The Editor-origin pack is an offline QLab projection handoff. Viewer sync is available only through the finalized-show, operator-armed ASM path."
     },
     {
-      "question": "Does the local bridge call SurtitleLive's cloud?",
+      "question": "Does the local bridge call Pockitle Cue's cloud?",
       "answer": "No. It relays a bounded, non-secret cue identity locally to the open ASM console; ASM publishes Viewer state through the existing control channel."
     }
   ],
@@ -41,11 +41,11 @@
     },
     {
       "term": "QLab Projection Pack",
-      "definition": "A SurtitleLive export containing a static importer, cue data, operator instructions, and supporting files for QLab."
+      "definition": "A Pockitle Cue export containing a static importer, cue data, operator instructions, and supporting files for QLab."
     },
     {
       "term": "Stable cue key",
-      "definition": "A non-secret SurtitleLive identity used to update the matching caption Group across revised imports."
+      "definition": "A non-secret Pockitle Cue identity used to update the matching caption Group across revised imports."
     },
     {
       "term": "Loopback bridge",

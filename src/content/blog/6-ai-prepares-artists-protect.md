@@ -33,7 +33,7 @@ A theatre script is a structured document, not a bag of sentences. Character nam
 
 Keep an authoritative source copy and record its version before processing it. If the production team changes the script later, you need to know which text the surtitle draft came from.
 
-SurtitleLive can import `.docx` scripts and prepare an editable cue draft. Its analysis uses document structure and classification to identify likely dialogue and other line types. That output is a starting point for review, not a claim that every theatrical format will be parsed perfectly.
+Pockitle Cue can import `.docx` scripts and prepare an editable cue draft. Its analysis uses document structure and classification to identify likely dialogue and other line types. That output is a starting point for review, not a claim that every theatrical format will be parsed perfectly.
 
 Check:
 
@@ -66,7 +66,7 @@ Keep the transformation reversible. When a cue differs substantially from the so
 
 Once the source and cue structure are stable enough to work with, AI-assisted translation can reduce the time required to produce a first pass.
 
-SurtitleLive’s editor-time translation workflow can use surrounding lines and saved character-name terminology while generating drafts. The resulting text remains editable. It is not live speech translation, and it does not guarantee the preservation of voice, rhyme, historical register, humour, or dramaturgical intent.
+Pockitle Cue’s editor-time translation workflow can use surrounding lines and saved character-name terminology while generating drafts. The resulting text remains editable. It is not live speech translation, and it does not guarantee the preservation of voice, rhyme, historical register, humour, or dramaturgical intent.
 
 Give the review to someone who can compare the source and target language. Ask them to check more than grammar:
 
@@ -112,7 +112,7 @@ Dedicated software can make these actions easier. It cannot recover the show on 
 
 ## Step 6: Choose Outputs Without Creating a Second Source of Truth
 
-Different productions need different outputs. A team may use SurtitleLive for live projection or an audience browser, export an `.xlsx` file for review, or create a `.pptx` when a slide-based handoff is genuinely the right choice.
+Different productions need different outputs. A team may use Pockitle Cue for live projection or an audience browser, export an `.xlsx` file for review, or create a `.pptx` when a slide-based handoff is genuinely the right choice.
 
 The important question is not whether PowerPoint is permitted. It is which version remains authoritative.
 
@@ -148,9 +148,9 @@ Before the audience enters, confirm:
 
 If one of these sections is incomplete, more automation does not make the production ready.
 
-## Where SurtitleLive Fits
+## Where Pockitle Cue Fits
 
-SurtitleLive brings script import, editable cue preparation, AI-assisted translation drafts, rehearsal editing, export, and live control into one workflow. The intended value is continuity: fewer disconnected transformations between the script and what the audience sees.
+Pockitle Cue brings script import, editable cue preparation, AI-assisted translation drafts, rehearsal editing, export, and live control into one workflow. The intended value is continuity: fewer disconnected transformations between the script and what the audience sees.
 
 It still depends on people to verify the parsed script, approve translations, shape readable cues, rehearse delivery, operate the performance, and support the audience. That is not a limitation to conceal. It is the correct allocation of responsibility in a live art form.
 
@@ -169,4 +169,4 @@ The stronger reason is that a live text service benefits from:
 
 AI can reduce mechanical preparation. Software can connect the stages. Professional practice comes from the people who review, rehearse, and take responsibility for the result.
 
-[Create a SurtitleLive workspace](https://surtitlelive.com/auth/register) when you are ready to test the workflow with a real script. Start with one reviewed language and one delivery path, then expand only after the first path works under rehearsal conditions.
+[Create a Pockitle Cue workspace](https://surtitlelive.com/auth/register) when you are ready to test the workflow with a real script. Start with one reviewed language and one delivery path, then expand only after the first path works under rehearsal conditions.

@@ -1,7 +1,7 @@
 {
   "locale": "it",
-  "title": "Aggiornamenti del prodotto SurtitleLive",
-  "description": "Aggiornamenti settimanali del prodotto SurtitleLive, raggruppati per versione, con note concise su nuove funzioni, miglioramenti e correzioni visibili agli utenti.",
+  "title": "Aggiornamenti dei prodotti Pockitle",
+  "description": "Aggiornamenti settimanali dei prodotti Pockitle, raggruppati per versione, con note concise su nuove funzioni, miglioramenti e correzioni visibili agli utenti.",
   "labels": {
     "articles": "Articoli",
     "productUpdates": "Aggiornamenti del prodotto",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Nessun aggiornamento elencato questa settimana."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive ora si chiama Pockitle Cue. Questa versione migliora notevolmente anche il recupero dei sottotitoli live e l’accesso del pubblico.",
+          "new": [
+            "Pockitle Cue è il nuovo nome di SurtitleLive nell’esperienza pubblica del prodotto, con pagine localizzate e una navigazione più chiara dalle informazioni sul prodotto al flusso di lavoro dal copione al palcoscenico."
+          ],
+          "improved": [
+            "Migliorate la distribuzione e il recupero dei sottotitoli live durante gli aggiornamenti in diretta, le riconnessioni e il riavvio degli spettacoli.",
+            "Ampliato il recupero dei link Audience Show, così le pagine valide restano accessibili anche dopo la fine del servizio live."
+          ],
+          "fixed": [
+            "Risolta la chiusura imprevista delle sessioni Pockitle Live in pausa.",
+            "Risolta la perdita dello stato di oscuramento per il pubblico quando l’operatore si riconnette.",
+            "Risolto il problema per cui Viewer mostrava una riga diversa quando non riusciva ad associare un cue; ora mantiene il sottotitolo corrente.",
+            "Risolta la perdita degli ultimi aggiornamenti dei sottotitoli quando una sessione live viene interrotta.",
+            "Risolto il blocco delle pagine pubbliche quando la traduzione del browser ne modificava il contenuto."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

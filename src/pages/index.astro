@@ -113,6 +113,15 @@ const localeLinks = [
 				transform: scale(1.05);
 			}
 
+			.img-container img.hero-frame-preserved {
+				background-color: #000;
+				object-fit: contain;
+			}
+
+			li:hover .img-container img.hero-frame-preserved {
+				transform: none;
+			}
+
 			.content-container {
 				padding: 1.5rem;
 				flex: 1;
@@ -180,6 +189,7 @@ const localeLinks = [
 				<ul>
 					{
 						posts.map((post) => {
+							const preserveHeroFrame = post.slug === '23-surtitlelive-becomes-pockitle-cue';
 							return (
 								<li>
 									<a href={postHref(post.slug || post.id)}>
@@ -189,6 +199,9 @@ const localeLinks = [
                                                     src={post.data.heroImage} 
                                                     width={1020} 
                                                     height={510} 
+                                                    fit={preserveHeroFrame ? 'contain' : undefined}
+                                                    background={preserveHeroFrame ? '#000' : undefined}
+                                                    class={preserveHeroFrame ? 'hero-frame-preserved' : undefined}
                                                     alt={post.data.title} 
                                                     loading="lazy"
                                                 />

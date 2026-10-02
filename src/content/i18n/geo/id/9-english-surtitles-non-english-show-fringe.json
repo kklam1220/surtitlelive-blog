@@ -15,16 +15,16 @@
     "Alur kerja isyarat yang disiapkan memungkinkan rombongan meninjau terjemahan bahasa Inggris sebelum pembukaan, sembari tetap menjalankannya secara langsung saat pertunjukan.",
     "Surtitel seluler memungkinkan penonton berbahasa Inggris, penonton berbahasa asli pertunjukan, dan kelompok bahasa lain yang telah disiapkan memilih teks yang mereka butuhkan di perangkat masing-masing.",
     "Tim tur kecil sebaiknya memilih perangkat lunak surtitel yang mendukung unggahan naskah, isyarat yang dapat disunting, pilihan bahasa, pengendalian isyarat oleh operator, pemulihan lompatan, dan pemadaman.",
-    "SurtitleLive paling cocok untuk pertunjukan dengan naskah atau sebagian besar stabil yang membutuhkan surtitel bahasa Inggris untuk Fringe, tur, pemrogram, pengulas, atau penonton multibahasa."
+    "Pockitle Cue paling cocok untuk pertunjukan dengan naskah atau sebagian besar stabil yang membutuhkan surtitel bahasa Inggris untuk Fringe, tur, pemrogram, pengulas, atau penonton multibahasa."
   ],
   "faq": [
     {
       "question": "Bagaimana cara menambahkan surtitel bahasa Inggris untuk pertunjukan berbahasa Indonesia atau bahasa non-Inggris lainnya?",
-      "answer": "Mulailah dengan naskah, siapkan atau tinjau terjemahan bahasa Inggris, ubah teks menjadi unit isyarat yang mudah dibaca, latih ketepatan waktu isyarat, lalu jalankan pertunjukan dengan operator yang memajukan setiap surtitel secara langsung. SurtitleLive mendukung ini dengan mengubah naskah menjadi alur kerja isyarat yang dapat disunting dan menyampaikan surtitel yang telah disiapkan melalui proyeksi atau penampil seluler."
+      "answer": "Mulailah dengan naskah, siapkan atau tinjau terjemahan bahasa Inggris, ubah teks menjadi unit isyarat yang mudah dibaca, latih ketepatan waktu isyarat, lalu jalankan pertunjukan dengan operator yang memajukan setiap surtitel secara langsung. Pockitle Cue mendukung ini dengan mengubah naskah menjadi alur kerja isyarat yang dapat disunting dan menyampaikan surtitel yang telah disiapkan melalui proyeksi atau penampil seluler."
     },
     {
       "question": "Bisakah penonton berbahasa Inggris dan penonton berbahasa asli pertunjukan melihat surtitel yang berbeda secara bersamaan?",
-      "answer": "Ya, jika alur kerja mendukung beberapa trek bahasa yang telah disiapkan. Dengan SurtitleLive, setiap penonton dapat membuka tautan penampil atau memindai kode QR dan memilih bahasa yang diaktifkan, seperti bahasa Inggris, bahasa asli pertunjukan, atau bahasa selain Inggris lain yang telah disiapkan."
+      "answer": "Ya, jika alur kerja mendukung beberapa trek bahasa yang telah disiapkan. Dengan Pockitle Cue, setiap penonton dapat membuka tautan penampil atau memindai kode QR dan memilih bahasa yang diaktifkan, seperti bahasa Inggris, bahasa asli pertunjukan, atau bahasa selain Inggris lain yang telah disiapkan."
     },
     {
       "question": "Apakah kami perlu membangun ulang pertunjukan di sekitar layar tetap?",

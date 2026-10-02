@@ -2,7 +2,7 @@
 title: 'Who Should Operate Theatre Surtitles: A Person or AI?'
 description: 'Compare human operators, AI auto-follow and live captioning for theatre surtitles, including cue recovery, dramatic timing, spoilers and unscripted speech.'
 pubDate: '2026-09-04'
-tags: ['Theatre Surtitles', 'Surtitle Operator', 'AI Cueing', 'Live Captioning', 'Theatre Technology', 'SurtitleLive']
+tags: ['Theatre Surtitles', 'Surtitle Operator', 'AI Cueing', 'Live Captioning', 'Theatre Technology', 'Pockitle Cue']
 heroImage: './blog-19.png'
 heroImageAlt: 'Theatre subtitle operator monitoring prepared cues at a laptop in a dark control booth'
 ---
@@ -221,9 +221,9 @@ The risky arrangement is usually not “one person operates two systems.” It i
 
 Before the house opens, the team should know who owns the live subtitle state and who is expected to recover it if the show moves away from the planned sequence.
 
-## Why SurtitleLive still keeps an operator in the loop
+## Why Pockitle Cue still keeps an operator in the loop
 
-SurtitleLive does not assume that the best theatre subtitle system is one that removes the operator completely.
+Pockitle Cue does not assume that the best theatre subtitle system is one that removes the operator completely.
 
 The more useful design question is:
 
@@ -239,14 +239,14 @@ During the show, the interface should demand as little attention as practical, s
 
 A theatre control position is not an office desk. It may be in a dark booth, backstage, at stage side or on a technical table beside several other systems.
 
-SurtitleLive’s live-operation UI is intentionally built around clear cue state, high-contrast presentation, direct controls, keyboard-friendly operation and recovery-oriented workflows.
+Pockitle Cue’s live-operation UI is intentionally built around clear cue state, high-contrast presentation, direct controls, keyboard-friendly operation and recovery-oriented workflows.
 
-![SurtitleLive ASM Operator showing the active cue list, multilingual audience previews and live performance controls](./blog-19-asm-cockpit.png)
+![Pockitle Cue ASM Operator showing the active cue list, multilingual audience previews and live performance controls](./blog-19-asm-cockpit.png)
 *The ASM Operator keeps the active cue and nearby lines visible beside simultaneous mobile previews in three audience languages. The same rehearsal view also puts previous/next navigation, blackout, projector settings and show status within direct reach.*
 
 The screenshot shows why rehearsal matters: the operator can learn where to confirm the active line, check what different audience screens are receiving, move through cues and practise recovery before the house opens. For a guided tour of the interface and its controls, see [Use the Cockpit: run surtitles during a performance](https://surtitlelive.com/guides/use-cockpit).
 
-The goal is not to require a theatre technician to become a SurtitleLive specialist before they can run a basic show.
+The goal is not to require a theatre technician to become a Pockitle Cue specialist before they can run a basic show.
 
 A practical onboarding session can be very simple:
 
@@ -295,7 +295,7 @@ For a deeper comparison, see [Why PowerPoint fails for theatre surtitles](/blog/
 
 ## Advanced functions do not need to be learned on day one
 
-SurtitleLive supports workflows beyond basic cueing, including projection, audience phones, multiple languages, QLab workflows, live subtitle updates, deployment configuration and recovery tools.
+Pockitle Cue supports workflows beyond basic cueing, including projection, audience phones, multiple languages, QLab workflows, live subtitle updates, deployment configuration and recovery tools.
 
 Not every operator needs every feature for every production.
 
@@ -305,7 +305,7 @@ A better training model is:
 
 If the show uses one projected language, get cueing and projection reliable first. If the next production adds audience phones, learn that delivery path then. If QLab is part of the show-control plan, train the relevant integration rather than teaching unrelated features.
 
-Detailed setup and advanced workflows are documented in the [SurtitleLive User Guides](/guides).
+Detailed setup and advanced workflows are documented in the [Pockitle Cue User Guides](/guides).
 
 ## When prepared surtitles are not the right tool
 

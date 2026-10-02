@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "El software de subtítulos teatrales debe analizar la estructura del guion antes de usar IA.",
     "El análisis determinista prioriza el formato del guion para una preparación de subtítulos repetible.",
-    "SurtitleLive utiliza un flujo de trabajo por etapas: extracción, normalización, bloques, arquetipos, zonificación y luego IA.",
+    "Pockitle Cue utiliza un flujo de trabajo por etapas: extracción, normalización, bloques, arquetipos, zonificación y luego IA.",
     "El objetivo es un borrador de *cues* más limpio y predecible para la revisión humana, no la automatización total."
   ],
   "faq": [
@@ -22,15 +22,15 @@
       "answer": "El análisis determinista asegura repetibilidad. Dado el mismo guion, el analizador debe tomar la misma decisión estructural cada vez, creando una base sólida antes de que la IA interprete regiones ambiguas. Esto reduce errores y mejora la consistencia."
     },
     {
-      "question": "¿Cómo aborda SurtitleLive la diferencia entre una lista de reparto y una *cue* de diálogo?",
-      "answer": "SurtitleLive utiliza la zonificación *body-first*. Primero separa el *front matter* (lista de reparto, etc.) del cuerpo del guion. Luego, aplica reglas de diálogo solo donde se espera diálogo, reduciendo la posibilidad de errores."
+      "question": "¿Cómo aborda Pockitle Cue la diferencia entre una lista de reparto y una *cue* de diálogo?",
+      "answer": "Pockitle Cue utiliza la zonificación *body-first*. Primero separa el *front matter* (lista de reparto, etc.) del cuerpo del guion. Luego, aplica reglas de diálogo solo donde se espera diálogo, reduciendo la posibilidad de errores."
     },
     {
-      "question": "¿Cuál es el papel de la IA en el flujo de trabajo de análisis de guiones de SurtitleLive?",
+      "question": "¿Cuál es el papel de la IA en el flujo de trabajo de análisis de guiones de Pockitle Cue?",
       "answer": "La IA se utiliza para regiones ambiguas donde la evidencia determinista es débil o contradictoria. El objetivo es evitar pedirle a la IA que decida sobre bloques que ya tienen una fuerte evidencia estructural, enfocándose en áreas genuinamente dudosas."
     },
     {
-      "question": "¿Cómo verifica SurtitleLive los cambios en su analizador de guiones?",
+      "question": "¿Cómo verifica Pockitle Cue los cambios en su analizador de guiones?",
       "answer": "Los cambios se prueban con *script fixtures* seleccionados y casos de regresión. Se verifica que las líneas de hablantes, acotaciones y el *front matter* se identifiquen correctamente, y que la puntuación multilingüe se analice como se espera."
     }
   ],

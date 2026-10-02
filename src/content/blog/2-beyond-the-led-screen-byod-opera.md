@@ -121,9 +121,9 @@ Before opening the doors, verify:
 - a realistic alternative exists for patrons without a suitable device;
 - failure of one path does not become a surprise during the performance.
 
-## Where SurtitleLive Fits
+## Where Pockitle Cue Fits
 
-SurtitleLive can deliver prepared language tracks to an audience browser through a QR code or link, and it can support projected output as part of a production setup. The platform gives teams more than one delivery option; it does not decide which option is equitable for a particular audience or venue.
+Pockitle Cue can deliver prepared language tracks to an audience browser through a QR code or link, and it can support projected output as part of a production setup. The platform gives teams more than one delivery option; it does not decide which option is equitable for a particular audience or venue.
 
 That decision belongs to the people making the work. Technology should expand their choices while leaving responsibility visible.
 

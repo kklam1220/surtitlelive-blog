@@ -1,7 +1,7 @@
 {
   "locale": "en",
-  "title": "SurtitleLive Product Updates",
-  "description": "Weekly SurtitleLive product updates, grouped by release version, with concise notes on new features, improvements and user-visible fixes.",
+  "title": "Pockitle Product Updates",
+  "description": "Weekly updates across Pockitle products, grouped by release version, with concise notes on new features, improvements and user-visible fixes.",
   "labels": {
     "articles": "Articles",
     "productUpdates": "Product Updates",
@@ -14,6 +14,32 @@
     "noPublicRelease": "No updates listed this week."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive is now Pockitle Cue, with major improvements to live caption recovery and audience access.",
+          "new": [
+            "Introduced Pockitle Cue as the new name for SurtitleLive across the public product experience, with localized pages and clearer navigation from product information to the script-to-stage workflow."
+          ],
+          "improved": [
+            "Improved live caption delivery and recovery across live updates, reconnects, and performance restarts.",
+            "Extended Audience Show link recovery so valid pages remain accessible even after the live runtime ends."
+          ],
+          "fixed": [
+            "Fixed paused Pockitle Live sessions ending unexpectedly.",
+            "Fixed audience blackout state being lost when an operator reconnects.",
+            "Fixed Viewers showing a different line when a cue could not be matched; they now retain the current caption.",
+            "Fixed final caption updates being lost when a live session stops.",
+            "Fixed public pages becoming unresponsive after browser translation changes their content."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",

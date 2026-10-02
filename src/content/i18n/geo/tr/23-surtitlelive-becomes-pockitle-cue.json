@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkanlar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili Pockitle ürünlerini keşfedin"
+  },
+  "keyTakeaways": [
+    "SurtitleLive, Pockitle Cue adını alıyor; mevcut hesaplar, projeler ve hazırlıklı üst yazılar için tarayıcı iş akışı korunuyor.",
+    "Pockitle Cue gösteri öncesinde hazırlanan metinler içindir; Pockitle Live o anda söylenen sözleri altyazıya dönüştürür.",
+    "Pockitle Cue for Mac ve Pockitle Live for iOS hâlâ geliştirme aşamasında; anlatılan özellikler henüz kullanıma sunulmadı.",
+    "iPhone ve iPad’de Pockitle Live Web yalnızca iOS’un tarayıcıda listelediği harici ses girişlerini kullanabilir; uygun giriş yoksa dahili mikrofon yedek seçenektir."
+  ],
+  "faq": [
+    {
+      "question": "SurtitleLive’den Pockitle Cue’ya geçişte ne değişiyor?",
+      "answer": "SurtitleLive artık Pockitle Cue adını taşıyor. Hesaplar, projeler ve üst yazıları tarayıcıda hazırlama, gözden geçirme, prova etme ve gösterme iş akışı devam ediyor."
+    },
+    {
+      "question": "Pockitle Cue ile Pockitle Live arasındaki fark nedir?",
+      "answer": "Pockitle Cue, gösteriden önce hazırlanıp gözden geçirilebilen ve provası yapılabilen metinler içindir. Pockitle Live ise o anda söylenen sözleri altyazıya dönüştürür."
+    },
+    {
+      "question": "Pockitle Cue for Mac ve Pockitle Live for iOS kullanıma açıldı mı?",
+      "answer": "Hayır. Makaleye göre iki yerel uygulama da geliştirme aşamasında. Planlanan projeksiyon ve ses girişi özellikleri henüz yayımlanmış değil."
+    },
+    {
+      "question": "Pockitle Live Web, iPhone veya iPad’de harici mikrofon kullanabilir mi?",
+      "answer": "Yalnızca iOS mikrofonu tarayıcının ses girişi listesinde gösterirse. Listede görünmeyen mikrofon veya mikser sinyali sayfadan seçilemez; dahili mikrofon güvenilir yedek seçenektir."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "Önceden SurtitleLive olarak adlandırılan, hazırlıklı üst yazılar için tarayıcı tabanlı ürün."
+    },
+    {
+      "term": "Hazırlıklı üst yazılar",
+      "definition": "Gösteri sırasında gönderilmeden önce hazırlanan, gözden geçirilen ve provası yapılan metinler."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "Tamamı önceden hazırlanamayacak konuşmalar için tarayıcı tabanlı altyazı aracı."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "Eşitlendikten sonra yerel projeksiyon ve QLab ile daha yakın çalışma için geliştirilmekte olan Mac uygulaması."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "Desteklenen harici ses girişlerine daha doğrudan erişmek için geliştirilmekte olan iPhone ve iPad uygulaması."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/tr/live"
+    }
+  ]
+}

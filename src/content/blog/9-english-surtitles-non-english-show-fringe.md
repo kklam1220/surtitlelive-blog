@@ -4,7 +4,7 @@ description: 'A practical, human-led guide to preparing English surtitles for a 
 pubDate: '2026-05-21'
 heroImage: './blog-9-1.png'
 heroImageAlt: 'Edinburgh Fringe street banner above a busy festival crowd'
-tags: ['English surtitles', 'Fringe subtitles', 'Non-English theatre', 'Edinburgh Fringe', 'SurtitleLive']
+tags: ['English surtitles', 'Fringe subtitles', 'Non-English theatre', 'Edinburgh Fringe', 'Pockitle Cue']
 ---
 
 If your French, German, Spanish, or other non-English show is going to the Edinburgh Fringe, the question is usually not abstract.
@@ -41,9 +41,9 @@ For many Fringe teams, the lightest path is:
 5. Share a QR code or viewer link when mobile viewing is part of the plan.
 6. Let a rehearsed operator cue the English surtitles during the live show.
 
-That is the workflow SurtitleLive is built around.
+That is the workflow Pockitle Cue is built around.
 
-See the SurtitleLive workflow in action:
+See the Pockitle Cue workflow in action:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3v8jG9fVE3U?si=MSh11q_zA-8C1O1J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="max-width: 100%;"></iframe>
 
@@ -69,7 +69,7 @@ Your surtitles should usually move through this path:
 
 Script -> English translation -> editable lines/cues -> rehearsal review -> live cueing
 
-SurtitleLive is built around a script-first workflow. A team can upload a Word (.docx) script, turn the extracted text into editable lines/cues, review and correct speakers, dialogue, and translation choices, then refine the English surtitles before performance.
+Pockitle Cue is built around a script-first workflow. A team can upload a Word (.docx) script, turn the extracted text into editable lines/cues, review and correct speakers, dialogue, and translation choices, then refine the English surtitles before performance.
 
 The goal is not to remove human judgement. It is to spend less production time on manual copying and slide formatting, and more on language, timing, and rehearsal.
 
@@ -99,7 +99,7 @@ For example:
 
 If every language is placed on the same screen, the result can become less readable for everyone.
 
-SurtitleLive lets the team prepare language options and let audience members choose the viewer language on their own device. An English-speaking audience member can follow the English surtitles. Another audience member can choose the original language or another prepared non-English language if the company provides it.
+Pockitle Cue lets the team prepare language options and let audience members choose the viewer language on their own device. An English-speaking audience member can follow the English surtitles. Another audience member can choose the original language or another prepared non-English language if the company provides it.
 
 That is the value of mobile surtitles for some non-English Fringe work. It is not “phones instead of theatre,” and it is not automatically the right access design for every audience. It is a way to offer language choice without forcing every prepared track onto one shared projection surface.
 
@@ -119,7 +119,7 @@ This distinction should shape both the writing and the listing. If the productio
 
 The honest description is more valuable than a broad accessibility label. It helps audiences decide whether the performance meets their needs, and it gives the production team a concrete standard to rehearse.
 
-![SurtitleLive viewer language selector showing multiple prepared language choices](./blog-9-2.png)
+![Pockitle Cue viewer language selector showing multiple prepared language choices](./blog-9-2.png)
 
 [See how to prepare English surtitles from your script](https://surtitlelive.com/features)
 
@@ -127,7 +127,7 @@ The honest description is more valuable than a broad accessibility label. It hel
 
 There are three common ways to deliver English surtitles at Fringe:
 
-| Decision point | PowerPoint or slides | Fixed projected surtitles | SurtitleLive mobile surtitles |
+| Decision point | PowerPoint or slides | Fixed projected surtitles | Pockitle Cue mobile surtitles |
 | --- | --- | --- | --- |
 | Multiple languages at once | Often crowded on one slide | May need multiple screens | Each audience member can choose a language |
 | Actor skips a section | Operator searches through slides | Same linear pressure | Operator can jump to the right cue |
@@ -139,9 +139,9 @@ This does not mean projection is wrong. If the room has a good screen, clear sig
 
 But many Fringe companies cannot assume that.
 
-SurtitleLive supports both paths. The same operator workflow can cue surtitles to Projection Mode for a theatre screen while also serving mobile viewers for audiences who need a different language track. If the room can support projection, the company can use it. If some audience members need English, the original language, or another prepared language on their own device, the mobile viewer can run alongside it.
+Pockitle Cue supports both paths. The same operator workflow can cue surtitles to Projection Mode for a theatre screen while also serving mobile viewers for audiences who need a different language track. If the room can support projection, the company can use it. If some audience members need English, the original language, or another prepared language on their own device, the mobile viewer can run alongside it.
 
-![SurtitleLive Projection Mode showing surtitles prepared for a theatre screen](./blog-9-4.png)
+![Pockitle Cue Projection Mode showing surtitles prepared for a theatre screen](./blog-9-4.png)
 
 Mobile surtitles give you another route. Audience members scan a QR code or open a viewer link, choose an enabled language, and read the surtitles in their mobile browser. No app install is required.
 
@@ -169,13 +169,13 @@ That is why prepared English surtitles still need live cueing. The operator watc
 
 This is where slide decks become stressful. They assume the show moves in a straight line.
 
-SurtitleLive is designed around a live operator workflow. The operator follows the prepared cue list, advances the English surtitles in performance, and can recover when the show moves off the expected path.
+Pockitle Cue is designed around a live operator workflow. The operator follows the prepared cue list, advances the English surtitles in performance, and can recover when the show moves off the expected path.
 
 For a decision-maker, the point is simple: the workflow should expect a live show to behave like a live show.
 
 ## Step 5: Check whether this workflow fits your Fringe show
 
-SurtitleLive is a strong fit if your show has:
+Pockitle Cue is a strong fit if your show has:
 
 - a Word (.docx) script or libretto, or a mostly stable performance text
 - a non-English source language
@@ -238,7 +238,7 @@ The work does not need to become a separate technical production. It needs to be
 
 **A:** Choose according to the venue, audience, sightlines, language needs, phone policy, network conditions, and fallback plan. Projection can offer a shared focal point; mobile viewing can offer individual language choice. Some productions use both.
 
-**Q: Do audience members need to install an app for SurtitleLive mobile surtitles?**
+**Q: Do audience members need to install an app for Pockitle Cue mobile surtitles?**
 
 **A:** No. They open the audience viewer in a mobile browser through a QR code or link. The production should still test the entry route and brief front of house.
 

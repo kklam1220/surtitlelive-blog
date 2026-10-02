@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "23-surtitlelive-becomes-pockitle-cue",
+  "sourceHash": "32313b2210b7d3b315dc86e2429f539cc1a0a8e0de08ac65afe7a53914fcb1b4",
+  "generatedAt": "2026-10-02T00:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze informacje",
+    "faq": "Często zadawane pytania",
+    "glossary": "Słowniczek",
+    "related": "Poznaj powiązane produkty Pockitle"
+  },
+  "keyTakeaways": [
+    "SurtitleLive zmienia nazwę na Pockitle Cue; konta, projekty i przeglądarkowy sposób przygotowywania nadtytułów pozostają bez zmian.",
+    "Pockitle Cue służy do tekstów przygotowanych przed spektaklem, a Pockitle Live — do napisów dla mowy pojawiającej się na żywo.",
+    "Pockitle Cue for Mac i Pockitle Live for iOS są wciąż rozwijane, więc opisane funkcje nie zostały jeszcze udostępnione.",
+    "Na iPhonie i iPadzie Pockitle Live Web może korzystać tylko z zewnętrznych wejść audio widocznych dla iOS w przeglądarce; w przeciwnym razie pozostaje mikrofon wbudowany."
+  ],
+  "faq": [
+    {
+      "question": "Co zmienia się przy przejściu z SurtitleLive na Pockitle Cue?",
+      "answer": "SurtitleLive przyjmuje nazwę Pockitle Cue. Konta, projekty i podstawowy przebieg pracy w przeglądarce — przygotowanie, sprawdzenie, próby i wyświetlanie nadtytułów — pozostają."
+    },
+    {
+      "question": "Czym różnią się Pockitle Cue i Pockitle Live?",
+      "answer": "Pockitle Cue służy do tekstów, które można przygotować, sprawdzić i przećwiczyć przed spektaklem. Pockitle Live tworzy napisy do wypowiedzi pojawiających się na bieżąco."
+    },
+    {
+      "question": "Czy Pockitle Cue for Mac i Pockitle Live for iOS są już dostępne?",
+      "answer": "Nie. Z artykułu wynika, że obie aplikacje natywne są w trakcie rozwoju. Planowane funkcje projekcji i wejścia audio nie są jeszcze wydanymi funkcjami."
+    },
+    {
+      "question": "Czy Pockitle Live Web może używać zewnętrznego mikrofonu na iPhonie lub iPadzie?",
+      "answer": "Tylko wtedy, gdy iOS pokaże go na liście wejść audio przeglądarki. Mikrofonu ani sygnału z miksera, których nie ma na liście, nie można wybrać na stronie; niezawodną opcją zapasową jest mikrofon wbudowany."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Pockitle Cue",
+      "definition": "Przeglądarkowy produkt do przygotowanych nadtytułów, wcześniej nazywany SurtitleLive."
+    },
+    {
+      "term": "Przygotowane nadtytuły",
+      "definition": "Tekst przygotowany, sprawdzony i przećwiczony przed wyświetleniem podczas spektaklu."
+    },
+    {
+      "term": "Pockitle Live",
+      "definition": "Narzędzie przeglądarkowe do tworzenia napisów dla mowy, której nie da się w pełni przygotować z wyprzedzeniem."
+    },
+    {
+      "term": "Pockitle Cue for Mac",
+      "definition": "Aplikacja na Maca w rozwoju, przeznaczona do lokalnej projekcji po synchronizacji i ściślejszej współpracy z QLab."
+    },
+    {
+      "term": "Pockitle Live for iOS",
+      "definition": "Aplikacja na iPhone’a i iPada w rozwoju, zapewniająca bezpośredniejszy dostęp do obsługiwanych zewnętrznych wejść audio."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/features"
+    },
+    {
+      "label": "Pockitle Cue for Mac",
+      "href": "https://surtitlelive.com/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Pockitle Live",
+      "href": "https://pockitle.com/pl/live"
+    }
+  ]
+}

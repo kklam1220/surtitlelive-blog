@@ -15,16 +15,16 @@
     "Hazırlanmış bir akış düzeni, ekibin İngilizce çeviriyi prömiyerden önce gözden geçirmesini sağlarken, gösterim sırasında yine de canlı yürütmeye izin verir.",
     "Mobil üstyazı, İngilizce konuşan seyircilerin, oyunun orijinal dilindeki izleyicilerin ve diğer önceden hazırlanmış dil gruplarının kendi cihazlarından istedikleri metni seçmelerine olanak tanır.",
     "Küçük turne ekipleri; metin yükleme, düzenlenebilir akışlar, dil seçimi, operatörle yönetme, anlık atlama ve karartma özelliklerini destekleyen bir üstyazı yazılımı tercih etmelidir.",
-    "SurtitleLive, Fringe, turne, programcılar, eleştirmenler ya da çok dilli seyirci için İngilizce üstyazıya ihtiyaç duyan metne dayalı ya da büyük ölçüde sabitlenmiş performanslar için en uygun çözümdür."
+    "Pockitle Cue, Fringe, turne, programcılar, eleştirmenler ya da çok dilli seyirci için İngilizce üstyazıya ihtiyaç duyan metne dayalı ya da büyük ölçüde sabitlenmiş performanslar için en uygun çözümdür."
   ],
   "faq": [
     {
       "question": "Türkçe veya İngilizce olmayan başka bir dildeki oyuna nasıl İngilizce üstyazı eklerim?",
-      "answer": "Oyun metniyle işe başlayın, İngilizce çeviriyi hazırlayıp gözden geçirin, metni okunabilir akış birimlerine bölün, zamanlama provasını yapın, ardından her üstyazıyı canlı olarak ilerleten bir operatör eşliğinde gösterimi gerçekleştirin. SurtitleLive, senaryoyu düzenlenebilir bir akış iş akışına dönüştürerek ve hazırlanan üstyazıları projeksiyon ya da mobil görüntüleyici aracılığıyla sunarak bu süreci destekler."
+      "answer": "Oyun metniyle işe başlayın, İngilizce çeviriyi hazırlayıp gözden geçirin, metni okunabilir akış birimlerine bölün, zamanlama provasını yapın, ardından her üstyazıyı canlı olarak ilerleten bir operatör eşliğinde gösterimi gerçekleştirin. Pockitle Cue, senaryoyu düzenlenebilir bir akış iş akışına dönüştürerek ve hazırlanan üstyazıları projeksiyon ya da mobil görüntüleyici aracılığıyla sunarak bu süreci destekler."
     },
     {
       "question": "İngilizce ve orijinal dildeki seyirciler aynı anda farklı üstyazıları görebilir mi?",
-      "answer": "Evet, eğer iş akışı birden çok hazır dil kanalını destekliyorsa mümkündür. SurtitleLive ile her seyirci görüntüleyici bağlantısını açıp veya karekodu tarayıp İngilizce, oyunun orijinal dili ya da hazırlanmış başka bir dil gibi etkinleştirilmiş bir dili seçebilir."
+      "answer": "Evet, eğer iş akışı birden çok hazır dil kanalını destekliyorsa mümkündür. Pockitle Cue ile her seyirci görüntüleyici bağlantısını açıp veya karekodu tarayıp İngilizce, oyunun orijinal dili ya da hazırlanmış başka bir dil gibi etkinleştirilmiş bir dili seçebilir."
     },
     {
       "question": "Gösteriyi sabit bir ekran etrafında yeniden kurmamız gerekiyor mu?",

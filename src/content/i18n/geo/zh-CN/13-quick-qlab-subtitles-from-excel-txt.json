@@ -13,7 +13,7 @@
   "keyTakeaways": [
     "QLab 以 Text cues 显示设置好样式的字幕；正式投影需要 Video License 与配置正确的 Stage。",
     "QLab 没有一键导入 XLSX 字幕表的原生功能，但 AppleScript 或其他导入器可把结构化 Excel、CSV 或 TXT 数据转成 cues。",
-    "从 SurtitleLive 编辑器下载的 QLab Projection Pack 是离线投影交付，不会创建部署或向 Viewer 发布内容。",
+    "从 Pockitle Cue 编辑器下载的 QLab Projection Pack 是离线投影交付，不会创建部署或向 Viewer 发布内容。",
     "完成部署后的 Viewer 同步，使用每个来源 cue 一个本地 Script child、loopback bridge，以及由操作员明确连接并启用的 ASM 控制台。"
   ],
   "faq": [
@@ -30,7 +30,7 @@
       "answer": "不会。编辑器版本只负责离线 QLab 投影；Viewer 同步须使用完成部署后、由操作员主动启用的 ASM 路径。"
     },
     {
-      "question": "本地 bridge 会直接调用 SurtitleLive 云端吗？",
+      "question": "本地 bridge 会直接调用 Pockitle Cue 云端吗？",
       "answer": "不会。它只在本地把范围受限、不含机密的 cue 身份交给已打开的 ASM 控制台，再由 ASM 通过既有 control channel 发布 Viewer 状态。"
     }
   ],
@@ -41,11 +41,11 @@
     },
     {
       "term": "QLab Projection Pack",
-      "definition": "SurtitleLive 为 QLab 导出的投影包，包含固定导入器、cue 数据、操作说明与支持文件。"
+      "definition": "Pockitle Cue 为 QLab 导出的投影包，包含固定导入器、cue 数据、操作说明与支持文件。"
     },
     {
       "term": "Stable cue key",
-      "definition": "用于在重新导入修订版时，找出并更新匹配 caption Group 的非机密 SurtitleLive 身份。"
+      "definition": "用于在重新导入修订版时，找出并更新匹配 caption Group 的非机密 Pockitle Cue 身份。"
     },
     {
       "term": "Loopback bridge",

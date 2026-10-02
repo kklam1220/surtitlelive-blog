@@ -18,11 +18,11 @@
   ],
   "faq": [
     {
-      "question": "Erstellt SurtitleLive aus einer `.docx`-Datei automatisch aufführungsreife Übertitel?",
+      "question": "Erstellt Pockitle Cue aus einer `.docx`-Datei automatisch aufführungsreife Übertitel?",
       "answer": "Nein. Der Import bereitet einen editierbaren Cue-Entwurf vor. Das Team prüft Analyse, Rollennamen, Dialog, Regieanweisungen, Cue-Grenzen und fehlende oder ungewöhnliche Dokumentbereiche."
     },
     {
-      "question": "Übersetzt SurtitleLive gesprochene Sprache live?",
+      "question": "Übersetzt Pockitle Cue gesprochene Sprache live?",
       "answer": "Nein. Die KI-gestützte Übersetzung ist ein Arbeitsschritt im Editor. Entwürfe bleiben editierbar und müssen von einer fachkundigen Person mit der Ausgangssprache verglichen werden."
     },
     {

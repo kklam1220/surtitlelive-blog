@@ -1,7 +1,7 @@
 {
   "locale": "id",
-  "title": "Pembaruan Produk SurtitleLive",
-  "description": "Pembaruan produk SurtitleLive mingguan, dikelompokkan berdasarkan versi, dengan catatan singkat tentang fitur baru, peningkatan, dan perbaikan yang terlihat oleh pengguna.",
+  "title": "Pembaruan Produk Pockitle",
+  "description": "Pembaruan mingguan untuk produk-produk Pockitle, dikelompokkan berdasarkan versi, dengan catatan singkat tentang fitur baru, peningkatan, dan perbaikan yang terlihat oleh pengguna.",
   "labels": {
     "articles": "Artikel",
     "productUpdates": "Pembaruan Produk",
@@ -14,6 +14,32 @@
     "noPublicRelease": "Tidak ada pembaruan yang tercantum minggu ini."
   },
   "weeks": [
+    {
+      "startDate": "2026-09-27",
+      "endDate": "2026-10-03",
+      "versions": [
+        {
+          "version": "v260930.01",
+          "releaseDate": "2026-09-30",
+          "product": "Pockitle Cue",
+          "summary": "SurtitleLive kini bernama Pockitle Cue. Rilis ini juga meningkatkan pemulihan teks langsung dan akses audiens secara signifikan.",
+          "new": [
+            "Pockitle Cue diperkenalkan sebagai nama baru SurtitleLive di pengalaman produk publik, dengan halaman yang dilokalkan dan navigasi yang lebih jelas dari informasi produk ke alur kerja dari naskah hingga panggung."
+          ],
+          "improved": [
+            "Pengiriman dan pemulihan teks langsung ditingkatkan saat pembaruan live, penyambungan ulang, dan pertunjukan dimulai ulang.",
+            "Pemulihan tautan Audience Show diperluas agar halaman yang masih valid tetap dapat diakses bahkan setelah layanan live berakhir."
+          ],
+          "fixed": [
+            "Memperbaiki sesi Pockitle Live yang dijeda agar tidak berakhir secara tak terduga.",
+            "Memperbaiki status layar hitam audiens yang hilang saat operator menyambungkan ulang.",
+            "Memperbaiki Viewer yang menampilkan baris lain saat cue tidak dapat dicocokkan; kini teks yang sedang tampil tetap dipertahankan.",
+            "Memperbaiki hilangnya pembaruan teks terakhir saat sesi live dihentikan.",
+            "Memperbaiki halaman publik yang tidak merespons setelah terjemahan browser mengubah kontennya."
+          ]
+        }
+      ]
+    },
     {
       "startDate": "2026-09-20",
       "endDate": "2026-09-26",
