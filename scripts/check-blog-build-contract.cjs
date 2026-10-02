@@ -243,6 +243,17 @@ const sitemapText = xmlFiles
   .map((file) => fs.readFileSync(file, "utf8"))
   .join("\n");
 
+assertFileHasMatch(
+  "index.html",
+  /class="language-selector"/,
+  "The English Blog header must expose the language selector when localized pages are available.",
+);
+assertHasMatch(
+  cssFiles,
+  /\.signup-btn\[data-astro-cid-[^\]]+\]\{[^}]*padding:\.5rem 1rem/,
+  "The Blog Sign Up button must retain the spacing used by the main-site header.",
+);
+
 for (const locale of [
   "en",
   "ar",

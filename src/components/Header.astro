@@ -20,6 +20,7 @@ const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const logoHref = new URL('/logo/pockitle-cue-logo-header-480w.png', MAIN_SITE_URL).toString();
 const navLocale = isBlogSupportedLocale(currentLocale) ? currentLocale : 'en';
 const navCopy = resolveBlogNavCopy(navLocale);
+const hasLocaleOptions = localeLinks.filter((item) => isBlogSupportedLocale(item.lang)).length > 1;
 
 const localizedMainHref = (path = '/') => {
 	const normalizedPath = path.startsWith('/') ? path : `/${path}`;
@@ -85,7 +86,7 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 			<div class="mobile-divider"></div>
 
 			<div class="mobile-account">
-				{navLocale !== 'en' && (
+				{hasLocaleOptions && (
 					<div class="mobile-section">
 						<div class="mobile-section-title">{navCopy.language}</div>
 						<LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} />
@@ -100,7 +101,7 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		</div>
 
 		<div class="auth-buttons">
-			{navLocale !== 'en' && <div class="desktop-language"><LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} /></div>}
+			{hasLocaleOptions && <div class="desktop-language"><LanguageSelector currentLocale={currentLocale} localeLinks={localeLinks} /></div>}
 			<a href={buildMainSiteHref('/auth/login')} class="login-link">{navCopy.login}</a>
 			<a href={buildMainSiteHref('/auth/register')} class="signup-btn">{navCopy.signUp}</a>
 		</div>
@@ -156,7 +157,8 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 		flex-direction: column;
 		align-items: flex-end;
 	}
-	nav a {
+	.internal-links > a,
+	.login-link {
 		padding: 0;
 	}
 	.logo-container a {
@@ -267,10 +269,11 @@ const localizedBlogHref = navLocale === 'en' ? normalizedBaseUrl : `${normalized
 	.signup-btn {
 		background-color: black;
 		color: white !important;
-		padding: 0.5rem 1.2rem;
-		border-radius: 6px;
+		padding: 0.5rem 1rem;
+		border-radius: 0.375rem;
 		font-weight: 600;
 		font-size: 0.875rem; /* Match text-sm (14px) */
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 		transition: background-color 0.2s;
 		text-decoration: none;
 	}
