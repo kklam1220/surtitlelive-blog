@@ -736,27 +736,52 @@ assertFileHasNoMatch(
 
 for (const [locale, expectedCopy] of [
   [
+    "en",
+    {
+      features: "Features",
+      allProducts: "All Pockitle products",
+      workflow: "Workflow",
+      cueMac: "Pockitle Cue for Mac",
+      qlab: "QLab surtitles",
+      live: "Pockitle Live",
+      guides: "Guides",
+      blog: "Blog",
+      signUp: "Sign Up",
+      mainPrefix: "",
+    },
+  ],
+  [
     "ko",
     {
       features: "기능",
+      allProducts: "모든 제품",
       workflow: "공연 제작 과정",
+      cueMac: "Pockitle Cue for Mac",
+      qlab: "QLab 자막",
+      live: "Pockitle Live",
       guides: "가이드",
       blog: "블로그",
       signUp: "회원가입",
+      mainPrefix: "ko/",
     },
   ],
   [
     "zh-TW",
     {
       features: "功能",
+      allProducts: "所有產品",
       workflow: "工作流程",
+      cueMac: "Pockitle Cue for Mac",
+      qlab: "QLab 字幕",
+      live: "Pockitle Live",
       guides: "指南",
       blog: "部落格",
       signUp: "註冊",
+      mainPrefix: "zh-TW/",
     },
   ],
 ]) {
-  const indexPath = path.join(locale, "index.html");
+  const indexPath = path.join(...(locale === "en" ? [] : [locale]), "index.html");
 
   assertFileHasMatch(
     indexPath,
@@ -768,20 +793,53 @@ for (const [locale, expectedCopy] of [
   assertFileHasMatch(
     indexPath,
     new RegExp(
-      `href="https://surtitlelive\\.com/${locale}/features"[^>]*>\\s*${expectedCopy.workflow}\\s*<`,
+      `href="https://surtitlelive\\.com/${expectedCopy.mainPrefix}features"[^>]*>\\s*${expectedCopy.allProducts}\\s*<`,
     ),
-    `Missing localized main-site Pockitle Cue workflow link on the ${locale} blog header.`,
+    `Missing localized main-site all-products link on the ${locale} blog header.`,
   );
   assertFileHasMatch(
     indexPath,
     new RegExp(
-      `href="https://surtitlelive\\.com/${locale}/guides"[^>]*>\\s*${expectedCopy.guides}\\s*<`,
+      `href="https://surtitlelive\\.com/${expectedCopy.mainPrefix}workflow"[^>]*>\\s*${expectedCopy.workflow}\\s*<`,
+    ),
+    `Missing localized main-site workflow link on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(
+      `href="https://surtitlelive\\.com/${expectedCopy.mainPrefix}pockitle-cue-for-mac"[^>]*>\\s*${expectedCopy.cueMac}\\s*<`,
+    ),
+    `Missing localized Pockitle Cue for Mac link on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(
+      `href="https://surtitlelive\\.com/${expectedCopy.mainPrefix}qlab"[^>]*>\\s*${expectedCopy.qlab}\\s*<`,
+    ),
+    `Missing localized QLab link on the ${locale} blog header.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(
+      `href="https://pockitle\\.com/${expectedCopy.mainPrefix}live"[^>]*>\\s*${expectedCopy.live}\\s*<`,
+    ),
+    `Missing localized Pockitle Live link on the ${locale} blog header.`,
+  );
+  assertFileHasNoMatch(
+    indexPath,
+    /<header\b[\s\S]*?href="https:\/\/surtitlelive\.com\/surtitle-projection-software"[\s\S]*?<\/header>/,
+    `The outdated projection link must not appear in the ${locale} Blog Features menu.`,
+  );
+  assertFileHasMatch(
+    indexPath,
+    new RegExp(
+      `href="https://surtitlelive\\.com/${expectedCopy.mainPrefix}guides"[^>]*>\\s*${expectedCopy.guides}\\s*<`,
     ),
     `Missing localized main-site Guides href on the ${locale} blog header.`,
   );
   assertFileHasMatch(
     indexPath,
-    new RegExp(`href="/blog/${locale}/"[^>]*>\\s*${expectedCopy.blog}\\s*<`),
+    new RegExp(`href="/blog/${expectedCopy.mainPrefix}"[^>]*>\\s*${expectedCopy.blog}\\s*<`),
     `Missing locale-preserving Blog href on the ${locale} blog header.`,
   );
   assertFileHasMatch(
