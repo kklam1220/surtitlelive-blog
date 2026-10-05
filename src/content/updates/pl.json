@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "To wydanie rozszerza wybór języków tłumaczenia na żywo i usprawnia odzyskiwanie dostępu podczas wydarzeń, przeglądu scenariuszy oraz sesji kont.",
+          "new": [
+            "Pockitle Live obsługuje teraz tłumaczenie na maksymalnie 10 języków, zależnie od planu.",
+            "Analiza scenariuszy i zadania tłumaczenia przedstawiają teraz jaśniejsze podsumowania i kolejne kroki dla elementów wymagających sprawdzenia."
+          ],
+          "improved": [
+            "Poprawiono ciągłość dostępu dla widzów i operatorów po przedłużeniu wydarzenia, utracie połączenia lub ponownym uruchomieniu usług wydarzenia.",
+            "Update Live informuje teraz o uruchamianiu usług wydarzenia i podaje jasne wskazówki dotyczące ponowienia próby.",
+            "Zadania tłumaczenia wyraźniej oznaczają pominięte lub nieudane wiersze, zachowując wcześniej zapisane tłumaczenia."
+          ],
+          "fixed": [
+            "Naprawiono wygasanie dostępu widzów lub operatorów po przedłużeniu wydarzenia.",
+            "Naprawiono konflikt czasu podczas kończenia wydarzenia, który mógł wyświetlać fałszywy komunikat, że inna konsola przejęła kontrolę.",
+            "Naprawiono opóźnione logowanie lub wylogowanie, które mogło wpływać na niewłaściwą aktywną sesję konta."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

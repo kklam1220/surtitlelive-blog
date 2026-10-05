@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, canlı çeviri dil seçeneklerini genişletir; performanslar, senaryo incelemesi ve hesap oturumlarındaki kurtarma süreçlerini iyileştirir.",
+          "new": [
+            "Pockitle Live, planınıza bağlı olarak artık 10 dile kadar çeviriyi destekliyor.",
+            "Senaryo analizi ve çeviri işleri, incelenmesi gereken öğeler için artık daha açık özetler ve sonraki adımlar sunuyor."
+          ],
+          "improved": [
+            "Performans uzatıldıktan, bağlantı kesildikten veya performans hizmetleri yeniden başlatıldıktan sonra izleyicilerin ve operatörlerin erişim sürekliliği iyileştirildi.",
+            "Update Live artık performans hizmetlerinin başlatıldığını bildiriyor ve yeniden deneme için açık yönergeler sunuyor.",
+            "Çeviri işleri, atlanan veya başarısız satırları daha açık biçimde belirtiyor ve önceden kaydedilmiş çevirileri koruyor."
+          ],
+          "fixed": [
+            "Performans uzatıldıktan sonra izleyici veya operatör erişiminin süresinin dolmasına neden olan sorun giderildi.",
+            "Gösteriyi bitirme sırasında başka bir konsolun kontrolü aldığına dair yanlış uyarı oluşturabilen zamanlama çakışması giderildi.",
+            "Gecikmeli oturum açma veya kapatma işlemlerinin yanlış etkin hesap oturumunu etkilemesine neden olan sorun giderildi."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

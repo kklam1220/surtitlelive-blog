@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "Esta versión amplía los idiomas disponibles para la traducción en directo y mejora la recuperación durante las actuaciones, la revisión de guiones y las sesiones de cuenta.",
+          "new": [
+            "Pockitle Live admite ahora hasta 10 idiomas traducidos, según el plan.",
+            "El análisis de guiones y las tareas de traducción ofrecen ahora resúmenes más claros e indican los siguientes pasos para los elementos que requieren revisión."
+          ],
+          "improved": [
+            "Se ha mejorado la continuidad del acceso para el público y los operadores después de ampliar una actuación, perder una conexión o reiniciar los servicios de la función.",
+            "Update Live ahora indica cuándo se están iniciando los servicios de la función y ofrece instrucciones claras para volver a intentarlo.",
+            "Las tareas de traducción identifican con mayor claridad las líneas omitidas o fallidas y conservan las traducciones ya guardadas."
+          ],
+          "fixed": [
+            "Se ha corregido la caducidad del acceso del público o de los operadores después de ampliar una actuación.",
+            "Se ha corregido un conflicto de tiempos al finalizar la actuación que podía mostrar el aviso falso de que otra consola había tomado el control.",
+            "Se ha corregido un problema por el que las acciones de inicio o cierre de sesión tardías afectaban a una sesión de cuenta activa distinta."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

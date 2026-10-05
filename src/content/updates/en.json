@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "This release expands live translation capacity and improves recovery across performances, script review, and account sessions.",
+          "new": [
+            "Pockitle Live now supports up to 10 translated languages, depending on your plan.",
+            "Script analysis and translation jobs now provide clearer summaries and next steps when items need review."
+          ],
+          "improved": [
+            "Improved access continuity for viewers and operators after a performance is extended, a connection drops, or show services restart.",
+            "Update Live now explains when show services are starting and offers clear retry guidance.",
+            "Translation jobs now identify skipped or failed lines more clearly while preserving translations already saved."
+          ],
+          "fixed": [
+            "Fixed viewer or operator access expiring after a performance was extended.",
+            "Fixed an End Show timing conflict that could trigger a false warning that another console had taken control.",
+            "Fixed delayed sign-in or sign-out actions from affecting the wrong active account session."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

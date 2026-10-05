@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này mở rộng số ngôn ngữ dịch trực tiếp và cải thiện khả năng khôi phục trong buổi diễn, quá trình duyệt kịch bản và phiên tài khoản.",
+          "new": [
+            "Pockitle Live hiện hỗ trợ dịch tối đa 10 ngôn ngữ, tùy theo gói của bạn.",
+            "Phân tích kịch bản và tác vụ dịch hiện cung cấp bản tóm tắt rõ ràng hơn cùng các bước tiếp theo cho mục cần xem lại."
+          ],
+          "improved": [
+            "Cải thiện tính liên tục truy cập cho khán giả và người vận hành sau khi buổi diễn được gia hạn, mất kết nối hoặc dịch vụ buổi diễn khởi động lại.",
+            "Update Live hiện cho biết khi dịch vụ buổi diễn đang khởi động và hướng dẫn rõ cách thử lại.",
+            "Tác vụ dịch hiện đánh dấu rõ hơn các dòng bị bỏ qua hoặc thất bại, đồng thời giữ nguyên các bản dịch đã lưu."
+          ],
+          "fixed": [
+            "Đã sửa lỗi quyền truy cập của khán giả hoặc người vận hành hết hạn sau khi buổi diễn được gia hạn.",
+            "Đã sửa xung đột thời điểm khi kết thúc buổi diễn có thể hiển thị nhầm cảnh báo rằng một bảng điều khiển khác đã tiếp quản.",
+            "Đã sửa lỗi thao tác đăng nhập hoặc đăng xuất bị trễ ảnh hưởng đến sai phiên tài khoản đang hoạt động."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "Dieses Release erweitert die Sprachauswahl für Live-Übersetzungen und verbessert die Wiederherstellung bei Aufführungen, der Skriptprüfung und in Kontositzungen.",
+          "new": [
+            "Pockitle Live unterstützt jetzt je nach Tarif Übersetzungen in bis zu 10 Sprachen.",
+            "Skriptanalyse und Übersetzungsaufträge liefern jetzt klarere Zusammenfassungen und nächste Schritte für prüfbedürftige Elemente."
+          ],
+          "improved": [
+            "Der Zugriff für Publikum und Bedienpersonal bleibt nach einer Verlängerung der Aufführung, einem Verbindungsabbruch oder einem Neustart der Aufführungsdienste zuverlässiger bestehen.",
+            "Update Live zeigt jetzt an, wenn die Aufführungsdienste starten, und bietet klare Hinweise zum erneuten Versuch.",
+            "Übersetzungsaufträge kennzeichnen übersprungene oder fehlgeschlagene Zeilen jetzt deutlicher und behalten bereits gespeicherte Übersetzungen bei."
+          ],
+          "fixed": [
+            "Behoben: Nach einer verlängerten Aufführung lief der Zugriff für Publikum oder Bedienpersonal ab.",
+            "Behoben: Ein Timing-Konflikt bei „End Show“ konnte fälschlich warnen, eine andere Konsole habe die Steuerung übernommen.",
+            "Behoben: Verzögerte An- oder Abmeldeaktionen wirkten sich auf die falsche aktive Kontositzung aus."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [

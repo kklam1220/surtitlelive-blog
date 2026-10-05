@@ -15,6 +15,32 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-10",
+      "versions": [
+        {
+          "version": "v261004.01",
+          "releaseDate": "2026-10-04",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambah pilihan bahasa untuk terjemahan langsung dan meningkatkan pemulihan saat pertunjukan, peninjauan naskah, serta sesi akun.",
+          "new": [
+            "Pockitle Live kini mendukung hingga 10 bahasa terjemahan, bergantung pada paket Anda.",
+            "Analisis naskah dan tugas terjemahan kini memberikan ringkasan yang lebih jelas serta langkah berikutnya untuk item yang perlu ditinjau."
+          ],
+          "improved": [
+            "Akses penonton dan operator lebih berkesinambungan setelah pertunjukan diperpanjang, koneksi terputus, atau layanan pertunjukan dimulai ulang.",
+            "Update Live kini menjelaskan saat layanan pertunjukan sedang dimulai dan memberikan panduan untuk mencoba kembali.",
+            "Tugas terjemahan kini menandai baris yang dilewati atau gagal dengan lebih jelas, sekaligus mempertahankan terjemahan yang sudah disimpan."
+          ],
+          "fixed": [
+            "Memperbaiki akses penonton atau operator yang kedaluwarsa setelah pertunjukan diperpanjang.",
+            "Memperbaiki konflik waktu saat mengakhiri pertunjukan yang dapat memunculkan peringatan keliru bahwa konsol lain telah mengambil alih kontrol.",
+            "Memperbaiki tindakan masuk atau keluar yang tertunda agar tidak memengaruhi sesi akun aktif yang salah."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-09-27",
       "endDate": "2026-10-03",
       "versions": [
