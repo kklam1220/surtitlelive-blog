@@ -192,6 +192,9 @@ export function readLocalizedPost(locale: string, slug: string): LocalizedBlogPa
   if (!parsed || typeof parsed !== "object") {
     return null;
   }
+  if (parsed.slug !== slug || parsed.locale !== locale || parsed.sourceLocale !== "en") {
+    throw new Error(`Invalid localized blog identity: ${locale}/${slug}`);
+  }
   const payload = parsed as LocalizedBlogPayload;
   if (typeof payload.body === "string") {
     payload.body = localizeKnownScriptExamples(payload.locale, payload.slug, payload.body);

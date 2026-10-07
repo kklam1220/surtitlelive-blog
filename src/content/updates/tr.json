@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, senaryo analizini iyileştirir ve çevrilmiş senaryoların düzenlenmesini daha güvenilir hale getirir.",
+          "new": [],
+          "improved": [
+            "Senaryo analizi, oyuncu listesi eksik olsa bile ortalanmış konuşmacı ipuçlarını daha iyi tanır.",
+            "Senaryo analizi sırasında diyalogların, ayarların ve başlıkların ön metinle karıştırılma olasılığı azaltıldı.",
+            "Editördeki çeviri sonuçları artık daha güvenilir biçimde eşzamanlı kalıyor; böylece son düzenlemelerin korunmasına yardımcı oluyor."
+          ],
+          "fixed": [
+            "Mevcut metni değiştirmeyen geçerli çeviriler artık kabul ediliyor."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "İş birliği yapan kullanıcıların kendi kaydedilmiş sürümlerini silme olanağı geri yüklendi."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm çeviri seçeneklerini daha anlaşılır kılıyor ve dil geçişini iyileştiriyor.",
+          "new": [],
+          "improved": [
+            "Fiyatlandırma sayfasında standart ve yapay zekâ destekli çeviri seçeneklerini karşılaştırmak kolaylaştırıldı.",
+            "Herkese açık dil seçici, sayfalar arasında gezinirken seçtiğiniz dili koruyor."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm ürün bilgileri ekliyor ve erişim araçları ile düzenlemedeki dil kullanımını iyileştiriyor.",
+          "new": [
+            "Herkese açık bir Hakkında sayfası eklendi."
+          ],
+          "improved": [
+            "Ön Büro Erişim Paketi'ndeki dil desteği iyileştirildi."
+          ],
+          "fixed": [
+            "Diller arasında geçiş yaparken kaydedilmemiş karakter çevirisi düzenlemelerinin kaybolması düzeltildi."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm, senaryo analizini ve çeviri bağlamını iyileştiriyor; herkese açık ürün bilgilerini daha anlaşılır kılıyor.",
+          "new": [],
+          "improved": [
+            "Daha fazla senaryo düzeninde diyalog ve konuşmacı ipuçlarının tanınması iyileştirildi.",
+            "Daha fazla çevre senaryo bağlamı kullanılarak çeviri tutarlılığı artırıldı.",
+            "Herkese açık sayfalardaki ürün ve plan bilgileri daha anlaşılır hâle getirildi."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bu sürüm; gösteri sonrası bilgileri, canlı güncelleme kontrollerini ve ürünü keşfetmenin daha anlaşılır yollarını sunuyor.",
+          "new": [
+            "Gösteri sırasında hangi dillerin sunulduğunu gösteren yazdırılabilir gösteri sonrası raporlar eklendi.",
+            "İzleyicilerin erişilebilirlik bilgilerini mekân ekipleriyle paylaşmak için Ön Büro Erişim Paketi eklendi.",
+            "Canlı altyazı güncellemeleri için sürüm geçmişi, önizleme ve geri yükleme kontrolleri eklendi.",
+            "Ürün tanıtım videoları ve genişletilmiş yerelleştirilmiş ürün kılavuzları eklendi."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Ana sayfa artık projeksiyon ve mobil üst yazıları daha anlaşılır biçimde tanıtıyor.",
+          "new": [],
+          "improved": [
+            "Ana sayfa, ziyaretçilerin projeksiyon ve mobil üst yazı iş akışlarını keşfetmesine yardımcı olacak şekilde yeniden düzenlendi."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Herkese açık site artık ticari altyazı kullanım senaryolarını daha iyi destekliyor.",
+          "new": [
+            "Ticari mekânlar ve etkinlik kullanım senaryoları için özel sayfalar eklendi."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Herkese açık site artık daha tutarlı bir yerelleştirilmiş deneyim sunuyor.",
+          "new": [
+            "Ziyaretçilerin bulundukları sayfadan ayrılmadan dil değiştirebilmesini sağlayan yerelleştirilmiş herkese açık sayfalar eklendi."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Senaryo analizi artık daha geniş bir düzen ve konuşmacı ipucu yelpazesini destekliyor.",
+          "new": [],
+          "improved": [
+            "Farklı biçimlendirmelere sahip senaryolarda diyalog sınırlarının ve konuşmacı ipuçlarının tanınması iyileştirildi."
+          ],
+          "fixed": []
         }
       ]
     }

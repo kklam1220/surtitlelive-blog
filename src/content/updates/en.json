@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "This release improves script analysis and makes translated-script editing more reliable.",
+          "new": [],
+          "improved": [
+            "Script analysis better recognizes centered speaker cues, even when a cast list is missing.",
+            "Dialogue, settings, and headings are less likely to be mistaken for front matter during script analysis.",
+            "Editor translation results stay in sync more reliably, helping protect recent edits."
+          ],
+          "fixed": [
+            "Valid translations that leave existing text unchanged are now accepted."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Restored collaborators’ ability to delete their own saved versions."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release clarifies translation options and improves language switching.",
+          "new": [],
+          "improved": [
+            "Made standard and AI-assisted translation options easier to compare on the pricing page.",
+            "The public language selector now keeps your chosen language as you move between pages."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release adds product information and improves language handling in access tools and editing.",
+          "new": [
+            "Added a public About page."
+          ],
+          "improved": [
+            "Improved language support in the Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Fixed unsaved character-translation edits being lost when switching languages."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release improves script analysis and translation context and clarifies public product information.",
+          "new": [],
+          "improved": [
+            "Improved recognition of dialogue and speaker cues across more script layouts.",
+            "Improved translation consistency by using more surrounding script context.",
+            "Clarified product and plan information on public pages."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "This release adds post-show information, live-update controls, and clearer ways to explore the product.",
+          "new": [
+            "Added printable post-show reports that show which languages were offered during a performance.",
+            "Added a Front-of-House Access Pack to share audience access information with venue teams.",
+            "Added version history, preview, and restore controls for live subtitle updates.",
+            "Added product demo videos and expanded localized product guides."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "The homepage now gives projection and mobile surtitles a clearer introduction.",
+          "new": [],
+          "improved": [
+            "Refocused the homepage to help visitors explore projection and mobile-surtitling workflows."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "The public site now better supports commercial subtitle use cases.",
+          "new": [
+            "Added dedicated pages for commercial venues and event use cases."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "The public site adds a more consistent localized experience.",
+          "new": [
+            "Added localized public pages and language switching that keeps visitors on their current page."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Script analysis now handles a wider range of layouts and speaker cues.",
+          "new": [],
+          "improved": [
+            "Improved recognition of dialogue boundaries and speaker cues in scripts with varied formatting."
+          ],
+          "fixed": []
         }
       ]
     }

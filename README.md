@@ -2,7 +2,7 @@
 
 Official blog for [SurtitleLive](https://surtitlelive.com) - Live subtitling platform for theatre and events.
 
-Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` owns these boundaries and canonical Markdown destination regressions, including translated slugs and incorrect locale-before-blog routes; it runs through `npm run build:check`. Localization checks preserve reviewed links and use `/blog/{locale}/.../` for localized articles.
+Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` owns these boundaries, the static Astro cache TTL-only reachability guard, and canonical Markdown destination regressions, including translated slugs and incorrect locale-before-blog routes; it runs through `npm run build:check`. Localization checks preserve reviewed links, require payload slug/locale/source identity to match the English source, and use `/blog/{locale}/.../` for localized articles. The same suite includes a valid fixture and rejects wrong slug, locale, source language, and source path before publication. Build checks validate self-canonicals, reachable hreflang destinations, and current Pockitle legal links.
 
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
 
@@ -276,4 +276,4 @@ npm run build:check
 ## 📄 License
 
 Copyright © 2025 SurtitleLive
- 
+

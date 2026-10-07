@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Questa versione migliora l’analisi degli script e rende più affidabile la modifica degli script tradotti.",
+          "new": [],
+          "improved": [
+            "L’analisi degli script riconosce meglio le indicazioni del parlante centrate, anche quando manca un elenco del cast.",
+            "Durante l’analisi degli script, dialoghi, impostazioni e titoli vengono scambiati meno spesso per le informazioni introduttive.",
+            "I risultati della traduzione nell’editor restano sincronizzati in modo più affidabile, aiutando a proteggere le modifiche recenti."
+          ],
+          "fixed": [
+            "Ora vengono accettate le traduzioni valide che lasciano invariato il testo esistente."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Ripristinata la possibilità per i collaboratori di eliminare le proprie versioni salvate."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione chiarisce le opzioni di traduzione e migliora il cambio della lingua.",
+          "new": [],
+          "improved": [
+            "Ora è più facile confrontare le opzioni di traduzione standard e assistita da AI nella pagina dei prezzi.",
+            "Il selettore della lingua del sito pubblico mantiene ora la lingua scelta durante la navigazione tra le pagine."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione aggiunge informazioni sul prodotto e migliora la gestione delle lingue negli strumenti di accessibilità e di modifica.",
+          "new": [
+            "Aggiunta una pagina pubblica «Chi siamo»."
+          ],
+          "improved": [
+            "Migliorato il supporto linguistico nel Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Risolto un problema per cui le modifiche non salvate alle traduzioni dei personaggi andavano perse cambiando lingua."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione migliora l’analisi degli script e il contesto di traduzione e chiarisce le informazioni pubbliche sul prodotto.",
+          "new": [],
+          "improved": [
+            "Migliorato il riconoscimento dei dialoghi e delle indicazioni sui personaggi in un numero maggiore di layout degli script.",
+            "Migliorata la coerenza delle traduzioni utilizzando più contesto dalle parti circostanti dello script.",
+            "Chiarite le informazioni sul prodotto e sui piani nelle pagine pubbliche."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Questa versione aggiunge informazioni post-spettacolo, controlli per gli aggiornamenti in diretta e modi più chiari per esplorare il prodotto.",
+          "new": [
+            "Aggiunti report post-spettacolo stampabili che mostrano le lingue offerte durante uno spettacolo.",
+            "Aggiunto un Front-of-House Access Pack per condividere con i team della venue le informazioni sull’accessibilità del pubblico.",
+            "Aggiunti la cronologia delle versioni e i controlli di anteprima e ripristino per gli aggiornamenti dei sopratitoli in diretta.",
+            "Aggiunti video dimostrativi del prodotto e ampliate le guide localizzate."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "La homepage presenta più chiaramente la proiezione e i sopratitoli su dispositivi mobili.",
+          "new": [],
+          "improved": [
+            "Riorientata la homepage per aiutare i visitatori a esplorare i flussi di lavoro di proiezione e sopratitoli su dispositivi mobili."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Il sito pubblico supporta meglio i casi d’uso commerciali dei sopratitoli.",
+          "new": [
+            "Aggiunte pagine dedicate a spazi commerciali e casi d’uso per eventi."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Il sito pubblico offre ora un’esperienza localizzata più coerente.",
+          "new": [
+            "Aggiunte pagine pubbliche tradotte e un selettore della lingua che mantiene i visitatori sulla pagina corrente."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "L’analisi degli script supporta ora una gamma più ampia di layout e indicazioni sui personaggi.",
+          "new": [],
+          "improved": [
+            "Migliorato il riconoscimento dei confini dei dialoghi e delle indicazioni sui personaggi negli script con formattazioni diverse."
+          ],
+          "fixed": []
         }
       ]
     }

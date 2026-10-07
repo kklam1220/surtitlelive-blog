@@ -1,6 +1,6 @@
 {
   "locale": "zh-TW",
-  "title": "Pockitle 產品更新",
+  "title": "Pockitle 產品更新：新功能與改進",
   "description": "Pockitle 各產品每週更新，按版本整理，簡要說明新功能、改進與使用者可見的修正。",
   "labels": {
     "articles": "文章",
@@ -18,6 +18,21 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "此版本改善劇本分析，讓已翻譯劇本的編輯更加可靠。",
+          "new": [],
+          "improved": [
+            "劇本分析現在能更準確識別置中的說話者提示，即使缺少演員表也能正常識別。",
+            "劇本分析時，對白、場景設定及標題較不容易被誤判為前置內容。",
+            "編輯器中的翻譯結果現在能更可靠地保持同步，有助於保留最近的編輯內容。"
+          ],
+          "fixed": [
+            "不會變更現有文字的有效翻譯現在也會被接受。"
+          ]
+        },
         {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
@@ -663,6 +678,128 @@
           "fixed": [
             "恢復協作者刪除自己已儲存版本的功能。"
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本讓翻譯選項更清楚，並改善語言切換體驗。",
+          "new": [],
+          "improved": [
+            "價格頁面上的標準翻譯和 AI 輔助翻譯選項現在更容易比較。",
+            "公開語言選擇器現在會在切換頁面時保留您選擇的語言。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增產品資訊，並改善無障礙工具和編輯功能的語言處理。",
+          "new": [
+            "新增公開的「關於」頁面。"
+          ],
+          "improved": [
+            "改善 Front-of-House Access Pack 的語言支援。"
+          ],
+          "fixed": [
+            "修正切換語言時，未儲存的角色翻譯編輯內容會遺失的問題。"
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本改善劇本分析和翻譯脈絡，並讓公開產品資訊更清楚。",
+          "new": [],
+          "improved": [
+            "改善對更多劇本版面配置中對話和說話者線索的辨識。",
+            "運用更多劇本前後文，提升翻譯一致性。",
+            "讓公開頁面上的產品和方案資訊更清楚。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "此版本新增演出後資訊和即時更新控制項，並提供更清楚的產品探索方式。",
+          "new": [
+            "新增可列印的演出後報告，顯示演出期間提供了哪些語言。",
+            "新增 Front-of-House Access Pack，方便與場館團隊分享觀眾無障礙資訊。",
+            "新增即時字幕更新的版本記錄、預覽和還原控制項。",
+            "新增產品示範影片，並擴充在地化產品指南。"
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "首頁現在更清楚地介紹投影和行動字幕。",
+          "new": [],
+          "improved": [
+            "重新調整首頁內容，協助訪客探索投影和行動字幕工作流程。"
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "公開網站現在能更完善地支援商業字幕使用情境。",
+          "new": [
+            "新增商業場館和活動情境專屬頁面。"
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "公開網站現在提供更一致的在地化體驗。",
+          "new": [
+            "新增在地化公開頁面和語言切換功能，訪客切換語言後仍會留在目前頁面。"
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "劇本分析現在支援更多版面配置和說話者線索。",
+          "new": [],
+          "improved": [
+            "改善了對不同格式劇本中對話界線和說話者線索的辨識。"
+          ],
+          "fixed": []
         }
       ]
     }

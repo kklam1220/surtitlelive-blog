@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Dieses Release verbessert die Skriptanalyse und macht die Bearbeitung übersetzter Skripte zuverlässiger.",
+          "new": [],
+          "improved": [
+            "Die Skriptanalyse erkennt zentrierte Sprecherhinweise jetzt besser, auch wenn eine Besetzungsliste fehlt.",
+            "Dialoge, Einstellungen und Überschriften werden bei der Skriptanalyse seltener mit dem Vorspann verwechselt.",
+            "Übersetzungsergebnisse im Editor bleiben zuverlässiger synchron, sodass aktuelle Änderungen besser geschützt sind."
+          ],
+          "fixed": [
+            "Gültige Übersetzungen, die den bestehenden Text unverändert lassen, werden jetzt akzeptiert."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Mitwirkende können ihre eigenen gespeicherten Versionen wieder löschen."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dieses Release erläutert die Übersetzungsoptionen klarer und verbessert den Sprachwechsel.",
+          "new": [],
+          "improved": [
+            "Die Optionen für Standardübersetzung und AI-gestützte Übersetzung lassen sich auf der Preisseite jetzt leichter vergleichen.",
+            "Die öffentliche Sprachauswahl merkt sich jetzt die gewählte Sprache beim Wechsel zwischen Seiten."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dieses Release ergänzt Produktinformationen und verbessert die Sprachverarbeitung in Zugangstools und beim Bearbeiten.",
+          "new": [
+            "Eine öffentliche Über-uns-Seite hinzugefügt."
+          ],
+          "improved": [
+            "Die Sprachunterstützung im Front-of-House Access Pack verbessert."
+          ],
+          "fixed": [
+            "Ein Problem behoben, durch das nicht gespeicherte Charakter-Übersetzungen beim Sprachwechsel verloren gingen."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dieses Release verbessert die Skriptanalyse und den Übersetzungskontext und präzisiert öffentliche Produktinformationen.",
+          "new": [],
+          "improved": [
+            "Die Erkennung von Dialogen und Sprechercues in weiteren Skriptlayouts verbessert.",
+            "Die Übersetzungskonsistenz durch mehr Kontext aus dem umgebenden Skript verbessert.",
+            "Produkt- und Tarifinformationen auf öffentlichen Seiten präzisiert."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dieses Release ergänzt Informationen nach der Vorstellung, Steuerungsmöglichkeiten für Live-Updates und übersichtlichere Wege, das Produkt kennenzulernen.",
+          "new": [
+            "Druckbare Berichte nach der Vorstellung hinzugefügt, die zeigen, welche Sprachen während einer Aufführung angeboten wurden.",
+            "Ein Front-of-House Access Pack hinzugefügt, um Informationen zur Publikumszugänglichkeit mit Veranstaltungsteams zu teilen.",
+            "Versionsverlauf sowie Vorschau- und Wiederherstellungsfunktionen für Live-Untertitelupdates hinzugefügt.",
+            "Produkt-Demovideos und erweiterte lokalisierte Produktleitfäden hinzugefügt."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Die Startseite führt jetzt verständlicher in Projektion und mobile Übertitel ein.",
+          "new": [],
+          "improved": [
+            "Die Startseite wurde neu ausgerichtet, damit Besucher Abläufe für Projektion und mobile Übertitel erkunden können."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Die öffentliche Website unterstützt jetzt geschäftliche Anwendungsfälle für Übertitel besser.",
+          "new": [
+            "Eigene Seiten für gewerbliche Veranstaltungsorte und Events hinzugefügt."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Die öffentliche Website bietet jetzt ein einheitlicheres mehrsprachiges Erlebnis.",
+          "new": [
+            "Übersetzte öffentliche Seiten und einen Sprachwechsel hinzugefügt, bei dem Besucher auf der aktuellen Seite bleiben."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Die Skriptanalyse unterstützt jetzt mehr Layouts und Sprechercues.",
+          "new": [],
+          "improved": [
+            "Die Erkennung von Dialoggrenzen und Sprechercues in Skripten mit unterschiedlichen Formatierungen wurde verbessert."
+          ],
+          "fixed": []
         }
       ]
     }

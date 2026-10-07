@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia analizę scenariuszy i zwiększa niezawodność edycji przetłumaczonych scenariuszy.",
+          "new": [],
+          "improved": [
+            "Analiza scenariuszy lepiej rozpoznaje wyśrodkowane oznaczenia mówców, nawet gdy brakuje listy obsady.",
+            "Dialogi, ustawienia i nagłówki rzadziej są błędnie uznawane za treść wstępną podczas analizy scenariusza.",
+            "Wyniki tłumaczenia w Edytorze są teraz synchronizowane bardziej niezawodnie, co pomaga chronić najnowsze zmiany."
+          ],
+          "fixed": [
+            "Prawidłowe tłumaczenia, które pozostawiają istniejący tekst bez zmian, są teraz akceptowane."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Przywrócono współpracownikom możliwość usuwania własnych zapisanych wersji."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Doprecyzowano opcje tłumaczenia i usprawniono przełączanie języków.",
+          "new": [],
+          "improved": [
+            "Na stronie cennika łatwiej porównać tłumaczenie standardowe z tłumaczeniem wspomaganym przez AI.",
+            "Selektor języka w witrynie publicznej zachowuje wybrany język podczas przechodzenia między stronami."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dodano informacje o produkcie i ulepszono obsługę języków w narzędziach dostępności i edycji.",
+          "new": [
+            "Dodano publiczną stronę About."
+          ],
+          "improved": [
+            "Ulepszono obsługę języków w pakiecie Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Naprawiono problem powodujący utratę niezapisanych zmian w tłumaczeniu postaci po przełączeniu języka."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Ulepszono analizę scenariuszy i kontekst tłumaczeń oraz doprecyzowano publiczne informacje o produkcie.",
+          "new": [],
+          "improved": [
+            "Poprawiono rozpoznawanie dialogów i wskazówek dotyczących postaci w większej liczbie układów scenariuszy.",
+            "Zwiększono spójność tłumaczeń, uwzględniając szerszy kontekst scenariusza.",
+            "Doprecyzowano informacje o produkcie i planach na stronach publicznych."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Dodano informacje po wydarzeniu, sterowanie aktualizacjami na żywo i czytelniejsze sposoby poznawania produktu.",
+          "new": [
+            "Dodano raporty po wydarzeniu do wydruku, pokazujące, jakie języki były dostępne podczas spektaklu.",
+            "Dodano pakiet Front-of-House Access Pack, który pozwala udostępniać zespołom obiektu informacje o dostępności dla publiczności.",
+            "Dodano historię wersji, podgląd i przywracanie aktualizacji napisów na żywo.",
+            "Dodano filmy prezentujące produkt i rozszerzono wielojęzyczne przewodniki po produkcie."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Strona główna w przystępniejszy sposób przedstawia projekcję i mobilne nadtytuły.",
+          "new": [],
+          "improved": [
+            "Przebudowano stronę główną, aby ułatwić poznawanie procesów projekcji i mobilnych nadtytułów."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Witryna publiczna lepiej wspiera komercyjne zastosowania napisów.",
+          "new": [
+            "Dodano dedykowane strony dla obiektów komercyjnych i zastosowań eventowych."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Witryna publiczna zapewnia teraz bardziej spójne doświadczenie w różnych językach.",
+          "new": [
+            "Dodano wielojęzyczne strony publiczne i przełączanie języka, które pozostawia odwiedzających na bieżącej stronie."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Analiza scenariuszy obsługuje teraz więcej układów i wskazówek dotyczących postaci.",
+          "new": [],
+          "improved": [
+            "Poprawiono rozpoznawanie granic dialogów i wskazówek dotyczących postaci w scenariuszach o różnym formatowaniu."
+          ],
+          "fixed": []
         }
       ]
     }

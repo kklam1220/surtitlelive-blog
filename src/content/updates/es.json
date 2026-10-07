@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Esta versión mejora el análisis de guiones y hace más fiable la edición de guiones traducidos.",
+          "new": [],
+          "improved": [
+            "El análisis de guiones reconoce mejor las indicaciones de personaje centradas, incluso cuando falta una lista de reparto.",
+            "Durante el análisis de guiones, es menos probable que el diálogo, la configuración y los encabezados se confundan con la información preliminar.",
+            "Los resultados de traducción del editor permanecen sincronizados de forma más fiable, lo que ayuda a proteger las ediciones recientes."
+          ],
+          "fixed": [
+            "Ahora se aceptan las traducciones válidas que dejan sin cambios el texto existente."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Se restauró la posibilidad de que los colaboradores eliminen sus propias versiones guardadas."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión aclara las opciones de traducción y mejora el cambio de idioma.",
+          "new": [],
+          "improved": [
+            "Ahora es más fácil comparar las opciones de traducción estándar y con asistencia de AI en la página de precios.",
+            "El selector de idioma del sitio público ahora conserva el idioma elegido al navegar entre páginas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión añade información del producto y mejora la gestión de idiomas en las herramientas de accesibilidad y edición.",
+          "new": [
+            "Añadimos una página pública «Acerca de»."
+          ],
+          "improved": [
+            "Mejoramos la compatibilidad con idiomas del Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Corregimos la pérdida de cambios sin guardar en las traducciones de personajes al cambiar de idioma."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión mejora el análisis de guiones y el contexto de traducción, y aclara la información pública del producto.",
+          "new": [],
+          "improved": [
+            "Mejoramos la detección de diálogos e indicaciones de interlocutor en más formatos de guion.",
+            "Mejoramos la coherencia de las traducciones utilizando más contexto del guion circundante.",
+            "Aclaramos la información sobre el producto y los planes en las páginas públicas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versión incorpora información posterior a la función, controles para actualizaciones en directo y formas más claras de explorar el producto.",
+          "new": [
+            "Añadimos informes imprimibles posteriores a la función que muestran los idiomas ofrecidos durante una representación.",
+            "Añadimos un Front-of-House Access Pack para compartir información de accesibilidad del público con los equipos del recinto.",
+            "Añadimos historial de versiones y controles de vista previa y restauración para las actualizaciones de sobretítulos en directo.",
+            "Añadimos vídeos de demostración del producto y ampliamos las guías localizadas."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "La página de inicio presenta con más claridad los sobretítulos para proyección y móviles.",
+          "new": [],
+          "improved": [
+            "Reorientamos la página de inicio para ayudar a los visitantes a explorar los flujos de trabajo de proyección y sobretítulos móviles."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "El sitio público ahora responde mejor a los usos comerciales de los sobretítulos.",
+          "new": [
+            "Añadimos páginas específicas para espacios comerciales y casos de uso en eventos."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "El sitio público ofrece ahora una experiencia localizada más coherente.",
+          "new": [
+            "Añadimos páginas públicas traducidas y un selector de idioma que mantiene a los visitantes en la página actual."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "El análisis de guiones ahora admite más formatos e indicaciones de interlocutor.",
+          "new": [],
+          "improved": [
+            "Mejoramos la detección de los límites del diálogo y las indicaciones de interlocutor en guiones con formatos variados."
+          ],
+          "fixed": []
         }
       ]
     }

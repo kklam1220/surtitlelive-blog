@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
@@ -24,6 +27,90 @@ const locales = fs
   .readdirSync(localizedRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name);
+
+test("localization rejects wrong slugs, locales and source paths before publication", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "blog-source-identity-"));
+  const slug = "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment";
+  const copy = (relative) => {
+    const target = path.join(fixture, relative);
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.copyFileSync(path.join(blogRoot, relative), target);
+    return target;
+  };
+  try {
+    const configPath = copy("i18n/blog-localization.config.json");
+    const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+    config.locales = ["id"];
+    fs.writeFileSync(configPath, JSON.stringify(config));
+    copy(`src/content/blog/${slug}.md`);
+    copy("src/content/updates/en.json"); copy("src/content/updates/id.json");
+    const payloadPath = copy(`src/content/i18n/blog/id/${slug}.json`);
+    const original = JSON.parse(fs.readFileSync(payloadPath, "utf8"));
+    const check = () => spawnSync(process.execPath, [path.join(scriptsDirectory, "check-blog-localization.cjs")], { cwd: fixture, encoding: "utf8" });
+    const valid = check();
+    assert.equal(valid.status, 0, valid.stdout + valid.stderr);
+    for (const change of [{ slug: slug.replace("surtitles", "surtitel") }, { locale: "fr" }, { sourceLocale: "id" }, { sourcePath: "src/content/blog/missing.md" }]) {
+      fs.writeFileSync(payloadPath, JSON.stringify({ ...original, ...change }));
+      const invalid = check();
+      assert.equal(invalid.status, 1);
+      assert.match(invalid.stderr, /source identity must match/);
+    }
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
+});
+
+test("reviewed serializer and browser sanitizer fixes cover every locked copy", () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(blogRoot, "package.json"), "utf8"));
+  const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));
+  for (const [name, version] of Object.entries({ devalue: "5.9.3", dompurify: "3.4.16" })) {
+    assert.equal(manifest.overrides?.[name], version, `${name} must preserve the reviewed security pin`);
+    const copies = Object.entries(lock.packages).filter(([packagePath]) =>
+      packagePath.endsWith(`node_modules/${name}`),
+    );
+    assert.ok(copies.length > 0, `${name} must remain in the actual dependency graph`);
+    for (const [packagePath, node] of copies) {
+      assert.equal(node.version, version, `${packagePath} must not retain a vulnerable copy`);
+    }
+  }
+});
+
+test("static Blog image caching does not use request-controlled stale reuse", () => {
+  const config = fs.readFileSync(path.join(blogRoot, "astro.config.mjs"), "utf8");
+  const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));
+  const remoteHelper = fs.readFileSync(
+    path.join(blogRoot, "node_modules", "astro", "dist", "assets", "build", "remote.js"),
+    "utf8",
+  );
+  const assertTtlOnly = (source) => {
+    assert.match(source, /from ["']http-cache-semantics["']/);
+    assert.equal((source.match(/new CachePolicy\(/g) ?? []).length, 2);
+    assert.equal(
+      (source.match(/policy\.storable\(\)\s*\?\s*policy\.timeToLive\(\)\s*:\s*0/g) ?? []).length,
+      2,
+    );
+    assert.doesNotMatch(
+      source,
+      /\.\s*(?:evaluateRequest|satisfiesWithoutRevalidation)\s*\(|\[\s*["'`](?:evaluateRequest|satisfiesWithoutRevalidation)["'`]\s*\]\s*\(/,
+    );
+  };
+
+  assert.match(config, /output:\s*["']static["']/);
+  assert.equal(lock.packages["node_modules/astro"].version, "7.3.2");
+  assertTtlOnly(remoteHelper);
+  assert.equal(
+    createHash("sha256").update(remoteHelper).digest("hex"),
+    "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+  );
+  const ttlLine = "const expires = policy.storable() ? policy.timeToLive() : 0;";
+  for (const method of ["evaluateRequest", "satisfiesWithoutRevalidation"]) {
+    for (const call of [`policy.${method}(req);`, `policy["${method}"](req);`]) {
+      const staleReuseMutant = remoteHelper.replace(ttlLine, `${call}\n  ${ttlLine}`);
+      assert.notEqual(staleReuseMutant, remoteHelper);
+      assert.throws(() => assertTtlOnly(staleReuseMutant));
+    }
+  }
+});
 
 test("provider HTML is inert while reviewed article structure is preserved", () => {
   const sanitized = sanitizeLocalizedBlogHtml([

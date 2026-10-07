@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Rilis ini meningkatkan analisis naskah dan membuat pengeditan naskah terjemahan lebih andal.",
+          "new": [],
+          "improved": [
+            "Analisis naskah kini lebih baik dalam mengenali petunjuk pembicara yang berada di tengah, bahkan saat daftar pemeran tidak tersedia.",
+            "Dialog, pengaturan, dan judul kini lebih jarang keliru dianggap sebagai informasi awal saat analisis naskah.",
+            "Hasil terjemahan di editor tetap tersinkron dengan lebih andal, sehingga perubahan terbaru lebih terlindungi."
+          ],
+          "fixed": [
+            "Terjemahan valid yang tidak mengubah teks yang ada kini diterima."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Memulihkan kemampuan kolaborator untuk menghapus versi tersimpan milik mereka sendiri."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini memperjelas opsi terjemahan dan meningkatkan pengalaman berganti bahasa.",
+          "new": [],
+          "improved": [
+            "Opsi terjemahan standar dan terjemahan dengan bantuan AI kini lebih mudah dibandingkan di halaman harga.",
+            "Pemilih bahasa di situs publik kini mempertahankan bahasa pilihan saat Anda berpindah halaman."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan informasi produk dan meningkatkan pengelolaan bahasa di alat aksesibilitas dan fitur pengeditan.",
+          "new": [
+            "Menambahkan halaman publik Tentang."
+          ],
+          "improved": [
+            "Meningkatkan dukungan bahasa di Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Memperbaiki hilangnya perubahan terjemahan karakter yang belum disimpan saat berganti bahasa."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini meningkatkan analisis naskah dan konteks terjemahan serta memperjelas informasi produk publik.",
+          "new": [],
+          "improved": [
+            "Meningkatkan pengenalan dialog dan petunjuk penutur pada lebih banyak tata letak naskah.",
+            "Meningkatkan konsistensi terjemahan dengan menggunakan lebih banyak konteks dari bagian naskah di sekitarnya.",
+            "Memperjelas informasi produk dan paket di halaman publik."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Rilis ini menambahkan informasi pascapertunjukan, kontrol pembaruan langsung, dan cara yang lebih jelas untuk menjelajahi produk.",
+          "new": [
+            "Menambahkan laporan pascapertunjukan yang dapat dicetak dan menampilkan bahasa yang ditawarkan selama pertunjukan.",
+            "Menambahkan Front-of-House Access Pack untuk berbagi informasi aksesibilitas penonton dengan tim venue.",
+            "Menambahkan riwayat versi serta kontrol pratinjau dan pemulihan untuk pembaruan subtitel langsung.",
+            "Menambahkan video demo produk dan memperluas panduan produk dalam berbagai bahasa."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Beranda kini memperkenalkan proyeksi dan subtitel panggung di perangkat seluler dengan lebih jelas.",
+          "new": [],
+          "improved": [
+            "Menata ulang fokus beranda agar pengunjung dapat menjelajahi alur kerja proyeksi dan subtitel panggung di perangkat seluler."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Situs publik kini lebih mendukung penggunaan subtitel panggung untuk kebutuhan komersial.",
+          "new": [
+            "Menambahkan halaman khusus untuk venue komersial dan kebutuhan acara."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Situs publik kini menghadirkan pengalaman multibahasa yang lebih konsisten.",
+          "new": [
+            "Menambahkan halaman publik dalam berbagai bahasa dan fitur penggantian bahasa yang membuat pengunjung tetap berada di halaman saat ini."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Analisis naskah kini mendukung lebih banyak tata letak dan petunjuk penutur.",
+          "new": [],
+          "improved": [
+            "Meningkatkan pengenalan batas dialog dan petunjuk penutur pada naskah dengan berbagai format."
+          ],
+          "fixed": []
         }
       ]
     }

@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện khả năng phân tích kịch bản và giúp việc chỉnh sửa kịch bản đã dịch đáng tin cậy hơn.",
+          "new": [],
+          "improved": [
+            "Phân tích kịch bản nhận diện tốt hơn các chỉ dẫn người nói được căn giữa, ngay cả khi thiếu danh sách diễn viên.",
+            "Trong quá trình phân tích kịch bản, hội thoại, chỉ dẫn bối cảnh và tiêu đề ít bị nhầm là phần thông tin đầu kịch bản hơn.",
+            "Kết quả dịch trong trình chỉnh sửa được đồng bộ ổn định hơn, giúp bảo toàn các chỉnh sửa gần đây."
+          ],
+          "fixed": [
+            "Các bản dịch hợp lệ không làm thay đổi văn bản hiện có giờ đây được chấp nhận."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Khôi phục khả năng xóa các phiên bản đã lưu của chính mình cho người cộng tác."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này làm rõ các lựa chọn dịch và cải thiện việc chuyển đổi ngôn ngữ.",
+          "new": [],
+          "improved": [
+            "Giúp so sánh các lựa chọn dịch tiêu chuẩn và dịch có hỗ trợ AI dễ dàng hơn trên trang giá.",
+            "Bộ chọn ngôn ngữ công khai giờ đây giữ nguyên ngôn ngữ bạn đã chọn khi chuyển giữa các trang."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này bổ sung thông tin sản phẩm và cải thiện khả năng xử lý ngôn ngữ trong công cụ hỗ trợ tiếp cận và khi chỉnh sửa.",
+          "new": [
+            "Đã thêm trang Giới thiệu công khai."
+          ],
+          "improved": [
+            "Cải thiện hỗ trợ ngôn ngữ trong Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Đã khắc phục lỗi mất các chỉnh sửa bản dịch nhân vật chưa lưu khi chuyển đổi ngôn ngữ."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này cải thiện khả năng phân tích kịch bản và ngữ cảnh dịch, đồng thời làm rõ thông tin sản phẩm công khai.",
+          "new": [],
+          "improved": [
+            "Cải thiện khả năng nhận diện hội thoại và dấu hiệu người nói trong nhiều kiểu bố cục kịch bản hơn.",
+            "Cải thiện tính nhất quán của bản dịch bằng cách sử dụng thêm ngữ cảnh xung quanh trong kịch bản.",
+            "Làm rõ thông tin sản phẩm và gói dịch vụ trên các trang công khai."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Bản phát hành này bổ sung thông tin sau buổi diễn, công cụ kiểm soát cập nhật trực tiếp và cách khám phá sản phẩm rõ ràng hơn.",
+          "new": [
+            "Đã thêm báo cáo sau buổi diễn có thể in, cho biết những ngôn ngữ đã được cung cấp trong buổi diễn.",
+            "Đã thêm Front-of-House Access Pack để chia sẻ thông tin hỗ trợ khán giả với đội ngũ địa điểm tổ chức.",
+            "Đã thêm lịch sử phiên bản, bản xem trước và công cụ khôi phục cho các bản cập nhật phụ đề trực tiếp.",
+            "Đã thêm video giới thiệu sản phẩm và mở rộng hướng dẫn sản phẩm được bản địa hóa."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "Trang chủ giờ đây giới thiệu rõ ràng hơn về quy trình trình chiếu và phụ đề sân khấu trên thiết bị di động.",
+          "new": [],
+          "improved": [
+            "Đã định hướng lại trang chủ để giúp khách truy cập khám phá quy trình trình chiếu và phụ đề sân khấu trên thiết bị di động."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Trang web công khai giờ đây hỗ trợ tốt hơn các trường hợp sử dụng phụ đề thương mại.",
+          "new": [
+            "Đã thêm các trang riêng dành cho địa điểm thương mại và sự kiện."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Trang web công khai giờ đây mang đến trải nghiệm bản địa hóa nhất quán hơn.",
+          "new": [
+            "Đã thêm các trang công khai được bản địa hóa và tính năng chuyển ngôn ngữ giúp khách truy cập vẫn ở trang hiện tại."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "Phân tích kịch bản giờ đây hỗ trợ nhiều kiểu bố cục và dấu hiệu nhận biết người nói hơn.",
+          "new": [],
+          "improved": [
+            "Cải thiện khả năng nhận diện ranh giới hội thoại và dấu hiệu người nói trong các kịch bản có định dạng đa dạng."
+          ],
+          "fixed": []
         }
       ]
     }

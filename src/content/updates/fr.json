@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Cette version améliore l’analyse des scripts et fiabilise la modification des scripts traduits.",
+          "new": [],
+          "improved": [
+            "L’analyse des scripts reconnaît mieux les indications de locuteur centrées, même en l’absence de liste de distribution.",
+            "Lors de l’analyse des scripts, les dialogues, réglages et titres sont moins susceptibles d’être confondus avec les informations préliminaires.",
+            "Les résultats de traduction dans l’éditeur restent synchronisés plus fiablement, ce qui aide à préserver les modifications récentes."
+          ],
+          "fixed": [
+            "Les traductions valides qui laissent le texte existant inchangé sont désormais acceptées."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Les collaborateurs peuvent à nouveau supprimer leurs propres versions enregistrées."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Cette version clarifie les options de traduction et améliore le changement de langue.",
+          "new": [],
+          "improved": [
+            "Les options de traduction standard et assistée par AI sont désormais plus faciles à comparer sur la page des tarifs.",
+            "Le sélecteur de langue du site public conserve désormais la langue choisie lors de la navigation entre les pages."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Cette version ajoute des informations sur le produit et améliore la gestion des langues dans les outils d’accessibilité et d’édition.",
+          "new": [
+            "Ajout d’une page publique « À propos »."
+          ],
+          "improved": [
+            "Amélioration de la prise en charge des langues dans le Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Correction de la perte des modifications non enregistrées dans les traductions de personnages lors d’un changement de langue."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Cette version améliore l’analyse des scripts et le contexte de traduction, et clarifie les informations publiques sur le produit.",
+          "new": [],
+          "improved": [
+            "Amélioration de la détection des dialogues et des indications de locuteur dans davantage de mises en page de scripts.",
+            "Amélioration de la cohérence des traductions grâce à une meilleure prise en compte du contexte du script.",
+            "Clarification des informations sur le produit et les forfaits sur les pages publiques."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Cette version ajoute des informations après-spectacle, des commandes de mise à jour en direct et des moyens plus clairs de découvrir le produit.",
+          "new": [
+            "Ajout de rapports après-spectacle imprimables indiquant les langues proposées pendant une représentation.",
+            "Ajout d’un Front-of-House Access Pack pour partager les informations d’accessibilité du public avec les équipes du lieu.",
+            "Ajout de l’historique des versions ainsi que de commandes d’aperçu et de restauration pour les mises à jour de surtitres en direct.",
+            "Ajout de vidéos de démonstration du produit et d’un plus grand choix de guides localisés."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "La page d’accueil présente plus clairement la projection et le surtitrage mobile.",
+          "new": [],
+          "improved": [
+            "Réorientation de la page d’accueil pour aider les visiteurs à découvrir les flux de travail de projection et de surtitrage mobile."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "Le site public répond désormais mieux aux besoins commerciaux en surtitrage.",
+          "new": [
+            "Ajout de pages dédiées aux lieux commerciaux et aux événements."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "Le site public offre désormais une expérience localisée plus cohérente.",
+          "new": [
+            "Ajout de pages publiques traduites et d’un sélecteur de langue qui permet aux visiteurs de rester sur la page consultée."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "L’analyse des scripts prend désormais en charge davantage de mises en page et d’indications de locuteur.",
+          "new": [],
+          "improved": [
+            "Amélioration de la détection des limites de dialogue et des indications de locuteur dans les scripts aux formats variés."
+          ],
+          "fixed": []
         }
       ]
     }

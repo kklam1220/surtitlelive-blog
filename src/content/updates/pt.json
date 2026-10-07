@@ -19,6 +19,21 @@
       "endDate": "2026-10-10",
       "versions": [
         {
+          "version": "v261005.01",
+          "releaseDate": "2026-10-05",
+          "product": "Pockitle",
+          "summary": "Esta versão melhora a análise de roteiros e torna mais confiável a edição de roteiros traduzidos.",
+          "new": [],
+          "improved": [
+            "A análise de roteiros reconhece melhor as indicações de personagem centralizadas, mesmo quando não há uma lista de elenco.",
+            "Durante a análise de roteiros, diálogos, configurações e títulos têm menos probabilidade de ser confundidos com conteúdo preliminar.",
+            "Os resultados da tradução no Editor permanecem sincronizados com mais confiabilidade, ajudando a proteger as edições recentes."
+          ],
+          "fixed": [
+            "Traduções válidas que mantêm o texto existente sem alterações agora são aceitas."
+          ]
+        },
+        {
           "version": "v261004.01",
           "releaseDate": "2026-10-04",
           "product": "Pockitle",
@@ -663,6 +678,128 @@
           "fixed": [
             "Restaurada a possibilidade de colaboradores excluírem as próprias versões salvas."
           ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-30",
+      "versions": [
+        {
+          "version": "v260527.01",
+          "releaseDate": "2026-05-27",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versão clarifica as opções de tradução e melhora a mudança de idioma.",
+          "new": [],
+          "improved": [
+            "Facilitámos a comparação entre as opções de tradução padrão e tradução assistida por IA na página de preços.",
+            "O seletor de idioma do site público mantém o idioma escolhido ao navegar entre páginas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260525.01",
+          "releaseDate": "2026-05-25",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versão acrescenta informações sobre o produto e melhora o suporte de idiomas nas ferramentas de acessibilidade e edição.",
+          "new": [
+            "Adicionámos uma página pública About."
+          ],
+          "improved": [
+            "Melhorámos o suporte de idiomas no Front-of-House Access Pack."
+          ],
+          "fixed": [
+            "Corrigimos a perda de edições não guardadas das traduções de personagens ao mudar de idioma."
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-23",
+      "versions": [
+        {
+          "version": "v260523.01",
+          "releaseDate": "2026-05-23",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versão melhora a análise de guiões e o contexto das traduções, além de clarificar as informações públicas sobre o produto.",
+          "new": [],
+          "improved": [
+            "Melhorámos o reconhecimento de diálogos e indicações de personagem em mais formatos de guião.",
+            "Aumentámos a consistência das traduções recorrendo a mais contexto do guião.",
+            "Clarificámos as informações sobre o produto e os planos nas páginas públicas."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260518.02",
+          "releaseDate": "2026-05-20",
+          "product": "SurtitleLive Cloud",
+          "summary": "Esta versão acrescenta informações pós-espetáculo, controlos para atualizações em direto e formas mais claras de explorar o produto.",
+          "new": [
+            "Adicionámos relatórios pós-espetáculo imprimíveis que mostram os idiomas disponibilizados durante uma atuação.",
+            "Adicionámos o Front-of-House Access Pack para partilhar com as equipas do espaço informações de acessibilidade para o público.",
+            "Adicionámos histórico de versões, pré-visualização e opções de restauro para atualizações de legendas em direto.",
+            "Adicionámos vídeos de demonstração do produto e expandimos os guias do produto localizados."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-05-03",
+      "endDate": "2026-05-09",
+      "versions": [
+        {
+          "version": "v260508.01",
+          "releaseDate": "2026-05-08",
+          "product": "SurtitleLive Cloud",
+          "summary": "A página inicial apresenta de forma mais clara a projeção e os sobretítulos em dispositivos móveis.",
+          "new": [],
+          "improved": [
+            "Reformulámos a página inicial para ajudar os visitantes a explorar os fluxos de trabalho de projeção e sobretítulos móveis."
+          ],
+          "fixed": []
+        },
+        {
+          "version": "v260504.02",
+          "releaseDate": "2026-05-04",
+          "product": "SurtitleLive Cloud",
+          "summary": "O site público passou a apoiar melhor os usos comerciais de legendagem.",
+          "new": [
+            "Adicionámos páginas específicas para espaços comerciais e eventos."
+          ],
+          "improved": [],
+          "fixed": []
+        }
+      ]
+    },
+    {
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-11",
+      "versions": [
+        {
+          "version": "v260407.01",
+          "releaseDate": "2026-04-07",
+          "product": "SurtitleLive Cloud",
+          "summary": "O site público oferece agora uma experiência mais consistente em vários idiomas.",
+          "new": [
+            "Adicionámos páginas públicas localizadas e uma opção de mudança de idioma que mantém os visitantes na página atual."
+          ],
+          "improved": [],
+          "fixed": []
+        },
+        {
+          "version": "v260405.01",
+          "releaseDate": "2026-04-05",
+          "product": "SurtitleLive Cloud",
+          "summary": "A análise de guiões passou a lidar com mais tipos de disposição e indicações de personagem.",
+          "new": [],
+          "improved": [
+            "Melhorámos o reconhecimento dos limites dos diálogos e das indicações de personagem em guiões com formatações variadas."
+          ],
+          "fixed": []
         }
       ]
     }

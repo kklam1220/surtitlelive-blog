@@ -322,6 +322,18 @@ if (!/https:\/\/surtitlelive\.com\/blog\/zh-TW\/updates\//.test(sitemapText)) {
 
 for (const filePath of htmlFiles) {
   const content = fs.readFileSync(filePath, "utf8");
+  const canonical = content.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
+  if (path.basename(filePath) !== "404.html" && canonical?.startsWith("https://surtitlelive.com/blog/")) {
+    const relative = path.relative(distDir, filePath).replace(/\\/g, "/");
+    assert.equal(canonical, `https://surtitlelive.com/blog/${relative.replace(/index\.html$/, "")}`, `Canonical differs from built route: ${relative}`);
+    for (const [, href] of content.matchAll(/<link\b(?=[^>]*hreflang=)[^>]*href="([^"]+)"/g)) {
+      const target = new URL(href);
+      assert.equal(target.origin, "https://surtitlelive.com", `Unexpected blog hreflang origin: ${href}`);
+      assert.ok(target.pathname.startsWith("/blog/"), `Unexpected blog hreflang path: ${href}`);
+      assert.ok(fs.existsSync(path.join(distDir, target.pathname.slice(6), "index.html")), `Missing hreflang destination: ${href}`);
+    }
+    assert.doesNotMatch(content, /href="https:\/\/surtitlelive\.com\/(?:privacy|terms|viewer-agreement)(?:[/?#"])/, `Retired legal link: ${relative}`);
+  }
   const jsonLdCount = (
     content.match(/<script type="application\/ld\+json">/g) || []
   ).length;

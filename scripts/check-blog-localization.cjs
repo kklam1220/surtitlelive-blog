@@ -423,6 +423,7 @@ function main() {
     let stale = 0;
     let englishCopy = 0;
     let invalid = 0;
+    let invalidIdentity = 0;
     let invalidBodyMarkup = 0;
     let invalidQlabSemantics = 0;
     let markdownLinkParity = 0;
@@ -448,6 +449,11 @@ function main() {
         continue;
       }
 
+      if (payload.slug !== post.slug || payload.locale !== locale || payload.sourceLocale !== "en" || payload.sourcePath !== post.relativePath) {
+        invalidIdentity += 1;
+        hasError = true;
+        console.error(`[blog:i18n:check] [${locale}] ${post.slug}: source identity must match slug, locale, sourceLocale and sourcePath`);
+      }
       if (isDeferred && payload.status !== "translated") {
         deferred += 1;
         continue;
@@ -565,7 +571,7 @@ function main() {
     }
 
     console.log(
-      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} blogTermResidue=${blogTermResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} markdownLinkParity=${markdownLinkParity} markdownImageParity=${markdownImageParity} deferred=${deferred}`,
+      `[blog:i18n:check] [${locale}] missing=${missing} stale=${stale} invalidIdentity=${invalidIdentity} englishCopy=${englishCopy} englishProseResidue=${englishProseResidue} geoEnglishProseResidue=${geoEnglishProseResidue} blogTermResidue=${blogTermResidue} invalidStatus=${invalid} invalidBodyMarkup=${invalidBodyMarkup} invalidQlabSemantics=${invalidQlabSemantics} markdownLinkParity=${markdownLinkParity} markdownImageParity=${markdownImageParity} deferred=${deferred}`,
     );
   }
 
