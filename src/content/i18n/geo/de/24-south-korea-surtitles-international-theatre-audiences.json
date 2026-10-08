@@ -25,8 +25,8 @@
       "answer": "Nein. Pockitle Cue Viewer läuft über einen Link oder QR-Code im Smartphone-Browser. Eine Spielstätte kann eigene Geräte der Gäste mit etwa 10 bis 20 Leih-Smartphones und Reserve kombinieren, sofern Saal und Netzwerk zuvor geprüft wurden."
     },
     {
-      "question": "Sind übersetzte Übertitel dasselbe wie barrierefreie Untertitel?",
-      "answer": "Nein. Untertitel für gehörlose und schwerhörige Menschen können zusätzlich Sprecher- und Geräuschinformationen benötigen. Die Angebote müssen an die jeweiligen Bedürfnisse angepasst werden."
+      "question": "Unterstützt Pockitle Cue sowohl mehrsprachige Übertitel als auch barrierefreie Untertitel?",
+      "answer": "Ja. Pockitle Cue unterstützt übersetzte Dialoge, die Kennzeichnung der Sprechenden und manuell vorbereitete barrierefreie Untertitel für bedeutungsvolle Geräusche. Diese Informationen erfüllen unterschiedliche Bedürfnisse des Publikums und können für dieselbe Inszenierung vorbereitet werden. Unser [Macbeth-Beispiel](https://surtitlelive.com/blog/de/21-theatre-accessibility-captions-stage-directions/) zeigt, wie wichtige Geräuschhinweise das Publikum erreichen, ohne als Dialog oder als reine Produktionsanweisungen eingeordnet zu werden."
     }
   ],
   "glossary": [

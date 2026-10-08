@@ -6,7 +6,8 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
 import { resolveBlogImage } from '../lib/blogAssets';
-import { serializeJsonLd } from '../lib/blogSecurity.mjs';
+import { serializeJsonLd, sanitizeLocalizedBlogHtml } from '../lib/blogSecurity.mjs';
+import { marked } from 'marked';
 
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -96,7 +97,7 @@ const generatedFaqSchema = Array.isArray(faqItems) && faqItems.length > 0
 				"name": item.question,
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": item.answer,
+					"text": item.answer.includes("](") ? sanitizeLocalizedBlogHtml(marked.parseInline(item.answer, { async: false })) : item.answer,
 				},
 			})),
 	}

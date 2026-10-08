@@ -25,8 +25,8 @@
       "answer": "Nie. Pockitle Cue Viewer działa w przeglądarce smartfona przez link lub kod QR. Teatr może wykorzystać prywatne telefony widzów oraz około 10–20 urządzeń do wypożyczenia i zapasowe, po wcześniejszym sprawdzeniu sali i sieci."
     },
     {
-      "question": "Czy napisy tłumaczone zastępują napisy dla osób głuchych i niedosłyszących?",
-      "answer": "Nie. Dostępne napisy mogą wymagać dodatkowych informacji o mówiących i ważnych dźwiękach. Warto osobno uwzględnić potrzeby obu grup."
+      "question": "Czy Pockitle Cue obsługuje zarówno napisy wielojęzyczne, jak i napisy dostępnościowe?",
+      "answer": "Tak. Pockitle Cue obsługuje tłumaczenie dialogów, oznaczanie osób mówiących oraz ręcznie przygotowywane napisy dostępnościowe opisujące istotne dźwięki. Informacje te odpowiadają na różne potrzeby widzów i można je przygotować dla tej samej inscenizacji. Nasz [przykład z „Makbeta”](https://surtitlelive.com/blog/pl/21-theatre-accessibility-captions-stage-directions/) pokazuje, jak przekazać widzom ważne sygnały dźwiękowe bez klasyfikowania ich jako dialogu lub didaskaliów przeznaczonych wyłącznie dla zespołu realizującego spektakl."
     }
   ],
   "glossary": [

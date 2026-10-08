@@ -21,7 +21,7 @@ The language barrier is more directly relevant. A [2020 study of 222 Chinese and
 
 ![Summary of Chinese accommodation arrivals in Italy, East Asian heritage preferences and a South Korean study of willingness to attend subtitled performances.](./blog-24-language-access-infographic.png)
 
-*The graphic brings together three different measures: accommodation arrivals in Italy, heritage preferences and stated attendance intentions in South Korea. None measures additional ticket sales in European theatres. Sources and qualifications are given above.*
+*The graphic brings together three different measures: accommodation arrivals in Italy, heritage preferences and stated attendance intentions in South Korea.*
 
 ## What South Korea has learned
 

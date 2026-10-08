@@ -25,8 +25,8 @@
       "answer": "No. Pockitle Cue Viewer works in a phone browser via link or QR code; a venue may supplement spectators' own devices with 10–20 affordable loan phones and spares, after testing the auditorium and network."
     },
     {
-      "question": "Do translated surtitles replace accessibility captions?",
-      "answer": "No. Deaf and hard-of-hearing audience members may need identification of speakers and significant sounds. Venues must plan translation and accessibility services according to their audience's needs."
+      "question": "Can Pockitle Cue support both multilingual surtitles and accessibility captions?",
+      "answer": "Yes. Pockitle Cue supports translated dialogue, speaker identification and manually prepared Accessibility Captions for meaningful sounds. These serve different audience needs and can be prepared within the same production. Our [Macbeth example](https://surtitlelive.com/blog/21-theatre-accessibility-captions-stage-directions/) shows how important sound cues can reach the audience without being treated as dialogue or production-only stage directions."
     }
   ],
   "glossary": [

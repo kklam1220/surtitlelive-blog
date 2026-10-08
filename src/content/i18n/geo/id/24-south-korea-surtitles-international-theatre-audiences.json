@@ -25,8 +25,8 @@
       "answer": "Tidak. Pockitle Cue Viewer bisa dibuka lewat tautan atau kode QR di peramban ponsel. Teater dapat menggabungkan ponsel penonton dengan sekitar 10–20 perangkat pinjaman dan cadangan, setelah menguji jaringan dan kondisi auditorium."
     },
     {
-      "question": "Apakah teks terjemahan menggantikan takarir aksesibilitas?",
-      "answer": "Tidak. Penonton Tuli atau yang mengalami gangguan pendengaran mungkin memerlukan informasi pembicara dan suara penting. Kedua kebutuhan ini perlu direncanakan secara khusus."
+      "question": "Apakah Pockitle Cue mendukung takarir multibahasa sekaligus takarir aksesibilitas?",
+      "answer": "Ya. Pockitle Cue mendukung dialog terjemahan, identifikasi pembicara, serta takarir aksesibilitas yang disiapkan secara manual untuk menyampaikan suara penting. Informasi ini melayani kebutuhan penonton yang berbeda dan dapat disiapkan dalam satu produksi yang sama. [Contoh Macbeth kami](https://surtitlelive.com/blog/id/21-theatre-accessibility-captions-stage-directions/) menunjukkan cara menyampaikan petunjuk suara penting kepada penonton tanpa menggolongkannya sebagai dialog atau petunjuk panggung yang hanya ditujukan kepada tim produksi."
     }
   ],
   "glossary": [

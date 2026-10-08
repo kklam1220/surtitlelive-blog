@@ -4,6 +4,8 @@ import BlogPost from '../layouts/BlogPost.astro';
 import { listIndexedLocalizedLocalesForSlug, listLocalizedLocalesForSlug } from '../lib/localizedBlog';
 import { hasAuthoredGeoSection, readGeoBlock } from '../lib/geoBlocks';
 import { resolveBlogLocaleMeta } from '../i18n/locale-config';
+import { marked } from 'marked';
+import { sanitizeLocalizedBlogHtml } from '../lib/blogSecurity.mjs';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -87,7 +89,7 @@ const localeLinks = [
 				{visibleGeoBlock.faq.slice(0, 4).map((item) => (
 					<div>
 						<h3>{item.question}</h3>
-						<p>{item.answer}</p>
+						<p>{item.answer.includes("](") ? <Fragment set:html={sanitizeLocalizedBlogHtml(marked.parseInline(item.answer, { async: false }))} /> : item.answer}</p>
 					</div>
 				))}
 				<h2>{visibleGeoBlock.sectionTitles?.glossary || "Glossary"}</h2>

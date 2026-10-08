@@ -251,6 +251,34 @@ test("Blog24 keeps the chosen hero and places localized research artwork after t
   }
 });
 
+test("Blog24 affirmative accessibility FAQ links safely in every locale", () => {
+  const slug = "24-south-korea-surtitles-international-theatre-audiences";
+  const source = fs.readFileSync(path.join(blogRoot, "src/content/blog", `${slug}.md`), "utf8");
+  assert.match(source, /\*The graphic brings together three different measures: accommodation arrivals in Italy, heritage preferences and stated attendance intentions in South Korea\.\*/);
+  assert.doesNotMatch(source, /None measures additional ticket sales in European theatres\. Sources and qualifications are given above\./);
+  for (const locale of ["en", ...locales]) {
+    const geo = JSON.parse(fs.readFileSync(path.join(blogRoot, "src/content/i18n/geo", locale, `${slug}.json`), "utf8"));
+    const item = geo.faq[2];
+    const href = `https://surtitlelive.com/blog/${locale === "en" ? "" : `${locale}/`}21-theatre-accessibility-captions-stage-directions/`;
+    if (locale === "en") {
+      assert.equal(item.question, "Can Pockitle Cue support both multilingual surtitles and accessibility captions?");
+      assert.match(item.answer, /^Yes\. Pockitle Cue supports translated dialogue, speaker identification and manually prepared Accessibility Captions for meaningful sounds\./);
+    }
+    assert.ok(item.answer.includes(`](${href})`), `${locale} needs the canonical Macbeth link`);
+    const html = sanitizeLocalizedBlogHtml(marked.parseInline(item.answer, { async: false }));
+    assert.ok(html.includes(`href="${href}"`), `${locale} must render a clickable link`);
+    assert.doesNotMatch(html, /\]\(https?:/);
+  }
+  for (const relative of ["src/pages/[...slug].astro", "src/pages/[locale]/[slug].astro", "src/layouts/BlogPost.astro"]) {
+    const renderer = fs.readFileSync(path.join(blogRoot, relative), "utf8");
+    assert.ok(renderer.includes('item.answer.includes("](")'), `${relative} must preserve plain answers`);
+    assert.ok(renderer.includes('sanitizeLocalizedBlogHtml(marked.parseInline(item.answer, { async: false }))'), `${relative} must sanitize link answers`);
+  }
+  const unsafe = '[bad](javascript:alert(1)) <img src="/fixture.png" onerror="alert(2)"> <script>globalThis.compromised = true</script>';
+  const inert = sanitizeLocalizedBlogHtml(marked.parseInline(unsafe, { async: false }));
+  assert.doesNotMatch(inert, /javascript:|onerror|<script|globalThis/i);
+});
+
 test("canonical-link parity permits a supported locale route prefix", () => {
   assert.equal(
     normalizeMarkdownDestination("/es/mobile-theatre-subtitles", locales),

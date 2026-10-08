@@ -25,8 +25,8 @@
       "answer": "不需要。Pockitle Cue Viewer 可透過連結或 QR Code 在手機瀏覽器開啟；劇院可以配合觀眾自備手機，準備約 10 至 20 部借用裝置及後備機，並事先測試網絡和亮度。"
     },
     {
-      "question": "翻譯舞台字幕是否等於完整的無障礙字幕？",
-      "answer": "不是。聽障觀眾可能需要說話者及重要音效標示；劇院應按不同觀眾需要安排翻譯及無障礙服務。"
+      "question": "Pockitle Cue 能同時支援多語言舞台字幕和無障礙字幕嗎？",
+      "answer": "可以。Pockitle Cue 支援翻譯後的對白、說話者標示，以及為重要聲音手動編寫的無障礙字幕。這些資訊服務於觀眾的不同需要，可以為同一部製作一併準備。我們的[《馬克白》例子](https://surtitlelive.com/blog/zh-TW/21-theatre-accessibility-captions-stage-directions/)展示了如何將重要的聲音提示傳達給觀眾，而不必把它們歸為角色對白或僅供製作團隊使用的舞台指示。"
     }
   ],
   "glossary": [

@@ -25,8 +25,8 @@
       "answer": "Hayır. Pockitle Cue Viewer, telefon tarayıcısında bağlantı veya QR koduyla çalışır. Tiyatro, seyircilerin kendi telefonlarını 10–20 ödünç cihaz ve yedeklerle tamamlayabilir; önce salon ve ağ koşulları sınanmalıdır."
     },
     {
-      "question": "Çeviri üst yazıları erişilebilirlik alt yazılarının yerini tutar mı?",
-      "answer": "Hayır. İşitme engelli seyirciler için konuşmacıların ve önemli seslerin belirtilmesi gerekebilir. Hizmetler seyircilerin farklı ihtiyaçlarına göre düzenlenmelidir."
+      "question": "Pockitle Cue hem çok dilli üst yazıları hem de erişilebilirlik alt yazılarını destekliyor mu?",
+      "answer": "Evet. Pockitle Cue, çevrilmiş diyalogları, konuşmacıların belirtilmesini ve anlamlı sesler için elle hazırlanan erişilebilirlik alt yazılarını destekler. Bu bilgiler seyircilerin farklı ihtiyaçlarına karşılık verir ve aynı prodüksiyon için hazırlanabilir. [Macbeth örneğimiz](https://surtitlelive.com/blog/tr/21-theatre-accessibility-captions-stage-directions/), önemli ses ipuçlarının diyalog ya da yalnızca prodüksiyon ekibine yönelik sahne yönergeleri olarak sınıflandırılmadan seyirciye nasıl ulaştırılabileceğini gösterir."
     }
   ],
   "glossary": [

@@ -25,8 +25,8 @@
       "answer": "No. Pockitle Cue Viewer funciona en el navegador del móvil mediante enlace o código QR. Un teatro puede combinar los teléfonos del público con unos 10 a 20 dispositivos de préstamo y reservas, tras comprobar la red y la iluminación de la sala."
     },
     {
-      "question": "¿Los sobretítulos traducidos sustituyen a los subtítulos accesibles?",
-      "answer": "No. Las personas sordas o con dificultades auditivas pueden necesitar que se identifiquen las personas que hablan y los sonidos relevantes. Conviene planificar ambos servicios según las necesidades reales."
+      "question": "¿Pockitle Cue admite tanto sobretítulos multilingües como subtítulos accesibles?",
+      "answer": "Sí. Pockitle Cue permite preparar diálogos traducidos, identificar a quienes hablan y añadir manualmente subtítulos accesibles para los sonidos relevantes. Estas funciones atienden distintas necesidades del público y pueden prepararse para una misma producción. Nuestro [ejemplo de Macbeth](https://surtitlelive.com/blog/es/21-theatre-accessibility-captions-stage-directions/) muestra cómo transmitir al público las señales sonoras importantes sin clasificarlas como diálogo ni como indicaciones escénicas destinadas únicamente al equipo de producción."
     }
   ],
   "glossary": [

@@ -25,8 +25,8 @@
       "answer": "Non. Pockitle Cue Viewer fonctionne dans le navigateur d'un téléphone via lien ou code QR. On peut compléter les appareils personnels par 10 à 20 téléphones de prêt et quelques secours, après des tests en salle."
     },
     {
-      "question": "Les surtitres traduits remplacent-ils le sous-titrage accessible ?",
-      "answer": "Non. Pour les personnes sourdes ou malentendantes, il peut être nécessaire de préciser qui parle et quels sons comptent. L'offre doit être adaptée aux besoins du public."
+      "question": "Pockitle Cue permet-il de proposer à la fois des surtitres multilingues et des sous-titres d’accessibilité ?",
+      "answer": "Oui. Pockitle Cue permet de traduire les dialogues, d’identifier les personnages qui parlent et de préparer manuellement des sous-titres d’accessibilité pour les sons significatifs. Ces informations répondent à différents besoins du public et peuvent être préparées pour une même production. Notre [exemple tiré de Macbeth](https://surtitlelive.com/blog/fr/21-theatre-accessibility-captions-stage-directions/) montre comment transmettre les indications sonores importantes au public sans les classer comme des répliques ou comme des didascalies réservées à l’équipe de production."
     }
   ],
   "glossary": [

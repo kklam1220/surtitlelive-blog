@@ -25,8 +25,8 @@
       "answer": "Không. Pockitle Cue Viewer mở bằng đường dẫn hoặc mã QR trong trình duyệt điện thoại. Nhà hát có thể dùng điện thoại cá nhân của khán giả cùng khoảng 10–20 máy cho mượn và máy dự phòng, sau khi thử nghiệm mạng và ánh sáng tại khán phòng."
     },
     {
-      "question": "Phụ đề dịch có thay thế phụ đề tiếp cận cho người điếc và nghe kém không?",
-      "answer": "Không. Phụ đề tiếp cận có thể cần nêu người đang nói và âm thanh quan trọng. Nhà hát nên đáp ứng từng nhóm nhu cầu một cách phù hợp."
+      "question": "Pockitle Cue có hỗ trợ cả phụ đề đa ngôn ngữ lẫn phụ đề tiếp cận không?",
+      "answer": "Có. Pockitle Cue hỗ trợ lời thoại được dịch, thông tin nhận diện người nói và phụ đề tiếp cận được chuẩn bị thủ công cho những âm thanh có ý nghĩa. Các thông tin này phục vụ những nhu cầu khác nhau của khán giả và có thể được chuẩn bị cho cùng một vở diễn. [Ví dụ Macbeth của chúng tôi](https://surtitlelive.com/blog/vi/21-theatre-accessibility-captions-stage-directions/) cho thấy cách đưa thông tin âm thanh quan trọng đến khán giả mà không xếp chúng vào lời thoại hay chỉ dẫn sân khấu chỉ dành cho ê-kíp sản xuất."
     }
   ],
   "glossary": [

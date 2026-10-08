@@ -25,8 +25,8 @@
       "answer": "不必。观众可通过链接或二维码，在手机浏览器使用 Pockitle Cue Viewer。场馆还可以准备约 10 至 20 部借用手机及备用设备，并先测试网络和屏幕亮度。"
     },
     {
-      "question": "翻译字幕能替代听障无障碍字幕吗？",
-      "answer": "不能直接替代。听障观众可能还需要标明说话人和重要音效，场馆应分别考虑不同观众的需求。"
+      "question": "Pockitle Cue 能同时支持多语言舞台字幕和无障碍字幕吗？",
+      "answer": "可以。Pockitle Cue 支持翻译后的对白、说话者标示，以及为重要声音手动编写的无障碍字幕。这些信息服务于观众的不同需求，可以为同一部制作一并准备。我们的[《麦克白》例子](https://surtitlelive.com/blog/zh-CN/21-theatre-accessibility-captions-stage-directions/)展示了如何将重要的声音提示传达给观众，而不必把它们归为角色对白或仅供制作团队使用的舞台指示。"
     }
   ],
   "glossary": [
