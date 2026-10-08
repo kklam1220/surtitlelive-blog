@@ -11,6 +11,7 @@
     "new": "New",
     "improved": "Improved",
     "fixed": "Fixed",
+    "knownIssues": "Known issues",
     "noPublicRelease": "No updates listed this week."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "This release improves script analysis and makes live-show preparation and recovery more reliable.",
+          "new": [],
+          "improved": [
+            "Script analysis better recognizes speakers in short scripts and line-broken dialogue, including cast-name variants.",
+            "Saved Cast Review decisions carry through analysis and Editor preparation more reliably.",
+            "Audience and operator screens recover more reliably after interrupted script loading or a connection drop.",
+            "Cue navigation and live updates handle changing script content more safely."
+          ],
+          "fixed": [
+            "Fixed cases where removing every known spelling of a cast member did not remove them consistently from analysis."
+          ],
+          "knownIssues": [
+            "If deployment settings cannot be loaded, the Projects page may incorrectly say that no deployment exists.",
+            "Redeeming a membership code may save the new membership before capacity updates reach active Shows.",
+            "An undeleted, unexpired ready Show may continue to count toward the deployment limit when creating another Show."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

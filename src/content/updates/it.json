@@ -11,6 +11,7 @@
     "new": "Novità",
     "improved": "Miglioramenti",
     "fixed": "Correzioni",
+    "knownIssues": "Problemi noti",
     "noPublicRelease": "Nessun aggiornamento elencato questa settimana."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Questa versione migliora l’analisi dei copioni e rende più affidabili la preparazione e il ripristino degli spettacoli dal vivo.",
+          "new": [],
+          "improved": [
+            "L’analisi dei copioni riconosce meglio i personaggi nei testi brevi e nei dialoghi spezzati su più righe, comprese le varianti dei nomi del cast.",
+            "Le decisioni salvate nella revisione del cast vengono mantenute in modo più affidabile durante l’analisi e la preparazione nell’Editor.",
+            "Gli schermi del pubblico e degli operatori si ripristinano meglio dopo un’interruzione del caricamento del copione o una perdita di connessione.",
+            "La navigazione tra cue e gli aggiornamenti in diretta gestiscono con maggiore sicurezza le modifiche al copione."
+          ],
+          "fixed": [
+            "Risolti i casi in cui rimuovere tutte le varianti note del nome di un personaggio non lo eliminava sempre dall’analisi."
+          ],
+          "knownIssues": [
+            "Se non è possibile caricare le impostazioni di deployment, la pagina Progetti può indicare erroneamente che non esiste ancora alcun deployment.",
+            "Il riscatto di un codice di adesione può salvare la nuova adesione prima che l’aggiornamento della capacità raggiunga gli Show attivi.",
+            "Uno Show pronto, non eliminato e non scaduto può continuare a essere conteggiato nel limite di deployment quando se ne crea un altro."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

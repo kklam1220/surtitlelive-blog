@@ -39,6 +39,7 @@ const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
   "21-theatre-accessibility-captions-stage-directions",
   "22-one-night-different-stories-scripts-under-the-stars-calgary",
   "23-surtitlelive-becomes-pockitle-cue",
+  "24-south-korea-surtitles-international-theatre-audiences",
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
@@ -46,6 +47,7 @@ const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
   ["21-theatre-accessibility-captions-stage-directions", 2],
   ["22-one-night-different-stories-scripts-under-the-stars-calgary", 5],
   ["23-surtitlelive-becomes-pockitle-cue", 3],
+  ["24-south-korea-surtitles-international-theatre-audiences", 1],
 ]);
 
 function extractMarkdownDestinations(markdown) {
@@ -305,6 +307,7 @@ function validateProductUpdates(config) {
       version: release.version,
       releaseDate: release.releaseDate,
       image: release.image || null,
+      knownIssues: (release.knownIssues || []).length,
     })),
   }));
   const expectedShape = JSON.stringify(releaseShape(english));
@@ -351,6 +354,9 @@ function validateProductUpdates(config) {
     }
     if (JSON.stringify(releaseShape(payload)) !== expectedShape) {
       errors.push(`${locale}: week/version/date structure drifted from English`);
+    }
+    if (!payload.labels.knownIssues?.trim() || (locale !== "en" && payload.labels.knownIssues === english.labels.knownIssues)) {
+      errors.push(`${locale}: known-issue label is missing or not localized`);
     }
     if (locale !== "en") {
       const englishImages = new Map(

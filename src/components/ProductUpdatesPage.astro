@@ -148,6 +148,7 @@ const schema = serializeJsonLd({
 													{release.new.map((item) => <p class="change-item is-new"><strong>{labels.new}:</strong> {item}</p>)}
 													{release.improved.map((item) => <p class="change-item is-improved"><strong>{labels.improved}:</strong> {item}</p>)}
 													{release.fixed.map((item) => <p class="change-item is-fixed"><strong>{labels.fixed}:</strong> {item}</p>)}
+													{release.knownIssues?.map((item) => <p class="change-item is-known-issue"><strong>{labels.knownIssues}:</strong> {item}</p>)}
 												</div>
 												</article>
 											);
@@ -204,6 +205,8 @@ const schema = serializeJsonLd({
 	.change-item.is-improved strong { color: #956317; }
 	.change-item.is-fixed { border-color: #57954a; }
 	.change-item.is-fixed strong { color: #438238; }
+	.change-item.is-known-issue { border-color: #b9534b; }
+	.change-item.is-known-issue strong { color: #a63f39; }
 	ul { line-height: 1.65; margin-top: 0.4rem; padding-inline-start: 1.35rem; }
 	.no-release { color: #6b7280; font-style: italic; margin: 1rem 0 0; }
 	@media (max-width: 760px) {

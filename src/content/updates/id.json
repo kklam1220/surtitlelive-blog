@@ -11,6 +11,7 @@
     "new": "Baru",
     "improved": "Ditingkatkan",
     "fixed": "Diperbaiki",
+    "knownIssues": "Masalah yang diketahui",
     "noPublicRelease": "Tidak ada pembaruan yang tercantum minggu ini."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Rilis ini menyempurnakan analisis naskah serta meningkatkan keandalan persiapan dan pemulihan pertunjukan langsung.",
+          "new": [],
+          "improved": [
+            "Analisis naskah kini lebih baik mengenali tokoh dalam naskah pendek dan dialog yang terpotong antarbaris, termasuk variasi nama pemeran.",
+            "Keputusan Tinjauan Pemeran yang tersimpan kini lebih andal diterapkan dalam analisis dan persiapan Editor.",
+            "Layar penonton dan operator kini lebih andal pulih setelah pemuatan naskah terhenti atau koneksi terputus.",
+            "Navigasi cue dan pembaruan langsung kini menangani perubahan isi naskah dengan lebih aman."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika penghapusan semua ejaan nama pemeran yang diketahui tidak selalu menghapus pemeran tersebut dari analisis."
+          ],
+          "knownIssues": [
+            "Jika pengaturan deployment tidak dapat dimuat, halaman Proyek dapat keliru menyatakan bahwa belum ada deployment.",
+            "Penukaran kode keanggotaan dapat menyimpan keanggotaan baru sebelum pembaruan kapasitas diterapkan pada Show yang sedang aktif.",
+            "Show berstatus siap yang belum dihapus dan belum kedaluwarsa dapat tetap dihitung dalam batas deployment saat membuat Show lain."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "この記事の要点",
+    "faq": "よくある質問",
+    "glossary": "用語解説",
+    "related": "関連記事"
+  },
+  "keyTakeaways": [
+    "字幕を観客開拓につなげるには、発売前に対応言語・対象日・チケット条件を明示する必要があります。",
+    "2020年に韓国で中国人・日本人222人を調べた研究では、韓国語が苦手な人ほど字幕付き公演への観覧意向が高くなりました。欧州の売上を実測した研究ではありません。",
+    "個人スマートフォンでの字幕閲覧と少数の再利用可能な貸出端末を組み合わせれば、初期機器費用を抑えられる可能性があります。ただし翻訳・人件費は必要です。"
+  ],
+  "faq": [
+    {
+      "question": "東アジアからの旅行者は欧州の劇場に関心がありますか？",
+      "answer": "欧州への旅行と文化遺産への関心を示す調査は、潜在的な対象が存在することを示しています。ただし実際の購入率は分かりません。韓国の研究は言語支援と観覧意向の関係を示しています。"
+    },
+    {
+      "question": "すべての座席に専用字幕画面が必要ですか？",
+      "answer": "必要ありません。Pockitle Cue Viewer はブラウザで開けます。自分のスマートフォンに加え、劇場が10〜20台ほどの貸出端末と予備機を用意する方法もあります。導入前に客席と通信環境で検証してください。"
+    },
+    {
+      "question": "翻訳字幕があれば聴覚障害者向け字幕は不要ですか？",
+      "answer": "いいえ。聴覚障害者向け字幕には話者や重要な音を示す情報が必要な場合があります。双方の利用者の要望を個別に確認してください。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "翻訳字幕",
+      "definition": "舞台の進行に合わせて表示する、事前に用意した翻訳文。"
+    },
+    {
+      "term": "アクセシビリティ字幕",
+      "definition": "会話だけでなく、話者や意味のある音も伝える場合がある字幕。"
+    },
+    {
+      "term": "貸出字幕端末",
+      "definition": "劇場が設定・管理し、個人字幕を必要とする観客に貸し出すスマートフォン。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "スマートフォン字幕を劇場の設備にする",
+      "href": "https://surtitlelive.com/blog/ja/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Pockitle Cue について",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

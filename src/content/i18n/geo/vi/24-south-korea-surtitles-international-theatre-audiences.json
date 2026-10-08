@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Giải thích thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Muốn phụ đề hỗ trợ thu hút khán giả mới, nhà hát cần công bố rõ ngôn ngữ, suất diễn và điều kiện mua vé trước khi đặt chỗ.",
+    "Nghiên cứu năm 2020 tại Hàn Quốc với 222 người tham gia từ Trung Quốc và Nhật Bản ghi nhận người ít thành thạo tiếng Hàn quan tâm hơn đến buổi diễn có phụ đề; nghiên cứu không đo doanh số vé ở châu Âu.",
+    "Phụ đề trên trình duyệt điện thoại cùng một số ít máy cho mượn dùng lại được có thể giảm chi phí thiết bị ban đầu, nhưng không loại bỏ chi phí dịch thuật và nhân sự."
+  ],
+  "faq": [
+    {
+      "question": "Du khách Đông Á có muốn xem kịch tại châu Âu không?",
+      "answer": "Số liệu du lịch và mối quan tâm đến di sản văn hóa cho thấy có nhóm khán giả tiềm năng, nhưng không đo tỷ lệ mua vé nhà hát. Nghiên cứu tại Hàn Quốc gợi ý mối liên hệ giữa hỗ trợ ngôn ngữ và ý định tham dự."
+    },
+    {
+      "question": "Có phải lắp màn hình phụ đề ở mọi ghế?",
+      "answer": "Không. Pockitle Cue Viewer mở bằng đường dẫn hoặc mã QR trong trình duyệt điện thoại. Nhà hát có thể dùng điện thoại cá nhân của khán giả cùng khoảng 10–20 máy cho mượn và máy dự phòng, sau khi thử nghiệm mạng và ánh sáng tại khán phòng."
+    },
+    {
+      "question": "Phụ đề dịch có thay thế phụ đề tiếp cận cho người điếc và nghe kém không?",
+      "answer": "Không. Phụ đề tiếp cận có thể cần nêu người đang nói và âm thanh quan trọng. Nhà hát nên đáp ứng từng nhóm nhu cầu một cách phù hợp."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phụ đề dịch cho sân khấu",
+      "definition": "Văn bản dịch được chuẩn bị trước và hiển thị theo nhịp diễn trên sân khấu."
+    },
+    {
+      "term": "Phụ đề tiếp cận",
+      "definition": "Văn bản có thể chỉ rõ người nói và các âm thanh có ý nghĩa, bên cạnh lời thoại."
+    },
+    {
+      "term": "Điện thoại phụ đề cho mượn",
+      "definition": "Điện thoại được nhà hát cài đặt và quản lý để khán giả xem phụ đề trên màn hình riêng."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Điện thoại phụ đề như thiết bị thường trực của nhà hát",
+      "href": "https://surtitlelive.com/blog/vi/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Tìm hiểu Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

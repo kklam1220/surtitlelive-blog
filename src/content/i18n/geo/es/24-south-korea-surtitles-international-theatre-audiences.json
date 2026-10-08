@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ideas clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Lecturas relacionadas"
+  },
+  "keyTakeaways": [
+    "Para que los sobretítulos ayuden a atraer público, los idiomas, las fechas y las condiciones de entrada deben explicarse antes de la compra.",
+    "Un estudio de 2020 con 222 participantes chinos y japoneses en Corea del Sur relacionó un menor dominio del coreano con mayor interés por funciones subtituladas; no midió las ventas de entradas en Europa.",
+    "Los sobretítulos en el navegador del móvil y unos pocos teléfonos de préstamo reutilizables pueden reducir la inversión inicial en equipos, sin eliminar los costes de traducción y personal."
+  ],
+  "faq": [
+    {
+      "question": "¿Quieren los turistas de Asia oriental asistir al teatro en Europa?",
+      "answer": "Los datos turísticos y sobre interés por el patrimonio cultural señalan un público potencial, pero no cuantifican las compras teatrales. El estudio coreano aporta indicios sobre la influencia del idioma en la intención de asistir."
+    },
+    {
+      "question": "¿Es necesario instalar una pantalla de sobretítulos en cada butaca?",
+      "answer": "No. Pockitle Cue Viewer funciona en el navegador del móvil mediante enlace o código QR. Un teatro puede combinar los teléfonos del público con unos 10 a 20 dispositivos de préstamo y reservas, tras comprobar la red y la iluminación de la sala."
+    },
+    {
+      "question": "¿Los sobretítulos traducidos sustituyen a los subtítulos accesibles?",
+      "answer": "No. Las personas sordas o con dificultades auditivas pueden necesitar que se identifiquen las personas que hablan y los sonidos relevantes. Conviene planificar ambos servicios según las necesidades reales."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sobretítulos traducidos",
+      "definition": "Traducción preparada que aparece sincronizada con una representación escénica."
+    },
+    {
+      "term": "Subtítulos accesibles",
+      "definition": "Texto que puede incluir diálogos, identificación de hablantes y sonidos importantes."
+    },
+    {
+      "term": "Teléfono de préstamo para sobretítulos",
+      "definition": "Móvil configurado por el teatro para ofrecer un idioma de lectura individual."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Sobretítulos móviles como equipamiento habitual de sala",
+      "href": "https://surtitlelive.com/blog/es/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Conocer Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

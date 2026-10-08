@@ -11,6 +11,7 @@
     "new": "Novedades",
     "improved": "Mejoras",
     "fixed": "Correcciones",
+    "knownIssues": "Problemas conocidos",
     "noPublicRelease": "No hay actualizaciones enumeradas esta semana."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Esta versión mejora el análisis de guiones y hace más fiables la preparación y recuperación de las funciones en directo.",
+          "new": [],
+          "improved": [
+            "El análisis de guiones reconoce mejor a los personajes en textos breves y diálogos con saltos de línea, incluidas las variantes de los nombres del reparto.",
+            "Las decisiones guardadas en la revisión del reparto se conservan mejor durante el análisis y la preparación en el Editor.",
+            "Las pantallas del público y del equipo se recuperan mejor tras una interrupción al cargar el guion o una pérdida de conexión.",
+            "La navegación entre señales y las actualizaciones en directo gestionan con más seguridad los cambios en el guion."
+          ],
+          "fixed": [
+            "Se corrigieron los casos en los que eliminar todas las variantes conocidas del nombre de un personaje no lo quitaba de forma coherente del análisis."
+          ],
+          "knownIssues": [
+            "Si no se pueden cargar los ajustes de implementación, la página Proyectos puede indicar por error que todavía no hay ninguna implementación.",
+            "Al canjear un código de membresía, la nueva membresía puede guardarse antes de que las actualizaciones de capacidad lleguen a las funciones activas.",
+            "Una función lista que no se haya eliminado ni haya caducado puede seguir contando para el límite de implementaciones al crear otra función."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

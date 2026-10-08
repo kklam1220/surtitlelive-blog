@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related reading"
+  },
+  "keyTakeaways": [
+    "South Korea's experience shows that audiences need to see exact surtitling languages, dates and ticket conditions before they book.",
+    "A 2020 study of 222 Chinese and Japanese respondents in South Korea linked lower Korean proficiency with greater willingness to attend subtitled performances; it did not measure European ticket sales.",
+    "Personal browser-based surtitles and a small reusable pool of loan phones can reduce initial equipment needs, but translation and staffing still cost money."
+  ],
+  "faq": [
+    {
+      "question": "Do East Asian tourists want to attend European theatre?",
+      "answer": "European tourism and heritage-interest data demonstrate a potential audience, not a measured European theatre conversion rate. The 2020 Korean study provides evidence that language access can affect stated interest in performances."
+    },
+    {
+      "question": "Does a theatre need a subtitle screen at every seat?",
+      "answer": "No. Pockitle Cue Viewer works in a phone browser via link or QR code; a venue may supplement spectators' own devices with 10–20 affordable loan phones and spares, after testing the auditorium and network."
+    },
+    {
+      "question": "Do translated surtitles replace accessibility captions?",
+      "answer": "No. Deaf and hard-of-hearing audience members may need identification of speakers and significant sounds. Venues must plan translation and accessibility services according to their audience's needs."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Translated surtitles",
+      "definition": "Prepared translation shown in time with a staged performance."
+    },
+    {
+      "term": "Accessibility captions",
+      "definition": "On-screen text that may identify dialogue, speakers and meaningful sounds for deaf and hard-of-hearing audiences."
+    },
+    {
+      "term": "Loan caption phone",
+      "definition": "A venue-managed smartphone configured for spectators who need personal surtitles."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Mobile surtitles as house equipment",
+      "href": "https://surtitlelive.com/blog/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Explore Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

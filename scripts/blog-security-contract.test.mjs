@@ -1,12 +1,13 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import fs from "node:fs";
-import path from "node:path";
 import os from "node:os";
-import { spawnSync } from "node:child_process";
+import path from "node:path";
 import test from "node:test";
+import { spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
+import { pathToFileURL } from "node:url";
 import { Marked } from "marked";
 import {
   sanitizeLocalizedBlogHtml,
@@ -17,6 +18,7 @@ const require = createRequire(import.meta.url);
 const {
   MARKDOWN_LINK_PARITY_SLUGS,
   findMarkdownDestinationParityIssues,
+  findMarkdownImageParityIssues,
   normalizeMarkdownDestination,
 } = require("./check-blog-localization.cjs");
 const scriptsDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -28,7 +30,36 @@ const locales = fs
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name);
 
-test("localization rejects wrong slugs, locales and source paths before publication", () => {
+test("Astro build image cache does not reuse private or no-store responses", async () => {
+  const astroRoot = path.dirname(require.resolve("astro/package.json"));
+  const { loadRemoteImage, revalidateRemoteImage } = await import(
+    pathToFileURL(path.join(astroRoot, "dist/assets/build/remote.js")).href
+  );
+  const imageConfig = { domains: ["fixture.invalid"], remotePatterns: [] };
+  for (const directive of ["private", "no-store"]) {
+    const fetchFixture = async () => new Response("image fixture", {
+      status: 200, headers: { "cache-control": `${directive}, max-age=600` },
+    });
+    const loaded = await loadRemoteImage("https://fixture.invalid/image.png", fetchFixture, imageConfig);
+    assert.ok(loaded.expires <= Date.now(), `${directive} must have no usable build-cache TTL`);
+    const revalidated = await revalidateRemoteImage(
+      "https://fixture.invalid/image.png", {}, fetchFixture, imageConfig,
+    );
+    assert.ok(revalidated.expires <= Date.now(), `${directive} revalidation must not restore cache reuse`);
+  }
+});
+
+test("standalone blog footer links to current Pockitle legal documents", () => {
+  const footer = fs.readFileSync(path.join(blogRoot, "src", "components", "Footer.astro"), "utf8");
+  for (const [policy, label] of [["terms", "Terms"], ["privacy", "Privacy"], ["viewer-agreement", "Viewer Agreement"]]) {
+    assert.ok(footer.includes(`<a href="https://pockitle.com/${policy}">${label}</a>`));
+  }
+  assert.doesNotMatch(footer, /buildMainSiteHref\(['"]\/(?:terms|privacy|viewer-agreement)['"]\)/);
+  assert.match(footer, /buildMainSiteHref\('\/contact'\)/);
+  assert.doesNotMatch(footer, /from\s+['"][^'"]*config\//);
+});
+
+test("localization rejects source identity and known-issue structure drift before publication", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "blog-source-identity-"));
   const slug = "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment";
   const copy = (relative) => {
@@ -43,13 +74,29 @@ test("localization rejects wrong slugs, locales and source paths before publicat
     config.locales = ["id"];
     fs.writeFileSync(configPath, JSON.stringify(config));
     copy(`src/content/blog/${slug}.md`);
-    copy("src/content/updates/en.json"); copy("src/content/updates/id.json");
+    copy("src/content/updates/en.json");
+    const updatesPath = copy("src/content/updates/id.json");
+    const updates = JSON.parse(fs.readFileSync(updatesPath, "utf8"));
     const payloadPath = copy(`src/content/i18n/blog/id/${slug}.json`);
     const original = JSON.parse(fs.readFileSync(payloadPath, "utf8"));
-    const check = () => spawnSync(process.execPath, [path.join(scriptsDirectory, "check-blog-localization.cjs")], { cwd: fixture, encoding: "utf8" });
+    const check = () => spawnSync(process.execPath, [path.join(scriptsDirectory, "check-blog-localization.cjs")], {
+      cwd: fixture, encoding: "utf8",
+    });
     const valid = check();
     assert.equal(valid.status, 0, valid.stdout + valid.stderr);
-    for (const change of [{ slug: slug.replace("surtitles", "surtitel") }, { locale: "fr" }, { sourceLocale: "id" }, { sourcePath: "src/content/blog/missing.md" }]) {
+    const drifted = structuredClone(updates);
+    drifted.weeks[0].versions[0].knownIssues.pop();
+    fs.writeFileSync(updatesPath, JSON.stringify(drifted));
+    const invalidUpdates = check();
+    assert.equal(invalidUpdates.status, 1);
+    assert.match(invalidUpdates.stderr, /structure drifted from English/);
+    fs.writeFileSync(updatesPath, JSON.stringify(updates));
+    for (const change of [
+      { slug: slug.replace("surtitles", "surtitel") },
+      { locale: "fr" },
+      { sourceLocale: "id" },
+      { sourcePath: "src/content/blog/missing.md" },
+    ]) {
       fs.writeFileSync(payloadPath, JSON.stringify({ ...original, ...change }));
       const invalid = check();
       assert.equal(invalid.status, 1);
@@ -63,7 +110,7 @@ test("localization rejects wrong slugs, locales and source paths before publicat
 test("reviewed serializer and browser sanitizer fixes cover every locked copy", () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(blogRoot, "package.json"), "utf8"));
   const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));
-  for (const [name, version] of Object.entries({ devalue: "5.9.3", dompurify: "3.4.16" })) {
+  for (const [name, version] of Object.entries({ devalue: "5.9.4", dompurify: "3.4.16" })) {
     assert.equal(manifest.overrides?.[name], version, `${name} must preserve the reviewed security pin`);
     const copies = Object.entries(lock.packages).filter(([packagePath]) =>
       packagePath.endsWith(`node_modules/${name}`),
@@ -158,11 +205,12 @@ test("reviewed localized article links preserve canonical markdown destinations"
   }
 });
 
-test("localized Blog21, Blog22, and Blog23 emphasis renders without raw markdown markers", () => {
+test("localized Blog21–24 emphasis renders without raw markdown markers", () => {
   const slugs = [
     "21-theatre-accessibility-captions-stage-directions",
     "22-one-night-different-stories-scripts-under-the-stars-calgary",
     "23-surtitlelive-becomes-pockitle-cue",
+    "24-south-korea-surtitles-international-theatre-audiences",
   ];
 
   for (const slug of slugs) {
@@ -174,6 +222,32 @@ test("localized Blog21, Blog22, and Blog23 emphasis renders without raw markdown
       assert.match(rendered, /<strong>/, `${locale}/${slug} lost article emphasis`);
       assert.doesNotMatch(rendered, /\*\*/, `${locale}/${slug} exposes raw markdown emphasis`);
     }
+  }
+});
+
+test("Blog24 keeps the chosen hero and places localized research artwork after the evidence", () => {
+  const slug = "24-south-korea-surtitles-international-theatre-audiences";
+  const source = fs.readFileSync(path.join(blogRoot, "src/content/blog", `${slug}.md`), "utf8");
+  assert.match(source, /heroImage: "\.\/blog-24\.png"/);
+  const sourcePost = { slug, body: source.replace(/^---[\s\S]*?---\n?/, "") };
+  for (const asset of ["blog-24.png", "blog-24-language-access-infographic.png"]) {
+    assert.ok(fs.existsSync(path.join(blogRoot, "src/content/blog", asset)));
+  }
+  for (const locale of locales) {
+    const localized = JSON.parse(fs.readFileSync(path.join(localizedRoot, locale, `${slug}.json`), "utf8"));
+    assert.equal(localized.frontmatter.heroImage, "./blog-24.png");
+    assert.ok(localized.frontmatter.heroImageAlt.trim(), `${locale} needs hero alternative text`);
+    assert.notEqual(localized.frontmatter.heroImageAlt, "Pockitle Cue multilingual subtitle screens beside seats in a theatre auditorium.");
+    assert.deepEqual(findMarkdownImageParityIssues(sourcePost, localized), [], `${locale} changed the infographic`);
+    const imagePosition = localized.body.indexOf("![");
+    const secondHeading = [...localized.body.matchAll(/^## /gm)][1].index;
+    assert.ok(imagePosition > localized.body.indexOf("ART002605795"), `${locale} must show the research first`);
+    assert.ok(imagePosition < secondHeading, `${locale} must keep the infographic in the research section`);
+    const rendered = sanitizeLocalizedBlogHtml(marked.parse(localized.body.slice(imagePosition, secondHeading)));
+    assert.match(rendered, /<img[^>]+alt="[^"]+"/);
+    assert.match(rendered, /<em>[^<]+<\/em>/, `${locale} needs a readable localized explanation`);
+    const withoutImage = { ...localized, body: localized.body.replace(/!\[[^\]]*\]\([^\n)]+\)/, "") };
+    assert.equal(findMarkdownImageParityIssues(sourcePost, withoutImage).length, 1, "missing artwork must fail parity");
   }
 });
 

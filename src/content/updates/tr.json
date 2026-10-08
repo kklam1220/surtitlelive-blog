@@ -11,6 +11,7 @@
     "new": "Yeni",
     "improved": "İyileştirildi",
     "fixed": "Düzeltildi",
+    "knownIssues": "Bilinen sorunlar",
     "noPublicRelease": "Bu hafta listelenen güncelleme yok."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Bu sürüm senaryo analizini geliştirir; canlı gösterilerin hazırlık ve kurtarma süreçlerini daha güvenilir hâle getirir.",
+          "new": [],
+          "improved": [
+            "Senaryo analizi, kısa senaryolarda ve satırlara bölünmüş diyaloglarda, oyuncu adı farklılıkları dâhil, konuşmacıları daha doğru tanır.",
+            "Kaydedilmiş oyuncu inceleme kararları analiz ve Düzenleyici hazırlığı boyunca daha güvenilir biçimde korunur.",
+            "Senaryo yüklemesi kesildiğinde veya bağlantı koptuğunda izleyici ve operatör ekranları daha güvenilir biçimde toparlanır.",
+            "Cue gezinme ve canlı güncellemeler, senaryo içeriğindeki değişiklikleri daha güvenli şekilde işler."
+          ],
+          "fixed": [
+            "Bir oyuncunun bilinen tüm ad yazımları silindiğinde kişinin analizden tutarlı biçimde kaldırılmaması sorunu düzeltildi."
+          ],
+          "knownIssues": [
+            "Dağıtım ayarları yüklenemezse Projeler sayfası henüz dağıtım yokmuş gibi yanlış bilgi verebilir.",
+            "Üyelik kodu kullanıldığında yeni üyelik kaydedilebilir; ancak kapasite güncellemeleri etkin Show'lara henüz ulaşmamış olabilir.",
+            "Silinmemiş ve süresi dolmamış hazır bir Show, başka bir Show oluşturulurken dağıtım sınırına dâhil edilmeye devam edebilir."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

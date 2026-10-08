@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "核心要点",
+    "faq": "常见问题",
+    "glossary": "术语解释",
+    "related": "相关阅读"
+  },
+  "keyTakeaways": [
+    "字幕要影响购票决策，必须在售票时明确列出支持语言、适用场次和票种条件。",
+    "一项 2020 年针对 222 名中国及日本受访者的韩国研究发现，韩语能力较弱者对字幕演出的观看意愿更高；它并未测量欧洲实际售票。",
+    "手机浏览器字幕加上少量可重复使用的借用手机，可以减少初期硬件需求，但翻译与人员并非零成本。"
+  ],
+  "faq": [
+    {
+      "question": "东亚游客真的想去欧洲看剧吗？",
+      "answer": "旅游及文化遗产兴趣数据说明存在潜在观众，却不能视为欧洲剧院的购票转化率。韩国研究提供了语言支持影响观演意愿的相关证据。"
+    },
+    {
+      "question": "剧院一定要给每个座位装字幕屏吗？",
+      "answer": "不必。观众可通过链接或二维码，在手机浏览器使用 Pockitle Cue Viewer。场馆还可以准备约 10 至 20 部借用手机及备用设备，并先测试网络和屏幕亮度。"
+    },
+    {
+      "question": "翻译字幕能替代听障无障碍字幕吗？",
+      "answer": "不能直接替代。听障观众可能还需要标明说话人和重要音效，场馆应分别考虑不同观众的需求。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "翻译舞台字幕",
+      "definition": "根据现场演出节奏显示的预先准备好的翻译文字。"
+    },
+    {
+      "term": "无障碍字幕",
+      "definition": "除台词外，也可能包含说话人和重要声音信息的字幕。"
+    },
+    {
+      "term": "借用字幕手机",
+      "definition": "由场馆预设并管理、借给需要个人字幕服务的观众的手机。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "让手机字幕成为剧院常设无障碍服务",
+      "href": "https://surtitlelive.com/blog/zh-CN/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "了解 Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

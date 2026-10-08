@@ -232,6 +232,14 @@ const cssFiles = collectFiles(distDir, (file) => file.endsWith(".css"));
 const jsFiles = collectFiles(distDir, (file) => file.endsWith(".js"));
 const xmlFiles = collectFiles(distDir, (file) => file.endsWith(".xml"));
 const textFiles = [...htmlFiles, ...cssFiles, ...xmlFiles];
+for (const file of htmlFiles) {
+  const footer = fs.readFileSync(file, "utf8").match(/<footer\b[^>]*>[\s\S]*?<\/footer>/)?.[0];
+  if (!footer) continue;
+  for (const policy of ["terms", "privacy", "viewer-agreement"]) {
+    assert.ok(footer.includes(`href="https://pockitle.com/${policy}"`),
+      `Built footer still uses a retired legal address: ${path.relative(distDir, file)} (${policy})`);
+  }
+}
 const assetDir = path.join(distDir, '_astro');
 const imageFiles = fs.existsSync(assetDir)
   ? collectFiles(assetDir, (file) => /\.(?:gif|webp)$/i.test(file))
@@ -276,6 +284,10 @@ for (const locale of [
 ]) {
   const indexPath = path.join(distDir, ...(locale === "en" ? [] : [locale]), "index.html");
   const html = fs.readFileSync(indexPath, "utf8");
+  for (const number of [23, 24]) {
+    const card = html.match(new RegExp(`<img\\b[^>]+src="[^"]*blog-${number}\\.[^"]+"[^>]*>`))?.[0];
+    assert.ok(card?.includes("hero-frame-preserved"), `${locale} Blog${number} card must preserve the full artwork.`);
+  }
   const description = html.match(/<meta name="description" content="([^"]+)"/)?.[1] ?? "";
   const characterCount = Array.from(description.replace(/&[^;]+;/g, "x")).length;
   const isCjk = ["ja", "ko", "zh-CN", "zh-TW"].includes(locale);
@@ -294,6 +306,10 @@ for (const locale of [
 ]) {
   const localePrefix = locale === "en" ? [] : [locale];
   const updatesPath = path.join(...localePrefix, "updates", "index.html");
+  const updates = JSON.parse(fs.readFileSync(path.join(blogRoot, "src/content/updates", `${locale}.json`), "utf8"));
+  const knownIssueCount = updates.weeks.flatMap((week) => week.versions).reduce((count, release) => count + (release.knownIssues?.length || 0), 0);
+  const renderedUpdates = fs.readFileSync(path.join(distDir, updatesPath), "utf8");
+  assert.equal((renderedUpdates.match(/class="change-item is-known-issue"/g) || []).length, knownIssueCount, `${locale} must render every prepared known issue.`);
   assertFileHasMatch(
     updatesPath,
     /"@type":"CollectionPage"/,
@@ -955,9 +971,9 @@ assertFileHasNoMatch(
   "Detected leftover punctuation from replaced French dialogue examples.",
 );
 
-for (const [locale, planningPath] of [
-  ["en", "/planning/theatre-captioning-software-vs-live-caption-tools"],
-  ["zh-TW", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
+for (const [locale, pockitlePath, planningPath] of [
+  ["en", "/pockitle#software", "/planning/theatre-captioning-software-vs-live-caption-tools"],
+  ["zh-TW", "/pockitle#software", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
 ]) {
   const articlePath = path.join(
     ...(locale === "en" ? [] : [locale]),
@@ -966,7 +982,7 @@ for (const [locale, planningPath] of [
   );
   assertFileHasMatch(
     articlePath,
-    /https:\/\/surtitlelive\.com\/pockitle#software/,
+    new RegExp(`https://surtitlelive\\.com${pockitlePath}`),
     `Missing shared Pockitle SoftwareApplication entity on the ${locale} launch article.`,
   );
   assertFileHasMatch(

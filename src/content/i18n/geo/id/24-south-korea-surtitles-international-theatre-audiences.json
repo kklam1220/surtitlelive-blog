@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Intisari",
+    "faq": "Pertanyaan umum",
+    "glossary": "Istilah penting",
+    "related": "Bacaan terkait"
+  },
+  "keyTakeaways": [
+    "Agar surtitel dapat membantu mengembangkan penonton, informasi bahasa, jadwal, dan ketentuan tiket perlu tersedia secara jelas sebelum pemesanan.",
+    "Penelitian tahun 2020 terhadap 222 responden Tiongkok dan Jepang di Korea Selatan mengaitkan kemampuan bahasa Korea yang rendah dengan minat lebih besar terhadap pertunjukan berteks terjemahan; penelitian itu tidak mengukur penjualan tiket di Eropa.",
+    "Teks pada peramban ponsel dan sejumlah kecil perangkat pinjaman yang dapat dipakai ulang bisa menekan kebutuhan biaya perangkat awal, tetapi penerjemahan dan tenaga kerja tetap berbiaya."
+  ],
+  "faq": [
+    {
+      "question": "Apakah wisatawan Asia Timur tertarik pada teater di Eropa?",
+      "answer": "Data perjalanan dan minat terhadap warisan budaya menunjukkan adanya calon penonton, bukan tingkat pembelian tiket teater. Penelitian Korea memberikan petunjuk bahwa dukungan bahasa dapat memengaruhi niat menghadiri pertunjukan."
+    },
+    {
+      "question": "Apakah setiap kursi perlu layar surtitel sendiri?",
+      "answer": "Tidak. Pockitle Cue Viewer bisa dibuka lewat tautan atau kode QR di peramban ponsel. Teater dapat menggabungkan ponsel penonton dengan sekitar 10–20 perangkat pinjaman dan cadangan, setelah menguji jaringan dan kondisi auditorium."
+    },
+    {
+      "question": "Apakah teks terjemahan menggantikan takarir aksesibilitas?",
+      "answer": "Tidak. Penonton Tuli atau yang mengalami gangguan pendengaran mungkin memerlukan informasi pembicara dan suara penting. Kedua kebutuhan ini perlu direncanakan secara khusus."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Surtitel terjemahan",
+      "definition": "Teks terjemahan yang dipersiapkan sebelum pertunjukan lalu ditampilkan mengikuti alur panggung."
+    },
+    {
+      "term": "Takarir aksesibilitas",
+      "definition": "Teks yang dapat memuat informasi pembicara dan suara penting, selain dialog."
+    },
+    {
+      "term": "Ponsel surtitel pinjaman",
+      "definition": "Ponsel yang disiapkan teater untuk dipinjamkan kepada pengunjung yang membutuhkan teks pada layar pribadi."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Menjadikan ponsel surtitel perlengkapan tetap teater",
+      "href": "https://surtitlelive.com/blog/id/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Kenali Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

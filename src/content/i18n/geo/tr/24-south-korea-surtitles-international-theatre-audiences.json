@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkan noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Üst yazıların yeni seyirciye ulaşması için diller, ilgili gösterim tarihleri ve bilet koşulları satın alma öncesinde açıkça belirtilmelidir.",
+    "Güney Kore'de 222 Çinli ve Japon katılımcıyla yapılan 2020 araştırması, düşük Korece yeterliliğini üst yazılı gösterilere daha yüksek katılma isteğiyle ilişkilendirdi; Avrupa bilet satışlarını ölçmedi.",
+    "Telefon tarayıcısında gösterilen üst yazılar ve tekrar kullanılabilen az sayıda ödünç cihaz, ilk donanım maliyetini azaltabilir. Çeviri ve personel giderleri ise sürer."
+  ],
+  "faq": [
+    {
+      "question": "Doğu Asyalı turistler Avrupa'da tiyatroyla ilgileniyor mu?",
+      "answer": "Seyahat ve kültürel mirasa ilgi verileri potansiyel bir kitleye işaret eder, ancak tiyatro bileti satın alma oranlarını ölçmez. Kore'deki araştırma, dil desteğiyle gösteriye katılma isteği arasındaki olası bağı gösterir."
+    },
+    {
+      "question": "Her koltuğa üst yazı ekranı kurmak gerekir mi?",
+      "answer": "Hayır. Pockitle Cue Viewer, telefon tarayıcısında bağlantı veya QR koduyla çalışır. Tiyatro, seyircilerin kendi telefonlarını 10–20 ödünç cihaz ve yedeklerle tamamlayabilir; önce salon ve ağ koşulları sınanmalıdır."
+    },
+    {
+      "question": "Çeviri üst yazıları erişilebilirlik alt yazılarının yerini tutar mı?",
+      "answer": "Hayır. İşitme engelli seyirciler için konuşmacıların ve önemli seslerin belirtilmesi gerekebilir. Hizmetler seyircilerin farklı ihtiyaçlarına göre düzenlenmelidir."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Çeviri üst yazıları",
+      "definition": "Oyundan önce hazırlanıp sahnedeki akışa göre gösterilen çevrilmiş metin."
+    },
+    {
+      "term": "Erişilebilirlik alt yazıları",
+      "definition": "Diyalogların yanında konuşmacıları ve önemli sesleri de açıklayabilen yazılar."
+    },
+    {
+      "term": "Ödünç üst yazı telefonu",
+      "definition": "Tiyatro tarafından hazırlanıp kişisel metin erişimine ihtiyacı olan seyirciye verilen akıllı telefon."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Mobil üst yazıları tiyatronun kalıcı ekipmanına dönüştürmek",
+      "href": "https://surtitlelive.com/blog/tr/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Pockitle Cue hakkında",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

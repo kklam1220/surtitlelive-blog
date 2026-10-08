@@ -11,6 +11,7 @@
     "new": "Nouveautés",
     "improved": "Améliorations",
     "fixed": "Corrections",
+    "knownIssues": "Problèmes connus",
     "noPublicRelease": "Aucune mise à jour n’est répertoriée cette semaine."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Cette version améliore l’analyse des scripts et fiabilise la préparation et la reprise des représentations en direct.",
+          "new": [],
+          "improved": [
+            "L’analyse des scripts reconnaît mieux les personnages dans les scripts courts et les dialogues répartis sur plusieurs lignes, y compris les variantes des noms de rôles.",
+            "Les décisions enregistrées dans la revue de la distribution sont reprises plus fiablement pendant l’analyse et la préparation dans l’Éditeur.",
+            "Les écrans du public et des opérateurs récupèrent mieux après une interruption du chargement du script ou une perte de connexion.",
+            "La navigation entre les cues et les mises à jour en direct gèrent plus sûrement les changements du contenu du script."
+          ],
+          "fixed": [
+            "Correction d’un problème où la suppression de toutes les variantes connues du nom d’un personnage ne le retirait pas systématiquement de l’analyse."
+          ],
+          "knownIssues": [
+            "Si les paramètres de déploiement ne peuvent pas être chargés, la page Projets peut indiquer à tort qu’aucun déploiement n’existe.",
+            "L’activation d’un code d’adhésion peut enregistrer la nouvelle adhésion avant que la mise à jour de capacité n’atteigne les Shows actifs.",
+            "Un Show prêt, non supprimé et non expiré peut continuer à compter dans la limite de déploiements lors de la création d’un autre Show."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

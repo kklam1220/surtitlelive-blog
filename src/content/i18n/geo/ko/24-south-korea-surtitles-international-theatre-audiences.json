@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "ko",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "핵심 요약",
+    "faq": "자주 묻는 질문",
+    "glossary": "용어 설명",
+    "related": "함께 읽기"
+  },
+  "keyTakeaways": [
+    "자막이 예매를 돕기 위해서는 판매 전부터 언어·해당 회차·좌석 또는 상품 조건을 명시해야 합니다.",
+    "2020년 한국의 중국인·일본인 응답자 222명 대상 연구에서는 한국어 능력이 낮을수록 자막 제공 공연에 대한 관람 의도가 높아졌습니다. 유럽의 실제 매출을 측정한 결과는 아닙니다.",
+    "개인 휴대전화 브라우저와 소규모 대여 기기를 활용하면 초기 장비 부담을 줄일 수 있지만 번역과 인력 비용은 별도로 발생합니다."
+  ],
+  "faq": [
+    {
+      "question": "동아시아 관광객이 유럽 현지 공연을 보고 싶어 하나요?",
+      "answer": "유럽 여행 및 문화유산 관심 자료로 잠재적 관객은 확인할 수 있지만, 이것이 유럽 극장 티켓 구매율을 의미하지는 않습니다. 한국 연구는 언어 지원과 관람 의도 사이의 관련성을 제시합니다."
+    },
+    {
+      "question": "모든 좌석에 자막 화면을 설치해야 하나요?",
+      "answer": "아닙니다. 관객은 휴대전화 브라우저에서 Pockitle Cue Viewer를 이용할 수 있습니다. 공연장은 자체 휴대전화와 대여용 10~20대, 예비 기기를 병행하고 객석과 네트워크를 테스트할 수 있습니다."
+    },
+    {
+      "question": "번역 자막만 있으면 청각장애인용 자막도 충분한가요?",
+      "answer": "그렇지 않습니다. 청각장애인용 자막에는 화자와 중요한 음향 정보가 필요할 수 있습니다. 공연장은 두 서비스의 목적을 구분해 준비해야 합니다."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "번역 자막",
+      "definition": "공연 전에 번역해 두고 무대 진행에 맞춰 제시하는 텍스트."
+    },
+    {
+      "term": "청각장애인용 자막",
+      "definition": "대사뿐 아니라 화자나 중요한 음향 정보를 포함할 수 있는 자막."
+    },
+    {
+      "term": "자막 대여용 스마트폰",
+      "definition": "공연장이 설정·관리해 개인 자막이 필요한 관객에게 빌려주는 기기."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "휴대전화 자막을 극장 상설 서비스로 운영하기",
+      "href": "https://surtitlelive.com/blog/ko/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Pockitle Cue 알아보기",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

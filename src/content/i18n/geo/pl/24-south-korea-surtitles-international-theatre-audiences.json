@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze wnioski",
+    "faq": "Najczęstsze pytania",
+    "glossary": "Słowniczek",
+    "related": "Przeczytaj również"
+  },
+  "keyTakeaways": [
+    "Języki napisów, terminy ich dostępności i zasady kupowania biletów muszą być widoczne przed zakupem, aby oferta mogła przyciągnąć nowych widzów.",
+    "W badaniu z 2020 r. wśród 222 chińskich i japońskich respondentów w Korei Południowej słabsza znajomość koreańskiego wiązała się z większym zainteresowaniem spektaklami z napisami; nie badano sprzedaży w Europie.",
+    "Napisy w przeglądarce telefonu oraz niewielka pula urządzeń do wypożyczania mogą obniżyć początkowe koszty sprzętu. Tłumaczenia i praca personelu nadal kosztują."
+  ],
+  "faq": [
+    {
+      "question": "Czy turyści z Azji Wschodniej interesują się teatrem w Europie?",
+      "answer": "Dane podróżnicze i deklarowane zainteresowanie dziedzictwem kulturowym wskazują na potencjalną grupę odbiorców, lecz nie mierzą zakupów biletów teatralnych. Badanie koreańskie sugeruje znaczenie wsparcia językowego dla zamiaru uczestnictwa."
+    },
+    {
+      "question": "Czy każde miejsce wymaga własnego monitora z napisami?",
+      "answer": "Nie. Pockitle Cue Viewer działa w przeglądarce smartfona przez link lub kod QR. Teatr może wykorzystać prywatne telefony widzów oraz około 10–20 urządzeń do wypożyczenia i zapasowe, po wcześniejszym sprawdzeniu sali i sieci."
+    },
+    {
+      "question": "Czy napisy tłumaczone zastępują napisy dla osób głuchych i niedosłyszących?",
+      "answer": "Nie. Dostępne napisy mogą wymagać dodatkowych informacji o mówiących i ważnych dźwiękach. Warto osobno uwzględnić potrzeby obu grup."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Napisy tłumaczeniowe",
+      "definition": "Tłumaczenie przygotowane przed spektaklem i wyświetlane zgodnie z jego przebiegiem."
+    },
+    {
+      "term": "Napisy dla dostępności",
+      "definition": "Tekst, który oprócz wypowiedzi może identyfikować mówiących i ważne dźwięki."
+    },
+    {
+      "term": "Telefon do wypożyczenia",
+      "definition": "Smartfon przygotowany przez teatr do indywidualnego wyświetlania napisów."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Telefony z napisami jako stałe wyposażenie teatru",
+      "href": "https://surtitlelive.com/blog/pl/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Poznaj Pockitle Cue",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

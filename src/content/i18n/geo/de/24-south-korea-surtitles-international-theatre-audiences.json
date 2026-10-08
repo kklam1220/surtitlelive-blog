@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "24-south-korea-surtitles-international-theatre-audiences",
+  "sourceHash": "d49eeccee3f76b38c517766e41ba98d63ea5346d8630b83f738332ff95a15f5f",
+  "generatedAt": "2026-10-08T16:00:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufige Fragen",
+    "glossary": "Begriffe erklärt",
+    "related": "Weiterlesen"
+  },
+  "keyTakeaways": [
+    "Wer mit mehrsprachigen Übertiteln neue Gäste erreichen möchte, sollte Sprachen, Termine und Ticketbedingungen bereits vor dem Kauf eindeutig nennen.",
+    "Eine Studie mit 222 chinesischen und japanischen Befragten in Südkorea (2020) verknüpfte geringere Koreanischkenntnisse mit größerem Interesse an Vorstellungen mit Untertiteln; europäische Verkaufszahlen wurden nicht untersucht.",
+    "Übertitel im Smartphone-Browser und wenige wiederverwendbare Leihgeräte können die Anschaffungskosten begrenzen. Übersetzung, Personal und Betrieb bleiben kostenpflichtig."
+  ],
+  "faq": [
+    {
+      "question": "Sind ostasiatische Reisende an europäischen Theateraufführungen interessiert?",
+      "answer": "Reise- und Kulturerbe-Daten zeigen ein mögliches Publikum, messen aber keine Theaterkäufe. Die Studie aus Südkorea gibt Hinweise auf den Einfluss sprachlicher Zugänglichkeit auf Besuchsabsichten."
+    },
+    {
+      "question": "Braucht jeder Sitzplatz einen eigenen Übertitelmonitor?",
+      "answer": "Nein. Pockitle Cue Viewer läuft über einen Link oder QR-Code im Smartphone-Browser. Eine Spielstätte kann eigene Geräte der Gäste mit etwa 10 bis 20 Leih-Smartphones und Reserve kombinieren, sofern Saal und Netzwerk zuvor geprüft wurden."
+    },
+    {
+      "question": "Sind übersetzte Übertitel dasselbe wie barrierefreie Untertitel?",
+      "answer": "Nein. Untertitel für gehörlose und schwerhörige Menschen können zusätzlich Sprecher- und Geräuschinformationen benötigen. Die Angebote müssen an die jeweiligen Bedürfnisse angepasst werden."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Übersetzte Übertitel",
+      "definition": "Vorbereitete Übersetzung, die im Rhythmus einer Bühnenaufführung erscheint."
+    },
+    {
+      "term": "Barrierefreie Untertitel",
+      "definition": "Textanzeige, die neben Gesprochenem auch Sprechende und bedeutsame Geräusche kennzeichnen kann."
+    },
+    {
+      "term": "Leihgerät für Übertitel",
+      "definition": "Vom Theater eingerichtetes Smartphone zur individuellen Textanzeige im Zuschauerraum."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Mobile Übertitel als reguläre Theaterausstattung",
+      "href": "https://surtitlelive.com/blog/de/20-why-theatres-should-treat-mobile-surtitles-as-house-equipment/"
+    },
+    {
+      "label": "Pockitle Cue entdecken",
+      "href": "https://surtitlelive.com/projection-and-mobile-surtitles"
+    }
+  ]
+}

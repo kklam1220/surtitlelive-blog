@@ -33,6 +33,7 @@ const updates = defineCollection({
 			new: z.string(),
 			improved: z.string(),
 			fixed: z.string(),
+			knownIssues: z.string(),
 			noPublicRelease: z.string(),
 		}),
 		weeks: z.array(z.object({
@@ -48,6 +49,7 @@ const updates = defineCollection({
 				new: z.array(z.string()),
 				improved: z.array(z.string()),
 				fixed: z.array(z.string()),
+				knownIssues: z.array(z.string()).optional(),
 			}).refine((release) => !release.image || Boolean(release.imageAlt), {
 				message: 'Product Update images must include localized alternative text.',
 			})),

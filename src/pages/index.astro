@@ -189,10 +189,12 @@ const localeLinks = [
 				<ul>
 					{
 						posts.map((post) => {
-							const preserveHeroFrame = post.slug === '23-surtitlelive-becomes-pockitle-cue';
+							const postSlug = post.slug || post.id;
+							const preserveHeroFrame = postSlug === '23-surtitlelive-becomes-pockitle-cue'
+								|| postSlug === '24-south-korea-surtitles-international-theatre-audiences';
 							return (
 								<li>
-									<a href={postHref(post.slug || post.id)}>
+									<a href={postHref(postSlug)}>
 										<div class="img-container">
                                             {post.data.heroImage ? (
                                                 <Image 
@@ -202,7 +204,7 @@ const localeLinks = [
                                                     fit={preserveHeroFrame ? 'contain' : undefined}
                                                     background={preserveHeroFrame ? '#000' : undefined}
                                                     class={preserveHeroFrame ? 'hero-frame-preserved' : undefined}
-                                                    alt={post.data.title} 
+                                                    alt={post.data.heroImageAlt || post.data.title}
                                                     loading="lazy"
                                                 />
                                             ) : (

@@ -40,7 +40,8 @@ const canonicalURL = new URL(canonicalPath || Astro.url.pathname, Astro.site);
 const resolvedHeroImage = typeof heroImage === 'string' ? resolveBlogImage(heroImage) : heroImage;
 const metaImage = resolvedHeroImage ?? (typeof heroImage === 'string' ? { src: heroImage } : heroImage);
 const renderableHeroImage = resolvedHeroImage;
-const preserveHeroFrame = slug === '23-surtitlelive-becomes-pockitle-cue';
+const preserveHeroFrame = slug === '23-surtitlelive-becomes-pockitle-cue'
+	|| slug === '24-south-korea-surtitles-international-theatre-audiences';
 const socialImageURL = new URL(metaImage?.src ?? '/blog-placeholder-1.jpg', Astro.url);
 const organizationId = 'https://surtitlelive.com/#organization';
 const isPockitleLaunchPost = slug === '17-surtitlelive-launches-pockitle-live-captioning';

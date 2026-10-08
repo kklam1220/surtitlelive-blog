@@ -11,6 +11,7 @@
     "new": "Novidades",
     "improved": "Melhorias",
     "fixed": "Correções",
+    "knownIssues": "Problemas conhecidos",
     "noPublicRelease": "Nenhuma atualização está listada nesta semana."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Esta versão aprimora a análise de roteiros e torna mais confiáveis a preparação e a recuperação de apresentações ao vivo.",
+          "new": [],
+          "improved": [
+            "A análise de roteiros reconhece melhor as personagens em textos curtos e diálogos divididos entre linhas, incluindo variações nos nomes do elenco.",
+            "As decisões salvas na revisão do elenco são aplicadas com mais confiabilidade durante a análise e a preparação no Editor.",
+            "As telas do público e dos operadores se recuperam melhor após uma interrupção no carregamento do roteiro ou uma queda de conexão.",
+            "A navegação entre cues e as atualizações ao vivo lidam com mais segurança com as mudanças no roteiro."
+          ],
+          "fixed": [
+            "Corrigimos casos em que remover todas as grafias conhecidas do nome de uma personagem não a removia de forma consistente da análise."
+          ],
+          "knownIssues": [
+            "Se não for possível carregar as configurações de implantação, a página Projetos poderá informar incorretamente que ainda não existe uma implantação.",
+            "O resgate de um código de adesão pode salvar a nova adesão antes que as atualizações de capacidade cheguem aos Shows ativos.",
+            "Um Show pronto que não tenha sido excluído nem expirado pode continuar contando para o limite de implantações ao criar outro Show."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

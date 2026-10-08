@@ -46,6 +46,8 @@ import blog23Hero from "../content/blog/blog-23.png";
 import blog23MacSettings from "../content/blog/blog-23-cue-for-mac-settings.png";
 import blog23ProductFamily from "../content/blog/blog-23-product-family.png";
 import blog23IosInput from "../content/blog/blog-23-live-ios-input.jpg";
+import blog24Hero from "../content/blog/blog-24.png";
+import blog24LanguageAccess from "../content/blog/blog-24-language-access-infographic.png";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -93,6 +95,8 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-23-cue-for-mac-settings.png": blog23MacSettings,
   "blog-23-product-family.png": blog23ProductFamily,
   "blog-23-live-ios-input.jpg": blog23IosInput,
+  "blog-24.png": blog24Hero,
+  "blog-24-language-access-infographic.png": blog24LanguageAccess,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,

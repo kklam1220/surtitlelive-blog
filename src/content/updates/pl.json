@@ -11,6 +11,7 @@
     "new": "Nowości",
     "improved": "Ulepszenia",
     "fixed": "Poprawki",
+    "knownIssues": "Znane problemy",
     "noPublicRelease": "W tym tygodniu nie ma wymienionych aktualizacji."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia analizę scenariuszy oraz zwiększa niezawodność przygotowania i odzyskiwania działania podczas występów na żywo.",
+          "new": [],
+          "improved": [
+            "Analiza scenariuszy lepiej rozpoznaje postacie w krótkich tekstach i dialogach podzielonych na wiersze, także przy różnych wariantach nazw postaci.",
+            "Zapisane decyzje z przeglądu obsady są pewniej przenoszone przez analizę i przygotowanie w Edytorze.",
+            "Ekrany widzów i operatorów sprawniej odzyskują działanie po przerwaniu wczytywania scenariusza lub utracie połączenia.",
+            "Nawigacja po cue i aktualizacje na żywo bezpieczniej obsługują zmiany treści scenariusza."
+          ],
+          "fixed": [
+            "Naprawiono przypadki, w których usunięcie wszystkich znanych wariantów nazwiska postaci nie zawsze usuwało ją z analizy."
+          ],
+          "knownIssues": [
+            "Jeśli nie można wczytać ustawień wdrożenia, strona Projekty może błędnie informować, że nie ma jeszcze żadnego wdrożenia.",
+            "Po zrealizowaniu kodu członkostwa nowe członkostwo może zostać zapisane, zanim aktualizacja pojemności dotrze do aktywnych Show.",
+            "Gotowy Show, który nie został usunięty ani nie wygasł, może nadal być wliczany do limitu wdrożeń przy tworzeniu kolejnego Show."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",

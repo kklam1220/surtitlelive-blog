@@ -11,6 +11,7 @@
     "new": "Mới",
     "improved": "Cải tiến",
     "fixed": "Đã sửa",
+    "knownIssues": "Sự cố đã biết",
     "noPublicRelease": "Tuần này không có bản cập nhật nào được liệt kê."
   },
   "weeks": [
@@ -18,6 +19,27 @@
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261007.01",
+          "releaseDate": "2026-10-07",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện phân tích kịch bản, đồng thời giúp việc chuẩn bị và khôi phục buổi diễn trực tiếp đáng tin cậy hơn.",
+          "new": [],
+          "improved": [
+            "Phân tích kịch bản nhận diện nhân vật tốt hơn trong kịch bản ngắn và lời thoại bị ngắt dòng, kể cả các biến thể tên diễn viên.",
+            "Các quyết định đã lưu trong bước rà soát dàn diễn viên được áp dụng nhất quán hơn trong quá trình phân tích và chuẩn bị trong Trình chỉnh sửa.",
+            "Màn hình khán giả và người vận hành khôi phục đáng tin cậy hơn sau khi tải kịch bản bị gián đoạn hoặc mất kết nối.",
+            "Điều hướng cue và cập nhật trực tiếp xử lý thay đổi nội dung kịch bản an toàn hơn."
+          ],
+          "fixed": [
+            "Đã sửa lỗi khiến việc xóa mọi cách viết đã biết của tên một nhân vật không phải lúc nào cũng xóa nhân vật đó khỏi kết quả phân tích."
+          ],
+          "knownIssues": [
+            "Nếu không tải được cài đặt triển khai, trang Dự án có thể báo sai rằng chưa có bản triển khai nào.",
+            "Việc đổi mã thành viên có thể lưu tư cách thành viên mới trước khi cập nhật sức chứa đến được các Show đang hoạt động.",
+            "Một Show ở trạng thái sẵn sàng chưa bị xóa và chưa hết hạn vẫn có thể được tính vào giới hạn triển khai khi tạo Show khác."
+          ]
+        },
         {
           "version": "v261005.01",
           "releaseDate": "2026-10-05",
