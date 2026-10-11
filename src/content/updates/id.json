@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Rilis ini meningkatkan persiapan naskah, keandalan pertunjukan langsung, dan alur proyeksi.",
+          "new": [],
+          "improved": [
+            "Analisis naskah kini menangani petunjuk pembicara di dalam dialog dengan lebih cermat dan tetap mengaitkan hasil dengan naskah sumber.",
+            "Penggantian atau pemulihan naskah kini memperbarui proyek dan menghapus progres terjemahan yang sudah usang.",
+            "Persiapan Pockitle Live memeriksa Show dan tautan penonton terbaru sebelum membuka sesi langsung.",
+            "Pratinjau proyeksi memberikan panduan pra-pertunjukan yang lebih jelas. Pembaruan teks QLab lebih sesuai dengan layar yang dipilih dan mempertahankan format teks yang ada.",
+            "Panduan produk dan QLab yang telah dilokalkan diperbarui dengan navigasi bagian yang lebih andal."
+          ],
+          "fixed": [
+            "Deployment Show yang kedaluwarsa atau dihapus tidak lagi ditampilkan sebagai aktif, dan tautan runtime yang sudah dihentikan tidak lagi diperbarui.",
+            "Jika penghapusan Show selesai tetapi respons terputus, halaman mengonfirmasi penghapusan tanpa mengirim permintaan ulang.",
+            "Memperbaiki kasus ketika transisi kontrol Show yang terputus dapat menunda pembaruan berikutnya.",
+            "Memperbaiki kontrol proyeksi agar merespons mouse, sentuhan, dan keyboard dengan lebih konsisten."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Rilis ini meningkatkan analisis naskah, pemulihan pertunjukan langsung, dan akses melalui kode keanggotaan.",
+          "new": [
+            "Halaman referensi produk Pockitle ditambahkan dengan deskripsi produk, ketersediaan, istilah, dan jawaban atas pertanyaan umum."
+          ],
+          "improved": [
+            "Analisis naskah kini lebih baik mengenali nama pemeran dan petunjuk pembicara dalam naskah kompleks, termasuk petunjuk di dalam baris, sambil tetap mengaitkan hasil dengan teks sumber.",
+            "Pembaruan subtitle langsung lebih andal dipulihkan setelah terputus. Layar penonton tetap menampilkan subtitle terakhir yang telah dikonfirmasi selama pemulihan.",
+            "Manfaat kode keanggotaan kini mengikuti aturan fitur dan kapasitas Show aktif yang sama dengan keanggotaan berbayar yang setara."
+          ],
+          "fixed": [
+            "Memperbaiki masalah kontrol Show yang dapat membuat pembaruan subtitle langsung tertahan setelah perubahan terputus.",
+            "Memperbaiki dialog deployment agar tidak keliru menyatakan belum ada deployment saat pengaturannya tidak dapat dimuat."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Rilis ini meningkatkan analisis naskah dan membuat pengeditan naskah terjemahan lebih andal.",
           "new": [],

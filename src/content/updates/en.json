@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "This release improves script preparation, live-show reliability, and projection workflows.",
+          "new": [],
+          "improved": [
+            "Script analysis handles speaker cues within dialogue more carefully while keeping results linked to the source script.",
+            "Replacing or restoring a script now refreshes the project and clears outdated translation progress.",
+            "Pockitle Live setup checks the latest Show and audience-link status before opening a live session.",
+            "Projection previews offer clearer pre-show guidance. QLab caption updates fit the selected display more reliably and preserve existing text formatting.",
+            "Updated localized product and QLab guides with more reliable section navigation."
+          ],
+          "fixed": [
+            "Expired or deleted Show deployments are no longer shown as active, and retired runtime links are not refreshed.",
+            "When a Show deletion completes but its response is interrupted, the page confirms the completed removal without retrying the deletion.",
+            "Fixed cases where an interrupted Show-control transition could delay later updates.",
+            "Fixed projection controls that did not respond consistently to mouse, touch, and keyboard input."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "This release improves script analysis, live-show recovery, and membership-code access.",
+          "new": [
+            "Added a Pockitle Product Reference page with product descriptions, availability, terminology, and answers to common questions."
+          ],
+          "improved": [
+            "Script analysis better recognizes cast members and speaker cues in complex scripts, including inline cues, while keeping results tied to the source text.",
+            "Live subtitle updates recover more reliably after interruptions. Audience screens retain the last confirmed captions while an update is being recovered.",
+            "Membership-code benefits now follow the same feature and active-Show capacity rules as equivalent paid memberships."
+          ],
+          "fixed": [
+            "Fixed a Show-control issue that could leave a live subtitle update waiting after an interrupted change.",
+            "Fixed the deployment dialog incorrectly reporting that no deployment existed when its settings could not be loaded."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "This release improves script analysis and makes translated-script editing more reliable.",
           "new": [],

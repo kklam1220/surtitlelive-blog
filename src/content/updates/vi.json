@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện khâu chuẩn bị kịch bản, độ tin cậy của buổi diễn trực tiếp và quy trình trình chiếu.",
+          "new": [],
+          "improved": [
+            "Phân tích kịch bản xử lý thận trọng hơn các gợi ý người nói nằm trong lời thoại và tiếp tục liên kết kết quả với kịch bản nguồn.",
+            "Khi thay thế hoặc khôi phục kịch bản, dự án được làm mới và tiến độ dịch đã cũ được xóa.",
+            "Thiết lập Pockitle Live kiểm tra trạng thái Show và liên kết khán giả mới nhất trước khi mở phiên trực tiếp.",
+            "Bản xem trước trình chiếu có hướng dẫn trước buổi diễn rõ ràng hơn. Cập nhật phụ đề QLab phù hợp hơn với màn hình đã chọn và giữ nguyên định dạng văn bản hiện có.",
+            "Đã cập nhật hướng dẫn sản phẩm và QLab được bản địa hóa để điều hướng giữa các mục ổn định hơn."
+          ],
+          "fixed": [
+            "Show đã hết hạn hoặc bị xóa không còn hiển thị là đang hoạt động và liên kết runtime đã ngừng không còn được làm mới.",
+            "Nếu xóa Show hoàn tất nhưng phản hồi bị gián đoạn, trang sẽ xác nhận việc xóa mà không gửi lại yêu cầu.",
+            "Đã sửa các trường hợp chuyển quyền điều khiển Show bị gián đoạn có thể làm chậm những cập nhật tiếp theo.",
+            "Đã sửa các điều khiển trình chiếu không phản hồi nhất quán với chuột, cảm ứng và bàn phím."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện phân tích kịch bản, khả năng khôi phục buổi diễn trực tiếp và quyền truy cập bằng mã thành viên.",
+          "new": [
+            "Đã thêm trang tham khảo sản phẩm Pockitle với mô tả, tình trạng khả dụng, thuật ngữ và câu trả lời cho các câu hỏi thường gặp."
+          ],
+          "improved": [
+            "Phân tích kịch bản nhận diện tên nhân vật và gợi ý người nói trong các kịch bản phức tạp tốt hơn, bao gồm cả gợi ý nằm trong dòng, đồng thời giữ kết quả liên kết với văn bản nguồn.",
+            "Cập nhật phụ đề trực tiếp khôi phục đáng tin cậy hơn sau khi bị gián đoạn. Màn hình khán giả giữ phụ đề cuối cùng đã xác nhận trong khi khôi phục.",
+            "Quyền lợi từ mã thành viên hiện tuân theo cùng quy tắc tính năng và sức chứa Show đang hoạt động như gói thành viên trả phí tương đương."
+          ],
+          "fixed": [
+            "Đã sửa lỗi điều khiển Show có thể khiến cập nhật phụ đề trực tiếp bị chờ sau khi một thay đổi bị gián đoạn.",
+            "Đã sửa hộp thoại triển khai hiển thị sai rằng chưa có triển khai khi không tải được cài đặt."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Bản phát hành này cải thiện khả năng phân tích kịch bản và giúp việc chỉnh sửa kịch bản đã dịch đáng tin cậy hơn.",
           "new": [],

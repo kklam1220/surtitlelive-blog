@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Cette version améliore la préparation des scripts, la fiabilité des spectacles en direct et les flux de projection.",
+          "new": [],
+          "improved": [
+            "L’analyse des scripts traite plus soigneusement les indications de prise de parole intégrées au dialogue et maintient le lien entre les résultats et le script source.",
+            "Le remplacement ou la restauration d’un script actualise désormais le projet et efface l’ancienne progression de traduction.",
+            "La configuration de Pockitle Live vérifie le spectacle et le lien du public les plus récents avant d’ouvrir une session en direct.",
+            "Les aperçus de projection donnent des indications plus claires avant le spectacle. Les mises à jour des sous-titres QLab s’adaptent mieux à l’écran choisi et préservent la mise en forme existante.",
+            "Les guides produits et QLab localisés ont été mis à jour avec une navigation entre les sections plus fiable."
+          ],
+          "fixed": [
+            "Les déploiements de spectacles expirés ou supprimés ne sont plus présentés comme actifs, et les anciens liens d’exécution ne sont plus actualisés.",
+            "Si la suppression d’un spectacle aboutit mais que la réponse est interrompue, la page confirme la suppression sans la relancer.",
+            "Correction des cas où une transition de contrôle du spectacle interrompue pouvait retarder les mises à jour suivantes.",
+            "Correction des commandes de projection qui ne répondaient pas toujours de manière cohérente à la souris, au toucher et au clavier."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Cette version améliore l’analyse des scripts, la reprise des spectacles en direct et l’accès par code d’adhésion.",
+          "new": [
+            "Ajout d’une page de référence Pockitle présentant les produits, leur disponibilité, la terminologie et les réponses aux questions fréquentes."
+          ],
+          "improved": [
+            "L’analyse des scripts reconnaît mieux les noms des personnages et les indications de prise de parole dans les scripts complexes, y compris en ligne, tout en reliant les résultats au texte source.",
+            "Les mises à jour des sous-titres en direct reprennent plus fiablement après une interruption. Les écrans du public conservent les derniers sous-titres confirmés pendant la reprise.",
+            "Les avantages obtenus avec un code d’adhésion suivent désormais les mêmes règles de fonctionnalités et de capacité pour les spectacles actifs que les adhésions payantes équivalentes."
+          ],
+          "fixed": [
+            "Correction d’un problème de contrôle du spectacle qui pouvait laisser une mise à jour des sous-titres en direct en attente après une interruption.",
+            "Correction de la boîte de dialogue de déploiement, qui indiquait à tort qu’aucun déploiement n’existait lorsque ses paramètres ne pouvaient pas être chargés."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Cette version améliore l’analyse des scripts et fiabilise la modification des scripts traduits.",
           "new": [],

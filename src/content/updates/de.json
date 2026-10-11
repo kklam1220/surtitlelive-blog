@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Dieses Release verbessert die Skriptvorbereitung, die Zuverlässigkeit von Live-Shows und die Projektionsabläufe.",
+          "new": [],
+          "improved": [
+            "Die Skriptanalyse behandelt Sprecherhinweise innerhalb von Dialogen sorgfältiger und verknüpft die Ergebnisse weiterhin mit dem Quelltext.",
+            "Nach dem Ersetzen oder Wiederherstellen eines Skripts wird das Projekt jetzt aktualisiert und veralteter Übersetzungsfortschritt entfernt.",
+            "Die Pockitle-Live-Einrichtung prüft vor dem Öffnen einer Livesitzung den aktuellen Show- und Publikumslink-Status.",
+            "Projektionsvorschauen bieten klarere Hinweise vor Showbeginn. QLab-Untertitelaktualisierungen passen besser zur ausgewählten Anzeige und bewahren die vorhandene Textformatierung.",
+            "Die lokalisierten Produkt- und QLab-Anleitungen wurden mit einer zuverlässigeren Abschnittsnavigation aktualisiert."
+          ],
+          "fixed": [
+            "Abgelaufene oder gelöschte Show-Bereitstellungen werden nicht mehr als aktiv angezeigt; abgelaufene Laufzeitlinks werden nicht mehr aktualisiert.",
+            "Wenn eine Show gelöscht wurde, aber die Antwort unterbrochen wird, bestätigt die Seite die Entfernung, ohne den Löschvorgang erneut auszulösen.",
+            "Fälle, in denen ein unterbrochener Show-Steuerungsübergang spätere Aktualisierungen verzögerte, wurden behoben.",
+            "Projektionssteuerungen reagieren jetzt zuverlässig auf Maus, Touch und Tastatur."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Dieses Release verbessert die Skriptanalyse, die Wiederherstellung laufender Shows und den Zugang über Mitgliedschaftscodes.",
+          "new": [
+            "Eine Pockitle-Produktübersicht mit Produktbeschreibungen, Verfügbarkeit, Begriffserklärungen und Antworten auf häufige Fragen wurde hinzugefügt."
+          ],
+          "improved": [
+            "Die Skriptanalyse erkennt Besetzungsnamen und Sprecherhinweise in komplexen Skripten zuverlässiger, einschließlich Inline-Hinweisen, und verknüpft Ergebnisse weiterhin mit dem Quelltext.",
+            "Live-Untertitelaktualisierungen lassen sich nach Unterbrechungen zuverlässiger fortsetzen. Publikumsanzeigen behalten während der Wiederherstellung die zuletzt bestätigten Untertitel bei.",
+            "Mit Mitgliedschaftscodes gewährte Vorteile folgen nun denselben Funktions- und Kapazitätsregeln für laufende Shows wie entsprechende kostenpflichtige Mitgliedschaften."
+          ],
+          "fixed": [
+            "Ein Problem mit der Show-Steuerung wurde behoben, durch das eine Live-Untertitelaktualisierung nach einer Unterbrechung hängen bleiben konnte.",
+            "Der Bereitstellungsdialog meldet nun nicht mehr fälschlich, dass keine Bereitstellung vorhanden ist, wenn sich deren Einstellungen nicht laden lassen."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Dieses Release verbessert die Skriptanalyse und macht die Bearbeitung übersetzter Skripte zuverlässiger.",
           "new": [],

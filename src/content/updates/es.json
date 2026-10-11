@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Esta versión mejora la preparación de guiones, la fiabilidad de las funciones en directo y los flujos de proyección.",
+          "new": [],
+          "improved": [
+            "El análisis de guiones trata con más cuidado las indicaciones de quién habla dentro del diálogo y mantiene los resultados vinculados al guion original.",
+            "Al reemplazar o restaurar un guion, el proyecto se actualiza y se borra el progreso de traducción obsoleto.",
+            "La configuración de Pockitle Live comprueba el Show y el enlace del público más recientes antes de abrir una sesión en directo.",
+            "Las vistas previas de proyección ofrecen indicaciones más claras antes de la función. Las actualizaciones de subtítulos de QLab se adaptan mejor a la pantalla seleccionada y conservan el formato del texto existente.",
+            "Se actualizaron las guías localizadas de productos y QLab con una navegación por secciones más fiable."
+          ],
+          "fixed": [
+            "Los Shows vencidos o eliminados ya no aparecen como activos y los enlaces de ejecución retirados no se actualizan.",
+            "Si el Show se elimina pero se interrumpe la respuesta, la página confirma la eliminación sin volver a enviar la solicitud.",
+            "Se corrigieron casos en los que una transición de control del Show interrumpida podía retrasar actualizaciones posteriores.",
+            "Se corrigieron los controles de proyección para que respondan de forma consistente al ratón, al tacto y al teclado."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Esta versión mejora el análisis de guiones, la recuperación de las funciones en directo y el acceso mediante códigos de membresía.",
+          "new": [
+            "Se añadió una página de referencia de Pockitle con descripciones de productos, disponibilidad, terminología y respuestas a preguntas frecuentes."
+          ],
+          "improved": [
+            "El análisis de guiones identifica mejor los nombres del elenco y las indicaciones de quién habla en textos complejos, incluidas las indicaciones en línea, y mantiene los resultados vinculados al texto original.",
+            "Las actualizaciones de subtítulos en directo se recuperan con mayor fiabilidad tras una interrupción. Las pantallas del público conservan los últimos subtítulos confirmados durante la recuperación.",
+            "Las ventajas de los códigos de membresía ahora siguen las mismas reglas de funciones y capacidad para Shows activos que las membresías de pago equivalentes."
+          ],
+          "fixed": [
+            "Se corrigió un problema de control del Show que podía dejar pendiente una actualización de subtítulos en directo tras una interrupción.",
+            "Se corrigió el cuadro de diálogo de implementación para que no indique erróneamente que no existe una implementación cuando no se pueden cargar sus ajustes."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Esta versión mejora el análisis de guiones y hace más fiable la edición de guiones traducidos.",
           "new": [],

@@ -85,7 +85,9 @@ test("localization rejects source identity and known-issue structure drift befor
     const valid = check();
     assert.equal(valid.status, 0, valid.stdout + valid.stderr);
     const drifted = structuredClone(updates);
-    drifted.weeks[0].versions[0].knownIssues.pop();
+    const releaseWithKnownIssues = drifted.weeks.flatMap((week) => week.versions).find((release) => release.knownIssues?.length);
+    assert.ok(releaseWithKnownIssues, "fixture includes a release with known issues");
+    releaseWithKnownIssues.knownIssues.pop();
     fs.writeFileSync(updatesPath, JSON.stringify(drifted));
     const invalidUpdates = check();
     assert.equal(invalidUpdates.status, 1);

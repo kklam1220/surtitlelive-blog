@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Bu sürüm senaryo hazırlığını, canlı gösteri güvenilirliğini ve projeksiyon iş akışlarını iyileştiriyor.",
+          "new": [],
+          "improved": [
+            "Senaryo analizi, diyalog içindeki konuşmacı ipuçlarını daha dikkatli işler ve sonuçları kaynak senaryoya bağlı tutar.",
+            "Bir senaryo değiştirildiğinde veya geri yüklendiğinde proje yenilenir ve eski çeviri ilerlemesi temizlenir.",
+            "Pockitle Live kurulumu, canlı oturumu açmadan önce en güncel Show ve izleyici bağlantısı durumunu kontrol eder.",
+            "Projeksiyon önizlemelerinde gösteri öncesi yönlendirmeler daha açık hale geldi. QLab altyazı güncellemeleri seçilen ekrana daha iyi uyar ve mevcut metin biçimlendirmesini korur.",
+            "Yerelleştirilmiş ürün ve QLab kılavuzları, bölümler arasında daha güvenilir gezinme için güncellendi."
+          ],
+          "fixed": [
+            "Süresi dolan veya silinen Show dağıtımları artık etkin görünmüyor ve kullanım dışı çalışma zamanı bağlantıları yenilenmiyor.",
+            "Show silme işlemi tamamlanıp yanıt kesilirse sayfa, silme isteğini yeniden göndermeden işlemi doğrular.",
+            "Kesintiye uğrayan Show kontrol geçişlerinin sonraki güncellemeleri geciktirebildiği durumlar düzeltildi.",
+            "Fare, dokunma ve klavye girişlerine tutarlı yanıt vermeyen projeksiyon kontrolleri düzeltildi."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Bu sürüm senaryo analizini, canlı gösteri kurtarmayı ve üyelik koduyla erişimi iyileştiriyor.",
+          "new": [
+            "Ürün açıklamaları, kullanılabilirlik bilgileri, terimler ve sık sorulan sorularla birlikte bir Pockitle Ürün Referansı sayfası eklendi."
+          ],
+          "improved": [
+            "Senaryo analizi, karmaşık metinlerdeki karakter adlarını ve konuşmacı ipuçlarını, satır içi ipuçları da dahil olmak üzere daha iyi tanır ve sonuçları kaynak metne bağlı tutar.",
+            "Canlı altyazı güncellemeleri kesintilerden sonra daha güvenilir biçimde kurtarılır. Kurtarma sırasında izleyici ekranlarında son onaylanan altyazılar gösterilmeye devam eder.",
+            "Üyelik kodu avantajları artık eşdeğer ücretli üyeliklerle aynı özellik ve etkin Show kapasitesi kurallarını izliyor."
+          ],
+          "fixed": [
+            "Kesintiye uğrayan bir değişiklikten sonra canlı altyazı güncellemesinin beklemede kalmasına yol açabilen Show kontrolü sorunu giderildi.",
+            "Ayarları yüklenemediğinde dağıtım olmadığını yanlış bildiren dağıtım penceresi düzeltildi."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Bu sürüm, senaryo analizini iyileştirir ve çevrilmiş senaryoların düzenlenmesini daha güvenilir hale getirir.",
           "new": [],

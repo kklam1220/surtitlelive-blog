@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "Esta versão melhora a preparação de roteiros, a confiabilidade das apresentações ao vivo e os fluxos de projeção.",
+          "new": [],
+          "improved": [
+            "A análise de roteiros trata com mais cuidado as indicações de fala inseridas nos diálogos e mantém os resultados vinculados ao roteiro original.",
+            "Ao substituir ou restaurar um roteiro, o projeto é atualizado e o progresso de tradução desatualizado é removido.",
+            "A configuração do Pockitle Live verifica o Show e o link do público mais recentes antes de abrir uma sessão ao vivo.",
+            "As prévias de projeção oferecem orientações mais claras antes da apresentação. As atualizações de legendas do QLab se ajustam melhor à tela selecionada e preservam a formatação existente.",
+            "Os guias localizados de produtos e QLab foram atualizados com uma navegação entre seções mais confiável."
+          ],
+          "fixed": [
+            "Shows expirados ou excluídos não são mais exibidos como ativos, e links de execução encerrados não são atualizados.",
+            "Se a exclusão de um Show for concluída, mas a resposta for interrompida, a página confirma a remoção sem repetir a solicitação.",
+            "Corrigidos casos em que uma transição interrompida do controle do Show podia atrasar atualizações posteriores.",
+            "Corrigidos controles de projeção que não respondiam de forma consistente ao mouse, toque e teclado."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "Esta versão melhora a análise de roteiros, a recuperação de apresentações ao vivo e o acesso por códigos de associação.",
+          "new": [
+            "Foi adicionada uma página de referência dos produtos Pockitle com descrições, disponibilidade, terminologia e respostas a perguntas frequentes."
+          ],
+          "improved": [
+            "A análise de roteiros reconhece melhor os nomes do elenco e as indicações de fala em textos complexos, inclusive as inseridas na mesma linha, mantendo os resultados vinculados ao texto de origem.",
+            "As atualizações de legendas ao vivo são retomadas com mais confiabilidade após interrupções. As telas do público mantêm as últimas legendas confirmadas durante a recuperação.",
+            "Os benefícios dos códigos de associação agora seguem as mesmas regras de recursos e capacidade de Shows ativos das associações pagas equivalentes."
+          ],
+          "fixed": [
+            "Corrigido um problema de controle do Show que podia deixar uma atualização de legendas ao vivo aguardando após uma interrupção.",
+            "Corrigida a caixa de diálogo de implantação, que informava incorretamente que não havia implantação quando não era possível carregar suas configurações."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "Esta versão melhora a análise de roteiros e torna mais confiável a edição de roteiros traduzidos.",
           "new": [],

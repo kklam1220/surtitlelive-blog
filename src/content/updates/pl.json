@@ -16,9 +16,53 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "versions": [
+        {
+          "version": "v261011.01",
+          "releaseDate": "2026-10-11",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia przygotowanie scenariuszy, niezawodność występów na żywo i obsługę projekcji.",
+          "new": [],
+          "improved": [
+            "Analiza scenariuszy ostrożniej obsługuje wskazówki dotyczące mówcy umieszczone w dialogu i nadal wiąże wyniki z tekstem źródłowym.",
+            "Po zastąpieniu lub przywróceniu scenariusza projekt jest odświeżany, a nieaktualny postęp tłumaczenia usuwany.",
+            "Konfiguracja Pockitle Live sprawdza najnowszy stan Show i linku dla widzów przed otwarciem sesji na żywo.",
+            "Podglądy projekcji zapewniają czytelniejsze wskazówki przed występem. Aktualizacje napisów QLab lepiej dopasowują się do wybranego ekranu i zachowują istniejące formatowanie tekstu.",
+            "Zaktualizowano zlokalizowane przewodniki po produktach i QLab, poprawiając nawigację między sekcjami."
+          ],
+          "fixed": [
+            "Wygasłe lub usunięte wdrożenia Show nie są już pokazywane jako aktywne, a wycofane linki runtime nie są odświeżane.",
+            "Jeśli usunięcie Show zakończy się, ale odpowiedź zostanie przerwana, strona potwierdza usunięcie bez ponawiania żądania.",
+            "Naprawiono przypadki, w których przerwane przełączenie sterowania Show mogło opóźniać kolejne aktualizacje.",
+            "Naprawiono sterowanie projekcją, które nie zawsze reagowało poprawnie na mysz, dotyk i klawiaturę."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-04",
       "endDate": "2026-10-10",
       "versions": [
+        {
+          "version": "v261009.01",
+          "releaseDate": "2026-10-09",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia analizę scenariuszy, odzyskiwanie działania podczas występów na żywo i dostęp za pomocą kodów członkowskich.",
+          "new": [
+            "Dodano stronę informacyjną Pockitle z opisami produktów, informacjami o dostępności, terminologią i odpowiedziami na częste pytania."
+          ],
+          "improved": [
+            "Analiza scenariuszy lepiej rozpoznaje obsadę i wskazówki dotyczące mówcy w złożonych tekstach, także wewnątrz wierszy, a wyniki nadal pozostają powiązane z tekstem źródłowym.",
+            "Aktualizacje napisów na żywo niezawodniej wracają po przerwach. Ekrany widzów zachowują ostatnie potwierdzone napisy podczas odzyskiwania.",
+            "Korzyści z kodów członkowskich podlegają teraz tym samym zasadom funkcji i limitów aktywnych Show co odpowiadające im płatne członkostwa."
+          ],
+          "fixed": [
+            "Naprawiono problem ze sterowaniem Show, który po przerwaniu zmiany mógł pozostawić aktualizację napisów na żywo w oczekiwaniu.",
+            "Naprawiono okno wdrożenia, które błędnie informowało o braku wdrożenia, gdy nie można było wczytać jego ustawień."
+          ]
+        },
         {
           "version": "v261007.01",
           "releaseDate": "2026-10-07",
@@ -42,7 +86,7 @@
         },
         {
           "version": "v261005.01",
-          "releaseDate": "2026-10-05",
+          "releaseDate": "2026-10-06",
           "product": "Pockitle",
           "summary": "To wydanie usprawnia analizę scenariuszy i zwiększa niezawodność edycji przetłumaczonych scenariuszy.",
           "new": [],
