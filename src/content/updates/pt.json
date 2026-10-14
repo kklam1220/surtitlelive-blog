@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "Esta versão adiciona suporte a vários idiomas falados no Pockitle Live e melhora a análise de roteiros e as legendas para o público.",
+          "new": [
+            "O Pockitle Live agora pode lidar com vários idiomas falados em um único Show. Selecione os idiomas em ordem: as legendas exibem a fala original na sala do idioma correspondente e são traduzidas para os outros idiomas selecionados pelo público."
+          ],
+          "improved": [
+            "A página inicial e as páginas de recursos foram reformuladas para explicar com mais clareza a linha de produtos Pockitle e as legendas nos celulares do público.",
+            "A análise de roteiros foi aprimorada para reduzir a chance de nomes numerados de personagens serem mesclados com outros papéis.",
+            "As telas do Audience exibem parágrafos completos de legendas com mais clareza, e novas legendas não interrompem quem está consultando falas anteriores."
+          ],
+          "fixed": [
+            "Corrigidos casos em que o atraso na entrega de legendas ao vivo podia interromper a captura ou o andamento da transcrição.",
+            "Corrigidos problemas de recuperação do Audience em que o conteúdo preparado ou o estado final da sessão não era atualizado corretamente após uma pausa."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

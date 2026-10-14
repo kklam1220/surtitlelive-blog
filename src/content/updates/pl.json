@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "To wydanie wprowadza obsługę wielu języków mówionych w Pockitle Live oraz usprawnia analizę scenariuszy i napisy dla widzów.",
+          "new": [
+            "Pockitle Live obsługuje teraz kilka języków mówionych w jednym Show. Wybierz języki w odpowiedniej kolejności: w pokoju danego języka pojawiają się napisy z oryginalną wypowiedzią, a w pozostałych wybranych językach widzów — jej tłumaczenie."
+          ],
+          "improved": [
+            "Odświeżono stronę główną i strony funkcji, aby lepiej wyjaśniały ofertę produktów Pockitle oraz napisy wyświetlane na telefonach widzów.",
+            "Ulepszono analizę scenariuszy, dzięki czemu numerowane imiona postaci rzadziej są łączone z innymi rolami.",
+            "Widoki Audience czytelniej wyświetlają całe akapity napisów, a nowe napisy nie przerywają przeglądania wcześniejszych kwestii."
+          ],
+          "fixed": [
+            "Naprawiono przypadki, w których opóźnione dostarczanie napisów na żywo mogło zakłócić przechwytywanie lub postęp transkrypcji.",
+            "Naprawiono problemy z przywracaniem widoków Audience, gdy po wstrzymaniu przygotowana treść lub końcowy stan sesji nie odświeżały się prawidłowo."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

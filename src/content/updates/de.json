@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "Dieses Release ergänzt mehrsprachige Unterstützung für gesprochene Sprachen in Pockitle Live und verbessert Skriptanalyse sowie Publikumsuntertitel.",
+          "new": [
+            "Pockitle Live unterstützt jetzt mehrere gesprochene Sprachen in einer Show. Wählen Sie die Sprachen der Reihe nach aus: Untertitel erscheinen im passenden Sprachraum als Originalrede und werden für die anderen ausgewählten Publikumssprachen übersetzt."
+          ],
+          "improved": [
+            "Startseite und Funktionsseiten wurden überarbeitet, damit das Pockitle-Produktangebot und Untertitel auf den Smartphones des Publikums klarer erklärt werden.",
+            "Die Skriptanalyse erkennt nummerierte Rollennamen jetzt zuverlässiger und ordnet sie seltener anderen Rollen zu.",
+            "In den Audience-Ansichten bleiben vollständige Untertitelabsätze besser lesbar; neue Untertitel unterbrechen nicht mehr die Ansicht älterer Zeilen."
+          ],
+          "fixed": [
+            "Ein Fehler wurde behoben, durch den eine verzögerte Bereitstellung von Live-Untertiteln die Erfassung oder den Fortschritt des Transkripts beeinträchtigen konnte.",
+            "Fehler bei der Wiederherstellung der Audience-Ansichten wurden behoben: Nach einer Pause werden vorbereitete Inhalte und der endgültige Sitzungsstatus nun korrekt aktualisiert."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambahkan dukungan berbagai bahasa lisan ke Pockitle Live serta menyempurnakan analisis naskah dan takarir untuk penonton.",
+          "new": [
+            "Pockitle Live kini dapat menangani beberapa bahasa lisan dalam satu Show. Pilih bahasa secara berurutan; takarir ditampilkan sebagai ucapan asli di ruang bahasa yang sesuai dan diterjemahkan ke bahasa penonton lain yang dipilih."
+          ],
+          "improved": [
+            "Beranda dan halaman fitur diperbarui agar rangkaian produk Pockitle dan takarir pada ponsel penonton dijelaskan dengan lebih jelas.",
+            "Analisis naskah ditingkatkan agar nama karakter bernomor tidak mudah digabungkan dengan peran lain.",
+            "Tampilan Audience kini lebih mudah dibaca untuk paragraf takarir lengkap, dan takarir baru tidak mengganggu penonton yang sedang meninjau baris sebelumnya."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika pengiriman takarir langsung yang tertunda dapat mengganggu perekaman atau kemajuan transkrip.",
+            "Memperbaiki pemulihan Audience yang tidak menyegarkan konten yang disiapkan atau status akhir sesi dengan benar setelah jeda."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

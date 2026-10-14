@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này bổ sung hỗ trợ nhiều ngôn ngữ nói cho Pockitle Live, đồng thời cải thiện phân tích kịch bản và phụ đề cho khán giả.",
+          "new": [
+            "Pockitle Live hiện có thể xử lý nhiều ngôn ngữ nói trong cùng một Show. Chọn các ngôn ngữ theo thứ tự; phụ đề hiển thị lời nói gốc trong phòng ngôn ngữ tương ứng và được dịch sang các ngôn ngữ khán giả khác đã chọn."
+          ],
+          "improved": [
+            "Làm mới trang chủ và các trang tính năng để giới thiệu rõ hơn danh mục sản phẩm Pockitle và phụ đề trên điện thoại của khán giả.",
+            "Cải thiện phân tích kịch bản để tên nhân vật có đánh số ít bị gộp nhầm với các vai khác.",
+            "Các chế độ xem Audience giúp đọc rõ toàn bộ đoạn phụ đề hơn; phụ đề mới không làm gián đoạn người đang xem lại các dòng trước."
+          ],
+          "fixed": [
+            "Khắc phục các trường hợp việc gửi phụ đề trực tiếp bị trễ có thể làm gián đoạn quá trình thu nhận hoặc tiến độ bản chép lời.",
+            "Khắc phục lỗi khôi phục Audience khiến nội dung đã chuẩn bị hoặc trạng thái cuối của phiên không được cập nhật đúng sau khi tạm dừng."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

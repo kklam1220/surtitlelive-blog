@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "This release adds multilingual spoken-language support to Pockitle Live and improves script analysis and audience captioning.",
+          "new": [
+            "Pockitle Live can now handle multiple spoken languages in one Show. Select the languages in order; captions appear as original speech in the matching language room and are translated for other selected audience languages."
+          ],
+          "improved": [
+            "Refreshed the homepage and feature pages to explain Pockitle’s product lineup and audience-phone captioning more clearly.",
+            "Improved script analysis so numbered character names are less likely to be merged with other roles.",
+            "Improved Audience views so full caption paragraphs stay readable and new captions do not interrupt people reviewing earlier lines."
+          ],
+          "fixed": [
+            "Fixed cases where delayed live-caption delivery could disrupt capture or transcript progress.",
+            "Fixed Audience recovery cases where prepared content or the final session status did not refresh correctly after a pause."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",

@@ -20,6 +20,24 @@
       "endDate": "2026-10-17",
       "versions": [
         {
+          "version": "v261013.01",
+          "releaseDate": "2026-10-14",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, Pockitle Live'a birden fazla konuşma dili desteği ekliyor; senaryo analizini ve izleyici altyazılarını iyileştiriyor.",
+          "new": [
+            "Pockitle Live artık tek bir Show içinde birden fazla konuşma dilini destekliyor. Dilleri sırayla seçin; altyazılar ilgili dil odasında özgün konuşma olarak gösterilir ve izleyiciler için seçilen diğer dillere çevrilir."
+          ],
+          "improved": [
+            "Ana sayfa ve özellik sayfaları yenilenerek Pockitle ürün yelpazesi ve izleyici telefonlarındaki altyazılar daha açık biçimde anlatıldı.",
+            "Senaryo analizi iyileştirildi; numaralı karakter adlarının diğer rollerle birleştirilme olasılığı azaltıldı.",
+            "Audience görünümlerinde tam altyazı paragrafları daha okunaklı; yeni altyazılar önceki satırları inceleyen kişilerin görüntüsünü kesmiyor."
+          ],
+          "fixed": [
+            "Geciken canlı altyazı iletiminin yakalamayı veya döküm ilerlemesini aksatabildiği durumlar düzeltildi.",
+            "Duraklatmanın ardından hazırlanan içeriğin veya oturumun son durumunun doğru yenilenmediği Audience kurtarma sorunları düzeltildi."
+          ]
+        },
+        {
           "version": "v261011.01",
           "releaseDate": "2026-10-11",
           "product": "Pockitle",
