@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này bổ sung các công cụ kiểm soát dung lượng triển khai và cải thiện Pockitle Live, Audience Viewer, phân tích kịch bản, Projection Setup cũng như độ rõ ràng của trạng thái tài khoản.",
+          "new": [
+            "Đã thêm tính năng theo dõi riêng mức sử dụng triển khai trên trang Projects, hiển thị các triển khai đang hoạt động và yêu cầu còn đang chuẩn bị, đồng thời cho phép quản lý các yêu cầu chưa hoàn tất đủ điều kiện.",
+            "Đã thêm tùy chọn mua thêm một suất triển khai khi tài khoản đạt giới hạn. Tài khoản đủ điều kiện cũng có thể nhận một suất khẩn cấp một lần.",
+            "Đã thêm chế độ gửi By line bên cạnh Auto cho đầu vào tốc ký của Pockitle Live."
+          ],
+          "improved": [
+            "Đã tăng giới hạn triển khai hoạt động đồng thời: Lite từ 1 lên 2, Pro từ 3 lên 5 và Pro+ từ 5 lên 10.",
+            "Đã làm rõ cách các suất bổ sung được xử lý khi Pass hết hạn: suất được giữ lại nếu Pass được gia hạn hoặc nâng cấp trong cùng kỳ và hết hạn cùng Pass.",
+            "Đã cải thiện tính năng gửi phụ đề Auto. Tính năng này dùng ranh giới câu phù hợp với ngôn ngữ, gửi câu khi bạn bắt đầu câu tiếp theo hoặc tạm dừng, đồng thời cho phép chỉnh sửa phần văn bản hiện tại chưa gửi. Văn bản dài không có dấu câu sẽ được gửi sau một khoảng chờ ngắn.",
+            "Audience Viewer chọn trước ngôn ngữ phụ đề có sẵn phù hợp nhất với tùy chọn trình duyệt của người xem, đồng thời giữ ngôn ngữ đã chọn trước đó nếu ngôn ngữ đó vẫn khả dụng.",
+            "Đã cải thiện phân tích kịch bản để nhận diện nhãn màn hình và trình chiếu được ghi rõ, giúp phân loại văn bản hiển thị là chỉ dẫn sân khấu thay vì lời thoại hoặc tên nhân vật.",
+            "Đã cải thiện cách xử lý preset trong Projection Setup để giảm khả năng thao tác lưu hoặc tải bị trì hoãn ghi đè lựa chọn mới nhất của người vận hành.",
+            "Trang sản phẩm Pockitle Live hiện hiển thị bảng điều khiển trên cả iPhone và iPad ở chế độ ngang.",
+            "Trạng thái xóa tài khoản được hiển thị rõ hơn khi không thể xác nhận việc thu hồi quyền đăng nhập được liên kết."
+          ],
+          "fixed": [
+            "Đã khắc phục trường hợp yêu cầu triển khai bị bỏ dở và chưa xuất bản vẫn tiếp tục chiếm suất; quá trình khôi phục giờ đây bảo vệ các triển khai đang hoạt động hoặc có trạng thái chưa rõ.",
+            "Đã khắc phục tình trạng tranh chấp giữa thay đổi cài đặt QLab và cập nhật cue có thể khiến thay đổi này ghi đè thay đổi kia."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này bổ sung tính năng để người vận hành nhập phụ đề trong Pockitle Live, đồng thời giúp cập nhật phụ đề trực tiếp an toàn và dễ khôi phục hơn.",
+          "new": [
+            "Đã thêm tính năng nhập văn bản qua trình duyệt cho Pockitle Live, giúp người vận hành nhập và phát hành phụ đề mà không cần micrô.",
+            "Đã thêm bước phê duyệt cập nhật phụ đề trong ASM Console trực tiếp khi một Show đang diễn ra."
+          ],
+          "improved": [
+            "Các chỉnh sửa chỉ có văn bản trong Update Live không làm gián đoạn buổi diễn và vẫn giữ cue hiện tại cùng cài đặt ngôn ngữ khán giả.",
+            "Cải thiện khả năng khôi phục các lần cập nhật phụ đề bị gián đoạn; phụ đề trước đó vẫn được giữ trong lúc khôi phục."
+          ],
+          "fixed": [
+            "Đã sửa lỗi khiến các chỉnh sửa chỉ có văn bản trong Show trực tiếp bị từ chối như thể chúng thay đổi cấu trúc phụ đề."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện khả năng phân tích kịch bản và khôi phục buổi diễn trực tiếp, đồng thời giới thiệu trang hợp tác về khả năng tiếp cận.",
+          "new": [
+            "Đã thêm trang Hợp tác về Khả năng tiếp cận, kèm quy trình đăng ký dành cho các chương trình sân khấu."
+          ],
+          "improved": [
+            "Phân tích kịch bản vẫn hiển thị lời thoại chưa được gán nhân vật để rà soát và không còn nhầm trường số trang Word với nội dung kịch bản.",
+            "Cải thiện khả năng kết nối lại trong buổi diễn trực tiếp và khôi phục khi buổi diễn kết thúc.",
+            "Mở rộng các trang sản phẩm và hướng dẫn thiết lập đã được bản địa hóa."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",

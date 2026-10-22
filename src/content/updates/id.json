@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambahkan kontrol kapasitas deployment serta meningkatkan Pockitle Live, Audience Viewer, analisis naskah, Projection Setup, dan kejelasan status akun.",
+          "new": [
+            "Pelacakan penggunaan deployment terpisah ditambahkan ke halaman Projects untuk menampilkan deployment aktif dan permintaan yang masih disiapkan, serta mengelola permintaan belum selesai yang memenuhi syarat.",
+            "Pengguna kini dapat membeli satu slot deployment tambahan saat akun mencapai batasnya. Akun yang memenuhi syarat juga dapat mengklaim slot darurat satu kali.",
+            "Mode pengiriman By line ditambahkan ke input stenotipe Pockitle Live, selain Auto."
+          ],
+          "improved": [
+            "Batas deployment aktif secara bersamaan ditingkatkan: Lite dari 1 menjadi 2, Pro dari 3 menjadi 5, dan Pro+ dari 5 menjadi 10.",
+            "Ketentuan slot tambahan saat Pass berakhir kini lebih jelas: slot tetap berlaku jika Pass diperpanjang atau ditingkatkan dalam periode yang sama, dan berakhir bersama Pass.",
+            "Pengiriman caption Auto ditingkatkan. Fitur ini kini menggunakan batas kalimat yang sesuai dengan bahasa, mengirim kalimat saat Anda memulai kalimat berikutnya atau berhenti sejenak, serta membiarkan teks yang belum dikirim tetap dapat diedit. Teks panjang tanpa tanda baca akan dikirim setelah jeda singkat.",
+            "Audience Viewer kini memilih lebih dulu bahasa subtitle yang tersedia dan paling sesuai dengan preferensi browser penonton, sambil mempertahankan bahasa yang sebelumnya dipilih selama masih tersedia.",
+            "Analisis naskah kini lebih baik mengenali label layar dan proyeksi yang eksplisit, sehingga teks yang ditampilkan lebih tepat diklasifikasikan sebagai petunjuk panggung, bukan dialog atau nama karakter.",
+            "Penanganan preset Projection Setup ditingkatkan agar penyimpanan atau pemuatan yang tertunda tidak mudah menggantikan pilihan terbaru operator.",
+            "Halaman produk Pockitle Live kini menampilkan konsol di iPhone dan iPad dalam orientasi lanskap.",
+            "Status penghapusan akun kini lebih jelas jika pencabutan akses masuk yang tertaut tidak dapat dikonfirmasi."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika permintaan deployment yang ditinggalkan dan belum dipublikasikan dapat terus memakai slot; proses pemulihan kini melindungi deployment aktif atau yang statusnya belum pasti.",
+            "Memperbaiki race condition antara perubahan pengaturan QLab dan pembaruan cue yang dapat menyebabkan salah satunya menimpa perubahan lainnya."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambahkan input teks operator ke Pockitle Live dan membuat pembaruan takarir langsung lebih aman serta lebih mudah dipulihkan.",
+          "new": [
+            "Menambahkan input teks berbasis browser untuk Pockitle Live, sehingga operator dapat mengetik dan menerbitkan takarir tanpa mikrofon.",
+            "Menambahkan langkah persetujuan di ASM Console langsung untuk pembaruan takarir selama Show."
+          ],
+          "improved": [
+            "Perubahan teks saja melalui Update Live kini memungkinkan pertunjukan terus berjalan dan mempertahankan cue serta pengaturan bahasa penonton.",
+            "Memperbaiki pemulihan pembaruan takarir yang terputus, sementara takarir sebelumnya tetap ditampilkan."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika perubahan teks saja ditolak selama Show langsung seolah-olah mengubah struktur takarir."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "Rilis ini meningkatkan analisis naskah dan pemulihan pertunjukan langsung, serta menghadirkan halaman kemitraan aksesibilitas.",
+          "new": [
+            "Menambahkan halaman Kemitraan Aksesibilitas dengan jalur pengajuan bagi produksi teater."
+          ],
+          "improved": [
+            "Analisis naskah kini tetap menampilkan dialog tanpa penetapan karakter untuk ditinjau dan tidak lagi menganggap kolom nomor halaman Word sebagai isi naskah.",
+            "Memperbaiki penyambungan ulang selama pertunjukan langsung dan pemulihan setelah pertunjukan berakhir.",
+            "Memperluas halaman produk dan panduan penyiapan yang telah dilokalkan."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",

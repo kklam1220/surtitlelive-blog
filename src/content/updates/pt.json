@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "Esta versão adiciona controles de capacidade de implantação e aprimora o Pockitle Live, o Audience Viewer, a análise de roteiros, o Projection Setup e a clareza do status da conta.",
+          "new": [
+            "Foi adicionado um acompanhamento separado do uso de implantações à página Projects, mostrando as implantações ativas e as solicitações ainda em preparação e permitindo gerenciar solicitações elegíveis não concluídas.",
+            "Agora é possível comprar um espaço adicional de implantação quando a conta atinge o limite. Contas elegíveis também podem solicitar um espaço emergencial uma única vez.",
+            "Foi adicionado o modo de envio By line à entrada de estenotipia do Pockitle Live, além do Auto."
+          ],
+          "improved": [
+            "Os limites de implantações ativas simultâneas aumentaram: Lite de 1 para 2, Pro de 3 para 5 e Pro+ de 5 para 10.",
+            "Foi esclarecido como os espaços adicionais são tratados quando o Pass vence: eles continuam disponíveis se o Pass for renovado ou atualizado durante o mesmo período e vencem junto com o Pass.",
+            "O envio automático de legendas foi aprimorado. Agora, usa limites de frase adequados ao idioma, envia uma frase quando você começa a próxima ou faz uma pausa e mantém editável o texto atual ainda não enviado. Textos longos sem pontuação são enviados após uma breve espera.",
+            "O Audience Viewer pré-seleciona um idioma de legenda disponível que melhor corresponde às preferências do navegador do espectador, mantendo o idioma selecionado anteriormente enquanto ele continuar disponível.",
+            "A análise de roteiros reconhece melhor rótulos explícitos de tela e projeção, ajudando a classificar o texto exibido como indicações de palco, em vez de diálogo ou nomes de personagens.",
+            "O gerenciamento de predefinições do Projection Setup foi aprimorado para reduzir a chance de salvamentos ou carregamentos atrasados substituírem as escolhas mais recentes do operador.",
+            "A página do produto Pockitle Live agora mostra o console tanto no iPhone quanto no iPad na orientação horizontal.",
+            "O status de exclusão da conta ficou mais claro quando não é possível confirmar a revogação do acesso de login vinculado."
+          ],
+          "fixed": [
+            "Foram corrigidos casos em que uma solicitação de implantação abandonada e não publicada continuava ocupando um espaço. A recuperação agora protege implantações ativas ou com estado ambíguo.",
+            "Foi corrigida uma condição de corrida entre alterações nas configurações do QLab e atualizações de cues que podia fazer uma alteração sobrescrever a outra."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "Esta versão adiciona legendas introduzidas pelo operador ao Pockitle Live e torna as atualizações de legendas ao vivo mais seguras e fáceis de recuperar.",
+          "new": [
+            "Foi adicionada a introdução de texto no navegador ao Pockitle Live, para que o operador possa escrever e publicar legendas sem microfone.",
+            "Foi adicionado um passo de aprovação na ASM Console ao vivo para atualizações de legendas durante um Show."
+          ],
+          "improved": [
+            "As edições apenas de texto do Update Live permitem que o espetáculo continue e preservam o cue atual e as definições de idioma do público.",
+            "Foi melhorada a recuperação de atualizações de legendas interrompidas, mantendo as legendas anteriores ativas."
+          ],
+          "fixed": [
+            "Foram corrigidos casos em que edições apenas de texto eram rejeitadas durante um Show ao vivo como se alterassem a estrutura das legendas."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "Esta versão melhora a análise de guiões e a recuperação de espetáculos ao vivo, e apresenta uma página de parceria de acessibilidade.",
+          "new": [
+            "Foi adicionada uma página de parceria de acessibilidade com um processo de candidatura para produções teatrais."
+          ],
+          "improved": [
+            "A análise de guiões mantém visíveis para revisão as falas sem personagem atribuída e já não confunde os campos de número de página do Word com o conteúdo do guião.",
+            "Foram melhoradas a reconexão durante espetáculos ao vivo e a recuperação no final do espetáculo.",
+            "Foram ampliadas as páginas de produto localizadas e os guias de configuração."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",

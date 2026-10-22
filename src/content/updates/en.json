@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "This release adds deployment-capacity controls and improves Pockitle Live, the Audience Viewer, script analysis, Projection Setup, and account-status clarity.",
+          "new": [
+            "Added separate deployment-usage tracking to the Projects page, showing active deployments and requests still preparing, with controls for eligible unfinished requests.",
+            "Added the option to purchase one additional deployment slot when an account reaches its limit. Eligible accounts can also claim a one-time emergency slot.",
+            "Added a By line sending mode to Pockitle Live’s stenotype input, alongside Auto."
+          ],
+          "improved": [
+            "Increased concurrent active deployment limits: Lite from 1 to 2, Pro from 3 to 5, and Pro+ from 5 to 10.",
+            "Clarified how additional slots follow Pass expiry: they carry forward when a Pass is renewed or upgraded within the same period, and expire with the Pass.",
+            "Improved Auto caption sending. It now uses language-aware sentence boundaries, sends a sentence when you begin the next one or pause, and keeps the current unsent text editable. Long text without punctuation is sent after a short wait.",
+            "Updated the Audience Viewer to preselect an available subtitle language that best matches the viewer’s browser preferences, while respecting a previously selected language when it remains available.",
+            "Improved script analysis for explicit screen and projection labels, helping keep displayed text classified as stage directions rather than dialogue or character names.",
+            "Improved Projection Setup preset handling so delayed saves or loads are less likely to override the operator’s latest choices.",
+            "Updated the Pockitle Live product page to show the console on both iPhone and landscape iPad.",
+            "Made account-deletion status clearer when revocation of linked sign-in access cannot be confirmed."
+          ],
+          "fixed": [
+            "Fixed cases where an abandoned, unpublished deployment request could continue to hold a slot; recovery now leaves active or ambiguous deployments protected.",
+            "Fixed a race between QLab settings changes and cue updates that could cause one change to overwrite the other."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "This release adds operator-entered captions to Pockitle Live and makes live subtitle updates safer and easier to recover.",
+          "new": [
+            "Added browser-based text input for Pockitle Live, so an operator can type and publish captions without a microphone.",
+            "Added an approval step in the live ASM Console for subtitle updates during a Show."
+          ],
+          "improved": [
+            "Text-only Update Live edits now keep the performance running and preserve the current cue and audience-language setup.",
+            "Improved recovery for interrupted subtitle updates, while keeping the previous captions active."
+          ],
+          "fixed": [
+            "Fixed cases where text-only edits were rejected during a live Show as if they changed the subtitle structure."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "This release improves script analysis and live-show recovery, and introduces an accessibility partnership page.",
+          "new": [
+            "Added an Accessibility Partnership page with an application path for theatre productions."
+          ],
+          "improved": [
+            "Script analysis now keeps unassigned dialogue visible for review and no longer mistakes Word page-number fields for script content.",
+            "Improved live-show reconnection and end-of-show recovery.",
+            "Expanded localized product pages and setup guides."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",

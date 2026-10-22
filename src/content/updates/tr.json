@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "Bu sürüm dağıtım kapasitesi kontrolleri ekler; Pockitle Live, Audience Viewer, senaryo analizini, Projection Setup'ı ve hesap durumu bilgisini iyileştirir.",
+          "new": [
+            "Projects sayfasına ayrı dağıtım kullanımı takibi eklendi. Etkin dağıtımları ve hazırlık aşamasındaki istekleri gösterir; uygun tamamlanmamış isteklerin yönetilmesini sağlar.",
+            "Hesap sınıra ulaştığında bir ek dağıtım yuvası satın alma seçeneği eklendi. Uygun hesaplar ayrıca tek seferlik acil durum yuvası alabilir.",
+            "Pockitle Live'ın stenotip girişine Auto'nun yanında By line gönderme modu eklendi."
+          ],
+          "improved": [
+            "Eşzamanlı etkin dağıtım sınırları artırıldı: Lite 1'den 2'ye, Pro 3'ten 5'e ve Pro+ 5'ten 10'a çıkarıldı.",
+            "Ek yuvaların Pass süresi dolduğundaki durumu netleştirildi: Pass aynı dönem içinde yenilenir veya yükseltilirse yuvalar devreder, Pass sona erdiğinde ise onlar da sona erer.",
+            "Otomatik altyazı gönderimi iyileştirildi. Artık dile duyarlı cümle sınırlarını kullanıyor; sonraki cümleye başladığınızda veya durakladığınızda cümleyi gönderiyor ve gönderilmemiş mevcut metni düzenlenebilir tutuyor. Noktalama işareti içermeyen uzun metinler kısa bir beklemenin ardından gönderiliyor.",
+            "Audience Viewer, izleyicinin tarayıcı tercihleriyle en iyi eşleşen kullanılabilir altyazı dilini önceden seçer; önceden seçilmiş dil hâlâ kullanılabiliyorsa onu korur.",
+            "Senaryo analizi, açıkça belirtilen ekran ve projeksiyon etiketlerini daha iyi tanır; böylece görüntülenen metnin diyalog veya karakter adı yerine sahne yönergesi olarak sınıflandırılmasına yardımcı olur.",
+            "Projection Setup ön ayarlarının işlenmesi iyileştirildi; geciken kaydetme veya yükleme işlemlerinin operatörün en son tercihlerini geçersiz kılma olasılığı azaltıldı.",
+            "Pockitle Live ürün sayfası artık konsolu hem iPhone'da hem yatay iPad'de gösteriyor.",
+            "Bağlantılı oturum açma erişiminin iptali doğrulanamadığında hesap silme durumu artık daha açık."
+          ],
+          "fixed": [
+            "Terk edilmiş ve yayımlanmamış bir dağıtım isteğinin yuvayı tutmaya devam edebildiği durumlar düzeltildi. Kurtarma işlemi etkin veya durumu belirsiz dağıtımları korur.",
+            "QLab ayar değişiklikleri ile cue güncellemeleri arasındaki bir yarış durumu düzeltildi; bu durum değişikliklerden birinin diğerinin üzerine yazılmasına neden olabiliyordu."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, Pockitle Live'a operatörün girdiği altyazıları ekliyor ve canlı altyazı güncellemelerini daha güvenli ve kurtarması daha kolay hâle getiriyor.",
+          "new": [
+            "Pockitle Live için tarayıcı tabanlı metin girişi eklendi; operatör mikrofon kullanmadan altyazı yazıp yayımlayabilir.",
+            "Canlı ASM Console'a, bir Show sırasında altyazı güncellemeleri için onay adımı eklendi."
+          ],
+          "improved": [
+            "Yalnızca metin içeren Update Live düzenlemeleri gösteriyi sürdürür ve mevcut cue ile izleyici dili ayarlarını korur.",
+            "Kesintiye uğrayan altyazı güncellemelerinden kurtarma iyileştirildi; bu sırada önceki altyazılar etkin kalır."
+          ],
+          "fixed": [
+            "Canlı Show sırasında yalnızca metin içeren düzenlemelerin altyazı yapısını değiştiriyormuş gibi reddedilmesine yol açan durumlar düzeltildi."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, senaryo analizini ve canlı gösteri kurtarmayı iyileştiriyor ve erişilebilirlik ortaklığı sayfası sunuyor.",
+          "new": [
+            "Tiyatro yapımlarının başvuru yapabileceği bir erişilebilirlik ortaklığı sayfası eklendi."
+          ],
+          "improved": [
+            "Senaryo analizi, karakter atanmamış diyalogları inceleme için görünür tutuyor ve Word sayfa numarası alanlarını artık senaryo içeriğiyle karıştırmıyor.",
+            "Canlı gösteri sırasında yeniden bağlantı ve gösteri sonrasında kurtarma iyileştirildi.",
+            "Yerelleştirilmiş ürün sayfaları ve kurulum kılavuzları genişletildi."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",

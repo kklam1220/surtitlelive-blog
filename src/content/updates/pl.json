@@ -16,9 +16,72 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "versions": [
+        {
+          "version": "v261021.01",
+          "releaseDate": "2026-10-21",
+          "product": "Pockitle",
+          "summary": "To wydanie dodaje narzędzia do zarządzania limitem wdrożeń oraz usprawnia Pockitle Live, Audience Viewer, analizę scenariuszy, Projection Setup i czytelność statusu konta.",
+          "new": [
+            "Na stronie Projects dodano osobne śledzenie wykorzystania wdrożeń. Pokazuje ono aktywne wdrożenia i żądania w trakcie przygotowania oraz umożliwia zarządzanie kwalifikującymi się, nieukończonymi żądaniami.",
+            "Po osiągnięciu limitu konta można dokupić jedno dodatkowe miejsce na wdrożenie. Kwalifikujące się konta mogą też jednorazowo uzyskać awaryjne miejsce.",
+            "Do stenotypowego wprowadzania tekstu w Pockitle Live dodano tryb wysyłania „By line”, obok trybu Auto."
+          ],
+          "improved": [
+            "Zwiększono limity jednocześnie aktywnych wdrożeń: Lite z 1 do 2, Pro z 3 do 5, a Pro+ z 5 do 10.",
+            "Wyjaśniono, co dzieje się z dodatkowymi miejscami po wygaśnięciu Pass: są zachowywane po odnowieniu lub uaktualnieniu Pass w tym samym okresie i wygasają razem z Pass.",
+            "Usprawniono automatyczne wysyłanie napisów. Uwzględnia ono granice zdań zależne od języka, wysyła zdanie po rozpoczęciu następnego lub po przerwie i pozostawia bieżący niewysłany tekst do edycji. Długi tekst bez interpunkcji jest wysyłany po krótkiej chwili.",
+            "Audience Viewer wstępnie wybiera dostępny język napisów najlepiej dopasowany do preferencji przeglądarki widza, zachowując wcześniej wybrany język, jeśli nadal jest dostępny.",
+            "Analiza scenariuszy lepiej rozpoznaje jawne etykiety ekranowe i projekcyjne, co pomaga klasyfikować wyświetlany tekst jako didaskalia, a nie dialog lub nazwę postaci.",
+            "Usprawniono obsługę ustawień wstępnych w Projection Setup, aby opóźnione zapisy lub wczytywanie rzadziej zastępowały najnowsze wybory operatora.",
+            "Strona produktu Pockitle Live pokazuje teraz konsolę zarówno na iPhonie, jak i na iPadzie w orientacji poziomej.",
+            "Status usunięcia konta jest teraz jaśniejszy, gdy nie można potwierdzić cofnięcia powiązanego dostępu do logowania."
+          ],
+          "fixed": [
+            "Naprawiono sytuacje, w których porzucone, nieopublikowane żądanie wdrożenia nadal blokowało miejsce. Odzyskiwanie chroni teraz aktywne wdrożenia i te o niejednoznacznym stanie.",
+            "Naprawiono wyścig między zmianami ustawień QLab a aktualizacjami cue, który mógł powodować nadpisanie jednej zmiany przez drugą."
+          ]
+        },
+        {
+          "version": "v261020.01",
+          "releaseDate": "2026-10-19",
+          "product": "Pockitle",
+          "summary": "To wydanie dodaje do Pockitle Live napisy wpisywane przez operatora oraz zwiększa bezpieczeństwo i ułatwia odzyskiwanie aktualizacji napisów na żywo.",
+          "new": [
+            "Do Pockitle Live dodano tekstowe wprowadzanie napisów w przeglądarce, dzięki czemu operator może je wpisywać i publikować bez mikrofonu.",
+            "W działającej konsoli ASM Console dodano etap zatwierdzania aktualizacji napisów podczas Show."
+          ],
+          "improved": [
+            "Zmiany obejmujące wyłącznie tekst w Update Live pozwalają kontynuować występ i zachowują bieżący cue oraz ustawienia języków odbiorców.",
+            "Usprawniono odzyskiwanie przerwanych aktualizacji napisów; w tym czasie nadal wyświetlane są poprzednie napisy."
+          ],
+          "fixed": [
+            "Naprawiono przypadki odrzucania zmian obejmujących wyłącznie tekst podczas występu na żywo, jak gdyby zmieniały strukturę napisów."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-11",
       "endDate": "2026-10-17",
       "versions": [
+        {
+          "version": "v261016.01",
+          "releaseDate": "2026-10-16",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia analizę scenariuszy i odzyskiwanie działania podczas występów na żywo oraz wprowadza stronę partnerstwa na rzecz dostępności.",
+          "new": [
+            "Dodano stronę partnerstwa na rzecz dostępności z możliwością zgłoszenia produkcji teatralnej."
+          ],
+          "improved": [
+            "Analiza scenariusza pozostawia nieprzypisane kwestie widoczne do sprawdzenia i nie myli już pól numerów stron w Wordzie z treścią scenariusza.",
+            "Usprawniono ponowne łączenie podczas występów na żywo oraz odzyskiwanie działania po ich zakończeniu.",
+            "Rozszerzono zlokalizowane strony produktów i przewodniki konfiguracji."
+          ],
+          "fixed": []
+        },
         {
           "version": "v261013.01",
           "releaseDate": "2026-10-14",
