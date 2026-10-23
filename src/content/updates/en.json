@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "This update adds ASM sign-in to the existing free deployment preview and improves Simulation, deployment, and Access Pass guidance.",
+          "new": [
+            "Added an ASM login password to the existing free deployment preview, allowing operators to sign in to the ASM during a preview.",
+            "Localized the Simulation workflow across supported languages, including controls, deployment choices, and status messages."
+          ],
+          "improved": [
+            "Clarified plan comparisons with deployment capacity, audience size, duration, and Pass extension details.",
+            "Improved deployment-limit guidance with current usage, links to manage deployments or review membership options, and clearer purchase-eligibility messages.",
+            "Clarified where to renew an Access Pass and how to extend a deployment afterward."
+          ],
+          "fixed": [
+            "Fixed the Audience Viewer privacy notice’s language metadata so it follows the selected language and text direction."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

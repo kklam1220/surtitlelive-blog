@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja dodaje logowanie do ASM w istniejącym bezpłatnym podglądzie wdrożenia i ulepsza wskazówki dotyczące Simulation, wdrożeń i Access Pass.",
+          "new": [
+            "Do istniejącego bezpłatnego podglądu wdrożenia dodano hasło logowania do ASM, aby operatorzy mogli logować się do ASM podczas podglądu.",
+            "Przepływ Simulation jest teraz dostępny w obsługiwanych językach, wraz z elementami sterującymi, opcjami wdrożenia i komunikatami o stanie."
+          ],
+          "improved": [
+            "Porównanie planów czytelniej przedstawia teraz limity wdrożeń, wielkość widowni, czas trwania i zasady przedłużania Pass.",
+            "Ulepszono wskazówki wyświetlane po osiągnięciu limitu wdrożeń: pokazują bieżące wykorzystanie, linki do zarządzania wdrożeniami lub sprawdzenia opcji członkostwa oraz jaśniejsze informacje o możliwości zakupu.",
+            "Wyjaśniono, gdzie odnowić Access Pass i jak później przedłużyć wdrożenie."
+          ],
+          "fixed": [
+            "Metadane języka w informacji o prywatności Audience Viewer uwzględniają teraz wybrany język i kierunek tekstu."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "本次更新为现有的免费部署预览增加 ASM 登录，并改进 Simulation、部署和 Access Pass 相关说明。",
+          "new": [
+            "为现有的免费部署预览增加 ASM 登录密码，操作人员现在可在预览期间登录 ASM。",
+            "Simulation 工作流程现已完成支持语言的本地化，涵盖操作控件、部署选项和状态消息。"
+          ],
+          "improved": [
+            "套餐对比现在更清楚地说明部署容量、观众人数、时长和 Pass 延长详情。",
+            "改进了达到部署上限时的指引：显示当前使用情况，提供管理部署或查看会员选项的链接，并更清楚地说明购买资格。",
+            "进一步说明了在哪里续期 Access Pass，以及之后如何延长部署。"
+          ],
+          "fixed": [
+            "修正了 Audience Viewer 隐私提示的语言元数据，使其遵循所选语言和文字方向。"
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

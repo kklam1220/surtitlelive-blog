@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Dieses Update ergänzt die Anmeldung beim ASM in der bestehenden kostenlosen Bereitstellungsvorschau und verbessert die Hinweise zu Simulation, Bereitstellung und Access Pass.",
+          "new": [
+            "Die bestehende kostenlose Bereitstellungsvorschau unterstützt jetzt ein ASM-Anmeldepasswort, damit Operatoren sich während der Vorschau beim ASM anmelden können.",
+            "Der Simulationsablauf wurde für alle unterstützten Sprachen lokalisiert, einschließlich Steuerelementen, Bereitstellungsoptionen und Statusmeldungen."
+          ],
+          "improved": [
+            "Planvergleiche zeigen jetzt übersichtlicher Bereitstellungskapazität, Publikumsgröße, Dauer und Details zur Verlängerung des Passes.",
+            "Die Hinweise bei erreichtem Bereitstellungslimit wurden verbessert: Sie zeigen die aktuelle Nutzung, Links zur Verwaltung von Bereitstellungen oder zu Mitgliedschaftsoptionen sowie klarere Angaben zur Kaufberechtigung.",
+            "Es ist jetzt klarer, wo ein Access Pass verlängert wird und wie anschließend eine Bereitstellung verlängert werden kann."
+          ],
+          "fixed": [
+            "Die Sprachmetadaten des Datenschutzhinweises im Audience Viewer folgen jetzt der ausgewählten Sprache und Schreibrichtung."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

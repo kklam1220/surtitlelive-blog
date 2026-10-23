@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Esta atualização adiciona o acesso ao ASM na prévia gratuita de implantação já existente e melhora as orientações sobre Simulation, implantações e Access Pass.",
+          "new": [
+            "Foi adicionada uma senha de acesso ao ASM à prévia gratuita de implantação já existente, permitindo que operadores entrem no ASM durante a prévia.",
+            "O fluxo de Simulation foi localizado nos idiomas compatíveis, incluindo controles, opções de implantação e mensagens de status."
+          ],
+          "improved": [
+            "As comparações de planos agora explicam melhor a capacidade de implantação, o tamanho do público, a duração e os detalhes de extensão do Pass.",
+            "As orientações ao atingir o limite de implantações foram aprimoradas: mostram o uso atual, links para gerenciar implantações ou consultar opções de associação e mensagens mais claras sobre a elegibilidade para compra.",
+            "Ficou mais claro onde renovar um Access Pass e como estender uma implantação depois."
+          ],
+          "fixed": [
+            "Os metadados de idioma do aviso de privacidade do Audience Viewer agora seguem o idioma selecionado e a direção do texto."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

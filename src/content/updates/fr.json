@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Cette mise à jour ajoute la connexion à l’ASM dans l’aperçu de déploiement gratuit existant et améliore les informations sur Simulation, les déploiements et Access Pass.",
+          "new": [
+            "Un mot de passe de connexion à l’ASM a été ajouté à l’aperçu de déploiement gratuit existant, afin que les opérateurs puissent se connecter à l’ASM pendant un aperçu.",
+            "Le flux de Simulation a été localisé dans toutes les langues prises en charge, y compris les commandes, les options de déploiement et les messages d’état."
+          ],
+          "improved": [
+            "Les comparaisons des offres précisent désormais plus clairement la capacité de déploiement, la taille de l’audience, la durée et les modalités de prolongation du Pass.",
+            "Les indications relatives à la limite de déploiement ont été améliorées : elles affichent l’utilisation actuelle, des liens pour gérer les déploiements ou consulter les options d’adhésion, ainsi que des messages plus clairs sur l’éligibilité à l’achat.",
+            "Les instructions indiquent plus clairement où renouveler un Access Pass et comment prolonger un déploiement ensuite."
+          ],
+          "fixed": [
+            "Les métadonnées de langue de l’avis de confidentialité d’Audience Viewer suivent désormais la langue sélectionnée et le sens d’écriture."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

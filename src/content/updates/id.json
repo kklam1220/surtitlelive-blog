@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Pembaruan ini menambahkan login ASM ke pratinjau deployment gratis yang sudah ada serta memperjelas panduan Simulation, deployment, dan Access Pass.",
+          "new": [
+            "Kata sandi login ASM ditambahkan ke pratinjau deployment gratis yang sudah ada agar operator dapat login ke ASM selama pratinjau.",
+            "Alur Simulation kini tersedia dalam semua bahasa yang didukung, termasuk kontrol, pilihan deployment, dan pesan status."
+          ],
+          "improved": [
+            "Perbandingan paket kini menjelaskan kapasitas deployment, ukuran audiens, durasi, dan detail perpanjangan Pass dengan lebih jelas.",
+            "Panduan saat mencapai batas deployment kini menampilkan penggunaan saat ini, tautan untuk mengelola deployment atau melihat opsi keanggotaan, serta penjelasan kelayakan pembelian yang lebih jelas.",
+            "Panduan kini lebih jelas tentang tempat memperpanjang Access Pass dan cara memperpanjang deployment setelahnya."
+          ],
+          "fixed": [
+            "Metadata bahasa pada pemberitahuan privasi Audience Viewer kini mengikuti bahasa dan arah teks yang dipilih."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

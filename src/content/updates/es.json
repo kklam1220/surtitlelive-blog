@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Esta actualización añade el inicio de sesión en ASM a la vista previa de despliegue gratuita existente y mejora las indicaciones sobre Simulation, despliegues y Access Pass.",
+          "new": [
+            "Se añadió una contraseña de inicio de sesión para ASM a la vista previa de despliegue gratuita existente, para que los operadores puedan iniciar sesión en ASM durante la vista previa.",
+            "Se localizó el flujo de Simulation en los idiomas admitidos, incluidos los controles, las opciones de despliegue y los mensajes de estado."
+          ],
+          "improved": [
+            "Las comparaciones de planes ahora explican mejor la capacidad de despliegue, el tamaño de la audiencia, la duración y la extensión del Pass.",
+            "Se mejoraron las indicaciones al alcanzar el límite de despliegues: ahora muestran el uso actual, enlaces para gestionarlos o consultar opciones de membresía y mensajes más claros sobre la elegibilidad de compra.",
+            "Se aclaró dónde renovar un Access Pass y cómo extender un despliegue después."
+          ],
+          "fixed": [
+            "Se corrigieron los metadatos de idioma del aviso de privacidad de Audience Viewer para que sigan el idioma seleccionado y la dirección del texto."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

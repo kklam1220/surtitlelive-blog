@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Bu güncelleme, mevcut ücretsiz dağıtım önizlemesine ASM oturum açma özelliği ekler; Simulation, dağıtımlar ve Access Pass hakkındaki açıklamaları iyileştirir.",
+          "new": [
+            "Mevcut ücretsiz dağıtım önizlemesine ASM oturum açma parolası eklendi; operatörler önizleme sırasında ASM'de oturum açabilir.",
+            "Kontroller, dağıtım seçenekleri ve durum mesajları dâhil Simulation iş akışı desteklenen dillere yerelleştirildi."
+          ],
+          "improved": [
+            "Plan karşılaştırmaları dağıtım kapasitesini, izleyici sayısını, süreyi ve Pass uzatma ayrıntılarını artık daha net açıklıyor.",
+            "Dağıtım sınırına ulaşıldığında gösterilen yönlendirmeler iyileştirildi: mevcut kullanım, dağıtımları yönetme veya üyelik seçeneklerini inceleme bağlantıları ve satın alma uygunluğuna ilişkin daha net mesajlar gösteriliyor.",
+            "Access Pass'in nereden yenileneceği ve sonrasında dağıtımın nasıl uzatılacağı daha açık hâle getirildi."
+          ],
+          "fixed": [
+            "Audience Viewer gizlilik bildirimindeki dil üst verileri, seçilen dili ve metin yönünü izleyecek şekilde düzeltildi."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",

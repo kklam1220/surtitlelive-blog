@@ -20,6 +20,24 @@
       "endDate": "2026-10-24",
       "versions": [
         {
+          "version": "v261021.02",
+          "releaseDate": "2026-10-23",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này bổ sung đăng nhập ASM vào bản xem trước triển khai miễn phí hiện có, đồng thời cải thiện hướng dẫn về Simulation, triển khai và Access Pass.",
+          "new": [
+            "Đã thêm mật khẩu đăng nhập ASM vào bản xem trước triển khai miễn phí hiện có để người vận hành có thể đăng nhập ASM trong lúc xem trước.",
+            "Đã bản địa hóa quy trình Simulation sang các ngôn ngữ được hỗ trợ, bao gồm điều khiển, lựa chọn triển khai và thông báo trạng thái."
+          ],
+          "improved": [
+            "Phần so sánh gói hiện giải thích rõ hơn về sức chứa triển khai, quy mô khán giả, thời lượng và chi tiết gia hạn Pass.",
+            "Đã cải thiện hướng dẫn khi đạt giới hạn triển khai: hiển thị mức sử dụng hiện tại, liên kết quản lý triển khai hoặc xem tùy chọn thành viên, cùng thông báo rõ hơn về điều kiện mua.",
+            "Đã làm rõ nơi gia hạn Access Pass và cách gia hạn triển khai sau đó."
+          ],
+          "fixed": [
+            "Đã sửa siêu dữ liệu ngôn ngữ của thông báo quyền riêng tư Audience Viewer để tuân theo ngôn ngữ và hướng văn bản đã chọn."
+          ]
+        },
+        {
           "version": "v261021.01",
           "releaseDate": "2026-10-21",
           "product": "Pockitle",
