@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Petit lexique",
+    "related": "Pour aller plus loin"
+  },
+  "keyTakeaways": [
+    "Le texte du clavier ou de Plover devient des sous-titres originaux sans ouvrir le microphone.",
+    "L’envoi automatique suit les fins de phrases et les limites d’attente ; l’envoi par ligne attend un retour à la ligne.",
+    "L’original est humain ; les traductions automatiques peuvent être retardées ou erronées."
+  ],
+  "faq": [
+    {
+      "question": "Plover est-il indispensable pour saisir du texte ?",
+      "answer": "Non. Un clavier ordinaire convient aussi. Plover utilise le même champ, sans extension particulière ni téléversement de dictionnaire. La séance se configure avec une seule langue d’origine."
+    },
+    {
+      "question": "Quelle différence entre l’envoi automatique et l’envoi par ligne ?",
+      "answer": "L’envoi automatique suit les fins de phrases et les limites d’attente ; l’envoi par ligne attend un retour à la ligne."
+    },
+    {
+      "question": "Puis-je corriger un texte après son envoi ?",
+      "answer": "Le brouillon non envoyé reste modifiable. Un passage envoyé peut encore attendre confirmation ; seule l’acceptation confirmée vaut publication. Retour arrière ne modifie pas les sous-titres acceptés. Copiez le brouillon avant de quitter ou recharger la page."
+    },
+    {
+      "question": "Comment les sténotypistes peuvent-ils accéder à l’essai gratuit ?",
+      "answer": "Écrivez à [info@pockitle.com](mailto:info@pockitle.com) en précisant logiciel, matériel et usage prévu. Les modalités et le périmètre sont convenus individuellement ; aucune durée, aucun quota ni aucune certification de matériel ne sont promis."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sous-titres originaux",
+      "definition": "Texte dans la langue d’origine écrit par la personne chargée de la saisie, sans reconnaissance vocale dans ce mode."
+    },
+    {
+      "term": "Brouillon modifiable",
+      "definition": "Texte non encore envoyé, qui peut être corrigé ou annulé."
+    },
+    {
+      "term": "Sous-titres acceptés",
+      "definition": "Texte dont l’acceptation pour publication est confirmée ; les modifications ultérieures du brouillon ne le réécrivent pas."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Découvrir Pockitle Live",
+      "href": "https://pockitle.com/fr/live"
+    },
+    {
+      "label": "Guide d’utilisation de Pockitle Live",
+      "href": "https://surtitlelive.com/fr/guides/pockitle-live-operations"
+    }
+  ]
+}

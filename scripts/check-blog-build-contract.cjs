@@ -762,52 +762,36 @@ assertFileHasNoMatch(
   "A reviewed localized fringe surtitles article must not be noindexed.",
 );
 
+for (const locale of extractQuotedValues(localeConfigSource, /export const SUPPORTED_BLOG_LOCALES = \[([\s\S]*?)\] as const/, "supported Blog locales")) {
+  const prefix = locale === "en" ? "" : `${locale}/`;
+  const indexPath = path.join(prefix, "index.html");
+  const header = fs.readFileSync(path.join(distDir, indexPath), "utf8").match(/<header\b[\s\S]*?<\/header>/)?.[0] || "";
+  assert.match(header, new RegExp(`href="https://pockitle\\.com/${prefix}live"`), `${locale} Blog header must preserve its published Live destination`);
+  assert.doesNotMatch(header, /href="https:\/\/surtitlelive\.com\/(?:[^"/]+\/)?pockitle-live(?:[/?#"])/, `${locale} Blog header must not revert to the legacy Live destination`);
+}
+
 for (const [locale, expectedCopy] of [
-  [
-    "en",
-    {
-      features: "Features",
-      allProducts: "All Pockitle products",
-      workflow: "Workflow",
-      cueMac: "Pockitle Cue for Mac",
-      qlab: "QLab surtitles",
-      live: "Pockitle Live",
-      guides: "Guides",
-      blog: "Blog",
-      signUp: "Sign Up",
-      mainPrefix: "",
-    },
-  ],
-  [
-    "ko",
-    {
-      features: "기능",
-      allProducts: "모든 제품",
-      workflow: "공연 제작 과정",
-      cueMac: "Pockitle Cue for Mac",
-      qlab: "QLab 자막",
-      live: "Pockitle Live",
-      guides: "가이드",
-      blog: "블로그",
-      signUp: "회원가입",
-      mainPrefix: "ko/",
-    },
-  ],
-  [
-    "zh-TW",
-    {
-      features: "功能",
-      allProducts: "所有產品",
-      workflow: "工作流程",
-      cueMac: "Pockitle Cue for Mac",
-      qlab: "QLab 字幕",
-      live: "Pockitle Live",
-      guides: "指南",
-      blog: "部落格",
-      signUp: "註冊",
-      mainPrefix: "zh-TW/",
-    },
-  ],
+  ["en", {
+    features: "Features", allProducts: "All Pockitle products",
+    workflow: "Workflow", cueMac: "Pockitle Cue for Mac",
+    qlab: "QLab surtitles", live: "Pockitle Live",
+    guides: "Guides", blog: "Blog",
+    signUp: "Sign Up", mainPrefix: "",
+  }],
+  ["ko", {
+    features: "기능", allProducts: "모든 제품",
+    workflow: "공연 제작 과정", cueMac: "Pockitle Cue for Mac",
+    qlab: "QLab 자막", live: "Pockitle Live",
+    guides: "가이드", blog: "블로그",
+    signUp: "회원가입", mainPrefix: "ko/",
+  }],
+  ["zh-TW", {
+    features: "功能", allProducts: "所有產品",
+    workflow: "工作流程", cueMac: "Pockitle Cue for Mac",
+    qlab: "QLab 字幕", live: "Pockitle Live",
+    guides: "指南", blog: "部落格",
+    signUp: "註冊", mainPrefix: "zh-TW/",
+  }],
 ]) {
   const indexPath = path.join(...(locale === "en" ? [] : [locale]), "index.html");
 
@@ -972,8 +956,8 @@ assertFileHasNoMatch(
 );
 
 for (const [locale, pockitlePath, planningPath] of [
-  ["en", "/pockitle#software", "/planning/theatre-captioning-software-vs-live-caption-tools"],
-  ["zh-TW", "/pockitle#software", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
+  ["en", "/live#software", "/planning/theatre-captioning-software-vs-live-caption-tools"],
+  ["zh-TW", "/live#software", "/zh-TW/planning/theatre-captioning-software-vs-live-caption-tools"],
 ]) {
   const articlePath = path.join(
     ...(locale === "en" ? [] : [locale]),
@@ -982,7 +966,7 @@ for (const [locale, pockitlePath, planningPath] of [
   );
   assertFileHasMatch(
     articlePath,
-    new RegExp(`https://surtitlelive\\.com${pockitlePath}`),
+    new RegExp(`"@id":"https://pockitle\\.com${pockitlePath}"`),
     `Missing shared Pockitle SoftwareApplication entity on the ${locale} launch article.`,
   );
   assertFileHasMatch(

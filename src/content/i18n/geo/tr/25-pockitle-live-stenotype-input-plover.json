@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkan noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Klavye veya Plover metni, mikrofon açılmadan özgün altyazıya dönüşür.",
+    "Otomatik mod cümle sonlarını ve bekleme sınırlarını kullanır; satır satır mod yeni satırı bekler.",
+    "Özgün metni insan yazar; otomatik çeviriler gecikebilir veya hatalı olabilir."
+  ],
+  "faq": [
+    {
+      "question": "Metin girişi için Plover gerekli mi?",
+      "answer": "Hayır. Sıradan bir klavye de kullanılabilir. Plover, özel eklenti veya sözlük yükleme gerektirmeden aynı alanı kullanır. Oturumda tek kaynak dil belirlenir."
+    },
+    {
+      "question": "Otomatik ve satır satır gönderim arasındaki fark nedir?",
+      "answer": "Otomatik mod cümle sonlarını ve bekleme sınırlarını kullanır; satır satır mod yeni satırı bekler."
+    },
+    {
+      "question": "Gönderilen metni düzeltebilir miyim?",
+      "answer": "Gönderilmemiş taslak düzenlenebilir. Gönderilen bölüm hâlâ onay bekleyebilir; yalnızca doğrulanmış kabul yayın sayılır. Sonraki Backspace işlemleri kabul edilen altyazıları değiştirmez. Ayrılmadan veya yenilemeden önce taslağı kopyalayın."
+    },
+    {
+      "question": "Profesyonel stenograflar ücretsiz denemeye nasıl katılabilir?",
+      "answer": "Yazılım, ekipman ve amaçlanan kullanımı belirterek [info@pockitle.com](mailto:info@pockitle.com) adresine yazın. Düzenlemeler ve kapsam kişiye özel kararlaştırılır; sabit süre, kota veya cihaz sertifikası vaat edilmez."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Özgün altyazılar",
+      "definition": "Bu modda konuşma tanıma yerine operatörün kaynak dilde yazdığı metin."
+    },
+    {
+      "term": "Düzenlenebilir taslak",
+      "definition": "Henüz gönderilmemiş, değiştirilebilen veya geri alınabilen metin."
+    },
+    {
+      "term": "Kabul edilmiş altyazılar",
+      "definition": "Yayın için kabul edildiği doğrulanmış metin; sonraki taslak düzenlemeleri bunu yeniden yazmaz."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Live’ı keşfedin",
+      "href": "https://pockitle.com/tr/live"
+    },
+    {
+      "label": "Pockitle Live kullanım kılavuzu",
+      "href": "https://surtitlelive.com/tr/guides/pockitle-live-operations"
+    }
+  ]
+}

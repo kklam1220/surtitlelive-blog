@@ -113,7 +113,8 @@ const hreflangs = [
           posts.map((post) => {
             const heroImage = resolveBlogImage(post.frontmatter.heroImage);
             const preserveHeroFrame = post.slug === '23-surtitlelive-becomes-pockitle-cue'
-              || post.slug === '24-south-korea-surtitles-international-theatre-audiences';
+              || post.slug === '24-south-korea-surtitles-international-theatre-audiences'
+              || post.slug === '25-pockitle-live-stenotype-input-plover';
             return (
               <article class="card">
                 <a href={`${normalizedBaseUrl}${locale}/${post.slug}/`}>

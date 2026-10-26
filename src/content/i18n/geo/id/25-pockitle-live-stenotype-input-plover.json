@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Intisari",
+    "faq": "Pertanyaan umum",
+    "glossary": "Istilah penting",
+    "related": "Bacaan terkait"
+  },
+  "keyTakeaways": [
+    "Teks dari papan ketik atau Plover menjadi takarir asli tanpa membuka mikrofon.",
+    "Mode Otomatis memakai batas kalimat dan waktu tunggu; Per baris menunggu pergantian baris.",
+    "Teks asli ditulis manusia; terjemahan otomatis bisa terlambat atau salah dan bukan hasil pemeriksaan manusia."
+  ],
+  "faq": [
+    {
+      "question": "Apakah Plover wajib untuk masukan teks?",
+      "answer": "Tidak. Papan ketik biasa juga bisa digunakan. Plover memakai bidang yang sama tanpa pengaya khusus atau unggahan kamus. Satu sesi dikonfigurasi dengan satu bahasa sumber."
+    },
+    {
+      "question": "Apa perbedaan mode Otomatis dan Per baris?",
+      "answer": "Mode Otomatis memakai batas kalimat dan waktu tunggu; Per baris menunggu pergantian baris."
+    },
+    {
+      "question": "Bisakah teks diperbaiki setelah dikirim?",
+      "answer": "Draf yang belum dikirim bebas diedit. Segmen terkirim mungkin masih menunggu konfirmasi; hanya penerimaan yang dikonfirmasi dianggap terbit. Backspace tidak mengubah takarir yang diterima. Salin draf sebelum keluar atau memuat ulang halaman."
+    },
+    {
+      "question": "Bagaimana stenografer mengikuti uji coba gratis?",
+      "answer": "Hubungi [info@pockitle.com](mailto:info@pockitle.com) dengan informasi perangkat lunak, peralatan, dan rencana penggunaan. Pengaturan serta cakupan disepakati per peserta, tanpa janji durasi, kuota tetap, atau sertifikasi perangkat."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Takarir asli",
+      "definition": "Teks bahasa sumber yang ditulis operator, bukan hasil pengenalan ucapan dalam mode ini."
+    },
+    {
+      "term": "Draf yang dapat diedit",
+      "definition": "Teks yang belum dikirim dan masih dapat diperbaiki atau dibatalkan."
+    },
+    {
+      "term": "Takarir yang diterima",
+      "definition": "Teks yang penerimaannya untuk penayangan telah dikonfirmasi; penyuntingan draf berikutnya tidak mengubahnya."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Kenali Pockitle Live",
+      "href": "https://pockitle.com/id/live"
+    },
+    {
+      "label": "Panduan pengoperasian Pockitle Live",
+      "href": "https://surtitlelive.com/id/guides/pockitle-live-operations"
+    }
+  ]
+}

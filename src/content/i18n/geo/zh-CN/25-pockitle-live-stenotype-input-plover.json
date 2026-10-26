@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "核心要点",
+    "faq": "常见问题",
+    "glossary": "术语解释",
+    "related": "相关阅读"
+  },
+  "keyTakeaways": [
+    "普通键盘或 Plover 输入的文字可作为原文字幕，无须开启麦克风。",
+    "自动模式按句尾和等待限制分段；逐行模式等待换行后发送。",
+    "原文由人撰写；自动翻译可能延迟或出错，并不等同人工审校。"
+  ],
+  "faq": [
+    {
+      "question": "文字输入必须使用 Plover 吗？",
+      "answer": "不需要，普通键盘也能使用。Plover 通过同一输入框输入，无须专用插件或上传词典。一个文字输入会话需设置一种原文语言。"
+    },
+    {
+      "question": "自动模式与逐行模式有什么区别？",
+      "answer": "自动模式按句尾和等待限制分段；逐行模式等待换行后发送。"
+    },
+    {
+      "question": "发送后还能修改字幕吗？",
+      "answer": "未发送的草稿可以修改。已提交的片段可能仍在等待确认，只有确认接受才算发布。后续退格不会改写已接受的字幕；离开或刷新前请先复制需要保留的草稿。"
+    },
+    {
+      "question": "专业速记员如何参加免费试用？",
+      "answer": "请发邮件至 [info@pockitle.com](mailto:info@pockitle.com)，介绍软件、设备和测试场景。试用方式与范围单独商定，不承诺固定时长、额度或设备认证。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "原文字幕",
+      "definition": "此模式下由操作员撰写的原语言文字，而非语音识别结果。"
+    },
+    {
+      "term": "可编辑草稿",
+      "definition": "尚未提交、仍可修改或撤销的文字。"
+    },
+    {
+      "term": "已接受的字幕",
+      "definition": "已确认接收并用于发布的文字，后续草稿编辑不会将其改写。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "了解 Pockitle Live",
+      "href": "https://pockitle.com/zh-CN/live"
+    },
+    {
+      "label": "Pockitle Live 操作指南",
+      "href": "https://surtitlelive.com/zh-CN/guides/pockitle-live-operations"
+    }
+  ]
+}

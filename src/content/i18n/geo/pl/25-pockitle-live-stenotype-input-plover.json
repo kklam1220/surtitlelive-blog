@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze wnioski",
+    "faq": "Najczęstsze pytania",
+    "glossary": "Słowniczek",
+    "related": "Przeczytaj również"
+  },
+  "keyTakeaways": [
+    "Tekst z klawiatury lub Plovera staje się oryginalnymi napisami bez włączania mikrofonu.",
+    "Tryb automatyczny uwzględnia końce zdań i limit oczekiwania; wysyłka po wierszu czeka na nową linię.",
+    "Oryginał pisze człowiek; tłumaczenia automatyczne mogą być opóźnione lub błędne."
+  ],
+  "faq": [
+    {
+      "question": "Czy do wprowadzania tekstu potrzebuję Plovera?",
+      "answer": "Nie. Zwykła klawiatura też działa. Plover korzysta z tego samego pola, bez specjalnej wtyczki ani przesyłania słowników. Sesję konfiguruje się z jednym językiem źródłowym."
+    },
+    {
+      "question": "Czym różni się wysyłka automatyczna od wysyłki po wierszu?",
+      "answer": "Tryb automatyczny uwzględnia końce zdań i limit oczekiwania; wysyłka po wierszu czeka na nową linię."
+    },
+    {
+      "question": "Czy mogę poprawić wysłany tekst?",
+      "answer": "Niewysłany szkic można edytować. Wysłany fragment może jeszcze czekać na potwierdzenie; dopiero potwierdzone przyjęcie oznacza publikację. Backspace nie zmienia przyjętych napisów. Skopiuj szkic przed wyjściem lub odświeżeniem strony."
+    },
+    {
+      "question": "Jak zawodowy stenotypista może skorzystać z bezpłatnego testu?",
+      "answer": "Napisz na [info@pockitle.com](mailto:info@pockitle.com), opisując oprogramowanie, sprzęt i planowane użycie. Warunki oraz zakres ustalamy indywidualnie, bez obietnicy stałego czasu, limitu ani certyfikacji sprzętu."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Oryginalne napisy",
+      "definition": "Tekst w języku źródłowym napisany przez operatora, a nie wygenerowany przez rozpoznawanie mowy w tym trybie."
+    },
+    {
+      "term": "Edytowalny szkic",
+      "definition": "Tekst jeszcze niewysłany, który można poprawić lub cofnąć."
+    },
+    {
+      "term": "Przyjęte napisy",
+      "definition": "Tekst o potwierdzonym przyjęciu do publikacji; późniejsze zmiany szkicu go nie przepisują."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Poznaj Pockitle Live",
+      "href": "https://pockitle.com/pl/live"
+    },
+    {
+      "label": "Instrukcja obsługi Pockitle Live",
+      "href": "https://surtitlelive.com/pl/guides/pockitle-live-operations"
+    }
+  ]
+}

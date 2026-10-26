@@ -12,6 +12,7 @@ const {
 } = require("./blog-i18n-utils.cjs");
 
 const MARKDOWN_LINK_PARITY_SLUGS = new Set([
+  "25-pockitle-live-stenotype-input-plover",
   "7-geometry-of-dramatic-parsing",
   "8-from-layout-to-archetype-detection",
   "9-english-surtitles-non-english-show-fringe",
@@ -35,6 +36,7 @@ const UNORDERED_MARKDOWN_LINK_PARITY_SLUGS = new Set([
 ]);
 
 const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
+  "25-pockitle-live-stenotype-input-plover",
   "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
   "21-theatre-accessibility-captions-stage-directions",
   "22-one-night-different-stories-scripts-under-the-stars-calgary",
@@ -43,6 +45,7 @@ const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
+  ["25-pockitle-live-stenotype-input-plover", 1],
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],
   ["21-theatre-accessibility-captions-stage-directions", 2],
   ["22-one-night-different-stories-scripts-under-the-stars-calgary", 5],

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Giải thích thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Văn bản từ bàn phím hoặc Plover trở thành phụ đề gốc mà không cần mở micrô.",
+    "Chế độ tự động dựa vào câu và giới hạn chờ; chế độ theo dòng đợi xuống dòng.",
+    "Bản gốc do người viết; bản dịch tự động có thể chậm hoặc sai và không đồng nghĩa đã được người kiểm duyệt."
+  ],
+  "faq": [
+    {
+      "question": "Có cần Plover để nhập văn bản không?",
+      "answer": "Không. Bàn phím thông thường cũng dùng được. Plover sử dụng cùng ô nhập mà không cần tiện ích riêng hay tải từ điển lên. Mỗi phiên đặt một ngôn ngữ nguồn."
+    },
+    {
+      "question": "Chế độ tự động và theo dòng khác nhau thế nào?",
+      "answer": "Chế độ tự động dựa vào câu và giới hạn chờ; chế độ theo dòng đợi xuống dòng."
+    },
+    {
+      "question": "Có thể sửa văn bản sau khi gửi không?",
+      "answer": "Bản nháp chưa gửi vẫn chỉnh sửa được. Đoạn đã gửi có thể còn chờ xác nhận; chỉ việc tiếp nhận được xác nhận mới được tính là đã phát. Backspace không sửa phụ đề đã nhận. Sao chép bản nháp cần giữ trước khi rời hoặc tải lại trang."
+    },
+    {
+      "question": "Người làm tốc ký chuyên nghiệp tham gia dùng thử miễn phí thế nào?",
+      "answer": "Gửi email tới [info@pockitle.com](mailto:info@pockitle.com), giới thiệu phần mềm, thiết bị và mục đích thử. Hình thức và phạm vi được thỏa thuận riêng, không hứa thời lượng, hạn mức cố định hay chứng nhận thiết bị."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phụ đề gốc",
+      "definition": "Văn bản ngôn ngữ nguồn do người vận hành viết, không phải kết quả nhận dạng giọng nói trong chế độ này."
+    },
+    {
+      "term": "Bản nháp chỉnh sửa được",
+      "definition": "Văn bản chưa gửi, vẫn có thể sửa hoặc hoàn tác."
+    },
+    {
+      "term": "Phụ đề đã tiếp nhận",
+      "definition": "Văn bản đã được xác nhận tiếp nhận để phát; sửa bản nháp sau đó không viết lại phần này."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Tìm hiểu Pockitle Live",
+      "href": "https://pockitle.com/vi/live"
+    },
+    {
+      "label": "Hướng dẫn vận hành Pockitle Live",
+      "href": "https://surtitlelive.com/vi/guides/pockitle-live-operations"
+    }
+  ]
+}

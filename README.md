@@ -2,9 +2,17 @@
 
 Official blog for [SurtitleLive](https://surtitlelive.com) - Live subtitling platform for theatre and events.
 
-Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` owns these boundaries, the static Astro cache TTL-only reachability guard, and canonical Markdown destination regressions, including translated slugs and incorrect locale-before-blog routes; it runs through `npm run build:check`. Localization checks preserve reviewed links, require payload slug/locale/source identity to match the English source, and use `/blog/{locale}/.../` for localized articles. The same suite includes a valid fixture and rejects wrong slug, locale, source language, and source path before publication. Build checks validate self-canonicals, reachable hreflang destinations, and current Pockitle legal links.
+Localized provider output is treated as untrusted content: rendered HTML is allowlist-sanitized, JSON-LD uses script-safe serialization, and Mermaid is bundled from the exact lockfile version with strict mode. `scripts/blog-security-contract.test.mjs` owns these boundaries, the static Astro cache TTL-only reachability guard, and canonical Markdown destination regressions, including translated slugs and incorrect locale-before-blog routes; it runs through `npm run build:check`. Localization checks preserve reviewed links, require payload slug/locale/source identity to match the English source, and use `/blog/{locale}/.../` for localized articles. The same suite includes a valid fixture and rejects wrong slug, locale, source language, and source path before publication. Build checks validate self-canonicals, reachable hreflang destinations, and current Pockitle legal links. The built header must link directly to the locale-preserving product Live canonical in every supported Blog locale; retired company `/live` aliases and wrong-locale destinations fail the same check. Launch-article structured data retains the shared `https://pockitle.com/live#software` entity ID used by the main product; that stable identifier is distinct from the current navigation URL.
 
 Built with [Astro](https://astro.build) and deployed on [Cloudflare Pages](https://pages.cloudflare.com).
+
+The reviewed dependency closure pins `sanitize-html` 2.18.1 and overrides Vite to
+8.1.6, with PostCSS 8.5.27 satisfying the sanitizer's reviewed minimum. These
+address the October sanitizer and bundled `launch-editor` advisories;
+an override of `launch-editor` alone cannot replace Vite's bundled copy. Keep the
+existing sanitizer/serializer pins and Astro cache contract. Validate with the
+standalone production audit, localization, build and `build:check`; local security
+repair does not authorize Blog publication. See the canonical testing guide.
 
 ## URL Model
 

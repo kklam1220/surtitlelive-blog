@@ -9,6 +9,7 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { pathToFileURL } from "node:url";
 import { Marked } from "marked";
+import sanitizeHtml from "sanitize-html";
 import {
   sanitizeLocalizedBlogHtml,
   serializeJsonLd,
@@ -29,6 +30,26 @@ const locales = fs
   .readdirSync(localizedRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name);
+
+test("built headers reject legacy and wrong-locale replacements of the published Live link", {
+  skip: !fs.existsSync(path.join(blogRoot, "dist/index.html")),
+}, () => {
+  for (const [locale, wrong] of [["en", "https://surtitlelive.com/pockitle-live"], ["zh-TW", "https://pockitle.com/de/live"]]) {
+    const index = path.join(blogRoot, "dist", locale === "en" ? "" : locale, "index.html");
+    const original = fs.readFileSync(index, "utf8");
+    const correct = `https://pockitle.com/${locale === "en" ? "" : `${locale}/`}live`;
+    const header = original.match(/<header\b[\s\S]*?<\/header>/)?.[0];
+    assert.ok(header?.includes(`href="${correct}"`), `${locale} published destination`);
+    const changed = original.replace(header, header.replace(`href="${correct}"`, `href="${wrong}"`));
+    assert.notEqual(changed, original, "negative fixture must change actual built output");
+    try {
+      fs.writeFileSync(index, changed);
+      const check = spawnSync(process.execPath, [path.join(scriptsDirectory, "check-blog-build-contract.cjs")], { encoding: "utf8" });
+      assert.notEqual(check.status, 0);
+      assert.match(`${check.stdout}\n${check.stderr}`, /must preserve its published Live destination/);
+    } finally { fs.writeFileSync(index, original); }
+  }
+});
 
 test("Astro build image cache does not reuse private or no-store responses", async () => {
   const astroRoot = path.dirname(require.resolve("astro/package.json"));
@@ -112,7 +133,7 @@ test("localization rejects source identity and known-issue structure drift befor
 test("reviewed serializer and browser sanitizer fixes cover every locked copy", () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(blogRoot, "package.json"), "utf8"));
   const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));
-  for (const [name, version] of Object.entries({ devalue: "5.9.4", dompurify: "3.4.16" })) {
+  for (const [name, version] of Object.entries({ devalue: "5.9.4", dompurify: "3.4.17" })) {
     assert.equal(manifest.overrides?.[name], version, `${name} must preserve the reviewed security pin`);
     const copies = Object.entries(lock.packages).filter(([packagePath]) =>
       packagePath.endsWith(`node_modules/${name}`),
@@ -121,6 +142,48 @@ test("reviewed serializer and browser sanitizer fixes cover every locked copy", 
     for (const [packagePath, node] of copies) {
       assert.equal(node.version, version, `${packagePath} must not retain a vulnerable copy`);
     }
+  }
+  assert.equal(manifest.dependencies["sanitize-html"], "2.18.1");
+  assert.equal(manifest.overrides.vite, "8.1.6");
+  assert.equal(manifest.overrides.postcss, "8.5.27");
+  for (const [name, version] of Object.entries({ "sanitize-html": "2.18.1", vite: "8.1.6", postcss: "8.5.27" })) {
+    const copies = Object.entries(lock.packages).filter(([packagePath]) =>
+      packagePath.endsWith(`node_modules/${name}`),
+    );
+    assert.ok(copies.length > 0, `${name} must remain in the actual dependency graph`);
+    for (const [packagePath, node] of copies) assert.equal(node.version, version, packagePath);
+    assert.equal(require(`${name}/package.json`).version, version, `${name} installed artifact drift`);
+  }
+});
+
+test("sanitizer keeps noscript discard intact across an implied ancestor close", () => {
+  const html = '<p>Before</p><div><noscript></div><img src="https://discard.invalid/pixel"></noscript><p>After</p>';
+  const sanitized = sanitizeHtml(html, {
+    allowedTags: ["p", "div", "img"], allowedAttributes: { img: ["src"] },
+    nonTextTags: ["script", "style", "textarea", "option", "noscript"],
+  });
+  assert.doesNotMatch(sanitized, /<img|discard\.invalid/);
+  assert.match(sanitized, /<p>Before<\/p>/);
+  assert.match(sanitized, /<p>After<\/p>/);
+});
+
+test("sanitizer rejects namespaced SMIL URL mutation and meta-refresh script schemes", () => {
+  for (const tag of ["svg:animate", "xlink:set"]) {
+    const sanitized = sanitizeHtml(`<svg><a href="#safe"><${tag} attributeName="href" values="#safe;javascript:probe()"/><text>Label</text></a></svg>`, {
+      allowedTags: ["svg", "a", "text", tag],
+      allowedAttributes: { a: ["href"], [tag]: ["attributeName", "values"] },
+      allowedSchemes: ["https"],
+    });
+    assert.doesNotMatch(sanitized, /javascript:/i);
+    assert.match(sanitized, /Label/);
+  }
+  for (const target of ["javascript:probe()", "data:text/html,probe"]) {
+    const sanitized = sanitizeHtml(`<meta http-equiv="refresh" content="0;url=${target}"><p>Article</p>`, {
+      allowedTags: ["meta", "p"], allowedAttributes: { meta: ["http-equiv", "content"] },
+    });
+    assert.doesNotMatch(sanitized, /javascript:|data:text\/html/i);
+    assert.match(sanitized, /<p>Article<\/p>/);
+    assert.doesNotMatch(sanitizeLocalizedBlogHtml(`<meta http-equiv="refresh" content="0;url=${target}">`), /<meta/i);
   }
 });
 
@@ -145,7 +208,7 @@ test("static Blog image caching does not use request-controlled stale reuse", ()
   };
 
   assert.match(config, /output:\s*["']static["']/);
-  assert.equal(lock.packages["node_modules/astro"].version, "7.3.2");
+  assert.equal(lock.packages["node_modules/astro"].version, "7.3.3");
   assertTtlOnly(remoteHelper);
   assert.equal(
     createHash("sha256").update(remoteHelper).digest("hex"),
@@ -207,12 +270,13 @@ test("reviewed localized article links preserve canonical markdown destinations"
   }
 });
 
-test("localized Blog21–24 emphasis renders without raw markdown markers", () => {
+test("localized Blog21–25 emphasis renders without raw markdown markers", () => {
   const slugs = [
     "21-theatre-accessibility-captions-stage-directions",
     "22-one-night-different-stories-scripts-under-the-stars-calgary",
     "23-surtitlelive-becomes-pockitle-cue",
     "24-south-korea-surtitles-international-theatre-audiences",
+    "25-pockitle-live-stenotype-input-plover",
   ];
 
   for (const slug of slugs) {
@@ -279,6 +343,48 @@ test("Blog24 affirmative accessibility FAQ links safely in every locale", () => 
   const unsafe = '[bad](javascript:alert(1)) <img src="/fixture.png" onerror="alert(2)"> <script>globalThis.compromised = true</script>';
   const inert = sanitizeLocalizedBlogHtml(marked.parseInline(unsafe, { async: false }));
   assert.doesNotMatch(inert, /javascript:|onerror|<script|globalThis/i);
+});
+
+test("Blog25 preserves the supplied artwork and complete localized editorial blocks", () => {
+  const slug = "25-pockitle-live-stenotype-input-plover";
+  const { listSourcePosts } = require("./blog-i18n-utils.cjs");
+  const post = listSourcePosts(path.join(blogRoot, "src/content/blog")).find((entry) => entry.slug === slug);
+  assert.equal(post.frontmatter.heroImage, "./blog-25.png");
+  for (const [asset, hash] of [
+    ["blog-25.png", "dce079659390b0df4ef4f59f6094781435f38d66ea4d79d8c4076f6d02bd223c"],
+    ["blog-25-stenotype-by-line.png", "ec28d14f8a089092f3de1fa03b259d272fa8cb239261fe1f8b455be652ba301a"],
+  ]) {
+    assert.equal(createHash("sha256").update(fs.readFileSync(path.join(blogRoot, "src/content/blog", asset))).digest("hex"), hash);
+  }
+  for (const locale of ["en", ...locales]) {
+    const payload = locale === "en" ? { body: post.body, frontmatter: post.frontmatter, sourceHash: post.sourceHash }
+      : JSON.parse(fs.readFileSync(path.join(localizedRoot, locale, `${slug}.json`), "utf8"));
+    assert.equal(payload.sourceHash, post.sourceHash, `${locale} source fingerprint`);
+    assert.equal(payload.frontmatter.heroImage, "./blog-25.png");
+    assert.ok(payload.frontmatter.heroImageAlt.trim());
+    assert.equal([...payload.body.matchAll(/^## /gm)].length, 5, `${locale} must retain all five authored sections`);
+    assert.deepEqual(findMarkdownImageParityIssues(post, payload), [], `${locale} must keep the body figure`);
+    const imagePosition = payload.body.indexOf("![");
+    const headings = [...payload.body.matchAll(/^## /gm)];
+    assert.ok(imagePosition > headings[1].index && imagePosition < headings[2].index, `${locale} figure belongs with submission modes`);
+    const html = sanitizeLocalizedBlogHtml(marked.parse(payload.body));
+    assert.match(html, /<strong>/);
+    assert.match(html, /href="mailto:info@pockitle\.com"/);
+    assert.doesNotMatch(html, /\*\*|\[info@pockitle\.com\]/);
+    const geo = JSON.parse(fs.readFileSync(path.join(blogRoot, "src/content/i18n/geo", locale, `${slug}.json`), "utf8"));
+    assert.equal(geo.sourceHash, post.sourceHash);
+    assert.equal(geo.keyTakeaways.length, 3);
+    assert.equal(geo.faq.length, 4);
+    assert.equal(geo.glossary.length, 3);
+    assert.ok(geo.faq[3].answer.includes("[info@pockitle.com](mailto:info@pockitle.com)"));
+    assert.deepEqual(geo.relatedLinks.map((link) => link.href), [
+      `https://pockitle.com/${locale === "en" ? "" : `${locale}/`}live`,
+      `https://surtitlelive.com/${locale === "en" ? "" : `${locale}/`}guides/pockitle-live-operations`,
+    ]);
+  }
+  for (const relative of ["src/layouts/BlogPost.astro", "src/pages/index.astro", "src/pages/[locale]/index.astro"]) {
+    assert.ok(fs.readFileSync(path.join(blogRoot, relative), "utf8").includes(slug), `${relative} must preserve the screenshot frame`);
+  }
 });
 
 test("canonical-link parity permits a supported locale route prefix", () => {

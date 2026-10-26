@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Principais pontos",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Leia também"
+  },
+  "keyTakeaways": [
+    "Texto do teclado ou do Plover vira legenda original sem abrir o microfone.",
+    "O modo automático segue frases e limites de espera; o modo por linha aguarda uma quebra de linha.",
+    "O original é escrito por uma pessoa; traduções automáticas podem atrasar ou conter erros."
+  ],
+  "faq": [
+    {
+      "question": "Preciso do Plover para inserir texto?",
+      "answer": "Não. Um teclado comum também funciona. O Plover usa o mesmo campo, sem complemento específico nem envio de dicionários. A sessão é configurada com um único idioma de origem."
+    },
+    {
+      "question": "Qual é a diferença entre o modo automático e o modo por linha?",
+      "answer": "O modo automático segue frases e limites de espera; o modo por linha aguarda uma quebra de linha."
+    },
+    {
+      "question": "Posso corrigir o texto depois de enviá-lo?",
+      "answer": "O rascunho não enviado continua editável. Um trecho enviado pode aguardar confirmação; só a aceitação confirmada conta como publicação. Backspace não altera legendas aceitas. Copie o rascunho antes de sair ou atualizar a página."
+    },
+    {
+      "question": "Como profissionais podem participar do teste gratuito?",
+      "answer": "Envie um e-mail para [info@pockitle.com](mailto:info@pockitle.com) informando programas, equipamentos e uso pretendido. Condições e alcance são combinados individualmente; não há promessa de duração, franquia fixa ou certificação de equipamentos."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Legendas originais",
+      "definition": "Texto no idioma de origem escrito pelo operador, sem reconhecimento de fala nesse modo."
+    },
+    {
+      "term": "Rascunho editável",
+      "definition": "Texto ainda não enviado, que pode ser revisado ou desfeito."
+    },
+    {
+      "term": "Legendas aceitas",
+      "definition": "Texto cuja aceitação para publicação foi confirmada; alterações posteriores no rascunho não o reescrevem."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Conheça o Pockitle Live",
+      "href": "https://pockitle.com/pt/live"
+    },
+    {
+      "label": "Guia de operação do Pockitle Live",
+      "href": "https://surtitlelive.com/pt/guides/pockitle-live-operations"
+    }
+  ]
+}

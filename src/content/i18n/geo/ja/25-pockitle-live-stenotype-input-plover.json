@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "この記事の要点",
+    "faq": "よくある質問",
+    "glossary": "用語解説",
+    "related": "関連記事"
+  },
+  "keyTakeaways": [
+    "通常のキーボードやPloverから入力した文字を、マイクなしで原文字幕として配信できます。",
+    "自動モードは文末や待機上限で区切り、1行ずつのモードは改行を待って送信します。",
+    "原文は人が書きます。自動翻訳には遅延や誤りがあり、人による校閲とは異なります。"
+  ],
+  "faq": [
+    {
+      "question": "文字入力にPloverは必須ですか？",
+      "answer": "いいえ。通常のキーボードも使えます。Ploverは同じ入力欄を使い、専用プラグインや辞書のアップロードは不要です。一つのセッションに原文の言語を一つ設定します。"
+    },
+    {
+      "question": "自動モードと1行ずつのモードはどう違いますか？",
+      "answer": "自動モードは文末や待機上限で区切り、1行ずつのモードは改行を待って送信します。"
+    },
+    {
+      "question": "送信後の字幕を修正できますか？",
+      "answer": "未送信の下書きは編集できます。送信済みでも確認待ちの場合があり、受理の確認後に公開済みと扱います。後のBackspace操作では受理済み字幕を変更できません。更新や移動の前に必要な下書きをコピーしてください。"
+    },
+    {
+      "question": "プロの速記者はどうすれば無料試用に参加できますか？",
+      "answer": "ソフトウェア、機材、試したい場面を添えて[info@pockitle.com](mailto:info@pockitle.com)へご連絡ください。方法と範囲は個別に相談します。固定の時間枠や利用量、機材の認証を約束するものではありません。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "原文字幕",
+      "definition": "このモードでは音声認識ではなく、操作担当者が元の言語で書いた字幕。"
+    },
+    {
+      "term": "編集可能な下書き",
+      "definition": "まだ送信されておらず、修正や取り消しができる文字。"
+    },
+    {
+      "term": "受理済み字幕",
+      "definition": "公開のための受理が確認された文字。後の下書き編集では書き換わりません。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Liveについて",
+      "href": "https://pockitle.com/ja/live"
+    },
+    {
+      "label": "Pockitle Live操作ガイド",
+      "href": "https://surtitlelive.com/ja/guides/pockitle-live-operations"
+    }
+  ]
+}

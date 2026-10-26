@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufige Fragen",
+    "glossary": "Begriffe erklärt",
+    "related": "Weiterlesen"
+  },
+  "keyTakeaways": [
+    "Text von Tastatur oder Plover wird ohne Mikrofon zu Originaluntertiteln.",
+    "Der Automatikmodus nutzt Satzgrenzen und Wartezeitgrenzen; der Zeilenmodus wartet auf einen Zeilenumbruch.",
+    "Das Original stammt von Menschen; automatische Übersetzungen können verspätet oder fehlerhaft sein."
+  ],
+  "faq": [
+    {
+      "question": "Brauche ich Plover für die Texteingabe?",
+      "answer": "Nein. Eine gewöhnliche Tastatur genügt ebenfalls. Plover nutzt dasselbe Textfeld, ohne besondere Erweiterung oder Wörterbuch-Upload. Für die Sitzung wird eine Ausgangssprache eingestellt."
+    },
+    {
+      "question": "Was unterscheidet automatische und zeilenweise Übermittlung?",
+      "answer": "Der Automatikmodus nutzt Satzgrenzen und Wartezeitgrenzen; der Zeilenmodus wartet auf einen Zeilenumbruch."
+    },
+    {
+      "question": "Kann ich Text nach dem Senden korrigieren?",
+      "answer": "Der ungesendete Entwurf bleibt bearbeitbar. Gesendeter Text kann noch auf Bestätigung warten; erst bestätigte Annahme gilt als Veröffentlichung. Backspace ändert keine angenommenen Untertitel. Kopieren Sie ungesendeten Text vor Verlassen oder Neuladen."
+    },
+    {
+      "question": "Wie können professionelle Stenografen kostenlos testen?",
+      "answer": "Schreiben Sie mit Angaben zu Software, Geräten und Einsatzgebiet an [info@pockitle.com](mailto:info@pockitle.com). Ablauf und Umfang werden individuell vereinbart; feste Laufzeiten, Kontingente oder Geräte-Zertifizierungen werden nicht zugesagt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Originaluntertitel",
+      "definition": "In diesem Modus von der Fachkraft geschriebener Text in der Ausgangssprache, nicht durch Spracherkennung erzeugt."
+    },
+    {
+      "term": "Bearbeitbarer Entwurf",
+      "definition": "Noch nicht übermittelter Text, der korrigiert oder zurückgenommen werden kann."
+    },
+    {
+      "term": "Angenommene Untertitel",
+      "definition": "Text, dessen Annahme zur Veröffentlichung bestätigt wurde; spätere Änderungen am Entwurf ändern ihn nicht."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Live entdecken",
+      "href": "https://pockitle.com/de/live"
+    },
+    {
+      "label": "Bedienungsanleitung für Pockitle Live",
+      "href": "https://surtitlelive.com/de/guides/pockitle-live-operations"
+    }
+  ]
+}

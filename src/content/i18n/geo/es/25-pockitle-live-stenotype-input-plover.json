@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ideas clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Lecturas relacionadas"
+  },
+  "keyTakeaways": [
+    "El texto del teclado o de Plover se convierte en subtítulos originales sin activar el micrófono.",
+    "El envío automático usa finales de frase y límites de espera; por líneas espera un salto de línea.",
+    "El original lo escribe una persona; las traducciones automáticas pueden retrasarse o contener errores."
+  ],
+  "faq": [
+    {
+      "question": "¿Necesito Plover para introducir texto?",
+      "answer": "No. También sirve un teclado convencional. Plover utiliza el mismo campo sin complemento específico ni subida de diccionarios. La sesión se configura con un único idioma original."
+    },
+    {
+      "question": "¿En qué se diferencian el modo automático y el modo por líneas?",
+      "answer": "El envío automático usa finales de frase y límites de espera; por líneas espera un salto de línea."
+    },
+    {
+      "question": "¿Puedo corregir un texto después de enviarlo?",
+      "answer": "El borrador sin enviar puede editarse. Un fragmento enviado aún puede esperar confirmación; solo la aceptación confirmada cuenta como publicación. Retroceso no modifica subtítulos aceptados. Copia el borrador antes de salir o recargar."
+    },
+    {
+      "question": "¿Cómo pueden los profesionales acceder a la prueba gratuita?",
+      "answer": "Escribe a [info@pockitle.com](mailto:info@pockitle.com) e indica software, equipo y uso previsto. Las condiciones y el alcance se acuerdan individualmente; no se promete una duración, un cupo ni una certificación de equipos."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Subtítulos originales",
+      "definition": "Texto en el idioma de origen escrito por el operador, no generado mediante reconocimiento de voz en este modo."
+    },
+    {
+      "term": "Borrador editable",
+      "definition": "Texto aún no enviado que puede corregirse o deshacerse."
+    },
+    {
+      "term": "Subtítulos aceptados",
+      "definition": "Texto cuya aceptación para publicación está confirmada; las ediciones posteriores del borrador no lo modifican."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Descubre Pockitle Live",
+      "href": "https://pockitle.com/es/live"
+    },
+    {
+      "label": "Guía de operación de Pockitle Live",
+      "href": "https://surtitlelive.com/es/guides/pockitle-live-operations"
+    }
+  ]
+}

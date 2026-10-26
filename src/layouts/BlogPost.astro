@@ -42,13 +42,14 @@ const resolvedHeroImage = typeof heroImage === 'string' ? resolveBlogImage(heroI
 const metaImage = resolvedHeroImage ?? (typeof heroImage === 'string' ? { src: heroImage } : heroImage);
 const renderableHeroImage = resolvedHeroImage;
 const preserveHeroFrame = slug === '23-surtitlelive-becomes-pockitle-cue'
-	|| slug === '24-south-korea-surtitles-international-theatre-audiences';
+	|| slug === '24-south-korea-surtitles-international-theatre-audiences'
+	|| slug === '25-pockitle-live-stenotype-input-plover';
 const socialImageURL = new URL(metaImage?.src ?? '/blog-placeholder-1.jpg', Astro.url);
 const organizationId = 'https://surtitlelive.com/#organization';
 const isPockitleLaunchPost = slug === '17-surtitlelive-launches-pockitle-live-captioning';
 const pockitleSoftware = {
 	"@type": "SoftwareApplication",
-	"@id": 'https://surtitlelive.com/pockitle#software',
+	"@id": 'https://pockitle.com/live#software',
 	"name": "Pockitle Live",
 };
 

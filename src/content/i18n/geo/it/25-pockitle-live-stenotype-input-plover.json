@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "25-pockitle-live-stenotype-input-plover",
+  "sourceHash": "e59f8aaa1b0374fa2b259a1fff413bfe3aa7f3f534ebff670bca34758aa1f9c6",
+  "generatedAt": "2026-10-26T03:59:34Z",
+  "sectionTitles": {
+    "keyTakeaways": "Punti chiave",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Approfondimenti"
+  },
+  "keyTakeaways": [
+    "Il testo da tastiera o Plover diventa sottotitoli originali senza aprire il microfono.",
+    "L’invio automatico segue le frasi e i limiti d’attesa; quello per riga attende un a capo.",
+    "L’originale è scritto da una persona; le traduzioni automatiche possono tardare o contenere errori."
+  ],
+  "faq": [
+    {
+      "question": "Serve Plover per inserire testo?",
+      "answer": "No. Funziona anche una tastiera normale. Plover usa lo stesso campo, senza estensioni dedicate né caricamento dei dizionari. La sessione prevede una sola lingua originale."
+    },
+    {
+      "question": "Qual è la differenza tra invio automatico e per riga?",
+      "answer": "L’invio automatico segue le frasi e i limiti d’attesa; quello per riga attende un a capo."
+    },
+    {
+      "question": "Posso correggere il testo dopo averlo inviato?",
+      "answer": "La bozza non inviata resta modificabile. Un segmento inviato può ancora attendere conferma; solo la ricezione confermata vale come pubblicazione. Backspace non modifica i sottotitoli accettati. Copia la bozza prima di uscire o ricaricare."
+    },
+    {
+      "question": "Come possono gli stenotipisti accedere alla prova gratuita?",
+      "answer": "Scrivi a [info@pockitle.com](mailto:info@pockitle.com) indicando programmi, attrezzatura e uso previsto. Modalità e ambito vengono concordati individualmente; non promettiamo una durata o un volume d’uso fissi, né certificazioni dei dispositivi."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Sottotitoli originali",
+      "definition": "Testo nella lingua di partenza scritto dall’operatore, non generato dal riconoscimento vocale in questa modalità."
+    },
+    {
+      "term": "Bozza modificabile",
+      "definition": "Testo non ancora inviato, che si può correggere o annullare."
+    },
+    {
+      "term": "Sottotitoli accettati",
+      "definition": "Testo la cui accettazione per la pubblicazione è confermata; successive modifiche alla bozza non lo riscrivono."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Scopri Pockitle Live",
+      "href": "https://pockitle.com/it/live"
+    },
+    {
+      "label": "Guida operativa di Pockitle Live",
+      "href": "https://surtitlelive.com/it/guides/pockitle-live-operations"
+    }
+  ]
+}
