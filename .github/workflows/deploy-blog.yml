@@ -1,0 +1,126 @@
+name: Publish Blog
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner_profile:
+        description: Execution host (no automatic fallback)
+        required: true
+        type: choice
+        default: github-hosted
+        options: [github-hosted, self-hosted]
+      mode:
+        description: Review plan first; publish only with the same reviewed inputs
+        required: true
+        type: choice
+        default: plan
+        options: [plan, publish]
+      source_sha:
+        description: Exact committed Blog source in SurtitleLive_v2 (40-character SHA)
+        required: true
+        type: string
+      deployment_sha:
+        description: Reviewed current main SHA of the independent Blog repository
+        required: true
+        type: string
+      allowed_changed_path:
+        description: Narrow comma-separated independent-repo paths; not a copy filter
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: independent-blog-publication
+  cancel-in-progress: false
+
+jobs:
+  publish-blog:
+    if: >-
+      github.repository == 'kklam1220/surtitlelive-blog' &&
+      github.ref == 'refs/heads/main' &&
+      github.actor == 'kklam1220' && github.triggering_actor == 'kklam1220'
+    runs-on: ${{ fromJSON('{"github-hosted":["ubuntu-latest"],"self-hosted":["self-hosted","linux","x64","surtitlelive-blog-linux"]}')[inputs.runner_profile] }}
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      RUNNER_PROFILE: ${{ inputs.runner_profile }}
+      PUBLICATION_MODE: ${{ inputs.mode }}
+      SOURCE_SHA: ${{ inputs.source_sha }}
+      DEPLOYMENT_SHA: ${{ inputs.deployment_sha }}
+      ALLOWED_CHANGED_PATH: ${{ inputs.allowed_changed_path }}
+      GIT_CONFIG_NOSYSTEM: '1'
+      GIT_CONFIG_GLOBAL: /dev/null
+      GIT_TERMINAL_PROMPT: '0'
+      GIT_ASKPASS: /bin/false
+      GIT_AUTHOR_NAME: github-actions[bot]
+      GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+      GIT_COMMITTER_NAME: github-actions[bot]
+      GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+    steps:
+      - name: Admit selected runner and immutable inputs
+        id: context
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$RUNNER_PROFILE" in github-hosted|self-hosted) ;; *) exit 1 ;; esac
+          case "$PUBLICATION_MODE" in plan|publish) ;; *) exit 1 ;; esac
+          [[ "$RUNNER_ENVIRONMENT" == "$RUNNER_PROFILE" ]] || exit 1
+          [[ "$SOURCE_SHA" =~ ^[a-f0-9]{40}$ && "$DEPLOYMENT_SHA" =~ ^[a-f0-9]{40}$ ]] || exit 1
+          [[ -n "$ALLOWED_CHANGED_PATH" && "$ALLOWED_CHANGED_PATH" != '*' ]] || exit 1
+          [[ "$ALLOWED_CHANGED_PATH" != *$'\n'* && "$ALLOWED_CHANGED_PATH" != *$'\r'* ]] || exit 1
+          if [ "$RUNNER_PROFILE" = self-hosted ]; then
+            [[ "$RUNNER_NAME" == surtitlelive-blog-linux && "$RUNNER_OS" == Linux && "$RUNNER_ARCH" == X64 ]] || exit 1
+            [[ "$(id -u)" != 0 ]] || exit 1
+          fi
+          command -v git
+          command -v pwsh
+          [[ "$GITHUB_RUN_ID" =~ ^[1-9][0-9]*$ && "$GITHUB_RUN_ATTEMPT" =~ ^[1-9][0-9]*$ ]] || exit 1
+          task="blog-task-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          [[ -d "$GITHUB_WORKSPACE" && ! -L "$GITHUB_WORKSPACE" ]] || exit 1
+          [[ ! -e "$GITHUB_WORKSPACE/$task" && ! -L "$GITHUB_WORKSPACE/$task" ]] || exit 1
+          printf 'task=%s\n' "$task" >> "$GITHUB_OUTPUT"
+      - name: Checkout exact Blog source
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
+        with:
+          repository: kklam1220/SurtitleLive_v2
+          ref: ${{ inputs.source_sha }}
+          path: ${{ steps.context.outputs.task }}
+          fetch-depth: 1
+          persist-credentials: false
+          clean: false
+      - name: Use reviewed Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: '22.23.4'
+          cache: npm
+          cache-dependency-path: ${{ steps.context.outputs.task }}/blog/package-lock.json
+      - name: Install standalone Blog dependencies
+        working-directory: ${{ steps.context.outputs.task }}
+        run: npm ci --prefix blog --prefer-offline --no-audit --no-fund
+      - name: Run canonical Blog controller
+        shell: pwsh
+        working-directory: ${{ steps.context.outputs.task }}
+        env:
+          BLOG_DEPLOY_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $actualSource = git rev-parse HEAD
+          if ($LASTEXITCODE -ne 0 -or $actualSource -ne $env:SOURCE_SHA) { throw 'Blog source identity mismatch.' }
+          $parameters = @{
+            AllowedChangedPath = $env:ALLOWED_CHANGED_PATH
+            ExpectedDeploymentSha = $env:DEPLOYMENT_SHA
+            PlanOnly = ($env:PUBLICATION_MODE -eq 'plan')
+          }
+          & ./scripts/deploy/deploy-blog.ps1 @parameters
+          if ($LASTEXITCODE -ne 0) { throw 'Blog publication controller failed.' }
+          @(
+            '### Independent Blog controller completed'
+            "Runner: $env:RUNNER_PROFILE"
+            "Mode: $env:PUBLICATION_MODE"
+            "Source: $env:SOURCE_SHA"
+            "Reviewed baseline: $env:DEPLOYMENT_SHA"
+            'Plan mode does not push. Publish mode triggers Pages; it does not verify Pages completion.'
+          ) | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
