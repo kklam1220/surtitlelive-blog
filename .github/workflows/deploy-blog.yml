@@ -51,6 +51,8 @@ jobs:
       SOURCE_SHA: ${{ inputs.source_sha }}
       DEPLOYMENT_SHA: ${{ inputs.deployment_sha }}
       ALLOWED_CHANGED_PATH: ${{ inputs.allowed_changed_path }}
+      PWSH_VERSION: '7.6.9'
+      PWSH_SHA256: 1da6d6d6035d651f20e70ddee7c4c15ac6ab8b9fb40ee92240d91263f28a884b
       GIT_CONFIG_NOSYSTEM: '1'
       GIT_CONFIG_GLOBAL: /dev/null
       GIT_TERMINAL_PROMPT: '0'
@@ -76,12 +78,39 @@ jobs:
             [[ "$(id -u)" != 0 ]] || exit 1
           fi
           command -v git
-          command -v pwsh
+          command -v curl
+          command -v sha256sum
+          command -v tar
           [[ "$GITHUB_RUN_ID" =~ ^[1-9][0-9]*$ && "$GITHUB_RUN_ATTEMPT" =~ ^[1-9][0-9]*$ ]] || exit 1
           task="blog-task-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
           [[ -d "$GITHUB_WORKSPACE" && ! -L "$GITHUB_WORKSPACE" ]] || exit 1
           [[ ! -e "$GITHUB_WORKSPACE/$task" && ! -L "$GITHUB_WORKSPACE/$task" ]] || exit 1
           printf 'task=%s\n' "$task" >> "$GITHUB_OUTPUT"
+      - name: Bootstrap job-owned PowerShell
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RUNNER_OS" == Linux && "$RUNNER_ARCH" == X64 ]] || exit 1
+          [[ "$PWSH_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && "$PWSH_SHA256" =~ ^[a-f0-9]{64}$ ]] || exit 1
+          tool="$RUNNER_TEMP/blog-pwsh-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          [[ -d "$RUNNER_TEMP" && ! -e "$tool" && ! -L "$tool" ]] || exit 1
+          umask 077
+          mkdir "$tool"
+          archive="$tool/powershell.tar.gz"
+          curl --proto '=https' --tlsv1.2 --fail --location --retry 2 --connect-timeout 20 --max-time 180 \
+            --output "$archive" "https://github.com/PowerShell/PowerShell/releases/download/v$PWSH_VERSION/powershell-$PWSH_VERSION-linux-x64.tar.gz"
+          printf '%s  %s\n' "$PWSH_SHA256" "$archive" | sha256sum --check --status || {
+            echo '::error title=blog_runner_pwsh_bootstrap::PowerShell archive checksum mismatch'; exit 1;
+          }
+          tar -xzf "$archive" -C "$tool"
+          chmod u+x "$tool/pwsh"
+          # PowerShell, not Bash, expands PSVersionTable.
+          # shellcheck disable=SC2016
+          actual=$("$tool/pwsh" -NoLogo -NoProfile -NonInteractive -Command '$PSVersionTable.PSVersion.ToString()')
+          [[ "$actual" == "$PWSH_VERSION" ]] || {
+            echo '::error title=blog_runner_pwsh_bootstrap::PowerShell runtime version mismatch'; exit 1;
+          }
+          printf '%s\n' "$tool" >> "$GITHUB_PATH"
       - name: Checkout exact Blog source
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
         with:
@@ -90,6 +119,7 @@ jobs:
           path: ${{ steps.context.outputs.task }}
           fetch-depth: 1
           persist-credentials: false
+          set-safe-directory: false
           clean: false
       - name: Use reviewed Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
