@@ -349,6 +349,9 @@ test("Blog25 preserves the supplied artwork and complete localized editorial blo
   const slug = "25-pockitle-live-stenotype-input-plover";
   const { listSourcePosts } = require("./blog-i18n-utils.cjs");
   const post = listSourcePosts(path.join(blogRoot, "src/content/blog")).find((entry) => entry.slug === slug);
+  assert.match(post.frontmatter.description, /\blive subtitles and captions\b/i);
+  assert.match(post.body, /\blive subtitles and captions\b/i);
+  assert.ok(post.frontmatter.tags.includes("Live Subtitles"));
   assert.equal(post.frontmatter.heroImage, "./blog-25.png");
   for (const [asset, hash] of [
     ["blog-25.png", "dce079659390b0df4ef4f59f6094781435f38d66ea4d79d8c4076f6d02bd223c"],

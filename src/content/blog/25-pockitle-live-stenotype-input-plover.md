@@ -1,13 +1,13 @@
 ---
 title: "From Stenographer to Audience: Text Input in Pockitle Live"
-description: "Pockitle Live is testing live text input with ordinary keyboards and Plover, automatic or line-by-line caption delivery, translation, and a free trial invitation for professional stenographers."
+description: "Pockitle Live tests live subtitles and captions using Plover or a keyboard, with translation. Professional stenographers are invited to try it free."
 pubDate: "2026-10-23"
 heroImage: "./blog-25.png"
 heroImageAlt: "Pockitle Live stenotype console with multilingual captions and audience and projector previews."
-tags: ["Pockitle Live", "Stenography", "Live Captioning", "Plover", "Multilingual Captions", "Theatre Accessibility"]
+tags: ["Pockitle Live", "Stenography", "Live Captioning", "Live Subtitles", "Plover", "Multilingual Captions", "Theatre Accessibility"]
 ---
 
-Live captions do not always begin with a microphone.
+Live subtitles and captions do not always begin with a microphone.
 
 At conferences, post-show discussions, public events and accessible performances, the words audiences read may be written by a professional stenographer as people speak. Stenographers listen while using their own equipment, dictionaries and input methods to turn speech into readable text. The work calls for more than speed: names, specialist vocabulary, punctuation, sentence structure and judgement about context all matter.
 
