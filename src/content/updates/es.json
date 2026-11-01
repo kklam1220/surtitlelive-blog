@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Esta versión añade una opción para analizar obras unipersonales, mejora el análisis de guiones y las traducciones, y actualiza los nombres de producto.",
+          "new": [
+            "Se añadió a la opción de análisis el ajuste «Esta es una obra unipersonal». Puedes editar el nombre del personaje antes del análisis; las líneas sin atribución solo se asignan a ese personaje si el análisis confirma que son habladas.",
+            "Se añadió una revisión del documento completo para guiones con muchas marcas de revisión o dominados por acotaciones, a fin de ayudar a distinguir diálogo, acotaciones y hablantes."
+          ],
+          "improved": [
+            "Las traducciones largas de guiones ahora son más fiables gracias al procesamiento en segundo plano, un progreso más claro y una mejor recuperación tras interrupciones.",
+            "Pockitle Cue for Mac pasó a llamarse Pockitle Cue Station en el sitio del producto y en las guías.",
+            "Se mejoró la recuperación de cambios de subtítulos durante una función y se estabilizaron las vistas previas de Pockitle Live Console."
+          ],
+          "fixed": [
+            "Se corrigió un caso de tiempo de espera en el que una traducción en curso podía parecer fallida antes de conocer su estado final."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Esta versión traslada la sincronización con QLab fuera del flujo web y hace más seguras las importaciones de QLab.",
+          "new": [],
+          "improved": [
+            "La sincronización con QLab pasó del flujo web a Pockitle Cue for Mac; ya no se pueden descargar paquetes de sincronización de QLab desde la web.",
+            "Las importaciones de QLab Projection Pack ahora conservan por defecto los ajustes de subtítulos existentes. Para reemplazarlos por los del paquete se requiere confirmación."
+          ],
+          "fixed": [
+            "Se corrigieron los avisos anticipados del límite diario gratuito; ahora aparecen cerca del final del límite."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

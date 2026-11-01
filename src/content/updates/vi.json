@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này bổ sung tùy chọn phân tích cho vở diễn một người, cải thiện phân tích kịch bản và bản dịch, đồng thời cập nhật tên sản phẩm.",
+          "new": [
+            "Đã thêm tùy chọn “Đây là vở diễn một người” trong phần phân tích kịch bản. Bạn có thể sửa tên nhân vật của người biểu diễn trước khi phân tích; các dòng chưa gán tên chỉ được gán cho nhân vật này khi phân tích xác nhận đó là lời thoại.",
+            "Đã thêm bước rà soát toàn bộ tài liệu cho kịch bản có nhiều dòng bị đánh dấu hoặc chủ yếu là chỉ dẫn sân khấu, giúp phân biệt lời thoại, chỉ dẫn sân khấu và nhãn người nói."
+          ],
+          "improved": [
+            "Bản dịch kịch bản dài đáng tin cậy hơn nhờ xử lý nền, hiển thị tiến độ rõ hơn và khôi phục tốt hơn sau khi bị gián đoạn.",
+            "Đổi tên Pockitle Cue for Mac thành Pockitle Cue Station trên trang sản phẩm và trong hướng dẫn.",
+            "Cải thiện khả năng khôi phục các thay đổi phụ đề khi chương trình đang diễn ra và giúp bản xem trước trong Pockitle Live Console ổn định hơn."
+          ],
+          "fixed": [
+            "Đã sửa trường hợp hết thời gian chờ khiến bản dịch đang xử lý có thể trông như thất bại trước khi xác định được trạng thái cuối cùng."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này chuyển tính năng đồng bộ QLab khỏi quy trình web và giúp việc nhập QLab an toàn hơn.",
+          "new": [],
+          "improved": [
+            "Đã chuyển đồng bộ QLab từ quy trình web sang Pockitle Cue for Mac; không còn tải được gói đồng bộ QLab từ web.",
+            "Khi nhập QLab Projection Pack, các cài đặt phụ đề hiện có được giữ nguyên theo mặc định. Cần xác nhận nếu muốn thay bằng cài đặt trong gói."
+          ],
+          "fixed": [
+            "Đã sửa thông báo giới hạn Free hằng ngày xuất hiện quá sớm; thông báo giờ xuất hiện khi gần chạm giới hạn hơn."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

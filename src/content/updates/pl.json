@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Ta wersja dodaje opcję analizy spektakli jednoosobowych, ulepsza analizę scenariuszy i tłumaczenia oraz aktualizuje nazwy produktów.",
+          "new": [
+            "Do analizy scenariusza dodano opcjonalne ustawienie „To spektakl jednoosobowy”. Przed analizą możesz edytować nazwę postaci; nieprzypisane kwestie zostaną przypisane tej postaci tylko wtedy, gdy analiza potwierdzi, że są wypowiadane.",
+            "Dodano przegląd całego dokumentu dla scenariuszy z wieloma oznaczonymi wierszami lub z przewagą didaskaliów, aby łatwiej odróżniać dialogi, didaskalia i oznaczenia mówców."
+          ],
+          "improved": [
+            "Długie tłumaczenia scenariuszy są teraz bardziej niezawodne dzięki przetwarzaniu w tle, czytelniejszym postępom i lepszemu wznawianiu po przerwach.",
+            "Na stronie produktu i w przewodnikach nazwę Pockitle Cue for Mac zmieniono na Pockitle Cue Station.",
+            "Ulepszono odzyskiwanie zmian napisów podczas spektaklu i ustabilizowano podgląd w Pockitle Live Console."
+          ],
+          "fixed": [
+            "Naprawiono przypadek przekroczenia czasu, w którym trwające tłumaczenie mogło wyglądać na nieudane, zanim poznano jego końcowy status."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Ta wersja przenosi synchronizację QLab poza przepływ w przeglądarce i zwiększa bezpieczeństwo importów QLab.",
+          "new": [],
+          "improved": [
+            "Synchronizację QLab przeniesiono z przepływu w przeglądarce do Pockitle Cue for Mac; pakiety synchronizacji QLab nie są już dostępne do pobrania z przeglądarki.",
+            "Import QLab Projection Pack domyślnie zachowuje istniejące ustawienia napisów. Zastąpienie ich ustawieniami z pakietu wymaga potwierdzenia."
+          ],
+          "fixed": [
+            "Naprawiono zbyt wczesne powiadomienia o dziennym limicie Free; komunikat pojawia się teraz bliżej końca limitu."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "This release adds a one-person script option, improves script analysis and translation, and updates product naming.",
+          "new": [
+            "Added an optional “This is a one-person piece” setting to script analysis. You can edit the performer’s character name before analysis; unnamed lines are attributed only when analysis confirms they are spoken.",
+            "Added document-level review for heavily flagged or stage-dominated scripts to help distinguish speech, stage directions, and speaker labels."
+          ],
+          "improved": [
+            "Improved long-running script translations with background processing, clearer progress, and more reliable recovery from interruptions.",
+            "Renamed Pockitle Cue for Mac to Pockitle Cue Station across the product site and guides.",
+            "Improved live subtitle update recovery and stabilized caption previews in the Pockitle Live Console."
+          ],
+          "fixed": [
+            "Fixed a timeout case where an in-progress translation could appear to have failed before its final status was known."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "This release moves QLab synchronization out of the web workflow and makes QLab imports safer.",
+          "new": [],
+          "improved": [
+            "Moved QLab synchronization from the web workflow to Pockitle Cue for Mac; web-based QLab sync-pack downloads are no longer available.",
+            "QLab Projection Pack imports now preserve existing caption settings by default. Replacing them with pack settings requires confirmation."
+          ],
+          "fixed": [
+            "Fixed early Free daily-limit reminders; the notice now appears closer to the end of the allowance."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambahkan opsi analisis untuk pertunjukan satu orang, meningkatkan analisis naskah dan penerjemahan, serta memperbarui nama produk.",
+          "new": [
+            "Pengaturan opsional “Ini pertunjukan satu orang” ditambahkan ke analisis naskah. Nama karakter pemain dapat diedit sebelum analisis; baris tanpa nama hanya dikaitkan dengan karakter tersebut jika analisis memastikan bahwa baris itu diucapkan.",
+            "Ditambahkan peninjauan seluruh dokumen untuk naskah dengan banyak baris bertanda atau yang didominasi petunjuk panggung, guna membantu membedakan dialog, petunjuk panggung, dan label pembicara."
+          ],
+          "improved": [
+            "Penerjemahan naskah panjang kini lebih andal berkat pemrosesan di latar belakang, progres yang lebih jelas, dan pemulihan yang lebih baik setelah terputus.",
+            "Nama Pockitle Cue for Mac diubah menjadi Pockitle Cue Station pada situs produk dan panduan.",
+            "Pemulihan perubahan subtitle saat pertunjukan berlangsung ditingkatkan, dan pratinjau di Pockitle Live Console menjadi lebih stabil."
+          ],
+          "fixed": [
+            "Memperbaiki kasus waktu tunggu yang membuat penerjemahan yang masih berjalan tampak gagal sebelum status akhirnya diketahui."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Rilis ini memindahkan sinkronisasi QLab dari alur web dan membuat impor QLab lebih aman.",
+          "new": [],
+          "improved": [
+            "Sinkronisasi QLab dipindahkan dari alur web ke Pockitle Cue for Mac; paket sinkronisasi QLab tidak lagi dapat diunduh melalui web.",
+            "Impor QLab Projection Pack kini mempertahankan pengaturan subtitle yang ada secara default. Penggantian dengan pengaturan dari paket memerlukan konfirmasi."
+          ],
+          "fixed": [
+            "Memperbaiki pemberitahuan batas harian Free yang muncul terlalu awal; pemberitahuan kini muncul mendekati akhir batas."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

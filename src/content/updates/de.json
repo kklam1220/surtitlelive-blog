@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Diese Version ergänzt eine Analyseoption für Ein-Personen-Stücke, verbessert Skriptanalyse und Übersetzungen und aktualisiert Produktnamen.",
+          "new": [
+            "Die Skriptanalyse bietet jetzt optional die Einstellung „Dies ist ein Ein-Personen-Stück“. Den Rollennamen der auftretenden Person können Sie vor der Analyse bearbeiten; unbenannte Zeilen werden dieser Rolle nur zugeordnet, wenn die Analyse sie als gesprochen bestätigt.",
+            "Für Skripte mit vielen Markierungen oder überwiegenden Regieanweisungen gibt es jetzt eine dokumentweite Prüfung, die beim Unterscheiden von gesprochenem Text, Regieanweisungen und Sprecherangaben hilft."
+          ],
+          "improved": [
+            "Längere Skriptübersetzungen sind durch Hintergrundverarbeitung, klarere Fortschrittsanzeige und zuverlässigere Wiederaufnahme nach Unterbrechungen robuster.",
+            "Pockitle Cue for Mac heißt auf Produktseiten und in Anleitungen jetzt Pockitle Cue Station.",
+            "Die Wiederherstellung von Live-Untertiteländerungen wurde verbessert und die Vorschau in der Pockitle Live Console stabilisiert."
+          ],
+          "fixed": [
+            "Ein Zeitüberschreitungsfall wurde behoben, bei dem eine laufende Übersetzung als fehlgeschlagen erscheinen konnte, bevor ihr endgültiger Status feststand."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Diese Version verlagert die QLab-Synchronisierung aus dem Webablauf und macht QLab-Importe sicherer.",
+          "new": [],
+          "improved": [
+            "Die QLab-Synchronisierung wurde aus dem Webablauf in Pockitle Cue for Mac verlagert; QLab-Sync-Pakete können nicht mehr über das Web heruntergeladen werden.",
+            "QLab Projection Pack-Importe behalten bestehende Untertiteleinstellungen jetzt standardmäßig bei. Das Ersetzen durch Paketeinstellungen muss bestätigt werden."
+          ],
+          "fixed": [
+            "Zu früh angezeigte Hinweise auf das tägliche Free-Limit wurden behoben; der Hinweis erscheint jetzt erst gegen Ende des Limits."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

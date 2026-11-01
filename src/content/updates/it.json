@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Questa versione aggiunge un’opzione di analisi per gli spettacoli con un solo interprete, migliora l’analisi dei copioni e le traduzioni e aggiorna i nomi dei prodotti.",
+          "new": [
+            "È stata aggiunta all’analisi dei copioni l’opzione facoltativa «Questo è uno spettacolo con un solo interprete». Puoi modificare il nome del personaggio prima dell’analisi; le righe senza attribuzione vengono assegnate a quel personaggio solo se l’analisi conferma che sono pronunciate.",
+            "È stata aggiunta una revisione dell’intero documento per i copioni con molte righe segnalate o dominati dalle indicazioni di scena, per aiutare a distinguere dialoghi, indicazioni di scena e nomi dei parlanti."
+          ],
+          "improved": [
+            "Le traduzioni dei copioni lunghi sono più affidabili grazie all’elaborazione in background, a progressi più chiari e a un recupero migliore dopo le interruzioni.",
+            "Pockitle Cue for Mac è stato rinominato Pockitle Cue Station nel sito del prodotto e nelle guide.",
+            "È stato migliorato il recupero delle modifiche ai sottotitoli durante lo spettacolo e sono state rese più stabili le anteprime di Pockitle Live Console."
+          ],
+          "fixed": [
+            "È stato corretto un caso di timeout in cui una traduzione in corso poteva sembrare non riuscita prima di conoscerne lo stato finale."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Questa versione sposta la sincronizzazione QLab fuori dal flusso web e rende più sicure le importazioni QLab.",
+          "new": [],
+          "improved": [
+            "La sincronizzazione QLab è stata spostata dal flusso web a Pockitle Cue for Mac; i pacchetti di sincronizzazione QLab non sono più scaricabili dal web.",
+            "Le importazioni di QLab Projection Pack ora mantengono per impostazione predefinita le impostazioni dei sottotitoli esistenti. Per sostituirle con quelle del pacchetto è necessaria una conferma."
+          ],
+          "fixed": [
+            "Sono stati corretti gli avvisi anticipati sul limite giornaliero Free; ora compaiono verso la fine del limite."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

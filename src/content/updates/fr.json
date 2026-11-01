@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Cette version ajoute une option d’analyse pour les spectacles en solo, améliore l’analyse des scripts et les traductions, et actualise les noms des produits.",
+          "new": [
+            "L’analyse des scripts propose désormais le réglage facultatif « Spectacle interprété par une seule personne ». Vous pouvez modifier le nom du personnage avant l’analyse ; les lignes sans attribution ne lui sont associées que si l’analyse confirme qu’elles sont prononcées.",
+            "Une révision du document entier a été ajoutée pour les scripts comportant de nombreux éléments à vérifier ou dominés par les didascalies, afin de mieux distinguer les dialogues, les didascalies et les indications de locuteur."
+          ],
+          "improved": [
+            "Les traductions de scripts longs sont plus fiables grâce au traitement en arrière-plan, à un suivi de progression plus clair et à une meilleure reprise après interruption.",
+            "Pockitle Cue for Mac s’appelle désormais Pockitle Cue Station sur le site produit et dans les guides.",
+            "La reprise des modifications de sous-titres pendant un spectacle a été améliorée et les aperçus de Pockitle Live Console stabilisés."
+          ],
+          "fixed": [
+            "Un cas d’expiration a été corrigé : une traduction en cours pouvait sembler échouée avant que son état final soit connu."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Cette version retire la synchronisation QLab du parcours Web et sécurise les imports QLab.",
+          "new": [],
+          "improved": [
+            "La synchronisation QLab passe du parcours Web à Pockitle Cue for Mac ; les packs de synchronisation QLab ne sont plus téléchargeables depuis le Web.",
+            "Les imports QLab Projection Pack conservent désormais les paramètres de sous-titres existants par défaut. Leur remplacement par ceux du pack nécessite une confirmation."
+          ],
+          "fixed": [
+            "Les alertes anticipées de limite quotidienne gratuite ont été corrigées ; elles apparaissent désormais vers la fin de la limite."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

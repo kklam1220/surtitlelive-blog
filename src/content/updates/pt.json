@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Esta versão adiciona uma opção de análise para espetáculos de uma só pessoa, melhora a análise de roteiros e as traduções e atualiza os nomes dos produtos.",
+          "new": [
+            "Foi adicionada à análise de roteiros a opção “Este é um espetáculo de uma só pessoa”. Você pode editar o nome da personagem antes da análise; falas sem identificação só serão atribuídas a essa personagem se a análise confirmar que são faladas.",
+            "Foi adicionada uma revisão do documento inteiro para roteiros com muitas marcações de revisão ou dominados por rubricas, ajudando a distinguir falas, indicações de cena e identificação de quem fala."
+          ],
+          "improved": [
+            "As traduções de roteiros longos ficaram mais confiáveis com processamento em segundo plano, acompanhamento de progresso mais claro e melhor retomada após interrupções.",
+            "O nome Pockitle Cue for Mac foi alterado para Pockitle Cue Station no site do produto e nos guias.",
+            "A recuperação de alterações de legendas durante o espetáculo foi aprimorada e as prévias do Pockitle Live Console ficaram mais estáveis."
+          ],
+          "fixed": [
+            "Foi corrigido um caso de tempo limite em que uma tradução em andamento podia parecer ter falhado antes de seu status final ser conhecido."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Esta versão transfere a sincronização com QLab para fora do fluxo web e torna as importações do QLab mais seguras.",
+          "new": [],
+          "improved": [
+            "A sincronização com QLab foi transferida do fluxo web para o Pockitle Cue for Mac; os pacotes de sincronização do QLab não podem mais ser baixados pela web.",
+            "As importações do QLab Projection Pack agora preservam por padrão as configurações de legendas existentes. Para substituí-las pelas configurações do pacote, é necessária uma confirmação."
+          ],
+          "fixed": [
+            "Foram corrigidos os avisos antecipados do limite diário Free; agora eles aparecem mais perto do fim do limite."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [

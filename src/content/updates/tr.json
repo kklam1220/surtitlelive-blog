@@ -16,6 +16,44 @@
   },
   "weeks": [
     {
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-31",
+      "versions": [
+        {
+          "version": "v261028.01",
+          "releaseDate": "2026-10-28",
+          "product": "Pockitle",
+          "summary": "Bu sürüm tek kişilik gösteriler için bir analiz seçeneği ekliyor, senaryo analizini ve çeviriyi iyileştiriyor ve ürün adlarını güncelliyor.",
+          "new": [
+            "Senaryo analizine isteğe bağlı “Bu tek kişilik bir gösteri” ayarı eklendi. Analizden önce oyuncunun karakter adını düzenleyebilirsiniz; adsız satırlar bu karaktere yalnızca analiz bunların konuşulduğunu doğrularsa atanır.",
+            "Çok sayıda işaret içeren veya sahne yönergelerinin ağırlıkta olduğu senaryolara; konuşmaları, sahne yönergelerini ve konuşmacı etiketlerini ayırt etmeye yardımcı olan belge çapında inceleme eklendi."
+          ],
+          "improved": [
+            "Uzun senaryo çevirileri arka plan işleme, daha anlaşılır ilerleme bilgisi ve kesintilerden sonra daha güvenilir kurtarma ile iyileştirildi.",
+            "Ürün sitesinde ve kılavuzlarda Pockitle Cue for Mac adı Pockitle Cue Station olarak değiştirildi.",
+            "Gösteri sırasında canlı altyazı değişikliklerinin kurtarılması iyileştirildi ve Pockitle Live Console önizlemeleri daha kararlı hâle getirildi."
+          ],
+          "fixed": [
+            "Devam eden bir çevirinin son durumu bilinmeden başarısız görünmesine yol açabilen zaman aşımı durumu düzeltildi."
+          ]
+        },
+        {
+          "version": "v261025.01",
+          "releaseDate": "2026-10-25",
+          "product": "Pockitle",
+          "summary": "Bu sürüm QLab eşitlemesini web akışından çıkarıyor ve QLab içe aktarımlarını daha güvenli hâle getiriyor.",
+          "new": [],
+          "improved": [
+            "QLab eşitlemesi web akışından Pockitle Cue for Mac'e taşındı; QLab eşitleme paketleri artık web üzerinden indirilemiyor.",
+            "QLab Projection Pack içe aktarımları mevcut altyazı ayarlarını artık varsayılan olarak koruyor. Paket ayarlarıyla değiştirmek için onay gerekiyor."
+          ],
+          "fixed": [
+            "Erken gösterilen Free günlük limit bildirimleri düzeltildi; bildirim artık limite daha yakın gösteriliyor."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-18",
       "endDate": "2026-10-24",
       "versions": [
