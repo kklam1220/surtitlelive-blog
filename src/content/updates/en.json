@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "This release adds live caption controls and improves script analysis and translation.",
+          "new": [
+            "Added a Hide/Show captions control during a live Run. Hide audience captions without stopping the Run, then restore them when needed.",
+            "Added a dedicated Pockitle Cue Station download page and refreshed the QLab setup guidance."
+          ],
+          "improved": [
+            "Long script analysis now shows clearer progress through review stages, including document and page review.",
+            "Improved long-script translation speed with concurrent batch processing while keeping results in order."
+          ],
+          "fixed": [
+            "Fixed translation handling for lines containing only punctuation, symbols, or numbers; these lines now keep their original text."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

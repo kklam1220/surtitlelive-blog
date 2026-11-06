@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Rilis ini menambahkan kontrol takarir langsung serta meningkatkan analisis dan penerjemahan naskah.",
+          "new": [
+            "Menambahkan kontrol untuk menyembunyikan dan menampilkan kembali takarir audiens selama pertunjukan langsung tanpa menghentikan pertunjukan.",
+            "Menambahkan halaman unduhan khusus Pockitle Cue Station dan memperbarui panduan penyiapan QLab."
+          ],
+          "improved": [
+            "Analisis naskah panjang kini menampilkan kemajuan setiap tahap peninjauan dengan lebih jelas, termasuk peninjauan dokumen dan halaman.",
+            "Penerjemahan naskah panjang menjadi lebih cepat dengan memproses beberapa kelompok secara bersamaan sambil mempertahankan urutan hasil."
+          ],
+          "fixed": [
+            "Memperbaiki penanganan baris yang hanya berisi tanda baca, simbol, atau angka saat diterjemahkan; baris tersebut kini mempertahankan teks aslinya."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

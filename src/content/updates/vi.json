@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này bổ sung điều khiển phụ đề trực tiếp và cải thiện việc phân tích, dịch kịch bản.",
+          "new": [
+            "Bổ sung điều khiển để ẩn rồi hiện lại phụ đề dành cho khán giả trong buổi diễn trực tiếp mà không dừng buổi diễn.",
+            "Bổ sung trang tải xuống riêng cho Pockitle Cue Station và cập nhật hướng dẫn thiết lập QLab."
+          ],
+          "improved": [
+            "Phân tích kịch bản dài hiện hiển thị tiến độ rõ hơn qua từng giai đoạn rà soát, bao gồm rà soát tài liệu và từng trang.",
+            "Tăng tốc dịch kịch bản dài bằng cách xử lý song song nhiều lô, đồng thời giữ nguyên thứ tự kết quả."
+          ],
+          "fixed": [
+            "Đã sửa cách xử lý khi dịch các dòng chỉ gồm dấu câu, ký hiệu hoặc chữ số; những dòng này giờ giữ nguyên văn bản gốc."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

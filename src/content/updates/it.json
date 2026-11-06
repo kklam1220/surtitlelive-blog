@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Questa versione aggiunge controlli per i sottotitoli dal vivo e migliora l’analisi e la traduzione dei copioni.",
+          "new": [
+            "Aggiunto un controllo per nascondere e mostrare di nuovo i sottotitoli destinati al pubblico durante uno spettacolo dal vivo, senza interromperlo.",
+            "Aggiunta una pagina dedicata al download di Pockitle Cue Station e aggiornate le istruzioni di configurazione di QLab."
+          ],
+          "improved": [
+            "L’analisi dei copioni lunghi mostra ora con maggiore chiarezza i progressi nelle diverse fasi di revisione, comprese quelle del documento e delle pagine.",
+            "La traduzione dei copioni lunghi è più veloce grazie all’elaborazione simultanea di più gruppi, mantenendo l’ordine dei risultati."
+          ],
+          "fixed": [
+            "Corretto il trattamento delle righe composte solo da punteggiatura, simboli o numeri: durante la traduzione mantengono il testo originale."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

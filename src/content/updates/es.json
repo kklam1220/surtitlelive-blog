@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Esta versión añade controles para los subtítulos en directo y mejora el análisis y la traducción de guiones.",
+          "new": [
+            "Se añadió un control para ocultar y volver a mostrar los subtítulos del público durante una función en directo, sin detenerla.",
+            "Se añadió una página de descarga específica para Pockitle Cue Station y se actualizaron las instrucciones de configuración de QLab."
+          ],
+          "improved": [
+            "El análisis de guiones largos ahora muestra con más claridad el avance de cada etapa de revisión, incluido el análisis del documento y de las páginas.",
+            "Se aceleró la traducción de guiones largos procesando varios lotes en paralelo y manteniendo el orden de los resultados."
+          ],
+          "fixed": [
+            "Se corrigió la traducción de líneas compuestas solo por signos de puntuación, símbolos o números; ahora conservan el texto original."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

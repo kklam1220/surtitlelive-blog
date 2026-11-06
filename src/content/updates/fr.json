@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Cette version ajoute des commandes pour les surtitres en direct et améliore l’analyse et la traduction des scripts.",
+          "new": [
+            "Ajout d’une commande permettant de masquer puis de réafficher les surtitres destinés au public pendant une représentation en direct, sans l’interrompre.",
+            "Ajout d’une page de téléchargement dédiée à Pockitle Cue Station et mise à jour du guide de configuration de QLab."
+          ],
+          "improved": [
+            "L’analyse des scripts longs affiche désormais plus clairement l’avancement des différentes étapes de vérification, y compris celle du document et des pages.",
+            "La traduction des scripts longs est plus rapide grâce au traitement simultané de plusieurs lots, tout en conservant l’ordre des résultats."
+          ],
+          "fixed": [
+            "Les lignes composées uniquement de ponctuation, de symboles ou de chiffres conservent désormais leur texte d’origine pendant la traduction."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

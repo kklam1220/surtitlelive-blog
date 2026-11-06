@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Dieses Release bietet Steuerungsmöglichkeiten für Live-Untertitel und verbessert Skriptanalyse und -übersetzung.",
+          "new": [
+            "Mit einer neuen Steuerung lassen sich Publikumsuntertitel während einer Live-Aufführung ausblenden und bei Bedarf wieder einblenden, ohne die Aufführung zu stoppen.",
+            "Pockitle Cue Station hat jetzt eine eigene Download-Seite; außerdem wurden die QLab-Einrichtungshinweise überarbeitet."
+          ],
+          "improved": [
+            "Bei langen Skripten wird der Fortschritt der Analyse in den einzelnen Prüfschritten klarer angezeigt, auch bei der Dokument- und Seitenprüfung.",
+            "Lange Skripte werden durch parallele Verarbeitung mehrerer Übersetzungsabschnitte schneller übersetzt, wobei die Reihenfolge der Ergebnisse erhalten bleibt."
+          ],
+          "fixed": [
+            "Zeilen, die nur aus Satzzeichen, Symbolen oder Zahlen bestehen, behalten bei der Übersetzung nun ihren Originaltext."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

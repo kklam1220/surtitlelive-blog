@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "To wydanie dodaje sterowanie napisami na żywo oraz usprawnia analizę i tłumaczenie scenariuszy.",
+          "new": [
+            "Dodano możliwość ukrywania i ponownego wyświetlania napisów dla widzów podczas występu na żywo bez przerywania występu.",
+            "Dodano osobną stronę pobierania Pockitle Cue Station i zaktualizowano instrukcję konfiguracji QLab."
+          ],
+          "improved": [
+            "Analiza długich scenariuszy wyraźniej pokazuje teraz postęp poszczególnych etapów przeglądu, w tym dokumentu i stron.",
+            "Tłumaczenie długich scenariuszy jest szybsze dzięki równoległemu przetwarzaniu wielu partii, przy zachowaniu kolejności wyników."
+          ],
+          "fixed": [
+            "Naprawiono obsługę wierszy zawierających wyłącznie znaki interpunkcyjne, symbole lub cyfry — podczas tłumaczenia zachowują teraz oryginalny tekst."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

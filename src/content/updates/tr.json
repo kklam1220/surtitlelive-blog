@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Bu sürüm canlı altyazılar için denetimler ekliyor; senaryo analizini ve çevirisini geliştiriyor.",
+          "new": [
+            "Canlı gösteri sırasında izleyici altyazılarını gösteriyi durdurmadan gizleyip yeniden göstermek için bir denetim eklendi.",
+            "Pockitle Cue Station için özel bir indirme sayfası eklendi ve QLab kurulum yönergeleri yenilendi."
+          ],
+          "improved": [
+            "Uzun senaryoların analizi artık belge ve sayfa incelemesi dâhil olmak üzere inceleme aşamalarındaki ilerlemeyi daha net gösteriyor.",
+            "Uzun senaryolar, sonuçların sırası korunarak birden çok çeviri grubunun eşzamanlı işlenmesiyle daha hızlı çevriliyor."
+          ],
+          "fixed": [
+            "Yalnızca noktalama işaretleri, semboller veya sayılardan oluşan satırların çeviride özgün metnini koruması sağlandı."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [

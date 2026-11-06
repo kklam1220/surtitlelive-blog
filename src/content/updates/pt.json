@@ -16,6 +16,29 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-07",
+      "versions": [
+        {
+          "version": "v261102.01",
+          "releaseDate": "2026-11-02",
+          "product": "Pockitle",
+          "summary": "Esta versão adiciona controles para as legendas ao vivo e melhora a análise e a tradução de roteiros.",
+          "new": [
+            "Adicionado um controle para ocultar e voltar a exibir as legendas do público durante uma apresentação ao vivo, sem interrompê-la.",
+            "Adicionada uma página de download dedicada ao Pockitle Cue Station e atualizadas as instruções de configuração do QLab."
+          ],
+          "improved": [
+            "A análise de roteiros longos agora mostra com mais clareza o progresso em cada etapa de revisão, incluindo a revisão do documento e das páginas.",
+            "A tradução de roteiros longos ficou mais rápida com o processamento paralelo de vários lotes, mantendo a ordem dos resultados."
+          ],
+          "fixed": [
+            "Corrigido o tratamento de linhas formadas apenas por pontuação, símbolos ou números; elas agora mantêm o texto original durante a tradução."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-10-25",
       "endDate": "2026-10-31",
       "versions": [
