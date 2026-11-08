@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "To wydanie usprawnia ponowne łączenie Viewer, odzyskiwanie dostępu po weryfikacji konta i przygotowanie kolejnych przedstawień.",
+          "new": [],
+          "improved": [
+            "Viewer wyświetla teraz zlokalizowane odliczanie podczas automatycznego ponownego łączenia po krótkiej przerwie.",
+            "Usprawniono odzyskiwanie dostępu podczas logowania i rejestracji, gdy weryfikacja działa wolno lub jest niedostępna. Status jest czytelniejszy i można ponowić próbę.",
+            "Przebudowano przewodnik po przepływie pracy, aby jaśniej przedstawiał pełną ścieżkę konfiguracji, w tym Cue Station i QLab."
+          ],
+          "fixed": [
+            "Naprawiono problem z przygotowaniem kolejnego przedstawienia, który mógł blokować dalsze działania, gdy plan nie obsługiwał istniejących ustawień językowych Show. Okno dialogowe wyjaśnia teraz problem i wskazuje jasne dalsze kroki."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

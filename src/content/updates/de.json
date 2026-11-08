@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Dieses Update verbessert die Wiederverbindung im Viewer, die Wiederherstellung der Kontobestätigung und die Vorbereitung wiederkehrender Aufführungen.",
+          "new": [],
+          "improved": [
+            "Der Viewer zeigt jetzt einen lokalisierten Countdown an, während er sich nach einer kurzen Unterbrechung automatisch erneut verbindet.",
+            "Die Wiederherstellung bei Anmeldung und Registrierung wurde verbessert, wenn die Verifizierung langsam lädt oder nicht verfügbar ist. Der Status ist klarer und es gibt eine Option zum erneuten Versuch.",
+            "Der Workflow-Leitfaden wurde überarbeitet und beschreibt den vollständigen Einrichtungsablauf klarer, einschließlich Cue Station und QLab."
+          ],
+          "fixed": [
+            "Ein Problem bei der Vorbereitung einer weiteren Aufführung wurde behoben: Wenn der Tarif die bestehenden Spracheinstellungen einer Show nicht unterstützte, konnte der Ablauf feststecken. Der Dialog erklärt nun den Grund und zeigt klare nächste Schritte."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

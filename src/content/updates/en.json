@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "This release improves Viewer reconnection, account verification recovery, and repeat-performance setup.",
+          "new": [],
+          "improved": [
+            "Viewers now show a localized countdown while automatically reconnecting after a brief interruption.",
+            "Improved sign-in and registration recovery when verification is slow or unavailable, with clearer status and a retry option.",
+            "Reworked the workflow guide with a clearer end-to-end setup path, including Cue Station and QLab."
+          ],
+          "fixed": [
+            "Fixed a repeat-performance issue that could leave you stuck when your plan could not accommodate a Show’s existing language setup. The dialog now explains the issue and provides clear next steps."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, Viewer yeniden bağlantısını, hesap doğrulamasından kurtarma sürecini ve tekrarlanan gösteri hazırlığını iyileştiriyor.",
+          "new": [],
+          "improved": [
+            "Viewer, kısa bir kesintinin ardından otomatik olarak yeniden bağlanırken artık seçilen dilde bir geri sayım gösteriyor.",
+            "Doğrulama yavaş olduğunda veya kullanılamadığında oturum açma ve kayıt kurtarma süreci iyileştirildi; durum daha anlaşılır ve yeniden deneme seçeneği sunuluyor.",
+            "Cue Station ve QLab dâhil olmak üzere uçtan uca kurulum yolunu daha açık anlatmak için iş akışı kılavuzu yenilendi."
+          ],
+          "fixed": [
+            "Planınız bir Show’un mevcut dil ayarlarını desteklemediğinde sonraki gösteri hazırlığının takılmasına yol açabilen sorun düzeltildi. İletişim kutusu artık sorunu açıklıyor ve net sonraki adımlar sunuyor."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

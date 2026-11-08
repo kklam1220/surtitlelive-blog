@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Rilis ini meningkatkan koneksi ulang Viewer, pemulihan verifikasi akun, dan persiapan pertunjukan berikutnya.",
+          "new": [],
+          "improved": [
+            "Viewer kini menampilkan hitung mundur dalam bahasa yang dipilih saat tersambung ulang secara otomatis setelah gangguan singkat.",
+            "Pemulihan saat masuk dan mendaftar ditingkatkan ketika verifikasi lambat atau tidak tersedia, dengan status yang lebih jelas dan opsi untuk mencoba lagi.",
+            "Panduan alur kerja diperbarui dengan jalur penyiapan dari awal hingga akhir yang lebih jelas, termasuk Cue Station dan QLab."
+          ],
+          "fixed": [
+            "Memperbaiki masalah persiapan pertunjukan berikutnya yang dapat membuat Anda terhenti jika paket Anda tidak mendukung pengaturan bahasa Show yang sudah ada. Dialog kini menjelaskan masalah tersebut dan memberikan langkah lanjutan yang jelas."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

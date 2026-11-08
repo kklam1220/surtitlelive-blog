@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Cette version améliore la reconnexion de Viewer, la récupération de la vérification du compte et la préparation des représentations suivantes.",
+          "new": [],
+          "improved": [
+            "Viewer affiche maintenant un compte à rebours localisé pendant la reconnexion automatique après une brève interruption.",
+            "La récupération lors de la connexion et de l’inscription a été améliorée lorsque la vérification est lente ou indisponible, avec un état plus clair et une option pour réessayer.",
+            "Le guide de workflow a été remanié pour présenter plus clairement le parcours de configuration complet, notamment avec Cue Station et QLab."
+          ],
+          "fixed": [
+            "Correction d’un blocage lors de la préparation d’une représentation suivante lorsque l’offre ne permettait pas la configuration linguistique actuelle d’un Show. La fenêtre explique maintenant le problème et propose des étapes suivantes claires."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

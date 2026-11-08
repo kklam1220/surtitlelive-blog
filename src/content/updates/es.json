@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Esta versión mejora la reconexión de Viewer, la recuperación de la verificación de la cuenta y la preparación de actuaciones posteriores.",
+          "new": [],
+          "improved": [
+            "Viewer ahora muestra una cuenta atrás en el idioma seleccionado mientras se reconecta automáticamente tras una breve interrupción.",
+            "Se mejoró la recuperación al iniciar sesión y registrarse cuando la verificación tarda o no está disponible. El estado es más claro y se ofrece una opción para volver a intentarlo.",
+            "Se rehízo la guía de flujo de trabajo con una ruta de configuración completa más clara, incluido Cue Station y QLab."
+          ],
+          "fixed": [
+            "Se corrigió un problema al preparar una actuación posterior que podía dejarte bloqueado si tu plan no admitía la configuración de idiomas actual del Show. El cuadro de diálogo ahora explica el problema y ofrece pasos siguientes claros."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

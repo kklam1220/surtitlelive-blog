@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Questa versione migliora la riconnessione di Viewer, il recupero della verifica dell’account e la preparazione delle repliche.",
+          "new": [],
+          "improved": [
+            "Viewer ora mostra un conto alla rovescia localizzato mentre si riconnette automaticamente dopo una breve interruzione.",
+            "È stato migliorato il recupero durante l’accesso e la registrazione quando la verifica è lenta o non disponibile, con uno stato più chiaro e un’opzione per riprovare.",
+            "La guida al flusso di lavoro è stata rielaborata per chiarire il percorso completo di configurazione, incluso l’uso di Cue Station e QLab."
+          ],
+          "fixed": [
+            "Risolto un problema nella preparazione di una replica che poteva bloccare il flusso se il piano non supportava la configurazione delle lingue già impostata per uno Show. La finestra ora spiega il problema e propone i passaggi successivi."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",

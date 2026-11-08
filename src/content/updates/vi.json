@@ -20,6 +20,21 @@
       "endDate": "2026-11-07",
       "versions": [
         {
+          "version": "v261106.01",
+          "releaseDate": "2026-11-06",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này cải thiện khả năng kết nối lại của Viewer, khôi phục xác minh tài khoản và chuẩn bị cho các buổi diễn tiếp theo.",
+          "new": [],
+          "improved": [
+            "Viewer hiện hiển thị đồng hồ đếm ngược theo ngôn ngữ đã chọn trong khi tự động kết nối lại sau một gián đoạn ngắn.",
+            "Cải thiện khả năng khôi phục khi đăng nhập và đăng ký nếu bước xác minh chậm hoặc không khả dụng, với trạng thái rõ ràng hơn và tùy chọn thử lại.",
+            "Cập nhật hướng dẫn quy trình để trình bày rõ hơn toàn bộ các bước thiết lập, bao gồm Cue Station và QLab."
+          ],
+          "fixed": [
+            "Đã sửa lỗi trong bước chuẩn bị buổi diễn tiếp theo có thể khiến bạn bị mắc kẹt khi gói dịch vụ không hỗ trợ cấu hình ngôn ngữ hiện tại của Show. Hộp thoại hiện giải thích vấn đề và đưa ra các bước tiếp theo rõ ràng."
+          ]
+        },
+        {
           "version": "v261102.01",
           "releaseDate": "2026-11-02",
           "product": "Pockitle",
