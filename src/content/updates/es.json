@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Esta versión amplía la colaboración en Editor y las opciones de Project Viewer, y mejora la recuperación de borradores y la fiabilidad de las actuaciones en directo.",
+          "new": [
+            "Se añadieron debates por línea en Editor, con comentarios que se pueden filtrar por idioma.",
+            "Se añadieron URL personalizadas de Project Viewer y códigos QR descargables en los planes que incluyen esta función. Puedes elegir una URL al crear un Project o antes de implementarlo.",
+            "Se añadió la recuperación en el navegador de borradores de Editor sin guardar tras ediciones simultáneas o la eliminación de filas o idiomas. Los borradores se guardan localmente en el navegador, no en la nube."
+          ],
+          "improved": [
+            "Editor ahora muestra el estado de aprobación y revisión de las traducciones. Las traducciones aprobadas quedan protegidas, y los colaboradores pueden solicitar otra revisión cuando cambia el texto de origen.",
+            "Se mejoraron la edición colaborativa y la recuperación de borradores cuando varias personas realizan cambios.",
+            "Se mejoraron las actualizaciones de subtítulos en directo y la reconexión del público tras interrupciones.",
+            "Se renovó el sitio público con una identidad de Pockitle coherente, recursos de marca descargables y guías de flujo de trabajo y Editor más claras y traducidas.",
+            "Se aclararon los mensajes cuando una URL de Project Viewer no es válida o ya está en uso."
+          ],
+          "fixed": [
+            "Se corrigió un problema que podía interrumpir una actualización de subtítulos en directo en curso."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

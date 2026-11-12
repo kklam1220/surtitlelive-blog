@@ -56,13 +56,31 @@ pwsh -File .\scripts\deploy\deploy-blog.ps1 -AllowedChangedPath $allowedPaths -P
 pwsh -File .\scripts\deploy\deploy-blog.ps1 -AllowedChangedPath $allowedPaths
 ```
 
-The script now runs the local preflight first:
+The script clones the current independent Blog repository, then overlays only
+local files matching `AllowedChangedPath`. It never replaces the whole tree or
+deletes remote-only articles. Unmatched, traversal, protected env/dependency and
+symlink paths fail closed. Source ZIP/capture inputs remain excluded.
 
-- `npm --prefix blog run blog:i18n:check`
-- `npm --prefix blog run build`
-- `npm --prefix blog run build:check`
+The merged candidate gets its own clean `npm ci`, production dependency audit
+(zero findings required), then:
 
-and aborts before syncing if localization readiness or the Pages route contract is broken. It then compares the complete local candidate with the current deployment repository. `AllowedChangedPath` must declare every intended repository path or narrow wildcard; any undeclared article, locale, asset, route, or configuration change aborts before commit and push. Always run `-PlanOnly` first to review the exact file list without publishing.
+- `npm run blog:i18n:check`
+- `npm run build`
+- `npm run build:check`
+
+These run in the temporary standalone Blog checkout, not with the main
+system's lockfile, installed modules, version or release controller. Secret and
+raw-artifact scans plus an unchanged-input check precede commit/push. Every
+changed file must still match the declared allowlist. Always run `-PlanOnly`
+first and inspect the exact diff before publishing. Deletions are intentionally
+unsupported; do not simulate them by replacing the entire repository.
+
+For patch notes, use the narrow scope `src/content/updates/*`. If the monorepo
+Blog has unrelated or stale dependency/article work, `-BlogSourcePath` can name
+an explicitly prepared standalone Blog checkout. Prepare that input from the
+current deployment baseline, retain its existing articles and security fixes,
+and apply only the intended changes. Both plan and publication still use this
+same guarded script; there is no manual copy-and-push continuation.
 
 Preparation ZIP files and browser-capture artifacts (`*.htm`, `*.html`, and `*_files/`) under `src/content/blog/` are excluded from deployment. Intentional downloads under `public/` remain deployable. There is no second manual copy-and-push path; improve this guarded script if a legitimate release cannot be represented safely.
 

@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Rilis ini memperluas kolaborasi di Editor dan opsi Project Viewer, sekaligus meningkatkan pemulihan draf dan keandalan pertunjukan langsung.",
+          "new": [
+            "Menambahkan diskusi per baris di Editor, dengan komentar yang dapat difilter berdasarkan bahasa.",
+            "Menambahkan URL Project Viewer khusus dan kode QR yang dapat diunduh untuk paket yang memenuhi syarat. URL dapat ditentukan saat membuat Project atau sebelum deployment.",
+            "Menambahkan pemulihan draf Editor yang belum disimpan melalui browser setelah perubahan serentak atau penghapusan baris/bahasa. Draf disimpan secara lokal di browser, bukan di cloud."
+          ],
+          "improved": [
+            "Editor kini menampilkan status persetujuan dan peninjauan terjemahan. Terjemahan yang disetujui terlindungi, dan kolaborator dapat meminta peninjauan ulang setelah teks sumber berubah.",
+            "Meningkatkan pengeditan kolaboratif dan pemulihan draf saat beberapa orang membuat perubahan.",
+            "Meningkatkan pembaruan takarir langsung dan koneksi ulang penonton setelah gangguan.",
+            "Memperbarui situs publik dengan identitas Pockitle yang konsisten, aset merek yang dapat diunduh, serta panduan alur kerja dan Editor yang lebih jelas dan terlokalisasi.",
+            "Memperjelas pesan saat URL Project Viewer tidak valid atau sudah digunakan."
+          ],
+          "fixed": [
+            "Memperbaiki masalah yang dapat mengganggu pembaruan takarir langsung yang sedang berlangsung."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

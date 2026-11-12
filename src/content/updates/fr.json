@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Cette version enrichit la collaboration dans Editor et les options de Project Viewer, tout en améliorant la récupération des brouillons et la fiabilité des représentations en direct.",
+          "new": [
+            "Ajout de discussions au niveau de chaque ligne dans Editor, avec des commentaires filtrables par langue.",
+            "Ajout d’URL personnalisées pour Project Viewer et de codes QR téléchargeables dans les offres admissibles. Une URL peut être définie lors de la création d’un Project ou avant son déploiement.",
+            "Ajout de la récupération dans le navigateur des brouillons Editor non enregistrés après des modifications simultanées ou la suppression de lignes ou de langues. Les brouillons sont stockés localement dans le navigateur, et non dans le cloud."
+          ],
+          "improved": [
+            "Editor affiche maintenant le statut d’approbation et de révision des traductions. Les traductions approuvées sont protégées, et les collaborateurs peuvent demander une nouvelle révision après une modification du texte source.",
+            "Amélioration de l’édition collaborative et de la récupération des brouillons lorsque plusieurs personnes apportent des modifications.",
+            "Amélioration des mises à jour des sous-titres en direct et de la reconnexion du public après une interruption.",
+            "Refonte du site public avec une identité Pockitle cohérente, des ressources de marque téléchargeables et des guides de workflow et d’Editor localisés plus clairs.",
+            "Messages plus clairs lorsqu’une URL Project Viewer est invalide ou déjà utilisée."
+          ],
+          "fixed": [
+            "Correction d’un problème pouvant interrompre une mise à jour des sous-titres en direct en cours."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

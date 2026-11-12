@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Bản phát hành này mở rộng khả năng cộng tác trong Editor và các tùy chọn Project Viewer, đồng thời cải thiện việc khôi phục bản nháp và độ tin cậy khi biểu diễn trực tiếp.",
+          "new": [
+            "Thêm thảo luận theo từng dòng trong Editor; có thể lọc bình luận theo ngôn ngữ.",
+            "Thêm URL Project Viewer tùy chỉnh và mã QR có thể tải xuống cho các gói đủ điều kiện. Có thể đặt URL khi tạo Project hoặc trước khi triển khai.",
+            "Thêm khả năng khôi phục bản nháp Editor chưa lưu trong trình duyệt sau khi có chỉnh sửa đồng thời hoặc xóa hàng/ngôn ngữ. Bản nháp được lưu cục bộ trong trình duyệt, không phải trên đám mây."
+          ],
+          "improved": [
+            "Editor hiện hiển thị trạng thái phê duyệt và rà soát bản dịch. Bản dịch đã được phê duyệt sẽ được bảo vệ; cộng tác viên có thể yêu cầu rà soát lại khi văn bản nguồn thay đổi.",
+            "Cải thiện khả năng chỉnh sửa cộng tác và khôi phục bản nháp khi nhiều người cùng thay đổi.",
+            "Cải thiện việc cập nhật phụ đề trực tiếp và kết nối lại cho khán giả sau khi bị gián đoạn.",
+            "Làm mới trang web công khai với nhận diện Pockitle nhất quán, tài nguyên thương hiệu có thể tải xuống và hướng dẫn quy trình cùng Editor đã bản địa hóa, rõ ràng hơn.",
+            "Làm rõ thông báo khi URL Project Viewer không hợp lệ hoặc đã được sử dụng."
+          ],
+          "fixed": [
+            "Sửa lỗi có thể làm gián đoạn cập nhật phụ đề trực tiếp đang diễn ra."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

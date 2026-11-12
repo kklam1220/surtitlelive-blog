@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Dieses Update erweitert die Zusammenarbeit im Editor und die Optionen für Project Viewer und verbessert zugleich die Wiederherstellung von Entwürfen und die Zuverlässigkeit bei Live-Aufführungen.",
+          "new": [
+            "Neu: Diskussionen auf Zeilenebene im Editor; Kommentare lassen sich nach Sprache filtern.",
+            "Für berechtigte Tarife gibt es jetzt anpassbare Project-Viewer-URLs und herunterladbare QR-Codes. Eine URL kann beim Erstellen eines Projekts oder vor der Bereitstellung festgelegt werden.",
+            "Nicht gespeicherte Editor-Entwürfe lassen sich jetzt im Browser wiederherstellen, wenn gleichzeitige Änderungen vorgenommen oder Zeilen bzw. Sprachen entfernt wurden. Entwürfe werden lokal im Browser gespeichert, nicht als Cloud-Backup."
+          ],
+          "improved": [
+            "Der Editor zeigt jetzt Freigabe- und Prüfstatus von Übersetzungen. Freigegebene Übersetzungen sind geschützt; nach Änderungen am Ausgangstext können Mitwirkende eine erneute Prüfung anfordern.",
+            "Zusammenarbeit und Wiederherstellung von Entwürfen bei Änderungen durch mehrere Personen verbessert.",
+            "Live-Untertitelaktualisierungen und Wiederverbindung des Publikums nach Unterbrechungen verbessert.",
+            "Die öffentliche Website wurde mit einheitlichem Pockitle-Auftritt, herunterladbaren Markenressourcen und klareren lokalisierten Workflow- und Editor-Anleitungen überarbeitet.",
+            "Klarere Hinweise bei ungültigen oder bereits verwendeten Project-Viewer-URLs."
+          ],
+          "fixed": [
+            "Ein Problem wurde behoben, durch das eine laufende Live-Untertitelaktualisierung unterbrochen werden konnte."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

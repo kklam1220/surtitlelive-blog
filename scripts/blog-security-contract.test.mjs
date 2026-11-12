@@ -187,6 +187,23 @@ test("sanitizer rejects namespaced SMIL URL mutation and meta-refresh script sch
   }
 });
 
+test("RSS parser retains the stop-node CPU fix and compatible builder", () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(blogRoot, "package.json"), "utf8"));
+  const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));
+  assert.equal(manifest.overrides["fast-xml-builder"], "1.3.1");
+  const copies = Object.entries(lock.packages).filter(([name]) => name.endsWith("node_modules/fast-xml-parser"));
+  assert.ok(copies.length > 0);
+  for (const [name, entry] of copies) assert.equal(entry.version, "5.12.0", name);
+  const { XMLParser, XMLBuilder } = require("fast-xml-parser");
+  const rss = { rss: { channel: { title: "Pockitle" } } };
+  assert.deepEqual(new XMLParser().parse(new XMLBuilder().build(rss)), rss);
+  const probe = spawnSync(process.execPath, ["-e", [
+    'const { XMLParser } = require("fast-xml-parser");',
+    'try { new XMLParser({ stopNodes: ["stop"] }).parse("<stop>" + "<a ".repeat(100000)); } catch {}',
+  ].join("\n")], { cwd: blogRoot, encoding: "utf8", timeout: 3000 });
+  assert.equal(probe.status, 0, probe.error?.message || probe.stderr);
+});
+
 test("static Blog image caching does not use request-controlled stale reuse", () => {
   const config = fs.readFileSync(path.join(blogRoot, "astro.config.mjs"), "utf8");
   const lock = JSON.parse(fs.readFileSync(path.join(blogRoot, "package-lock.json"), "utf8"));

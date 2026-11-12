@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Questa versione amplia la collaborazione in Editor e le opzioni di Project Viewer, migliorando al contempo il recupero delle bozze e l’affidabilità degli spettacoli dal vivo.",
+          "new": [
+            "Aggiunte discussioni a livello di riga in Editor, con commenti filtrabili per lingua.",
+            "Aggiunti URL personalizzati per Project Viewer e codici QR scaricabili nei piani idonei. È possibile impostare un URL quando si crea un Project o prima della distribuzione.",
+            "Aggiunto il recupero nel browser delle bozze di Editor non salvate dopo modifiche simultanee o la rimozione di righe o lingue. Le bozze vengono salvate localmente nel browser, non nel cloud."
+          ],
+          "improved": [
+            "Editor ora mostra lo stato di approvazione e revisione delle traduzioni. Le traduzioni approvate sono protette e, dopo una modifica del testo sorgente, i collaboratori possono richiedere una nuova revisione.",
+            "Migliorati la modifica collaborativa e il recupero delle bozze quando più persone apportano modifiche.",
+            "Migliorati gli aggiornamenti dei sottotitoli dal vivo e la riconnessione del pubblico dopo le interruzioni.",
+            "Rinnovato il sito pubblico con un’identità Pockitle coerente, risorse del marchio scaricabili e guide localizzate più chiare per il flusso di lavoro e Editor.",
+            "Resi più chiari i messaggi quando un URL Project Viewer non è valido o è già in uso."
+          ],
+          "fixed": [
+            "Risolto un problema che poteva interrompere un aggiornamento dei sottotitoli dal vivo in corso."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "To wydanie rozszerza współpracę w Editor i opcje Project Viewer, a także usprawnia odzyskiwanie wersji roboczych i niezawodność podczas występów na żywo.",
+          "new": [
+            "Dodano dyskusje dotyczące poszczególnych wierszy w Editor; komentarze można filtrować według języka.",
+            "W kwalifikujących się planach dodano własne adresy URL Project Viewer i możliwość pobierania kodów QR. URL można ustawić podczas tworzenia Project lub przed wdrożeniem.",
+            "Dodano odzyskiwanie niezapisanych wersji roboczych Editor w przeglądarce po równoczesnych zmianach lub usunięciu wierszy albo języków. Wersje robocze są zapisywane lokalnie w przeglądarce, a nie w chmurze."
+          ],
+          "improved": [
+            "Editor pokazuje teraz status zatwierdzenia i przeglądu tłumaczenia. Zatwierdzone tłumaczenia są chronione, a współpracownicy mogą poprosić o ponowną weryfikację po zmianie tekstu źródłowego.",
+            "Usprawniono wspólną edycję i odzyskiwanie wersji roboczych, gdy zmian dokonuje kilka osób.",
+            "Usprawniono aktualizacje napisów na żywo i ponowne łączenie widzów po przerwach.",
+            "Odświeżono publiczną witrynę, ujednolicając markę Pockitle, udostępniając materiały marki do pobrania oraz klarowniejsze zlokalizowane przewodniki po przepływie pracy i Editor.",
+            "Wyjaśniono komunikaty dotyczące nieprawidłowych lub zajętych adresów URL Project Viewer."
+          ],
+          "fixed": [
+            "Naprawiono problem, który mógł przerwać trwającą aktualizację napisów na żywo."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

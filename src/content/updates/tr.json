@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Bu sürüm, Editor iş birliği özelliklerini ve Project Viewer seçeneklerini genişletirken taslak kurtarmayı ve canlı performans güvenilirliğini de iyileştiriyor.",
+          "new": [
+            "Editor’a satır düzeyinde tartışmalar eklendi; yorumlar dile göre filtrelenebiliyor.",
+            "Uygun planlarda özel Project Viewer URL’leri ve indirilebilir QR kodları eklendi. URL, Project oluşturulurken veya dağıtımdan önce belirlenebilir.",
+            "Eşzamanlı düzenlemelerden ya da satır veya dil silinmesinden sonra kaydedilmemiş Editor taslaklarını tarayıcıda kurtarma özelliği eklendi. Taslaklar bulutta değil, tarayıcıda yerel olarak saklanır."
+          ],
+          "improved": [
+            "Editor artık çeviri onay ve inceleme durumunu gösteriyor. Onaylanan çeviriler korunuyor; kaynak metin değiştiğinde ekip üyeleri yeniden inceleme isteyebiliyor.",
+            "Birden fazla kişi değişiklik yaptığında ortak düzenleme ve taslak kurtarma iyileştirildi.",
+            "Canlı altyazı güncellemeleri ve kesintilerden sonra izleyicilerin yeniden bağlanması iyileştirildi.",
+            "Herkese açık site; tutarlı Pockitle markalaması, indirilebilir marka varlıkları ve daha anlaşılır yerelleştirilmiş iş akışı ve Editor kılavuzlarıyla yenilendi.",
+            "Geçersiz veya kullanımda olan Project Viewer URL’leri için geri bildirim netleştirildi."
+          ],
+          "fixed": [
+            "Sürmekte olan canlı altyazı güncellemesini kesintiye uğratabilen sorun düzeltildi."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

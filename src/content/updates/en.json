@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "This release expands Editor collaboration and Project Viewer options, while improving draft recovery and live-show reliability.",
+          "new": [
+            "Added line-level discussions in Editor, with comments filterable by language.",
+            "Added custom Project Viewer URLs and downloadable QR codes on eligible plans. Set a URL when creating a Project or before deployment.",
+            "Added browser-based recovery for unsaved Editor drafts after concurrent edits or row/language removal. Drafts are stored in your browser, not in the cloud."
+          ],
+          "improved": [
+            "Editor now shows translation approval and review status. Approved translations are protected, and collaborators can request another review after source text changes.",
+            "Improved collaborative editing and draft recovery when multiple people make changes.",
+            "Improved live caption updates and audience reconnection after interruptions.",
+            "Refreshed the public site with consistent Pockitle branding, downloadable brand assets, and clearer localized workflow and Editor guides.",
+            "Clarified feedback for invalid or already-used Project Viewer URLs."
+          ],
+          "fixed": [
+            "Fixed an issue that could interrupt an in-progress live caption update."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [

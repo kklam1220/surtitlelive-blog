@@ -16,6 +16,33 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-14",
+      "versions": [
+        {
+          "version": "v261110.01",
+          "releaseDate": "2026-11-10",
+          "product": "Pockitle",
+          "summary": "Esta versão amplia a colaboração no Editor e as opções do Project Viewer, além de melhorar a recuperação de rascunhos e a fiabilidade das atuações ao vivo.",
+          "new": [
+            "Foram adicionadas discussões ao nível de cada linha no Editor, com comentários que podem ser filtrados por idioma.",
+            "Foram adicionados URLs personalizados do Project Viewer e códigos QR transferíveis nos planos elegíveis. É possível definir um URL ao criar um Project ou antes da implementação.",
+            "Foi adicionada a recuperação no navegador de rascunhos do Editor não guardados após edições simultâneas ou remoção de linhas ou idiomas. Os rascunhos são guardados localmente no navegador, não na nuvem."
+          ],
+          "improved": [
+            "O Editor mostra agora o estado de aprovação e revisão das traduções. As traduções aprovadas ficam protegidas, e os colaboradores podem pedir uma nova revisão quando o texto de origem muda.",
+            "Foram melhoradas a edição colaborativa e a recuperação de rascunhos quando várias pessoas fazem alterações.",
+            "Foram melhoradas as atualizações das legendas ao vivo e a reconexão do público após interrupções.",
+            "O site público foi atualizado com uma identidade Pockitle consistente, recursos de marca transferíveis e guias localizados mais claros sobre o fluxo de trabalho e o Editor.",
+            "Foram clarificadas as mensagens para URLs do Project Viewer inválidos ou já utilizados."
+          ],
+          "fixed": [
+            "Foi corrigido um problema que podia interromper uma atualização de legendas ao vivo em curso."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-01",
       "endDate": "2026-11-07",
       "versions": [
