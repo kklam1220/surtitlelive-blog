@@ -20,6 +20,21 @@
       "endDate": "2026-11-14",
       "versions": [
         {
+          "version": "v261113.01",
+          "releaseDate": "2026-11-13",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja usprawnia obsługę adresów URL Project Viewer oraz spójność języka i poradników Editor.",
+          "new": [],
+          "improved": [
+            "Zmiany adresu URL Project Viewer trzeba teraz jawnie zapisać. Go Live używa zapisanego adresu, a komunikaty pomagają zapisać lub odrzucić niezapisane zmiany.",
+            "Usprawniono spójność języka w procesach Editor, projektów i kont, w tym w powiadomieniach i komunikatach o błędach.",
+            "Zaktualizowano poradniki i FAQ Editor w obsługiwanych językach, aby jaśniej opisać ochronę tłumaczeń oraz import i eksport przetłumaczonych scenariuszy."
+          ],
+          "fixed": [
+            "Naprawiono przypadki, w których niektóre powiadomienia lub błędy procesu mogły być wyświetlane w innym języku niż wybrany język interfejsu."
+          ]
+        },
+        {
           "version": "v261110.01",
           "releaseDate": "2026-11-10",
           "product": "Pockitle",

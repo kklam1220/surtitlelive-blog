@@ -20,6 +20,21 @@
       "endDate": "2026-11-14",
       "versions": [
         {
+          "version": "v261113.01",
+          "releaseDate": "2026-11-13",
+          "product": "Pockitle",
+          "summary": "Esta atualização melhora o controlo dos URLs do Project Viewer e a consistência linguística e dos guias do Editor.",
+          "new": [],
+          "improved": [
+            "As alterações aos URLs do Project Viewer têm agora de ser guardadas explicitamente. A opção Go Live utiliza o URL guardado e apresenta opções claras para guardar ou descartar alterações por guardar.",
+            "Melhorada a consistência linguística nos fluxos do Editor, dos projetos e da conta, incluindo avisos e mensagens de erro.",
+            "Os guias e as perguntas frequentes do Editor foram atualizados nos idiomas suportados, com explicações mais claras sobre a proteção de traduções e a importação e exportação de guiões traduzidos."
+          ],
+          "fixed": [
+            "Corrigidos casos em que alguns avisos ou erros do fluxo de trabalho podiam surgir num idioma diferente do idioma selecionado para a interface."
+          ]
+        },
+        {
           "version": "v261110.01",
           "releaseDate": "2026-11-10",
           "product": "Pockitle",

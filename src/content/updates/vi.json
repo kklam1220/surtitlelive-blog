@@ -20,6 +20,21 @@
       "endDate": "2026-11-14",
       "versions": [
         {
+          "version": "v261113.01",
+          "releaseDate": "2026-11-13",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này cải thiện việc quản lý URL Project Viewer, tính nhất quán ngôn ngữ và tài liệu hướng dẫn Editor.",
+          "new": [],
+          "improved": [
+            "Thay đổi URL Project Viewer giờ đây phải được lưu rõ ràng. Go Live sử dụng URL đã lưu và hiển thị lựa chọn để lưu hoặc hủy các thay đổi chưa lưu.",
+            "Cải thiện tính nhất quán ngôn ngữ trong các quy trình Editor, dự án và tài khoản, bao gồm thông báo và thông báo lỗi.",
+            "Cập nhật hướng dẫn và câu hỏi thường gặp về Editor bằng các ngôn ngữ được hỗ trợ, giải thích rõ hơn về bảo vệ bản dịch cũng như nhập và xuất kịch bản đã dịch."
+          ],
+          "fixed": [
+            "Khắc phục trường hợp một số thông báo hoặc lỗi trong quy trình có thể hiển thị bằng ngôn ngữ khác với ngôn ngữ giao diện đã chọn."
+          ]
+        },
+        {
           "version": "v261110.01",
           "releaseDate": "2026-11-10",
           "product": "Pockitle",

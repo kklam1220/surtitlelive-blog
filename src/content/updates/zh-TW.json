@@ -20,6 +20,21 @@
       "endDate": "2026-11-14",
       "versions": [
         {
+          "version": "v261113.01",
+          "releaseDate": "2026-11-13",
+          "product": "Pockitle",
+          "summary": "本次更新改善 Project Viewer URL 的管理方式，並提升 Editor 的語言一致性與使用指南。",
+          "new": [],
+          "improved": [
+            "現在必須明確儲存 Project Viewer URL 的修改。Go Live 會使用已儲存的 URL，並提示你儲存或捨棄尚未儲存的修改。",
+            "改善 Editor、專案及帳戶流程的語言一致性，包括通知與錯誤訊息。",
+            "更新各支援語言的 Editor 指南與常見問題，進一步說明翻譯保護、已翻譯劇本的匯入與匯出。"
+          ],
+          "fixed": [
+            "修正部分流程通知或錯誤訊息可能與所選介面語言不一致的問題。"
+          ]
+        },
+        {
           "version": "v261110.01",
           "releaseDate": "2026-11-10",
           "product": "Pockitle",

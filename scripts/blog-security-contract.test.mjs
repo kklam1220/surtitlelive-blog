@@ -225,11 +225,11 @@ test("static Blog image caching does not use request-controlled stale reuse", ()
   };
 
   assert.match(config, /output:\s*["']static["']/);
-  assert.equal(lock.packages["node_modules/astro"].version, "7.3.3");
+  assert.equal(lock.packages["node_modules/astro"].version, "7.4.12");
   assertTtlOnly(remoteHelper);
   assert.equal(
     createHash("sha256").update(remoteHelper).digest("hex"),
-    "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+    "d535748aadd2c4b7a53106cdd25f81743171e4f6862b622ce55cf1163fd946d7",
   );
   const ttlLine = "const expires = policy.storable() ? policy.timeToLive() : 0;";
   for (const method of ["evaluateRequest", "satisfiesWithoutRevalidation"]) {
