@@ -418,7 +418,7 @@ test("Blog26 preserves localized collaboration context and supplied diagrams", (
     ["blog-26-team-handoff.png", "d4e029ca2ccfd42236781ee96a3759912b64a061f70e30208ec8e5f9e83826f6"],
     ["blog-26-concurrent-edit.png", "19379d518f29fe586e460bdd751a32fd9d71f7af7c63112c206bb0831549cc0f"],
     ["blog-26-translation-approval.png", "3577a5bc44100407d76cd487cc827a942fddde41c0eebd867ed33f7cbe442557"],
-    ["blog-26-collaboration-connected.png", "a57d45d74e3219a2dc85482c4b66689cd6b5460337e340216c3a18bc01e65335"],
+    ["blog-26-collaboration-connected.png", "0986bf3ff5bed97f8392edd78bb15b8069e7b52786643a2ec65ba7447f911e58"],
     ["blog-26-editor-actions.png", "201bacf0e93369da144e1a7b7b13409b34ae031345c38390e8c187c6bd759a3e"],
   ]) assert.equal(createHash("sha256").update(fs.readFileSync(path.join(blogRoot, "src/content/blog", asset))).digest("hex"), hash);
   for (const locale of ["en", ...locales]) {
