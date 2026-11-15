@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.497Z",
+  "sectionTitles": {
+    "keyTakeaways": "Intisari",
+    "faq": "Pertanyaan umum",
+    "glossary": "Istilah penting",
+    "related": "Bacaan terkait"
+  },
+  "keyTakeaways": [
+    "Pemesanan sementara berlaku untuk seluruh baris dan semua bahasa di dalamnya.",
+    "Pembedaan pentingnya adalah: “perlu ditinjau” tidak berarti “siapa pun boleh langsung menulis ulang”. Terjemahan yang disetujui dan yang menunggu peninjauan tetap terlindungi.",
+    "Menyimpan di Editor tidak langsung memperbarui pertunjukan yang sudah diterapkan."
+  ],
+  "faq": [
+    {
+      "question": "Bisakah dua orang menyunting baris yang sama sekaligus?",
+      "answer": "Dua orang dapat bekerja pada naskah yang sama, tetapi Pockitle Cue tidak membiarkan keduanya mengubah satu baris secara bersamaan tanpa batas. Pemesanan sementara berlaku untuk seluruh baris dan semua bahasa di dalamnya. Kolaborasi waktu nyata bergantung pada paket yang memenuhi syarat, izin penyunting, dan ketersediaan; fitur ini tidak aktif untuk setiap akun."
+    },
+    {
+      "question": "Bagaimana persetujuan terjemahan bekerja?",
+      "answer": "Persetujuan dicatat terpisah untuk setiap baris dan bahasa. Pembedaan pentingnya adalah: “perlu ditinjau” tidak berarti “siapa pun boleh langsung menulis ulang”. Terjemahan yang disetujui dan yang menunggu peninjauan tetap terlindungi."
+    },
+    {
+      "question": "Apa yang terjadi saat teks sumber berubah?",
+      "answer": "Jika sutradara mengubah dialog sumber, terjemahan yang sebelumnya terlindungi ditandai untuk ditinjau ulang."
+    },
+    {
+      "question": "Apakah menyimpan langsung memperbarui pertunjukan?",
+      "answer": "Menyimpan di Editor tidak langsung memperbarui pertunjukan yang sudah diterapkan. Jika pertunjukan sedang berlangsung atau konsol operator telah mengendalikan acara, pembaruan teks dikirim secara terpisah dan diterapkan operator pada saat yang tepat."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Reservasi baris",
+      "definition": "Pemesanan sementara berlaku untuk seluruh baris dan semua bahasa di dalamnya."
+    },
+    {
+      "term": "Persetujuan terjemahan",
+      "definition": "Persetujuan dicatat terpisah untuk setiap baris dan bahasa."
+    },
+    {
+      "term": "Perlu ditinjau",
+      "definition": "Pembedaan pentingnya adalah: “perlu ditinjau” tidak berarti “siapa pun boleh langsung menulis ulang”. Terjemahan yang disetujui dan yang menunggu peninjauan tetap terlindungi."
+    },
+    {
+      "term": "Riwayat suntingan",
+      "definition": "Untuk saat ini riwayat bersifat hanya-baca; bukan alat untuk memulihkan seluruh naskah ke sembarang waktu dengan sekali klik."
+    },
+    {
+      "term": "Pembaruan pertunjukan",
+      "definition": "Menyimpan di Editor tidak langsung memperbarui pertunjukan yang sudah diterapkan."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Panduan Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

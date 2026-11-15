@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "en",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.492Z",
+  "sectionTitles": {
+    "keyTakeaways": "Key Takeaways",
+    "faq": "Frequently Asked Questions",
+    "glossary": "Glossary",
+    "related": "Related reading"
+  },
+  "keyTakeaways": [
+    "A temporary editing reservation covers the whole row across its languages.",
+    "The critical distinction is this: needs review does not mean anyone may immediately rewrite it. Approved translations and translations awaiting review are both protected.",
+    "Saving in Editor does not immediately update a deployed show."
+  ],
+  "faq": [
+    {
+      "question": "Can two editors change the same line at once?",
+      "answer": "Two people can work in the same script, but Pockitle Cue does not allow unrestricted simultaneous changes to one line. A temporary editing reservation covers the whole row across its languages. Real-time collaboration depends on an eligible plan, editor permissions and availability; it is not active for every account."
+    },
+    {
+      "question": "How does translation approval work?",
+      "answer": "Approval applies separately to each line and language. The critical distinction is this: needs review does not mean anyone may immediately rewrite it. Approved translations and translations awaiting review are both protected."
+    },
+    {
+      "question": "What happens when the source changes?",
+      "answer": "If the director changes a source line, translations that were already protected are marked for another review."
+    },
+    {
+      "question": "Does saving update the live show immediately?",
+      "answer": "Saving in Editor does not immediately update a deployed show. If a show is running, or its operator console already controls the performance, subtitle updates are submitted separately and applied by the operator at a suitable moment."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Line reservation",
+      "definition": "A temporary editing reservation covers the whole row across its languages."
+    },
+    {
+      "term": "Translation approval",
+      "definition": "Approval applies separately to each line and language."
+    },
+    {
+      "term": "Review needed",
+      "definition": "The critical distinction is this: needs review does not mean anyone may immediately rewrite it. Approved translations and translations awaiting review are both protected."
+    },
+    {
+      "term": "Edit history",
+      "definition": "The history is currently for viewing; it is not a one-click system for restoring the entire script to any past point in time."
+    },
+    {
+      "term": "Live show update",
+      "definition": "Saving in Editor does not immediately update a deployed show."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Editor user guide",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "pl",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.500Z",
+  "sectionTitles": {
+    "keyTakeaways": "Najważniejsze wnioski",
+    "faq": "Najczęstsze pytania",
+    "glossary": "Słowniczek",
+    "related": "Przeczytaj również"
+  },
+  "keyTakeaways": [
+    "Tymczasowa rezerwacja obejmuje cały wiersz we wszystkich językach.",
+    "Najważniejsze rozróżnienie brzmi: „do ponownego przeglądu” nie oznacza „każdy może edytować”. Zarówno zatwierdzone tłumaczenia, jak i te oczekujące na sprawdzenie pozostają chronione.",
+    "Zapis w Editorze nie aktualizuje natychmiast wdrożonego spektaklu."
+  ],
+  "faq": [
+    {
+      "question": "Czy dwie osoby mogą jednocześnie edytować ten sam wiersz?",
+      "answer": "Dwie osoby mogą pracować nad jednym scenariuszem, ale Pockitle Cue nie pozwala im bez ograniczeń równocześnie zmieniać tego samego wiersza. Tymczasowa rezerwacja obejmuje cały wiersz we wszystkich językach. Współpraca w czasie rzeczywistym zależy od odpowiedniego planu, uprawnień edytora i dostępności; nie jest aktywna na każdym koncie."
+    },
+    {
+      "question": "Jak działa zatwierdzanie tłumaczenia?",
+      "answer": "Zatwierdzenie jest zapisywane osobno dla każdego wiersza i języka. Najważniejsze rozróżnienie brzmi: „do ponownego przeglądu” nie oznacza „każdy może edytować”. Zarówno zatwierdzone tłumaczenia, jak i te oczekujące na sprawdzenie pozostają chronione."
+    },
+    {
+      "question": "Co się dzieje po zmianie tekstu źródłowego?",
+      "answer": "Jeśli reżyser zmieni kwestię w oryginale, chronione wcześniej przekłady zostaną oznaczone do ponownego przejrzenia."
+    },
+    {
+      "question": "Czy zapis natychmiast aktualizuje trwający spektakl?",
+      "answer": "Zapis w Editorze nie aktualizuje natychmiast wdrożonego spektaklu. Jeśli przedstawienie trwa lub konsola operatora kontroluje już pokaz, aktualizacje przesyła się oddzielnie, a operator wprowadza je w odpowiednim momencie."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Rezerwacja wiersza",
+      "definition": "Tymczasowa rezerwacja obejmuje cały wiersz we wszystkich językach."
+    },
+    {
+      "term": "Zatwierdzenie tłumaczenia",
+      "definition": "Zatwierdzenie jest zapisywane osobno dla każdego wiersza i języka."
+    },
+    {
+      "term": "Wymagana ponowna weryfikacja",
+      "definition": "Najważniejsze rozróżnienie brzmi: „do ponownego przeglądu” nie oznacza „każdy może edytować”. Zarówno zatwierdzone tłumaczenia, jak i te oczekujące na sprawdzenie pozostają chronione."
+    },
+    {
+      "term": "Historia edycji",
+      "definition": "Na razie historia służy do odczytu; nie jest przyciskiem przywracającym cały scenariusz do dowolnego momentu."
+    },
+    {
+      "term": "Aktualizacja spektaklu",
+      "definition": "Zapis w Editorze nie aktualizuje natychmiast wdrożonego spektaklu."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Przewodnik po Editorze",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "it",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.498Z",
+  "sectionTitles": {
+    "keyTakeaways": "Punti chiave",
+    "faq": "Domande frequenti",
+    "glossary": "Glossario",
+    "related": "Approfondimenti"
+  },
+  "keyTakeaways": [
+    "La prenotazione temporanea riguarda tutta la riga, in tutte le lingue.",
+    "La distinzione fondamentale è questa: «da rivedere» non significa «modificabile da chiunque». Sia le traduzioni approvate sia quelle da ricontrollare restano protette.",
+    "Salvare nell’Editor non aggiorna immediatamente uno spettacolo già attivo."
+  ],
+  "faq": [
+    {
+      "question": "Due persone possono modificare la stessa riga contemporaneamente?",
+      "answer": "Due persone possono lavorare sullo stesso copione, ma Pockitle Cue non consente loro di cambiare senza limiti la medesima riga contemporaneamente. La prenotazione temporanea riguarda tutta la riga, in tutte le lingue. La collaborazione in tempo reale dipende dal piano idoneo, dai permessi di modifica e dalla disponibilità; non è attiva per tutti gli account."
+    },
+    {
+      "question": "Come funziona l’approvazione di una traduzione?",
+      "answer": "L’approvazione è distinta per ogni riga e lingua. La distinzione fondamentale è questa: «da rivedere» non significa «modificabile da chiunque». Sia le traduzioni approvate sia quelle da ricontrollare restano protette."
+    },
+    {
+      "question": "Cosa succede quando cambia il testo originale?",
+      "answer": "Quando la regia cambia una battuta originale, le traduzioni protette vengono contrassegnate come da rivedere."
+    },
+    {
+      "question": "Salvare aggiorna subito lo spettacolo in corso?",
+      "answer": "Salvare nell’Editor non aggiorna immediatamente uno spettacolo già attivo. Se lo spettacolo è in corso o la console dell'operatore ne ha già il controllo, gli aggiornamenti vengono inviati separatamente e adottati dall'operatore nel momento opportuno."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Prenotazione della riga",
+      "definition": "La prenotazione temporanea riguarda tutta la riga, in tutte le lingue."
+    },
+    {
+      "term": "Approvazione della traduzione",
+      "definition": "L’approvazione è distinta per ogni riga e lingua."
+    },
+    {
+      "term": "Revisione necessaria",
+      "definition": "La distinzione fondamentale è questa: «da rivedere» non significa «modificabile da chiunque». Sia le traduzioni approvate sia quelle da ricontrollare restano protette."
+    },
+    {
+      "term": "Cronologia delle modifiche",
+      "definition": "Per ora lo storico è di sola consultazione, non uno strumento per ripristinare con un clic l'intero copione a un momento qualsiasi."
+    },
+    {
+      "term": "Aggiornamento dello spettacolo",
+      "definition": "Salvare nell’Editor non aggiorna immediatamente uno spettacolo già attivo."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Guida di Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

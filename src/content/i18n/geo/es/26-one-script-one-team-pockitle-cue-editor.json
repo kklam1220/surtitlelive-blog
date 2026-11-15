@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "es",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.496Z",
+  "sectionTitles": {
+    "keyTakeaways": "Ideas clave",
+    "faq": "Preguntas frecuentes",
+    "glossary": "Glosario",
+    "related": "Lecturas relacionadas"
+  },
+  "keyTakeaways": [
+    "La reserva temporal protege la fila completa, incluidos todos sus idiomas.",
+    "La distinción esencial es esta: «revisar de nuevo» no significa «cualquiera puede modificar». Tanto las traducciones aprobadas como las pendientes de revisión siguen protegidas.",
+    "Guardar en el Editor no actualiza inmediatamente una función desplegada."
+  ],
+  "faq": [
+    {
+      "question": "¿Pueden dos personas editar la misma línea a la vez?",
+      "answer": "Dos personas pueden trabajar en el mismo texto, pero Pockitle Cue no permite que ambas modifiquen sin restricciones una misma línea a la vez. La reserva temporal protege la fila completa, incluidos todos sus idiomas. La colaboración en tiempo real depende del plan, los permisos de edición y la disponibilidad; no está activa en todas las cuentas."
+    },
+    {
+      "question": "¿Cómo funciona la aprobación de una traducción?",
+      "answer": "La aprobación se registra por separado para cada línea e idioma. La distinción esencial es esta: «revisar de nuevo» no significa «cualquiera puede modificar». Tanto las traducciones aprobadas como las pendientes de revisión siguen protegidas."
+    },
+    {
+      "question": "¿Qué ocurre cuando cambia el texto original?",
+      "answer": "Si la dirección cambia una línea original, las traducciones que ya estaban protegidas se marcan para una nueva revisión."
+    },
+    {
+      "question": "¿Guardar actualiza inmediatamente la función en directo?",
+      "answer": "Guardar en el Editor no actualiza inmediatamente una función desplegada. Si la función está en marcha o la consola del operador ya controla la representación, las actualizaciones se envían por separado y el operador las aplica en un momento adecuado."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Reserva de línea",
+      "definition": "La reserva temporal protege la fila completa, incluidos todos sus idiomas."
+    },
+    {
+      "term": "Aprobación de traducción",
+      "definition": "La aprobación se registra por separado para cada línea e idioma."
+    },
+    {
+      "term": "Revisión necesaria",
+      "definition": "La distinción esencial es esta: «revisar de nuevo» no significa «cualquiera puede modificar». Tanto las traducciones aprobadas como las pendientes de revisión siguen protegidas."
+    },
+    {
+      "term": "Historial de edición",
+      "definition": "Por ahora, el historial es de consulta: no es una copia de seguridad con la que restaurar todo el libreto a cualquier momento mediante un clic."
+    },
+    {
+      "term": "Actualización en directo",
+      "definition": "Guardar en el Editor no actualiza inmediatamente una función desplegada."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Guía de uso del Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "fr",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.497Z",
+  "sectionTitles": {
+    "keyTakeaways": "À retenir",
+    "faq": "Questions fréquentes",
+    "glossary": "Petit lexique",
+    "related": "Pour aller plus loin"
+  },
+  "keyTakeaways": [
+    "La réservation porte sur toute la ligne et s'étend à toutes ses langues.",
+    "La distinction essentielle est la suivante : « à revoir » ne veut pas dire « modifiable par tous ». Une traduction validée ou en attente de relecture reste protégée.",
+    "Enregistrer dans Editor ne met pas immédiatement à jour un spectacle déployé."
+  ],
+  "faq": [
+    {
+      "question": "Deux personnes peuvent-elles modifier la même ligne en même temps ?",
+      "answer": "Deux personnes peuvent travailler dans le même projet. Pockitle Cue ne les laisse toutefois pas modifier sans restriction la même ligne en parallèle. La réservation porte sur toute la ligne et s'étend à toutes ses langues. La collaboration en temps réel dépend de l’offre, des droits de modification et de la disponibilité ; elle n’est pas active pour tous les comptes."
+    },
+    {
+      "question": "Comment fonctionne l’approbation d’une traduction ?",
+      "answer": "L’approbation est distincte pour chaque ligne et chaque langue. La distinction essentielle est la suivante : « à revoir » ne veut pas dire « modifiable par tous ». Une traduction validée ou en attente de relecture reste protégée."
+    },
+    {
+      "question": "Que se passe-t-il lorsque le texte source change ?",
+      "answer": "Si la mise en scène change une réplique, les traductions déjà protégées passent au statut « à revoir »."
+    },
+    {
+      "question": "Enregistrer actualise-t-il immédiatement le spectacle en cours ?",
+      "answer": "Enregistrer dans Editor ne met pas immédiatement à jour un spectacle déployé. Si le spectacle est en cours ou si la console de régie en assure déjà le contrôle, les mises à jour sont soumises séparément."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Réservation de ligne",
+      "definition": "La réservation porte sur toute la ligne et s'étend à toutes ses langues."
+    },
+    {
+      "term": "Approbation de traduction",
+      "definition": "L’approbation est distincte pour chaque ligne et chaque langue."
+    },
+    {
+      "term": "Révision nécessaire",
+      "definition": "La distinction essentielle est la suivante : « à revoir » ne veut pas dire « modifiable par tous ». Une traduction validée ou en attente de relecture reste protégée."
+    },
+    {
+      "term": "Historique des modifications",
+      "definition": "À ce stade, l'historique se consulte seulement : il ne permet pas de restaurer tout le texte à n'importe quelle date d'un seul clic."
+    },
+    {
+      "term": "Mise à jour du spectacle",
+      "definition": "Enregistrer dans Editor ne met pas immédiatement à jour un spectacle déployé."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Guide d'utilisation d'Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.503Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkan noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Geçici düzenleme ayırması, satırın bütün dillerini kapsar.",
+    "Buradaki temel ayrım şudur: “Yeniden incelenecek” demek “herkes düzenleyebilir” demek değildir. Hem onaylı hem de yeniden inceleme bekleyen çeviriler korunur.",
+    "Editor’de kaydetmek, yayına alınmış bir gösteriyi hemen güncellemez."
+  ],
+  "faq": [
+    {
+      "question": "İki editör aynı satırı aynı anda değiştirebilir mi?",
+      "answer": "İki kişi aynı metinde çalışabilir; ancak Pockitle Cue, aynı satırın hiçbir kısıt olmadan aynı anda değiştirilmesine izin vermez. Geçici düzenleme ayırması, satırın bütün dillerini kapsar. Gerçek zamanlı iş birliği uygun plana, düzenleme izinlerine ve kullanılabilirliğe bağlıdır; her hesapta etkin değildir."
+    },
+    {
+      "question": "Çeviri onayı nasıl çalışır?",
+      "answer": "Onay her satır ve dil için ayrı ayrı kaydedilir. Buradaki temel ayrım şudur: “Yeniden incelenecek” demek “herkes düzenleyebilir” demek değildir. Hem onaylı hem de yeniden inceleme bekleyen çeviriler korunur."
+    },
+    {
+      "question": "Kaynak metin değiştiğinde ne olur?",
+      "answer": "Yönetmen kaynak repliği değiştirirse önceden korunan çeviriler yeniden incelenmek üzere işaretlenir."
+    },
+    {
+      "question": "Kaydetmek devam eden gösteriyi hemen günceller mi?",
+      "answer": "Editor’de kaydetmek, yayına alınmış bir gösteriyi hemen güncellemez. Gösteri sürüyorsa veya operatör konsolu gösterimi yönetiyorsa güncellemeler ayrıca gönderilir; operatör bunları uygun anda uygular."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Satır ayırma",
+      "definition": "Geçici düzenleme ayırması, satırın bütün dillerini kapsar."
+    },
+    {
+      "term": "Çeviri onayı",
+      "definition": "Onay her satır ve dil için ayrı ayrı kaydedilir."
+    },
+    {
+      "term": "Yeniden inceleme gerekli",
+      "definition": "Buradaki temel ayrım şudur: “Yeniden incelenecek” demek “herkes düzenleyebilir” demek değildir. Hem onaylı hem de yeniden inceleme bekleyen çeviriler korunur."
+    },
+    {
+      "term": "Düzenleme geçmişi",
+      "definition": "Geçmiş şimdilik salt görüntülemeye yöneliktir; tüm oyunu tek tıkla herhangi bir geçmiş ana döndüren bir yedekleme sistemi değildir."
+    },
+    {
+      "term": "Canlı gösteri güncellemesi",
+      "definition": "Editor’de kaydetmek, yayına alınmış bir gösteriyi hemen güncellemez."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Editor kullanım kılavuzu",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

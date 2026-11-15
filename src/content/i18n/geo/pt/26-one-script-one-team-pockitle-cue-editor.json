@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.501Z",
+  "sectionTitles": {
+    "keyTakeaways": "Principais pontos",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Leia também"
+  },
+  "keyTakeaways": [
+    "A reserva temporária vale para a linha inteira, em todos os idiomas.",
+    "A diferença essencial é esta: “precisa de revisão” não quer dizer “qualquer pessoa pode reescrever”. Tanto traduções aprovadas quanto as que aguardam revisão continuam protegidas.",
+    "Salvar no Editor não atualiza imediatamente um espetáculo já implantado."
+  ],
+  "faq": [
+    {
+      "question": "Duas pessoas podem editar a mesma linha ao mesmo tempo?",
+      "answer": "Duas pessoas podem trabalhar no mesmo roteiro, mas o Pockitle Cue não permite alterações simultâneas irrestritas na mesma linha. A reserva temporária vale para a linha inteira, em todos os idiomas. A colaboração em tempo real depende de um plano elegível, das permissões de edição e da disponibilidade; ela não fica ativa em todas as contas."
+    },
+    {
+      "question": "Como funciona a aprovação de uma tradução?",
+      "answer": "A aprovação é registrada separadamente para cada linha e idioma. A diferença essencial é esta: “precisa de revisão” não quer dizer “qualquer pessoa pode reescrever”. Tanto traduções aprovadas quanto as que aguardam revisão continuam protegidas."
+    },
+    {
+      "question": "O que acontece quando o texto original muda?",
+      "answer": "Se a direção altera uma fala no original, as traduções anteriormente protegidas passam a ser marcadas para revisão."
+    },
+    {
+      "question": "Salvar atualiza imediatamente o espetáculo em andamento?",
+      "answer": "Salvar no Editor não atualiza imediatamente um espetáculo já implantado. Se a apresentação está acontecendo ou se a mesa do operador já a controla, as atualizações são enviadas separadamente e aplicadas pelo operador no momento adequado."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Reserva de linha",
+      "definition": "A reserva temporária vale para a linha inteira, em todos os idiomas."
+    },
+    {
+      "term": "Aprovação da tradução",
+      "definition": "A aprovação é registrada separadamente para cada linha e idioma."
+    },
+    {
+      "term": "Revisão necessária",
+      "definition": "A diferença essencial é esta: “precisa de revisão” não quer dizer “qualquer pessoa pode reescrever”. Tanto traduções aprovadas quanto as que aguardam revisão continuam protegidas."
+    },
+    {
+      "term": "Histórico de edição",
+      "definition": "Por enquanto, o histórico é apenas para consulta: não é um backup capaz de restaurar todo o roteiro para qualquer momento com um clique."
+    },
+    {
+      "term": "Atualização do espetáculo",
+      "definition": "Salvar no Editor não atualiza imediatamente um espetáculo já implantado."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Guia do Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

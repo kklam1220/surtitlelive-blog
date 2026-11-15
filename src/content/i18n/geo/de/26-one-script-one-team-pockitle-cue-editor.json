@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.495Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufige Fragen",
+    "glossary": "Begriffe erklärt",
+    "related": "Weiterlesen"
+  },
+  "keyTakeaways": [
+    "Die vorübergehende Bearbeitungsreservierung gilt für die ganze Zeile, sprachübergreifend.",
+    "Wichtig dabei: „Erneut prüfen“ bedeutet nicht „für alle zur Bearbeitung geöffnet“. Sowohl freigegebene als auch zur Prüfung markierte Übersetzungen bleiben geschützt.",
+    "Das Speichern im Editor aktualisiert eine laufende Vorstellung nicht sofort."
+  ],
+  "faq": [
+    {
+      "question": "Können zwei Personen dieselbe Zeile gleichzeitig bearbeiten?",
+      "answer": "Zwei Personen können am selben Skript arbeiten. Der Pockitle Cue Editor lässt sie aber nicht uneingeschränkt dieselbe Zeile parallel verändern. Die vorübergehende Bearbeitungsreservierung gilt für die ganze Zeile, sprachübergreifend. Die Zusammenarbeit in Echtzeit hängt vom berechtigten Tarif, den Bearbeitungsrechten und der Verfügbarkeit ab; sie ist nicht für jedes Konto aktiv."
+    },
+    {
+      "question": "Wie funktioniert die Freigabe einer Übersetzung?",
+      "answer": "Die Freigabe gilt getrennt für jede Zeile und Sprache. Wichtig dabei: „Erneut prüfen“ bedeutet nicht „für alle zur Bearbeitung geöffnet“. Sowohl freigegebene als auch zur Prüfung markierte Übersetzungen bleiben geschützt."
+    },
+    {
+      "question": "Was geschieht, wenn sich der Ausgangstext ändert?",
+      "answer": "Ändert die Regie eine Textzeile, werden bereits geschützte Übersetzungen als erneut prüfungsbedürftig markiert."
+    },
+    {
+      "question": "Aktualisiert das Speichern die laufende Vorstellung sofort?",
+      "answer": "Das Speichern im Editor aktualisiert eine laufende Vorstellung nicht sofort. Wenn die Aufführung läuft oder die Bedienkonsole die Vorstellung bereits steuert, werden Aktualisierungen separat eingereicht und vom Operator zu einem geeigneten Moment übernommen."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Zeilenreservierung",
+      "definition": "Die vorübergehende Bearbeitungsreservierung gilt für die ganze Zeile, sprachübergreifend."
+    },
+    {
+      "term": "Übersetzungsfreigabe",
+      "definition": "Die Freigabe gilt getrennt für jede Zeile und Sprache."
+    },
+    {
+      "term": "Erneute Prüfung",
+      "definition": "Wichtig dabei: „Erneut prüfen“ bedeutet nicht „für alle zur Bearbeitung geöffnet“. Sowohl freigegebene als auch zur Prüfung markierte Übersetzungen bleiben geschützt."
+    },
+    {
+      "term": "Bearbeitungsverlauf",
+      "definition": "Sie dient derzeit der Einsicht und ist kein Ein-Klick-Werkzeug, um das gesamte Stück zu jedem beliebigen Zeitpunkt wiederherzustellen."
+    },
+    {
+      "term": "Live-Aktualisierung",
+      "definition": "Das Speichern im Editor aktualisiert eine laufende Vorstellung nicht sofort."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Editor-Bedienungsanleitung",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}

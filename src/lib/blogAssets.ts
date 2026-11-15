@@ -50,6 +50,12 @@ import blog24Hero from "../content/blog/blog-24.png";
 import blog24LanguageAccess from "../content/blog/blog-24-language-access-infographic.png";
 import blog25Hero from "../content/blog/blog-25.png";
 import blog25ByLine from "../content/blog/blog-25-stenotype-by-line.png";
+import blog26Hero from "../content/blog/blog-26.png";
+import blog26Handoff from "../content/blog/blog-26-team-handoff.png";
+import blog26Concurrent from "../content/blog/blog-26-concurrent-edit.png";
+import blog26Approval from "../content/blog/blog-26-translation-approval.png";
+import blog26Connected from "../content/blog/blog-26-collaboration-connected.png";
+import blog26Actions from "../content/blog/blog-26-editor-actions.png";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -101,6 +107,12 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-24-language-access-infographic.png": blog24LanguageAccess,
   "blog-25.png": blog25Hero,
   "blog-25-stenotype-by-line.png": blog25ByLine,
+  "blog-26.png": blog26Hero,
+  "blog-26-team-handoff.png": blog26Handoff,
+  "blog-26-concurrent-edit.png": blog26Concurrent,
+  "blog-26-translation-approval.png": blog26Approval,
+  "blog-26-collaboration-connected.png": blog26Connected,
+  "blog-26-editor-actions.png": blog26Actions,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,

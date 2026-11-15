@@ -407,6 +407,45 @@ test("Blog25 preserves the supplied artwork and complete localized editorial blo
   }
 });
 
+test("Blog26 preserves localized collaboration context and supplied diagrams", () => {
+  const slug = "26-one-script-one-team-pockitle-cue-editor";
+  const post = require("./blog-i18n-utils.cjs").listSourcePosts(path.join(blogRoot, "src/content/blog"))
+    .find((entry) => entry.slug === slug);
+  assert.match(post.body, /Real-time collaboration depends on an eligible plan/);
+  assert.equal(post.frontmatter.heroImage, "./blog-26.png");
+  for (const [asset, hash] of [
+    ["blog-26.png", "d9622d5315990568c75cfe48ec7fe40b80f948ddbc4b4840cb8cdf4111dab7df"],
+    ["blog-26-team-handoff.png", "d4e029ca2ccfd42236781ee96a3759912b64a061f70e30208ec8e5f9e83826f6"],
+    ["blog-26-concurrent-edit.png", "19379d518f29fe586e460bdd751a32fd9d71f7af7c63112c206bb0831549cc0f"],
+    ["blog-26-translation-approval.png", "3577a5bc44100407d76cd487cc827a942fddde41c0eebd867ed33f7cbe442557"],
+    ["blog-26-collaboration-connected.png", "a57d45d74e3219a2dc85482c4b66689cd6b5460337e340216c3a18bc01e65335"],
+    ["blog-26-editor-actions.png", "201bacf0e93369da144e1a7b7b13409b34ae031345c38390e8c187c6bd759a3e"],
+  ]) assert.equal(createHash("sha256").update(fs.readFileSync(path.join(blogRoot, "src/content/blog", asset))).digest("hex"), hash);
+  for (const locale of ["en", ...locales]) {
+    const payload = locale === "en" ? { body: post.body, frontmatter: post.frontmatter, sourceHash: post.sourceHash }
+      : JSON.parse(fs.readFileSync(path.join(localizedRoot, locale, `${slug}.json`), "utf8"));
+    assert.equal(payload.sourceHash, post.sourceHash, locale);
+    assert.equal(payload.frontmatter.heroImage, post.frontmatter.heroImage);
+    assert.ok(payload.frontmatter.heroImageAlt.trim());
+    assert.equal([...payload.body.matchAll(/^## /gm)].length, 8, locale);
+    assert.deepEqual(findMarkdownImageParityIssues(post, payload), [], locale);
+    assert.deepEqual(findMarkdownDestinationParityIssues(post, payload, locales), [], locale);
+    assert.equal([...payload.body.matchAll(/!\[([^\]]+)\]\(/g)].length, 5, locale);
+    const html = sanitizeLocalizedBlogHtml(marked.parse(payload.body));
+    assert.doesNotMatch(html, /\*\*/);
+    assert.match(html, /<strong>/);
+    const geo = JSON.parse(fs.readFileSync(path.join(blogRoot, "src/content/i18n/geo", locale, `${slug}.json`), "utf8"));
+    assert.equal(geo.sourceHash, post.sourceHash, locale);
+    assert.equal(geo.keyTakeaways.length, 3, locale);
+    assert.equal(geo.faq.length, 4, locale);
+    assert.equal(geo.glossary.length, 5, locale);
+    assert.deepEqual(geo.relatedLinks.map(item => item.href), ["https://surtitlelive.com/", "https://surtitlelive.com/guides/open-editor"]);
+  }
+  for (const relative of ["src/layouts/BlogPost.astro", "src/pages/index.astro", "src/pages/[locale]/index.astro"]) {
+    assert.ok(fs.readFileSync(path.join(blogRoot, relative), "utf8").includes(slug), relative);
+  }
+});
+
 test("canonical-link parity permits a supported locale route prefix", () => {
   assert.equal(
     normalizeMarkdownDestination("/es/mobile-theatre-subtitles", locales),

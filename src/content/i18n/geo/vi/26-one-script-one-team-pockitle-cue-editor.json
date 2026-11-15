@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "26-one-script-one-team-pockitle-cue-editor",
+  "sourceHash": "9cbca7c5656e9bda79e603959ec09b15589c10438a2ac0fdc82c5e6395bef0ed",
+  "generatedAt": "2026-11-13T21:35:43.504Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Giải thích thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Quyền giữ tạm thời áp dụng cho cả dòng, trên tất cả ngôn ngữ.",
+    "Điều quan trọng là: “cần duyệt lại” không có nghĩa “ai cũng có thể sửa ngay”. Cả bản dịch đã duyệt và bản dịch chờ xem lại đều được bảo vệ.",
+    "Lưu trong Editor không cập nhật ngay buổi diễn đã triển khai."
+  ],
+  "faq": [
+    {
+      "question": "Hai người có thể sửa cùng một dòng cùng lúc không?",
+      "answer": "Hai người có thể làm trên cùng kịch bản, nhưng Pockitle Cue không cho phép họ đồng thời sửa một dòng mà không có giới hạn. Quyền giữ tạm thời áp dụng cho cả dòng, trên tất cả ngôn ngữ. Cộng tác theo thời gian thực phụ thuộc vào gói đủ điều kiện, quyền chỉnh sửa và khả năng cung cấp; tính năng này không tự động hoạt động cho mọi tài khoản."
+    },
+    {
+      "question": "Việc duyệt bản dịch hoạt động thế nào?",
+      "answer": "Trạng thái duyệt được ghi riêng cho từng dòng và từng ngôn ngữ. Điều quan trọng là: “cần duyệt lại” không có nghĩa “ai cũng có thể sửa ngay”. Cả bản dịch đã duyệt và bản dịch chờ xem lại đều được bảo vệ."
+    },
+    {
+      "question": "Điều gì xảy ra khi văn bản gốc thay đổi?",
+      "answer": "Khi đạo diễn thay đổi một lời thoại nguồn, những bản dịch đã được bảo vệ sẽ được đánh dấu cần xem lại."
+    },
+    {
+      "question": "Lưu có cập nhật ngay buổi diễn đang chạy không?",
+      "answer": "Lưu trong Editor không cập nhật ngay buổi diễn đã triển khai. Nếu buổi diễn đang diễn ra, hoặc bảng điều khiển của người vận hành đã nắm quyền, các cập nhật phụ đề được gửi riêng và người vận hành chọn thời điểm phù hợp để áp dụng."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Giữ quyền sửa dòng",
+      "definition": "Quyền giữ tạm thời áp dụng cho cả dòng, trên tất cả ngôn ngữ."
+    },
+    {
+      "term": "Duyệt bản dịch",
+      "definition": "Trạng thái duyệt được ghi riêng cho từng dòng và từng ngôn ngữ."
+    },
+    {
+      "term": "Cần xem lại",
+      "definition": "Điều quan trọng là: “cần duyệt lại” không có nghĩa “ai cũng có thể sửa ngay”. Cả bản dịch đã duyệt và bản dịch chờ xem lại đều được bảo vệ."
+    },
+    {
+      "term": "Lịch sử chỉnh sửa",
+      "definition": "Hiện lịch sử chỉ dùng để xem, không phải chức năng khôi phục toàn bộ kịch bản về bất kỳ thời điểm nào chỉ bằng một cú nhấp."
+    },
+    {
+      "term": "Cập nhật buổi diễn",
+      "definition": "Lưu trong Editor không cập nhật ngay buổi diễn đã triển khai."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Pockitle Cue",
+      "href": "https://surtitlelive.com/"
+    },
+    {
+      "label": "Hướng dẫn sử dụng Editor",
+      "href": "https://surtitlelive.com/guides/open-editor"
+    }
+  ]
+}
