@@ -56,6 +56,7 @@ import blog26Concurrent from "../content/blog/blog-26-concurrent-edit.png";
 import blog26Approval from "../content/blog/blog-26-translation-approval.png";
 import blog26Connected from "../content/blog/blog-26-collaboration-connected.png";
 import blog26Actions from "../content/blog/blog-26-editor-actions.png";
+import blog26Discussion from "../content/blog/blog-26-line-discussion.png";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -113,6 +114,7 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-26-translation-approval.png": blog26Approval,
   "blog-26-collaboration-connected.png": blog26Connected,
   "blog-26-editor-actions.png": blog26Actions,
+  "blog-26-line-discussion.png": blog26Discussion,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,

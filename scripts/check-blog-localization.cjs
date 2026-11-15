@@ -47,7 +47,7 @@ const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
-  ["26-one-script-one-team-pockitle-cue-editor", 5],
+  ["26-one-script-one-team-pockitle-cue-editor", 6],
   ["25-pockitle-live-stenotype-input-plover", 1],
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],
   ["21-theatre-accessibility-captions-stage-directions", 2],

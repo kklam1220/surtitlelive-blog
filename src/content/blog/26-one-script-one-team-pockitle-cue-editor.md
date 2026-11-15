@@ -49,9 +49,9 @@ When an editor begins working on a line, the system temporarily reserves that en
 
 This is deliberate. We want a team to divide the work, not have two people rewrite the same material and leave the software to guess whose words should survive.
 
-![Two editors working on one shared script, showing a whole-row reservation, release and save-time version check.](./blog-26-concurrent-edit.png)
+![Editor line showing the status “Paul is editing”.](./blog-26-concurrent-edit.png)
 
-*Figure 2. Temporary row reservations and version checks. These are different from a manual row lock and from translation approval.*
+*Figure 2. While Paul edits this row, others can work on other rows. After he leaves it, another editor can take over. The temporary reservation covers all languages in the row; it is distinct from a manual row lock and translation approval.*
 
 The reservation is released when the editor leaves the line, and an abandoned reservation eventually expires. Once another editor obtains it, saving still checks whether the underlying content has changed. A genuine conflict is not resolved by silently overwriting a newer version with an older one.
 
@@ -68,6 +68,18 @@ An unapproved translation has a grey indicator. Approval changes it to a green c
 In each row’s Actions, the dash, check or question mark indicates translation approval. The speech bubble opens line comments, the clock opens earlier wording, and the wand opens AI refinement. The padlock is a manual row lock, distinct from approval and a temporary collaboration reservation; the flag marks a line for attention.
 
 ![Editor row actions showing add, merge, flag, lock, delete, approval, comments, history and AI refinement icons.](./blog-26-editor-actions.png)
+
+| Icon | Function |
+| --- | --- |
+| + | Add a line |
+| Bent arrow | Merge with the previous line, when available |
+| Flag | Mark or unmark a line |
+| Padlock | Manually lock or unlock the row |
+| Bin | Delete the line |
+| Dash, check or question mark | Translation approval status for the working language |
+| Speech bubble | Open line comments |
+| Clock | View earlier wording |
+| Wand | Open AI refinement |
 
 The critical distinction is this: **needs review does not mean anyone may immediately rewrite it.** Approved translations and translations awaiting review are both protected. An editor must explicitly unlock the language-specific translation before changing its text, then decide whether to approve the new wording.
 
@@ -94,6 +106,8 @@ Should a character's form of address sound more intimate? Should a joke retain a
 Those conversations may happen in chat, email or the rehearsal room. A few days later, another translator may take over without knowing why a particular choice was made.
 
 Pockitle Cue Editor lets authorised team members leave comments on a particular surtitle line. A comment can be general or tied to one translation language; the discussion shows its author and time, giving the next person a way to understand what was raised earlier.
+
+![Example line discussion in English, with three colleagues considering whether to repeat a character’s name and checking timing in rehearsal.](./blog-26-line-discussion.png)
 
 Comments are separate from the surtitle text. Writing a note does not edit the words an audience will see, and the discussion does not automatically email colleagues. It is not intended to replace a team's messaging tools. Its purpose is to **keep a decision that only makes sense beside a particular line attached to that line.**
 

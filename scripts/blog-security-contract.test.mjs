@@ -416,10 +416,11 @@ test("Blog26 preserves localized collaboration context and supplied diagrams", (
   for (const [asset, hash] of [
     ["blog-26.png", "d9622d5315990568c75cfe48ec7fe40b80f948ddbc4b4840cb8cdf4111dab7df"],
     ["blog-26-team-handoff.png", "d4e029ca2ccfd42236781ee96a3759912b64a061f70e30208ec8e5f9e83826f6"],
-    ["blog-26-concurrent-edit.png", "19379d518f29fe586e460bdd751a32fd9d71f7af7c63112c206bb0831549cc0f"],
+    ["blog-26-concurrent-edit.png", "8dc3a4bee467338f9caea31f403236708bd8d31dcd0826c117717b4b0dc6e6af"],
     ["blog-26-translation-approval.png", "3577a5bc44100407d76cd487cc827a942fddde41c0eebd867ed33f7cbe442557"],
     ["blog-26-collaboration-connected.png", "0986bf3ff5bed97f8392edd78bb15b8069e7b52786643a2ec65ba7447f911e58"],
     ["blog-26-editor-actions.png", "201bacf0e93369da144e1a7b7b13409b34ae031345c38390e8c187c6bd759a3e"],
+    ["blog-26-line-discussion.png", "8c682c3b0914aaa0dbd72b3b4bbc5944ed37f8f27a35a793d8b738c34e08545b"],
   ]) assert.equal(createHash("sha256").update(fs.readFileSync(path.join(blogRoot, "src/content/blog", asset))).digest("hex"), hash);
   for (const locale of ["en", ...locales]) {
     const payload = locale === "en" ? { body: post.body, frontmatter: post.frontmatter, sourceHash: post.sourceHash }
@@ -430,7 +431,8 @@ test("Blog26 preserves localized collaboration context and supplied diagrams", (
     assert.equal([...payload.body.matchAll(/^## /gm)].length, 8, locale);
     assert.deepEqual(findMarkdownImageParityIssues(post, payload), [], locale);
     assert.deepEqual(findMarkdownDestinationParityIssues(post, payload, locales), [], locale);
-    assert.equal([...payload.body.matchAll(/!\[([^\]]+)\]\(/g)].length, 5, locale);
+    assert.equal([...payload.body.matchAll(/!\[([^\]]+)\]\(/g)].length, 6, locale);
+    assert.match(payload.body, /\| --- \| --- \|/, locale);
     const html = sanitizeLocalizedBlogHtml(marked.parse(payload.body));
     assert.doesNotMatch(html, /\*\*/);
     assert.match(html, /<strong>/);
