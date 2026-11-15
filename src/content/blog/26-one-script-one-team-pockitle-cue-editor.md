@@ -71,15 +71,15 @@ In each row’s Actions, the dash, check or question mark indicates translation 
 
 | Icon | Function |
 | --- | --- |
-| + | Add a line |
-| Bent arrow | Merge with the previous line, when available |
-| Flag | Mark or unmark a line |
-| Padlock | Manually lock or unlock the row |
-| Bin | Delete the line |
-| Dash, check or question mark | Translation approval status for the working language |
-| Speech bubble | Open line comments |
-| Clock | View earlier wording |
-| Wand | Open AI refinement |
+| <span class="editor-action-icon editor-action-add"></span> | Add a line |
+| <span class="editor-action-icon editor-action-merge"></span> | Merge with the previous line, when available |
+| <span class="editor-action-icon editor-action-flag"></span> | Mark or unmark a line |
+| <span class="editor-action-icon editor-action-lock"></span> | Manually lock or unlock the row |
+| <span class="editor-action-icon editor-action-delete"></span> | Delete the line |
+| <span class="editor-action-icon editor-action-minus"></span><span class="editor-action-icon editor-action-check"></span><span class="editor-action-icon editor-action-review"></span> | Translation approval status for the working language |
+| <span class="editor-action-icon editor-action-memo"></span> | Open line comments |
+| <span class="editor-action-icon editor-action-history"></span> | View earlier wording |
+| <span class="editor-action-icon editor-action-ai"></span> | Open AI refinement |
 
 The critical distinction is this: **needs review does not mean anyone may immediately rewrite it.** Approved translations and translations awaiting review are both protected. An editor must explicitly unlock the language-specific translation before changing its text, then decide whether to approve the new wording.
 

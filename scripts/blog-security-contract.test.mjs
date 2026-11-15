@@ -436,6 +436,9 @@ test("Blog26 preserves localized collaboration context and supplied diagrams", (
     const html = sanitizeLocalizedBlogHtml(marked.parse(payload.body));
     assert.doesNotMatch(html, /\*\*/);
     assert.match(html, /<strong>/);
+    for (const name of ['add', 'merge', 'flag', 'lock', 'delete', 'minus', 'check', 'review', 'memo', 'history', 'ai']) {
+      assert.match(html, new RegExp(`editor-action-${name}`), `${locale}: missing ${name} icon`);
+    }
     const geo = JSON.parse(fs.readFileSync(path.join(blogRoot, "src/content/i18n/geo", locale, `${slug}.json`), "utf8"));
     assert.equal(geo.sourceHash, post.sourceHash, locale);
     assert.equal(geo.keyTakeaways.length, 3, locale);
@@ -443,6 +446,9 @@ test("Blog26 preserves localized collaboration context and supplied diagrams", (
     assert.equal(geo.glossary.length, 5, locale);
     assert.deepEqual(geo.relatedLinks.map(item => item.href), ["https://surtitlelive.com/", "https://surtitlelive.com/guides/open-editor"]);
   }
+  const iconCss = fs.readFileSync(path.join(blogRoot, 'src/styles/global.css'), 'utf8');
+  assert.match(iconCss, /table:has\(\.editor-action-icon\)/);
+  assert.match(iconCss, /@media \(max-width: 480px\)/);
   for (const relative of ["src/layouts/BlogPost.astro", "src/pages/index.astro", "src/pages/[locale]/index.astro"]) {
     assert.ok(fs.readFileSync(path.join(blogRoot, relative), "utf8").includes(slug), relative);
   }
