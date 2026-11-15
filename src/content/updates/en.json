@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "This update makes translated-script Excel imports more flexible and easier to use.",
+          "new": [],
+          "improved": [
+            "Updated the translated-script Excel template to put speaker roles before source text.",
+            "Excel import now recognizes the current role-first template and earlier type-first templates and Editor exports, preserving speaker roles, stage directions, translations, and line metadata."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

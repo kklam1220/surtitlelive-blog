@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja ułatwia import przetłumaczonych scenariuszy z Excela i zwiększa jego elastyczność.",
+          "new": [],
+          "improved": [
+            "Zaktualizowano szablon Excel dla tłumaczonych scenariuszy, umieszczając role postaci przed tekstem źródłowym.",
+            "Import automatycznie rozpoznaje aktualny układ z rolą na początku, starsze układy z typem wiersza na początku oraz eksporty z Editor, zachowując role, didaskalia, tłumaczenia i metadane wierszy."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

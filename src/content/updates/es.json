@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Esta actualización hace que la importación de guiones traducidos desde Excel sea más flexible y sencilla.",
+          "new": [],
+          "improved": [
+            "Se actualizó la plantilla Excel para guiones traducidos: los roles aparecen antes del texto original.",
+            "La importación reconoce automáticamente la plantilla actual con los roles primero, las plantillas anteriores con el tipo de línea primero y las exportaciones de Editor, conservando roles, acotaciones, traducciones y metadatos de línea."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

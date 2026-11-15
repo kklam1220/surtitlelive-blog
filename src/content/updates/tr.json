@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Bu güncelleme, çevrilmiş senaryoların Excel’den içe aktarımını daha esnek ve kolay hâle getiriyor.",
+          "new": [],
+          "improved": [
+            "Çevrilmiş senaryolar için Excel şablonu, konuşmacı rollerini kaynak metnin önüne alacak şekilde güncellendi.",
+            "İçe aktarma güncel rol-öncelikli şablonu, eski satır türü-öncelikli şablonları ve Editor dışa aktarımlarını otomatik tanıyor; rolleri, sahne yönergelerini, çevirileri ve satır üst verilerini koruyor."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

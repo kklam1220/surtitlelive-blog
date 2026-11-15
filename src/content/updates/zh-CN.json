@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "本次更新让 Excel 导入已翻译剧本更加灵活、易用。",
+          "new": [],
+          "improved": [
+            "更新了已翻译剧本的 Excel 模板，将角色栏调整到源文本之前。",
+            "导入功能现在可自动识别当前的角色优先模板、旧版的行类型优先模板以及 Editor 导出文件，并保留角色、舞台指示、译文和行元数据。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

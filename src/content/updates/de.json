@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Dieses Update macht den Excel-Import übersetzter Skripte flexibler und einfacher.",
+          "new": [],
+          "improved": [
+            "Die Excel-Vorlage für übersetzte Skripte wurde so aktualisiert, dass die Sprecherrollen vor dem Ausgangstext stehen.",
+            "Der Import erkennt automatisch die aktuelle Vorlage mit Rollen zuerst sowie ältere Vorlagen mit Zeilentyp zuerst und Editor-Exporte. Rollen, Regieanweisungen, Übersetzungen und Zeilenmetadaten bleiben erhalten."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

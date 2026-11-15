@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Pembaruan ini membuat impor naskah terjemahan dari Excel lebih fleksibel dan mudah.",
+          "new": [],
+          "improved": [
+            "Templat Excel untuk naskah terjemahan diperbarui agar peran pembicara ditempatkan sebelum teks sumber.",
+            "Impor otomatis mengenali templat terbaru yang menempatkan peran lebih dahulu, templat lama yang menempatkan jenis baris lebih dahulu, serta ekspor Editor; peran, petunjuk panggung, terjemahan, dan metadata baris tetap dipertahankan."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

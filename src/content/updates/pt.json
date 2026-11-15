@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Esta atualização torna a importação de guiões traduzidos do Excel mais flexível e simples.",
+          "new": [],
+          "improved": [
+            "O modelo Excel para guiões traduzidos foi atualizado para colocar os papéis das personagens antes do texto de origem.",
+            "A importação reconhece automaticamente o modelo atual com os papéis primeiro, modelos anteriores com o tipo de linha primeiro e exportações do Editor, preservando papéis, indicações cénicas, traduções e metadados das linhas."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

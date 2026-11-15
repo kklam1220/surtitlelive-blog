@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Questo aggiornamento rende più flessibile e semplice l’importazione da Excel dei copioni tradotti.",
+          "new": [],
+          "improved": [
+            "Il modello Excel per i copioni tradotti è stato aggiornato: i ruoli precedono il testo sorgente.",
+            "L’importazione riconosce automaticamente il modello attuale con i ruoli prima, i modelli precedenti con il tipo di riga prima e le esportazioni di Editor, mantenendo ruoli, indicazioni di scena, traduzioni e metadati delle righe."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này giúp việc nhập kịch bản đã dịch từ Excel linh hoạt và dễ sử dụng hơn.",
+          "new": [],
+          "improved": [
+            "Đã cập nhật mẫu Excel cho kịch bản dịch, đưa vai nhân vật lên trước văn bản nguồn.",
+            "Tính năng nhập tự nhận diện mẫu mới với vai trò ở trước, mẫu cũ với loại dòng ở trước và tệp xuất từ Editor; đồng thời giữ nguyên vai diễn, chỉ dẫn sân khấu, bản dịch và siêu dữ liệu dòng."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

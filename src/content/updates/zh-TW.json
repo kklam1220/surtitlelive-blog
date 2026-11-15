@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "本次更新讓 Excel 匯入已翻譯劇本更靈活、易用。",
+          "new": [],
+          "improved": [
+            "更新已翻譯劇本的 Excel 範本，將角色欄移至來源文字之前。",
+            "匯入功能現在可自動辨識目前的角色優先範本、舊版的列類型優先範本，以及 Editor 匯出檔，並保留角色、舞台指示、譯文與列中繼資料。"
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [

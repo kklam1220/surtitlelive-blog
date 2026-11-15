@@ -16,6 +16,24 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-21",
+      "versions": [
+        {
+          "version": "v261115.01",
+          "releaseDate": "2026-11-15",
+          "product": "Pockitle",
+          "summary": "Cette mise à jour rend l’importation Excel des scripts traduits plus flexible et plus simple.",
+          "new": [],
+          "improved": [
+            "Le modèle Excel des scripts traduits a été mis à jour : les rôles précèdent désormais le texte source.",
+            "L’importation reconnaît automatiquement le modèle actuel avec les rôles en premier, les anciens modèles avec le type de ligne en premier et les exports d’Editor, tout en conservant les rôles, didascalies, traductions et métadonnées de ligne."
+          ],
+          "fixed": []
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-08",
       "endDate": "2026-11-14",
       "versions": [
