@@ -15,10 +15,8 @@
     "blog:i18n:refresh": "npm run blog:i18n:sync && npm run blog:i18n:translate:llm && npm run blog:i18n:check && npm run blog:i18n:geo"
   },
   "dependencies": {
-    "@astrojs/mdx": "^7.0.3",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.2",
-    "astro": "7.4.12",
     "marked": "^16.4.1",
     "mermaid": "11.17.2",
     "sanitize-html": "2.18.1",
@@ -39,6 +37,8 @@
     "zod@>=4.0.0 <5": "4.6.6"
   },
   "devDependencies": {
-    "@types/sanitize-html": "2.16.1"
+    "@astrojs/mdx": "^7.0.3",
+    "@types/sanitize-html": "2.16.1",
+    "astro": "7.4.12"
   }
 }

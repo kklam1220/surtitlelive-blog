@@ -225,6 +225,15 @@ test("static Blog image caching does not use request-controlled stale reuse", ()
   };
 
   assert.match(config, /output:\s*["']static["']/);
+  assert.equal(fs.existsSync(path.join(blogRoot, "dist", "_worker.js")), false);
+  assert.equal(fs.existsSync(path.join(blogRoot, "functions")), false);
+  const packageManifest = lock.packages[""];
+  for (const name of ["astro", "@astrojs/mdx"]) {
+    assert.ok(packageManifest.devDependencies[name], name);
+    assert.equal(packageManifest.dependencies[name], undefined, name);
+    assert.equal(lock.packages[`node_modules/${name}`].dev, true, name);
+  }
+  assert.ok(packageManifest.dependencies.mermaid, "browser bundle remains audited");
   assert.equal(lock.packages["node_modules/astro"].version, "7.4.12");
   assertTtlOnly(remoteHelper);
   assert.equal(

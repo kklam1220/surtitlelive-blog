@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja usprawnia współpracę w Editorze i pracę ze scenariuszami, poprawia odzyskiwanie transmisji na żywo oraz odświeża teatralny podgląd na stronie głównej.",
+          "new": [
+            "Polski i ukraiński są teraz dostępne na zlokalizowanych stronach publicznych."
+          ],
+          "improved": [
+            "Zaktualizowano szablon Excel i import tłumaczonych scenariuszy, aby obsługiwały bieżące i wcześniejsze formaty z zachowaniem ról postaci, didaskaliów, tłumaczeń i szczegółów wierszy.",
+            "Usprawniono współpracę i odzyskiwanie pracy w Editorze, w tym blokady wierszy, przerwy w połączeniu, przełączanie scenariuszy i synchronizację tłumaczeń.",
+            "Analiza scenariusza lepiej odróżnia didaskalia od dialogów i dokładniej obsługuje wzmianki o wykonawcach.",
+            "Zaktualizowano teatralny symulator na stronie głównej, dodając bardziej szczegółową widownię, scenę, wykonawców, oświetlenie i telefon widza.",
+            "Usprawniono odzyskiwanie Show na żywo podczas konfliktów zmian konfiguracji, zachowując sprawdzony czas trwania."
+          ],
+          "fixed": [
+            "Naprawiono problemy w Editorze, przez które ochrona tłumaczenia mogła kończyć się za wcześnie, operacje mogły zakłócać pracę nad innymi scenariuszami, a przeciąganie mogło używać nieaktualnej pozycji wiersza."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

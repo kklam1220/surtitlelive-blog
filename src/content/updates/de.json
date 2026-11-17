@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Dieses Update verbessert die Zusammenarbeit im Editor und Skriptabläufe, stärkt die Wiederherstellung laufender Shows und überarbeitet die Theater-Vorschau auf der Startseite.",
+          "new": [
+            "Die lokalisierten öffentlichen Seiten unterstützen jetzt auch Polnisch und Ukrainisch."
+          ],
+          "improved": [
+            "Die Excel-Vorlage und der Import für übersetzte Skripte unterstützen jetzt aktuelle und ältere Formate und erhalten Sprecherrollen, Regieanweisungen, Übersetzungen und Zeilendetails.",
+            "Zusammenarbeit und Wiederherstellung im Editor wurden verbessert, einschließlich Zeilensperren, Verbindungsunterbrechungen, Skriptwechseln und Übersetzungssynchronisierung.",
+            "Die Skriptanalyse unterscheidet Regieanweisungen jetzt besser von Dialogen und verarbeitet Hinweise auf Darsteller zuverlässiger.",
+            "Die Theater-Simulation auf der Startseite wurde mit einem detaillierteren Zuschauerraum, einer Bühne, Darstellern, Beleuchtung und einem Publikums-Handy aktualisiert.",
+            "Die Wiederherstellung laufender Shows bei Konflikten zwischen Einstellungsänderungen wurde verbessert; die geprüfte Dauer bleibt erhalten."
+          ],
+          "fixed": [
+            "Fehler im Editor wurden behoben, durch die der Übersetzungsschutz zu früh enden, Arbeit zwischen Skripten kollidieren oder Drag-and-drop eine veraltete Zeilenposition verwenden konnte."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

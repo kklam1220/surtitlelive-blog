@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Esta actualización mejora la colaboración en Editor y los flujos de trabajo con guiones, refuerza la recuperación de funciones en directo y renueva la vista previa teatral de la página de inicio.",
+          "new": [
+            "Se añadieron el polaco y el ucraniano a las páginas públicas traducidas."
+          ],
+          "improved": [
+            "La plantilla de Excel y el flujo de importación de guiones traducidos ahora admiten formatos actuales y anteriores y conservan los roles, las acotaciones, las traducciones y los detalles de las líneas.",
+            "Se mejoraron la colaboración y la recuperación en Editor, incluidos los bloqueos de línea, las interrupciones de conexión, el cambio entre guiones y la sincronización de traducciones.",
+            "El análisis de guiones distingue mejor las acotaciones del diálogo y gestiona mejor las referencias a intérpretes.",
+            "Se actualizó el simulador teatral de la página de inicio con un auditorio, escenario, intérpretes, iluminación y un teléfono para el público más detallados.",
+            "Se mejoró la recuperación de Shows en directo cuando entran en conflicto varios cambios de configuración, conservando la duración revisada."
+          ],
+          "fixed": [
+            "Se corrigieron casos en Editor en los que la protección de traducciones podía finalizar antes de tiempo, el trabajo podía interferir entre guiones o el arrastre podía usar una posición de línea obsoleta."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

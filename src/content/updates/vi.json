@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này cải thiện khả năng cộng tác trong Editor và quy trình làm việc với kịch bản, tăng độ tin cậy khi khôi phục chương trình trực tiếp và làm mới phần xem trước nhà hát trên trang chủ.",
+          "new": [
+            "Đã bổ sung tiếng Ba Lan và tiếng Ukraina cho các trang công khai được bản địa hóa."
+          ],
+          "improved": [
+            "Mẫu Excel và quy trình nhập kịch bản đã dịch hiện hỗ trợ cả định dạng mới lẫn cũ, đồng thời giữ nguyên vai nhân vật, chỉ dẫn sân khấu, bản dịch và chi tiết dòng.",
+            "Đã cải thiện khả năng cộng tác và khôi phục trong Editor, bao gồm khóa dòng, xử lý gián đoạn kết nối, chuyển đổi giữa các kịch bản và đồng bộ bản dịch.",
+            "Phân tích kịch bản phân biệt chỉ dẫn sân khấu với lời thoại tốt hơn và xử lý chính xác hơn các nội dung nhắc đến diễn viên.",
+            "Đã cập nhật trình mô phỏng nhà hát trên trang chủ với khán phòng, sân khấu, diễn viên, ánh sáng và điện thoại khán giả chi tiết hơn.",
+            "Đã cải thiện khả năng khôi phục Show trực tiếp khi các thay đổi cấu hình xung đột, đồng thời giữ nguyên thời lượng đã được xem xét."
+          ],
+          "fixed": [
+            "Đã sửa các trường hợp trong Editor khiến bảo vệ bản dịch kết thúc quá sớm, thao tác giữa các kịch bản ảnh hưởng lẫn nhau hoặc kéo-thả sử dụng vị trí dòng cũ."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

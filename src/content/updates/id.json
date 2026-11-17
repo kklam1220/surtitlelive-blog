@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Pembaruan ini meningkatkan kolaborasi Editor dan alur kerja naskah, memperkuat pemulihan pertunjukan langsung, serta menyempurnakan pratinjau teater di beranda.",
+          "new": [
+            "Bahasa Polandia dan Ukraina kini tersedia di halaman publik yang dilokalkan."
+          ],
+          "improved": [
+            "Templat Excel dan alur impor naskah terjemahan kini mendukung format terbaru maupun versi lama, sambil mempertahankan peran pembicara, petunjuk panggung, terjemahan, dan detail baris.",
+            "Kolaborasi dan pemulihan Editor ditingkatkan, termasuk penguncian baris, gangguan koneksi, perpindahan antarnaskah, dan sinkronisasi terjemahan.",
+            "Analisis naskah kini lebih baik dalam membedakan petunjuk panggung dari dialog dan menangani referensi pemeran.",
+            "Simulator teater di beranda diperbarui dengan auditorium, panggung, pemeran, pencahayaan, dan ponsel penonton yang lebih terperinci.",
+            "Pemulihan Show langsung ditingkatkan saat perubahan konfigurasi saling bertentangan, tanpa mengubah durasi yang telah ditinjau."
+          ],
+          "fixed": [
+            "Memperbaiki masalah Editor ketika perlindungan terjemahan dapat berakhir terlalu cepat, pekerjaan pada naskah berbeda dapat saling mengganggu, atau pengurutan seret-dan-lepas menggunakan posisi baris yang sudah usang."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

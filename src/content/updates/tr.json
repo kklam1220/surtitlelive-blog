@@ -20,6 +20,25 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261116.01",
+          "releaseDate": "2026-11-16",
+          "product": "Pockitle",
+          "summary": "Bu güncelleme Editor iş birliğini ve senaryo iş akışlarını iyileştiriyor, canlı gösteri kurtarmayı güçlendiriyor ve ana sayfadaki tiyatro önizlemesini yeniliyor.",
+          "new": [
+            "Yerelleştirilmiş herkese açık sayfalara Lehçe ve Ukraynaca eklendi."
+          ],
+          "improved": [
+            "Çevrilmiş senaryoların Excel şablonu ve içe aktarma akışı güncellenerek güncel ve eski biçimler destekleniyor; konuşmacı rolleri, sahne yönergeleri, çeviriler ve satır ayrıntıları korunuyor.",
+            "Satır kilitleri, bağlantı kesintilerinden kurtarma, senaryolar arasında geçiş ve çeviri eşitlemesi dahil Editor iş birliği ve kurtarma özellikleri geliştirildi.",
+            "Senaryo analizi sahne yönergelerini diyalogdan daha iyi ayırıyor ve oyunculara yapılan göndermeleri daha doğru işliyor.",
+            "Ana sayfadaki tiyatro simülatörü; daha ayrıntılı salon, sahne, oyuncular, ışıklandırma ve seyirci telefonu ile yenilendi.",
+            "Ayar değişiklikleri çakıştığında canlı Show kurtarma iyileştirildi ve gözden geçirilmiş süre korundu."
+          ],
+          "fixed": [
+            "Çeviri korumasının erken sona ermesine, farklı senaryolardaki işlemlerin birbirini etkilemesine veya sürükle-bırak işleminin eski satır konumunu kullanmasına yol açabilen Editor sorunları düzeltildi."
+          ]
+        },
+        {
           "version": "v261115.01",
           "releaseDate": "2026-11-15",
           "product": "Pockitle",

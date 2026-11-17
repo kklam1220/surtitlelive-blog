@@ -68,6 +68,13 @@ The merged candidate gets its own clean `npm ci`, production dependency audit
 - `npm run build`
 - `npm run build:check`
 
+Pages must install development dependencies for `npm run build`: Astro and its
+MDX integration are build tools, not packages loaded by the deployed static
+`dist`. Do not use a production-only install in Pages. Keep browser libraries
+such as Mermaid in production dependency audit scope. Use a separate full
+`npm audit` to inspect build-tool findings; a clean production audit does not
+mean the build toolchain has no advisories.
+
 These run in the temporary standalone Blog checkout, not with the main
 system's lockfile, installed modules, version or release controller. Secret and
 raw-artifact scans plus an unchanged-input check precede commit/push. Every
