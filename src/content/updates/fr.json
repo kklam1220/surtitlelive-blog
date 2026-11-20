@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "Cette version facilite la navigation dans les guides Pockitle, améliore la reprise de l’éditeur après une interruption de connexion et simplifie la vérification de l’adresse e-mail.",
+          "new": [
+            "Un dossier de présentation en anglais est disponible au téléchargement."
+          ],
+          "improved": [
+            "Les index des guides Cue et Live ont été repensés pour permettre de parcourir le catalogue complet par étape de travail ou de rechercher un guide précis.",
+            "La page de planification est désormais organisée par cas d’usage, avec un tableau comparatif pour vous aider à choisir la méthode de travail adaptée.",
+            "L’éditeur est plus fiable à l’ouverture d’un script et lors de la reprise après une interruption de connexion."
+          ],
+          "fixed": [
+            "Correction de cas où une traduction terminée pouvait se synchroniser avec la mauvaise session d’édition ou où le déplacement d’une ligne utilisait une position obsolète.",
+            "La vérification de l’adresse e-mail distingue désormais les liens expirés des autres erreurs et permet de demander un nouveau lien si nécessaire."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",

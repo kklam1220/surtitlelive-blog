@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "This release makes Pockitle’s guides easier to navigate, improves Editor recovery when a connection is interrupted, and makes email verification easier to complete.",
+          "new": [
+            "Added a downloadable English introduction pack."
+          ],
+          "improved": [
+            "Redesigned the Cue and Live guide indexes so you can browse the full catalog by workflow stage or search for a specific guide.",
+            "Reorganized the planning page by use case, with a comparison table to help you choose the right workflow.",
+            "Made the Editor more reliable when opening a script or recovering from a connection interruption."
+          ],
+          "fixed": [
+            "Fixed cases where a completed translation could sync to the wrong editing session or dragging a row could use an outdated row position.",
+            "Email verification now distinguishes expired links from other failures and lets you request a fresh link when needed."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",

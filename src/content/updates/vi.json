@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này giúp bạn tìm hướng dẫn của Pockitle dễ hơn, cải thiện khả năng khôi phục của trình biên tập sau khi mất kết nối và đơn giản hóa việc xác minh email.",
+          "new": [
+            "Đã thêm bộ tài liệu giới thiệu bằng tiếng Anh có thể tải xuống."
+          ],
+          "improved": [
+            "Danh mục hướng dẫn Cue và Live được thiết kế lại để bạn có thể xem toàn bộ hướng dẫn theo từng giai đoạn công việc hoặc tìm một hướng dẫn cụ thể.",
+            "Trang lập kế hoạch được sắp xếp lại theo tình huống sử dụng, kèm bảng so sánh giúp bạn chọn quy trình phù hợp.",
+            "Trình biên tập hoạt động ổn định hơn khi mở kịch bản hoặc khôi phục sau khi mất kết nối."
+          ],
+          "fixed": [
+            "Đã sửa lỗi có thể khiến bản dịch đã hoàn tất đồng bộ với nhầm phiên chỉnh sửa hoặc dùng vị trí cũ khi kéo một hàng.",
+            "Tính năng xác minh email giờ phân biệt liên kết hết hạn với các lỗi khác và cho phép bạn yêu cầu liên kết mới khi cần."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",

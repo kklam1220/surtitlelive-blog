@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "Ta wersja ułatwia poruszanie się po przewodnikach Pockitle, poprawia wznawianie pracy Edytora po przerwaniu połączenia i upraszcza weryfikację adresu e-mail.",
+          "new": [
+            "Dodano pakiet wprowadzający w języku angielskim do pobrania."
+          ],
+          "improved": [
+            "Przeprojektowano spisy przewodników Cue i Live. Możesz przeglądać cały katalog według etapu pracy lub wyszukać konkretny przewodnik.",
+            "Stronę planowania uporządkowano według zastosowań. Tabela porównawcza pomaga wybrać odpowiedni sposób pracy.",
+            "Edytor działa niezawodniej podczas otwierania skryptu i wznawiania pracy po przerwaniu połączenia."
+          ],
+          "fixed": [
+            "Naprawiono przypadki, w których ukończone tłumaczenie mogło zsynchronizować się z niewłaściwą sesją edycji albo przeciąganie wiersza mogło uwzględniać jego nieaktualną pozycję.",
+            "Weryfikacja adresu e-mail odróżnia teraz wygasłe linki od innych błędów i pozwala w razie potrzeby poprosić o nowy link."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",

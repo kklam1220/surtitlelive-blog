@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "Bu sürüm Pockitle kılavuzlarında gezinmeyi kolaylaştırıyor, bağlantı kesildiğinde Editörün toparlanmasını iyileştiriyor ve e-posta doğrulamasını daha kolay tamamlamanızı sağlıyor.",
+          "new": [
+            "İndirilebilir bir İngilizce tanıtım paketi eklendi."
+          ],
+          "improved": [
+            "Cue ve Live kılavuz dizinleri yeniden tasarlandı. Artık tüm kataloğu iş akışı aşamasına göre inceleyebilir veya belirli bir kılavuzu arayabilirsiniz.",
+            "Planlama sayfası kullanım senaryolarına göre yeniden düzenlendi. Karşılaştırma tablosu, uygun iş akışını seçmenize yardımcı oluyor.",
+            "Editör, bir metni açarken veya bağlantı kesintisinden sonra çalışmaya devam ederken daha güvenilir."
+          ],
+          "fixed": [
+            "Tamamlanan bir çevirinin yanlış düzenleme oturumuna eşitlenebildiği veya bir satır sürüklenirken eski konumunun kullanılabildiği durumlar düzeltildi.",
+            "E-posta doğrulaması artık süresi dolmuş bağlantıları diğer hatalardan ayırıyor ve gerektiğinde yeni bağlantı istemenize olanak tanıyor."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",

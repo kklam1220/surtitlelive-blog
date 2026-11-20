@@ -20,6 +20,24 @@
       "endDate": "2026-11-21",
       "versions": [
         {
+          "version": "v261119.01",
+          "releaseDate": "2026-11-19",
+          "product": "Pockitle",
+          "summary": "Rilis ini memudahkan penelusuran panduan Pockitle, meningkatkan pemulihan Editor saat koneksi terputus, dan mempermudah verifikasi email.",
+          "new": [
+            "Paket pengenalan berbahasa Inggris kini tersedia untuk diunduh."
+          ],
+          "improved": [
+            "Indeks panduan Cue dan Live dirancang ulang agar Anda dapat menjelajahi seluruh katalog berdasarkan tahap alur kerja atau mencari panduan tertentu.",
+            "Halaman perencanaan ditata ulang berdasarkan skenario penggunaan, dengan tabel perbandingan untuk membantu Anda memilih alur kerja yang sesuai.",
+            "Editor kini lebih andal saat membuka naskah atau memulihkan sesi setelah koneksi terputus."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika terjemahan yang selesai dapat tersinkron ke sesi penyuntingan yang salah atau saat baris yang diseret menggunakan posisi lama.",
+            "Verifikasi email kini membedakan tautan kedaluwarsa dari kegagalan lain dan memungkinkan Anda meminta tautan baru saat diperlukan."
+          ]
+        },
+        {
           "version": "v261116.01",
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
