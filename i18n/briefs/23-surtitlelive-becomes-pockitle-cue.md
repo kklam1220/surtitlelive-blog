@@ -4,7 +4,7 @@ English source: `blog/src/content/blog/23-surtitlelive-becomes-pockitle-cue.md`
 
 ## Editorial intent
 
-This is a product-name transition article, not a launch-hype announcement. Preserve the causal structure: real use since June, more than 200 caption deployments, Pockitle Live in August, and the practical constraints that led to Pockitle Cue for Mac and Pockitle Live for iOS.
+This is a product-name transition article, not a launch-hype announcement. Preserve the causal structure: real use since June, more than 100 caption deployments, Pockitle Live in August, and the practical constraints that led to Pockitle Cue for Mac and Pockitle Live for iOS.
 
 ## Product truth to preserve
 
