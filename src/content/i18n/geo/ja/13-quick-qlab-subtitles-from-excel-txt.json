@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "ja",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
   "generatedAt": "2026-07-20T23:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "要点",
@@ -14,7 +14,7 @@
     "QLabはText cuesで字幕を投影できます。実際の投影にはVideo Licenseと、正しく設定したStageが必要です。",
     "QLabにはXLSX字幕をワンクリックで取り込む標準機能はありませんが、AppleScriptなどのimporterで、構造化したExcel・CSV・TXTをcuesへ変換できます。",
     "Pockitle Cue Editorから書き出すQLab Projection Packは、オフライン投影のための受け渡しです。公開を作成せず、Viewerへ状態を配信することもありません。",
-    "完成済み公演でViewerを同期するときは、元cueごとに一つのローカルScript child、loopback bridge、そしてオペレーターが明示的に接続・有効化したASMコンソールを使います。"
+    "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
   ],
   "faq": [
     {
@@ -27,11 +27,11 @@
     },
     {
       "question": "Editor版のQLab Projection PackはViewerも同期しますか？",
-      "answer": "いいえ。Editor版packは、オフラインでQLab投影へ引き渡すためのものです。Viewer同期には、完成済み公演向けの、オペレーターが明示的に有効化するASM経路が必要です。"
+      "answer": "いいえ。 Editor版packは、オフラインでQLab投影へ引き渡すためのものです。 これらは別々の方法であり、すべての制作で順に組み合わせる必要はありません。 任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     },
     {
-      "question": "ローカルbridgeはPockitle Cue cloudへ直接接続しますか？",
-      "answer": "接続しません。bridgeは機密情報を含まない限定的なcue identityを、同じMac上で開いているASMコンソールへ渡すだけです。Viewer stateは、ASMが既存のcontrol channelを通じて配信します。"
+      "question": "Pockitle Cue StationはQLabとどう連携しますか？",
+      "answer": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     }
   ],
   "glossary": [
@@ -48,8 +48,8 @@
       "definition": "修正版を再importしたとき、一致するcaption Groupを更新するための、機密情報を含まないPockitle Cueの識別子。"
     },
     {
-      "term": "Loopback bridge",
-      "definition": "127.0.0.1:37621で動作し、完成済み公演のQLab Script eventをASMへ中継するローカルservice。"
+      "term": "Pockitle Cue Station",
+      "definition": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     },
     {
       "term": "ASMコンソール",

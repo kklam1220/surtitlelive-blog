@@ -13,7 +13,7 @@ import {
 import { rewriteLocalizedBlogImageReferences } from "../../lib/blogAssets";
 import { hasAuthoredGeoSection, readGeoBlock } from "../../lib/geoBlocks";
 import { isBlogArticleIndexable, resolveBlogLocaleMeta } from "../../i18n/locale-config";
-import { sanitizeLocalizedBlogHtml } from "../../lib/blogSecurity.mjs";
+import { insertReviewedArticleMedia, sanitizeLocalizedBlogHtml } from "../../lib/blogSecurity.mjs";
 
 function escapeHtml(value) {
   return String(value)
@@ -72,9 +72,10 @@ const markedInstance = new Marked({
   }
 });
 
-const html = sanitizeLocalizedBlogHtml(
+const sanitizedHtml = sanitizeLocalizedBlogHtml(
   await markedInstance.parse(rewriteLocalizedBlogImageReferences(post.body || "")),
 );
+const html = insertReviewedArticleMedia(sanitizedHtml, post.slug);
 const geoBlock = readGeoBlock(locale, post.slug);
 const visibleGeoBlock = hasAuthoredGeoSection(post.body || "", geoBlock) ? null : geoBlock;
 const baseUrl = import.meta.env.BASE_URL ?? "/";

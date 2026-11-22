@@ -46,6 +46,15 @@ export function sanitizeLocalizedBlogHtml(value) {
   });
 }
 
+// This fixed, reviewed asset is inserted after sanitization; localized content
+// cannot supply media URLs, attributes, or arbitrary HTML via this marker.
+export function insertReviewedArticleMedia(html, slug) {
+  if (slug !== "13-quick-qlab-subtitles-from-excel-txt") return html;
+  const marker = "<p>[[pockitle-station-qlab-demo]]</p>";
+  const video = '<video controls muted loop playsinline preload="metadata" width="1600" height="696" poster="https://surtitlelive.com/images/qlab/station-drag-to-qlab-poster.jpg" style="width:100%;height:auto" aria-label="Pockitle Cue Station + QLab"><source src="https://surtitlelive.com/images/qlab/station-drag-to-qlab.webm" type="video/webm"><source src="https://surtitlelive.com/images/qlab/station-drag-to-qlab.mp4" type="video/mp4"><a href="https://surtitlelive.com/images/qlab/station-drag-to-qlab.webm">Video</a></video>';
+  return String(html).replace(marker, video);
+}
+
 export function serializeJsonLd(value) {
   return JSON.stringify(value)
     .replace(/</g, "\\u003c")

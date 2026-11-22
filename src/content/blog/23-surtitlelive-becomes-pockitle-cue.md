@@ -1,6 +1,6 @@
 ---
-title: "From SurtitleLive to Pockitle Cue: What Changed After More Than 100 Caption Deployments"
-description: "After more than 100 caption deployments, we are renaming SurtitleLive to Pockitle Cue and building a clearer family around prepared surtitles, local Mac projection, QLab, and live captioning."
+title: "From SurtitleLive to Pockitle Cue: What Changed After 200+ Caption Deployments"
+description: "After more than 200 caption deployments, we are renaming SurtitleLive to Pockitle Cue and building a clearer family around prepared surtitles, local Mac projection, QLab, and live captioning."
 pubDate: "2026-10-01"
 heroImage: "./blog-23.png"
 heroImageAlt: "Pockitle Cue projector preview displaying ‘Welcome to tonight’s performance.’ on a black screen."
@@ -13,7 +13,7 @@ A production already had its text: a script, libretto, translated dialogue, or a
 
 That remains the most common way people use the product.
 
-Since June, more than **100 caption deployments** have been created through SurtitleLive. They have included different kinds of performances and venues, different combinations of projected and personal-device captions, and different ways of working backstage.
+Since June, more than **200 caption deployments** have been created through SurtitleLive. They have included different kinds of performances and venues, different combinations of projected and personal-device captions, and different ways of working backstage.
 
 But those first months also showed us that prepared surtitles are only one part of the problem.
 

@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "en",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
   "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
@@ -14,7 +14,7 @@
     "QLab displays styled subtitle text with Text cues; a Video License and a correctly configured Stage are required.",
     "QLab does not natively import XLSX subtitle sheets in one click, but AppleScript or another importer can turn structured Excel, CSV, or TXT data into cues.",
     "A Pockitle Cue Editor QLab Projection Pack is an offline projection handoff; it does not deploy a show or publish to Viewer.",
-    "Finalized-show Viewer sync uses one local Script child per source cue, a loopback bridge, and an explicitly connected and armed ASM console."
+    "Pockitle Cue Station can place prepared cues in QLab and follow them for Mac projection; audience-phone sync has separate connection requirements."
   ],
   "faq": [
     {
@@ -27,11 +27,11 @@
     },
     {
       "question": "Does an Editor QLab Projection Pack sync Viewer?",
-      "answer": "No. The Editor-origin pack is an offline QLab projection handoff. Viewer sync is available only through the finalized-show, operator-armed ASM path."
+      "answer": "No. The Editor-origin pack is an offline QLab projection handoff. A deployed show can use Pockitle Cue Station for QLab follow and, when connected, audience-phone subtitles; a separate browser ASM bridge beta is also documented."
     },
     {
-      "question": "Does the local bridge call Pockitle Cue's cloud?",
-      "answer": "No. It relays a bounded, non-secret cue identity locally to the open ASM console; ASM publishes Viewer state through the existing control channel."
+      "question": "Can Pockitle Cue Station follow QLab cues?",
+      "answer": "Yes. After the deployed show is synced and the local receiver and QLab permissions are ready, QLab can advance Station projection. Audience phones also require internet and valid Cloud control."
     }
   ],
   "glossary": [
@@ -48,8 +48,8 @@
       "definition": "A non-secret Pockitle Cue identity used to update the matching caption Group across revised imports."
     },
     {
-      "term": "Loopback bridge",
-      "definition": "The local service on 127.0.0.1:37621 that relays finalized-show QLab Script events to ASM."
+      "term": "Pockitle Cue Station",
+      "definition": "A Mac app that can prepare QLab cues and follow them for local projection and, when connected, audience-phone subtitles."
     },
     {
       "term": "ASM console",

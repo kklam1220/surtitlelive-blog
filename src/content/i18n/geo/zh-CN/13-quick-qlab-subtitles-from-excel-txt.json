@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "zh-CN",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
   "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "要点",
@@ -14,7 +14,7 @@
     "QLab 以 Text cues 显示设置好样式的字幕；正式投影需要 Video License 与配置正确的 Stage。",
     "QLab 没有一键导入 XLSX 字幕表的原生功能，但 AppleScript 或其他导入器可把结构化 Excel、CSV 或 TXT 数据转成 cues。",
     "从 Pockitle Cue 编辑器下载的 QLab Projection Pack 是离线投影交付，不会创建部署或向 Viewer 发布内容。",
-    "完成部署后的 Viewer 同步，使用每个来源 cue 一个本地 Script child、loopback bridge，以及由操作员明确连接并启用的 ASM 控制台。"
+    "Pockitle Cue Station 可将准备好的 cues 放入 QLab，并跟随 QLab 进行 Mac 投影；观众手机同步另有连接要求。"
   ],
   "faq": [
     {
@@ -27,11 +27,11 @@
     },
     {
       "question": "编辑器导出的 QLab Projection Pack 会同步 Viewer 吗？",
-      "answer": "不会。编辑器版本只负责离线 QLab 投影；Viewer 同步须使用完成部署后、由操作员主动启用的 ASM 路径。"
+      "answer": "不会。编辑器版本只负责离线 QLab 投影。已部署的演出可通过 Pockitle Cue Station 跟随 QLab，并在连接就绪时更新观众手机；另有独立的浏览器 ASM bridge Beta 路径。"
     },
     {
-      "question": "本地 bridge 会直接调用 Pockitle Cue 云端吗？",
-      "answer": "不会。它只在本地把范围受限、不含机密的 cue 身份交给已打开的 ASM 控制台，再由 ASM 通过既有 control channel 发布 Viewer 状态。"
+      "question": "Pockitle Cue Station 可以跟随 QLab cues 吗？",
+      "answer": "可以。已部署的演出同步至 Mac，且本地 receiver 及 QLab 权限就绪后，QLab 可以推进 Station 投影。观众手机另需网络及有效的 Cloud 控制权。"
     }
   ],
   "glossary": [
@@ -48,8 +48,8 @@
       "definition": "用于在重新导入修订版时，找出并更新匹配 caption Group 的非机密 Pockitle Cue 身份。"
     },
     {
-      "term": "Loopback bridge",
-      "definition": "在 127.0.0.1:37621 运行、把完成部署后的 QLab Script 事件交给 ASM 的本地服务。"
+      "term": "Pockitle Cue Station",
+      "definition": "可准备 QLab cues 并跟随 cues 进行本地投影的 Mac 应用程序；连接就绪时也可更新观众手机字幕。"
     },
     {
       "term": "ASM 控制台",

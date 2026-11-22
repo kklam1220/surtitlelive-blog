@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "fr",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "1973f254882aa6ed7bdf6aac4340e5f0de7edcde5c298de9e60937b9b478fbec",
+  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
   "generatedAt": "2026-07-20T23:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "À retenir",
@@ -14,7 +14,7 @@
     "QLab 5 projette des surtitres avec des tops de texte. Excel, CSV ou TXT servent de données à un script AppleScript ou à un importateur ; il ne s’agit pas d’un import XLSX natif en un clic.",
     "Avant toute génération en série, testez un top de texte manuel, la licence Video ou Bundle, le stage, la route de sortie et le projecteur. L’automatisation reproduit aussi très vite une mauvaise affectation.",
     "Un QLab Projection Pack conserve les traductions relues et des clés Pockitle Cue stables hors du fichier de spectacle ; un nouvel import peut actualiser les groupes correspondants sans écraser les autres tops de régie.",
-    "La synchronisation Viewer doit être armée : QLab envoie une identité non secrète au pont loopback sur 127.0.0.1:37621 ; la console ASM ouverte ne publie qu’après Passer en direct et Allow QLab control par le canal de contrôle existant."
+    "Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
   ],
   "faq": [
     {
@@ -27,11 +27,11 @@
     },
     {
       "question": "Quelle différence entre le pack de l’Editor et celui d’un spectacle finalisé ?",
-      "answer": "Le pack issu de l’Editor est une remise hors ligne pour la projection QLab locale. Celui d’un spectacle finalisé peut aussi contenir au plus un enfant Script local par top source afin qu’une console ASM explicitement connectée et armée fasse suivre le Viewer déjà déployé."
+      "answer": "Le pack issu de l’Editor est une remise hors ligne pour la projection QLab locale. Ce sont des méthodes alternatives, pas des étapes que chaque production doit combiner. Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
     },
     {
-      "question": "QLab communique-t-il directement avec les téléphones ou le cloud ?",
-      "answer": "Non. L’enfant Script envoie seulement une identité de top non secrète au pont loopback du Mac de régie. Le pont relaie localement à la console ASM ouverte ; ASM seule publie cue.jump par le canal de contrôle existant."
+      "question": "Comment Pockitle Cue Station fonctionne-t-il avec QLab ?",
+      "answer": "Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
     }
   ],
   "glossary": [
@@ -48,8 +48,8 @@
       "definition": "Identité Pockitle Cue non secrète qui permet à un nouvel import d’actualiser les groupes correspondants sans modifier les autres tops QLab."
     },
     {
-      "term": "Pont loopback",
-      "definition": "Service local sur 127.0.0.1:37621 qui relaie une identité de top limitée du Script QLab à la console ASM déjà ouverte, sans devenir un second chemin cloud."
+      "term": "Pockitle Cue Station",
+      "definition": "Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
     },
     {
       "term": "Armement ASM",

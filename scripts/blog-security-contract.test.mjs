@@ -11,6 +11,7 @@ import { pathToFileURL } from "node:url";
 import { Marked } from "marked";
 import sanitizeHtml from "sanitize-html";
 import {
+  insertReviewedArticleMedia,
   sanitizeLocalizedBlogHtml,
   serializeJsonLd,
 } from "../src/lib/blogSecurity.mjs";
@@ -30,6 +31,34 @@ const locales = fs
   .readdirSync(localizedRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name);
+
+test("localized QLab demo only inserts the fixed reviewed media", () => {
+  const marker = "<p>[[pockitle-station-qlab-demo]]</p>";
+  const slug = "13-quick-qlab-subtitles-from-excel-txt";
+  const html = insertReviewedArticleMedia(sanitizeLocalizedBlogHtml(marker), slug);
+  assert.match(html, /<video controls/);
+  assert.match(html, /https:\/\/surtitlelive\.com\/images\/qlab\/station-drag-to-qlab\.webm/);
+  assert.equal(insertReviewedArticleMedia(marker, "unrelated-article"), marker);
+  assert.doesNotMatch(sanitizeLocalizedBlogHtml('<video src="https://evil.example/a.webm" autoplay></video>'), /<video|evil\.example/);
+  assert.doesNotMatch(insertReviewedArticleMedia(sanitizeLocalizedBlogHtml('<p>[[pockitle-station-qlab-demo]]<img src=x onerror=alert(1)></p>'), slug), /<video|onerror/);
+});
+
+test("Blog13 exposes the reviewed video and Station guidance in every locale", () => {
+  const slug = "13-quick-qlab-subtitles-from-excel-txt";
+  for (const locale of locales) {
+    const payload = JSON.parse(fs.readFileSync(path.join(localizedRoot, locale, `${slug}.json`), "utf8"));
+    assert.equal((payload.body.match(/\[\[pockitle-station-qlab-demo\]\]/g) || []).length, 1, locale);
+    assert.match(payload.body, /Pockitle Cue Station/, locale);
+    assert.match(payload.body, /https:\/\/surtitlelive\.com\/companion\/qlab/, locale);
+    assert.doesNotMatch(payload.body, /```mermaid/, locale);
+    const rendered = insertReviewedArticleMedia(sanitizeLocalizedBlogHtml(marked.parse(payload.body)), slug);
+    assert.match(rendered, /<video controls/, locale);
+    assert.doesNotMatch(rendered, /\[\[pockitle-station-qlab-demo\]\]/, locale);
+  }
+  const english = fs.readFileSync(path.join(blogRoot, "src", "content", "blog", `${slug}.md`), "utf8");
+  assert.match(english, /station-drag-to-qlab\.webm/);
+  assert.match(english, /station-drag-to-qlab\.mp4/);
+});
 
 test("built headers reject legacy and wrong-locale replacements of the published Live link", {
   skip: !fs.existsSync(path.join(blogRoot, "dist/index.html")),
