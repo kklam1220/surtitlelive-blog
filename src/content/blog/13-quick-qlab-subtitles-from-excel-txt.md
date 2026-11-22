@@ -44,7 +44,7 @@ Before building a workflow, it is worth separating official QLab behavior from p
 | Generate many cues | The QLab AppleScript dictionary supports `make type "text"` and exposes cue properties such as `text`, `text alignment`, `fixed width`, `stage name`, `translation x`, and `translation y`. | Use a spreadsheet row or text block as the source for each Text cue. |
 | Use spreadsheets | The QLab Cookbook includes a spreadsheet-driven example that reads Excel rows, creates groups, creates Text cues, sets text and formatting, and moves cues into groups. | Adapt the same pattern for subtitles and surtitles rather than flashcards. |
 | Import XLSX natively as subtitles | QLab's public documentation demonstrates Excel automation, not a one-click native XLSX subtitle import feature. | Use Excel/CSV/TXT as source data, then use a script or importer to generate QLab cues. |
-| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | Pockitle Cue Station can follow QLab cues and, when phone sync is ready, update audience phones. The separate ASM bridge beta also offers an operator-armed sync path. |
+| Sync audience phones | QLab's Text cues handle local projection. They do not, by themselves, publish browser-based subtitle state to audience phones. | Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export. |
 
 The distinction matters: an AppleScript-driven workflow is not the same as QLab natively importing an Excel subtitle sheet in one click. A practical summary is:
 
@@ -125,7 +125,6 @@ The complete companion script keeps the QLab cue list readable during a show:
 - From the second subtitle onward, each Timeline Group contains `CLEAR PREVIOUS` followed by `DISPLAY en`. The new Text cue has a 0.05-second pre-wait, so the old line is faded and stopped before the new line appears.
 - The first subtitle contains only `DISPLAY en` because there is no previous subtitle to clear.
 - A final top-level `CLEAR LAST SUBTITLE` step removes the final line at the end of the subtitle sequence.
-
 
 This is not a finished production importer. It is a readable starting point.
 
@@ -335,36 +334,6 @@ Each source subtitle keeps a stable Pockitle Cue cue key. A revised import can t
 
 The export options also define the intended projection outputs. One source cue can contain several Text children for different languages or screens while remaining one operator cue moment. Languages sharing a screen need different caption positions; outputs sent to separate projectors need distinct QLab stage names. Test the resulting stage assignments in the actual venue.
 
-### Option 3: ASM and Viewer sync through the local bridge (Beta)
-
-This is the separate browser-ASM beta path, not a prerequisite for Station's QLab workflow. Use it when QLab should keep running the show timeline while an already-deployed Pockitle Cue Viewer follows the same source cue. Check the [current beta guide](https://surtitlelive.com/guides/qlab-asm-viewer-sync-beta) and feature availability before planning a production around it.
-
-The workflow is:
-
-**QLab → local projection → projector**
-
-and, at the same cue point:
-
-**QLab Script child → loopback bridge → open ASM console → existing control channel → Viewer**
-
-For a finalized show, the Deployment Cockpit QLab Projection Pack can import each source subtitle as one timeline Group. A Group may contain one or more Text children for the selected languages or projector outputs, but it has at most one local Script child. All of those children remain under the same stable Pockitle Cue cue key.
-
-The Script child sends a non-secret JSON cue identity to a bridge bound to `127.0.0.1:37621`. The bridge does **not** call Pockitle Cue's backend or carry an ASM password, Viewer link, runtime token, or cloud credential. It relays the local cue event to the already-open ASM console; ASM remains responsible for publishing the existing `cue.jump` state through the control channel.
-
-This path is intentionally operator-armed:
-
-The beta guide specifies QLab licensing for Script cues, a Video license for QLab Text projection, and Node.js 18 or newer on the show Mac for the bridge helper.
-
-1. Enable QLab for the finalized show in Deployment Cockpit and download a fresh QLab Projection Pack.
-2. Import the pack into QLab, then double-click `3 - Start Local Bridge.command` and keep its Terminal window open.
-3. Open and unlock the normal ASM console.
-4. Click **QLab enabled**, then **Connect local bridge**.
-5. Wait until Viewer sync is ready, start the show with the normal explicit **Go Live** action, and only then choose **Allow QLab control**.
-
-Connecting the bridge never starts a show automatically. If the local bridge is unavailable, disconnect QLab control and return to the normal manual ASM controls.
-
-This matters because audience devices should not talk directly to QLab, and the loopback bridge should not become a second cloud-control path. QLab runs the local timeline, the bridge carries a bounded cue identity on the show Mac, ASM applies the operator's armed control state, and the existing Pockitle Cue control channel updates Viewer.
-
 ## Best practical recommendation
 
 For a small one-night event:
@@ -377,7 +346,7 @@ For a translated theatre show:
 
 For a multi-language or mobile-viewer show:
 
-**Consider Pockitle Cue Station when QLab should drive Mac projection and, when connected, audience phones. The Editor import pack is a separate projection-only handoff; the browser ASM bridge beta is another option for a deployed show. Rehearse the path you choose before the performance.**
+Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export.
 
 The goal is not to replace QLab. The goal is to let QLab do what QLab is excellent at: live show control.
 
@@ -407,7 +376,7 @@ For editable live text, use Text cues. Video cues are better when the subtitle i
 
 ### Does QLab sync subtitles to audience phones?
 
-QLab can project Text cues locally, but those cues do not by themselves publish subtitles to audience phones. Pockitle Cue Station can follow QLab and update phones when its phone-sync requirements are met. A separate beta path uses a local bridge and an explicitly connected and armed browser ASM console for a deployed show. Both require appropriate setup and rehearsal; audience phones need internet.
+Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export.
 
 ### Do I need a QLab Video license for every Pockitle Cue Station output?
 
@@ -425,4 +394,3 @@ Stop relying only on DIY scripts when the subtitle workflow needs translation re
 - Pockitle Cue QLab workflow: https://surtitlelive.com/qlab
 - Prepare and follow QLab cues in Pockitle Cue Station: https://surtitlelive.com/companion/qlab
 - Pockitle Cue Exporting a QLab Import Pack: https://surtitlelive.com/guides/export-qlab-import-pack
-- Pockitle Cue QLab control for ASM and Viewer sync User guides: https://surtitlelive.com/guides/qlab-asm-viewer-sync-beta

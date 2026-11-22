@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "fr",
   "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
-  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "sourceHash": "9cad362f79e97b40c18a32836ccf15609d014febdf4d482f93694ed7699ec1ec",
   "generatedAt": "2026-07-20T23:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "À retenir",
@@ -27,7 +27,7 @@
     },
     {
       "question": "Peut-on associer projection et lecture sur les téléphones du public ?",
-      "answer": "Oui, si les droits du compte et la configuration de la salle le permettent. Il faut tester la visibilité, la connexion, les consignes d’accueil et l’expérience de lecture réelle. Le parcours QLab local ne rend pas la lecture mobile hors ligne ; la conduite manuelle depuis ASM reste la solution de repli."
+      "answer": "Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
     },
     {
       "question": "Comment candidater, et la sélection est-elle garantie ?",
@@ -53,7 +53,7 @@
     },
     {
       "term": "Parcours QLab activé par l’opérateur",
-      "definition": "Parcours live volontairement autorisé via le pont local et la console ASM connectée : Passer en direct, puis Allow QLab control, avec la conduite ASM manuelle comme solution de repli."
+      "definition": "Une application locale facultative de conduite du spectacle. La page de préparation crée ou met à jour les cues de sous-titres. Avec l’autorisation QLab explicitement activée et mémorisée, pendant un Live autorisé localement GO fait avancer la projection du Mac via le récepteur local authentifié même sans internet ou contrôle Cloud. Les téléphones nécessitent aussi internet et une propriété valide du contrôle Cloud. QLab pilote sa propre projection Text séparément."
     }
   ]
 }

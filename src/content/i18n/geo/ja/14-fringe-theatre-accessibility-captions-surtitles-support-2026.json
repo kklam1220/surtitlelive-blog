@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "ja",
   "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
-  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "sourceHash": "9cad362f79e97b40c18a32836ccf15609d014febdf4d482f93694ed7699ec1ec",
   "generatedAt": "2026-07-21T00:15:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "要点",
@@ -14,7 +14,7 @@
     "SurtitleLive Fringe Support Programme 2026は、選考された公演へProを14日間無償提供する独立プログラムです。助成金、翻訳委託、認証、運用代行ではありません。",
     "アクセシビリティ字幕は台詞だけでなく、話者や重要な音の情報も扱います。翻訳字幕だけを用意しても、自動的にアクセシビリティ字幕になるわけではありません。",
     "採択と利用期間はSurtitleLiveからの書面通知でのみ確定します。継続課金へ自動移行することはありません。",
-    "QLabのライブ同期は、同じMac上のloopback bridgeからASMを経由し、オペレーターが本番開始とAllow QLab controlを明示的に選んだ後に動作します。手動ASM操作をフォールバックとして残します。"
+    "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
   ],
   "faq": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "question": "インターネットが途切れてもQLabで投影を続けられますか？",
-      "answer": "別途準備して稽古したローカルQLab Projection Packなら、ローカル投影を続けられます。ただしモバイルViewerをオフラインにする機能ではなく、ライブ同期にはASMを介したオペレーター有効化経路が必要です。"
+      "answer": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     }
   ],
   "glossary": [
@@ -48,8 +48,8 @@
       "definition": "選考された公演に書面で確認した14日間だけ付与されるSurtitleLive Pro利用権。継続課金契約ではありません。"
     },
     {
-      "term": "Loopback bridge",
-      "definition": "同じMac上でQLabの非機密cue identityをASMコンソールへ渡すローカル中継機能。SurtitleLive backendへ直接送信しません。"
+      "term": "Pockitle Cue Station",
+      "definition": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     },
     {
       "term": "利用者検証",

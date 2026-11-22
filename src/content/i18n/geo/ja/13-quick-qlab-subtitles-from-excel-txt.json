@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "ja",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
+  "sourceHash": "878bf765f944d82fb4b85cb68906d2c66d1eb6c2a993a531242c8fdde08903d2",
   "generatedAt": "2026-07-20T23:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "要点",
@@ -26,12 +26,8 @@
       "answer": "ワンクリックのXLSX字幕import機能はありません。scriptやimporterで構造化した表計算、CSV、TXTを読み込み、QLab Text cuesを生成するのが実務的です。"
     },
     {
-      "question": "Editor版のQLab Projection PackはViewerも同期しますか？",
-      "answer": "いいえ。 Editor版packは、オフラインでQLab投影へ引き渡すためのものです。 これらは別々の方法であり、すべての制作で順に組み合わせる必要はありません。 任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
-    },
-    {
       "question": "Pockitle Cue StationはQLabとどう連携しますか？",
-      "answer": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
+      "answer": "Pockitle Cue Station: 任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
     }
   ],
   "glossary": [
@@ -50,10 +46,6 @@
     {
       "term": "Pockitle Cue Station",
       "definition": "任意のローカル公演制御アプリです。準備ページで字幕cueを作成・更新します。ローカルで許可済みのLive中は、この公演で明示的に有効にして記憶したQLab許可により、インターネットやCloud制御を失っても認証済みローカルreceiver経由のGOでMac投影を進めます。スマートフォンには別途インターネットと有効なCloud制御権が必要です。QLab自身のText投影は独立して制御されます。"
-    },
-    {
-      "term": "ASMコンソール",
-      "definition": "QLab controlを受け付ける前に、開く、unlockする、接続する、Viewer readyを待つ、オペレーターが許可する、という手順が必要な操作画面。"
     }
   ]
 }

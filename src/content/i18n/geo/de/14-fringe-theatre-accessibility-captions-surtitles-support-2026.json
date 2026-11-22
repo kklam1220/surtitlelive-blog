@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "de",
   "slug": "14-fringe-theatre-accessibility-captions-surtitles-support-2026",
-  "sourceHash": "1c2e870c8717d84910c842b9b5617d926d0f7139e8a192b9584f880c9272c05e",
+  "sourceHash": "9cad362f79e97b40c18a32836ccf15609d014febdf4d482f93694ed7699ec1ec",
   "generatedAt": "2026-07-20T23:30:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Das Wichtigste in Kürze",
@@ -27,7 +27,7 @@
     },
     {
       "question": "Können Projektion und Zuschauer-Smartphones gemeinsam genutzt werden?",
-      "answer": "Ja, sofern Kontoberechtigung und Spielort-Setup beides unterstützen. Sichtlinien, Verbindung, Einlasshinweise und das tatsächliche Leseerlebnis müssen vorab geprüft werden. Der lokale QLab-Workflow macht die mobile Ansicht nicht offline-fähig; die manuelle ASM-Cue-Steuerung bleibt der Fallback."
+      "answer": "Eine optionale lokale Show-Control-App. Die Vorbereitungsseite erstellt oder aktualisiert Untertitel-Cues. Mit ausdrücklich aktivierter, gespeicherter QLab-Berechtigung schaltet GO in einer lokal freigegebenen Live-Show die Mac-Projektion über den authentifizierten lokalen Receiver auch ohne Internet oder Cloud-Steuerung weiter. Telefone benötigen zusätzlich Internet und gültige Cloud-Steuerungsinhaberschaft. QLab steuert seine eigene Text-Projektion separat."
     },
     {
       "question": "Wie läuft die Bewerbung ab, und ist die Auswahl garantiert?",
@@ -53,7 +53,7 @@
     },
     {
       "term": "Freigegebener QLab-Ablauf",
-      "definition": "Der bewusst aktivierte Live-Weg über lokale Bridge und verbundene ASM-Konsole: erst Live gehen, dann Allow QLab control, mit manueller ASM-Cue-Steuerung als Rückfallebene."
+      "definition": "Eine optionale lokale Show-Control-App. Die Vorbereitungsseite erstellt oder aktualisiert Untertitel-Cues. Mit ausdrücklich aktivierter, gespeicherter QLab-Berechtigung schaltet GO in einer lokal freigegebenen Live-Show die Mac-Projektion über den authentifizierten lokalen Receiver auch ohne Internet oder Cloud-Steuerung weiter. Telefone benötigen zusätzlich Internet und gültige Cloud-Steuerungsinhaberschaft. QLab steuert seine eigene Text-Projektion separat."
     }
   ]
 }

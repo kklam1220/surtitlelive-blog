@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "zh-CN",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
+  "sourceHash": "878bf765f944d82fb4b85cb68906d2c66d1eb6c2a993a531242c8fdde08903d2",
   "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "要点",
@@ -26,12 +26,8 @@
       "answer": "没有一键 XLSX 字幕导入。脚本或导入器可以读取结构化电子表格、CSV 或 TXT，再创建 QLab Text cues。"
     },
     {
-      "question": "编辑器导出的 QLab Projection Pack 会同步 Viewer 吗？",
-      "answer": "不会。编辑器版本只负责离线 QLab 投影。已部署的演出可通过 Pockitle Cue Station 跟随 QLab，并在连接就绪时更新观众手机；另有独立的浏览器 ASM bridge Beta 路径。"
-    },
-    {
-      "question": "Pockitle Cue Station 可以跟随 QLab cues 吗？",
-      "answer": "可以。已部署的演出同步至 Mac，且本地 receiver 及 QLab 权限就绪后，QLab 可以推进 Station 投影。观众手机另需网络及有效的 Cloud 控制权。"
+      "question": "Pockitle Cue Station 如何配合 QLab？",
+      "answer": "Pockitle Cue Station: 可选的本地演出控制应用。准备页面可创建或更新字幕 cue。已获本地授权进入 Live，且已明确启用并记住本场 QLab 权限后，即使网络或 Cloud 控制权中断，GO 仍会通过已认证的本地接收器推进 Mac 投影。手机另需网络及有效的 Cloud 控制权。QLab 自身的 Text 投影由它独立控制。"
     }
   ],
   "glossary": [
@@ -49,11 +45,7 @@
     },
     {
       "term": "Pockitle Cue Station",
-      "definition": "可准备 QLab cues 并跟随 cues 进行本地投影的 Mac 应用程序；连接就绪时也可更新观众手机字幕。"
-    },
-    {
-      "term": "ASM 控制台",
-      "definition": "接受 QLab control 前，必须打开、解锁、连接、等待 Viewer 就绪并由操作员启用的控制界面。"
+      "definition": "可选的本地演出控制应用。准备页面可创建或更新字幕 cue。已获本地授权进入 Live，且已明确启用并记住本场 QLab 权限后，即使网络或 Cloud 控制权中断，GO 仍会通过已认证的本地接收器推进 Mac 投影。手机另需网络及有效的 Cloud 控制权。QLab 自身的 Text 投影由它独立控制。"
     }
   ]
 }

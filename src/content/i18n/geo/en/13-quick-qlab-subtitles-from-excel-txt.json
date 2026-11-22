@@ -2,7 +2,7 @@
   "version": 1,
   "locale": "en",
   "slug": "13-quick-qlab-subtitles-from-excel-txt",
-  "sourceHash": "2f86d55999f23101d28098d9a34f3044ea779c446d8ce3b98caf579bb25970ef",
+  "sourceHash": "878bf765f944d82fb4b85cb68906d2c66d1eb6c2a993a531242c8fdde08903d2",
   "generatedAt": "2026-07-20T18:00:00.000Z",
   "sectionTitles": {
     "keyTakeaways": "Key Takeaways",
@@ -26,12 +26,8 @@
       "answer": "Not as a one-click XLSX subtitle import. A script or importer can read structured spreadsheet, CSV, or TXT data and create QLab Text cues."
     },
     {
-      "question": "Does an Editor QLab Projection Pack sync Viewer?",
-      "answer": "No. The Editor-origin pack is an offline QLab projection handoff. A deployed show can use Pockitle Cue Station for QLab follow and, when connected, audience-phone subtitles; a separate browser ASM bridge beta is also documented."
-    },
-    {
-      "question": "Can Pockitle Cue Station follow QLab cues?",
-      "answer": "Yes. After the deployed show is synced and the local receiver and QLab permissions are ready, QLab can advance Station projection. Audience phones also require internet and valid Cloud control."
+      "question": "How does Pockitle Cue Station work with QLab?",
+      "answer": "Pockitle Cue Station: Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export."
     }
   ],
   "glossary": [
@@ -49,11 +45,7 @@
     },
     {
       "term": "Pockitle Cue Station",
-      "definition": "A Mac app that can prepare QLab cues and follow them for local projection and, when connected, audience-phone subtitles."
-    },
-    {
-      "term": "ASM console",
-      "definition": "The operator surface that must be open, unlocked, connected, Viewer-ready, and armed before accepting QLab control."
+      "definition": "Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export."
     }
   ]
 }

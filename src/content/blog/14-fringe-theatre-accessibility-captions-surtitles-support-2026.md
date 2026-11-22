@@ -103,13 +103,9 @@ Check the [current SurtitleLive pricing and access options](/pricing) before you
 
 ### QLab workflows
 
-Teams using QLab can incorporate prepared text into an existing show-control workflow through supported export options.
+Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export.
 
-For local projection, the Editor QLab Projection Pack is prepared for offline use. For a finalized live show, the QLab Projection Pack can send non-secret cue identity from QLab Script cues to the loopback-only SurtitleLive bridge on the same Mac. An already-open, connected ASM console then publishes the corresponding cue through SurtitleLive's existing control channel.
-
-This path is deliberately operator-armed: start the supplied local bridge, open and unlock ASM, connect the bridge, wait until the Viewer is ready, choose **Go Live**, and only then choose **Allow QLab control**. Rehearse the complete path and retain manual ASM cueing as the fallback. The local bridge does not make the mobile Viewer offline and does not send QLab directly to the SurtitleLive backend.
-
-See [how to make QLab subtitles from Excel, CSV, or TXT](/blog/13-quick-qlab-subtitles-from-excel-txt/) for a practical preparation workflow.
+[How does Pockitle Cue Station work with QLab?](https://surtitlelive.com/companion/qlab)
 
 ## How mobile captions work in a Fringe venue
 

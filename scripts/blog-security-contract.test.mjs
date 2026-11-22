@@ -32,6 +32,29 @@ const locales = fs
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name);
 
+test("QLab articles do not recommend the retired browser bridge", () => {
+  const retired = /qlab-asm-viewer-sync-beta|127\.0\.0\.1:37621|Start Local Bridge|loopback bridge|Connect local bridge|Allow QLab control|QLab enabled/i;
+  const sourceRoot = path.join(blogRoot, "src/content/blog");
+  const names = fs.readdirSync(sourceRoot).filter((name) => /^(13|14|15)-.*\.md$/.test(name));
+  assert.equal(names.length, 3);
+  for (const name of names) {
+    const source = fs.readFileSync(path.join(sourceRoot, name), "utf8");
+    assert.doesNotMatch(source, retired, name);
+    assert.match(source, /Pockitle Cue Station/, name);
+    for (const locale of locales) {
+      const file = path.join(localizedRoot, locale, name.replace(/\.md$/, ".json"));
+      const raw = fs.readFileSync(file, "utf8");
+      assert.doesNotMatch(raw, retired, file);
+      assert.match(JSON.parse(raw).body, /Pockitle Cue Station/, file);
+    }
+    const geoRoot = path.join(blogRoot, "src/content/i18n/geo");
+    for (const locale of fs.readdirSync(geoRoot)) {
+      const file = path.join(geoRoot, locale, name.replace(/\.md$/, ".json"));
+      if (fs.existsSync(file)) assert.doesNotMatch(fs.readFileSync(file, "utf8"), retired, file);
+    }
+  }
+});
+
 test("localized QLab demo only inserts the fixed reviewed media", () => {
   const marker = "<p>[[pockitle-station-qlab-demo]]</p>";
   const slug = "13-quick-qlab-subtitles-from-excel-txt";

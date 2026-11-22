@@ -21,6 +21,10 @@ A prepared subtitle cue can remain inside the QLab show file. When the operator 
 
 **One operator. One rehearsed GO workflow. Two ways for the audience to read the performance.**
 
+Pockitle Cue Station is the supported live QLab synchronization path. Sync a deployed show to the Mac, prepare cues in Station, and enable QLab follow with the required permissions. QLab can drive local Mac projection; audience phones separately require internet and valid Cloud control. The Editor QLab import pack remains a separate offline projection export.
+
+[How does Pockitle Cue Station work with QLab?](https://surtitlelive.com/companion/qlab)
+
 ## Keep the whole show in QLab
 
 For many small theatres, touring companies and festival productions, QLab is not just a subtitle tool. It is the centre of the technical show.
@@ -268,5 +272,3 @@ No need to move the rest of the production out of QLab.
 **One operator. One GO workflow. Projection and audience phones working from the same prepared subtitle sequence.**
 
 Explore the Pockitle Cue QLab workflow, prepare a free test project and rehearse it with your real production equipment before using it for an audience.
-
-QLab control for audience-phone synchronisation is currently a beta feature. Productions should test the complete setup before opening and retain manual operation as a fallback.
