@@ -286,7 +286,10 @@ test("static Blog image caching does not use request-controlled stale reuse", ()
     assert.equal(lock.packages[`node_modules/${name}`].dev, true, name);
   }
   assert.ok(packageManifest.dependencies.mermaid, "browser bundle remains audited");
-  assert.equal(lock.packages["node_modules/astro"].version, "7.4.12");
+  const manifest = JSON.parse(fs.readFileSync(path.join(blogRoot, "package.json"), "utf8"));
+  assert.match(manifest.devDependencies.astro, /^\d+\.\d+\.\d+$/, "Astro must retain an exact reviewed pin");
+  assert.equal(lock.packages["node_modules/astro"].version, manifest.devDependencies.astro);
+  assert.equal(require("astro/package.json").version, lock.packages["node_modules/astro"].version);
   assertTtlOnly(remoteHelper);
   assert.equal(
     createHash("sha256").update(remoteHelper).digest("hex"),

@@ -73,7 +73,9 @@ MDX integration are build tools, not packages loaded by the deployed static
 `dist`. Do not use a production-only install in Pages. Keep browser libraries
 such as Mermaid in production dependency audit scope. Use a separate full
 `npm audit` to inspect build-tool findings; a clean production audit does not
-mean the build toolchain has no advisories.
+mean the build toolchain has no advisories. The repository security contract
+checks the exact Astro and transitive smol-toml pins in the build graph and the
+DOMPurify pin in the production graph.
 
 These run in the temporary standalone Blog checkout, not with the main
 system's lockfile, installed modules, version or release controller. Secret and
@@ -145,7 +147,7 @@ To ensure images load correctly in production:
 
 - **Drafts**: If you have unfinished posts, create a `drafts` folder inside `content/` and ensure your sync script excludes it, or use `draft: true` in frontmatter (if configured in content collection).
 - **Static Assets**: Ensure your `.gitignore` in the blog folder does NOT ignore `.jpg` or `.webp` files, otherwise they won't be synced to the deployment repo.
-- **Localized QLab demo**: Blog13 translations can use the reviewed `[[pockitle-station-qlab-demo]]` marker as its own paragraph. The fixed video is inserted after HTML sanitization only for that article; keep the descriptive caption localized and do not allow arbitrary video HTML or sources through the sanitizer.
+- **Localized QLab demo**: Blog13 translations can use the reviewed `[[pockitle-station-qlab-demo]]` marker as its own paragraph. The fixed video is inserted after HTML sanitization only for that article; keep the descriptive caption localized and do not allow arbitrary video HTML or sources through the sanitizer. The build contract checks the current Station video and retains binary validation for the historical GIF asset.
 - **Base-Aware Fonts/Assets**: This Astro app is deployed with `base: '/blog/'`. Font preloads and `@font-face` rules are emitted from `src/components/BaseHead.astro` and must resolve to `/blog/fonts/...` exactly once in the built output. Never ship `/blog/blog/fonts/...`, bare `/fonts/...`, or unresolved template placeholders.
 - **Canonical Logo**: Shared chrome should use the canonical main-site logo asset. `src/components/Header.astro` must point at `https://surtitlelive.com/logo/New_logo.png`, not `/blog/logo/New_logo.png`, so the visible header does not depend on the blog-origin compatibility rewrite layer.
 - **Header Locale Contract**: The blog header owns its own Astro-native locale selector. It must stay aligned with the same 18 supported locales as the main site, but it must not depend on the main site's Next.js locale router because the blog deployment remains independently hosted on Cloudflare Pages.
@@ -199,7 +201,7 @@ To ensure images load correctly in production:
     Expected result:
     - the canonical apex article returns article HTML from the dedicated Astro origin
     - it must not fall through to the Next.js main-site 404 page
-    - current SSOT owner for that handoff is `web/src/proxy.ts`, not App Router fallback pages
+    - the primary handoff is the apex Cloudflare Worker, with `web/src/proxy.ts` / Next rewrites as compatibility fallbacks; compare the exact deployed edge and Web revision
 9.  If a canonical apex blog card image is missing but the same asset still works on `https://blog.surtitlelive.com/_astro/...`, treat it as an edge-cache mismatch first, not a browser-cache problem:
     ```bash
     curl -I https://surtitlelive.com/blog/_astro/<asset>.webp

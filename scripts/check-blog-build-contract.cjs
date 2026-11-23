@@ -381,12 +381,12 @@ for (const filePath of imageFiles) {
 assertImageMagic(
   path.join('_astro', 'blog-13-4.gif'),
   isGifMagic,
-  'The animated QLab demo must remain a real GIF asset.',
+  'The historical animated QLab demo must remain a real GIF asset.',
 );
 assertFileHasMatch(
   path.join('13-quick-qlab-subtitles-from-excel-txt', 'index.html'),
-  /src="\/blog\/_astro\/blog-13-4\.gif"/,
-  'The English QLab article must retain the GIF URL instead of a misleading WebP URL.',
+  /<video\b[^>]*controls[^>]*poster="https:\/\/surtitlelive\.com\/images\/qlab\/station-drag-to-qlab-poster\.jpg"/,
+  'The English QLab article must retain the reviewed Station video and poster.',
 );
 
 assertNoMatch(
