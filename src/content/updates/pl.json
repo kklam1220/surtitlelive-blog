@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja ułatwia przyjmowanie zaproszeń do zespołu, poprawia sposób wyświetlania współpracowników w edytorze i wyjaśnia stan członkostwa po płatności.",
+          "new": [
+            "Na stronie głównej dodano mapę pokazującą, gdzie zespoły korzystają z Pockitle."
+          ],
+          "improved": [
+            "Linki do zaproszeń przywracają istniejącą sesję przed wyświetleniem rejestracji. Jeśli nadal musisz potwierdzić adres e-mail, po weryfikacji możesz wrócić do zaproszenia."
+          ],
+          "fixed": [
+            "Edytor wyświetla osoby o tej samej nazwie oddzielnie i pokazuje właściwą rolę każdej z nich. Przewinięcie aktywnego wiersza poza widok nie kończy już przypadkowo edycji.",
+            "Płatność za członkostwo pozostaje w toku do potwierdzenia nowego stanu członkostwa. Poprzedni stan nie jest już uznawany za potwierdzenie."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

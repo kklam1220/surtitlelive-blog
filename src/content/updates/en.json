@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "This update makes team invitations easier to accept, improves how the Editor shows collaborators, and makes membership status after checkout clearer.",
+          "new": [
+            "Added a homepage map showing where teams use Pockitle."
+          ],
+          "improved": [
+            "Team invitation links now restore your existing sign-in before showing registration. If you still need to verify your email, you can return to the invitation afterward."
+          ],
+          "fixed": [
+            "The Editor now shows collaborators with the same name separately, with the correct role for each. Scrolling a focused row out of view no longer triggers an unintended end to editing.",
+            "Membership checkout now stays pending until your updated membership status is confirmed, instead of treating an older status as confirmation."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

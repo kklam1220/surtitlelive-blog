@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này giúp bạn dễ chấp nhận lời mời vào nhóm, cải thiện cách trình biên tập hiển thị người cộng tác và làm rõ trạng thái gói thành viên sau khi thanh toán.",
+          "new": [
+            "Trang chủ có thêm bản đồ cho biết các nhóm đang sử dụng Pockitle ở đâu."
+          ],
+          "improved": [
+            "Liên kết mời vào nhóm sẽ khôi phục phiên đăng nhập hiện có trước khi hiển thị trang đăng ký. Nếu vẫn cần xác minh email, bạn có thể quay lại lời mời sau khi xác minh."
+          ],
+          "fixed": [
+            "Trình biên tập hiển thị riêng từng người cộng tác trùng tên, cùng vai trò chính xác của từng người. Cuộn khiến hàng đang được chọn khuất khỏi màn hình sẽ không còn kết thúc chỉnh sửa ngoài ý muốn.",
+            "Thanh toán gói thành viên vẫn ở trạng thái chờ cho đến khi trạng thái mới được xác nhận, thay vì coi trạng thái cũ là xác nhận."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

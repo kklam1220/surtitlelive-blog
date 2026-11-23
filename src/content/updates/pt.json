@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Esta atualização facilita a aceitação de convites para equipes, melhora a exibição de colaboradores no Editor e deixa mais claro o status da assinatura após o pagamento.",
+          "new": [
+            "Adicionamos à página inicial um mapa que mostra onde as equipes usam o Pockitle."
+          ],
+          "improved": [
+            "Os links de convite para equipes restauram sua sessão antes de mostrar o cadastro. Se ainda precisar verificar seu e-mail, você poderá voltar ao convite depois."
+          ],
+          "fixed": [
+            "O Editor agora exibe separadamente colaboradores com o mesmo nome, com a função correta de cada um. Rolar uma linha ativa para fora da área visível não encerra mais a edição por engano.",
+            "O pagamento da assinatura fica pendente até que o status atualizado seja confirmado, em vez de tratar o status anterior como confirmação."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

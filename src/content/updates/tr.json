@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Bu güncelleme ekip davetlerini kabul etmeyi kolaylaştırıyor, Editör’de iş birliği yapan kişilerin gösterimini iyileştiriyor ve ödeme sonrasındaki üyelik durumunu daha anlaşılır kılıyor.",
+          "new": [
+            "Ana sayfaya ekiplerin Pockitle’ı nerelerde kullandığını gösteren bir harita eklendi."
+          ],
+          "improved": [
+            "Ekip daveti bağlantıları, kayıt ekranını göstermeden önce mevcut oturumunuzu geri yükler. E-posta adresinizi henüz doğrulamadıysanız, doğrulamadan sonra davete dönebilirsiniz."
+          ],
+          "fixed": [
+            "Editör, aynı ada sahip kişileri ayrı ayrı ve her birini doğru rolüyle gösterir. Odaktaki satır kaydırılarak görünüm dışına çıktığında düzenleme artık yanlışlıkla sona ermez.",
+            "Üyelik ödemesi, güncel üyelik durumu doğrulanana kadar beklemede kalır. Önceki durum artık onay olarak kabul edilmez."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

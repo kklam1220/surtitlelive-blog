@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Esta actualización facilita la aceptación de invitaciones de equipo, mejora la forma en que el editor muestra a los colaboradores y aclara el estado de la membresía tras el pago.",
+          "new": [
+            "Se añadió a la página de inicio un mapa que muestra dónde usan Pockitle los equipos."
+          ],
+          "improved": [
+            "Los enlaces de invitación restauran tu sesión antes de mostrar el registro. Si aún debes verificar tu correo electrónico, puedes volver a la invitación después."
+          ],
+          "fixed": [
+            "El editor muestra por separado a los colaboradores con el mismo nombre y asigna a cada uno su función correcta. Al desplazar una fila activa fuera de la vista, la edición ya no termina por error.",
+            "El pago de la membresía queda pendiente hasta que se confirme el estado actualizado, en lugar de dar por válido un estado anterior."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

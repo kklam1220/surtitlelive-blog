@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Dieses Update erleichtert die Annahme von Teameinladungen, verbessert die Anzeige von Mitwirkenden im Editor und macht den Mitgliedschaftsstatus nach der Zahlung klarer.",
+          "new": [
+            "Auf der Startseite zeigt eine neue Karte, wo Teams Pockitle nutzen."
+          ],
+          "improved": [
+            "Links zu Teameinladungen stellen deine bestehende Anmeldung wieder her, bevor die Registrierung angezeigt wird. Wenn du deine E-Mail-Adresse noch bestätigen musst, kannst du danach zur Einladung zurückkehren."
+          ],
+          "fixed": [
+            "Der Editor zeigt Mitwirkende mit gleichem Namen getrennt und jeweils mit der richtigen Rolle an. Wenn du eine fokussierte Zeile aus dem sichtbaren Bereich scrollst, wird die Bearbeitung nicht mehr unbeabsichtigt beendet.",
+            "Der Zahlungsvorgang für die Mitgliedschaft bleibt ausstehend, bis der aktualisierte Status bestätigt ist. Ein älterer Status gilt nicht mehr als Bestätigung."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

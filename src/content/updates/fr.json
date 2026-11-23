@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Cette mise à jour facilite l’acceptation des invitations d’équipe, améliore l’affichage des collaborateurs dans l’éditeur et clarifie le statut de l’abonnement après le paiement.",
+          "new": [
+            "Une carte sur la page d’accueil montre où les équipes utilisent Pockitle."
+          ],
+          "improved": [
+            "Les liens d’invitation rétablissent votre session avant d’afficher l’inscription. Si vous devez encore vérifier votre adresse e-mail, vous pouvez ensuite revenir à l’invitation."
+          ],
+          "fixed": [
+            "L’éditeur affiche séparément les collaborateurs qui portent le même nom, avec le rôle de chacun. Faire défiler une ligne active hors de l’écran ne met plus fin à la modification par inadvertance.",
+            "Le paiement de l’abonnement reste en attente jusqu’à confirmation du nouveau statut, au lieu de considérer l’ancien statut comme une confirmation."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [

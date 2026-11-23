@@ -16,6 +16,28 @@
   },
   "weeks": [
     {
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-28",
+      "versions": [
+        {
+          "version": "v261122.01",
+          "releaseDate": "2026-11-23",
+          "product": "Pockitle",
+          "summary": "Pembaruan ini memudahkan penerimaan undangan tim, memperjelas tampilan kolaborator di Editor, dan memperjelas status keanggotaan setelah pembayaran.",
+          "new": [
+            "Peta baru di beranda menunjukkan lokasi tim yang menggunakan Pockitle."
+          ],
+          "improved": [
+            "Tautan undangan tim memulihkan sesi masuk yang sudah ada sebelum menampilkan pendaftaran. Jika Anda masih perlu memverifikasi email, Anda bisa kembali ke undangan setelahnya."
+          ],
+          "fixed": [
+            "Editor kini menampilkan kolaborator dengan nama yang sama secara terpisah, dengan peran yang tepat untuk masing-masing. Menggulir hingga baris aktif keluar dari tampilan tidak lagi mengakhiri penyuntingan tanpa disengaja.",
+            "Pembayaran keanggotaan tetap berstatus tertunda sampai status keanggotaan yang baru dikonfirmasi, bukan menganggap status lama sebagai konfirmasi."
+          ]
+        }
+      ]
+    },
+    {
       "startDate": "2026-11-15",
       "endDate": "2026-11-21",
       "versions": [
