@@ -12,6 +12,7 @@ const {
 } = require("./blog-i18n-utils.cjs");
 
 const MARKDOWN_LINK_PARITY_SLUGS = new Set([
+  "27-excel-subtitles-to-mac-projection-and-qlab",
   "26-one-script-one-team-pockitle-cue-editor",
   "25-pockitle-live-stenotype-input-plover",
   "7-geometry-of-dramatic-parsing",
@@ -37,6 +38,7 @@ const UNORDERED_MARKDOWN_LINK_PARITY_SLUGS = new Set([
 ]);
 
 const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
+  "27-excel-subtitles-to-mac-projection-and-qlab",
   "26-one-script-one-team-pockitle-cue-editor",
   "25-pockitle-live-stenotype-input-plover",
   "20-why-theatres-should-treat-mobile-surtitles-as-house-equipment",
@@ -47,6 +49,7 @@ const MARKDOWN_IMAGE_PARITY_SLUGS = new Set([
 ]);
 
 const MARKDOWN_IMAGE_PARITY_COUNTS = new Map([
+  ["27-excel-subtitles-to-mac-projection-and-qlab", 7],
   ["26-one-script-one-team-pockitle-cue-editor", 6],
   ["25-pockitle-live-stenotype-input-plover", 1],
   ["20-why-theatres-should-treat-mobile-surtitles-as-house-equipment", 2],

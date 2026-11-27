@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Öne çıkan noktalar",
+    "faq": "Sık sorulan sorular",
+    "glossary": "Terimler",
+    "related": "İlgili yazılar"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue; Word (.docx) analizi, tam Excel (.xlsx) içe aktarımı ve Line ID güncellemelerini tek bir Editor'da toplar.",
+    "Pockitle Cue Station, macOS'ta doğrulanmış paketi eşitleyerek üç adede kadar çevrimdışı ekranı ve çevrimiçi telefonları yönetir.",
+    "Canlı mod dışındayken Prepare cues for QLab, QLab 5 içine metin, komut dosyası ve karartma gruplarını doğrudan yerleştirir.",
+    "QLab yerinde güncellemeleri yalnızca değişen metni yeniler; adları, notları, görünümü, yönlendirmeyi ve özel zamanlamayı korur."
+  ],
+  "faq": [
+    {
+      "question": "Pockitle Cue projesine Word (.docx) ile mi yoksa Excel (.xlsx) ile mi başlamalıyım?",
+      "answer": "Çevrilmemiş bir prova metniniz varsa Word (.docx) dosyasını ana kaynak olarak yükleyip metin analizini çalıştırın; böylece karakterler, diyaloglar ve yönergeler otomatik ayrılır. Çevirmen rol tabanlı bir tablo hazırladıysa yükleme sayfasından Excel içe aktarımını kullanın."
+    },
+    {
+      "question": "Mevcut üst yazı bölümlerini bozmadan Excel üzerinden çeviri nasıl güncellenir?",
+      "answer": "Her satırda Line ID bilgisini korumak için Editor içinden .xlsx dosyası olarak dışa aktarın, Line ID sütununa dokunmadan yalnızca çeviri sütunlarını düzenleyin ve Excel'den çeviri içe aktarımıyla geri yükleyin."
+    },
+    {
+      "question": "QLab kullanmadan Mac'ten doğrudan üst yazı yansıtabilir miyim?",
+      "answer": "Evet. Gösteriyi macOS üzerindeki Pockitle Cue Station'da eşitleyin, çıkış ayarlarından en fazla üç fiziksel ekran atayın ve salon interneti kesilse bile dahili konsoldan yerel projeksiyonu sürdürün."
+    },
+    {
+      "question": "Web düzenleyicideki son dakika değişiklikleri QLab 5 baştan kurulmadan nasıl aktarılır?",
+      "answer": "Editor'da kaydedip güncellemeyi yayınlayın, Pockitle Cue Station'da eşitleyin ve canlı mod dışındayken QLab hazırlığını açın: değişen satırlar işaretlenir ve adlar, notlar ya da diğer işaretler korunarak yerinde güncellenir."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Metin analizi",
+      "definition": "Ham Word (.docx) metinlerinde karakterleri, replikleri ve sahne yönergelerini bölme ve çeviri öncesinde otomatik ayıran yapısal içe aktarım adımı."
+    },
+    {
+      "term": "Line ID ile çift yönlü güncelleme",
+      "definition": "Editor'dan sabit Line ID içeren .xlsx çalışma kitabı dışa aktarıp kaynak metne ve bölümlere dokunmadan yalnızca düzenlenmiş çevirileri geri alma yöntemi."
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "Doğrulanmış gösteri paketlerini yerelde tutarak üç adede kadar projeksiyon çıkışını süren ve QLab 5 ile bütünleşen macOS gösteri uygulaması."
+    },
+    {
+      "term": "QLab yerinde güncelleme",
+      "definition": "Mevcut bir QLab 5 dosyasında değişen üst yazı ifadelerini (canlı mod dışında) kararlı anahtarla yamarken ad, not, rota ve zamanlamayı koruyan işlem."
+    },
+    {
+      "term": "Doğrulanmış gösteri paketi",
+      "definition": "Eşitleme ile macOS'taki Pockitle Cue Station'a indirilen ve geçerli kaldığı sürece yerel projeksiyon ile QLab hazırlığını çevrimdışı sürdüren paket."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Excel, CSV veya TXT'den hızlıca QLab altyazıları nasıl oluşturulur",
+      "href": "/blog/tr/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "SurtitleLive'dan Pockitle Cue'ya: 200'den fazla gösteri sonrası neler değişti",
+      "href": "/blog/tr/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Mac için Pockitle Cue Station",
+      "href": "https://surtitlelive.com/tr/pockitle-cue-for-mac"
+    },
+    {
+      "label": "QLab için işaret hazırlama kılavuzu",
+      "href": "https://surtitlelive.com/tr/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

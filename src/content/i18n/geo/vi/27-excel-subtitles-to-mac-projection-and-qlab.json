@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "vi",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Điểm chính",
+    "faq": "Câu hỏi thường gặp",
+    "glossary": "Giải thích thuật ngữ",
+    "related": "Bài viết liên quan"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue gom phân tích Word (.docx), nhập Excel (.xlsx) toàn bộ và cập nhật theo Line ID vào chung một Editor.",
+    "Pockitle Cue Station đồng bộ gói đã xác thực lên macOS để chạy tối đa ba màn hình ngoại tuyến và điện thoại khi trực tuyến.",
+    "Ngoài chế độ trực tiếp, Prepare cues for QLab tạo nhóm QLab 5 đồng bộ gồm lệnh chữ, script nội bộ và ngắt tối tự động.",
+    "Cập nhật tại chỗ trong QLab chỉ vá câu chữ thay đổi theo khóa cố định, giữ nguyên tên, ghi chú, định tuyến và thời gian riêng."
+  ],
+  "faq": [
+    {
+      "question": "Nên bắt đầu dự án Pockitle Cue từ tệp Word (.docx) hay Excel (.xlsx)?",
+      "answer": "Nếu bạn chỉ có kịch bản tập thô chưa dịch, hãy tải tệp Word (.docx) làm nguồn chính và chạy phân tích kịch bản để tự tách nhân vật, thoại và chỉ dẫn sân khấu trước khi chia lượt và dịch trong Editor. Nếu dịch giả đã lập sẵn bảng theo vai diễn, hãy dùng tính năng nhập từ Excel."
+    },
+    {
+      "question": "Làm sao cập nhật bản dịch từ Excel mà không làm hỏng cách chia lượt phụ đề?",
+      "answer": "Xuất sổ làm việc .xlsx trực tiếp từ Editor để giữ Line ID cho mỗi dòng, chỉ chỉnh sửa các cột dịch mà không đụng tới cột Line ID, rồi đưa lại qua tính năng nhập bản dịch từ Excel."
+    },
+    {
+      "question": "Có thể trình chiếu phụ đề từ máy Mac mà không cần QLab không?",
+      "answer": "Có. Đồng bộ vở diễn trong Pockitle Cue Station trên macOS, thiết lập tối đa ba màn hình vật lý ở phần cài đặt đầu ra và điều khiển tại chỗ từ bảng điều khiển ngay cả khi mạng rạp hát bị gián đoạn."
+    },
+    {
+      "question": "Các chỉnh sửa sát giờ trong Editor web đi vào QLab 5 thế nào mà không cần dựng lại?",
+      "answer": "Lưu và gửi cập nhật từ Editor, đồng bộ trên Pockitle Cue Station rồi mở khâu chuẩn bị QLab ngoài giờ phát trực tiếp: các dòng sửa đổi được đánh dấu để vá tại chỗ mà vẫn giữ nguyên tên, ghi chú và các lệnh khác."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Phân tích kịch bản",
+      "definition": "Bước nhập có cấu trúc cho tệp Word (.docx) giúp tách người nói, lời thoại và chỉ dẫn sân khấu trước khi chia lượt và dịch."
+    },
+    {
+      "term": "Cập nhật hai chiều theo Line ID",
+      "definition": "Xuất bảng .xlsx mang Line ID ổn định từ Editor rồi nhập lại các cột dịch đã chỉnh mà không chạm tới nguyên tác hay các điểm ngắt."
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "Ứng dụng macOS cho buổi diễn giúp lưu cục bộ gói đã xác thực cho tối đa ba ngõ ra chiếu và tích hợp thẳng với QLab 5."
+    },
+    {
+      "term": "Cập nhật tại chỗ trong QLab",
+      "definition": "Vá đúng câu chữ đã đổi bên trong tệp QLab 5 đang mở (ngoài giờ phát trực tiếp) bằng khóa cố định, giữ nguyên ghi chú, luồng màn hình và thời gian."
+    },
+    {
+      "term": "Gói diễn đã xác thực",
+      "definition": "Tập dữ liệu được tải về máy Mac qua thao tác đồng bộ trên Pockitle Cue Station để duy trì trình chiếu và chuẩn bị QLab ngoại tuyến."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Cách tạo nhanh phụ đề QLab từ Excel, CSV hoặc TXT",
+      "href": "/blog/vi/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "Từ SurtitleLive đến Pockitle Cue: những thay đổi sau hơn 200 buổi diễn",
+      "href": "/blog/vi/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Pockitle Cue Station cho Mac",
+      "href": "https://surtitlelive.com/vi/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Hướng dẫn chuẩn bị lệnh cho QLab",
+      "href": "https://surtitlelive.com/vi/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

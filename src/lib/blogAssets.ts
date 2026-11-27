@@ -57,6 +57,14 @@ import blog26Approval from "../content/blog/blog-26-translation-approval.png";
 import blog26Connected from "../content/blog/blog-26-collaboration-connected.png";
 import blog26Actions from "../content/blog/blog-26-editor-actions.png";
 import blog26Discussion from "../content/blog/blog-26-line-discussion.png";
+import blog27Hero from "../content/blog/blog-27.png";
+import blog27ScriptEntryPaths from "../content/blog/blog-27-script-entry-paths.png";
+import blog27ExcelImportCheck from "../content/blog/blog-27-excel-import-check.png";
+import blog27MacShowControl from "../content/blog/blog-27-mac-show-control.png";
+import blog27CueStationConsole from "../content/blog/blog-27-cue-station-console.png";
+import blog27PrepareCuesForQlab from "../content/blog/blog-27-prepare-cues-for-qlab.png";
+import blog27QlabGroupAnatomy from "../content/blog/blog-27-qlab-group-anatomy.png";
+import blog27QlabUpdateFlow from "../content/blog/blog-27-qlab-update-flow.png";
 import accessibilityCaptionEditor from "../assets/product-updates/v260923-01-accessibility-caption-editor.png";
 
 const BLOG_IMAGES: Record<string, ImageMetadata> = {
@@ -115,6 +123,14 @@ const BLOG_IMAGES: Record<string, ImageMetadata> = {
   "blog-26-collaboration-connected.png": blog26Connected,
   "blog-26-editor-actions.png": blog26Actions,
   "blog-26-line-discussion.png": blog26Discussion,
+  "blog-27.png": blog27Hero,
+  "blog-27-script-entry-paths.png": blog27ScriptEntryPaths,
+  "blog-27-excel-import-check.png": blog27ExcelImportCheck,
+  "blog-27-mac-show-control.png": blog27MacShowControl,
+  "blog-27-cue-station-console.png": blog27CueStationConsole,
+  "blog-27-prepare-cues-for-qlab.png": blog27PrepareCuesForQlab,
+  "blog-27-qlab-group-anatomy.png": blog27QlabGroupAnatomy,
+  "blog-27-qlab-update-flow.png": blog27QlabUpdateFlow,
   "favicon-192.png": favicon192,
   "script-parsing-theatre-subtitles.png": scriptParsingTheatreSubtitles,
   "v260923-01-accessibility-caption-editor.png": accessibilityCaptionEditor,

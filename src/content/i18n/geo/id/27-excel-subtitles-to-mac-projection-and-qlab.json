@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "id",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Intisari",
+    "faq": "Pertanyaan umum",
+    "glossary": "Istilah penting",
+    "related": "Bacaan terkait"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue menyatukan analisis Word (.docx), impor Excel (.xlsx) penuh, dan pembaruan via Line ID dalam satu Editor.",
+    "Pockitle Cue Station menyinkronkan paket terverifikasi ke macOS untuk menjalankan hingga tiga layar lokal luring dan ponsel saat daring.",
+    "Di luar mode langsung, Prepare cues for QLab membuat grup QLab 5 berisi teks, skrip lokal, dan jeda gelap otomatis.",
+    "Pembaruan di tempat di QLab hanya menambal redaksi yang berubah dengan mempertahankan nama, catatan, gaya, rute, dan pewaktuan."
+  ],
+  "faq": [
+    {
+      "question": "Sebaiknya proyek Pockitle Cue dimulai dari berkas Word (.docx) atau Excel (.xlsx)?",
+      "answer": "Jika Anda memiliki naskah latihan mentah tanpa terjemahan, unggah berkas Word (.docx) sebagai sumber utama dan jalankan analisis naskah untuk memisahkan tokoh, dialog, dan petunjuk panggung sebelum membagi serta menerjemahkan di Editor. Jika penerjemah sudah menyiapkan tabel berbasis peran, pilih impor dari Excel."
+    },
+    {
+      "question": "Bagaimana memperbarui terjemahan dari Excel tanpa merusak pemotongan baris?",
+      "answer": "Ekspor proyek sebagai buku kerja .xlsx langsung dari Editor agar tiap baris menyimpan Line ID, ubah kolom terjemahan saja tanpa menyentuh kolom Line ID, lalu impor kembali lewat fitur impor terjemahan."
+    },
+    {
+      "question": "Bisakah saya memproyeksikan takarir dari Mac tanpa memakai QLab?",
+      "answer": "Ya. Sinkronkan pertunjukan di Pockitle Cue Station untuk macOS, tetapkan hingga tiga layar fisik di pengaturan keluaran, dan kendalikan proyeksi secara lokal melalui konsol bawaan meski internet gedung terputus."
+    },
+    {
+      "question": "Bagaimana perubahan terakhir di Editor web masuk ke QLab 5 tanpa menyusun ulang?",
+      "answer": "Simpan dan kirim pembaruan dari Editor, sinkronkan di Pockitle Cue Station, lalu buka persiapan QLab saat di luar mode langsung: baris yang berubah akan ditandai dan ditambal di tempatnya tanpa menghapus nama, catatan, atau isyarat lain."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Analisis naskah",
+      "definition": "Langkah impor terstruktur untuk berkas Word (.docx) guna memisahkan nama penutur, dialog, dan petunjuk laku sebelum pemotongan takarir dan penerjemahan."
+    },
+    {
+      "term": "Pembaruan bolak-balik Line ID",
+      "definition": "Mengekspor berkas .xlsx dengan Line ID stabil dari Editor dan mengimpor balik perbaikan terjemahan tanpa mengubah teks asli maupun pemotongan baris."
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "Aplikasi pendamping macOS saat pementasan yang menyimpan paket terverifikasi secara lokal untuk hingga tiga proyektor serta terhubung ke QLab 5."
+    },
+    {
+      "term": "Pembaruan di tempat QLab",
+      "definition": "Menambal teks yang direvisi pada berkas QLab 5 terbuka (di luar mode langsung) memakai kunci stabil sembari menjaga catatan, rute layar, dan waktu."
+    },
+    {
+      "term": "Paket pertunjukan terverifikasi",
+      "definition": "Kumpulan data lokal yang diunduh ke Pockitle Cue Station melalui sinkronisasi agar proyeksi lokal dan persiapan QLab tetap berjalan saat luring."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Cara cepat membuat subtitel QLab dari Excel, CSV, atau TXT",
+      "href": "/blog/id/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "Dari SurtitleLive ke Pockitle Cue: perubahan setelah 200+ pertunjukan",
+      "href": "/blog/id/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Pockitle Cue Station untuk Mac",
+      "href": "https://surtitlelive.com/id/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Panduan menyiapkan isyarat untuk QLab",
+      "href": "https://surtitlelive.com/id/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

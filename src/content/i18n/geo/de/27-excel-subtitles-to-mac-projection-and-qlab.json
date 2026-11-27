@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "de",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Das Wichtigste auf einen Blick",
+    "faq": "Häufige Fragen",
+    "glossary": "Begriffe erklärt",
+    "related": "Weiterlesen"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue bündelt Word-Analyse (.docx), Excel-Vollimport (.xlsx) und Line-ID-Updates in einem gemeinsamen Editor.",
+    "Pockitle Cue Station synchronisiert verifizierte Show-Pakete auf macOS für bis zu drei lokale Projektionsfenster offline sowie Mobilgeräte online.",
+    "Außerhalb von Live überträgt Prepare cues for QLab markierte Zeilen per Drag-and-drop oder Senden als koordinierte Gruppen nach QLab 5.",
+    "Bestandsupdates in QLab patchen über stabile Schlüssel nur geänderte Texte und bewahren Namen, Notizen, Routing und eigenes Timing."
+  ],
+  "faq": [
+    {
+      "question": "Sollte ein Pockitle-Cue-Projekt mit Word (.docx) oder Excel (.xlsx) starten?",
+      "answer": "Liegt ein unübersetztes Probenskript vor, laden Sie die Word-Datei (.docx) als Hauptquelle hoch und trennen mit der Skriptanalyse zunächst Rollen, Dialoge und Regieanweisungen automatisch. Existiert bereits eine rollenbasierte Übersetzungstabelle, wählen Sie auf der Upload-Seite den Excel-Import."
+    },
+    {
+      "question": "Wie lassen sich Excel-Übersetzungen aktualisieren, ohne Zeilenschnitte zu zerstören?",
+      "answer": "Exportieren Sie das aktuelle Projekt aus dem Editor als .xlsx-Arbeitsmappe inklusive Line ID, ändern Sie bei unveränderter Line-ID-Spalte nur die Übersetzungsspalten und spielen Sie die Datei über den Übersetzungsimport aus Excel wieder ein."
+    },
+    {
+      "question": "Kann ein Mac Bühnenübertitel auch ohne QLab projizieren?",
+      "answer": "Ja. Synchronisieren Sie die Show in Pockitle Cue Station unter macOS, weisen Sie in den Ausgabeeinstellungen bis zu drei physische Monitore oder Projektoren zu und steuern Sie die lokale Projektion unabhängig von einer Internetverbindung über die Konsole."
+    },
+    {
+      "question": "Wie gelangen späte Textkorrekturen aus dem Editor ohne Neuaufbau in QLab 5?",
+      "answer": "Speichern Sie die Änderung im Web-Editor über Live aktualisieren, synchronisieren Sie in Pockitle Cue Station und öffnen Sie außerhalb von Live die QLab-Vorbereitung. Geänderte Zeilen erscheinen dort zur Aktualisierung und werden an Ort und Stelle eingepflegt."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Skriptanalyse",
+      "definition": "Strukturierte Erkennung für rohe Word-Skripte (.docx), die Sprechende, Dialoge und Regieanweisungen vor dem Satzschnitt und der Übersetzung trennt."
+    },
+    {
+      "term": "Line-ID-Rücklauf",
+      "definition": "Export einer .xlsx-Datei mit stabilen Zeilenkennungen aus dem Editor, um korrigierte Übersetzungen ohne Eingriff in Ausgangstext und Einsatzschnitte zurückzulesen."
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "Die macOS-Anwendung für die Vorstellung, die geprüfte Show-Pakete lokal für bis zu drei Projektionsausgänge bereithält und QLab 5 direkt anbindet."
+    },
+    {
+      "term": "Bestandsupdate in QLab",
+      "definition": "Gezielte Textaktualisierung in einem offenen QLab-5-Projekt außerhalb von Live über stabile Einsatzschlüssel bei vollem Erhalt von Notizen, Design und Timing."
+    },
+    {
+      "term": "Verifiziertes Show-Paket",
+      "definition": "Per Synchronisation lokal auf den Vorstellungs-Mac geladener Datensatz, mit dem Projektion und QLab-Vorbereitung auch offline weiterlaufen."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "QLab-Untertitel schnell aus Excel, CSV oder TXT erstellen",
+      "href": "/blog/de/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "Von SurtitleLive zu Pockitle Cue: Was sich nach über 200 Einsätzen geändert hat",
+      "href": "/blog/de/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Pockitle Cue Station für Mac",
+      "href": "https://surtitlelive.com/de/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Handbuch: Einsätze für QLab vorbereiten",
+      "href": "https://surtitlelive.com/de/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

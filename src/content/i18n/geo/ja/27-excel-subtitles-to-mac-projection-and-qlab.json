@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "この記事の要点",
+    "faq": "よくある質問",
+    "glossary": "用語解説",
+    "related": "関連記事"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue は Word（.docx）台本解析、Excel（.xlsx）一括取り込み、Line ID による訳文更新を一つの Editor に統合します。",
+    "Pockitle Cue Station は検証済みショーパッケージを Mac に同期し、オフラインで最大 3 画面投影とオンライン時のスマホ連携を行います。",
+    "非本番中に QLab 準備画面からドラッグまたは送信するだけで、Text・Script・自動消灯を含む QLab 5 グループを生成できます。",
+    "安定した識別キーによる QLab 上書き更新は、キュー名・メモ・見た目・ルーティング・独自タイミングを維持したまま文面だけを差し替えます。"
+  ],
+  "faq": [
+    {
+      "question": "Pockitle Cue のプロジェクトは Word（.docx）と Excel（.xlsx）のどちらから始めるべきですか？",
+      "answer": "まだ翻訳も字幕分割もしていない稽古台本がある場合は、Word（.docx）を主データとしてアップロードし台本解析を実行してから Editor で分割・翻訳するのが最適です。翻訳者が作成した役割別の表がある場合は、アップロード画面から Excel 取り込みを利用してください。"
+    },
+    {
+      "question": "既存の字幕分割を壊さずに Excel で翻訳だけを修正できますか？",
+      "answer": "はい。Editor から各行の Line ID を含む Excel（.xlsx）を書き出し、Line ID 列を変えずに翻訳列だけを編集したうえで翻訳取り込み機能を使うと、原文や順序、字幕分割を保ったまま訳文だけを更新できます。"
+    },
+    {
+      "question": "QLab を使わずに Mac から直接字幕を投影することはできますか？",
+      "answer": "可能です。macOS 版 Pockitle Cue Station にショーを同期し、出力設定で最大 3 台の外部ディスプレイを割り当てれば、会場インターネットが途切れても内蔵コンソールから直接ローカル投影を行えます。"
+    },
+    {
+      "question": "開演前に Web Editor でせりふを直した場合、QLab 5 を作り直さずに更新できますか？",
+      "answer": "Editor で変更を保存してライブ更新を送信したあと、Pockitle Cue Station で更新を同期・適用します。本番状態以外のときに QLab 準備画面を開くと変更行に更新要の表示が出るため、そのまま該当箇所の文面だけを安全に差し替えられます。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "台本解析（Analyze script）",
+      "definition": "未加工の Word（.docx）台本から役名・せりふ・ト書きを自動抽出し、字幕分割や翻訳に進める構造化インポート機能です。"
+    },
+    {
+      "term": "Line ID ラウンドトリップ更新",
+      "definition": "Editor から安定した Line ID 付きの Excel（.xlsx）を出力し、編集後の訳文列だけを取り込み直して原文やキュー構成を維持する手順です。"
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "検証済みショーパッケージを Mac 本体に保存し、最大 3 系統のローカル投影と QLab 5 連携を担う macOS 用コンパニオンアプリです。"
+    },
+    {
+      "term": "QLab 差分パッチ更新",
+      "definition": "非本番時に安定した識別キーを用いて QLab 5 上の既存キュー文面だけを更新し、キュー名・メモ・配線・独自タイミングを保護する処理です。"
+    },
+    {
+      "term": "検証済みショーパッケージ",
+      "definition": "Pockitle Cue Station の同期操作により Mac へダウンロードされ、有効期間中はローカル投影と QLab 準備のオフライン動作を支えるデータ群です。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Excel・CSV・TXT から QLab 字幕を素早く作る方法",
+      "href": "/blog/ja/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "SurtitleLive から Pockitle Cue へ：200 以上の現場を経て",
+      "href": "/blog/ja/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Mac 版 Pockitle Cue Station",
+      "href": "https://surtitlelive.com/ja/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Prepare cues for QLab 操作ガイド",
+      "href": "https://surtitlelive.com/ja/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "pt",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "Principais pontos",
+    "faq": "Perguntas frequentes",
+    "glossary": "Glossário",
+    "related": "Leia também"
+  },
+  "keyTakeaways": [
+    "O Pockitle Cue reúne análise de Word (.docx), importação total de Excel (.xlsx) e atualizações por Line ID no mesmo Editor.",
+    "O Pockitle Cue Station sincroniza um pacote verificado no macOS para operar até três janelas offline e celulares com internet.",
+    "Fora da execução ao vivo, Prepare cues for QLab cria grupos no QLab 5 com deixas de texto, script local e apagões automáticos.",
+    "Atualizações no local no QLab corrigem apenas falas modificadas preservando nomes, notas, estilo, roteamento e tempos próprios."
+  ],
+  "faq": [
+    {
+      "question": "Devo iniciar um projeto do Pockitle Cue por Word (.docx) ou Excel (.xlsx)?",
+      "answer": "Se houver apenas um texto de ensaio sem tradução, envie o arquivo Word (.docx) como fonte principal e use a análise de texto para separar personagens, falas e rubricas antes de segmentar e traduzir no Editor. Se já existir uma planilha por personagem, utilize a importação do Excel."
+    },
+    {
+      "question": "Como atualizar traduções no Excel sem quebrar os cortes já preparados?",
+      "answer": "Exporte o arquivo .xlsx diretamente pelo Editor para manter o Line ID em cada linha, altere apenas as colunas traduzidas preservando o Line ID e reimporte via Importar traduções do Excel para atualizar só o texto."
+    },
+    {
+      "question": "Posso projetar legendas pelo Mac sem utilizar o QLab?",
+      "answer": "Sim. Sincronize a montagem no Pockitle Cue Station no macOS, configure até três telas físicas nas configurações de saída e conduza a exibição localmente pelo console mesmo se a internet cair."
+    },
+    {
+      "question": "Como levar revisões tardias do Editor web ao QLab 5 sem refazer as deixas?",
+      "answer": "Salve e envie a atualização no Editor web, sincronize no Pockitle Cue Station e abra a preparação de QLab fora do modo ao vivo: as falas alteradas são sinalizadas e aplicadas no lugar sem afetar nomes, notas ou demais deixas."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Análise de texto",
+      "definition": "Etapa estruturada para arquivos Word (.docx) que separa personagens, falas e rubricas antes da divisão em legendas e tradução."
+    },
+    {
+      "term": "Ida e volta por Line ID",
+      "definition": "Fluxo que exporta um arquivo .xlsx com Line IDs estáveis do Editor e reimporta correções traduzidas sem mexer no texto original nem nos cortes."
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "Aplicativo macOS de espetáculo que guarda localmente pacotes verificados para até três telas de projeção e integração com o QLab 5."
+    },
+    {
+      "term": "Atualização no local no QLab",
+      "definition": "Correção pontual de textos alterados em um projeto QLab 5 existente (fora do modo ao vivo) usando chave estável e preservando notas, rotas e tempos."
+    },
+    {
+      "term": "Pacote verificado de espetáculo",
+      "definition": "Conjunto baixado no Mac via sincronização no Pockitle Cue Station que mantém projeção local e preparo de QLab operando sem conexão."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Como fazer legendas no QLab rápido com Excel, CSV ou TXT",
+      "href": "/blog/pt/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "Do SurtitleLive ao Pockitle Cue: o que mudou após mais de 200 espetáculos",
+      "href": "/blog/pt/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Pockitle Cue Station para Mac",
+      "href": "https://surtitlelive.com/pt/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Guia para preparar deixas no QLab",
+      "href": "https://surtitlelive.com/pt/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}

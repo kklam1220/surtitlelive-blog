@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "locale": "zh-TW",
+  "slug": "27-excel-subtitles-to-mac-projection-and-qlab",
+  "sourceHash": "a53c69a8ba1106203db357e30ad251daa3b4e8226bf3eb11ca9f44a453b07326",
+  "generatedAt": "2026-11-27T13:25:00.000Z",
+  "sectionTitles": {
+    "keyTakeaways": "重點整理",
+    "faq": "常見問題",
+    "glossary": "詞彙說明",
+    "related": "延伸閱讀"
+  },
+  "keyTakeaways": [
+    "Pockitle Cue 將 Word（.docx）劇本分析、Excel（.xlsx）整份匯入與依 Line ID 回合更新全部匯入同一個編輯器。",
+    "Pockitle Cue Station 可同步已驗證封包至 macOS，離線驅動最多三組本地投影視窗，並在連網時同步觀眾手機。",
+    "非演出狀態下於 Prepare cues for QLab 拖曳或傳送字幕，即可在 QLab 5 建立含文字、腳本與自動暗場的提示群組。",
+    "透過穩定提示索引鍵進行 QLab 原位更新，可替換修改台詞並保留提示名稱、備註、樣式、輸出路由與自訂時序。"
+  ],
+  "faq": [
+    {
+      "question": "應該從 Word（.docx）還是 Excel（.xlsx）開始建立 Pockitle Cue 專案？",
+      "answer": "如果手上只有尚未翻譯的排練劇本，建議將 Word（.docx）作為主要來源上傳並執行劇本分析，自動拆解角色、對白與舞台指示後再進編輯器分段翻譯；若譯者已整理好角色優先試算表，則可直接使用專案上傳頁的 Excel 匯入功能。"
+    },
+    {
+      "question": "如何在不破壞既有字幕分段的情況下透過 Excel 更新譯文？",
+      "answer": "先從 Pockitle Cue Editor 匯出含每一列 Line ID 的 .xlsx 活頁簿，僅修改譯文欄位並保持 Line ID 不變，再經由編輯器的 Excel 譯文匯入功能進行差異預覽與原位更新，原文與字幕順序都會完整保留。"
+    },
+    {
+      "question": "不使用 QLab，可以直接用 Mac 投影字幕嗎？",
+      "answer": "可以。在 macOS 的 Pockitle Cue Station 同步節目後，於輸出設定中配置最多三組實體顯示視窗即可直接以本地控制台操作演出，即使場館網路中斷仍能持續投影。"
+    },
+    {
+      "question": "開演前在網頁編輯器改了台詞，如何更新至 QLab 5 而不必重建提示清單？",
+      "answer": "在編輯器保存修改並提交更新現場版，接著於 Pockitle Cue Station 同步或套用新版。在非演出狀態下開啟 QLab 提示準備畫面，曾修改的列會顯示需要更新，點選原位更新即可依穩定索引鍵替換台詞而不影響名稱、備註或無關提示。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "劇本分析（Analyze script）",
+      "definition": "針對 Word（.docx）原始劇本執行的結構化分析步驟，能在切分字幕與翻譯前自動區分角色、對白與舞台指示。"
+    },
+    {
+      "term": "Line ID 回合更新",
+      "definition": "從編輯器匯出附有穩定 Line ID 的 .xlsx 試算表交由人工潤飾後，再透過譯文匯入功能原位比對更新，不影響原文與分段。"
+    },
+    {
+      "term": "Pockitle Cue Station",
+      "definition": "專為演出當晚設計的 macOS 應用，可將已驗證的字幕封包儲存在本機進行最多三螢幕投影，並與 QLab 5 無縫整合。"
+    },
+    {
+      "term": "QLab 原位更新",
+      "definition": "在非演出狀態下依穩定提示索引鍵修補既有 QLab 5 工作區內的字幕文字，同時完整保留提示名稱、備註、路由與自訂時序。"
+    },
+    {
+      "term": "已驗證演出封包",
+      "definition": "於 Pockitle Cue Station 執行同步後儲存在演出 Mac 本機的節目封包，確保本地投影與 QLab 準備在有效期間可離線進行。"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "如何從 Excel、CSV 或 TXT 快速製作 QLab 字幕",
+      "href": "/blog/zh-TW/13-quick-qlab-subtitles-from-excel-txt/"
+    },
+    {
+      "label": "從 SurtitleLive 到 Pockitle Cue：兩百餘場演出後的演進",
+      "href": "/blog/zh-TW/23-surtitlelive-becomes-pockitle-cue/"
+    },
+    {
+      "label": "Pockitle Cue Station for Mac",
+      "href": "https://surtitlelive.com/zh-TW/pockitle-cue-for-mac"
+    },
+    {
+      "label": "Prepare cues for QLab 使用指南",
+      "href": "https://surtitlelive.com/zh-TW/guides?tab=projector-companion&topic=qlab"
+    }
+  ]
+}
