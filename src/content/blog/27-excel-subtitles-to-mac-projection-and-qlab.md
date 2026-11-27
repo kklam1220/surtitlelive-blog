@@ -27,7 +27,14 @@ Not every show arrives at the same stage of readiness. Pockitle Cue handles thre
 
 When you only have an untranslated rehearsal script, keep the original Word **`.docx`** file as your primary source. Upload it to your project and run **Analyze script** so the system can separate speaker names, dialogue, and stage directions automatically. Inside **Pockitle Cue Editor**, you can then split long speeches into readable cues, translate them with context-aware AI, or export an **`.xlsx`** copy for a human translator.
 
-When a translator has already built a spreadsheet, use **Import from Excel** on the project upload page. Pockitle Cue expects one row per line under a header row—with **Column A** for the character name (left blank for stage directions), **Column B** for source text, and **Columns C onward** for one translation language each—and recognizes older line-type templates as well. You check the file, confirm each column's language, and review a sample preview before confirming replacement. By default, **Protect imported translations** stays turned on so later AI passes do not overwrite approved human wording, and an optional **Check script with AI** pass can attach review notes without rewriting your lines.
+When a translator has already built a spreadsheet, use **Import from Excel** on the project upload page (or select **Download the Excel template** there to start from an example workbook). Pockitle Cue expects plain cells with no merged cells and one row per line under a header row—with **Column A** for the character name (left blank for stage directions), **Column B** for source text, and **Columns C onward** for one translation language each—and recognizes older line-type templates as well:
+
+| Role (Column A) | Source (en) (Column B) | Translation (ja) (Column C) | Translation (zh-Hant) (Column D) |
+| --- | --- | --- | --- |
+| *(leave blank for stage direction)* | `A quiet garden at dawn.` | `夜明けの静かな庭。` | `黎明時分，寧靜的花園。` |
+| `ALICE` | `Is anyone there?` | `誰かいるの？` | `有人在嗎？` |
+
+You check the file, confirm each column's language, and review a sample preview before confirming replacement. By default, **Protect imported translations** stays turned on so later AI passes do not overwrite approved human wording, and an optional **Check script with AI** pass can attach review notes without rewriting your lines.
 
 ![Checked Excel preview inside Pockitle Cue showing column summary, sample rows, and translation protection.](./blog-27-excel-import-check.png)
 
