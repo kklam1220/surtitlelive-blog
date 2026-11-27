@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Pembaruan ini meningkatkan pembaruan subtitel langsung, pemulihan sesi, undangan tim, dan analisis naskah.",
+          "new": [],
+          "improved": [
+            "Pembaruan subtitel langsung menggunakan alur aktivasi baru. Operator dapat meninjau pembaruan sebelum menerapkannya, sementara subtitel saat ini tetap tersedia selama persiapan.",
+            "Penonton dapat memulihkan sesi dengan lebih andal ketika sesi langsung yang dilindungi kata sandi dimulai ulang.",
+            "Undangan tim yang tertunda kini menunjukkan siapa pengirimnya jika informasi tersebut tersedia.",
+            "Analisis naskah menangani karakter huruf kapital kecil tertentu dalam dokumen Word impor dengan lebih baik dan mempertahankan penanda pembicara yang telah dikonfirmasi sebagai batas dialog."
+          ],
+          "fixed": [
+            "Memperbaiki kasus ketika Editor dapat melaporkan kesalahan saat memeriksa naskah yang belum siap untuk dianalisis."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Esta actualización mejora las actualizaciones de subtítulos en directo, la recuperación de sesiones, las invitaciones de equipo y el análisis de guiones.",
+          "new": [],
+          "improved": [
+            "Las actualizaciones de subtítulos en directo usan un nuevo proceso de activación. El operador puede revisar una actualización antes de aplicarla, mientras los subtítulos actuales siguen disponibles durante la preparación.",
+            "Los espectadores pueden recuperar la sesión con mayor fiabilidad cuando se reinicia una sesión en directo protegida con contraseña.",
+            "Las invitaciones de equipo pendientes ahora muestran quién las envió cuando esa información está disponible.",
+            "El análisis de guiones gestiona mejor ciertos caracteres en versalitas de documentos Word importados y conserva las indicaciones de personaje confirmadas como límites del diálogo."
+          ],
+          "fixed": [
+            "Se corrigió un caso en el que el editor podía mostrar un error al comprobar un guion que aún no estaba listo para el análisis."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

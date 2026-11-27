@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Questo aggiornamento migliora gli aggiornamenti dei sottotitoli in diretta, il ripristino delle sessioni, gli inviti ai team e l’analisi dei copioni.",
+          "new": [],
+          "improved": [
+            "Gli aggiornamenti dei sottotitoli in diretta usano un nuovo processo di attivazione. Gli operatori possono esaminare un aggiornamento prima di applicarlo, mentre i sottotitoli attuali restano disponibili durante la preparazione.",
+            "Gli spettatori possono recuperare la sessione in modo più affidabile quando viene riavviata una sessione in diretta protetta da password.",
+            "Gli inviti ai team in sospeso ora mostrano chi li ha inviati, quando l’informazione è disponibile.",
+            "L’analisi dei copioni gestisce meglio alcuni caratteri in maiuscoletto nei documenti Word importati e mantiene le indicazioni di personaggio confermate come confini del dialogo."
+          ],
+          "fixed": [
+            "Risolto un caso in cui l’Editor poteva segnalare un errore durante il controllo di un copione non ancora pronto per l’analisi."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

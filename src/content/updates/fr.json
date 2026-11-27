@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Cette mise à jour améliore les mises à jour des surtitres en direct, la reprise des sessions, les invitations d’équipe et l’analyse des scripts.",
+          "new": [],
+          "improved": [
+            "Les mises à jour des surtitres en direct utilisent un nouveau processus d’activation. Les opérateurs peuvent examiner une mise à jour avant de l’appliquer, tandis que les surtitres actuels restent disponibles pendant la préparation.",
+            "Les spectateurs peuvent reprendre plus fiablement une session en direct protégée par mot de passe après son redémarrage.",
+            "Les invitations d’équipe en attente indiquent désormais leur expéditeur lorsque cette information est disponible.",
+            "L’analyse des scripts traite mieux certains caractères en petites capitales des documents Word importés et conserve les indications de personnage confirmées comme limites de dialogue."
+          ],
+          "fixed": [
+            "Correction d’un cas où l’éditeur pouvait signaler une erreur lors de la vérification d’un script qui n’était pas encore prêt pour l’analyse."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

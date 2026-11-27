@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Ta aktualizacja usprawnia aktualizowanie napisów na żywo, przywracanie sesji, zaproszenia do zespołu i analizę skryptów.",
+          "new": [],
+          "improved": [
+            "Aktualizacje napisów na żywo korzystają z nowego procesu aktywacji. Operator może przejrzeć aktualizację przed jej zastosowaniem, a dotychczasowe napisy pozostają dostępne podczas przygotowania.",
+            "Widzowie mogą niezawodniej odzyskać dostęp po ponownym uruchomieniu sesji na żywo chronionej hasłem.",
+            "Oczekujące zaproszenia do zespołu pokazują teraz nadawcę, jeśli te informacje są dostępne.",
+            "Analiza skryptów lepiej obsługuje niektóre kapitaliki w importowanych dokumentach Word i zachowuje potwierdzone oznaczenia postaci jako granice dialogów."
+          ],
+          "fixed": [
+            "Naprawiono przypadek, w którym Edytor mógł zgłosić błąd podczas sprawdzania skryptu, który nie był jeszcze gotowy do analizy."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

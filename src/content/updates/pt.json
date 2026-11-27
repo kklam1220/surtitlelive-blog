@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Esta atualização melhora as atualizações de legendas ao vivo, a recuperação de sessões, os convites para equipes e a análise de roteiros.",
+          "new": [],
+          "improved": [
+            "As atualizações de legendas ao vivo usam um novo fluxo de ativação. Os operadores podem revisar uma atualização antes de aplicá-la, enquanto as legendas atuais continuam disponíveis durante a preparação.",
+            "Os espectadores podem recuperar a sessão com mais confiabilidade quando uma sessão ao vivo protegida por senha é reiniciada.",
+            "Os convites pendentes para equipes agora mostram quem os enviou quando essa informação está disponível.",
+            "A análise de roteiros lida melhor com certos caracteres em versalete em documentos Word importados e preserva as indicações confirmadas de personagem como limites do diálogo."
+          ],
+          "fixed": [
+            "Corrigimos um caso em que o Editor podia apresentar um erro ao verificar um roteiro que ainda não estava pronto para análise."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

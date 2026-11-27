@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "This update improves live subtitle updates, session recovery, team invitations, and script analysis.",
+          "new": [],
+          "improved": [
+            "Live subtitle updates use a new activation flow. Operators can review an update before applying it, while the current subtitles remain available during preparation.",
+            "Viewers can recover more reliably when a password-protected live session is restarted.",
+            "Pending team invitations now show who sent them when that information is available.",
+            "Script analysis better handles certain small-capital characters in imported Word documents and preserves confirmed speaker cues as dialogue boundaries."
+          ],
+          "fixed": [
+            "Fixed a case where the Editor could report an error while checking a script that was not yet ready for analysis."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

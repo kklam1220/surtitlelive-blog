@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Bu güncelleme canlı altyazı güncellemelerini, oturum kurtarmayı, ekip davetlerini ve metin analizini iyileştiriyor.",
+          "new": [],
+          "improved": [
+            "Canlı altyazı güncellemeleri yeni bir etkinleştirme akışı kullanır. Operatörler güncellemeyi uygulamadan önce inceleyebilir; hazırlık sırasında mevcut altyazılar kullanılabilir kalır.",
+            "İzleyiciler, parola korumalı bir canlı oturum yeniden başlatıldığında oturumu daha güvenilir biçimde kurtarabilir.",
+            "Bekleyen ekip davetleri, bilgi mevcut olduğunda daveti kimin gönderdiğini gösterir.",
+            "Metin analizi, içe aktarılan Word belgelerindeki bazı küçük büyük harfleri daha iyi işler ve doğrulanmış konuşmacı işaretlerini diyalog sınırları olarak korur."
+          ],
+          "fixed": [
+            "Editörün henüz analize hazır olmayan bir metni kontrol ederken hata bildirebildiği bir durum düzeltildi."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

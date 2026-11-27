@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Dieses Update verbessert Live-Untertitelaktualisierungen, die Wiederherstellung von Sitzungen, Teameinladungen und die Skriptanalyse.",
+          "new": [],
+          "improved": [
+            "Live-Untertitel verwenden einen neuen Aktivierungsablauf. Bedienende können ein Update vor dem Anwenden prüfen; während der Vorbereitung bleiben die aktuellen Untertitel verfügbar.",
+            "Zuschauende können eine passwortgeschützte Live-Sitzung nach einem Neustart zuverlässiger wiederherstellen.",
+            "Ausstehende Teameinladungen zeigen jetzt an, wer sie gesendet hat, sofern diese Information verfügbar ist.",
+            "Die Skriptanalyse verarbeitet bestimmte Kapitälchen in importierten Word-Dokumenten besser und bewahrt bestätigte Sprecherangaben als Dialoggrenzen."
+          ],
+          "fixed": [
+            "Ein Fehler wurde behoben, bei dem der Editor beim Prüfen eines noch nicht analysierbaren Skripts eine Fehlermeldung anzeigen konnte."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",

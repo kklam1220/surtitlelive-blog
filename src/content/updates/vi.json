@@ -20,6 +20,22 @@
       "endDate": "2026-11-28",
       "versions": [
         {
+          "version": "v261127.01",
+          "releaseDate": "2026-11-27",
+          "product": "Pockitle",
+          "summary": "Bản cập nhật này cải thiện việc cập nhật phụ đề trực tiếp, khôi phục phiên, lời mời vào nhóm và phân tích kịch bản.",
+          "new": [],
+          "improved": [
+            "Các bản cập nhật phụ đề trực tiếp sử dụng quy trình kích hoạt mới. Người vận hành có thể xem lại bản cập nhật trước khi áp dụng, trong khi phụ đề hiện tại vẫn sử dụng được trong lúc chuẩn bị.",
+            "Khán giả có thể khôi phục phiên đáng tin cậy hơn khi phiên trực tiếp được bảo vệ bằng mật khẩu khởi động lại.",
+            "Lời mời vào nhóm đang chờ giờ hiển thị người gửi khi có thông tin đó.",
+            "Phân tích kịch bản xử lý tốt hơn một số ký tự chữ hoa cỡ nhỏ trong tài liệu Word được nhập và giữ các dấu hiệu người nói đã xác nhận làm ranh giới hội thoại."
+          ],
+          "fixed": [
+            "Đã sửa trường hợp trình biên tập có thể báo lỗi khi kiểm tra một kịch bản chưa sẵn sàng để phân tích."
+          ]
+        },
+        {
           "version": "v261122.01",
           "releaseDate": "2026-11-23",
           "product": "Pockitle",
