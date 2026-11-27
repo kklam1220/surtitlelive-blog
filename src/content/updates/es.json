@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Esta actualización mejora la colaboración en Editor y los flujos de trabajo con guiones, refuerza la recuperación de funciones en directo y renueva la vista previa teatral de la página de inicio.",
-          "new": [
-            "Se añadieron el polaco y el ucraniano a las páginas públicas traducidas."
-          ],
+          "new": [],
           "improved": [
             "La plantilla de Excel y el flujo de importación de guiones traducidos ahora admiten formatos actuales y anteriores y conservan los roles, las acotaciones, las traducciones y los detalles de las líneas.",
             "Se mejoraron la colaboración y la recuperación en Editor, incluidos los bloqueos de línea, las interrupciones de conexión, el cambio entre guiones y la sincronización de traducciones.",
             "El análisis de guiones distingue mejor las acotaciones del diálogo y gestiona mejor las referencias a intérpretes.",
             "Se actualizó el simulador teatral de la página de inicio con un auditorio, escenario, intérpretes, iluminación y un teléfono para el público más detallados.",
-            "Se mejoró la recuperación de Shows en directo cuando entran en conflicto varios cambios de configuración, conservando la duración revisada."
+            "Se mejoró la recuperación de Shows en directo cuando entran en conflicto varios cambios de configuración, conservando la duración revisada.",
+            "Se amplió la compatibilidad con la indexación en buscadores de las páginas públicas existentes en polaco y ucraniano.",
+            "El análisis de guiones ahora contrasta los nombres de los personajes con el guion y marca las atribuciones dudosas para su revisión."
           ],
           "fixed": [
-            "Se corrigieron casos en Editor en los que la protección de traducciones podía finalizar antes de tiempo, el trabajo podía interferir entre guiones o el arrastre podía usar una posición de línea obsoleta."
+            "Se corrigieron casos en Editor en los que la protección de traducciones podía finalizar antes de tiempo, el trabajo podía interferir entre guiones o el arrastre podía usar una posición de línea obsoleta.",
+            "Se corrigieron casos en los que las traducciones completadas podían mantener Editor bloqueado o volver a bloquearlo después de nuevas ediciones.",
+            "Se aclararon las indicaciones de recuperación cuando Update Live queda bloqueado por cambios sin guardar, filas protegidas o una sesión de edición caducada."
           ]
         },
         {

@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Ta aktualizacja usprawnia współpracę w Editorze i pracę ze scenariuszami, poprawia odzyskiwanie transmisji na żywo oraz odświeża teatralny podgląd na stronie głównej.",
-          "new": [
-            "Polski i ukraiński są teraz dostępne na zlokalizowanych stronach publicznych."
-          ],
+          "new": [],
           "improved": [
             "Zaktualizowano szablon Excel i import tłumaczonych scenariuszy, aby obsługiwały bieżące i wcześniejsze formaty z zachowaniem ról postaci, didaskaliów, tłumaczeń i szczegółów wierszy.",
             "Usprawniono współpracę i odzyskiwanie pracy w Editorze, w tym blokady wierszy, przerwy w połączeniu, przełączanie scenariuszy i synchronizację tłumaczeń.",
             "Analiza scenariusza lepiej odróżnia didaskalia od dialogów i dokładniej obsługuje wzmianki o wykonawcach.",
             "Zaktualizowano teatralny symulator na stronie głównej, dodając bardziej szczegółową widownię, scenę, wykonawców, oświetlenie i telefon widza.",
-            "Usprawniono odzyskiwanie Show na żywo podczas konfliktów zmian konfiguracji, zachowując sprawdzony czas trwania."
+            "Usprawniono odzyskiwanie Show na żywo podczas konfliktów zmian konfiguracji, zachowując sprawdzony czas trwania.",
+            "Rozszerzono obsługę indeksowania w wyszukiwarkach istniejących stron publicznych w języku polskim i ukraińskim.",
+            "Analiza scenariusza porównuje teraz imiona postaci z treścią scenariusza i oznacza niepewne przypisania do weryfikacji."
           ],
           "fixed": [
-            "Naprawiono problemy w Editorze, przez które ochrona tłumaczenia mogła kończyć się za wcześnie, operacje mogły zakłócać pracę nad innymi scenariuszami, a przeciąganie mogło używać nieaktualnej pozycji wiersza."
+            "Naprawiono problemy w Editorze, przez które ochrona tłumaczenia mogła kończyć się za wcześnie, operacje mogły zakłócać pracę nad innymi scenariuszami, a przeciąganie mogło używać nieaktualnej pozycji wiersza.",
+            "Naprawiono przypadki, w których ukończone tłumaczenia mogły utrzymywać blokadę Editora lub blokować go ponownie po kolejnych zmianach.",
+            "Doprecyzowano wskazówki odzyskiwania, gdy Update Live jest blokowane przez niezapisane zmiany, chronione wiersze lub wygasłą sesję edycji."
           ]
         },
         {

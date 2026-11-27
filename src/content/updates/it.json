@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Questo aggiornamento migliora la collaborazione in Editor e i flussi di lavoro dei copioni, rafforza il recupero degli Show dal vivo e rinnova l’anteprima teatrale della homepage.",
-          "new": [
-            "Le pagine pubbliche localizzate sono ora disponibili anche in polacco e ucraino."
-          ],
+          "new": [],
           "improved": [
             "Il modello Excel e il flusso di importazione dei copioni tradotti supportano ora i formati attuali e precedenti, preservando ruoli, indicazioni di scena, traduzioni e dettagli delle righe.",
             "Sono stati migliorati la collaborazione e il recupero in Editor, inclusi blocchi di riga, interruzioni della connessione, passaggio tra copioni e sincronizzazione delle traduzioni.",
             "L’analisi dei copioni distingue meglio le indicazioni di scena dai dialoghi e gestisce con maggiore precisione i riferimenti agli interpreti.",
             "Il simulatore teatrale della homepage è stato aggiornato con un auditorium, un palco, interpreti, illuminazione e un telefono del pubblico più dettagliati.",
-            "È stato migliorato il recupero degli Show dal vivo in caso di conflitto tra modifiche alla configurazione, mantenendo la durata verificata."
+            "È stato migliorato il recupero degli Show dal vivo in caso di conflitto tra modifiche alla configurazione, mantenendo la durata verificata.",
+            "È stato ampliato il supporto all’indicizzazione nei motori di ricerca delle pagine pubbliche esistenti in polacco e ucraino.",
+            "L’analisi dei copioni ora confronta i nomi dei personaggi con il copione e segnala le attribuzioni incerte per la revisione."
           ],
           "fixed": [
-            "Risolti casi in Editor in cui la protezione delle traduzioni poteva terminare troppo presto, le operazioni potevano interferire tra copioni o il trascinamento poteva usare una posizione di riga non aggiornata."
+            "Risolti casi in Editor in cui la protezione delle traduzioni poteva terminare troppo presto, le operazioni potevano interferire tra copioni o il trascinamento poteva usare una posizione di riga non aggiornata.",
+            "Risolti casi in cui le traduzioni completate potevano mantenere Editor bloccato o bloccarlo nuovamente dopo ulteriori modifiche.",
+            "Chiarite le indicazioni di recupero quando Update Live è bloccato da modifiche non salvate, righe protette o una sessione di modifica scaduta."
           ]
         },
         {

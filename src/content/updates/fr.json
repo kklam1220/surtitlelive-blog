@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Cette mise à jour améliore la collaboration dans Editor et les workflows de script, renforce la reprise des Shows en direct et renouvelle l’aperçu de théâtre sur la page d’accueil.",
-          "new": [
-            "Les pages publiques localisées sont désormais disponibles en polonais et en ukrainien."
-          ],
+          "new": [],
           "improved": [
             "Le modèle Excel et l’importation des scripts traduits prennent désormais en charge les formats actuels et anciens, tout en préservant les rôles, les indications scéniques, les traductions et les détails des lignes.",
             "La collaboration et la reprise dans Editor ont été améliorées, notamment pour les verrous de ligne, les interruptions de connexion, le passage d’un script à l’autre et la synchronisation des traductions.",
             "L’analyse des scripts distingue mieux les indications scéniques des dialogues et gère plus précisément les références aux interprètes.",
             "Le simulateur de théâtre de la page d’accueil a été actualisé avec une salle, une scène, des interprètes, un éclairage et un téléphone du public plus détaillés.",
-            "La reprise des Shows en direct a été améliorée en cas de conflit entre des modifications de configuration, tout en conservant la durée vérifiée."
+            "La reprise des Shows en direct a été améliorée en cas de conflit entre des modifications de configuration, tout en conservant la durée vérifiée.",
+            "La prise en charge de l’indexation par les moteurs de recherche a été étendue pour les pages publiques existantes en polonais et en ukrainien.",
+            "L’analyse des scripts vérifie désormais les noms des personnages à partir du script et signale les attributions incertaines pour révision."
           ],
           "fixed": [
-            "Correction de cas dans Editor où la protection des traductions pouvait prendre fin trop tôt, où les opérations pouvaient interférer entre scripts ou où le glisser-déposer pouvait utiliser une position de ligne obsolète."
+            "Correction de cas dans Editor où la protection des traductions pouvait prendre fin trop tôt, où les opérations pouvaient interférer entre scripts ou où le glisser-déposer pouvait utiliser une position de ligne obsolète.",
+            "Correction de cas où des traductions terminées pouvaient maintenir Editor verrouillé ou le verrouiller à nouveau après d’autres modifications.",
+            "Les consignes de récupération ont été clarifiées lorsque Update Live est bloqué par des modifications non enregistrées, des lignes protégées ou une session d’édition expirée."
           ]
         },
         {

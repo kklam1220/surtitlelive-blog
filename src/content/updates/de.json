@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Dieses Update verbessert die Zusammenarbeit im Editor und Skriptabläufe, stärkt die Wiederherstellung laufender Shows und überarbeitet die Theater-Vorschau auf der Startseite.",
-          "new": [
-            "Die lokalisierten öffentlichen Seiten unterstützen jetzt auch Polnisch und Ukrainisch."
-          ],
+          "new": [],
           "improved": [
             "Die Excel-Vorlage und der Import für übersetzte Skripte unterstützen jetzt aktuelle und ältere Formate und erhalten Sprecherrollen, Regieanweisungen, Übersetzungen und Zeilendetails.",
             "Zusammenarbeit und Wiederherstellung im Editor wurden verbessert, einschließlich Zeilensperren, Verbindungsunterbrechungen, Skriptwechseln und Übersetzungssynchronisierung.",
             "Die Skriptanalyse unterscheidet Regieanweisungen jetzt besser von Dialogen und verarbeitet Hinweise auf Darsteller zuverlässiger.",
             "Die Theater-Simulation auf der Startseite wurde mit einem detaillierteren Zuschauerraum, einer Bühne, Darstellern, Beleuchtung und einem Publikums-Handy aktualisiert.",
-            "Die Wiederherstellung laufender Shows bei Konflikten zwischen Einstellungsänderungen wurde verbessert; die geprüfte Dauer bleibt erhalten."
+            "Die Wiederherstellung laufender Shows bei Konflikten zwischen Einstellungsänderungen wurde verbessert; die geprüfte Dauer bleibt erhalten.",
+            "Die Unterstützung für die Suchmaschinenindexierung bestehender öffentlicher Seiten auf Polnisch und Ukrainisch wurde erweitert.",
+            "Die Skriptanalyse gleicht Figurennamen jetzt mit dem Skript ab und markiert unsichere Zuordnungen zur Prüfung."
           ],
           "fixed": [
-            "Fehler im Editor wurden behoben, durch die der Übersetzungsschutz zu früh enden, Arbeit zwischen Skripten kollidieren oder Drag-and-drop eine veraltete Zeilenposition verwenden konnte."
+            "Fehler im Editor wurden behoben, durch die der Übersetzungsschutz zu früh enden, Arbeit zwischen Skripten kollidieren oder Drag-and-drop eine veraltete Zeilenposition verwenden konnte.",
+            "Fälle wurden behoben, in denen abgeschlossene Übersetzungen den Editor gesperrt halten oder nach weiteren Änderungen erneut sperren konnten.",
+            "Die Hinweise zur Wiederherstellung wurden präzisiert, wenn Update Live durch ungespeicherte Änderungen, geschützte Zeilen oder eine abgelaufene Bearbeitungssitzung blockiert wird."
           ]
         },
         {

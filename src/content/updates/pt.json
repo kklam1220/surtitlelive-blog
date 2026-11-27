@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "Esta atualização melhora a colaboração no Editor e os fluxos de trabalho de guiões, reforça a recuperação de Shows em direto e renova a pré-visualização teatral da página inicial.",
-          "new": [
-            "As páginas públicas localizadas passam a estar disponíveis em polaco e ucraniano."
-          ],
+          "new": [],
           "improved": [
             "O modelo Excel e o fluxo de importação de guiões traduzidos agora suportam formatos atuais e anteriores, preservando papéis, indicações cénicas, traduções e detalhes das linhas.",
             "A colaboração e a recuperação no Editor foram melhoradas, incluindo bloqueios de linha, interrupções de ligação, mudança entre guiões e sincronização de traduções.",
             "A análise de guiões distingue melhor as indicações cénicas do diálogo e trata melhor as referências a intérpretes.",
             "O simulador teatral da página inicial foi atualizado com um auditório, palco, intérpretes, iluminação e telemóvel do público mais detalhados.",
-            "A recuperação de Shows em direto foi melhorada quando alterações de configuração entram em conflito, preservando a duração revista."
+            "A recuperação de Shows em direto foi melhorada quando alterações de configuração entram em conflito, preservando a duração revista.",
+            "Foi alargado o suporte à indexação nos motores de pesquisa das páginas públicas existentes em polaco e ucraniano.",
+            "A análise de guiões compara agora os nomes das personagens com o guião e assinala as atribuições incertas para revisão."
           ],
           "fixed": [
-            "Foram corrigidos casos no Editor em que a proteção das traduções podia terminar demasiado cedo, o trabalho podia interferir entre guiões ou a operação de arrastar e largar podia usar uma posição de linha desatualizada."
+            "Foram corrigidos casos no Editor em que a proteção das traduções podia terminar demasiado cedo, o trabalho podia interferir entre guiões ou a operação de arrastar e largar podia usar uma posição de linha desatualizada.",
+            "Foram corrigidos casos em que traduções concluídas podiam manter o Editor bloqueado ou bloqueá-lo novamente após outras alterações.",
+            "Foram clarificadas as instruções de recuperação quando o Update Live é bloqueado por alterações não guardadas, linhas protegidas ou uma sessão de edição expirada."
           ]
         },
         {

@@ -64,18 +64,20 @@
           "releaseDate": "2026-11-16",
           "product": "Pockitle",
           "summary": "This update improves Editor collaboration and script workflows, strengthens live-show recovery, and refreshes the homepage theatre preview.",
-          "new": [
-            "Added Polish and Ukrainian to the localized public pages."
-          ],
+          "new": [],
           "improved": [
             "Updated the translated-script Excel template and import flow to support current and earlier formats while preserving speaker roles, stage directions, translations, and line details.",
             "Improved Editor collaboration and recovery, including line locks, connection interruptions, script switching, and translation synchronization.",
             "Improved script analysis to better distinguish stage directions from dialogue and handle performer references.",
             "Updated the homepage theatre simulator with a more detailed auditorium, stage, performers, lighting, and audience phone.",
-            "Improved live Show recovery during conflicting configuration changes, preserving the reviewed duration."
+            "Improved live Show recovery during conflicting configuration changes, preserving the reviewed duration.",
+            "Expanded search-engine indexing support for existing Polish and Ukrainian public pages.",
+            "Script analysis now cross-checks character names against the script and flags uncertain attributions for review."
           ],
           "fixed": [
-            "Fixed Editor cases where translation protection could end too early, work could interfere across scripts, or drag-and-drop could use an outdated row position."
+            "Fixed Editor cases where translation protection could end too early, work could interfere across scripts, or drag-and-drop could use an outdated row position.",
+            "Fixed cases where completed translations could keep the Editor locked or lock it again after further edits.",
+            "Clarified recovery guidance when Update Live is blocked by unsaved edits, protected rows or an expired editing session."
           ]
         },
         {
